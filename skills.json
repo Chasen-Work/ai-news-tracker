@@ -1,0 +1,15 @@
+[
+  {"name":"测试驱动开发(TDD)","scene":"work","desc":"RED-GREEN-REFACTOR 开发流程，写代码前先写测试","reason":"开发机器人控制程序或API接口时，TDD能大幅减少bug和返工"},
+  {"name":"系统化调试","scene":"work","desc":"4阶段根因分析法，定位bug再修复","reason":"排查机器人/无人机故障、API接口问题时的标准流程"},
+  {"name":"架构图生成","scene":"work","desc":"深色主题SVG架构图，适合方案PPT和文档","reason":"给幼儿园、工厂客户做方案展示时，专业架构图很加分"},
+  {"name":"简报/信息图","scene":"work","desc":"21种布局×21种风格的信息图生成","reason":"快速生成机器人竞品分析、方案对比图"},
+  {"name":"PPT生成","scene":"work","desc":"从Markdown直接生成.pptx文件","reason":"给客户出方案PPT时节省大量排版时间"},
+  {"name":"OCR文档提取","scene":"work","desc":"从PDF/扫描件中提取文字","reason":"处理客户发来的纸质合同、技术文档扫描件"},
+  {"name":"Webhook订阅","scene":"work","desc":"事件驱动的Agent自动运行","reason":"监控机器人行业新闻、竞品官网更新时自动触发任务"},
+  {"name":"GitHub代码审查","scene":"work","desc":"自动审查PR，逐行评论，安全扫描","reason":"代码质量把控，减少合作伙伴提交的代码问题"},
+  {"name":"MacOS桌面控制","scene":"work","desc":"后台操控Mac桌面，截屏/点击/输入","reason":"远程调试、自动化测试桌面应用"},
+  {"name":"Spotify控制","scene":"life","desc":"通过终端控制Spotify播放列表和音量","reason":"写代码或做方案时随手切歌，不用切出终端"},
+  {"name":"Trip Planning","scene":"life","desc":"多日行程规划，覆盖交通/住宿/费用","reason":"出差去客户现场（幼儿园、工厂）时一键生成行程"},
+  {"name":"YouTube内容","scene":"research","desc":"YouTube视频转录→摘要/推文/博客","reason":"追机器人行业技术分享视频，快速获取关键信息"},
+  {"name":"ArXiv论文搜索","scene":"research","desc":"按关键词/作者/分类搜索前沿论文","reason":"追人形机器人、无人机、AI领域的最新论文"}
+]

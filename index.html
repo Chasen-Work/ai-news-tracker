@@ -3,387 +3,326 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AI HOT · 行业动态</title>
+<title>AIHOT · 智能情报站</title>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <style>
   :root {
-    --bg: #0b0e14;
-    --card: #131820;
-    --border: #1e2736;
-    --text: #c8d0e0;
-    --dim: #6b7a99;
-    --accent: #3b82f6;
-    --accent2: #8b5cf6;
-    --green: #22c55e;
-    --orange: #f59e0b;
-    --red: #ef4444;
+    --bg: #0b0e14; --card: #131820; --border: #1e2736;
+    --text: #c8d0e0; --dim: #6b7a99; --accent: #3b82f6;
+    --green: #22c55e; --orange: #f59e0b; --red: #ef4444;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "PingFang SC", "Helvetica Neue", sans-serif;
-    background: var(--bg);
-    color: var(--text);
-    min-height: 100vh;
-    line-height: 1.6;
+    background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.6;
   }
   ::-webkit-scrollbar { width: 6px; }
   ::-webkit-scrollbar-track { background: var(--bg); }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
 
-  /* Header */
   .header {
-    border-bottom: 1px solid var(--border);
-    padding: 24px 32px 16px;
+    border-bottom: 1px solid var(--border); padding: 20px 32px 12px;
     position: sticky; top: 0; z-index: 100;
-    background: rgba(11,14,20,.92);
-    backdrop-filter: blur(12px);
+    background: rgba(11,14,20,.92); backdrop-filter: blur(12px);
   }
-  .header h1 { font-size: 22px; font-weight: 600; letter-spacing: -.3px; }
+  .header h1 { font-size: 22px; font-weight: 600; }
   .header h1 span { color: var(--accent); }
-  .header .sub { font-size: 13px; color: var(--dim); margin-top: 2px; }
-  .header .update-badge { font-size: 11px; color: var(--dim); float: right; margin-top: 6px; }
+  .header .sub { font-size: 12px; color: var(--dim); margin-top: 2px; }
+  .header .status { font-size: 11px; color: var(--green); margin-left: 12px; }
 
-  /* Tabs */
   .tabs {
-    display: flex; gap: 0;
-    padding: 0 32px;
-    border-bottom: 1px solid var(--border);
+    display: flex; gap: 0; padding: 0 32px;
+    border-bottom: 1px solid var(--border); overflow-x: auto;
   }
   .tabs button {
     background: none; border: none; color: var(--dim);
-    font-size: 14px; padding: 12px 20px; cursor: pointer;
-    border-bottom: 2px solid transparent;
-    transition: all .2s;
+    font-size: 13px; padding: 10px 16px; cursor: pointer;
+    border-bottom: 2px solid transparent; transition: all .2s;
+    white-space: nowrap; font-family: inherit;
   }
   .tabs button:hover { color: var(--text); }
   .tabs button.active { color: var(--accent); border-bottom-color: var(--accent); }
+  .tabs .badge { font-size: 10px; background: var(--accent); color: #fff; border-radius: 8px; padding: 1px 6px; margin-left: 4px; }
 
-  /* Main */
-  .main { max-width: 1200px; margin: 0 auto; padding: 24px 32px; }
+  .main { max-width: 1400px; margin: 0 auto; padding: 20px 32px; }
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
   /* Cards */
   .card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
-    margin-bottom: 16px;
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 16px; margin-bottom: 14px; transition: border-color .2s;
   }
-  .card-grid {
-    display: grid;
-    gap: 16px;
-  }
+  .card:hover { border-color: var(--accent); }
+  .card h3 { font-size: 13px; font-weight: 500; color: var(--dim); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
 
-  /* Stats row */
-  .stats-row {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px,1fr));
-    gap: 12px;
-    margin-bottom: 24px;
+  /* Filters */
+  .filters {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
+    padding: 12px; background: var(--card); border-radius: 8px; border: 1px solid var(--border);
   }
-  .stat-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 16px;
-    text-align: center;
+  .filters select, .filters input {
+    background: var(--bg); border: 1px solid var(--border); color: var(--text);
+    padding: 6px 10px; border-radius: 6px; font-size: 12px; font-family: inherit;
   }
-  .stat-card .num {
-    font-size: 28px; font-weight: 600; color: var(--accent);
-  }
-  .stat-card .label {
-    font-size: 12px; color: var(--dim); margin-top: 4px;
-  }
+  .filters select:focus, .filters input:focus { outline: none; border-color: var(--accent); }
+  .filters label { font-size: 12px; color: var(--dim); display: flex; align-items: center; gap: 4px; }
+  .filter-group { display: flex; align-items: center; gap: 4px; }
 
-  /* Charts */
-  .chart-container {
-    position: relative;
-    height: 220px;
-    margin-top: 8px;
-  }
-  .chart-container.tall { height: 300px; }
-
-  /* Item list */
-  .item-list { list-style: none; }
-  .item-list li {
-    padding: 14px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .item-list li:last-child { border-bottom: none; }
-  .item-list .item-title {
-    font-size: 15px; font-weight: 500; color: var(--text);
-    text-decoration: none;
-  }
-  .item-list .item-title:hover { color: var(--accent); }
-  .item-list .item-meta {
-    font-size: 12px; color: var(--dim); margin-top: 4px;
-    display: flex; gap: 10px; flex-wrap: wrap;
-  }
-  .item-list .item-summary {
-    font-size: 13px; color: #8896b0; margin-top: 6px;
-    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  /* Tags */
-  .tag {
-    display: inline-block;
-    font-size: 11px; padding: 2px 8px; border-radius: 4px;
-    font-weight: 500;
-  }
-  .tag-models { background: #1e3a5f; color: #60a5fa; }
-  .tag-products { background: #1e3a2f; color: #4ade80; }
-  .tag-industry { background: #3a2a1e; color: #fb923c; }
-  .tag-paper { background: #2a1e3a; color: #a78bfa; }
-  .tag-tip { background: #1e2a3a; color: #38bdf8; }
-  .tag-other { background: var(--border); color: var(--dim); }
-
-  /* Entity list */
-  .entity-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
-    gap: 10px;
+  /* Model/Entity Grid */
+  .grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 12px; margin-bottom: 20px;
   }
   .entity-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 14px;
-    cursor: pointer;
-    transition: all .2s;
-  }
-  .entity-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-1px);
-  }
-  .entity-card .name { font-size: 14px; font-weight: 500; }
-  .entity-card .meta { font-size: 11px; color: var(--dim); margin-top: 4px; display: flex; gap: 8px; }
-  .entity-card .badge {
-    font-size: 10px; padding: 1px 6px; border-radius: 3px;
-    background: var(--border); color: var(--dim);
-  }
-  .entity-card .badge.company { background: #1e3a5f; color: #60a5fa; }
-  .entity-card .badge.model { background: #2a1e3a; color: #a78bfa; }
-
-  /* Search */
-  .search-box {
-    width: 100%;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 10px;
-    padding: 12px 16px;
-    color: var(--text);
-    font-size: 15px;
-    outline: none;
-    transition: border-color .2s;
-  }
-  .search-box:focus { border-color: var(--accent); }
-  .search-box::placeholder { color: var(--dim); }
-
-  .search-category {
-    display: flex; gap: 8px; flex-wrap: wrap; margin: 12px 0;
-  }
-  .search-category button {
     background: var(--card); border: 1px solid var(--border);
-    color: var(--dim); font-size: 12px; padding: 6px 14px;
-    border-radius: 6px; cursor: pointer; transition: all .2s;
+    border-radius: 10px; padding: 14px; transition: all .2s;
   }
-  .search-category button:hover { border-color: var(--accent); color: var(--text); }
-  .search-category button.active { border-color: var(--accent); background: #1e3a5f; color: var(--accent); }
+  .entity-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .entity-card .name { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
+  .entity-card .name a { color: var(--text); text-decoration: none; }
+  .entity-card .name a:hover { color: var(--accent); }
+  .entity-card .vendor { font-size: 11px; color: var(--dim); margin-bottom: 6px; }
+  .entity-card .tags { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 6px; }
+  .tag {
+    font-size: 10px; padding: 2px 6px; border-radius: 4px;
+    background: rgba(59,130,246,.15); color: var(--accent);
+    border: 1px solid rgba(59,130,246,.25);
+  }
+  .tag.cn { background: rgba(34,197,94,.15); color: var(--green); border-color: rgba(34,197,94,.25); }
+  .tag.special { background: rgba(245,158,11,.15); color: var(--orange); border-color: rgba(245,158,11,.25); }
+  .entity-card .meta { font-size: 11px; color: var(--dim); display: flex; gap: 12px; flex-wrap: wrap; }
+  .entity-card .meta span { display: flex; align-items: center; gap: 3px; }
+  .entity-card .links { margin-top: 8px; display: flex; gap: 8px; }
+  .entity-card .links a {
+    font-size: 11px; color: var(--accent); text-decoration: none;
+    padding: 2px 8px; border: 1px solid rgba(59,130,246,.3); border-radius: 4px;
+  }
+  .entity-card .links a:hover { background: rgba(59,130,246,.1); }
+  .entity-card .status-tag { font-size: 10px; padding: 1px 5px; border-radius: 3px; }
+  .status-production { background: rgba(34,197,94,.15); color: var(--green); }
+  .status-preview { background: rgba(245,158,11,.15); color: var(--orange); }
+  .status-prototype { background: rgba(239,68,68,.15); color: var(--red); }
 
-  /* Modal overlay */
-  .modal-overlay {
-    display: none; position: fixed;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0,0,0,.6);
-    z-index: 200;
-    align-items: center; justify-content: center;
-    overflow-y: auto; padding: 40px;
-  }
-  .modal-overlay.open { display: flex; }
-  .modal {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    max-width: 720px; width: 100%;
-    max-height: 80vh; overflow-y: auto;
-    padding: 28px;
-  }
-  .modal h2 { font-size: 20px; margin-bottom: 4px; }
-  .modal .close {
-    float: right; background: none; border: none; color: var(--dim);
-    font-size: 20px; cursor: pointer;
-  }
-  .modal .close:hover { color: var(--text); }
-  .modal .entity-badge {
-    font-size: 11px; padding: 2px 8px; border-radius: 4px;
-    display: inline-block; margin-bottom: 16px;
-  }
-  .modal .tl-item {
-    padding: 12px 0;
-    border-bottom: 1px solid var(--border);
-  }
-  .modal .tl-item:last-child { border-bottom: none; }
-  .modal .tl-date { font-size: 11px; color: var(--dim); }
-  .modal .tl-title { font-size: 14px; font-weight: 500; margin-top: 2px; }
-  .modal .tl-summary { font-size: 13px; color: #8896b0; margin-top: 4px; }
-  .modal .tl-url { font-size: 12px; color: var(--accent); text-decoration: none; display: inline-block; margin-top: 4px; }
-
-  /* Filter bar */
-  .filter-bar {
-    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
-  }
-  .filter-bar button {
+  /* News section */
+  .news-day {
     background: var(--card); border: 1px solid var(--border);
-    color: var(--dim); font-size: 12px; padding: 6px 14px;
-    border-radius: 6px; cursor: pointer; transition: all .2s;
+    border-radius: 10px; padding: 16px; margin-bottom: 16px;
   }
-  .filter-bar button:hover { border-color: var(--accent); color: var(--text); }
-  .filter-bar button.active { border-color: var(--accent); background: #1e3a5f; color: var(--accent); }
+  .news-day .date { font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
+  .news-industry { margin-bottom: 12px; }
+  .news-industry .ind-title {
+    font-size: 12px; font-weight: 500; color: var(--orange);
+    margin-bottom: 4px; display: flex; align-items: center; gap: 6px;
+  }
+  .news-industry .ind-title .count { font-weight: 400; color: var(--dim); }
+  .news-item {
+    padding: 6px 0; border-bottom: 1px solid rgba(30,39,54,.5); cursor: pointer;
+  }
+  .news-item:last-child { border-bottom: none; }
+  .news-item .title { font-size: 13px; margin-bottom: 2px; }
+  .news-item .summary { font-size: 11px; color: var(--dim); display: none; }
+  .news-item.expanded .summary { display: block; margin-top: 4px; }
+  .news-item .spec-tag { font-size: 10px; background: rgba(245,158,11,.15); color: var(--orange); padding: 1px 5px; border-radius: 3px; margin-left: 6px; }
+
+  /* Robot table */
+  .robot-table {
+    width: 100%; border-collapse: collapse; font-size: 12px;
+  }
+  .robot-table th {
+    background: var(--card); color: var(--dim); font-weight: 500;
+    text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border);
+    position: sticky; top: 120px; z-index: 50; cursor: pointer;
+    white-space: nowrap;
+  }
+  .robot-table th:hover { color: var(--text); }
+  .robot-table td { padding: 8px 10px; border-bottom: 1px solid rgba(30,39,54,.3); }
+  .robot-table tr:hover td { background: rgba(59,130,246,.05); }
+  .robot-table .cat-row td {
+    background: rgba(30,39,54,.5); font-weight: 600; font-size: 11px;
+    color: var(--accent); padding: 6px 10px; letter-spacing: .5px;
+  }
+
+  /* Skill recommendations */
+  .skill-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 14px; margin-bottom: 10px;
+  }
+  .skill-card .name { font-size: 14px; font-weight: 600; color: var(--accent); }
+  .skill-card .desc { font-size: 12px; color: var(--dim); margin: 4px 0; }
+  .skill-card .reason { font-size: 11px; color: var(--text); margin-top: 4px; }
+
+  /* Stats bar */
+  .stats-bar {
+    display: flex; gap: 24px; padding: 12px 0;
+    font-size: 12px; color: var(--dim);
+  }
+  .stats-bar span { display: flex; align-items: center; gap: 4px; }
+  .stats-bar .num { color: var(--text); font-weight: 600; }
 
   /* Responsive */
   @media (max-width: 768px) {
-    .header { padding: 16px; }
-    .tabs { padding: 0 16px; overflow-x: auto; }
-    .tabs button { padding: 10px 14px; font-size: 13px; }
-    .main { padding: 16px; }
-    .stats-row { grid-template-columns: repeat(2,1fr); }
-    .entity-grid { grid-template-columns: repeat(2,1fr); }
-    .chart-container { height: 180px; }
+    .header { padding: 14px 16px 10px; }
+    .tabs { padding: 0 16px; }
+    .main { padding: 14px 16px; }
+    .grid { grid-template-columns: 1fr; }
+    .filters { flex-direction: column; }
+    .robot-table { font-size: 10px; }
+    .robot-table th, .robot-table td { padding: 4px 6px; }
   }
-
-  /* Loading */
-  .loading { text-align: center; padding: 80px 0; color: var(--dim); }
-  .loading .spinner {
-    display: inline-block;
-    width: 32px; height: 32px;
-    border: 3px solid var(--border);
-    border-top-color: var(--accent);
-    border-radius: 50%;
-    animation: spin .8s linear infinite;
-    margin-bottom: 12px;
-  }
-  @keyframes spin { to { transform: rotate(360deg); } }
-
-  .no-result { text-align: center; padding: 40px 0; color: var(--dim); font-size: 14px; }
-
-  /* Source link */
-  .source-link {
-    font-size: 12px; color: var(--accent); text-decoration: none;
-  }
-  .source-link:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
 <div class="header">
-  <div class="update-badge" id="updateBadge"></div>
-  <h1>AI <span>HOT</span></h1>
-  <div class="sub">AI 行业动态追踪 · 自动采集</div>
+  <h1>AI<span>HOT</span> · 智能情报站
+    <span class="status" id="updateStatus">● 数据加载中...</span>
+  </h1>
+  <div class="sub">新闻联播 · 模型选型 · 机器人档案 · 技能推荐</div>
 </div>
 
-<div class="tabs">
-  <button class="active" data-tab="dashboard">概览</button>
-  <button data-tab="timeline">时间线</button>
-  <button data-tab="entities">实体</button>
-  <button data-tab="search">搜索</button>
+<div class="tabs" id="tabs">
+  <button class="active" data-tab="news">📺 新闻</button>
+  <button data-tab="models">🧠 模型选型</button>
+  <button data-tab="robots">🤖 机器人档案</button>
+  <button data-tab="skills">🛠 技能推荐</button>
 </div>
 
 <div class="main">
 
-<!-- ====== DASHBOARD ====== -->
-<div class="tab-content active" id="tab-dashboard">
-  <div class="stats-row" id="statsCards"></div>
-
-  <div class="card-grid" style="grid-template-columns: 1fr 1fr;">
-    <div class="card">
-      <h3 style="font-size:14px;font-weight:500;color:var(--dim);margin-bottom:8px;">📊 分类分布</h3>
-      <div class="chart-container"><canvas id="chartCategory"></canvas></div>
-    </div>
-    <div class="card">
-      <h3 style="font-size:14px;font-weight:500;color:var(--dim);margin-bottom:8px;">🏢 实体类型</h3>
-      <div class="chart-container"><canvas id="chartEntityType"></canvas></div>
-    </div>
+<!-- ============================================================ -->
+<!-- TAB 1: NEWS -->
+<!-- ============================================================ -->
+<div class="tab-content active" id="tab-news">
+  <div class="filters" id="newsFilters">
+    <label>来源：<select id="newsSource">
+      <option value="all">全部</option>
+      <option value="xwlb">新闻联播</option>
+      <option value="global">全球动态</option>
+    </select></label>
+    <label>行业：<select id="newsIndustry">
+      <option value="all">全部行业</option>
+    </select></label>
+    <label>🔔 <input type="checkbox" id="newsSpecial"> 仅特别关注</label>
   </div>
-
-  <div class="card" style="margin-top:16px;">
-    <h3 style="font-size:14px;font-weight:500;color:var(--dim);margin-bottom:8px;">📈 每日采集量</h3>
-    <div class="chart-container tall"><canvas id="chartDaily"></canvas></div>
-  </div>
-
-  <div class="card" style="margin-top:16px;">
-    <h3 style="font-size:14px;font-weight:500;color:var(--dim);margin-bottom:8px;">🏆 最活跃实体 TOP 10</h3>
-    <div class="chart-container tall"><canvas id="chartTopEntities"></canvas></div>
-  </div>
-
-  <div class="card" style="margin-top:16px;">
-    <h3 style="font-size:14px;font-weight:500;color:var(--dim);margin-bottom:8px;">📰 最新动态</h3>
-    <ul class="item-list" id="recentItems"></ul>
+  <div id="newsContainer">
+    <div class="card" style="text-align:center;padding:40px;color:var(--dim)">加载新闻数据中...</div>
   </div>
 </div>
 
-<!-- ====== TIMELINE ====== -->
-<div class="tab-content" id="tab-timeline">
-  <div class="filter-bar" id="categoryFilter"></div>
-  <ul class="item-list" id="timelineItems"></ul>
-  <div id="timelineLoading" class="loading">
-    <div class="spinner"></div>
-    <div>加载中…</div>
+<!-- ============================================================ -->
+<!-- TAB 2: MODELS -->
+<!-- ============================================================ -->
+<div class="tab-content" id="tab-models">
+  <div class="filters" id="modelFilters">
+    <label>能力：<select id="mfCapability">
+      <option value="all">全部能力</option>
+    </select></label>
+    <label>国内可用：<select id="mfDomestic">
+      <option value="all">全部</option>
+      <option value="直连">直连</option>
+      <option value="需代理">需代理</option>
+    </select></label>
+    <label>厂商：<select id="mfVendor">
+      <option value="all">全部厂商</option>
+    </select></label>
+    <label>排序：<select id="mfSort">
+      <option value="price">价格↓</option>
+      <option value="price_asc">价格↑</option>
+      <option value="name">名称</option>
+    </select></label>
+  </div>
+  <div class="stats-bar" id="modelStats"></div>
+  <div class="grid" id="modelGrid"></div>
+</div>
+
+<!-- ============================================================ -->
+<!-- TAB 3: ROBOTS -->
+<!-- ============================================================ -->
+<div class="tab-content" id="tab-robots">
+  <div class="filters" id="robotFilters">
+    <label>一级分类：<select id="rfType1">
+      <option value="all">全部分类</option>
+    </select></label>
+    <label>二级分类：<select id="rfType2">
+      <option value="all">全部</option>
+    </select></label>
+    <label>厂商：<select id="rfVendor">
+      <option value="all">全部厂商</option>
+    </select></label>
+    <label>状态：<select id="rfStatus">
+      <option value="all">全部状态</option>
+      <option value="已量产">已量产</option>
+      <option value="预售">预售中</option>
+      <option value="原型">原型</option>
+    </select></label>
+  </div>
+  <div class="stats-bar" id="robotStats"></div>
+  <div style="overflow-x:auto">
+    <table class="robot-table" id="robotTable">
+      <thead>
+        <tr>
+          <th>厂商</th><th>型号</th><th>类型</th><th>尺寸</th><th>重量</th>
+          <th>负载</th><th>续航</th><th>价格</th><th>状态</th>
+        </tr>
+      </thead>
+      <tbody id="robotBody"></tbody>
+    </table>
   </div>
 </div>
 
-<!-- ====== ENTITIES ====== -->
-<div class="tab-content" id="tab-entities">
-  <input class="search-box" id="entitySearch" placeholder="搜索实体…" oninput="filterEntities()">
-  <div class="entity-grid" id="entityGrid"></div>
-</div>
-
-<!-- ====== SEARCH ====== -->
-<div class="tab-content" id="tab-search">
-  <input class="search-box" id="globalSearch" placeholder="搜索标题、摘要、来源…" oninput="doSearch()">
-  <div class="search-category" id="searchCategory"></div>
-  <ul class="item-list" id="searchResults"></ul>
-</div>
-
-</div>
-
-<!-- Modal -->
-<div class="modal-overlay" id="modal" onclick="if(event.target===this)closeModal()">
-  <div class="modal">
-    <button class="close" onclick="closeModal()">✕</button>
-    <h2 id="modalTitle"></h2>
-    <span class="entity-badge" id="modalBadge"></span>
-    <div id="modalTimeline"></div>
+<!-- ============================================================ -->
+<!-- TAB 4: SKILLS -->
+<!-- ============================================================ -->
+<div class="tab-content" id="tab-skills">
+  <div class="filters">
+    <label>场景：<select id="sfScene">
+      <option value="all">全部场景</option>
+      <option value="work">工作</option>
+      <option value="life">生活</option>
+      <option value="research">研究</option>
+    </select></label>
   </div>
+  <div id="skillsContainer"></div>
 </div>
+
+</div><!-- /main -->
 
 <script>
-// ── Data state ──
-let items = [], entities = [], timelines = {}, stats = {};
-const catLabels = { 'ai-models':'模型','ai-products':'产品','industry':'行业','paper':'论文','tip':'技巧','other':'其他' };
-const catColors = { 'ai-models':'#60a5fa','ai-products':'#4ade80','industry':'#fb923c','paper':'#a78bfa','tip':'#38bdf8','other':'#6b7a99' };
+// ── DATA ───────────────────────────────────────────────────────────
+let state = { models: [], robots: [], news: [], skills: [] };
 
-// ── Init ──
-Promise.all([
-  fetch('items.json').then(r=>r.json()),
-  fetch('entities.json').then(r=>r.json()),
-  fetch('timelines.json').then(r=>r.json()),
-  fetch('stats.json').then(r=>r.json()),
-]).then(([i,e,t,s]) => {
-  items=i; entities=e; timelines=t; stats=s;
-  document.getElementById('updateBadge').textContent = '更新于 ' + (s.updated_at || '').slice(0,10);
-  renderDashboard();
-  renderTimeline();
-  renderEntities();
-  document.querySelectorAll('.timelineItems').length === 0 && initSearch();
-  document.getElementById('timelineLoading').style.display = 'none';
-}).catch(() => {
-  document.querySelectorAll('.loading').forEach(el => el.innerHTML = '<div class="no-result">数据加载失败</div>');
-});
+async function loadJSON(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch(e) { return null; }
+}
 
-// ── Tabs ──
+async function init() {
+  const [models, robots, news, skills] = await Promise.all([
+    loadJSON('./models/manual_models.json'),
+    loadJSON('./robots/manual_robots.json'),
+    loadJSON('./xwlb.json'),
+    loadJSON('./skills.json'),
+  ]);
+
+  state.models = models || [];
+  state.robots = robots || [];
+  state.news = news || { days: [] };
+  state.skills = skills || [];
+
+  document.getElementById('updateStatus').textContent =
+    `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
+
+  renderModels();
+  renderRobots();
+  renderNews();
+  renderSkills();
+}
+
+// ── TAB SWITCHING ──────────────────────────────────────────────────
 document.querySelectorAll('.tabs button').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active'));
@@ -393,205 +332,243 @@ document.querySelectorAll('.tabs button').forEach(btn => {
   });
 });
 
-// ── Dashboard ──
-function renderDashboard() {
-  const s = stats;
-  document.getElementById('statsCards').innerHTML = `
-    <div class="stat-card"><div class="num">${s.total_items}</div><div class="label">动态总数</div></div>
-    <div class="stat-card"><div class="num">${s.total_entities}</div><div class="label">追踪实体</div></div>
-    <div class="stat-card"><div class="num">${s.total_dailies}</div><div class="label">日报期数</div></div>
-    <div class="stat-card"><div class="num">${Object.keys(s.categories||{}).length}</div><div class="label">分类数</div></div>
-  `;
-
-  // Category pie
-  new Chart(document.getElementById('chartCategory'), {
-    type: 'doughnut',
-    data: {
-      labels: Object.entries(s.categories||{}).map(([k,v]) => `${catLabels[k]||k} (${v})`),
-      datasets: [{ data: Object.values(s.categories||{}), backgroundColor: Object.keys(s.categories||{}).map(k=>catColors[k]||'#6b7a99') }]
-    },
-    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { color: '#c8d0e0', font: {size:11} } } } }
+// ── FILTER HELPERS ─────────────────────────────────────────────────
+function populateSelect(id, values) {
+  const sel = document.getElementById(id);
+  values.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v; opt.textContent = v;
+    sel.appendChild(opt);
   });
+}
 
-  // Entity type
-  new Chart(document.getElementById('chartEntityType'), {
-    type: 'doughnut',
-    data: {
-      labels: Object.entries(s.entity_types||{}).map(([k,v]) => `${k} (${v})`),
-      datasets: [{ data: Object.values(s.entity_types||{}), backgroundColor: ['#60a5fa','#a78bfa','#38bdf8','#4ade80'] }]
-    },
-    options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'right', labels: { color: '#c8d0e0', font: {size:11} } } } }
+// ══════════════════════════════════════════════════════════════════
+// MODELS
+// ══════════════════════════════════════════════════════════════════
+function renderModels() {
+  const models = state.models;
+  if (!models.length) return;
+
+  // Populate filters
+  const caps = [...new Set(models.map(m => m.capability_type).filter(Boolean))];
+  const vendors = [...new Set(models.map(m => m.vendor).filter(Boolean))];
+  populateSelect('mfCapability', caps);
+  populateSelect('mfVendor', vendors);
+
+  function filterModels() {
+    const cap = document.getElementById('mfCapability').value;
+    const dom = document.getElementById('mfDomestic').value;
+    const ven = document.getElementById('mfVendor').value;
+    const sort = document.getElementById('mfSort').value;
+
+    let list = models.filter(m => {
+      if (cap !== 'all' && m.capability_type !== cap) return false;
+      if (dom !== 'all' && m.domestic_availability !== dom) return false;
+      if (ven !== 'all' && m.vendor !== ven) return false;
+      return true;
+    });
+
+    // Sort
+    list.sort((a,b) => {
+      if (sort === 'name') return a.model_name.localeCompare(b.model_name);
+      // Price sort: extract numeric value
+      const getPrice = (s) => parseFloat((s||'').replace(/[^0-9.]/g,'')) || 99999;
+      return sort === 'price_asc' ? getPrice(a.output_price) - getPrice(b.output_price)
+                                    : getPrice(b.output_price) - getPrice(a.output_price);
+    });
+
+    document.getElementById('modelStats').innerHTML =
+      `<span>共 <b>${list.length}</b> 个模型</span>`;
+
+    const grid = document.getElementById('modelGrid');
+    grid.innerHTML = list.map(m => `
+      <div class="entity-card">
+        <div class="name"><a href="${m.official_url||'#'}" target="_blank">${m.model_name}</a></div>
+        <div class="vendor">${m.vendor||''}</div>
+        <div class="tags">
+          ${m.capability_type ? `<span class="tag">${m.capability_type}</span>` : ''}
+          ${m.domestic_availability === '直连' ? `<span class="tag cn">${m.domestic_availability}</span>`
+            : m.domestic_availability ? `<span class="tag">${m.domestic_availability}</span>` : ''}
+        </div>
+        <div class="meta">
+          ${m.output_price ? `<span>💰 ${m.output_price}</span>` : ''}
+          ${m.context_window ? `<span>📏 ${m.context_window}</span>` : ''}
+        </div>
+        ${m.promotions ? `<div style="font-size:11px;color:var(--orange);margin-top:4px">🏷 ${m.promotions}</div>` : ''}
+        <div class="links">
+          ${m.official_url ? `<a href="${m.official_url}" target="_blank">官网</a>` : ''}
+          ${m.tech_report_url ? `<a href="${m.tech_report_url}" target="_blank">技术报告</a>` : ''}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  ['mfCapability','mfDomestic','mfVendor','mfSort'].forEach(id => {
+    document.getElementById(id).addEventListener('change', filterModels);
   });
+  filterModels();
+}
 
-  // Daily trend
-  if (s.by_date && s.by_date.length) {
-    new Chart(document.getElementById('chartDaily'), {
-      type: 'bar',
-      data: {
-        labels: s.by_date.map(d => d.date.slice(5)),
-        datasets: [{ label: '动态数', data: s.by_date.map(d => d.count), backgroundColor: '#3b82f680', borderColor: '#3b82f6', borderWidth: 1, borderRadius: 4 }]
-      },
-      options: { responsive: true, maintainAspectRatio: false,
-        scales: { x: { ticks: { color: '#6b7a99', font: {size:11} }, grid: { color: '#1e2736' } },
-                 y: { ticks: { color: '#6b7a99', font: {size:11} }, grid: { color: '#1e2736' } } },
-        plugins: { legend: { display: false } }
+// ══════════════════════════════════════════════════════════════════
+// ROBOTS
+// ══════════════════════════════════════════════════════════════════
+function renderRobots() {
+  const robots = state.robots;
+  if (!robots.length) return;
+
+  const type1s = [...new Set(robots.map(r => r['类型_一级']||'').filter(Boolean))];
+  const type2s = [...new Set(robots.map(r => r['类型_二级']||'').filter(Boolean))];
+  const vendors = [...new Set(robots.map(r => r['厂商']||'').filter(Boolean))];
+  populateSelect('rfType1', type1s);
+  populateSelect('rfType2', type2s);
+  populateSelect('rfVendor', vendors);
+
+  function filterRobots() {
+    const t1 = document.getElementById('rfType1').value;
+    const t2 = document.getElementById('rfType2').value;
+    const ven = document.getElementById('rfVendor').value;
+    const st = document.getElementById('rfStatus').value;
+
+    let list = robots.filter(r => {
+      if (t1 !== 'all' && (r['类型_一级']||'') !== t1) return false;
+      if (t2 !== 'all' && (r['类型_二级']||'') !== t2) return false;
+      if (ven !== 'all' && (r['厂商']||'') !== ven) return false;
+      if (st !== 'all') {
+        const status = (r['当前状态']||'').toLowerCase();
+        if (st === '已量产' && !status.includes('量产')) return false;
+        if (st === '预售' && !status.includes('预售')) return false;
+        if (st === '原型' && !status.includes('原型')) return false;
       }
+      return true;
     });
+
+    document.getElementById('robotStats').innerHTML =
+      `<span>共 <b>${list.length}</b> 个型号</span>`;
+
+    // Group by type1
+    const groups = {};
+    list.forEach(r => {
+      const g = r['类型_一级']||'其他';
+      if (!groups[g]) groups[g] = [];
+      groups[g].push(r);
+    });
+
+    const tbody = document.getElementById('robotBody');
+    tbody.innerHTML = Object.entries(groups).map(([cat, items]) => `
+      <tr class="cat-row"><td colspan="9">${cat} (${items.length})</td></tr>
+      ${items.map(r => {
+        const status = (r['当前状态']||'').toLowerCase();
+        let sc = 'status-prototype';
+        if (status.includes('量产')) sc = 'status-production';
+        else if (status.includes('预售')) sc = 'status-preview';
+        return `<tr>
+          <td>${r['厂商']||''}</td>
+          <td><a href="${r['官网链接']||'#'}" target="_blank" style="color:var(--text);text-decoration:none">${r['型号']||''}</a></td>
+          <td>${r['类型_二级']||''}</td>
+          <td>${r['身高/尺寸']||''}</td>
+          <td>${r['重量']||''}</td>
+          <td>${r['负载能力']||''}</td>
+          <td>${r['续航时间']||''}</td>
+          <td>${r['价格']||''}</td>
+          <td><span class="status-tag ${sc}">${r['当前状态']||''}</span></td>
+        </tr>`;
+      }).join('')}
+    `).join('');
   }
 
-  // Top entities
-  const top10 = entities.slice(0, 10).reverse();
-  new Chart(document.getElementById('chartTopEntities'), {
-    type: 'bar',
-    data: {
-      labels: top10.map(e => e.name),
-      datasets: [{ label: '提及次数', data: top10.map(e => e.mentions),
-        backgroundColor: top10.map(e => e.type === 'company' ? '#3b82f680' : '#a78bfa80'),
-        borderColor: top10.map(e => e.type === 'company' ? '#3b82f6' : '#a78bfa'),
-        borderWidth: 1, borderRadius: 4 }]
-    },
-    options: { responsive: true, maintainAspectRatio: false, indexAxis: 'y',
-      scales: { x: { ticks: { color: '#6b7a99', font: {size:11} }, grid: { color: '#1e2736' } },
-               y: { ticks: { color: '#c8d0e0', font: {size:11} }, grid: { display: false } } },
-      plugins: { legend: { display: false } }
-    }
+  ['rfType1','rfType2','rfVendor','rfStatus'].forEach(id => {
+    document.getElementById(id).addEventListener('change', filterRobots);
   });
-
-  // Recent items
-  const recent = items.slice(0, 15);
-  document.getElementById('recentItems').innerHTML = recent.map(i => `
-    <li>
-      <div class="item-meta">
-        <span class="tag tag-${i.category}">${catLabels[i.category]||i.category}</span>
-        <span>${timeAgo(i.published_at)}</span>
-        <span>${i.source||''}</span>
-      </div>
-      <a class="item-title" href="${i.url||'#'}" target="_blank" rel="noopener">${i.title}</a>
-      ${i.summary ? `<div class="item-summary">${i.summary}</div>` : ''}
-    </li>
-  `).join('');
+  filterRobots();
 }
 
-// ── Timeline ──
-let timelineFilter = 'all';
-function renderTimeline(filter) {
-  if (filter !== undefined) timelineFilter = filter;
-  const cats = [...new Set(items.map(i => i.category))];
-  const catBtns = document.getElementById('categoryFilter');
-  if (filter === undefined) {
-    catBtns.innerHTML = '<button class="active" data-cat="all" onclick="renderTimeline(\'all\')">全部</button>' +
-      cats.map(c => `<button data-cat="${c}" onclick="renderTimeline('${c}')">${catLabels[c]||c}</button>`).join('');
-  } else {
-    catBtns.querySelectorAll('button').forEach(b => {
-      b.classList.toggle('active', b.dataset.cat === filter);
-    });
+// ══════════════════════════════════════════════════════════════════
+// NEWS
+// ══════════════════════════════════════════════════════════════════
+function renderNews() {
+  const data = state.news;
+  if (!data.days || !data.days.length) {
+    document.getElementById('newsContainer').innerHTML =
+      '<div class="card" style="text-align:center;padding:40px;color:var(--dim)">暂无新闻数据</div>';
+    return;
   }
-  const filtered = timelineFilter === 'all' ? items : items.filter(i => i.category === timelineFilter);
-  document.getElementById('timelineItems').innerHTML = filtered.map(i => `
-    <li>
-      <div class="item-meta">
-        <span class="tag tag-${i.category}">${catLabels[i.category]||i.category}</span>
-        <span>${timeAgo(i.published_at)}</span>
-        <span>${i.source||''}</span>
-      </div>
-      <a class="item-title" href="${i.url||'#'}" target="_blank" rel="noopener">${i.title}</a>
-      ${i.summary ? `<div class="item-summary">${i.summary}</div>` : ''}
-    </li>
-  `).join('');
+
+  // Populate industry filter
+  const inds = [...new Set(data.days.flatMap(d => (d.industries||[]).map(i => i.name)))];
+  populateSelect('newsIndustry', inds);
+
+  function filterNews() {
+    const src = document.getElementById('newsSource').value;
+    const ind = document.getElementById('newsIndustry').value;
+    const spec = document.getElementById('newsSpecial').checked;
+
+    let days = data.days;
+    if (src !== 'all') {
+      days = days.filter(d => d.source === src);
+    }
+    if (spec) {
+      days = days.filter(d => d.special_count > 0);
+    }
+
+    const container = document.getElementById('newsContainer');
+    container.innerHTML = days.map(day => {
+      let industries = day.industries || [];
+      if (ind !== 'all') {
+        industries = industries.filter(i => i.name === ind);
+      }
+      if (!industries.length) return '';
+
+      return `<div class="news-day">
+        <div class="date">📺 ${day.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')}
+          <span style="font-weight:400;color:var(--dim);font-size:12px">${day.total_items}条 · ${day.industry_count}个行业 ${day.special_count>0?' 🔔'+day.special_count+'条特别关注':''}</span>
+        </div>
+        ${industries.map(ind2 => `
+          <div class="news-industry">
+            <div class="ind-title">📌 ${ind2.name} <span class="count">${ind2.count}条${ind2.special?' 🔔':''}</span></div>
+            ${(ind2.items||[]).map(item => `
+              <div class="news-item" onclick="this.classList.toggle('expanded')">
+                <div class="title">${item.title||''}${item.special?'<span class="spec-tag">🔔特别关注</span>':''}</div>
+                <div class="summary">${item.summary||''}</div>
+              </div>
+            `).join('')}
+          </div>
+        `).join('')}
+      </div>`;
+    }).join('');
+  }
+
+  ['newsSource','newsIndustry'].forEach(id => {
+    document.getElementById(id).addEventListener('change', filterNews);
+  });
+  document.getElementById('newsSpecial').addEventListener('change', filterNews);
+  filterNews();
 }
 
-// ── Entities ──
-function renderEntities() {
-  document.getElementById('entityGrid').innerHTML = entities.map(e => `
-    <div class="entity-card" onclick="openEntity('${e.name.replace(/'/g,"\\'")}')">
-      <div class="name">${e.name}</div>
-      <div class="meta">
-        <span class="badge ${e.type}">${e.type}</span>
-        <span>${e.mentions} 次提及</span>
+// ── START ──────────────────────────────────────────────────────────
+init();
+
+// ══════════════════════════════════════════════════════════════════
+// SKILLS
+// ══════════════════════════════════════════════════════════════════
+function renderSkills() {
+  const scene = document.getElementById('sfScene').value;
+  let list = state.skills;
+  if (scene !== 'all') list = list.filter(s => s.scene === scene);
+
+  const container = document.getElementById('skillsContainer');
+  container.innerHTML = list.map(s => `
+    <div class="skill-card">
+      <div class="name">${s.name}</div>
+      <div class="tags" style="margin:2px 0">
+        <span class="tag">${s.scene === 'work' ? '工作' : s.scene === 'life' ? '生活' : '研究'}</span>
       </div>
+      <div class="desc">${s.desc}</div>
+      <div class="reason">💡 <strong>推荐理由：</strong>${s.reason}</div>
     </div>
   `).join('');
 }
-function filterEntities() {
-  const q = document.getElementById('entitySearch').value.toLowerCase();
-  document.querySelectorAll('.entity-card').forEach(el => {
-    el.style.display = el.querySelector('.name').textContent.toLowerCase().includes(q) ? '' : 'none';
-  });
-}
 
-// ── Entity modal ──
-function openEntity(name) {
-  const tl = timelines[name] || [];
-  document.getElementById('modalTitle').textContent = name;
-  const ent = entities.find(e => e.name === name);
-  document.getElementById('modalBadge').textContent = ent ? ent.type : '';
-  document.getElementById('modalBadge').className = 'entity-badge ' + (ent ? ent.type : '');
-  document.getElementById('modalTimeline').innerHTML = tl.length
-    ? tl.map(i => `
-      <div class="tl-item">
-        <div class="tl-date">${timeAgo(i.published_at)} · ${catLabels[i.category]||i.category}</div>
-        <div class="tl-title"><a href="${i.url||'#'}" target="_blank" style="color:inherit;text-decoration:none;">${i.title}</a></div>
-        ${i.summary ? `<div class="tl-summary">${i.summary}</div>` : ''}
-        ${i.url ? `<a class="tl-url" href="${i.url}" target="_blank">查看原文 →</a>` : ''}
-      </div>
-    `).join('')
-    : '<div class="no-result">暂无相关动态</div>';
-  document.getElementById('modal').classList.add('open');
-}
-function closeModal() {
-  document.getElementById('modal').classList.remove('open');
-}
-
-// ── Search ──
-let searchFilter = 'all';
-function initSearch() {
-  const cats = [...new Set(items.map(i => i.category))];
-  document.getElementById('searchCategory').innerHTML =
-    '<button class="active" data-cat="all" onclick="setSearchCat(\'all\')">全部</button>' +
-    cats.map(c => `<button data-cat="${c}" onclick="setSearchCat('${c}')">${catLabels[c]||c}</button>`).join('');
-}
-function setSearchCat(cat) {
-  searchFilter = cat;
-  document.querySelectorAll('#searchCategory button').forEach(b => b.classList.toggle('active', b.dataset.cat === cat));
-  doSearch();
-}
-function doSearch() {
-  const q = document.getElementById('globalSearch').value.toLowerCase();
-  const results = items.filter(i => {
-    if (searchFilter !== 'all' && i.category !== searchFilter) return false;
-    if (!q) return true;
-    return (i.title||'').toLowerCase().includes(q) ||
-           (i.summary||'').toLowerCase().includes(q) ||
-           (i.source||'').toLowerCase().includes(q);
-  }).slice(0, 100);
-  document.getElementById('searchResults').innerHTML = results.length
-    ? results.map(i => `
-      <li>
-        <div class="item-meta">
-          <span class="tag tag-${i.category}">${catLabels[i.category]||i.category}</span>
-          <span>${timeAgo(i.published_at)}</span>
-          <span>${i.source||''}</span>
-        </div>
-        <a class="item-title" href="${i.url||'#'}" target="_blank" rel="noopener">${i.title}</a>
-        ${i.summary ? `<div class="item-summary">${i.summary}</div>` : ''}
-      </li>
-    `).join('')
-    : '<div class="no-result">无结果</div>';
-}
-
-// ── Helpers ──
-function timeAgo(iso) {
-  if (!iso) return '';
-  const t = new Date(iso);
-  const now = new Date();
-  const diff = (now - t) / 1000;
-  if (diff < 60) return '刚刚';
-  if (diff < 3600) return Math.floor(diff/60) + '分钟前';
-  if (diff < 86400) return Math.floor(diff/3600) + '小时前';
-  if (diff < 172800) return '昨天';
-  if (diff < 2592000) return Math.floor(diff/86400) + '天前';
-  return t.toISOString().slice(0,10);
-}
+document.getElementById('sfScene').addEventListener('change', renderSkills);
 </script>
 </body>
 </html>

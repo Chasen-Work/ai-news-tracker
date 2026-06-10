@@ -1,58 +1,58 @@
 {
- "total_items": 127,
- "total_entities": 64,
- "total_dailies": 1,
+ "total_items": 528,
+ "total_entities": 86,
+ "total_dailies": 8,
  "categories": {
-  "ai-products": 46,
-  "industry": 30,
-  "tip": 29,
-  "ai-models": 17,
-  "paper": 5
+  "ai-products": 149,
+  "tip": 146,
+  "industry": 129,
+  "ai-models": 54,
+  "paper": 50
  },
  "entity_types": {
-  "company": 40,
-  "model": 24
+  "company": 46,
+  "model": 40
  },
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 3
+   "count": 14
   },
   {
-   "name": "X：OpenRouter (@OpenRouter)",
-   "count": 2
+   "name": "Hugging Face：Blog（RSS）",
+   "count": 13
+  },
+  {
+   "name": "Hacker News 热门（buzzing.cc 中文翻译）",
+   "count": 12
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 2
-  },
-  {
-   "name": "xAI：News（网页）",
-   "count": 1
-  },
-  {
-   "name": "X：面壁智能 OpenBMB (@OpenBMB)",
-   "count": 1
-  },
-  {
-   "name": "X：阿易 AI Notes (@AYi_AInotes)",
-   "count": 1
-  },
-  {
-   "name": "X：腾讯混元 (@TencentHunyuan)",
-   "count": 1
-  },
-  {
-   "name": "X：商汤 SenseTime (@SenseTime_AI)",
-   "count": 1
-  },
-  {
-   "name": "X：Vista (@vista8)",
-   "count": 1
+   "count": 9
   },
   {
    "name": "X：Rohan Paul (@rohanpaul_ai)",
-   "count": 1
+   "count": 7
+  },
+  {
+   "name": "Bloomberg：Technology（RSS）",
+   "count": 7
+  },
+  {
+   "name": "X：OpenRouter (@OpenRouter)",
+   "count": 6
+  },
+  {
+   "name": "X：Replit (@Replit)",
+   "count": 4
+  },
+  {
+   "name": "X：NVIDIA AI (@NVIDIAAI)",
+   "count": 4
+  },
+  {
+   "name": "X：Microsoft Research (@MSFTResearch)",
+   "count": 4
   }
  ],
  "by_date": [
@@ -62,8 +62,36 @@
   },
   {
    "date": "2026-06-02",
-   "count": 73
+   "count": 77
+  },
+  {
+   "date": "2026-06-03",
+   "count": 69
+  },
+  {
+   "date": "2026-06-04",
+   "count": 67
+  },
+  {
+   "date": "2026-06-05",
+   "count": 66
+  },
+  {
+   "date": "2026-06-06",
+   "count": 39
+  },
+  {
+   "date": "2026-06-07",
+   "count": 29
+  },
+  {
+   "date": "2026-06-08",
+   "count": 59
+  },
+  {
+   "date": "2026-06-09",
+   "count": 68
   }
  ],
- "updated_at": "2026-06-02T21:53:24Z"
+ "updated_at": "2026-06-09T17:14:59Z"
 }
