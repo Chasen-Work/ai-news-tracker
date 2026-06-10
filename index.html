@@ -6,332 +6,668 @@
 <title>AIHOT · 智能情报站</title>
 <meta name="description" content="AIHOT智能情报站 - 每日AI行业新闻、大模型选型对比、机器人档案(人形/清洁/四足/配送/AI玩具)、实用技能推荐">
 <style>
-  :root {
-    --bg: #0b0e14; --card: #131820; --border: #1e2736;
-    --text: #c8d0e0; --dim: #6b7a99; --accent: #3b82f6;
-    --green: #22c55e; --orange: #f59e0b; --red: #ef4444;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "PingFang SC", "Helvetica Neue", sans-serif;
-    background: var(--bg); color: var(--text); min-height: 100vh; line-height: 1.6;
-  }
-  ::-webkit-scrollbar { width: 6px; }
-  ::-webkit-scrollbar-track { background: var(--bg); }
-  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+/* ══════════════════════════════════════════════════════════════
+   DESIGN SYSTEM — Linear-app (Open Design)
+   ══════════════════════════════════════════════════════════════ */
 
-  .header {
-    border-bottom: 1px solid var(--border); padding: 20px 32px 12px;
-    position: sticky; top: 0; z-index: 100;
-    background: rgba(11,14,20,.92); backdrop-filter: blur(12px);
-  }
-  .header h1 { font-size: 22px; font-weight: 600; }
-  .header h1 span { color: var(--accent); }
-  .header .sub { font-size: 12px; color: var(--dim); margin-top: 2px; }
-  .header .status { font-size: 11px; color: var(--green); margin-left: 12px; }
+:root {
+  /* ── Surface ── */
+  --bg:           #08090a;
+  --surface:      #191a1b;
+  --surface-elev: #1f2022;
 
-  .tabs {
-    display: flex; gap: 0; padding: 0 32px;
-    border-bottom: 1px solid var(--border); overflow-x: auto;
-  }
-  .tabs button {
-    background: none; border: none; color: var(--dim);
-    font-size: 13px; padding: 10px 16px; cursor: pointer;
-    border-bottom: 2px solid transparent; transition: all .2s;
-    white-space: nowrap; font-family: inherit;
-  }
-  .tabs button:hover { color: var(--text); }
-  .tabs button.active { color: var(--accent); border-bottom-color: var(--accent); }
-  .tabs .badge { font-size: 10px; background: var(--accent); color: #fff; border-radius: 8px; padding: 1px 6px; margin-left: 4px; }
+  /* ── Foreground ── */
+  --fg:   #f7f8f8;
+  --fg-2: #d0d6e0;
+  --muted: #8a8f98;
+  --meta:  #62666d;
 
-  .main { max-width: 1400px; margin: 0 auto; padding: 20px 32px; }
-  .tab-content { display: none; }
-  .tab-content.active { display: block; }
+  /* ── Border ── */
+  --border:      rgba(255, 255, 255, 0.08);
+  --border-soft: rgba(255, 255, 255, 0.05);
 
-  /* Cards */
-  .card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 10px; padding: 16px; margin-bottom: 14px; transition: border-color .2s;
-  }
-  .card:hover { border-color: var(--accent); }
-  .card h3 { font-size: 13px; font-weight: 500; color: var(--dim); margin-bottom: 10px; text-transform: uppercase; letter-spacing: .5px; }
+  /* ── Accent (Linear indigo-violet) ── */
+  --accent:        #5e6ad2;
+  --accent-on:     #ffffff;
+  --accent-hover:  #828fff;
+  --accent-active: #4752c4;
+  --accent-glow:   rgba(94, 106, 210, 0.12);
 
-  /* Filters */
-  .filters {
-    display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px;
-    padding: 12px; background: var(--card); border-radius: 8px; border: 1px solid var(--border);
-  }
-  .filters select, .filters input {
-    background: var(--bg); border: 1px solid var(--border); color: var(--text);
-    padding: 6px 10px; border-radius: 6px; font-size: 12px; font-family: inherit;
-  }
-  .filters select:focus, .filters input:focus { outline: none; border-color: var(--accent); }
-  .filters label { font-size: 12px; color: var(--dim); display: flex; align-items: center; gap: 4px; }
-  .filter-group { display: flex; align-items: center; gap: 4px; }
+  /* ── Semantic ── */
+  --success: #27a644;
+  --warn:    #eab308;
+  --danger:  #dc2626;
 
-  /* Model/Entity Grid */
-  .grid {
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-    gap: 12px; margin-bottom: 20px;
-  }
-  .entity-card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 10px; padding: 14px; transition: all .2s;
-  }
-  .entity-card:hover { border-color: var(--accent); transform: translateY(-1px); }
-  .entity-card .name { font-size: 14px; font-weight: 600; margin-bottom: 4px; }
-  .entity-card .name a { color: var(--text); text-decoration: none; }
-  .entity-card .name a:hover { color: var(--accent); }
-  .entity-card .vendor { font-size: 11px; color: var(--dim); margin-bottom: 6px; }
-  .entity-card .tags { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 6px; }
-  .tag {
-    font-size: 10px; padding: 2px 6px; border-radius: 4px;
-    background: rgba(59,130,246,.15); color: var(--accent);
-    border: 1px solid rgba(59,130,246,.25);
-  }
-  .tag.cn { background: rgba(34,197,94,.15); color: var(--green); border-color: rgba(34,197,94,.25); }
-  .tag.special { background: rgba(245,158,11,.15); color: var(--orange); border-color: rgba(245,158,11,.25); }
-  .entity-card .meta { font-size: 11px; color: var(--dim); display: flex; gap: 12px; flex-wrap: wrap; }
-  .entity-card .meta span { display: flex; align-items: center; gap: 3px; }
-  .entity-card .links { margin-top: 8px; display: flex; gap: 8px; }
-  .entity-card .links a {
-    font-size: 11px; color: var(--accent); text-decoration: none;
-    padding: 2px 8px; border: 1px solid rgba(59,130,246,.3); border-radius: 4px;
-  }
-  .entity-card .links a:hover { background: rgba(59,130,246,.1); }
-  .entity-card .status-tag { font-size: 10px; padding: 1px 5px; border-radius: 3px; }
-  .status-production { background: rgba(34,197,94,.15); color: var(--green); }
-  .status-preview { background: rgba(245,158,11,.15); color: var(--orange); }
-  .status-prototype { background: rgba(239,68,68,.15); color: var(--red); }
+  /* ── Typography ── */
+  --font-display: "Inter Variable", "Inter", "SF Pro Display", -apple-system, system-ui, "PingFang SC", "Segoe UI", Roboto, sans-serif;
+  --font-body:    "Inter Variable", "Inter", "SF Pro Display", -apple-system, system-ui, "PingFang SC", "Segoe UI", Roboto, sans-serif;
+  --font-mono:    "Berkeley Mono", ui-monospace, "SF Mono", Menlo, Monaco, Consolas, monospace;
 
-  /* News section */
-  .news-day {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 10px; padding: 16px; margin-bottom: 16px;
-  }
-  .news-day .date { font-size: 14px; font-weight: 600; color: var(--accent); margin-bottom: 8px; }
-  .news-industry { margin-bottom: 12px; }
-  .news-industry .ind-title {
-    font-size: 12px; font-weight: 500; color: var(--orange);
-    margin-bottom: 4px; display: flex; align-items: center; gap: 6px;
-  }
-  .news-industry .ind-title .count { font-weight: 400; color: var(--dim); }
-  .news-item {
-    padding: 6px 0; border-bottom: 1px solid rgba(30,39,54,.5); cursor: pointer;
-  }
-  .news-item:last-child { border-bottom: none; }
-  .news-item .title { font-size: 13px; margin-bottom: 2px; }
-  .news-item .summary { font-size: 11px; color: var(--dim); display: none; }
-  .news-item.expanded .summary { display: block; margin-top: 4px; }
-  .news-item .spec-tag { font-size: 10px; background: rgba(245,158,11,.15); color: var(--orange); padding: 1px 5px; border-radius: 3px; margin-left: 6px; }
+  --text-xs:   12px;
+  --text-sm:   14px;
+  --text-base: 16px;
+  --text-lg:   18px;
+  --text-xl:   24px;
+  --text-2xl:  32px;
 
-  /* Robot table */
-  .robot-table {
-    width: 100%; border-collapse: collapse; font-size: 12px;
-  }
-  .robot-table th {
-    background: var(--card); color: var(--dim); font-weight: 500;
-    text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border);
-    position: sticky; top: 0; z-index: 50; cursor: pointer;
-    white-space: nowrap;
-  }
-  .robot-table th:hover { color: var(--text); }
-  .robot-table td { padding: 8px 10px; border-bottom: 1px solid rgba(30,39,54,.3); }
-  .robot-table tr:hover td { background: rgba(59,130,246,.05); }
-  .robot-table .cat-row td {
-    background: rgba(30,39,54,.5); font-weight: 600; font-size: 11px;
-    color: var(--accent); padding: 6px 10px; letter-spacing: .5px;
-  }
+  --leading-body: 1.5;
+  --tracking-display: -0.022em;
 
-  /* Skill recommendations */
-  .skill-card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 10px; padding: 14px; margin-bottom: 10px;
-  }
-  .skill-card .name { font-size: 14px; font-weight: 600; color: var(--accent); }
-  .skill-card .desc { font-size: 12px; color: var(--dim); margin: 4px 0; }
-  .skill-card .reason { font-size: 11px; color: var(--text); margin-top: 4px; }
+  /* ── Spacing ── */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  20px;
+  --space-6:  24px;
+  --space-8:  32px;
+  --space-12: 48px;
 
-  /* Stats bar */
-  .stats-bar {
-    display: flex; gap: 24px; padding: 12px 0;
-    font-size: 12px; color: var(--dim);
-  }
-  .stats-bar span { display: flex; align-items: center; gap: 4px; }
-  .stats-bar .num { color: var(--text); font-weight: 600; }
+  /* ── Radius ── */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 9999px;
 
-  /* Robot brand cards */
-  .brand-cards {
-    display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px;
-  }
-  .brand-card {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 10px; padding: 12px 16px; min-width: 140px;
-    cursor: pointer; transition: all .2s;
-    display: flex; flex-direction: column; gap: 2px;
-  }
-  .brand-card:hover { border-color: var(--accent); transform: translateY(-1px); }
-  .brand-card .name { font-size: 14px; font-weight: 600; color: var(--text); }
-  .brand-card .sub { font-size: 11px; color: var(--dim); }
-  .brand-card .count { font-size: 11px; color: var(--accent); }
-  .brand-card .link {
-    font-size: 11px; color: var(--accent); text-decoration: none;
-    margin-top: 4px; padding: 2px 8px; border: 1px solid rgba(59,130,246,.3);
-    border-radius: 4px; display: inline-block; width: fit-content;
-  }
-  .brand-card .link:hover { background: rgba(59,130,246,.1); }
+  /* ── Elevation ── */
+  --elev-ring:  0 0 0 1px var(--border);
+  --elev-raised:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    0 0 0 1px rgba(255, 255, 255, 0.05);
 
-  /* Robot category tabs */
-  .cat-tabs {
-    display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 14px;
-  }
-  .cat-tabs button {
-    background: var(--card); border: 1px solid var(--border); color: var(--dim);
-    font-size: 13px; padding: 8px 14px; cursor: pointer; border-radius: 8px;
-    transition: all .2s; font-family: inherit;
-  }
-  .cat-tabs button:hover { color: var(--text); border-color: var(--accent); }
-  .cat-tabs button.active { color: #fff; background: var(--accent); border-color: var(--accent); }
+  --focus-ring: 0 0 0 2px color-mix(in oklab, var(--accent), transparent 30%), 0 4px 12px rgba(0, 0, 0, 0.1);
 
-  /* Column toggle */
-  .col-toggles {
-    display: flex; gap: 6px; flex-wrap: wrap; padding: 8px 12px;
-    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
-    margin-bottom: 12px;
-  }
-  .col-toggles label {
-    font-size: 11px; color: var(--dim); display: flex; align-items: center;
-    gap: 3px; cursor: pointer; padding: 2px 6px; border-radius: 4px;
-    transition: background .15s;
-  }
-  .col-toggles label:hover { background: rgba(59,130,246,.08); }
-  .col-toggles input { accent-color: var(--accent); }
-  /* ── Pagination ── */
-  .pagination {
-    display: flex; align-items: center; justify-content: center;
-    gap: 8px; padding: 16px 0; margin-top: 12px;
-  }
-  .pagination button {
-    background: var(--card); border: 1px solid var(--border); color: var(--text);
-    padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px;
-    font-family: inherit; transition: all .15s;
-  }
-  .pagination button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
-  .pagination button:disabled { opacity: .35; cursor: default; }
-  .pagination .page-info { font-size: 12px; color: var(--dim); padding: 0 8px; }
-  .pagination .page-info b { color: var(--text); }
+  /* ── Motion ── */
+  --motion-fast:   150ms;
+  --motion-base:   200ms;
+  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
 
-  /* ── Overlay ── */
-  .overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%;
-    background:rgba(0,0,0,0.7); z-index:1000; backdrop-filter:blur(4px); }
-  .overlay-content { background:var(--card); border:1px solid var(--border);
-    border-radius:12px; padding:24px; margin:40px auto; width:90%; max-width:700px; }
+  /* ── Layout ── */
+  --container-max:            1280px;
+  --container-gutter-desktop: 24px;
+  --container-gutter-tablet:  16px;
+  --container-gutter-phone:   12px;
+}
 
-  /* ── Responsive ── */
-  @media (max-width: 768px) {
-    .header { padding: 14px 16px 10px; }
-    .header h1 { font-size: 18px; }
-    .header .sub { font-size: 11px; }
-    .tabs { padding: 0 12px; }
-    .tabs button { font-size: 12px; padding: 8px 10px; }
-    .main { padding: 12px 12px; }
-    .grid { grid-template-columns: 1fr; }
-    .filters { flex-direction: column; }
-    .filters select, .filters input { width: 100%; }
-    .brand-cards { flex-direction: column; }
-    .brand-card { min-width: auto; width: 100%; }
-    .cat-tabs { gap: 4px; }
-    .cat-tabs button { font-size: 12px; padding: 6px 10px; }
-    .col-toggles { flex-direction: column; max-height: 200px; overflow-y: auto; }
-    .robot-table { font-size: 10px; }
-    .robot-table th, .robot-table td { padding: 4px 5px; white-space: nowrap; }
-    .card { padding: 12px; }
-    .stats-bar { gap: 12px; font-size: 11px; flex-wrap: wrap; }
-    .pagination { flex-wrap: wrap; }
-    .pagination button { padding: 8px 16px; font-size: 13px; }
-    .news-item .title { font-size: 12px; }
-    .entity-card { padding: 10px; }
-  }
+/* --- Reset --- */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
-  @media (max-width: 480px) {
-    .header h1 { font-size: 16px; }
-    .header .status { display: block; margin-left: 0; margin-top: 4px; }
-    .tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; }
-    .tabs button { font-size: 11px; padding: 6px 8px; }
-    .main { padding: 8px 8px; }
-    .card h3 { font-size: 12px; }
-  }
+html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  font-feature-settings: "cv01", "ss03";
+  color: var(--fg-2);
+  background: var(--bg);
+  min-height: 100vh;
+}
+
+::selection { background: var(--accent-glow); color: var(--accent-hover); }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.18); }
+
+/* --- Typography scale (OD: multiplicative 1.25) --- */
+h1, h2, h3, h4 { font-weight: 590; letter-spacing: -0.01em; }
+h1 { font-size: 28px; line-height: 1.2; }
+h2 { font-size: 22px; line-height: 1.3; }
+h3 { font-size: 18px; line-height: 1.4; }
+a { color: var(--accent-hover); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Layout --- */
+.app-header {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(15,15,15,0.92); backdrop-filter: blur(16px) saturate(1.2);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 1280px; margin: 0 auto;
+  padding: var(--space-4) var(--space-6);
+  display: flex; align-items: center; gap: var(--space-6);
+}
+
+.header-brand {
+  display: flex; flex-direction: column; gap: 1px;
+  flex-shrink: 0;
+}
+.header-brand h1 { font-size: 20px; font-weight: 650; letter-spacing: -0.02em; }
+.header-brand h1 span { color: var(--accent); }
+.header-brand .sub { font-size: 12px; color: var(--meta); letter-spacing: 0.02em; }
+
+.header-center { flex: 1; min-width: 0; }
+.header-right { display: flex; align-items: center; gap: var(--space-4); }
+
+/* --- Search --- */
+.search-bar {
+  position: relative; width: 100%; max-width: 400px;
+}
+.search-bar input {
+  width: 100%; padding: 8px 12px 8px 34px;
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-sm); color: var(--fg); font-size: 13px;
+  font-family: inherit; outline: none; transition: border-color .15s;
+}
+.search-bar input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px var(--accent-glow); }
+.search-bar input::placeholder { color: var(--meta); }
+.search-bar::before {
+  content: '🔍'; position: absolute; left: 10px; top: 50%;
+  transform: translateY(-50%); font-size: 13px; opacity: 0.5;
+  pointer-events: none;
+}
+
+/* --- Status dot --- */
+.status-dot {
+  font-size: 12px; color: var(--muted); white-space: nowrap;
+  display: flex; align-items: center; gap: 4px;
+}
+.status-dot::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--success); flex-shrink: 0;
+}
+
+/* --- Tab navigation --- */
+.tab-bar {
+  border-bottom: 1px solid var(--border);
+  padding: 0 var(--space-6);
+  display: flex; gap: 0;
+  overflow-x: auto; -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.tab-bar::-webkit-scrollbar { display: none; }
+
+.tab-btn {
+  background: none; border: none; color: var(--muted);
+  font-size: 13px; font-family: inherit; font-weight: 510;
+  padding: 10px 18px; cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color .15s, border-color .15s;
+  white-space: nowrap; letter-spacing: 0.02em;
+  position: relative;
+}
+.tab-btn:hover { color: var(--fg); }
+.tab-btn.active { color: var(--accent-hover); border-bottom-color: var(--accent); }
+.tab-btn .badge {
+  font-size: 10px; font-weight: 510;
+  background: var(--accent-glow); color: var(--accent-hover);
+  border-radius: 20px; padding: 1px 7px; margin-left: 5px;
+  letter-spacing: 0;
+}
+
+/* --- Main content --- */
+.main {
+  max-width: 1280px; margin: 0 auto;
+  padding: var(--space-6);
+}
+
+/* Tab content transition */
+.tab-content {
+  display: none;
+  animation: tab-enter .2s ease-out;
+}
+.tab-content.active { display: block; }
+
+@keyframes tab-enter {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tab-content { animation: none; }
+}
+
+/* --- Cards (OD: subtle border, no heavy shadow) --- */
+.card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: var(--space-4);
+  margin-bottom: var(--space-4);
+  transition: border-color .15s;
+}
+.card:hover { border-color: rgba(255,255,255,0.14); }
+.card-header {
+  font-size: 11px; font-weight: 590; color: var(--meta);
+  letter-spacing: 0.06em; text-transform: uppercase;
+  margin-bottom: var(--space-2);
+}
+
+/* --- Filters bar --- */
+.filters {
+  display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-4);
+  padding: var(--space-2) var(--space-4);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  align-items: center;
+}
+.filters select, .filters input[type="text"] {
+  background: var(--bg); border: 1px solid var(--border);
+  color: var(--fg); padding: 5px 10px; border-radius: var(--radius-sm);
+  font-size: 12px; font-family: inherit; outline: none;
+  transition: border-color .15s;
+}
+.filters select { min-width: 100px; cursor: pointer; }
+.filters select:focus, .filters input:focus { border-color: var(--accent); }
+.filters label {
+  font-size: 12px; color: var(--muted);
+  display: flex; align-items: center; gap: 4px;
+  white-space: nowrap;
+}
+
+/* --- Stats bar --- */
+.stats-bar {
+  display: flex; gap: var(--space-6); padding: var(--space-2) 0;
+  font-size: 12px; color: var(--muted);
+}
+.stats-bar .num { color: var(--fg); font-weight: 590; }
+
+/* ══════════════════════════════════════════════════════════════
+   NEWS SECTION
+   ══════════════════════════════════════════════════════════════ */
+
+.news-day {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+.news-day .date {
+  font-size: 15px; font-weight: 590; color: var(--accent-hover);
+  margin-bottom: var(--space-4); letter-spacing: -0.01em;
+}
+.news-day .date .meta {
+  font-weight: 400; font-size: 12px; color: var(--muted); margin-left: var(--space-2);
+  letter-spacing: 0;
+}
+
+.news-industry { margin-bottom: var(--space-4); }
+.news-industry:last-child { margin-bottom: 0; }
+
+.news-industry .ind-title {
+  font-size: 11px; font-weight: 590; color: var(--meta);
+  letter-spacing: 0.06em; text-transform: uppercase;
+  margin-bottom: var(--space-1); display: flex; align-items: center; gap: 6px;
+}
+.news-industry .ind-title .count { font-weight: 400; color: var(--meta); letter-spacing: 0; }
+
+.news-item {
+  padding: 8px 0; border-bottom: 1px solid var(--border);
+  cursor: pointer; transition: background .1s;
+  border-radius: 4px; padding-left: var(--space-2); padding-right: var(--space-2);
+  margin: 0 calc(-1 * var(--space-2));
+}
+.news-item:last-child { border-bottom: none; }
+.news-item:hover { background: rgba(255,255,255,0.03); }
+.news-item .title {
+  font-size: 14px; line-height: 1.5; margin-bottom: 1px;
+  display: flex; align-items: flex-start; gap: 6px;
+}
+.news-item .summary {
+  font-size: 12px; color: var(--muted); line-height: 1.6;
+  display: none; margin-top: 4px;
+}
+.news-item.expanded .summary { display: block; }
+
+.spec-tag {
+  font-size: 10px; font-weight: 510;
+  background: rgba(245,158,11,0.12);
+  color: var(--warn); padding: 1px 6px; border-radius: 3px;
+  flex-shrink: 0; margin-top: 2px; letter-spacing: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   MODEL GRID
+   ══════════════════════════════════════════════════════════════ */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+}
+
+.entity-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: var(--space-4);
+  transition: border-color .15s, transform .15s;
+}
+.entity-card:hover {
+  border-color: rgba(255,255,255,0.14);
+  transform: translateY(-1px);
+}
+.entity-card .name { font-size: 14px; font-weight: 590; margin-bottom: 3px; }
+.entity-card .name a { color: var(--fg); }
+.entity-card .name a:hover { color: var(--accent-hover); }
+.entity-card .vendor { font-size: 11px; color: var(--muted); margin-bottom: 6px; }
+.entity-card .tags { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 6px; }
+
+.tag {
+  font-size: 10px; font-weight: 510; padding: 2px 7px; border-radius: 4px;
+  background: var(--accent-glow); color: var(--accent-hover);
+  border: 1px solid rgba(94,106,210,0.2);
+  letter-spacing: 0.02em;
+}
+.tag.cn { background: rgba(34,197,94,0.12); color: var(--success); border-color: rgba(34,197,94,0.2); }
+.tag.special { background: rgba(245,158,11,0.12); color: var(--warn); border-color: rgba(245,158,11,0.2); }
+
+.entity-card .meta {
+  font-size: 11px; color: var(--muted);
+  display: flex; gap: var(--space-2); flex-wrap: wrap;
+}
+.entity-card .meta span { display: flex; align-items: center; gap: 3px; }
+.entity-card .links { margin-top: var(--space-2); display: flex; gap: var(--space-2); }
+.entity-card .links a {
+  font-size: 11px; color: var(--accent-hover); padding: 2px 9px;
+  border: 1px solid rgba(94,106,210,0.2); border-radius: var(--radius-sm);
+  transition: background .1s; text-decoration: none;
+}
+.entity-card .links a:hover { background: var(--accent-glow); }
+
+.status-tag { font-size: 10px; padding: 1px 5px; border-radius: 3px; letter-spacing: 0.02em; }
+.status-production { background: rgba(34,197,94,0.12); color: var(--success); }
+.status-preview { background: rgba(245,158,11,0.12); color: var(--warn); }
+.status-prototype { background: rgba(239,68,68,0.12); color: var(--danger); }
+
+/* ══════════════════════════════════════════════════════════════
+   ROBOT TABLE
+   ══════════════════════════════════════════════════════════════ */
+
+.robot-table {
+  width: 100%; border-collapse: separate; border-spacing: 0;
+  font-size: 12px;
+}
+.robot-table th {
+  background: var(--surface); color: var(--muted); font-weight: 510;
+  text-align: left; padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  position: sticky; top: 0; z-index: 50; cursor: pointer;
+  white-space: nowrap; font-size: 11px; letter-spacing: 0.02em;
+  transition: color .1s;
+}
+.robot-table th:hover { color: var(--fg); }
+.robot-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 12px;
+}
+.robot-table tr:hover td { background: rgba(255,255,255,0.02); }
+.robot-table .cat-row td {
+  background: rgba(255,255,255,0.04);
+  font-weight: 590; font-size: 11px;
+  color: var(--accent-hover); padding: 6px 10px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+}
+
+/* --- Brand cards --- */
+.brand-cards {
+  display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-4);
+}
+.brand-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: 10px 14px; min-width: 130px;
+  cursor: pointer; transition: border-color .15s, transform .15s;
+  display: flex; flex-direction: column; gap: 2px;
+}
+.brand-card:hover {
+  border-color: var(--accent); transform: translateY(-1px);
+}
+.brand-card .name { font-size: 13px; font-weight: 590; color: var(--fg); }
+.brand-card .sub { font-size: 11px; color: var(--muted); }
+.brand-card .count { font-size: 11px; color: var(--accent-hover); }
+.brand-card .link {
+  font-size: 11px; color: var(--accent-hover); margin-top: 2px;
+  padding: 2px 8px; border: 1px solid rgba(94,106,210,0.2);
+  border-radius: var(--radius-sm); display: inline-block; width: fit-content;
+  transition: background .1s; text-decoration: none;
+}
+.brand-card .link:hover { background: var(--accent-glow); }
+
+/* --- Robot category tabs --- */
+.cat-tabs {
+  display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: var(--space-4);
+}
+.cat-tabs button {
+  background: var(--surface); border: 1px solid var(--border); color: var(--muted);
+  font-size: 12px; font-family: inherit; font-weight: 510;
+  padding: 6px 13px; cursor: pointer; border-radius: var(--radius-sm);
+  transition: all .15s; letter-spacing: 0.02em;
+}
+.cat-tabs button:hover { color: var(--fg); border-color: rgba(255,255,255,0.14); }
+.cat-tabs button.active {
+  color: #fff; background: var(--accent); border-color: var(--accent);
+}
+
+/* --- Column toggles --- */
+.col-toggles {
+  display: flex; gap: 4px; flex-wrap: wrap; padding: var(--space-2) var(--space-4);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md); margin-bottom: var(--space-2);
+}
+.col-toggles label {
+  font-size: 11px; color: var(--muted); display: flex; align-items: center;
+  gap: 3px; cursor: pointer; padding: 2px 6px; border-radius: 4px;
+  transition: background .1s;
+}
+.col-toggles label:hover { background: rgba(255,255,255,0.04); }
+.col-toggles input { accent-color: var(--accent); }
+
+/* --- Pagination --- */
+.pagination {
+  display: flex; align-items: center; justify-content: center;
+  gap: var(--space-2); padding: var(--space-4) 0; margin-top: var(--space-2);
+}
+.pagination button {
+  background: var(--surface); border: 1px solid var(--border); color: var(--muted);
+  padding: 6px 14px; border-radius: var(--radius-sm); cursor: pointer;
+  font-size: 12px; font-family: inherit; font-weight: 510;
+  transition: all .15s; letter-spacing: 0.02em;
+}
+.pagination button:hover:not(:disabled) { color: var(--fg); border-color: rgba(255,255,255,0.14); }
+.pagination button:disabled { opacity: .3; cursor: default; }
+.pagination .page-info { font-size: 12px; color: var(--muted); padding: 0 var(--space-2); }
+.pagination .page-info b { color: var(--fg); font-weight: 590; }
+
+/* --- Ecosystem Overlay (OD: 200-300ms enter) --- */
+.overlay {
+  display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(0,0,0,0.65); z-index: 1000;
+  backdrop-filter: blur(6px);
+  animation: overlay-in .2s ease-out;
+}
+.overlay.show { display: block; }
+
+@keyframes overlay-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.overlay-content {
+  background: var(--surface-elev); border: 1px solid rgba(255,255,255,0.14);
+  border-radius: 12px; padding: var(--space-6); margin: 40px auto;
+  width: 92%; max-width: 680px; max-height: 80vh; overflow-y: auto;
+  animation: panel-in .25s ease-out;
+}
+
+@keyframes panel-in {
+  from { opacity: 0; transform: translateY(12px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .overlay, .overlay-content { animation: none; }
+}
+
+/* --- Skills --- */
+.skill-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius-md); padding: var(--space-4);
+  margin-bottom: var(--space-2);
+  transition: border-color .15s;
+}
+.skill-card:hover { border-color: rgba(255,255,255,0.14); }
+.skill-card .name { font-size: 14px; font-weight: 590; color: var(--accent-hover); }
+.skill-card .desc { font-size: 12px; color: var(--muted); margin: 4px 0; line-height: 1.5; }
+.skill-card .reason { font-size: 12px; color: var(--fg); margin-top: 4px; line-height: 1.5; }
+
+/* --- Loading skeleton --- */
+.skeleton {
+  background: linear-gradient(90deg, var(--surface) 25%, rgba(255,255,255,0.04) 50%, var(--surface) 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s ease infinite;
+  border-radius: 4px;
+}
+.skeleton-line { height: 14px; margin-bottom: 8px; width: 100%; }
+.skeleton-line.short { width: 60%; }
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skeleton { animation: none; background: var(--surface); }
+}
+
+/* --- Empty state --- */
+.empty-state {
+  text-align: center; padding: 60px 20px; color: var(--meta);
+}
+.empty-state h3 { font-size: 16px; color: var(--muted); margin-bottom: 4px; }
+.empty-state p { font-size: 13px; }
+
+/* ══════════════════════════════════════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════════════════════════════════════ */
+
+@media (max-width: 900px) {
+  .header-inner { flex-wrap: wrap; gap: var(--space-2); padding: var(--space-2) var(--space-4); }
+  .header-right { width: 100%; }
+  .search-bar { max-width: 100%; }
+  .header-brand .sub { display: none; }
+}
+
+@media (max-width: 768px) {
+  .header-inner { padding: var(--space-2) var(--space-4); }
+  .header-brand h1 { font-size: 17px; }
+  .tab-bar { padding: 0 var(--space-4); }
+  .tab-btn { font-size: 12px; padding: 8px 12px; }
+  .main { padding: var(--space-4); }
+  .grid { grid-template-columns: 1fr; }
+  .filters { flex-direction: column; align-items: stretch; }
+  .filters select { width: 100%; min-width: auto; }
+  .brand-cards { flex-direction: column; }
+  .brand-card { min-width: auto; width: 100%; }
+  .cat-tabs { gap: 4px; }
+  .cat-tabs button { font-size: 11px; padding: 5px 10px; }
+  .col-toggles { flex-direction: column; max-height: 180px; overflow-y: auto; }
+  .robot-table { font-size: 10px; }
+  .robot-table th, .robot-table td { padding: 4px 5px; white-space: nowrap; }
+  .card { padding: var(--space-2); }
+  .news-day { padding: var(--space-4); }
+  .stats-bar { gap: var(--space-2); font-size: 11px; flex-wrap: wrap; }
+  .pagination { flex-wrap: wrap; }
+  .overlay-content { margin: 20px auto; padding: var(--space-4); width: 96%; }
+}
+
+@media (max-width: 480px) {
+  .header-brand h1 { font-size: 15px; }
+  .tab-btn { font-size: 11px; padding: 6px 10px; }
+  .main { padding: var(--space-2); }
+  .news-item .title { font-size: 13px; }
+}
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h1>AI<span>HOT</span> · 智能情报站
-    <span class="status" id="updateStatus">● 数据加载中...</span>
-  </h1>
-  <div class="sub">新闻联播 · 模型选型 · 机器人档案 · 技能推荐</div>
+<div class="app-header">
+  <div class="header-inner">
+    <div class="header-brand">
+      <h1>AI<span>HOT</span> · 智能情报站</h1>
+      <div class="sub">新闻 · 模型 · 机器人 · 技能</div>
+    </div>
+
+    <div class="header-center">
+      <div class="search-bar">
+        <input type="text" id="globalSearch" placeholder="搜索新闻、模型、机器人..." autocomplete="off">
+      </div>
+    </div>
+
+    <div class="header-right">
+      <span class="status-dot" id="updateStatus">数据加载中...</span>
+    </div>
+  </div>
 </div>
 
-<div class="tabs" id="tabs">
+<div class="tab-bar" id="tabs">
   <button class="active" data-tab="news">📺 新闻</button>
-  <button data-tab="models">🧠 模型选型</button>
-  <button data-tab="robots">🤖 机器人档案</button>
-  <button data-tab="skills">🛠 技能推荐</button>
+  <button data-tab="models">🧠 模型选型 <span class="badge" id="modelsBadge">0</span></button>
+  <button data-tab="robots">🤖 机器人档案 <span class="badge" id="robotsBadge">0</span></button>
+  <button data-tab="skills">🛠 技能推荐 <span class="badge" id="skillsBadge">0</span></button>
 </div>
 
 <div class="main">
 
-<!-- ============================================================ -->
-<!-- TAB 1: NEWS -->
-<!-- ============================================================ -->
+<!-- ══════════════ TAB 1: NEWS ══════════════ -->
 <div class="tab-content active" id="tab-news">
   <div class="filters" id="newsFilters">
-    <label>来源：<select id="newsSource">
-      <option value="all">全部</option>
-      <option value="xwlb">新闻联播</option>
-      <option value="global">全球动态</option>
-    </select></label>
-    <label>行业：<select id="newsIndustry">
-      <option value="all">全部行业</option>
-    </select></label>
-    <label>🔔 <input type="checkbox" id="newsSpecial"> 仅特别关注</label>
+    <label>来源：
+      <select id="newsSource">
+        <option value="all">全部</option>
+        <option value="xwlb">新闻联播</option>
+        <option value="global">全球动态</option>
+      </select>
+    </label>
+    <label>行业：
+      <select id="newsIndustry">
+        <option value="all">全部行业</option>
+      </select>
+    </label>
+    <label>
+      <input type="checkbox" id="newsSpecial"> 🔔 仅特别关注
+    </label>
   </div>
   <div id="newsContainer">
-    <div class="card" style="text-align:center;padding:40px;color:var(--dim)">加载新闻数据中...</div>
+    <div class="card" style="text-align:center;padding:40px;color:var(--meta)">加载新闻数据中...</div>
   </div>
 </div>
 
-<!-- ============================================================ -->
-<!-- TAB 2: MODELS -->
-<!-- ============================================================ -->
+<!-- ══════════════ TAB 2: MODELS ══════════════ -->
 <div class="tab-content" id="tab-models">
   <div class="filters" id="modelFilters">
-    <label>能力：<select id="mfCapability">
-      <option value="all">全部能力</option>
-    </select></label>
-    <label>国内可用：<select id="mfDomestic">
-      <option value="all">全部</option>
-      <option value="直连">直连</option>
-      <option value="需代理">需代理</option>
-    </select></label>
-    <label>厂商：<select id="mfVendor">
-      <option value="all">全部厂商</option>
-    </select></label>
-    <label>排序：<select id="mfSort">
-      <option value="price">价格↓</option>
-      <option value="price_asc">价格↑</option>
-      <option value="name">名称</option>
-    </select></label>
+    <label>能力：
+      <select id="mfCapability">
+        <option value="all">全部能力</option>
+      </select>
+    </label>
+    <label>国内可用：
+      <select id="mfDomestic">
+        <option value="all">全部</option>
+        <option value="直连">直连</option>
+        <option value="需代理">需代理</option>
+      </select>
+    </label>
+    <label>厂商：
+      <select id="mfVendor">
+        <option value="all">全部厂商</option>
+      </select>
+    </label>
+    <label>排序：
+      <select id="mfSort">
+        <option value="price">价格↓</option>
+        <option value="price_asc">价格↑</option>
+        <option value="name">名称</option>
+      </select>
+    </label>
   </div>
   <div class="stats-bar" id="modelStats"></div>
-  <div class="grid" id="modelGrid"></div>
+  <div class="grid" id="modelGrid">
+    <div class="card" style="text-align:center;padding:40px;color:var(--meta)">加载模型数据中...</div>
+  </div>
 </div>
 
-<!-- ============================================================ -->
-<!-- TAB 3: ROBOTS -->
-<!-- ============================================================ -->
+<!-- ══════════════ TAB 3: ROBOTS ══════════════ -->
 <div class="tab-content" id="tab-robots">
-  <!-- Category navigation -->
   <div class="cat-tabs" id="robotCatTabs">
     <button class="active" data-cat="humanoid">🤖 人形机器人</button>
     <button data-cat="commercial_cleaner">🧹 商用清洁</button>
@@ -340,33 +676,37 @@
     <button data-cat="ai_toy">🧸 AI玩具</button>
   </div>
 
-  <!-- Brand cards -->
   <div class="brand-cards" id="brandCards"></div>
 
-  <!-- Filters -->
   <div class="filters" id="robotFilters">
-    <label>二级分类：<select id="rfType2"><option value="all">全部</option></select></label>
-    <label>状态：<select id="rfStatus">
-      <option value="all">全部状态</option>
-      <option value="已量产">已量产</option>
-      <option value="预售">预售中</option>
-      <option value="原型">原型</option>
-    </select></label>
+    <label>二级分类：
+      <select id="rfType2">
+        <option value="all">全部</option>
+      </select>
+    </label>
+    <label>状态：
+      <select id="rfStatus">
+        <option value="all">全部状态</option>
+        <option value="已量产">已量产</option>
+        <option value="预售">预售中</option>
+        <option value="原型">原型</option>
+      </select>
+    </label>
   </div>
 
-  <!-- Column visibility toggles -->
   <div class="col-toggles" id="colToggles"></div>
 
-  <!-- Stats + Table -->
   <div class="stats-bar" id="robotStats">
     <span id="robotStatsLeft">共 <b>0</b> 个型号</span>
   </div>
+
   <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
     <table class="robot-table" id="robotTable">
       <thead id="robotThead"></thead>
       <tbody id="robotBody"></tbody>
     </table>
   </div>
+
   <div class="pagination" id="robotPagination">
     <button id="robotPrev" onclick="robotPagePrev()">‹ 上一页</button>
     <span class="page-info" id="robotPageInfo">第 <b>1</b> / <b>1</b> 页</span>
@@ -374,26 +714,26 @@
   </div>
 </div>
 
-<!-- ============================================================ -->
-<!-- ECOSYSTEM OVERLAY -->
-<!-- ============================================================ -->
+<!-- ══════════════ ECOSYSTEM OVERLAY ══════════════ -->
 <div id="ecosystemOverlay" class="overlay" onclick="if(event.target===this)closeEcosystem()">
-  <div class="overlay-content" id="ecosystemPanel" style="max-width:700px;max-height:80vh;overflow-y:auto"></div>
+  <div class="overlay-content" id="ecosystemPanel" style="max-width:680px;max-height:80vh;overflow-y:auto"></div>
 </div>
 
-<!-- ============================================================ -->
-<!-- TAB 4: SKILLS -->
-<!-- ============================================================ -->
+<!-- ══════════════ TAB 4: SKILLS ══════════════ -->
 <div class="tab-content" id="tab-skills">
   <div class="filters">
-    <label>场景：<select id="sfScene">
-      <option value="all">全部场景</option>
-      <option value="work">工作</option>
-      <option value="life">生活</option>
-      <option value="research">研究</option>
-    </select></label>
+    <label>场景：
+      <select id="sfScene">
+        <option value="all">全部场景</option>
+        <option value="work">工作</option>
+        <option value="life">生活</option>
+        <option value="research">研究</option>
+      </select>
+    </label>
   </div>
-  <div id="skillsContainer"></div>
+  <div id="skillsContainer">
+    <div class="card" style="text-align:center;padding:40px;color:var(--meta)">加载技能数据中...</div>
+  </div>
 </div>
 
 </div><!-- /main -->
@@ -401,6 +741,7 @@
 <script>
 // ── DATA ───────────────────────────────────────────────────────────
 let state = { models: [], robots: [], news: [], skills: [] };
+let searchResults = null;
 
 async function loadJSON(url) {
   try {
@@ -426,6 +767,9 @@ async function init() {
   document.getElementById('updateStatus').textContent =
     `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
 
+  document.getElementById('modelsBadge').textContent = state.models.length;
+  document.getElementById('skillsBadge').textContent = state.skills.length;
+
   renderModels();
   renderNews();
   renderSkills();
@@ -433,23 +777,73 @@ async function init() {
   // Load initial robot category
   loadRobotCategory('humanoid').then(data => {
     state.robots = data;
+    document.getElementById('robotsBadge').textContent = state.robots.length;
     renderRobots();
     document.getElementById('updateStatus').textContent =
       `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
   });
-  
-  // Load ecosystem data
+
   loadEcosystem();
 }
 
-// ── TAB SWITCHING ──────────────────────────────────────────────────
-document.querySelectorAll('.tabs button').forEach(btn => {
+// ── TAB SWITCHING (with animation reset) ───────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelectorAll('.tabs button').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => {
+      t.classList.remove('active');
+      // Trigger reflow so animation plays every time
+      void t.offsetWidth;
+    });
     btn.classList.add('active');
     document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
   });
+});
+
+// ── GLOBAL SEARCH ──────────────────────────────────────────────────
+const SEARCHABLE_FIELDS = ['标题','title','型号','厂商','名称','model_name','vendor','desc','reason'];
+
+document.getElementById('globalSearch').addEventListener('input', function() {
+  const q = this.value.trim().toLowerCase();
+  const container = document.getElementById('newsContainer');
+  if (!q || q.length < 2) {
+    searchResults = null;
+    renderNews();
+    return;
+  }
+
+  // Search all news items
+  const data = state.news;
+  if (!data.days) return;
+
+  const results = [];
+  data.days.forEach(day => {
+    const matchingInds = (day.industries||[])
+      .map(ind => {
+        const matchingItems = (ind.items||[]).filter(item =>
+          (item.title||'').toLowerCase().includes(q) ||
+          (item.summary||'').toLowerCase().includes(q)
+        );
+        return matchingItems.length ? { ...ind, items: matchingItems } : null;
+      })
+      .filter(Boolean);
+    if (matchingInds.length) {
+      results.push({ ...day, industries: matchingInds, _total: matchingInds.reduce((a,i) => a+i.items.length, 0) });
+    }
+  });
+
+  searchResults = { days: results };
+
+  if (!results.length) {
+    container.innerHTML = `<div class="empty-state">
+      <h3>🔍 未找到"${q}"的相关新闻</h3>
+      <p>试试其他关键词</p>
+    </div>`;
+    return;
+  }
+
+  renderNews();
+  // Also highlight matches in other tabs by switching
 });
 
 // ── FILTER HELPERS ─────────────────────────────────────────────────
@@ -469,7 +863,6 @@ function renderModels() {
   const models = state.models;
   if (!models.length) return;
 
-  // Populate filters
   const caps = [...new Set(models.map(m => m.capability_type).filter(Boolean))];
   const vendors = [...new Set(models.map(m => m.vendor).filter(Boolean))];
   populateSelect('mfCapability', caps);
@@ -488,10 +881,8 @@ function renderModels() {
       return true;
     });
 
-    // Sort
     list.sort((a,b) => {
       if (sort === 'name') return a.model_name.localeCompare(b.model_name);
-      // Price sort: extract numeric value
       const getPrice = (s) => parseFloat((s||'').replace(/[^0-9.]/g,'')) || 99999;
       return sort === 'price_asc' ? getPrice(a.output_price) - getPrice(b.output_price)
                                     : getPrice(b.output_price) - getPrice(a.output_price);
@@ -514,7 +905,7 @@ function renderModels() {
           ${m.output_price ? `<span>💰 ${m.output_price}</span>` : ''}
           ${m.context_window ? `<span>📏 ${m.context_window}</span>` : ''}
         </div>
-        ${m.promotions ? `<div style="font-size:11px;color:var(--orange);margin-top:4px">🏷 ${m.promotions}</div>` : ''}
+        ${m.promotions ? `<div style="font-size:11px;color:var(--warn);margin-top:4px">🏷 ${m.promotions}</div>` : ''}
         <div class="links">
           ${m.official_url ? `<a href="${m.official_url}" target="_blank">官网</a>` : ''}
           ${m.tech_report_url ? `<a href="${m.tech_report_url}" target="_blank">技术报告</a>` : ''}
@@ -530,7 +921,7 @@ function renderModels() {
 }
 
 // ══════════════════════════════════════════════════════════════════
-// ROBOTS - Dynamic per-category display
+// ROBOTS
 // ══════════════════════════════════════════════════════════════════
 
 let ecosystemData = null;
@@ -548,7 +939,6 @@ async function loadEcosystem() {
 
 function getBrandEcosystem(vendor) {
   if (!ecosystemData) return null;
-  // Match by normalized name
   const v = vendor.replace(/[()（]/g,'(').replace(/[)）]/g,')').toLowerCase();
   return ecosystemData.brands.find(b => b.name.replace(/[()（]/g,'(').replace(/[)）]/g,')').toLowerCase() === v) || null;
 }
@@ -558,70 +948,70 @@ function showEcosystemPanel(vendor) {
   const overlay = document.getElementById('ecosystemOverlay');
   const panel = document.getElementById('ecosystemPanel');
   if (!eco) {
-    panel.innerHTML = `<div style="text-align:center;padding:30px;color:var(--dim)">暂无 ${vendor} 的生态数据</div>
-      <div style="text-align:center;margin-top:12px"><button onclick="closeEcosystem()" style="background:var(--accent);border:none;color:#fff;padding:8px 20px;border-radius:6px;cursor:pointer">关闭</button></div>`;
-    overlay.style.display = 'block';
+    panel.innerHTML = `<div style="text-align:center;padding:30px;color:var(--meta)">暂无 ${vendor} 的生态数据</div>
+      <div style="text-align:center;margin-top:12px"><button onclick="closeEcosystem()" style="background:var(--accent);border:none;color:#fff;padding:8px 20px;border-radius:6px;cursor:pointer;font-family:inherit;font-size:13px">关闭</button></div>`;
+    overlay.classList.add('show');
     return;
   }
 
   let html = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
-    <h2 style="font-size:18px;color:var(--text);margin:0">${eco.name}</h2>
-    <span style="font-size:11px;color:var(--green)">● ${eco.ecosystem.open_source_degree}</span>
-    <button onclick="closeEcosystem()" style="background:none;border:none;color:var(--dim);font-size:20px;cursor:pointer">✕</button>
+    <h2 style="font-size:18px;color:var(--fg);margin:0;letter-spacing:-0.01em">${eco.name}</h2>
+    <span style="font-size:11px;color:var(--success);letter-spacing:0.02em">● ${eco.ecosystem.open_source_degree}</span>
+    <button onclick="closeEcosystem()" style="background:none;border:none;color:var(--meta);font-size:20px;cursor:pointer;line-height:1">✕</button>
   </div>`;
-  
+
   // Datasets
   if (eco.ecosystem.datasets && eco.ecosystem.datasets.length) {
-    html += `<div class="card"><h3>📊 训练数据集</h3>`;
+    html += `<div class="card" style="margin-bottom:12px"><div class="card-header">训练数据集</div>`;
     eco.ecosystem.datasets.forEach(d => {
       html += `<div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border)">
-        <span style="color:${d.open_source?'var(--green)':'var(--dim)'}">${d.open_source?'🔓':'🔒'}</span>
-        <span style="font-weight:500">${d.name}</span>
-        <span style="font-size:11px;color:var(--dim)">${d.type}</span>
-        ${d.scale ? `<span style="font-size:11px;color:var(--accent)">${d.scale}</span>` : ''}
-        ${d.url ? `<a href="${d.url}" target="_blank" style="font-size:11px;color:var(--accent)">详情</a>` : ''}
+        <span style="color:${d.open_source?'var(--success)':'var(--meta)'}">${d.open_source?'🔓':'🔒'}</span>
+        <span style="font-weight:510">${d.name}</span>
+        <span style="font-size:11px;color:var(--muted)">${d.type}</span>
+        ${d.scale ? `<span style="font-size:11px;color:var(--accent-hover)">${d.scale}</span>` : ''}
+        ${d.url ? `<a href="${d.url}" target="_blank" style="font-size:11px;color:var(--accent-hover)">详情</a>` : ''}
       </div>`;
     });
     html += `</div>`;
   }
-  
+
   // Models
   if (eco.ecosystem.models && eco.ecosystem.models.length) {
-    html += `<div class="card"><h3>🧠 基础模型</h3>`;
+    html += `<div class="card" style="margin-bottom:12px"><div class="card-header">基础模型</div>`;
     eco.ecosystem.models.forEach(m => {
       html += `<div style="padding:6px 0;border-bottom:1px solid var(--border)">
-        <div><span style="font-weight:500">${m.name}</span> <span style="font-size:11px;color:var(--dim)">${m.type}</span> ${m.open_source?'<span style="font-size:10px;color:var(--green)">开源</span>':'<span style="font-size:10px;color:var(--orange)">闭源</span>'}</div>
-        ${m.capabilities ? `<div style="font-size:11px;color:var(--dim);margin-top:2px">${m.capabilities}</div>` : ''}
+        <div><span style="font-weight:510">${m.name}</span> <span style="font-size:11px;color:var(--muted)">${m.type}</span> ${m.open_source?'<span style="font-size:10px;color:var(--success);letter-spacing:0.02em">开源</span>':'<span style="font-size:10px;color:var(--warn);letter-spacing:0.02em">闭源</span>'}</div>
+        ${m.capabilities ? `<div style="font-size:11px;color:var(--muted);margin-top:2px">${m.capabilities}</div>` : ''}
       </div>`;
     });
     html += `</div>`;
   }
-  
-  // Key events timeline
+
+  // Key events
   if (eco.ecosystem.key_events && eco.ecosystem.key_events.length) {
-    html += `<div class="card"><h3>📅 关键事件时间线</h3>`;
+    html += `<div class="card" style="margin-bottom:12px"><div class="card-header">关键事件</div>`;
     const sorted = [...eco.ecosystem.key_events].sort((a,b) => b.date.localeCompare(a.date));
     sorted.forEach(e => {
       html += `<div style="display:flex;gap:12px;padding:5px 0;border-bottom:1px solid var(--border)">
-        <span style="font-size:11px;color:var(--accent);min-width:80px">${e.date.replace('00','?')}</span>
-        <span>${e.event}</span>
+        <span style="font-size:11px;color:var(--accent-hover);min-width:80px;flex-shrink:0">${e.date.replace('00','?')}</span>
+        <span style="font-size:13px">${e.event}</span>
       </div>`;
     });
     html += `</div>`;
   }
-  
+
   // Open source & ROS
-  html += `<div style="display:flex;gap:16px;font-size:12px;color:var(--dim);padding:8px 0">
+  html += `<div style="display:flex;gap:16px;font-size:12px;color:var(--muted);padding:8px 0;letter-spacing:0.02em">
     <span>🔧 ROS集成: ${eco.ecosystem.ros}</span>
     <span>📋 开源程度: ${eco.ecosystem.open_source_degree}</span>
   </div>`;
-  
+
   panel.innerHTML = html;
-  overlay.style.display = 'block';
+  overlay.classList.add('show');
 }
 
 function closeEcosystem() {
-  document.getElementById('ecosystemOverlay').style.display = 'none';
+  document.getElementById('ecosystemOverlay').classList.remove('show');
 }
 
 const ROBOT_CONFIG = {
@@ -738,20 +1128,20 @@ function renderRobots() {
   const cfg = ROBOT_CONFIG[currentRobotCat];
   if (!cfg || !robots.length) {
     document.getElementById('robotBody').innerHTML =
-      '<tr><td colspan="10" style="text-align:center;color:var(--dim);padding:40px">暂无数据</td></tr>';
+      '<tr><td colspan="10" style="text-align:center;color:var(--meta);padding:40px">暂无数据</td></tr>';
     return;
   }
 
   const visibleCols = getVisibleCols();
-  
-  // ── Brand cards ──
+
+  // Brand cards
   const brands = {};
   robots.forEach(r => {
     const vendor = r['厂商'] || '未知';
     if (!brands[vendor]) brands[vendor] = { count: 0, url: r['官网'] || '#' };
     brands[vendor].count++;
   });
-  
+
   document.getElementById('brandCards').innerHTML =
     Object.entries(brands).map(([name, info]) => `
       <div class="brand-card" onclick="showEcosystemPanel('${name.replace(/'/g,"\\'")}')" style="cursor:pointer">
@@ -761,7 +1151,7 @@ function renderRobots() {
       </div>
     `).join('');
 
-  // ── Type 2 filter ──
+  // Type 2 filter
   const type2s = [...new Set(robots.map(r => r['类型']||r['形态']||'').filter(Boolean))];
   const sel = document.getElementById('rfType2');
   const oldVal = sel.value;
@@ -769,13 +1159,13 @@ function renderRobots() {
     type2s.map(t => `<option value="${t}">${t}</option>`).join('');
   sel.value = type2s.includes(oldVal) ? oldVal : 'all';
 
-  // ── Column toggles ──
+  // Column toggles
   document.getElementById('colToggles').innerHTML =
     cfg.allCols.map(c => `
       <label><input type="checkbox" class="col-toggle" data-key="${c.key}"
         ${visibleCols.includes(c.key)?'checked':''}> ${c.label}</label>
     `).join('');
-  
+
   document.querySelectorAll('.col-toggle').forEach(cb => {
     cb.addEventListener('change', () => {
       saveVisibleCols();
@@ -783,7 +1173,7 @@ function renderRobots() {
     });
   });
 
-  // ── Filter ──
+  // Filter
   const type2 = document.getElementById('rfType2').value;
   const status = document.getElementById('rfStatus').value;
 
@@ -801,7 +1191,7 @@ function renderRobots() {
     return true;
   });
 
-  // ── Sort ──
+  // Sort
   if (robotSortKey) {
     list.sort((a, b) => {
       let va = a[robotSortKey] || '', vb = b[robotSortKey] || '';
@@ -811,14 +1201,14 @@ function renderRobots() {
     });
   }
 
-  // ── Pagination ──
+  // Pagination
   const pageSize = 10;
   const totalPages = Math.ceil(list.length / pageSize) || 1;
   if (robotPage >= totalPages) robotPage = 0;
   const page = robotPage;
   const pageList = list.slice(page * pageSize, (page + 1) * pageSize);
 
-  // ── Stats ──
+  // Stats
   document.getElementById('robotStatsLeft').innerHTML =
     `<span>共 <b>${list.length}</b> 个型号（本类共${robots.length}个）</span>`;
   document.getElementById('robotPageInfo').innerHTML =
@@ -826,7 +1216,7 @@ function renderRobots() {
   document.getElementById('robotPrev').disabled = page === 0;
   document.getElementById('robotNext').disabled = page >= totalPages - 1;
 
-  // ── Table header ──
+  // Table header
   const sortedCol = cfg.allCols.filter(c => visibleCols.includes(c.key));
   document.getElementById('robotThead').innerHTML = '<tr>' +
     sortedCol.map(c => {
@@ -835,17 +1225,17 @@ function renderRobots() {
       return `<th onclick="sortRobot('${c.key}')" style="cursor:pointer${c.sort?'':';cursor:default'}">${c.label}${arrow}${c.sort?' ▾':''}</th>`;
     }).join('') + '</tr>';
 
-  // ── Table body ──
+  // Table body
   document.getElementById('robotBody').innerHTML = pageList.map(r => {
-    const vendorHtml = r['官网'] ? `<a href="${r['官网']}" target="_blank" style="color:var(--accent);text-decoration:none">${r['厂商']||''}</a>` : (r['厂商']||'');
+    const vendorHtml = r['官网'] ? `<a href="${r['官网']}" target="_blank" style="color:var(--accent-hover);text-decoration:none">${r['厂商']||''}</a>` : (r['厂商']||'');
     const level = r['数据级别'] || '';
-    const levelBadge = level.includes('官方') ? '<span style="font-size:9px;color:var(--green);margin-left:4px">✓</span>'
-      : level.includes('新闻') ? '<span style="font-size:9px;color:var(--orange);margin-left:4px">📰</span>'
-      : '<span style="font-size:9px;color:var(--dim);margin-left:4px">?</span>';
+    const levelBadge = level.includes('官方') ? '<span style="font-size:9px;color:var(--success);margin-left:4px">✓</span>'
+      : level.includes('新闻') ? '<span style="font-size:9px;color:var(--warn);margin-left:4px">📰</span>'
+      : '<span style="font-size:9px;color:var(--meta);margin-left:4px">?</span>';
     return '<tr>' + sortedCol.map(c => {
-      if (c.key === '厂商') return `<td><span onclick="showEcosystemPanel('${(r['厂商']||'').replace(/'/g,"\\'")}')" style="cursor:pointer;color:var(--accent)">${r['厂商']||''}</span>${levelBadge}</td>`;
+      if (c.key === '厂商') return `<td><span onclick="showEcosystemPanel('${(r['厂商']||'').replace(/'/g,"\\'")}')" style="cursor:pointer;color:var(--accent-hover)">${r['厂商']||''}</span>${levelBadge}</td>`;
       if (c.key === '型号' && r['官网']) {
-        return `<td><a href="${r['官网']}" target="_blank" style="color:var(--text);text-decoration:none">${r['型号']||''}</a></td>`;
+        return `<td><a href="${r['官网']}" target="_blank" style="color:var(--fg);text-decoration:none">${r['型号']||''}</a></td>`;
       }
       const val = r[c.key] || '';
       return `<td>${val}</td>`;
@@ -865,7 +1255,6 @@ function saveVisibleCols() {
   localStorage.setItem(`robot_cols_${currentRobotCat}`, JSON.stringify(checked));
 }
 
-// ── Pagination functions ──
 let robotPage = 0;
 const ROBOT_PAGE_SIZE = 10;
 function robotPagePrev() { if (robotPage > 0) { robotPage--; renderRobots(); } }
@@ -884,23 +1273,22 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('robotCatTabs')?.addEventListener('click', async (e) => {
     const btn = e.target.closest('button');
     if (!btn || !btn.dataset.cat) return;
-    
+
     document.querySelectorAll('#robotCatTabs button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-    
+
     currentRobotCat = btn.dataset.cat;
     robotSortKey = null;
     robotSortAsc = true;
     robotPage = 0;
-    
-    // Load and render
+
     state.robots = await loadRobotCategory(currentRobotCat);
+    document.getElementById('robotsBadge').textContent = state.robots.length;
     document.getElementById('updateStatus').textContent =
       `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
     renderRobots();
   });
 
-  // Re-filter on filter change
   ['rfType2', 'rfStatus'].forEach(id => {
     document.getElementById(id)?.addEventListener('change', () => renderRobots());
   });
@@ -910,16 +1298,21 @@ document.addEventListener('DOMContentLoaded', () => {
 // NEWS
 // ══════════════════════════════════════════════════════════════════
 function renderNews() {
-  const data = state.news;
+  const data = searchResults || state.news;
   if (!data.days || !data.days.length) {
     document.getElementById('newsContainer').innerHTML =
-      '<div class="card" style="text-align:center;padding:40px;color:var(--dim)">暂无新闻数据</div>';
+      '<div class="empty-state"><h3>暂无新闻数据</h3><p>数据采集中...</p></div>';
     return;
   }
 
-  // Populate industry filter
-  const inds = [...new Set(data.days.flatMap(d => (d.industries||[]).map(i => i.name)))];
-  populateSelect('newsIndustry', inds);
+  // Only populate filter from original data
+  if (!searchResults) {
+    const inds = [...new Set(state.news.days.flatMap(d => (d.industries||[]).map(i => i.name)))];
+    const sel = document.getElementById('newsIndustry');
+    if (sel.options.length <= 1) {
+      populateSelect('newsIndustry', inds);
+    }
+  }
 
   function filterNews() {
     const src = document.getElementById('newsSource').value;
@@ -944,14 +1337,14 @@ function renderNews() {
 
       return `<div class="news-day">
         <div class="date">📺 ${day.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')}
-          <span style="font-weight:400;color:var(--dim);font-size:12px">${day.total_items}条 · ${day.industry_count}个行业 ${day.special_count>0?' 🔔'+day.special_count+'条特别关注':''}</span>
+          <span class="meta">${day.total_items}条 · ${day.industry_count}个行业 ${day.special_count>0?' 🔔'+day.special_count+'条特别关注':''}</span>
         </div>
         ${industries.map(ind2 => `
           <div class="news-industry">
             <div class="ind-title">📌 ${ind2.name} <span class="count">${ind2.count}条${ind2.special?' 🔔':''}</span></div>
             ${(ind2.items||[]).map(item => `
               <div class="news-item" onclick="this.classList.toggle('expanded')">
-                <div class="title">${item.title||''}${item.special?'<span class="spec-tag">🔔特别关注</span>':''}</div>
+                <div class="title">${item.title||''}${item.special?'<span class="spec-tag">🔔 特别关注</span>':''}</div>
                 <div class="summary">${item.summary||''}</div>
               </div>
             `).join('')}
@@ -961,10 +1354,14 @@ function renderNews() {
     }).join('');
   }
 
-  ['newsSource','newsIndustry'].forEach(id => {
-    document.getElementById(id).addEventListener('change', filterNews);
-  });
-  document.getElementById('newsSpecial').addEventListener('change', filterNews);
+  // Only attach listeners once
+  if (!window._newsListenersAttached) {
+    ['newsSource','newsIndustry'].forEach(id => {
+      document.getElementById(id).addEventListener('change', filterNews);
+    });
+    document.getElementById('newsSpecial').addEventListener('change', filterNews);
+    window._newsListenersAttached = true;
+  }
   filterNews();
 }
 
@@ -992,7 +1389,7 @@ function renderSkills() {
   `).join('');
 }
 
-document.getElementById('sfScene').addEventListener('change', renderSkills);
+document.getElementById('sfScene')?.addEventListener('change', renderSkills);
 </script>
 </body>
 </html>
