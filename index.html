@@ -555,14 +555,15 @@ function getBrandEcosystem(vendor) {
 
 function showEcosystemPanel(vendor) {
   const eco = getBrandEcosystem(vendor);
+  const overlay = document.getElementById('ecosystemOverlay');
   const panel = document.getElementById('ecosystemPanel');
   if (!eco) {
     panel.innerHTML = `<div style="text-align:center;padding:30px;color:var(--dim)">暂无 ${vendor} 的生态数据</div>
       <div style="text-align:center;margin-top:12px"><button onclick="closeEcosystem()" style="background:var(--accent);border:none;color:#fff;padding:8px 20px;border-radius:6px;cursor:pointer">关闭</button></div>`;
-    panel.style.display = 'block';
+    overlay.style.display = 'block';
     return;
   }
-  
+
   let html = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
     <h2 style="font-size:18px;color:var(--text);margin:0">${eco.name}</h2>
     <span style="font-size:11px;color:var(--green)">● ${eco.ecosystem.open_source_degree}</span>
@@ -616,11 +617,11 @@ function showEcosystemPanel(vendor) {
   </div>`;
   
   panel.innerHTML = html;
-  panel.style.display = 'block';
+  overlay.style.display = 'block';
 }
 
 function closeEcosystem() {
-  document.getElementById('ecosystemPanel').style.display = 'none';
+  document.getElementById('ecosystemOverlay').style.display = 'none';
 }
 
 const ROBOT_CONFIG = {
