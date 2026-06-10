@@ -160,7 +160,52 @@
   .stats-bar span { display: flex; align-items: center; gap: 4px; }
   .stats-bar .num { color: var(--text); font-weight: 600; }
 
-  /* Responsive */
+  /* Robot brand cards */
+  .brand-cards {
+    display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 16px;
+  }
+  .brand-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 16px; min-width: 140px;
+    cursor: pointer; transition: all .2s;
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  .brand-card:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .brand-card .name { font-size: 14px; font-weight: 600; color: var(--text); }
+  .brand-card .sub { font-size: 11px; color: var(--dim); }
+  .brand-card .count { font-size: 11px; color: var(--accent); }
+  .brand-card .link {
+    font-size: 11px; color: var(--accent); text-decoration: none;
+    margin-top: 4px; padding: 2px 8px; border: 1px solid rgba(59,130,246,.3);
+    border-radius: 4px; display: inline-block; width: fit-content;
+  }
+  .brand-card .link:hover { background: rgba(59,130,246,.1); }
+
+  /* Robot category tabs */
+  .cat-tabs {
+    display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 14px;
+  }
+  .cat-tabs button {
+    background: var(--card); border: 1px solid var(--border); color: var(--dim);
+    font-size: 13px; padding: 8px 14px; cursor: pointer; border-radius: 8px;
+    transition: all .2s; font-family: inherit;
+  }
+  .cat-tabs button:hover { color: var(--text); border-color: var(--accent); }
+  .cat-tabs button.active { color: #fff; background: var(--accent); border-color: var(--accent); }
+
+  /* Column toggle */
+  .col-toggles {
+    display: flex; gap: 6px; flex-wrap: wrap; padding: 8px 12px;
+    background: var(--card); border: 1px solid var(--border); border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  .col-toggles label {
+    font-size: 11px; color: var(--dim); display: flex; align-items: center;
+    gap: 3px; cursor: pointer; padding: 2px 6px; border-radius: 4px;
+    transition: background .15s;
+  }
+  .col-toggles label:hover { background: rgba(59,130,246,.08); }
+  .col-toggles input { accent-color: var(--accent); }
   @media (max-width: 768px) {
     .header { padding: 14px 16px 10px; }
     .tabs { padding: 0 16px; }
@@ -240,16 +285,21 @@
 <!-- TAB 3: ROBOTS -->
 <!-- ============================================================ -->
 <div class="tab-content" id="tab-robots">
+  <!-- Category navigation -->
+  <div class="cat-tabs" id="robotCatTabs">
+    <button class="active" data-cat="humanoid">🤖 人形机器人</button>
+    <button data-cat="commercial_cleaner">🧹 商用清洁</button>
+    <button data-cat="industrial_quadruped">🐕 四足工业</button>
+    <button data-cat="delivery_vehicle">🚚 无人配送车</button>
+    <button data-cat="ai_toy">🧸 AI玩具</button>
+  </div>
+
+  <!-- Brand cards -->
+  <div class="brand-cards" id="brandCards"></div>
+
+  <!-- Filters -->
   <div class="filters" id="robotFilters">
-    <label>一级分类：<select id="rfType1">
-      <option value="all">全部分类</option>
-    </select></label>
-    <label>二级分类：<select id="rfType2">
-      <option value="all">全部</option>
-    </select></label>
-    <label>厂商：<select id="rfVendor">
-      <option value="all">全部厂商</option>
-    </select></label>
+    <label>二级分类：<select id="rfType2"><option value="all">全部</option></select></label>
     <label>状态：<select id="rfStatus">
       <option value="all">全部状态</option>
       <option value="已量产">已量产</option>
@@ -257,15 +307,15 @@
       <option value="原型">原型</option>
     </select></label>
   </div>
+
+  <!-- Column visibility toggles -->
+  <div class="col-toggles" id="colToggles"></div>
+
+  <!-- Stats + Table -->
   <div class="stats-bar" id="robotStats"></div>
   <div style="overflow-x:auto">
     <table class="robot-table" id="robotTable">
-      <thead>
-        <tr>
-          <th>厂商</th><th>型号</th><th>类型</th><th>尺寸</th><th>重量</th>
-          <th>负载</th><th>续航</th><th>价格</th><th>状态</th>
-        </tr>
-      </thead>
+      <thead id="robotThead"></thead>
       <tbody id="robotBody"></tbody>
     </table>
   </div>
@@ -317,9 +367,16 @@ async function init() {
     `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
 
   renderModels();
-  renderRobots();
   renderNews();
   renderSkills();
+
+  // Load initial robot category
+  loadRobotCategory('humanoid').then(data => {
+    state.robots = data;
+    renderRobots();
+    document.getElementById('updateStatus').textContent =
+      `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
+  });
 }
 
 // ── TAB SWITCHING ──────────────────────────────────────────────────
@@ -410,77 +467,264 @@ function renderModels() {
 }
 
 // ══════════════════════════════════════════════════════════════════
-// ROBOTS
+// ROBOTS - Dynamic per-category display
 // ══════════════════════════════════════════════════════════════════
+
+const ROBOT_CONFIG = {
+  humanoid: {
+    label: '🤖 人形机器人', file: 'humanoid.json',
+    defaultCols: ['厂商','型号','类型','身高','重量','负载能力','续航','自由度','行走速度','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'类型',label:'类型',sort:true},{key:'身高',label:'身高(cm)',sort:true,unit:'cm'},
+      {key:'重量',label:'重量(kg)',sort:true,unit:'kg'},{key:'负载能力',label:'负载(kg)',sort:true,unit:'kg'},
+      {key:'续航',label:'续航(min)',sort:true,unit:'min'},{key:'自由度',label:'自由度',sort:true},
+      {key:'手部自由度',label:'手部自由度',sort:true},{key:'关节扭矩',label:'关节扭矩(Nm)',sort:true},
+      {key:'行走速度',label:'行走速度(m/s)',sort:true},{key:'电池容量',label:'电池(Wh)',sort:true},
+      {key:'传感器配置',label:'传感器',sort:false},{key:'算力',label:'算力(TOPS)',sort:true},
+      {key:'操作系统',label:'系统',sort:false},{key:'SDK',label:'SDK',sort:false},
+      {key:'价格',label:'价格',sort:true},{key:'状态',label:'状态',sort:true},
+    ]
+  },
+  commercial_cleaner: {
+    label: '🧹 商用清洁', file: 'commercial_cleaner.json',
+    defaultCols: ['厂商','型号','清洁类型','清洁宽度','清洁效率','续航','清水箱','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'清洁类型',label:'清洁类型',sort:true},{key:'清洁宽度',label:'清洁宽度(mm)',sort:true},
+      {key:'清洁效率',label:'效率(㎡/h)',sort:true},{key:'吸力',label:'吸力(Pa)',sort:true},
+      {key:'清水箱',label:'清水箱(L)',sort:true},{key:'污水箱',label:'污水箱(L)',sort:true},
+      {key:'垃圾箱',label:'垃圾箱(L)',sort:true},{key:'续航',label:'续航(h)',sort:true},
+      {key:'电池',label:'电池(Wh)',sort:true},{key:'自动回充',label:'自动回充',sort:false},
+      {key:'自动加水',label:'自动加水',sort:false},{key:'自动排水',label:'自动排水',sort:false},
+      {key:'自动自清洁',label:'自清洁',sort:false},{key:'工作站一体',label:'工作站',sort:false},
+      {key:'导航方式',label:'导航',sort:true},{key:'定位精度',label:'定位精度(mm)',sort:true},
+      {key:'建图面积',label:'建图(㎡)',sort:true},{key:'AI污渍检测',label:'AI检测',sort:false},
+      {key:'自动门联动',label:'自动门',sort:false},{key:'多机调度',label:'多机调度',sort:false},
+      {key:'远程部署',label:'远程部署',sort:false},{key:'云平台',label:'云平台',sort:false},
+      {key:'通过宽度',label:'通过宽度(mm)',sort:true},{key:'机身尺寸',label:'机身尺寸',sort:false},
+      {key:'边缘清洁',label:'边缘清洁',sort:true},{key:'噪音',label:'噪音(dB)',sort:true},
+      {key:'适用地面',label:'适用地面',sort:false},{key:'价格',label:'价格',sort:true},
+      {key:'状态',label:'状态',sort:true},
+    ]
+  },
+  industrial_quadruped: {
+    label: '🐕 四足工业', file: 'industrial_quadruped.json',
+    defaultCols: ['厂商','型号','重量','负载行走','续航','行走速度','防水等级','SDK语言','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'站立尺寸',label:'尺寸(mm)',sort:false},{key:'重量',label:'重量(kg)',sort:true},
+      {key:'负载行走',label:'负载行走(kg)',sort:true},{key:'负载站立',label:'负载站立(kg)',sort:true},
+      {key:'续航',label:'续航(min)',sort:true},{key:'行走速度',label:'速度(m/s)',sort:true},
+      {key:'防水等级',label:'防水',sort:true},{key:'工作温度',label:'工作温度(℃)',sort:true},
+      {key:'SDK语言',label:'SDK语言',sort:false},{key:'是否依赖ROS',label:'依赖ROS',sort:false},
+      {key:'SDK文档质量',label:'文档质量',sort:true},{key:'摄像头数量',label:'摄像头',sort:true},
+      {key:'摄像头类型',label:'摄像头类型',sort:false},{key:'SDK开放图像流',label:'图像流',sort:false},
+      {key:'LiDAR点云',label:'LiDAR点云',sort:false},{key:'深度图获取',label:'深度图',sort:false},
+      {key:'高级控制',label:'高级控制',sort:false},{key:'低级控制',label:'低级控制',sort:false},
+      {key:'关节增益可调',label:'增益可调',sort:false},{key:'步态自定义',label:'步态自定义',sort:false},
+      {key:'控制频率',label:'控制频率(Hz)',sort:true},{key:'力矩反馈',label:'力矩反馈',sort:false},
+      {key:'以太网',label:'以太网',sort:false},{key:'USB',label:'USB',sort:false},
+      {key:'GPIO',label:'GPIO',sort:false},{key:'电源输出',label:'电源输出',sort:false},
+      {key:'计算扩展',label:'计算扩展',sort:false},{key:'自定义负载',label:'自定义负载',sort:true},
+      {key:'价格',label:'价格',sort:true},{key:'状态',label:'状态',sort:true},
+    ]
+  },
+  delivery_vehicle: {
+    label: '🚚 无人配送车', file: 'delivery_vehicle.json',
+    defaultCols: ['厂商','型号','类型','载重','货箱容积','续航里程','最高速度','自动驾驶等级','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'类型',label:'类型',sort:true},{key:'外形尺寸',label:'尺寸(mm)',sort:false},
+      {key:'载重',label:'载重(kg)',sort:true},{key:'货箱容积',label:'货箱容积',sort:true},
+      {key:'续航里程',label:'续航(km)',sort:true},{key:'最高速度',label:'最高速度(km/h)',sort:true},
+      {key:'电池',label:'电池(kWh)',sort:true},{key:'转弯半径',label:'转弯半径(m)',sort:true},
+      {key:'传感器配置',label:'传感器',sort:false},{key:'自动驾驶等级',label:'自动驾驶等级',sort:true},
+      {key:'运行温度',label:'工作温度(℃)',sort:true},{key:'价格',label:'价格',sort:true},
+      {key:'状态',label:'状态',sort:true},
+    ]
+  },
+  ai_toy: {
+    label: '🧸 AI玩具', file: 'ai_toy.json',
+    defaultCols: ['厂商','型号','形态','尺寸','重量','续航','交互方式','AI能力','适用年龄','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'形态',label:'形态',sort:true},{key:'尺寸',label:'尺寸(mm)',sort:false},
+      {key:'重量',label:'重量(g)',sort:true},{key:'续航',label:'续航(min)',sort:true},
+      {key:'交互方式',label:'交互方式',sort:false},{key:'AI能力',label:'AI能力',sort:false},
+      {key:'适用年龄',label:'适用年龄',sort:true},{key:'编程方式',label:'编程方式',sort:false},
+      {key:'价格',label:'价格',sort:true},{key:'状态',label:'状态',sort:true},
+    ]
+  }
+};
+
+let robotData = {};
+let currentRobotCat = 'humanoid';
+let robotSortKey = null;
+let robotSortAsc = true;
+
+async function loadRobotCategory(cat) {
+  const cfg = ROBOT_CONFIG[cat];
+  if (!cfg) return [];
+  if (robotData[cat]) return robotData[cat];
+  const resp = await fetch(`./robots/${cfg.file}`);
+  if (!resp.ok) return [];
+  const data = await resp.json();
+  robotData[cat] = data;
+  return data;
+}
+
 function renderRobots() {
-  const robots = state.robots;
-  if (!robots.length) return;
-
-  const type1s = [...new Set(robots.map(r => r['类型_一级']||'').filter(Boolean))];
-  const type2s = [...new Set(robots.map(r => r['类型_二级']||'').filter(Boolean))];
-  const vendors = [...new Set(robots.map(r => r['厂商']||'').filter(Boolean))];
-  populateSelect('rfType1', type1s);
-  populateSelect('rfType2', type2s);
-  populateSelect('rfVendor', vendors);
-
-  function filterRobots() {
-    const t1 = document.getElementById('rfType1').value;
-    const t2 = document.getElementById('rfType2').value;
-    const ven = document.getElementById('rfVendor').value;
-    const st = document.getElementById('rfStatus').value;
-
-    let list = robots.filter(r => {
-      if (t1 !== 'all' && (r['类型_一级']||'') !== t1) return false;
-      if (t2 !== 'all' && (r['类型_二级']||'') !== t2) return false;
-      if (ven !== 'all' && (r['厂商']||'') !== ven) return false;
-      if (st !== 'all') {
-        const status = (r['当前状态']||'').toLowerCase();
-        if (st === '已量产' && !status.includes('量产')) return false;
-        if (st === '预售' && !status.includes('预售')) return false;
-        if (st === '原型' && !status.includes('原型')) return false;
-      }
-      return true;
-    });
-
-    document.getElementById('robotStats').innerHTML =
-      `<span>共 <b>${list.length}</b> 个型号</span>`;
-
-    // Group by type1
-    const groups = {};
-    list.forEach(r => {
-      const g = r['类型_一级']||'其他';
-      if (!groups[g]) groups[g] = [];
-      groups[g].push(r);
-    });
-
-    const tbody = document.getElementById('robotBody');
-    tbody.innerHTML = Object.entries(groups).map(([cat, items]) => `
-      <tr class="cat-row"><td colspan="9">${cat} (${items.length})</td></tr>
-      ${items.map(r => {
-        const status = (r['当前状态']||'').toLowerCase();
-        let sc = 'status-prototype';
-        if (status.includes('量产')) sc = 'status-production';
-        else if (status.includes('预售')) sc = 'status-preview';
-        return `<tr>
-          <td>${r['厂商']||''}</td>
-          <td><a href="${r['官网链接']||'#'}" target="_blank" style="color:var(--text);text-decoration:none">${r['型号']||''}</a></td>
-          <td>${r['类型_二级']||''}</td>
-          <td>${r['身高/尺寸']||''}</td>
-          <td>${r['重量']||''}</td>
-          <td>${r['负载能力']||''}</td>
-          <td>${r['续航时间']||''}</td>
-          <td>${r['价格']||''}</td>
-          <td><span class="status-tag ${sc}">${r['当前状态']||''}</span></td>
-        </tr>`;
-      }).join('')}
-    `).join('');
+  const robots = state.robots || [];
+  const cfg = ROBOT_CONFIG[currentRobotCat];
+  if (!cfg || !robots.length) {
+    document.getElementById('robotBody').innerHTML =
+      '<tr><td colspan="10" style="text-align:center;color:var(--dim);padding:40px">暂无数据</td></tr>';
+    return;
   }
 
-  ['rfType1','rfType2','rfVendor','rfStatus'].forEach(id => {
-    document.getElementById(id).addEventListener('change', filterRobots);
+  const visibleCols = getVisibleCols();
+  
+  // ── Brand cards ──
+  const brands = {};
+  robots.forEach(r => {
+    const vendor = r['厂商'] || '未知';
+    if (!brands[vendor]) brands[vendor] = { count: 0, url: r['官网'] || '#' };
+    brands[vendor].count++;
   });
-  filterRobots();
+  
+  document.getElementById('brandCards').innerHTML =
+    Object.entries(brands).map(([name, info]) => `
+      <div class="brand-card" onclick="window.open('${info.url}','_blank')">
+        <div class="name">${name}</div>
+        <div class="count">${info.count}款型号</div>
+        <span class="link">查看官网 ▶</span>
+      </div>
+    `).join('');
+
+  // ── Type 2 filter ──
+  const type2s = [...new Set(robots.map(r => r['类型']||r['形态']||'').filter(Boolean))];
+  const sel = document.getElementById('rfType2');
+  const oldVal = sel.value;
+  sel.innerHTML = '<option value="all">全部</option>' +
+    type2s.map(t => `<option value="${t}">${t}</option>`).join('');
+  sel.value = type2s.includes(oldVal) ? oldVal : 'all';
+
+  // ── Column toggles ──
+  document.getElementById('colToggles').innerHTML =
+    cfg.allCols.map(c => `
+      <label><input type="checkbox" class="col-toggle" data-key="${c.key}"
+        ${visibleCols.includes(c.key)?'checked':''}> ${c.label}</label>
+    `).join('');
+  
+  document.querySelectorAll('.col-toggle').forEach(cb => {
+    cb.addEventListener('change', () => {
+      saveVisibleCols();
+      renderRobots();
+    });
+  });
+
+  // ── Filter ──
+  const type2 = document.getElementById('rfType2').value;
+  const status = document.getElementById('rfStatus').value;
+
+  let list = robots.filter(r => {
+    if (type2 !== 'all') {
+      const t = r['类型'] || r['形态'] || '';
+      if (t !== type2) return false;
+    }
+    if (status !== 'all') {
+      const s = (r['状态']||'').toLowerCase();
+      if (status === '已量产' && !s.includes('量产') && !s.includes('在售')) return false;
+      if (status === '预售' && !s.includes('预售')) return false;
+      if (status === '原型' && !s.includes('原型') && !s.includes('测试')) return false;
+    }
+    return true;
+  });
+
+  // ── Sort ──
+  if (robotSortKey) {
+    list.sort((a, b) => {
+      let va = a[robotSortKey] || '', vb = b[robotSortKey] || '';
+      const na = parseFloat(va), nb = parseFloat(vb);
+      if (!isNaN(na) && !isNaN(nb)) return robotSortAsc ? na - nb : nb - na;
+      return robotSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+    });
+  }
+
+  // ── Stats ──
+  document.getElementById('robotStats').innerHTML =
+    `<span>共 <b>${list.length}</b> 个型号（本类共${robots.length}个）</span>`;
+
+  // ── Table header ──
+  const sortedCol = cfg.allCols.filter(c => visibleCols.includes(c.key));
+  document.getElementById('robotThead').innerHTML = '<tr>' +
+    sortedCol.map(c => {
+      const isSorted = robotSortKey === c.key;
+      const arrow = isSorted ? (robotSortAsc ? ' ↑' : ' ↓') : '';
+      return `<th onclick="sortRobot('${c.key}')" style="cursor:pointer${c.sort?'':';cursor:default'}">${c.label}${arrow}${c.sort?' ▾':''}</th>`;
+    }).join('') + '</tr>';
+
+  // ── Table body ──
+  document.getElementById('robotBody').innerHTML = list.map(r => {
+    // Build vendor URL link
+    const vendorHtml = r['官网'] ? `<a href="${r['官网']}" target="_blank" style="color:var(--accent);text-decoration:none">${r['厂商']||''}</a>` : (r['厂商']||'');
+    return '<tr>' + sortedCol.map(c => {
+      if (c.key === '厂商') return `<td>${vendorHtml}</td>`;
+      if (c.key === '型号' && r['官网']) {
+        return `<td><a href="${r['官网']}" target="_blank" style="color:var(--text);text-decoration:none">${r['型号']||''}</a></td>`;
+      }
+      const val = r[c.key] || '';
+      return `<td>${val}</td>`;
+    }).join('') + '</tr>';
+  }).join('');
 }
+
+function getVisibleCols() {
+  const key = `robot_cols_${currentRobotCat}`;
+  const saved = localStorage.getItem(key);
+  if (saved) return JSON.parse(saved);
+  return ROBOT_CONFIG[currentRobotCat].defaultCols;
+}
+
+function saveVisibleCols() {
+  const checked = [...document.querySelectorAll('.col-toggle:checked')].map(cb => cb.dataset.key);
+  localStorage.setItem(`robot_cols_${currentRobotCat}`, JSON.stringify(checked));
+}
+
+function sortRobot(key) {
+  const col = ROBOT_CONFIG[currentRobotCat].allCols.find(c => c.key === key);
+  if (!col || !col.sort) return;
+  if (robotSortKey === key) robotSortAsc = !robotSortAsc;
+  else { robotSortKey = key; robotSortAsc = true; }
+  renderRobots();
+}
+
+// Robot category switching
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('robotCatTabs')?.addEventListener('click', async (e) => {
+    const btn = e.target.closest('button');
+    if (!btn || !btn.dataset.cat) return;
+    
+    document.querySelectorAll('#robotCatTabs button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    
+    currentRobotCat = btn.dataset.cat;
+    robotSortKey = null;
+    robotSortAsc = true;
+    
+    // Load and render
+    state.robots = await loadRobotCategory(currentRobotCat);
+    document.getElementById('updateStatus').textContent =
+      `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
+    renderRobots();
+  });
+
+  // Re-filter on filter change
+  ['rfType2', 'rfStatus'].forEach(id => {
+    document.getElementById(id)?.addEventListener('change', () => renderRobots());
+  });
+});
 
 // ══════════════════════════════════════════════════════════════════
 // NEWS
