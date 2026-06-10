@@ -1,0 +1,426 @@
+{
+  "meta": {
+    "version": "1.0",
+    "updated": "2026-06-11",
+    "note": "各品牌生态资产（训练数据集、基础模型、训练框架、融资/关键事件）"
+  },
+  "brands": [
+    {
+      "name": "宇树科技(Unitree)",
+      "ecosystem": {
+        "datasets": [
+          {"name": "UnifoLM-WBT-Dataset", "type": "全身遥操作真机数据集", "scale": "340h/189万条轨迹", "open_source": true, "format": "RLDS", "url": "https://huggingface.co/unitree", "date": "2026-03"},
+          {"name": "G1灵巧手操作数据集", "type": "灵巧手操作", "scale": "未公开", "open_source": true, "date": "2025-09"},
+          {"name": "G1夹爪操作数据集", "type": "夹爪操作", "scale": "未公开", "open_source": true, "date": "2025-09"},
+          {"name": "Z1双臂操作数据集", "type": "双臂操作", "scale": "未公开", "open_source": true, "date": "2025-09"}
+        ],
+        "models": [
+          {"name": "UnifoLM-VLA-0", "type": "VLA大模型", "base": "Qwen2.5-VL-7B", "open_source": true, "capabilities": "12大类复杂操作任务", "date": "2026-01"},
+          {"name": "UnifoLM-WMA-0", "type": "世界模型-动作框架", "open_source": true, "capabilities": "仿真引擎", "date": "2025-09"}
+        ],
+        "frameworks": [
+          {"name": "Unitree_il_lerobot", "type": "模仿学习框架", "base": "LeRobot", "features": "支持DP/ACT等算法，适配G1/Z1/Dex3", "open_source": true, "date": "2025-09"},
+          {"name": "unitree_mujoco", "type": "仿真器", "features": "SDK2集成，Sim2Real无缝过渡", "open_source": true},
+          {"name": "强化学习仓库", "type": "RL训练", "features": "支持Go2/H1/H1_2/G1", "open_source": true}
+        ],
+        "ros": "原生支持 ROS 1 + ROS 2，提供完整URDF和仿真包",
+        "open_source_degree": "完全开源（核心训练栈全链路开源）",
+        "key_events": [
+          {"date": "2025-09", "event": "开源UnifoLM-WMA-0世界模型动作框架"},
+          {"date": "2025-09", "event": "G1人形机器人全球出货超万台"},
+          {"date": "2025-11", "event": "启动科创板IPO申报"},
+          {"date": "2026-01", "event": "开源UnifoLM-VLA-0 VLA大模型"},
+          {"date": "2026-01", "event": "发布Unitree H2训练视频（飞踢/空翻）"},
+          {"date": "2026-03", "event": "开源UnifoLM-WBT-Dataset真机数据集（189万条）"},
+          {"date": "2026-04", "event": "全球首店落地京东MALL北京双井店"},
+          {"date": "2026-04", "event": "发布Unitree R1（定价3.99万元）"}
+        ]
+      }
+    },
+    {
+      "name": "智元机器人(AgiBot)",
+      "ecosystem": {
+        "datasets": [
+          {"name": "AGIBOT WORLD 2026", "type": "具身智能全域研究数据集", "scale": "100万+条轨迹/3000+物品/217任务", "open_source": true, "format": "RLDS", "url": "https://huggingface.co/agibot", "date": "2026-04"},
+          {"name": "AGIBOT WORLD 2026 第二期-多样交互", "type": "物理交互数据集", "open_source": true, "date": "2026-06"}
+        ],
+        "models": [
+          {"name": "ACoT-VLA", "type": "VLA基线模型", "open_source": true, "date": "2026-04"}
+        ],
+        "frameworks": [
+          {"name": "Genie Sim 3.0", "type": "仿真工具链", "features": "数字孪生1:1重建真实场景", "open_source": true, "date": "2026-04"}
+        ],
+        "ros": "支持",
+        "open_source_degree": "核心数据集+模型+仿真工具链均已开源",
+        "key_events": [
+          {"date": "2025-12", "event": "出货量突破5100台"},
+          {"date": "2025-12", "event": "与富临精工达成数千万元合作，近百台远征A2-W落地"},
+          {"date": "2025-12", "event": "全球首款便携人形机器人启元Q1发布"},
+          {"date": "2026-01", "event": "发布国内首个机器人租赁平台'擎天租'"},
+          {"date": "2026-04", "event": "开源AGIBOT WORLD 2026数据集"},
+          {"date": "2026-06", "event": "开源AGIBOT WORLD 2026第二期'多样交互'数据集"},
+          {"date": "2026-00", "event": "计划港股IPO申报"}
+        ]
+      }
+    },
+    {
+      "name": "优必选(UBTECH)",
+      "ecosystem": {
+        "datasets": [
+          {"name": "RoboMIND 2.0", "type": "机器人操作数据集", "scale": "279任务/4种形态，集成触觉数据", "open_source": true, "url": "关联北京人形机器人创新中心开源", "date": "2025-12"}
+        ],
+        "models": [
+          {"name": "Walker S2 具身模型", "type": "工业人形机器人AI系统", "open_source": false}
+        ],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "部分开源（通过创新中心开源RoboMIND数据集）",
+        "key_events": [
+          {"date": "2025-06", "event": "广西首台工业人形机器人Walker S2下线"},
+          {"date": "2025-12", "event": "第1000台Walker S2下线，全年交付超500台"},
+          {"date": "2025-12", "event": "全年人形机器人订单金额近14亿元"},
+          {"date": "2025-12", "event": "中标惠州5962万元大湾区数据采集中心项目"},
+          {"date": "2026-00", "event": "计划年产万台级工业人形机器人"},
+          {"date": "2026-00", "event": "控股锋龙股份（斥资16.65亿元）"}
+        ]
+      }
+    },
+    {
+      "name": "Tesla",
+      "ecosystem": {
+        "datasets": [
+          {"name": "Optimus 内部训练数据", "type": "工厂真机操作数据", "scale": "未公开", "open_source": false, "note": "通过Dojo超算训练，自研FSD视觉系统迁移学习"}
+        ],
+        "models": [
+          {"name": "Optimus VLA", "type": "端到端神经网络", "base": "FSD/DOJO迁移", "open_source": false, "capabilities": "通过观察人类行为学习新技能"},
+          {"name": "xAI Grok 集成", "type": "LLM集成", "open_source": false}
+        ],
+        "frameworks": [
+          {"name": "Dojo超算", "type": "训练基础设施", "features": "支持舰队学习（Fleet Learning）"},
+          {"name": "AI5推理芯片", "type": "端侧芯片", "features": "效率提升50倍"}
+        ],
+        "ros": "不支持（自研软件栈）",
+        "open_source_degree": "完全闭源",
+        "key_events": [
+          {"date": "2025-09", "event": "Optimus 2.5版本亮相（金色涂装/隐藏关节）"},
+          {"date": "2025-10", "event": "宣布V3 2026Q1发布，年底启动百万台产线"},
+          {"date": "2026-01", "event": "发布V3机器人，弗里蒙特工厂启动量产产线转换"},
+          {"date": "2026-02", "event": "停产Model S/X，将产线全面转向Optimus"},
+          {"date": "2026-00", "event": "计划2026年底启动年产百万台生产线"}
+        ]
+      }
+    },
+    {
+      "name": "Figure AI",
+      "ecosystem": {
+        "datasets": [
+          {"name": "Helix训练数据", "type": "VLA训练数据", "scale": "约500小时遥操作数据", "open_source": false, "note": "端到端VLA模型训练数据"}
+        ],
+        "models": [
+          {"name": "Helix", "type": "VLA（视觉-语言-动作）模型", "open_source": false, "capabilities": "首款在嵌入式低功耗GPU上运行的VLA，NL指令→物理操作", "date": "2025-02"}
+        ],
+        "frameworks": [
+          {"name": "自研端到端训练管线", "type": "RL+模仿学习", "note": "2025年2月终止与OpenAI合作，改为自研"}
+        ],
+        "ros": "不支持（自研软件栈）",
+        "open_source_degree": "完全闭源",
+        "key_events": [
+          {"date": "2024-02", "event": "B轮6.75亿美元（估值26亿），贝佐斯/微软/英伟达领投"},
+          {"date": "2025-02", "event": "发布Helix VLA模型，终止与OpenAI合作"},
+          {"date": "2025-03", "event": "BotQ工厂动工，计划年产12,000台"},
+          {"date": "2025-09", "event": "C轮超10亿美元，估值390亿"},
+          {"date": "2025-09", "event": "发布Figure 03，首款从设计源头为大规模生产打造的机型"},
+          {"date": "2026-00", "event": "目标4年10万台产能"}
+        ]
+      }
+    },
+    {
+      "name": "银河通用(Galbot)",
+      "ecosystem": {
+        "datasets": [
+          {"name": "DexonomySim", "type": "灵巧手功能性抓取合成大数据", "open_source": true, "scale": "百亿级仿真数据", "date": "2025"},  
+          {"name": "GraspVLA预训练数据", "type": "仿真合成动作数据集", "scale": "十亿级", "open_source": false}
+        ],
+        "models": [
+          {"name": "GraspVLA", "type": "具身基座大模型", "open_source": false, "capabilities": "全球首个十亿级仿真预训练端到端VLA，零样本泛化"},
+          {"name": "TrackVLA", "type": "端到端导航大模型", "open_source": false, "capabilities": "纯视觉+NL指令跟踪，密集人流中精准追踪"},
+          {"name": "NavFoM", "type": "跨本体全域环视导航基座大模型", "open_source": false, "capabilities": "小时级长程导航/动态避障"},
+          {"name": "DexNDM", "type": "灵巧手神经动力学模型", "open_source": false, "capabilities": "基于训练的灵巧手控制"},
+          {"name": "Any2Track", "type": "全身动作追踪系统", "open_source": false, "capabilities": "追踪任意运动/应对任意干扰"}
+        ],
+        "frameworks": [
+          {"name": "OpenWBT", "type": "全身遥操作系统", "open_source": true, "features": "全球首款全开源/多机型/跨虚实"}
+        ],
+        "ros": "支持",
+        "open_source_degree": "部分开源（仿真工具+DexonomySim+OpenWBT开源，核心模型未开源）",
+        "key_events": [
+          {"date": "2025-01", "event": "发布GraspVLA具身大模型"},
+          {"date": "2025-03", "event": "全球首个全自主人形机器人智慧零售方案发布"},
+          {"date": "2025-06", "event": "完成11亿元融资（宁德时代领投）"},
+          {"date": "2025-06", "event": "与博世成立合资公司"},
+          {"date": "2025-12", "event": "完成超3亿美元融资（累计约8亿美元，估值30亿美元）"},
+          {"date": "2025-12", "event": "与百达精工达成超1000台部署协议"},
+          {"date": "2026-02", "event": "完成25亿元融资（国家AI产业基金领投）"},
+          {"date": "2026-03", "event": "获世界人形机器人运动会应用场景冠军（170分全自主）"}
+        ]
+      }
+    },
+    {
+      "name": "小鹏(XPeng)",
+      "ecosystem": {
+        "datasets": [
+          {"name": "VLA训练数据", "type": "物理世界交互数据", "scale": "近1亿clips", "open_source": false, "note": "等价于人类司机65000年极限场景"}
+        ],
+        "models": [
+          {"name": "第二代VLA", "type": "视觉-语言-动作模型", "open_source": false, "capabilities": "端到端视觉→动作输出，物理世界大模型"},
+          {"name": "VLT大模型", "type": "思考决策模型", "open_source": false, "capabilities": "任务分解与动作组合"},
+          {"name": "VLM大模型", "type": "视觉语言模型", "open_source": false}
+        ],
+        "frameworks": [
+          {"name": "图灵AI芯片", "type": "端侧芯片", "features": "3颗，2250TOPS"},
+          {"name": "天玑AIOS", "type": "机器人操作系统", "features": "多轮对话+逻辑推理"}
+        ],
+        "ros": "部分支持",
+        "open_source_degree": "闭源，计划开源SDK供二次开发",
+        "key_events": [
+          {"date": "2025-11", "event": "发布全新一代IRON（82自由度/全固态电池/2250TOPS）"},
+          {"date": "2025-11", "event": "发布第二代VLA物理世界大模型"},
+          {"date": "2025-11", "event": "与宝钢达成战略合作，IRON入驻巡检场景"},
+          {"date": "2026-02", "event": "人形机器人全链条量产基地在广州开工"},
+          {"date": "2026-00", "event": "目标2026年底规模量产高阶人形机器人"},
+          {"date": "2026-00", "event": "IRON优先进入小鹏门店（导览/导购/导巡）"}
+        ]
+      }
+    },
+    {
+      "name": "北京人形机器人创新中心",
+      "ecosystem": {
+        "datasets": [
+          {"name": "RoboMIND 2.0", "type": "机器人操作数据集", "scale": "279任务/4种形态，集成触觉数据", "open_source": true, "date": "2025-12"},
+          {"name": "ArtVIP", "type": "数据训练支持", "open_source": true, "date": "2025-12"}
+        ],
+        "models": [
+          {"name": "XR-1", "type": "具身小脑VLA大模型", "open_source": true, "note": "国内首个且唯一通过具身智能国标测试", "date": "2025-12"}
+        ],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "开源（核心模型+数据集均已开源）",
+        "key_events": [
+          {"date": "2025-08", "event": "数据采集与训练基地投用，内部数据突破300万条"},
+          {"date": "2025-10", "event": "具身天工2.0与天轶2.0进入福田康明斯发动机工厂"},
+          {"date": "2025-12", "event": "开源XR-1具身VLA大模型和RoboMIND 2.0数据集"},
+          {"date": "2026-03", "event": "启动具身智能开源开放生态建设计划"}
+        ]
+      }
+    },
+    {
+      "name": "逐际动力(LimX)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "未开源",
+        "key_events": [
+          {"date": "2025-00", "event": "发布Oli人形机器人和TRON 1多形态机器人"},
+          {"date": "2026-00", "event": "处于技术验证与小范围试点阶段"}
+        ]
+      }
+    },
+    {
+      "name": "星海图(Galaxea)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "未开源",
+        "key_events": [
+          {"date": "2026-00", "event": "R1 Pro已实现数千台订单落地验证"},
+          {"date": "2026-00", "event": "完成大额融资，估值超100亿元"}
+        ]
+      }
+    },
+    {
+      "name": "千寻智能(Spirit AI)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "未开源",
+        "key_events": [
+          {"date": "2026-00", "event": "Moz1在宁德时代产线实现规模化部署"},
+          {"date": "2026-00", "event": "月稳定出货超百台"}
+        ]
+      }
+    },
+    {
+      "name": "众擎机器人(Engine AI)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "未开源",
+        "key_events": [
+          {"date": "2026-00", "event": "巡逻巡检等场景意向订单超3000台"},
+          {"date": "2026-00", "event": "完成Pre-A++与A1轮融资（京东领投）"},
+          {"date": "2026-00", "event": "发布SE01/PM01/SA01三款人形机器人"}
+        ]
+      }
+    },
+    {
+      "name": "乐聚机器人(Leju)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "未开源",
+        "key_events": [
+          {"date": "2025-10", "event": "完成IPO辅导备案（创业板）"},
+          {"date": "2025-10", "event": "获15亿元融资（深投控资本/深圳龙华资本）"},
+          {"date": "2025-12", "event": "累计出货超1000台"},
+          {"date": "2026-03", "event": "牵头成立'具身AI开源数据集社区'"}
+        ]
+      }
+    },
+    {
+      "name": "云深处(Deep Robotics)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [
+          {"name": "自研J60/J100关节", "type": "关节模组", "features": "轻量化/高扭矩", "open_source": false}
+        ],
+        "ros": "支持",
+        "open_source_degree": "部分开源（四足平台SDK开源，人形未开源）",
+        "key_events": [
+          {"date": "2025-00", "event": "发布DR01人形机器人（行走速度1.6m/s）"},
+          {"date": "2025-00", "event": "B+轮融资"},
+          {"date": "2025-00", "event": "发布DR02（全球首款IP66防水人形机器人）"},
+          {"date": "2025-12", "event": "Pre-IPO轮数亿元融资（国家AI产业基金领投）"},
+          {"date": "2025-12", "event": "启动IPO辅导"},
+          {"date": "2025-00", "event": "获5亿元融资"}
+        ]
+      }
+    },
+    {
+      "name": "松延动力(Noetix)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "未开源",
+        "key_events": [
+          {"date": "2025-10", "event": "发布Bumi小布米（售价9998元，全球首款万元级消费级人形机器人）"},
+          {"date": "2026-00", "event": "推出N2人形机器人"}
+        ]
+      }
+    },
+    {
+      "name": "拓斯达(Topstar)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [
+          {"name": "智谱AI大模型集成", "type": "LLM", "base": "智谱AI", "open_source": false, "note": "小拓搭载智谱AI大模型，使用思维链推理"}
+        ],
+        "frameworks": [
+          {"name": "X5智能机器人控制平台", "type": "控制平台", "features": "开放超500组底层接口，实时控制频率500Hz"}
+        ],
+        "ros": "支持",
+        "open_source_degree": "闭源（工业级产品）",
+        "key_events": [
+          {"date": "2025-09", "event": "发布首款人形机器人'小拓'（TWH020轮式人形）"},
+          {"date": "2025-09", "event": "发布TDM020人形双臂机器人和TM010人形机械臂"},
+          {"date": "2026-00", "event": "入选福布斯中国AI 50强"},
+          {"date": "2026-00", "event": "获具身智能产业落地标杆奖"}
+        ]
+      }
+    },
+    {
+      "name": "星尘智能(Astribot)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [
+          {"name": "S1 AI系统", "type": "模仿学习+多模态大模型", "open_source": false, "capabilities": "支持视频/动捕/遥操作学习"}
+        ],
+        "frameworks": [
+          {"name": "自研高性能电机传动系统", "type": "驱动系统", "features": "控制/传感/传动/驱动四合一"}
+        ],
+        "ros": "支持",
+        "open_source_degree": "闭源",
+        "key_events": [
+          {"date": "2024-04", "event": "发布S1 AI机器人助理（叠衣/炒菜/清洁）"},
+          {"date": "2026-00", "event": "S1臂端速度10m/s，精度0.1mm"},
+          {"date": "2026-00", "event": "商业化中"}
+        ]
+      }
+    },
+    {
+      "name": "埃斯顿酷卓(Estun Codroid)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "闭源（工业级）",
+        "key_events": [
+          {"date": "2025-06", "event": "发布Codroid 02（身高170cm/31自由度/单臂负载5kg）"},
+          {"date": "2026-00", "event": "工业场景小批量验证中"}
+        ]
+      }
+    },
+    {
+      "name": "波士顿动力(Boston Dynamics)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [
+          {"name": "Atlas AI系统", "type": "强化学习+模型预测控制", "open_source": false}
+        ],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "部分开源（Spo提供SDK）",
+        "key_events": [
+          {"date": "2024-04", "event": "液压Atlas退役，发布全电动Atlas"},
+          {"date": "2026-00", "event": "2026量产版Atlas发布"}
+        ]
+      }
+    },
+    {
+      "name": "1X Technologies",
+      "ecosystem": {
+        "datasets": [],
+        "models": [
+          {"name": "NEO AI系统", "type": "VLA", "open_source": false}
+        ],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "闭源",
+        "key_events": [
+          {"date": "2023-00", "event": "获OpenAI领投"},
+          {"date": "2026-00", "event": "NEO Beta大规模现场测试中"}
+        ]
+      }
+    },
+    {
+      "name": "Agility Robotics",
+      "ecosystem": {
+        "datasets": [],
+        "models": [
+          {"name": "Digit AI系统", "type": "VLA", "open_source": false}
+        ],
+        "frameworks": [],
+        "ros": "支持",
+        "open_source_degree": "闭源",
+        "key_events": [
+          {"date": "2024-00", "event": "Digit在亚马逊仓库测试"},
+          {"date": "2025-00", "event": "建成批量生产设施"},
+          {"date": "2026-00", "event": "生产爬坡中"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,57 +1,57 @@
 {
- "total_items": 528,
- "total_entities": 86,
- "total_dailies": 8,
+ "total_items": 599,
+ "total_entities": 90,
+ "total_dailies": 9,
  "categories": {
-  "ai-products": 149,
-  "tip": 146,
-  "industry": 129,
-  "ai-models": 54,
-  "paper": 50
+  "tip": 168,
+  "ai-products": 167,
+  "industry": 145,
+  "ai-models": 63,
+  "paper": 56
  },
  "entity_types": {
   "company": 46,
-  "model": 40
+  "model": 44
  },
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 14
+   "count": 16
   },
   {
    "name": "Hugging Face：Blog（RSS）",
-   "count": 13
+   "count": 16
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
    "count": 12
   },
   {
+   "name": "Bloomberg：Technology（RSS）",
+   "count": 10
+  },
+  {
+   "name": "X：Rohan Paul (@rohanpaul_ai)",
+   "count": 9
+  },
+  {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
    "count": 9
   },
   {
-   "name": "X：Rohan Paul (@rohanpaul_ai)",
-   "count": 7
-  },
-  {
-   "name": "Bloomberg：Technology（RSS）",
-   "count": 7
-  },
-  {
    "name": "X：OpenRouter (@OpenRouter)",
-   "count": 6
+   "count": 7
+  },
+  {
+   "name": "X：Kim (@kimmonismus)",
+   "count": 5
+  },
+  {
+   "name": "Claude：Blog（网页）",
+   "count": 5
   },
   {
    "name": "X：Replit (@Replit)",
-   "count": 4
-  },
-  {
-   "name": "X：NVIDIA AI (@NVIDIAAI)",
-   "count": 4
-  },
-  {
-   "name": "X：Microsoft Research (@MSFTResearch)",
    "count": 4
   }
  ],
@@ -90,8 +90,12 @@
   },
   {
    "date": "2026-06-09",
-   "count": 68
+   "count": 88
+  },
+  {
+   "date": "2026-06-10",
+   "count": 51
   }
  ],
- "updated_at": "2026-06-09T17:14:59Z"
+ "updated_at": "2026-06-10T17:00:03Z"
 }

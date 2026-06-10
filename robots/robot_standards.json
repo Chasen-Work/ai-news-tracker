@@ -1,0 +1,566 @@
+{
+  "meta": {
+    "version": "1.0",
+    "updated": "2026-06-11",
+    "description": "人形机器人字段标准定义 v1.0",
+    "note": "所有字段按此标准统一单位和格式。未特别说明的参数为厂商标注数值，实测数据需在值后标注 [实测]"
+  },
+
+  "field_groups": [
+    {
+      "group": "基础信息",
+      "fields": [
+        {
+          "key": "厂商",
+          "label": "厂商",
+          "type": "text",
+          "required": true,
+          "format": "中文名(英文名)",
+          "example": "宇树科技(Unitree)",
+          "description": "品牌官方名称，国内品牌优先中文名，括号内附英文"
+        },
+        {
+          "key": "型号",
+          "label": "型号",
+          "type": "text",
+          "required": true,
+          "format": "官方完整产品型号",
+          "example": "G1",
+          "description": "厂商官方产品型号名称"
+        },
+        {
+          "key": "类型",
+          "label": "形态分类",
+          "type": "enum",
+          "required": true,
+          "values": ["全尺寸", "中小型", "轮式", "固定（半身）", "机械臂"],
+          "example": "全尺寸",
+          "description": "机器人物理形态分类"
+        },
+        {
+          "key": "代数",
+          "label": "发布代数",
+          "type": "text",
+          "format": "Gen N / 第N代 / N",
+          "example": "Gen 3",
+          "description": "产品迭代代数"
+        },
+        {
+          "key": "发布日期",
+          "label": "发布日期",
+          "type": "date",
+          "format": "YYYY-MM",
+          "example": "2026-01",
+          "description": "产品首次公开时间"
+        }
+      ]
+    },
+    {
+      "group": "物理参数",
+      "fields": [
+        {
+          "key": "身高",
+          "label": "身高",
+          "type": "number",
+          "unit": "cm",
+          "precision": 0,
+          "format": "纯数字",
+          "range": "30-200",
+          "example": "170",
+          "description": "站立状态地面至头顶高度。可调节范围用'-'分隔"
+        },
+        {
+          "key": "重量",
+          "label": "重量",
+          "type": "number",
+          "unit": "kg",
+          "precision": 0,
+          "format": "纯数字",
+          "example": "45",
+          "description": "本体重量（不含外接电源/负载）"
+        },
+        {
+          "key": "材质",
+          "label": "机身材质",
+          "type": "text",
+          "format": "逗号分隔",
+          "example": "镁铝合金, 碳纤维",
+          "description": "机身主要材料"
+        },
+        {
+          "key": "防水等级",
+          "label": "防水等级",
+          "type": "enum",
+          "values": ["IPX3","IPX4","IPX5","IP54","IP55","IP65","IP66","IP67","无"],
+          "example": "IP54",
+          "allow_custom": true,
+          "description": "国际防护等级标准"
+        }
+      ]
+    },
+    {
+      "group": "运动能力",
+      "fields": [
+        {
+          "key": "自由度_总数",
+          "label": "自由度(总)",
+          "type": "number",
+          "unit": "DOF",
+          "precision": 0,
+          "format": "纯数字",
+          "example": "31",
+          "description": "全身总自由度数。如含灵巧手额外说明"
+        },
+        {
+          "key": "自由度_手臂",
+          "label": "手臂自由度",
+          "type": "number",
+          "unit": "DOF",
+          "format": "单臂N×2",
+          "example": "14",
+          "description": "双臂自由度合计"
+        },
+        {
+          "key": "自由度_手部",
+          "label": "手部自由度",
+          "type": "number",
+          "unit": "DOF",
+          "format": "单手N×2",
+          "example": "12",
+          "description": "双手自由度（含所有手指关节）"
+        },
+        {
+          "key": "关节扭矩",
+          "label": "关节扭矩",
+          "type": "number",
+          "unit": "Nm",
+          "precision": 1,
+          "format": "纯数字，多关节用-分隔",
+          "example": "120-360",
+          "description": "关节最大扭矩，标注范围或单值"
+        },
+        {
+          "key": "行走速度",
+          "label": "行走速度",
+          "type": "number",
+          "unit": "m/s",
+          "precision": 1,
+          "format": "纯数字",
+          "range": "0-12",
+          "example": "1.6",
+          "condition": "水平地面连续直线行走",
+          "description": "稳定行走最高速度，标注测试条件"
+        },
+        {
+          "key": "奔跑速度",
+          "label": "奔跑速度",
+          "type": "number",
+          "unit": "m/s",
+          "format": "纯数字",
+          "description": "奔跑/跑步状态最高速度"
+        },
+        {
+          "key": "爬坡角度",
+          "label": "爬坡角度",
+          "type": "number",
+          "unit": "°",
+          "format": "纯数字",
+          "example": "25",
+          "description": "可稳定爬升的最大坡度"
+        },
+        {
+          "key": "越障高度",
+          "label": "越障高度",
+          "type": "number",
+          "unit": "cm",
+          "format": "纯数字",
+          "example": "18",
+          "description": "可跨越的最大障碍物高度"
+        }
+      ]
+    },
+    {
+      "group": "负载能力",
+      "fields": [
+        {
+          "key": "负载_单臂",
+          "label": "单臂负载",
+          "type": "number",
+          "unit": "kg",
+          "precision": 1,
+          "format": "纯数字",
+          "example": "10",
+          "condition": "手臂水平伸展状态下额定负载",
+          "description": "单臂额定负载能力"
+        },
+        {
+          "key": "负载_双臂",
+          "label": "双臂负载",
+          "type": "number",
+          "unit": "kg",
+          "format": "纯数字",
+          "example": "20",
+          "description": "双臂协同额定负载能力"
+        },
+        {
+          "key": "负载_行走",
+          "label": "负载行走",
+          "type": "number",
+          "unit": "kg",
+          "format": "纯数字",
+          "description": "行走状态下承载重量"
+        },
+        {
+          "key": "负载自重比",
+          "label": "负载自重比",
+          "type": "number",
+          "unit": "ratio",
+          "format": "保留2位小数",
+          "description": "单臂负载/本体重量比值"
+        }
+      ]
+    },
+    {
+      "group": "续航与能源",
+      "fields": [
+        {
+          "key": "续航_行走",
+          "label": "续航(行走)",
+          "type": "number",
+          "unit": "min",
+          "precision": 0,
+          "format": "纯数字",
+          "condition": "连续行走状态，非待机",
+          "example": "120",
+          "description": "连续行走作业续航时间。统一用分钟"
+        },
+        {
+          "key": "续航_待机",
+          "label": "续航(待机)",
+          "type": "number",
+          "unit": "min",
+          "format": "纯数字",
+          "description": "待机状态续航时间"
+        },
+        {
+          "key": "电池容量",
+          "label": "电池容量",
+          "type": "number",
+          "unit": "Wh",
+          "precision": 0,
+          "format": "纯数字",
+          "example": "3000",
+          "description": "电池总容量。如厂商标注kWh，按1kWh=1000Wh换算"
+        },
+        {
+          "key": "充电时间",
+          "label": "充电时间",
+          "type": "number",
+          "unit": "min",
+          "format": "纯数字",
+          "description": "0-100%充电所需时间"
+        },
+        {
+          "key": "换电",
+          "label": "支持换电",
+          "type": "boolean",
+          "values": ["是", "否"],
+          "description": "是否支持电池快速更换"
+        }
+      ]
+    },
+    {
+      "group": "感知系统",
+      "fields": [
+        {
+          "key": "摄像头",
+          "label": "摄像头",
+          "type": "text",
+          "format": "数量+类型",
+          "example": "2×RGBD深度相机, 1×立体相机",
+          "description": "摄像头配置，标注数量和类型"
+        },
+        {
+          "key": "激光雷达",
+          "label": "LiDAR",
+          "type": "text",
+          "format": "数量+类型",
+          "example": "1×单线, 1×3D",
+          "description": "激光雷达配置"
+        },
+        {
+          "key": "IMU",
+          "label": "IMU",
+          "type": "text",
+          "format": "型号/规格",
+          "example": "6轴IMU",
+          "description": "惯性测量单元"
+        },
+        {
+          "key": "麦克风阵列",
+          "label": "麦克风阵列",
+          "type": "text",
+          "format": "数量",
+          "example": "4 mic阵列",
+          "description": "语音采集配置"
+        },
+        {
+          "key": "触觉传感器",
+          "label": "触觉传感器",
+          "type": "text",
+          "format": "位置+精度",
+          "example": "指尖触觉阵列 (分辨率1mm)",
+          "description": "触觉感知能力"
+        },
+        {
+          "key": "力传感器",
+          "label": "力传感器",
+          "type": "text",
+          "format": "位置",
+          "example": "腕部六维力传感器",
+          "description": "力/力矩传感器配置"
+        }
+      ]
+    },
+    {
+      "group": "算力与系统",
+      "fields": [
+        {
+          "key": "算力",
+          "label": "端侧算力",
+          "type": "number",
+          "unit": "TOPS",
+          "precision": 0,
+          "format": "纯数字",
+          "example": "275",
+          "description": "板载AI算力，INT8精度"
+        },
+        {
+          "key": "主控芯片",
+          "label": "主控芯片",
+          "type": "text",
+          "format": "型号",
+          "example": "NVIDIA Jetson Thor",
+          "description": "核心处理器/SoC型号"
+        },
+        {
+          "key": "操作系统",
+          "label": "操作系统",
+          "type": "text",
+          "example": "Ubuntu 22.04 + ROS 2 Humble",
+          "description": "预装操作系统和中间件"
+        }
+      ]
+    },
+    {
+      "group": "软件生态",
+      "fields": [
+        {
+          "key": "SDK语言",
+          "label": "SDK支持语言",
+          "type": "text",
+          "format": "逗号分隔",
+          "example": "Python, C++, ROS 2",
+          "description": "SDK支持的编程语言/框架"
+        },
+        {
+          "key": "文档质量",
+          "label": "SDK文档质量",
+          "type": "enum",
+          "values": ["专业级","良好","基础","无"],
+          "description": "基于实际翻阅的主观评分"
+        },
+        {
+          "key": "仿真支持",
+          "label": "仿真环境",
+          "type": "text",
+          "example": "Isaac Sim, MuJoCo",
+          "description": "支持的仿真平台"
+        },
+        {
+          "key": "开源程度",
+          "label": "开源程度",
+          "type": "enum",
+          "values": ["完全开源","部分开源","仅有SDK","闭源"],
+          "description": "软硬件开源程度"
+        }
+      ]
+    },
+    {
+      "group": "生态资产（非硬件）",
+      "fields": [
+        {
+          "key": "训练数据集",
+          "label": "训练数据集",
+          "type": "text",
+          "format": "名称(规模，是否开源)",
+          "example": "AgiBot World (100万条，开源)",
+          "description": "厂商发布或使用的训练数据集"
+        },
+        {
+          "key": "基础模型",
+          "label": "基础模型",
+          "type": "text",
+          "format": "模型名称(接入的LLM)",
+          "example": "Groot VLA (接入DeepSeek)",
+          "description": "机器人搭载的基础AI模型"
+        },
+        {
+          "key": "训练框架",
+          "label": "训练框架",
+          "type": "text",
+          "format": "名称(是否开源)",
+          "example": "Isaac Lab, 自研RL框架",
+          "description": "训练管线/框架"
+        },
+        {
+          "key": "ROS集成",
+          "label": "ROS集成度",
+          "type": "enum",
+          "values": ["原生支持","支持","部分支持","不支持"],
+          "description": "与ROS生态的兼容程度"
+        }
+      ]
+    },
+    {
+      "group": "商业信息",
+      "fields": [
+        {
+          "key": "售价",
+          "label": "售价",
+          "type": "text",
+          "format": "人民币+RMB或美元+USD",
+          "example": "16000 USD",
+          "note": "标注货币单位和报价时间。预估用包含波动范围",
+          "description": "公开售价，标注货币"
+        },
+        {
+          "key": "租赁价",
+          "label": "租赁参考价",
+          "type": "text",
+          "unit": "RMB/天",
+          "format": "纯数字",
+          "description": "单台日租参考价"
+        },
+        {
+          "key": "量产状态",
+          "label": "量产状态",
+          "type": "enum",
+          "values": ["已量产","小批量量产","预售","原型","已发布","概念"],
+          "description": "产品当前量产阶段"
+        },
+        {
+          "key": "量产数量",
+          "label": "累计出货量",
+          "type": "text",
+          "format": "台数+时间点",
+          "example": "5500台 (截至2026Q1)",
+          "description": "截至某时间点的累计出货量"
+        }
+      ]
+    },
+    {
+      "group": "评价",
+      "fields": [
+        {
+          "key": "场景推荐",
+          "label": "推荐场景",
+          "type": "text",
+          "format": "逗号分隔",
+          "example": "工业巡检, 科研教育",
+          "description": "该产品最适合的应用场景"
+        },
+        {
+          "key": "优点",
+          "label": "优点",
+          "type": "text",
+          "format": "简要列出",
+          "example": "开源度高, 运动能力强, 性价比突出",
+          "description": "产品核心优势"
+        },
+        {
+          "key": "缺点",
+          "label": "缺点",
+          "type": "text",
+          "format": "简要列出",
+          "example": "SDK文档不完善, 续航偏短",
+          "description": "产品主要短板"
+        },
+        {
+          "key": "综合评分",
+          "label": "综合评分",
+          "type": "number",
+          "unit": "/10",
+          "precision": 1,
+          "range": "0-10",
+          "description": "综合评分，暂时留空，待实测后填入"
+        }
+      ]
+    },
+    {
+      "group": "元数据",
+      "fields": [
+        {
+          "key": "数据级别",
+          "label": "数据级别",
+          "type": "enum",
+          "values": ["官方参数-官网可查", "官方参数-新闻稿", "第三方估算", "待核实"],
+          "description": "数据可信度分级"
+        },
+        {
+          "key": "数据日期",
+          "label": "数据日期",
+          "type": "date",
+          "format": "YYYY-MM",
+          "required": true,
+          "example": "2026-06",
+          "description": "数据采集时间"
+        },
+        {
+          "key": "官网",
+          "label": "官网URL",
+          "type": "url",
+          "required": true,
+          "description": "产品官网页面"
+        },
+        {
+          "key": "数据来源",
+          "label": "数据来源说明",
+          "type": "text",
+          "required": true,
+          "values": ["官网", "官网+新闻报道", "新闻报道", "实测"],
+          "description": "具体说明每个字段的数据来源"
+        },
+        {
+          "key": "数据备注",
+          "label": "备注",
+          "type": "text",
+          "description": "其他需要说明的信息"
+        }
+      ]
+    }
+  ],
+
+  "unit_conversion": {
+    "身高": {"from_cm": 1, "from_m": 100},
+    "重量": {"from_g": 0.001, "from_kg": 1},
+    "续航": {"from_h": 60, "from_min": 1},
+    "行走速度": {"from_kmh": 0.2778, "from_ms": 1},
+    "电池容量": {"from_Wh": 1, "from_kWh": 1000}
+  },
+
+  "quality_gates": {
+    "required_fields": ["厂商", "型号", "类型", "数据级别", "数据日期", "官网"],
+    "numeric_consistency": [
+      "身高", "重量", "行走速度", "电池容量"
+    ],
+    "scoring": {
+      "movement": {"weight": 0.15, "fields": ["行走速度","爬坡角度","越障高度","自由度_总数"]},
+      "manipulation": {"weight": 0.15, "fields": ["负载_单臂","自由度_手部","触觉传感器"]},
+      "perception": {"weight": 0.15, "fields": ["摄像头","激光雷达","力传感器"]},
+      "intelligence": {"weight": 0.20, "fields": ["算力","基础模型","训练数据集","SDK语言"]},
+      "practicality": {"weight": 0.20, "fields": ["续航_行走","售价","量产状态","文档质量"]},
+      "robustness": {"weight": 0.15, "fields": ["防水等级","材质","开源程度"]}
+    }
+  }
+}

@@ -221,6 +221,12 @@
   .pagination .page-info { font-size: 12px; color: var(--dim); padding: 0 8px; }
   .pagination .page-info b { color: var(--text); }
 
+  /* ── Overlay ── */
+  .overlay { display:none; position:fixed; top:0; left:0; width:100%; height:100%;
+    background:rgba(0,0,0,0.7); z-index:1000; backdrop-filter:blur(4px); }
+  .overlay-content { background:var(--card); border:1px solid var(--border);
+    border-radius:12px; padding:24px; margin:40px auto; width:90%; max-width:700px; }
+
   /* ── Responsive ── */
   @media (max-width: 768px) {
     .header { padding: 14px 16px 10px; }
@@ -369,6 +375,13 @@
 </div>
 
 <!-- ============================================================ -->
+<!-- ECOSYSTEM OVERLAY -->
+<!-- ============================================================ -->
+<div id="ecosystemOverlay" class="overlay" onclick="if(event.target===this)closeEcosystem()">
+  <div class="overlay-content" id="ecosystemPanel" style="max-width:700px;max-height:80vh;overflow-y:auto"></div>
+</div>
+
+<!-- ============================================================ -->
 <!-- TAB 4: SKILLS -->
 <!-- ============================================================ -->
 <div class="tab-content" id="tab-skills">
@@ -424,6 +437,9 @@ async function init() {
     document.getElementById('updateStatus').textContent =
       `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
   });
+  
+  // Load ecosystem data
+  loadEcosystem();
 }
 
 // ── TAB SWITCHING ──────────────────────────────────────────────────
@@ -517,20 +533,115 @@ function renderModels() {
 // ROBOTS - Dynamic per-category display
 // ══════════════════════════════════════════════════════════════════
 
+let ecosystemData = null;
+
+async function loadEcosystem() {
+  if (ecosystemData) return ecosystemData;
+  try {
+    const r = await fetch('./robots/brand_ecosystem.json');
+    if (!r.ok) return null;
+    const d = await r.json();
+    ecosystemData = d;
+    return d;
+  } catch(e) { return null; }
+}
+
+function getBrandEcosystem(vendor) {
+  if (!ecosystemData) return null;
+  // Match by normalized name
+  const v = vendor.replace(/[()（]/g,'(').replace(/[)）]/g,')').toLowerCase();
+  return ecosystemData.brands.find(b => b.name.replace(/[()（]/g,'(').replace(/[)）]/g,')').toLowerCase() === v) || null;
+}
+
+function showEcosystemPanel(vendor) {
+  const eco = getBrandEcosystem(vendor);
+  const panel = document.getElementById('ecosystemPanel');
+  if (!eco) {
+    panel.innerHTML = `<div style="text-align:center;padding:30px;color:var(--dim)">暂无 ${vendor} 的生态数据</div>
+      <div style="text-align:center;margin-top:12px"><button onclick="closeEcosystem()" style="background:var(--accent);border:none;color:#fff;padding:8px 20px;border-radius:6px;cursor:pointer">关闭</button></div>`;
+    panel.style.display = 'block';
+    return;
+  }
+  
+  let html = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+    <h2 style="font-size:18px;color:var(--text);margin:0">${eco.name}</h2>
+    <span style="font-size:11px;color:var(--green)">● ${eco.ecosystem.open_source_degree}</span>
+    <button onclick="closeEcosystem()" style="background:none;border:none;color:var(--dim);font-size:20px;cursor:pointer">✕</button>
+  </div>`;
+  
+  // Datasets
+  if (eco.ecosystem.datasets && eco.ecosystem.datasets.length) {
+    html += `<div class="card"><h3>📊 训练数据集</h3>`;
+    eco.ecosystem.datasets.forEach(d => {
+      html += `<div style="display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--border)">
+        <span style="color:${d.open_source?'var(--green)':'var(--dim)'}">${d.open_source?'🔓':'🔒'}</span>
+        <span style="font-weight:500">${d.name}</span>
+        <span style="font-size:11px;color:var(--dim)">${d.type}</span>
+        ${d.scale ? `<span style="font-size:11px;color:var(--accent)">${d.scale}</span>` : ''}
+        ${d.url ? `<a href="${d.url}" target="_blank" style="font-size:11px;color:var(--accent)">详情</a>` : ''}
+      </div>`;
+    });
+    html += `</div>`;
+  }
+  
+  // Models
+  if (eco.ecosystem.models && eco.ecosystem.models.length) {
+    html += `<div class="card"><h3>🧠 基础模型</h3>`;
+    eco.ecosystem.models.forEach(m => {
+      html += `<div style="padding:6px 0;border-bottom:1px solid var(--border)">
+        <div><span style="font-weight:500">${m.name}</span> <span style="font-size:11px;color:var(--dim)">${m.type}</span> ${m.open_source?'<span style="font-size:10px;color:var(--green)">开源</span>':'<span style="font-size:10px;color:var(--orange)">闭源</span>'}</div>
+        ${m.capabilities ? `<div style="font-size:11px;color:var(--dim);margin-top:2px">${m.capabilities}</div>` : ''}
+      </div>`;
+    });
+    html += `</div>`;
+  }
+  
+  // Key events timeline
+  if (eco.ecosystem.key_events && eco.ecosystem.key_events.length) {
+    html += `<div class="card"><h3>📅 关键事件时间线</h3>`;
+    const sorted = [...eco.ecosystem.key_events].sort((a,b) => b.date.localeCompare(a.date));
+    sorted.forEach(e => {
+      html += `<div style="display:flex;gap:12px;padding:5px 0;border-bottom:1px solid var(--border)">
+        <span style="font-size:11px;color:var(--accent);min-width:80px">${e.date.replace('00','?')}</span>
+        <span>${e.event}</span>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+  
+  // Open source & ROS
+  html += `<div style="display:flex;gap:16px;font-size:12px;color:var(--dim);padding:8px 0">
+    <span>🔧 ROS集成: ${eco.ecosystem.ros}</span>
+    <span>📋 开源程度: ${eco.ecosystem.open_source_degree}</span>
+  </div>`;
+  
+  panel.innerHTML = html;
+  panel.style.display = 'block';
+}
+
+function closeEcosystem() {
+  document.getElementById('ecosystemPanel').style.display = 'none';
+}
+
 const ROBOT_CONFIG = {
   humanoid: {
     label: '🤖 人形机器人', file: 'humanoid.json',
-    defaultCols: ['厂商','型号','类型','身高','重量','负载能力','续航','自由度','行走速度','价格','状态'],
+    defaultCols: ['厂商','型号','类型','身高','重量','负载_单臂','续航_行走','自由度_总数','行走速度','售价','量产状态'],
     allCols: [
       {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
-      {key:'类型',label:'类型',sort:true},{key:'身高',label:'身高(cm)',sort:true,unit:'cm'},
-      {key:'重量',label:'重量(kg)',sort:true,unit:'kg'},{key:'负载能力',label:'负载(kg)',sort:true,unit:'kg'},
-      {key:'续航',label:'续航(min)',sort:true,unit:'min'},{key:'自由度',label:'自由度',sort:true},
-      {key:'手部自由度',label:'手部自由度',sort:true},{key:'关节扭矩',label:'关节扭矩(Nm)',sort:true},
-      {key:'行走速度',label:'行走速度(m/s)',sort:true},{key:'电池容量',label:'电池(Wh)',sort:true},
-      {key:'传感器配置',label:'传感器',sort:false},{key:'算力',label:'算力(TOPS)',sort:true},
-      {key:'操作系统',label:'系统',sort:false},{key:'SDK',label:'SDK',sort:false},
-      {key:'价格',label:'价格',sort:true},{key:'状态',label:'状态',sort:true},
+      {key:'类型',label:'类型',sort:true},{key:'身高',label:'身高(cm)',sort:true},
+      {key:'重量',label:'重量(kg)',sort:true},{key:'负载_单臂',label:'负载(kg)',sort:true},
+      {key:'负载_双臂',label:'双臂负载(kg)',sort:true},{key:'续航_行走',label:'行走续航(min)',sort:true},
+      {key:'电池容量',label:'电池(Wh)',sort:true},{key:'自由度_总数',label:'自由度',sort:true},
+      {key:'自由度_手部',label:'手部自由度',sort:true},{key:'关节扭矩',label:'关节扭矩(Nm)',sort:true},
+      {key:'行走速度',label:'行走速度(m/s)',sort:true},{key:'爬坡角度',label:'爬坡(°)',sort:true},
+      {key:'越障高度',label:'越障(cm)',sort:true},{key:'摄像头',label:'摄像头',sort:false},
+      {key:'激光雷达',label:'LiDAR',sort:false},{key:'算力',label:'算力(TOPS)',sort:true},
+      {key:'主控芯片',label:'芯片',sort:false},{key:'操作系统',label:'系统',sort:false},
+      {key:'SDK语言',label:'SDK',sort:false},{key:'仿真支持',label:'仿真',sort:false},
+      {key:'开源程度',label:'开源',sort:true},{key:'训练数据集',label:'数据集',sort:false},
+      {key:'基础模型',label:'基础模型',sort:false},{key:'售价',label:'售价',sort:true},
+      {key:'量产状态',label:'量产状态',sort:true},{key:'数据级别',label:'数据级别',sort:true},
     ]
   },
   commercial_cleaner: {
@@ -642,10 +753,10 @@ function renderRobots() {
   
   document.getElementById('brandCards').innerHTML =
     Object.entries(brands).map(([name, info]) => `
-      <div class="brand-card" onclick="window.open('${info.url}','_blank')">
+      <div class="brand-card" onclick="showEcosystemPanel('${name.replace(/'/g,"\\'")}')" style="cursor:pointer">
         <div class="name">${name}</div>
         <div class="count">${info.count}款型号</div>
-        <span class="link">查看官网 ▶</span>
+        <span class="link">查看品牌档案 ▶</span>
       </div>
     `).join('');
 
@@ -725,10 +836,13 @@ function renderRobots() {
 
   // ── Table body ──
   document.getElementById('robotBody').innerHTML = pageList.map(r => {
-    // Build vendor URL link
     const vendorHtml = r['官网'] ? `<a href="${r['官网']}" target="_blank" style="color:var(--accent);text-decoration:none">${r['厂商']||''}</a>` : (r['厂商']||'');
+    const level = r['数据级别'] || '';
+    const levelBadge = level.includes('官方') ? '<span style="font-size:9px;color:var(--green);margin-left:4px">✓</span>'
+      : level.includes('新闻') ? '<span style="font-size:9px;color:var(--orange);margin-left:4px">📰</span>'
+      : '<span style="font-size:9px;color:var(--dim);margin-left:4px">?</span>';
     return '<tr>' + sortedCol.map(c => {
-      if (c.key === '厂商') return `<td>${vendorHtml}</td>`;
+      if (c.key === '厂商') return `<td><span onclick="showEcosystemPanel('${(r['厂商']||'').replace(/'/g,"\\'")}')" style="cursor:pointer;color:var(--accent)">${r['厂商']||''}</span>${levelBadge}</td>`;
       if (c.key === '型号' && r['官网']) {
         return `<td><a href="${r['官网']}" target="_blank" style="color:var(--text);text-decoration:none">${r['型号']||''}</a></td>`;
       }

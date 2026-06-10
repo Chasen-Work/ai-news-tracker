@@ -3,71 +3,78 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 53,
-  "last_seen": "2026-06-09T05:53:06.000Z"
- },
- {
-  "id": 10,
-  "name": "NVIDIA",
-  "type": "company",
-  "mentions": 46,
-  "last_seen": "2026-06-09T08:37:48.000Z"
+  "mentions": 56,
+  "last_seen": "2026-06-10"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 42,
-  "last_seen": "2026-06-09T17:04:29.001Z"
+  "mentions": 49,
+  "last_seen": "2026-06-10T12:00:06.000Z"
+ },
+ {
+  "id": 10,
+  "name": "NVIDIA",
+  "type": "company",
+  "mentions": 48,
+  "last_seen": "2026-06-10"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 33,
-  "last_seen": "2026-06-09T15:55:53.000Z"
+  "mentions": 39,
+  "last_seen": "2026-06-10T16:24:11.000Z"
  },
  {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 28,
-  "last_seen": "2026-06-09"
- },
- {
-  "id": 6,
-  "name": "Qwen",
-  "type": "model",
-  "mentions": 26,
-  "last_seen": "2026-06-09T09:27:47.000Z"
+  "mentions": 30,
+  "last_seen": "2026-06-10T00:42:27.000Z"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 26,
-  "last_seen": "2026-06-09T01:19:44.000Z"
+  "mentions": 30,
+  "last_seen": "2026-06-10T00:42:27.000Z"
+ },
+ {
+  "id": 6,
+  "name": "Qwen",
+  "type": "model",
+  "mentions": 28,
+  "last_seen": "2026-06-10"
  },
  {
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 19,
-  "last_seen": "2026-06-09T17:04:29.001Z"
+  "mentions": 22,
+  "last_seen": "2026-06-10T08:21:45.000Z"
  },
  {
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 18,
-  "last_seen": "2026-06-09T16:30:04.000Z"
+  "mentions": 22,
+  "last_seen": "2026-06-10T15:22:47.000Z"
  },
  {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 17,
-  "last_seen": "2026-06-09T09:04:58.000Z"
+  "mentions": 20,
+  "last_seen": "2026-06-10"
+ },
+ {
+  "id": 149,
+  "name": "Cursor",
+  "type": "company",
+  "mentions": 20,
+  "last_seen": "2026-06-10T00:42:27.000Z"
  },
  {
   "id": 24,
@@ -77,18 +84,25 @@
   "last_seen": "2026-06-09T11:45:15.000Z"
  },
  {
-  "id": 149,
-  "name": "Cursor",
-  "type": "company",
-  "mentions": 15,
-  "last_seen": "2026-06-09T16:30:04.000Z"
- },
- {
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
+  "mentions": 15,
+  "last_seen": "2026-06-10T08:21:45.000Z"
+ },
+ {
+  "id": 28,
+  "name": "Nemotron",
+  "type": "model",
   "mentions": 13,
-  "last_seen": "2026-06-09T08:22:26.000Z"
+  "last_seen": "2026-06-09T00:00:00.000Z"
+ },
+ {
+  "id": 2,
+  "name": "GPT-5.5",
+  "type": "model",
+  "mentions": 12,
+  "last_seen": "2026-06-10"
  },
  {
   "id": 3,
@@ -96,13 +110,6 @@
   "type": "company",
   "mentions": 12,
   "last_seen": "2026-06-07"
- },
- {
-  "id": 28,
-  "name": "Nemotron",
-  "type": "model",
-  "mentions": 12,
-  "last_seen": "2026-06-08"
  },
  {
   "id": 4,
@@ -119,6 +126,20 @@
   "last_seen": "2026-06-09"
  },
  {
+  "id": 20,
+  "name": "HuggingFace",
+  "type": "company",
+  "mentions": 11,
+  "last_seen": "2026-06-10"
+ },
+ {
+  "id": 43,
+  "name": "Meta",
+  "type": "company",
+  "mentions": 11,
+  "last_seen": "2026-06-10T01:41:12.000Z"
+ },
+ {
   "id": 93,
   "name": "阿里",
   "type": "company",
@@ -126,11 +147,11 @@
   "last_seen": "2026-06-09T10:08:57.000Z"
  },
  {
-  "id": 2,
-  "name": "GPT-5.5",
-  "type": "model",
-  "mentions": 10,
-  "last_seen": "2026-06-09T14:00:27.000Z"
+  "id": 560,
+  "name": "Apple",
+  "type": "company",
+  "mentions": 11,
+  "last_seen": "2026-06-10"
  },
  {
   "id": 25,
@@ -140,20 +161,6 @@
   "last_seen": "2026-06-09"
  },
  {
-  "id": 43,
-  "name": "Meta",
-  "type": "company",
-  "mentions": 10,
-  "last_seen": "2026-06-08T00:00:00.000Z"
- },
- {
-  "id": 560,
-  "name": "Apple",
-  "type": "company",
-  "mentions": 10,
-  "last_seen": "2026-06-09T15:02:21.000Z"
- },
- {
   "id": 23,
   "name": "Replit",
   "type": "company",
@@ -161,18 +168,18 @@
   "last_seen": "2026-06-05"
  },
  {
+  "id": 70,
+  "name": "Google DeepMind",
+  "type": "company",
+  "mentions": 9,
+  "last_seen": "2026-06-10T16:24:11.000Z"
+ },
+ {
   "id": 52,
   "name": "Microsoft",
   "type": "company",
   "mentions": 8,
   "last_seen": "2026-06-04"
- },
- {
-  "id": 20,
-  "name": "HuggingFace",
-  "type": "company",
-  "mentions": 7,
-  "last_seen": "2026-06-09T10:46:19.000Z"
  },
  {
   "id": 26,
@@ -189,18 +196,18 @@
   "last_seen": "2026-06-09T14:16:16.000Z"
  },
  {
-  "id": 70,
-  "name": "Google DeepMind",
-  "type": "company",
-  "mentions": 7,
-  "last_seen": "2026-06-09T14:10:19.000Z"
- },
- {
   "id": 19,
   "name": "OpenBMB",
   "type": "company",
   "mentions": 6,
   "last_seen": "2026-06-09"
+ },
+ {
+  "id": 304,
+  "name": "Qwen3.5",
+  "type": "model",
+  "mentions": 6,
+  "last_seen": "2026-06-10"
  },
  {
   "id": 30,
@@ -252,11 +259,11 @@
   "last_seen": "2026-06-03"
  },
  {
-  "id": 304,
-  "name": "Qwen3.5",
-  "type": "model",
+  "id": 132,
+  "name": "Luma",
+  "type": "company",
   "mentions": 4,
-  "last_seen": "2026-06-09"
+  "last_seen": "2026-06-10"
  },
  {
   "id": 338,
@@ -271,6 +278,13 @@
   "type": "company",
   "mentions": 4,
   "last_seen": "2026-06-09"
+ },
+ {
+  "id": 602,
+  "name": "cursor",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-06-10"
  },
  {
   "id": 5,
@@ -327,6 +341,13 @@
   "type": "company",
   "mentions": 3,
   "last_seen": "2026-06-04"
+ },
+ {
+  "id": 335,
+  "name": "百度",
+  "type": "company",
+  "mentions": 3,
+  "last_seen": "2026-06-10T09:43:54.000Z"
  },
  {
   "id": 434,
@@ -420,11 +441,11 @@
   "last_seen": "2026-06-03"
  },
  {
-  "id": 132,
-  "name": "Luma",
+  "id": 134,
+  "name": "IBM",
   "type": "company",
   "mentions": 2,
-  "last_seen": "2026-06-09T14:46:14.000Z"
+  "last_seen": "2026-06-09T21:48:41.000Z"
  },
  {
   "id": 154,
@@ -453,13 +474,6 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-06-05"
- },
- {
-  "id": 335,
-  "name": "百度",
-  "type": "company",
-  "mentions": 2,
-  "last_seen": "2026-06-09T12:03:00.000Z"
  },
  {
   "id": 378,
@@ -497,18 +511,39 @@
   "last_seen": "2026-06-09"
  },
  {
+  "id": 604,
+  "name": "Gemini 3.5",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-06-10"
+ },
+ {
+  "id": 651,
+  "name": "华为",
+  "type": "company",
+  "mentions": 2,
+  "last_seen": "2026-06-10T09:15:33.000Z"
+ },
+ {
+  "id": 652,
+  "name": "Gemini 3 Flash",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-06-09T19:38:28.000Z"
+ },
+ {
+  "id": 669,
+  "name": "GPT-4",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-06-10"
+ },
+ {
   "id": 78,
   "name": "DeepSeek V3",
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-06-02T16:00:18.000Z"
- },
- {
-  "id": 134,
-  "name": "IBM",
-  "type": "company",
-  "mentions": 1,
-  "last_seen": "2026-06-01T13:51:18.000Z"
  },
  {
   "id": 173,
@@ -567,20 +602,6 @@
   "last_seen": "2026-06-07T00:00:00.000Z"
  },
  {
-  "id": 602,
-  "name": "cursor",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-09T16:30:04.000Z"
- },
- {
-  "id": 604,
-  "name": "Gemini 3.5",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-09T15:18:23.000Z"
- },
- {
   "id": 614,
   "name": "豆包",
   "type": "company",
@@ -588,17 +609,24 @@
   "last_seen": "2026-06-09T13:00:21.000Z"
  },
  {
-  "id": 651,
-  "name": "华为",
-  "type": "company",
-  "mentions": 1,
-  "last_seen": "2026-06-08T09:38:30.000Z"
- },
- {
-  "id": 652,
-  "name": "Gemini 3 Flash",
+  "id": 701,
+  "name": "DeepSeek-V4",
   "type": "model",
   "mentions": 1,
-  "last_seen": "2026-06-08T03:00:56.000Z"
+  "last_seen": "2026-06-10T08:21:45.000Z"
+ },
+ {
+  "id": 713,
+  "name": "Mistral",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-06-09T19:38:28.000Z"
+ },
+ {
+  "id": 723,
+  "name": "Claude Sonnet",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-06-09T17:11:22.000Z"
  }
 ]
