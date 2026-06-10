@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AIHOT · 智能情报站</title>
+<meta name="description" content="AIHOT智能情报站 - 每日AI行业新闻、大模型选型对比、机器人档案(人形/清洁/四足/配送/AI玩具)、实用技能推荐">
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
 <style>
   :root {
@@ -46,7 +47,6 @@
 
   .main { max-width: 1400px; margin: 0 auto; padding: 20px 32px; }
   .tab-content { display: none; }
-  .tab-content.active { display: block; }
 
   /* Cards */
   .card {
@@ -206,14 +206,54 @@
   }
   .col-toggles label:hover { background: rgba(59,130,246,.08); }
   .col-toggles input { accent-color: var(--accent); }
+  /* ── Pagination ── */
+  .pagination {
+    display: flex; align-items: center; justify-content: center;
+    gap: 8px; padding: 16px 0; margin-top: 12px;
+  }
+  .pagination button {
+    background: var(--card); border: 1px solid var(--border); color: var(--text);
+    padding: 6px 14px; border-radius: 6px; cursor: pointer; font-size: 12px;
+    font-family: inherit; transition: all .15s;
+  }
+  .pagination button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  .pagination button:disabled { opacity: .35; cursor: default; }
+  .pagination .page-info { font-size: 12px; color: var(--dim); padding: 0 8px; }
+  .pagination .page-info b { color: var(--text); }
+
+  /* ── Responsive ── */
   @media (max-width: 768px) {
     .header { padding: 14px 16px 10px; }
-    .tabs { padding: 0 16px; }
-    .main { padding: 14px 16px; }
+    .header h1 { font-size: 18px; }
+    .header .sub { font-size: 11px; }
+    .tabs { padding: 0 12px; }
+    .tabs button { font-size: 12px; padding: 8px 10px; }
+    .main { padding: 12px 12px; }
     .grid { grid-template-columns: 1fr; }
     .filters { flex-direction: column; }
+    .filters select, .filters input { width: 100%; }
+    .brand-cards { flex-direction: column; }
+    .brand-card { min-width: auto; width: 100%; }
+    .cat-tabs { gap: 4px; }
+    .cat-tabs button { font-size: 12px; padding: 6px 10px; }
+    .col-toggles { flex-direction: column; max-height: 200px; overflow-y: auto; }
     .robot-table { font-size: 10px; }
-    .robot-table th, .robot-table td { padding: 4px 6px; }
+    .robot-table th, .robot-table td { padding: 4px 5px; white-space: nowrap; }
+    .card { padding: 12px; }
+    .stats-bar { gap: 12px; font-size: 11px; flex-wrap: wrap; }
+    .pagination { flex-wrap: wrap; }
+    .pagination button { padding: 8px 16px; font-size: 13px; }
+    .news-item .title { font-size: 12px; }
+    .entity-card { padding: 10px; }
+  }
+
+  @media (max-width: 480px) {
+    .header h1 { font-size: 16px; }
+    .header .status { display: block; margin-left: 0; margin-top: 4px; }
+    .tabs { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .tabs button { font-size: 11px; padding: 6px 8px; }
+    .main { padding: 8px 8px; }
+    .card h3 { font-size: 12px; }
   }
 </style>
 </head>
@@ -312,12 +352,19 @@
   <div class="col-toggles" id="colToggles"></div>
 
   <!-- Stats + Table -->
-  <div class="stats-bar" id="robotStats"></div>
-  <div style="overflow-x:auto">
+  <div class="stats-bar" id="robotStats">
+    <span id="robotStatsLeft">共 <b>0</b> 个型号</span>
+  </div>
+  <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
     <table class="robot-table" id="robotTable">
       <thead id="robotThead"></thead>
       <tbody id="robotBody"></tbody>
     </table>
+  </div>
+  <div class="pagination" id="robotPagination">
+    <button id="robotPrev" onclick="robotPagePrev()">‹ 上一页</button>
+    <span class="page-info" id="robotPageInfo">第 <b>1</b> / <b>1</b> 页</span>
+    <button id="robotNext" onclick="robotPageNext()">下一页 ›</button>
   </div>
 </div>
 
@@ -652,9 +699,20 @@ function renderRobots() {
     });
   }
 
+  // ── Pagination ──
+  const pageSize = 10;
+  const totalPages = Math.ceil(list.length / pageSize) || 1;
+  if (robotPage >= totalPages) robotPage = 0;
+  const page = robotPage;
+  const pageList = list.slice(page * pageSize, (page + 1) * pageSize);
+
   // ── Stats ──
-  document.getElementById('robotStats').innerHTML =
+  document.getElementById('robotStatsLeft').innerHTML =
     `<span>共 <b>${list.length}</b> 个型号（本类共${robots.length}个）</span>`;
+  document.getElementById('robotPageInfo').innerHTML =
+    `第 <b>${page + 1}</b> / <b>${totalPages}</b> 页（每页${pageSize}条）`;
+  document.getElementById('robotPrev').disabled = page === 0;
+  document.getElementById('robotNext').disabled = page >= totalPages - 1;
 
   // ── Table header ──
   const sortedCol = cfg.allCols.filter(c => visibleCols.includes(c.key));
@@ -666,7 +724,7 @@ function renderRobots() {
     }).join('') + '</tr>';
 
   // ── Table body ──
-  document.getElementById('robotBody').innerHTML = list.map(r => {
+  document.getElementById('robotBody').innerHTML = pageList.map(r => {
     // Build vendor URL link
     const vendorHtml = r['官网'] ? `<a href="${r['官网']}" target="_blank" style="color:var(--accent);text-decoration:none">${r['厂商']||''}</a>` : (r['厂商']||'');
     return '<tr>' + sortedCol.map(c => {
@@ -692,6 +750,12 @@ function saveVisibleCols() {
   localStorage.setItem(`robot_cols_${currentRobotCat}`, JSON.stringify(checked));
 }
 
+// ── Pagination functions ──
+let robotPage = 0;
+const ROBOT_PAGE_SIZE = 10;
+function robotPagePrev() { if (robotPage > 0) { robotPage--; renderRobots(); } }
+function robotPageNext() { robotPage++; renderRobots(); }
+
 function sortRobot(key) {
   const col = ROBOT_CONFIG[currentRobotCat].allCols.find(c => c.key === key);
   if (!col || !col.sort) return;
@@ -712,6 +776,7 @@ document.addEventListener('DOMContentLoaded', () => {
     currentRobotCat = btn.dataset.cat;
     robotSortKey = null;
     robotSortAsc = true;
+    robotPage = 0;
     
     // Load and render
     state.robots = await loadRobotCategory(currentRobotCat);
