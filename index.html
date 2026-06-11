@@ -3,626 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AIHOT · 机器人情报站</title>
-<meta name="description" content="AIHOT机器人情报站 - 机器人数据库对比、大模型选型、行业新闻、实用技能推荐">
+<title>AIHOT · 机器人对比站</title>
+<meta name="description" content="AIHOT机器人对比站 - 机器人数据库对比、参数查询、品牌档案">
 <style>
 /* ══════════════════════════════════════════════════════════════
-   DESIGN SYSTEM — Vercel (Open Design)
-   Geist font stack with system fallbacks
+   DESIGN SYSTEM — Vercel
    ══════════════════════════════════════════════════════════════ */
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/geist-sans@5/latin-400,500,600.css');
+@import url('https://cdn.jsdelivr.net/npm/@fontsource/geist-mono@5/latin-400,500.css');
 
 :root {
-  /* ── Surface ── */
-  --bg:           #ffffff;
-  --surface:      #ffffff;
-  --surface-warm: #ffffff;
-
-  /* ── Foreground ── */
-  --fg:   #171717;
-  --fg-2: #4d4d4d;
-  --muted: #666666;
-  --meta:  #808080;
-
-  /* ── Border (shadow-as-border alpha) ── */
-  --border:      rgba(0, 0, 0, 0.08);
-  --border-soft: rgba(0, 0, 0, 0.04);
-
-  /* ── Accent (Vercel Blue) ── */
-  --accent:        #0070f3;
-  --accent-on:     #ffffff;
-  --accent-hover:  #0060d6;
-  --accent-active: #0050b8;
-  --accent-glow:   rgba(0, 112, 243, 0.10);
-
-  /* ── Semantic ── */
-  --success: #16a34a;
-  --warn:    #d97706;
-  --danger:  #dc2626;
-
-  /* ── Typography: Geist ── */
-  --font-display: "Geist", "Geist Sans", -apple-system, "Segoe UI", Arial, sans-serif;
-  --font-body:    "Geist", "Geist Sans", -apple-system, "Segoe UI", Arial, sans-serif;
-  --font-mono:    "Geist Mono", ui-monospace, "SF Mono", "Roboto Mono", Menlo, Monaco, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
-
-  --text-xs:   12px;
-  --text-sm:   14px;
-  --text-base: 16px;
-  --text-lg:   20px;
-  --text-xl:   24px;
-  --text-2xl:  32px;
-  --text-3xl:  40px;
-  --text-4xl:  48px;
-
-  --leading-body:  1.5;
-  --leading-tight: 1.1;
-  --tracking-display: -0.05em;
-
-  /* ── Spacing ── */
-  --space-1:  4px;
-  --space-2:  8px;
-  --space-3:  12px;
-  --space-4:  16px;
-  --space-5:  20px;
-  --space-6:  24px;
-  --space-8:  32px;
-  --space-12: 48px;
-
-  /* ── Radius ── */
-  --radius-sm:   6px;
-  --radius-md:   8px;
-  --radius-lg:   12px;
-  --radius-pill: 9999px;
-
-  /* ── Elevation ── */
-  --elev-flat:   none;
-  --elev-ring:   0 0 0 1px var(--border);
-  --elev-raised:
-    0 0 0 1px rgba(0, 0, 0, 0.08),
-    0 2px 2px rgba(0, 0, 0, 0.04),
-    0 8px 8px -8px rgba(0, 0, 0, 0.04),
-    0 0 0 1px #fafafa;
-
+  --bg: #ffffff; --surface: #ffffff; --surface-warm: #ffffff;
+  --fg: #171717; --fg-2: #4d4d4d; --muted: #666666; --meta: #808080;
+  --border: rgba(0,0,0,0.08); --border-soft: rgba(0,0,0,0.04);
+  --accent: #0070f3; --accent-on: #ffffff;
+  --accent-hover: #0060d6; --accent-active: #0050b8; --accent-glow: rgba(0,112,243,0.10);
+  --success: #16a34a; --warn: #d97706; --danger: #dc2626;
+  --font-display: "Geist","Geist Sans",-apple-system,"Segoe UI",Arial,sans-serif;
+  --font-body: "Geist","Geist Sans",-apple-system,"Segoe UI",Arial,sans-serif;
+  --font-mono: "Geist Mono",ui-monospace,"SF Mono","Roboto Mono",Menlo,Monaco,"Liberation Mono","DejaVu Sans Mono","Courier New",monospace;
+  --text-xs: 12px; --text-sm: 14px; --text-base: 16px; --text-lg: 20px; --text-xl: 24px; --text-2xl: 32px;
+  --leading-body: 1.5; --leading-tight: 1.1; --tracking-display: -0.05em;
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px; --space-5: 20px; --space-6: 24px; --space-8: 32px; --space-12: 48px;
+  --radius-sm: 6px; --radius-md: 8px; --radius-lg: 12px; --radius-pill: 9999px;
+  --elev-flat: none; --elev-ring: 0 0 0 1px var(--border);
+  --elev-raised: 0 0 0 1px rgba(0,0,0,0.08),0 2px 2px rgba(0,0,0,0.04),0 8px 8px -8px rgba(0,0,0,0.04),0 0 0 1px #fafafa;
   --focus-ring: 0 0 0 2px var(--accent);
-
-  /* ── Motion ── */
-  --motion-fast:   150ms;
-  --motion-base:   200ms;
-  --ease-standard: cubic-bezier(0.2, 0, 0, 1);
-
-  /* ── Layout ── */
-  --container-max:            1200px;
-  --container-gutter-desktop: 24px;
-  --container-gutter-tablet:  16px;
-  --container-gutter-phone:   12px;
+  --motion-fast: 150ms; --motion-base: 200ms; --ease-standard: cubic-bezier(0.2,0,0,1);
+  --container-max: 1200px; --container-gutter-desktop: 24px; --container-gutter-tablet: 16px; --container-gutter-phone: 12px;
 }
-
-/* --- Reset --- */
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-html { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
-
-body {
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  line-height: var(--leading-body);
-  color: var(--fg-2);
-  background: var(--bg);
-  min-height: 100vh;
-}
-
-::selection { background: var(--accent-glow); color: var(--accent-hover); }
-
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.10); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(0,0,0,0.18); }
-
-/* --- Typography (Vercel: 3-weight system) --- */
-h1, h2, h3, h4 { font-weight: 600; color: var(--fg); }
-h1 { font-size: var(--text-2xl); letter-spacing: -0.04em; line-height: var(--leading-tight); }
-h2 { font-size: var(--text-xl); letter-spacing: -0.04em; line-height: 1.25; }
-h3 { font-size: var(--text-lg); letter-spacing: -0.03em; line-height: 1.25; }
-a { color: var(--accent); text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* ── App Header (Vercel: sticky, shadow-border) ── */
-.app-header {
-  position: sticky; top: 0; z-index: 100;
-  background: rgba(255,255,255,0.95);
-  backdrop-filter: blur(12px) saturate(1.2);
-  box-shadow: var(--elev-ring);
-}
-
-.header-inner {
-  max-width: var(--container-max); margin: 0 auto;
-  padding: var(--space-4) var(--space-6);
-  display: flex; align-items: center; gap: var(--space-6);
-}
-
-.header-brand {
-  display: flex; flex-direction: column; gap: 1px;
-  flex-shrink: 0;
-}
-.header-brand h1 {
-  font-size: var(--text-xl); font-weight: 600;
-  letter-spacing: -0.04em;
-}
-.header-brand h1 span { color: var(--accent); }
-.header-brand .sub {
-  font-size: var(--text-xs); color: var(--meta);
-  letter-spacing: normal;
-}
-
-.header-center { flex: 1; min-width: 0; }
-.header-right { display: flex; align-items: center; gap: var(--space-4); }
-
-/* ── Search (Vercel: shadow-border input) ── */
-.search-bar {
-  position: relative; width: 100%; max-width: 400px;
-}
-.search-bar input {
-  width: 100%; padding: var(--space-2) var(--space-3) var(--space-2) 36px;
-  background: var(--bg); border: none;
-  box-shadow: var(--elev-ring);
-  border-radius: var(--radius-sm); color: var(--fg);
-  font-size: var(--text-sm); font-family: inherit;
-  outline: none; transition: box-shadow var(--motion-fast);
-}
-.search-bar input:focus {
-  box-shadow: var(--focus-ring), var(--elev-ring);
-}
-.search-bar input::placeholder { color: var(--meta); }
-.search-bar::before {
-  content: '🔍'; position: absolute; left: 12px; top: 50%;
-  transform: translateY(-50%); font-size: var(--text-sm);
-  opacity: 0.4; pointer-events: none;
-}
-
-/* ── Status indicator ── */
-.status-dot {
-  font-size: var(--text-xs); color: var(--muted);
-  white-space: nowrap; display: flex; align-items: center; gap: var(--space-1);
-}
-.status-dot::before {
-  content: ''; width: 6px; height: 6px; border-radius: 50%;
-  background: var(--success); flex-shrink: 0;
-}
-
-/* ── Tab Navigation (Vercel: shadow-border bottom) ── */
-.tab-bar {
-  box-shadow: 0 1px 0 0 var(--border);
-  padding: 0 var(--space-6);
-  display: flex; justify-content: center; gap: 0;
-  overflow-x: auto; -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-.tab-bar::-webkit-scrollbar { display: none; }
-
-.tab-btn {
-  background: none; border: none; color: var(--muted);
-  font-size: var(--text-sm); font-family: inherit; font-weight: 500;
-  padding: 10px 18px; cursor: pointer;
-  box-shadow: 0 0 0 0 var(--accent);
-  transition: color var(--motion-fast), box-shadow var(--motion-fast);
-  white-space: nowrap; position: relative;
-}
-.tab-btn:hover { color: var(--fg); }
-.tab-btn.active { color: var(--fg); font-weight: 600; }
-.tab-btn.active::after {
-  content: ''; position: absolute; bottom: 0; left: 18px; right: 18px;
-  height: 2px; background: var(--fg); border-radius: 1px;
-}
-.tab-btn .badge {
-  font-size: 10px; font-weight: 500;
-  background: var(--accent-glow); color: var(--accent);
-  border-radius: var(--radius-pill); padding: 1px 7px; margin-left: 5px;
-}
-
-/* ── Main Content ── */
-.main {
-  max-width: var(--container-max); margin: 0 auto;
-  padding: var(--space-6);
-}
-
-/* Tab content transition */
-.tab-content { display: none; animation: tab-enter .2s var(--ease-standard); }
-.tab-content.active { display: block; }
-
-@keyframes tab-enter {
-  from { opacity: 0; transform: translateY(4px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@media (prefers-reduced-motion: reduce) { .tab-content { animation: none; } }
-
-/* ── Vercel Card (shadow-as-border, multi-layer) ── */
-.vc-card {
-  background: var(--surface); border: none;
-  box-shadow: var(--elev-raised);
-  border-radius: var(--radius-md); padding: var(--space-4);
-  margin-bottom: var(--space-4);
-  transition: box-shadow var(--motion-base) var(--ease-standard);
-}
-.vc-card:hover {
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.06),
-    0 12px 12px -8px rgba(0, 0, 0, 0.06),
-    0 0 0 1px #fafafa;
-}
-.vc-card-header {
-  font-size: var(--text-xs); font-weight: 500; color: var(--meta);
-  letter-spacing: 0.02em;
-  margin-bottom: var(--space-3);
-}
-
-/* ── Filters Bar ── */
-.filters {
-  display: flex; gap: var(--space-2); flex-wrap: wrap; margin-bottom: var(--space-4);
-  padding: var(--space-3) var(--space-4);
-  background: var(--surface); border: none;
-  box-shadow: var(--elev-ring);
-  border-radius: var(--radius-md);
-  align-items: center;
-}
-.filters select, .filters input[type="text"] {
-  background: var(--bg); border: none;
-  box-shadow: var(--elev-ring);
-  color: var(--fg); padding: 5px 10px; border-radius: var(--radius-sm);
-  font-size: var(--text-xs); font-family: inherit; outline: none;
-  transition: box-shadow var(--motion-fast);
-}
-.filters select { min-width: 100px; cursor: pointer; }
-.filters select:focus, .filters input:focus { box-shadow: var(--focus-ring), var(--elev-ring); }
-.filters label {
-  font-size: var(--text-xs); color: var(--muted);
-  display: flex; align-items: center; gap: var(--space-1);
-  white-space: nowrap;
-}
-
-/* ── Stats Bar ── */
-.stats-bar {
-  display: flex; gap: var(--space-6); padding: var(--space-2) 0;
-  font-size: var(--text-xs); color: var(--muted);
-}
-.stats-bar .num { color: var(--fg); font-weight: 500; }
-
-/* ══════════════════════════════════════════════════════════════
-   NEWS SECTION (Vercel: elevated cards, mono labels)
-   ══════════════════════════════════════════════════════════════ */
-.news-day {
-  background: var(--surface); border: none;
-  box-shadow: var(--elev-ring);
-  border-radius: var(--radius-md); padding: var(--space-6);
-  margin-bottom: var(--space-4);
-}
-.news-day .date {
-  font-size: var(--text-lg); font-weight: 600; color: var(--fg);
-  letter-spacing: -0.04em;
-  margin-bottom: var(--space-4);
-}
-.news-day .date .meta {
-  font-weight: 400; font-size: var(--text-xs); color: var(--muted);
-  margin-left: var(--space-2); letter-spacing: normal;
-}
-
-.news-industry { margin-bottom: var(--space-4); }
-.news-industry:last-child { margin-bottom: 0; }
-
-.news-industry .ind-title {
-  font-size: var(--text-xs); font-weight: 500; color: var(--meta);
-  letter-spacing: 0.02em;
-  margin-bottom: var(--space-1); display: flex; align-items: center; gap: 6px;
-}
-.news-industry .ind-title .count { font-weight: 400; color: var(--meta); }
-
-.news-item {
-  padding: 8px 0; cursor: pointer; transition: background var(--motion-fast);
-  border-radius: var(--radius-sm);
-  padding-left: var(--space-2); padding-right: var(--space-2);
-  margin: 0 calc(-1 * var(--space-2));
-  position: relative;
-}
-.news-item + .news-item { box-shadow: 0 -1px 0 0 var(--border-soft); }
-.news-item:hover { background: rgba(0,0,0,0.02); }
-.news-item .title {
-  font-size: var(--text-sm); line-height: 1.5; margin-bottom: 1px;
-  display: flex; align-items: flex-start; gap: 6px;
-}
-.news-item .summary {
-  font-size: var(--text-sm); color: var(--muted); line-height: 1.6;
-  display: none; margin-top: var(--space-1);
-}
-.news-item.expanded .summary { display: block; }
-
-.spec-tag {
-  font-size: 10px; font-weight: 500;
-  background: rgba(217,119,6,0.10);
-  color: var(--warn); padding: 1px 6px; border-radius: 3px;
-  flex-shrink: 0; margin-top: 2px;
-}
-
-/* ══════════════════════════════════════════════════════════════
-   MODEL GRID (Vercel cards)
-   ══════════════════════════════════════════════════════════════ */
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: var(--space-3);
-  margin-bottom: var(--space-6);
-}
-
-.entity-card {
-  background: var(--surface); border: none;
-  box-shadow: var(--elev-raised);
-  border-radius: var(--radius-md); padding: var(--space-4);
-  transition: box-shadow var(--motion-base) var(--ease-standard);
-}
-.entity-card:hover {
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.06),
-    0 12px 12px -8px rgba(0, 0, 0, 0.06),
-    0 0 0 1px #fafafa;
-}
-.entity-card .name { font-size: var(--text-sm); font-weight: 500; margin-bottom: 3px; }
-.entity-card .name a { color: var(--fg); }
-.entity-card .name a:hover { color: var(--accent); }
-.entity-card .vendor { font-size: var(--text-xs); color: var(--muted); margin-bottom: var(--space-2); }
-.entity-card .tags { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: var(--space-2); }
-
-.tag {
-  font-size: 10px; font-weight: 500; padding: 2px 7px; border-radius: 4px;
-  background: var(--accent-glow); color: var(--accent);
-  letter-spacing: 0.01em;
-}
-.tag.cn { background: rgba(22,163,74,0.10); color: var(--success); }
-.tag.special { background: rgba(217,119,6,0.10); color: var(--warn); }
-
-.entity-card .meta {
-  font-size: var(--text-xs); color: var(--muted);
-  display: flex; gap: var(--space-2); flex-wrap: wrap;
-}
-.entity-card .meta span { display: flex; align-items: center; gap: 3px; }
-.entity-card .links { margin-top: var(--space-3); display: flex; gap: var(--space-2); }
-.entity-card .links a {
-  font-size: var(--text-xs); color: var(--accent);
-  padding: 2px 9px;
-  box-shadow: var(--elev-ring);
-  border-radius: var(--radius-sm);
-  transition: background var(--motion-fast);
-  text-decoration: none;
-}
-.entity-card .links a:hover { background: var(--accent-glow); }
-
-/* ══════════════════════════════════════════════════════════════
-   ROBOT TABLE (Vercel: clean mono table)
-   ══════════════════════════════════════════════════════════════ */
-.robot-table {
-  width: 100%; border-collapse: separate; border-spacing: 0;
-  font-size: var(--text-xs);
-  font-family: var(--font-mono);
-}
-.robot-table th {
-  background: var(--bg); color: var(--meta); font-weight: 500;
-  text-align: left; padding: 8px 10px;
-  box-shadow: 0 1px 0 0 var(--border);
-  position: sticky; top: 0; z-index: 2; cursor: pointer;
-  white-space: nowrap; font-size: 11px;
-  transition: color var(--motion-fast);
-}
-.robot-table th:hover { color: var(--fg); }
-.robot-table td {
-  padding: 8px 10px;
-  font-size: 11px;
-}
-.robot-table tr + tr td { box-shadow: 0 -1px 0 0 var(--border-soft); }
-.robot-table tr:hover td { background: rgba(0,0,0,0.015); }
-
-/* ══════════════════════════════════════════════════════════════
-   BRAND CARDS (Vercel: elevated clickable cards)
-   ══════════════════════════════════════════════════════════════ */
-.brand-cards {
-  display: flex; gap: var(--space-3); flex-wrap: wrap; margin-bottom: var(--space-4);
-}
-.brand-card {
-  background: var(--surface); border: none;
-  box-shadow: var(--elev-ring);
-  border-radius: var(--radius-md); padding: var(--space-3) var(--space-4);
-  min-width: 140px;
-  cursor: pointer;
-  transition: box-shadow var(--motion-base) var(--ease-standard);
-  display: flex; flex-direction: column; gap: 2px;
-}
-.brand-card:hover {
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.06),
-    0 0 0 1px #fafafa;
-}
-.brand-card .name {
-  font-size: var(--text-sm); font-weight: 600; color: var(--fg);
-  letter-spacing: -0.03em;
-}
-.brand-card .count { font-size: var(--text-xs); color: var(--muted); }
-.brand-card .link {
-  font-size: var(--text-xs); color: var(--accent); margin-top: var(--space-1);
-  transition: color var(--motion-fast); text-decoration: none;
-}
-.brand-card .link:hover { color: var(--accent-hover); text-decoration: underline; }
-
-/* Robot category tabs */
-.cat-tabs {
-  display: flex; gap: var(--space-1); flex-wrap: wrap; margin-bottom: var(--space-4);
-}
-.cat-tabs button {
-  background: var(--bg); border: none;
-  box-shadow: var(--elev-ring);
-  color: var(--muted);
-  font-size: var(--text-xs); font-family: inherit; font-weight: 500;
-  padding: 6px 14px; cursor: pointer; border-radius: var(--radius-sm);
-  transition: all var(--motion-fast);
-}
-.cat-tabs button:hover { color: var(--fg); box-shadow: 0 0 0 1px rgba(0,0,0,0.12); }
-.cat-tabs button.active {
-  color: var(--accent-on); background: var(--fg);
-  box-shadow: none; font-weight: 500;
-}
-
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body{font-family:var(--font-body);font-size:var(--text-base);line-height:var(--leading-body);color:var(--fg-2);background:var(--bg);min-height:100vh}
+::selection{background:var(--accent-glow);color:var(--accent-hover)}
+::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.10);border-radius:3px}::-webkit-scrollbar-thumb:hover{background:rgba(0,0,0,0.18)}
+h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-spacing:-0.04em;line-height:var(--leading-tight)}h2{font-size:var(--text-lg);letter-spacing:-0.03em;line-height:1.25}a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+.app-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.95);backdrop-filter:blur(12px) saturate(1.2);box-shadow:var(--elev-ring)}
+.header-inner{max-width:var(--container-max);margin:0 auto;padding:var(--space-4) var(--space-6);display:flex;align-items:center;gap:var(--space-6)}
+.header-brand{display:flex;flex-direction:column;gap:1px;flex-shrink:0}
+.header-brand h1{font-size:var(--text-xl);font-weight:600;letter-spacing:-0.04em}
+.header-brand h1 span{color:var(--accent)}
+.header-brand .sub{font-size:var(--text-xs);color:var(--meta)}
+.header-center{flex:1;min-width:0}
+.header-right{display:flex;align-items:center;gap:var(--space-4)}
+.search-bar{position:relative;width:100%;max-width:400px}
+.search-bar input{width:100%;padding:var(--space-2) var(--space-3) var(--space-2) 36px;background:var(--bg);border:none;box-shadow:var(--elev-ring);border-radius:var(--radius-sm);color:var(--fg);font-size:var(--text-sm);font-family:inherit;outline:none;transition:box-shadow var(--motion-fast)}
+.search-bar input:focus{box-shadow:var(--focus-ring),var(--elev-ring)}
+.search-bar input::placeholder{color:var(--meta)}
+.search-bar::before{content:'🔍';position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:var(--text-sm);opacity:0.4;pointer-events:none}
+.status-dot{font-size:var(--text-xs);color:var(--muted);white-space:nowrap;display:flex;align-items:center;gap:var(--space-1)}
+.status-dot::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--success);flex-shrink:0}
+.tab-bar{box-shadow:0 1px 0 0 var(--border);padding:0 var(--space-6);display:flex;justify-content:center;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tab-bar::-webkit-scrollbar{display:none}
+.tab-btn{background:none;border:none;color:var(--muted);font-size:var(--text-sm);font-family:inherit;font-weight:500;padding:10px 18px;cursor:pointer;transition:color var(--motion-fast);white-space:nowrap;position:relative}
+.tab-btn:hover{color:var(--fg)}
+.tab-btn.active{color:var(--fg);font-weight:600}
+.tab-btn.active::after{content:'';position:absolute;bottom:0;left:18px;right:18px;height:2px;background:var(--fg);border-radius:1px}
+.tab-btn .badge{font-size:10px;font-weight:500;background:var(--accent-glow);color:var(--accent);border-radius:var(--radius-pill);padding:1px 7px;margin-left:5px}
+.main{max-width:var(--container-max);margin:0 auto;padding:var(--space-6)}
+.tab-content{display:none;animation:tab-enter .2s var(--ease-standard)}
+.tab-content.active{display:block}
+@keyframes tab-enter{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.tab-content{animation:none}}
+.vc-card{background:var(--surface);border:none;box-shadow:var(--elev-raised);border-radius:var(--radius-md);padding:var(--space-4);margin-bottom:var(--space-4);transition:box-shadow var(--motion-base) var(--ease-standard)}
+.vc-card:hover{box-shadow:0 0 0 1px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.06),0 12px 12px -8px rgba(0,0,0,0.06),0 0 0 1px #fafafa}
+.vc-card-header{font-size:var(--text-xs);font-weight:500;color:var(--meta);letter-spacing:0.02em;margin-bottom:var(--space-3)}
+.filters{display:flex;gap:var(--space-2);flex-wrap:wrap;margin-bottom:var(--space-4);padding:var(--space-3) var(--space-4);background:var(--surface);border:none;box-shadow:var(--elev-ring);border-radius:var(--radius-md);align-items:center}
+.filters select,.filters input[type="text"]{background:var(--bg);border:none;box-shadow:var(--elev-ring);color:var(--fg);padding:5px 10px;border-radius:var(--radius-sm);font-size:var(--text-xs);font-family:inherit;outline:none;transition:box-shadow var(--motion-fast)}
+.filters select{min-width:100px;cursor:pointer}.filters select:focus,.filters input:focus{box-shadow:var(--focus-ring),var(--elev-ring)}
+.filters label{font-size:var(--text-xs);color:var(--muted);display:flex;align-items:center;gap:var(--space-1);white-space:nowrap}
+.stats-bar{display:flex;gap:var(--space-6);padding:var(--space-2) 0;font-size:var(--text-xs);color:var(--muted)}
+.stats-bar .num{color:var(--fg);font-weight:500}
+.brand-cards{display:flex;gap:var(--space-3);flex-wrap:wrap;margin-bottom:var(--space-4)}
+.brand-card{background:var(--surface);border:none;box-shadow:var(--elev-ring);border-radius:var(--radius-md);padding:var(--space-2) var(--space-4);min-width:100px;cursor:pointer;transition:box-shadow var(--motion-base) var(--ease-standard);display:flex;flex-direction:column;gap:1px}
+.brand-card:hover{box-shadow:0 0 0 1px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.06),0 0 0 1px #fafafa}
+.brand-card .name{font-size:var(--text-sm);font-weight:600;color:var(--fg);letter-spacing:-0.03em}
+.brand-card .count{font-size:10px;color:var(--muted)}
+.cat-tabs{display:flex;gap:var(--space-1);flex-wrap:wrap;margin-bottom:var(--space-4)}
+.cat-tabs button{background:var(--bg);border:none;box-shadow:var(--elev-ring);color:var(--muted);font-size:var(--text-xs);font-family:inherit;font-weight:500;padding:6px 14px;cursor:pointer;border-radius:var(--radius-sm);transition:all var(--motion-fast)}
+.cat-tabs button:hover{color:var(--fg);box-shadow:0 0 0 1px rgba(0,0,0,0.12)}
+.cat-tabs button.active{color:var(--accent-on);background:var(--fg);box-shadow:none;font-weight:500}
+/* Quick filter pills */
+.quick-filters{display:flex;gap:var(--space-1);flex-wrap:wrap;margin-bottom:var(--space-3)}
+.qf-group{display:flex;align-items:center;gap:var(--space-1);padding:0 var(--space-2);box-shadow:var(--elev-ring);border-radius:var(--radius-sm)}
+.qf-group .qf-label{font-size:10px;color:var(--meta);font-weight:500;white-space:nowrap}
+.qf-pill{background:none;border:none;font-size:11px;color:var(--muted);padding:3px 8px;cursor:pointer;border-radius:3px;transition:all var(--motion-fast);font-family:inherit}
+.qf-pill:hover{color:var(--fg);background:rgba(0,0,0,0.02)}
+.qf-pill.active{color:var(--accent-on);background:var(--accent)}
 /* Column toggles */
-.col-toggles {
-  display: flex; gap: 4px; flex-wrap: wrap;
-  padding: var(--space-2) var(--space-4);
-  background: var(--surface); border: none;
-  box-shadow: var(--elev-ring);
-  border-radius: var(--radius-md); margin-bottom: var(--space-2);
-}
-.col-toggles label {
-  font-size: var(--text-xs); color: var(--muted);
-  display: flex; align-items: center;
-  gap: 3px; cursor: pointer; padding: 2px 6px; border-radius: 4px;
-  transition: background var(--motion-fast);
-}
-.col-toggles label:hover { background: rgba(0,0,0,0.02); }
-.col-toggles input { accent-color: var(--fg); }
-
-/* Pagination (Vercel: shadow-border buttons) */
-.pagination {
-  display: flex; align-items: center; justify-content: center;
-  gap: var(--space-2); padding: var(--space-4) 0; margin-top: var(--space-2);
-}
-.pagination button {
-  background: var(--bg); border: none;
-  box-shadow: var(--elev-ring);
-  color: var(--muted);
-  padding: 6px 14px; border-radius: var(--radius-sm); cursor: pointer;
-  font-size: var(--text-xs); font-family: inherit; font-weight: 500;
-  transition: all var(--motion-fast);
-}
-.pagination button:hover:not(:disabled) { color: var(--fg); box-shadow: 0 0 0 1px rgba(0,0,0,0.12); }
-.pagination button:disabled { opacity: .3; cursor: default; }
-.pagination .page-info {
-  font-size: var(--text-xs); color: var(--muted);
-  padding: 0 var(--space-2);
-  font-family: var(--font-body);
-}
-.pagination .page-info b { color: var(--fg); font-weight: 600; }
-
-/* ══════════════════════════════════════════════════════════════
-   ECOSYSTEM OVERLAY
-   ══════════════════════════════════════════════════════════════ */
-.overlay {
-  display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-  background: rgba(0,0,0,0.50); z-index: 1000;
-  backdrop-filter: blur(4px);
-  animation: overlay-in .2s var(--ease-standard);
-}
-.overlay.show { display: block; }
-
-@keyframes overlay-in {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-.overlay-content {
-  background: var(--surface); border: none;
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.08),
-    0 16px 32px rgba(0, 0, 0, 0.12);
-  border-radius: var(--radius-lg); padding: var(--space-6);
-  margin: 40px auto;
-  width: 92%; max-width: 680px; max-height: 80vh; overflow-y: auto;
-  animation: panel-in .25s var(--ease-standard);
-}
-
-@keyframes panel-in {
-  from { opacity: 0; transform: translateY(12px) scale(0.98); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .overlay, .overlay-content { animation: none; }
-}
-
-/* ── Skills ── */
-.skill-card {
-  background: var(--surface); border: none;
-  box-shadow: var(--elev-raised);
-  border-radius: var(--radius-md); padding: var(--space-4);
-  margin-bottom: var(--space-3);
-  transition: box-shadow var(--motion-base) var(--ease-standard);
-}
-.skill-card:hover {
-  box-shadow:
-    0 0 0 1px rgba(0, 0, 0, 0.12),
-    0 2px 4px rgba(0, 0, 0, 0.06),
-    0 12px 12px -8px rgba(0, 0, 0, 0.06),
-    0 0 0 1px #fafafa;
-}
-.skill-card .name { font-size: var(--text-sm); font-weight: 600; color: var(--fg); letter-spacing: -0.03em; }
-.skill-card .desc { font-size: var(--text-sm); color: var(--muted); margin: var(--space-1) 0; line-height: 1.5; }
-.skill-card .reason { font-size: var(--text-sm); color: var(--fg); margin-top: var(--space-1); line-height: 1.5; }
-
-/* ── Loading skeleton ── */
-.skeleton {
-  background: linear-gradient(90deg, transparent 25%, rgba(0,0,0,0.02) 50%, transparent 75%);
-  background-size: 200% 100%;
-  animation: skeleton-shimmer 1.4s ease infinite;
-  border-radius: 4px;
-}
-.skeleton-line { height: 14px; margin-bottom: 8px; width: 100%; }
-.skeleton-line.short { width: 60%; }
-
-@keyframes skeleton-shimmer {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
-}
-@media (prefers-reduced-motion: reduce) { .skeleton { animation: none; } }
-
-/* ── Empty state ── */
-.empty-state { text-align: center; padding: 60px 20px; color: var(--meta); }
-.empty-state h3 { font-size: var(--text-base); color: var(--muted); margin-bottom: var(--space-1); }
-.empty-state p { font-size: var(--text-sm); }
-
-/* ══════════════════════════════════════════════════════════════
-   RESPONSIVE (Vercel: section-y collapse)
-   ══════════════════════════════════════════════════════════════ */
-
-@media (max-width: 900px) {
-  .header-inner { flex-wrap: wrap; gap: var(--space-2); padding: var(--space-3) var(--space-4); }
-  .header-right { width: 100%; }
-  .search-bar { max-width: 100%; }
-  .header-brand .sub { display: none; }
-}
-
-@media (max-width: 768px) {
-  :root { --section-y-phone: 48px; }
-  .header-inner { padding: var(--space-2) var(--space-4); }
-  .header-brand h1 { font-size: var(--text-lg); }
-  .tab-bar { padding: 0 var(--space-4); }
-  .tab-btn { font-size: var(--text-xs); padding: 8px 12px; }
-  .main { padding: var(--space-4); }
-  .grid { grid-template-columns: 1fr; }
-  .filters { flex-direction: column; align-items: stretch; }
-  .filters select { width: 100%; min-width: auto; }
-  .brand-cards { flex-direction: column; }
-  .brand-card { min-width: auto; width: 100%; }
-  .cat-tabs { gap: 4px; }
-  .cat-tabs button { font-size: 11px; padding: 5px 10px; }
-  .col-toggles { flex-direction: column; max-height: 180px; overflow-y: auto; }
-  .robot-table { font-family: var(--font-body); font-size: 10px; }
-  .robot-table th, .robot-table td { padding: 4px 5px; white-space: nowrap; }
-  .vc-card { padding: var(--space-3); }
-  .news-day { padding: var(--space-4); }
-  .stats-bar { gap: var(--space-2); font-size: 11px; flex-wrap: wrap; }
-  .pagination { flex-wrap: wrap; }
-  .overlay-content { margin: 20px auto; padding: var(--space-4); width: 96%; }
-}
-
-@media (max-width: 480px) {
-  .header-brand h1 { font-size: var(--text-base); }
-  .tab-btn { font-size: 11px; padding: 6px 10px; }
-  .main { padding: var(--space-3); }
-  .news-item .title { font-size: var(--text-xs); }
-}
+.col-toggles{display:flex;gap:4px;flex-wrap:wrap;padding:var(--space-2) var(--space-4);background:var(--surface);border:none;box-shadow:var(--elev-ring);border-radius:var(--radius-md);margin-bottom:var(--space-2)}
+.col-toggles label{font-size:var(--text-xs);color:var(--muted);display:flex;align-items:center;gap:3px;cursor:pointer;padding:2px 6px;border-radius:4px;transition:background var(--motion-fast)}
+.col-toggles label:hover{background:rgba(0,0,0,0.02)}
+.col-toggles input{accent-color:var(--fg)}
+/* Robot table */
+.robot-table{width:100%;border-collapse:separate;border-spacing:0;font-size:var(--text-xs);font-family:var(--font-mono)}
+.robot-table th{background:var(--bg);color:var(--meta);font-weight:500;text-align:left;padding:6px 8px;box-shadow:0 1px 0 0 var(--border);position:sticky;top:0;z-index:2;cursor:pointer;white-space:nowrap;font-size:11px;transition:color var(--motion-fast)}
+.robot-table th:hover{color:var(--fg)}
+.robot-table td{padding:6px 8px;font-size:11px}
+.robot-table tr+tr td{box-shadow:0 -1px 0 0 var(--border-soft)}
+.robot-table tr:hover td{background:rgba(0,0,0,0.015)}
+.robot-table .cmp-cell{text-align:center}
+.robot-table .cmp-cell input{cursor:pointer;accent-color:var(--accent);width:14px;height:14px}
+/* Pagination */
+.pagination{display:flex;align-items:center;justify-content:center;gap:var(--space-2);padding:var(--space-4) 0;margin-top:var(--space-2)}
+.pagination button{background:var(--bg);border:none;box-shadow:var(--elev-ring);color:var(--muted);padding:6px 14px;border-radius:var(--radius-sm);cursor:pointer;font-size:var(--text-xs);font-family:inherit;font-weight:500;transition:all var(--motion-fast)}
+.pagination button:hover:not(:disabled){color:var(--fg);box-shadow:0 0 0 1px rgba(0,0,0,0.12)}
+.pagination button:disabled{opacity:.3;cursor:default}
+.pagination .page-info{font-size:var(--text-xs);color:var(--muted);padding:0 var(--space-2);font-family:var(--font-body)}
+.pagination .page-info b{color:var(--fg);font-weight:600}
+/* Compare floating bar */
+.cmp-bar{position:fixed;bottom:0;left:0;right:0;z-index:500;display:none;justify-content:center;padding:var(--space-3);pointer-events:none}
+.cmp-bar-inner{background:var(--fg);color:#fff;border-radius:var(--radius-pill);padding:var(--space-2) var(--space-6);display:flex;align-items:center;gap:var(--space-4);pointer-events:all;box-shadow:0 4px 12px rgba(0,0,0,0.2);font-size:var(--text-sm)}
+.cmp-bar-inner .cmp-count{font-weight:600}
+.cmp-bar-inner button{background:var(--accent);color:#fff;border:none;padding:6px 16px;border-radius:var(--radius-pill);cursor:pointer;font-size:var(--text-sm);font-family:inherit;font-weight:500;transition:background var(--motion-fast)}
+.cmp-bar-inner button:hover{background:var(--accent-hover)}
+.cmp-bar-inner button:disabled{opacity:.4;cursor:default}
+.cmp-bar-inner .cmp-clear{background:none;color:rgba(255,255,255,0.6);border:none;cursor:pointer;font-size:var(--text-xs);font-family:inherit;text-decoration:underline}
+.cmp-bar.show{display:flex}
+/* Compare overlay */
+.overlay{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.50);z-index:1000;backdrop-filter:blur(4px);animation:overlay-in .2s var(--ease-standard)}
+.overlay.show{display:block}
+@keyframes overlay-in{from{opacity:0}to{opacity:1}}
+.overlay-content{background:var(--surface);border:none;box-shadow:0 0 0 1px rgba(0,0,0,0.08),0 16px 32px rgba(0,0,0,0.12);border-radius:var(--radius-lg);padding:var(--space-6);margin:30px auto;width:94%;max-width:1100px;max-height:85vh;overflow-y:auto;animation:panel-in .25s var(--ease-standard)}
+@keyframes panel-in{from{opacity:0;transform:translateY(12px) scale(0.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(prefers-reduced-motion:reduce){.overlay,.overlay-content{animation:none}}
+.cmp-table{width:100%;border-collapse:separate;border-spacing:0;font-size:var(--text-xs)}
+.cmp-table th{padding:8px 12px;text-align:left;font-weight:600;color:var(--fg);box-shadow:0 1px 0 0 var(--border);white-space:nowrap;font-size:var(--text-sm);font-family:var(--font-body)}
+.cmp-table th:first-child{color:var(--meta);font-weight:500;width:140px}
+.cmp-table td{padding:6px 12px;box-shadow:0 -1px 0 0 var(--border-soft);vertical-align:top}
+.cmp-table td:first-child{color:var(--meta);font-weight:500;white-space:nowrap;font-family:var(--font-body)}
+.cmp-table tr:hover td{background:rgba(0,0,0,0.015)}
+.cmp-table .diff{color:var(--accent);font-weight:500}
+/* News section */
+.news-day{background:var(--surface);border:none;box-shadow:var(--elev-ring);border-radius:var(--radius-md);padding:var(--space-6);margin-bottom:var(--space-4)}
+.news-day .date{font-size:var(--text-lg);font-weight:600;color:var(--fg);letter-spacing:-0.04em;margin-bottom:var(--space-4)}
+.news-day .date .meta{font-weight:400;font-size:var(--text-xs);color:var(--muted);margin-left:var(--space-2)}
+.news-industry{margin-bottom:var(--space-4)}.news-industry:last-child{margin-bottom:0}
+.news-industry .ind-title{font-size:var(--text-xs);font-weight:500;color:var(--meta);letter-spacing:0.02em;margin-bottom:var(--space-1);display:flex;align-items:center;gap:6px}
+.news-industry .ind-title .count{font-weight:400;color:var(--meta)}
+.news-item{padding:8px 0;cursor:pointer;transition:background var(--motion-fast);border-radius:var(--radius-sm);padding-left:var(--space-2);padding-right:var(--space-2);margin:0 calc(-1 * var(--space-2))}
+.news-item+.news-item{box-shadow:0 -1px 0 0 var(--border-soft)}
+.news-item:hover{background:rgba(0,0,0,0.02)}
+.news-item .title{font-size:var(--text-sm);line-height:1.5;margin-bottom:1px;display:flex;align-items:flex-start;gap:6px}
+.news-item .summary{font-size:var(--text-sm);color:var(--muted);line-height:1.6;display:none;margin-top:var(--space-1)}
+.news-item.expanded .summary{display:block}
+.spec-tag{font-size:10px;font-weight:500;background:rgba(217,119,6,0.10);color:var(--warn);padding:1px 6px;border-radius:3px;flex-shrink:0;margin-top:2px}
+/* Model grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:var(--space-3);margin-bottom:var(--space-6)}
+.entity-card{background:var(--surface);border:none;box-shadow:var(--elev-raised);border-radius:var(--radius-md);padding:var(--space-4);transition:box-shadow var(--motion-base) var(--ease-standard)}
+.entity-card:hover{box-shadow:0 0 0 1px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.06),0 12px 12px -8px rgba(0,0,0,0.06),0 0 0 1px #fafafa}
+.entity-card .name{font-size:var(--text-sm);font-weight:500;margin-bottom:3px}
+.entity-card .name a{color:var(--fg)}.entity-card .name a:hover{color:var(--accent)}
+.entity-card .vendor{font-size:var(--text-xs);color:var(--muted);margin-bottom:var(--space-2)}
+.entity-card .tags{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:var(--space-2)}
+.tag{font-size:10px;font-weight:500;padding:2px 7px;border-radius:4px;background:var(--accent-glow);color:var(--accent);letter-spacing:0.01em}
+.tag.cn{background:rgba(22,163,74,0.10);color:var(--success)}.tag.special{background:rgba(217,119,6,0.10);color:var(--warn)}
+.entity-card .meta{font-size:var(--text-xs);color:var(--muted);display:flex;gap:var(--space-2);flex-wrap:wrap}
+.entity-card .meta span{display:flex;align-items:center;gap:3px}
+.entity-card .links{margin-top:var(--space-3);display:flex;gap:var(--space-2)}
+.entity-card .links a{font-size:var(--text-xs);color:var(--accent);padding:2px 9px;box-shadow:var(--elev-ring);border-radius:var(--radius-sm);transition:background var(--motion-fast);text-decoration:none}
+.entity-card .links a:hover{background:var(--accent-glow)}
+.skill-card{background:var(--surface);border:none;box-shadow:var(--elev-raised);border-radius:var(--radius-md);padding:var(--space-4);margin-bottom:var(--space-3);transition:box-shadow var(--motion-base) var(--ease-standard)}
+.skill-card:hover{box-shadow:0 0 0 1px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.06),0 12px 12px -8px rgba(0,0,0,0.06),0 0 0 1px #fafafa}
+.skill-card .name{font-size:var(--text-sm);font-weight:600;color:var(--fg);letter-spacing:-0.03em}
+.skill-card .desc{font-size:var(--text-sm);color:var(--muted);margin:var(--space-1) 0;line-height:1.5}
+.skill-card .reason{font-size:var(--text-sm);color:var(--fg);margin-top:var(--space-1);line-height:1.5}
+.empty-state{text-align:center;padding:60px 20px;color:var(--meta)}
+.empty-state h3{font-size:var(--text-base);color:var(--muted);margin-bottom:var(--space-1)}
+.empty-state p{font-size:var(--text-sm)}
+.skeleton{background:linear-gradient(90deg,transparent 25%,rgba(0,0,0,0.02) 50%,transparent 75%);background-size:200% 100%;animation:skeleton-shimmer 1.4s ease infinite;border-radius:4px}
+.skeleton-line{height:14px;margin-bottom:8px;width:100%}.skeleton-line.short{width:60%}
+@keyframes skeleton-shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+@media(prefers-reduced-motion:reduce){.skeleton{animation:none}}
+@media(max-width:900px){.header-inner{flex-wrap:wrap;gap:var(--space-2);padding:var(--space-3) var(--space-4)}.header-right{width:100%}.search-bar{max-width:100%}.header-brand .sub{display:none}}
+@media(max-width:768px){.header-inner{padding:var(--space-2) var(--space-4)}.header-brand h1{font-size:var(--text-lg)}.tab-bar{padding:0 var(--space-4)}.tab-btn{font-size:var(--text-xs);padding:8px 12px}.main{padding:var(--space-4)}.grid{grid-template-columns:1fr}.filters{flex-direction:column;align-items:stretch}.filters select{width:100%;min-width:auto}.brand-cards{flex-direction:column}.brand-card{min-width:auto;width:100%}.cat-tabs button{font-size:11px;padding:5px 10px}.col-toggles{flex-direction:column;max-height:180px;overflow-y:auto}.robot-table{font-family:var(--font-body);font-size:10px}.robot-table th,.robot-table td{padding:4px 5px;white-space:nowrap}.cmp-table{font-size:10px}.cmp-table th,.cmp-table td{padding:4px 6px}.quick-filters{flex-direction:column}.qf-group{width:100%}.news-day{padding:var(--space-4)}.stats-bar{gap:var(--space-2);font-size:11px;flex-wrap:wrap}.pagination{flex-wrap:wrap}.overlay-content{margin:20px auto;padding:var(--space-4);width:96%}}
+@media(max-width:480px){.header-brand h1{font-size:var(--text-base)}.tab-btn{font-size:11px;padding:6px 10px}.main{padding:var(--space-3)}.news-item .title{font-size:var(--text-xs)}}
 </style>
 </head>
 <body>
@@ -630,16 +185,14 @@ a:hover { text-decoration: underline; }
 <div class="app-header">
   <div class="header-inner">
     <div class="header-brand">
-      <h1>AI<span>HOT</span> · 机器人情报站</h1>
-      <div class="sub">新闻 · 模型 · 机器人 · 技能</div>
+      <h1>AI<span>HOT</span></h1>
+      <div class="sub">机器人 · 模型 · 新闻 · 技能</div>
     </div>
-
     <div class="header-center">
       <div class="search-bar">
-        <input type="text" id="globalSearch" placeholder="搜索新闻、模型、机器人..." autocomplete="off">
+        <input type="text" id="globalSearch" placeholder="搜索机器人、模型、新闻..." autocomplete="off">
       </div>
     </div>
-
     <div class="header-right">
       <span class="status-dot" id="updateStatus">数据加载中...</span>
     </div>
@@ -647,74 +200,17 @@ a:hover { text-decoration: underline; }
 </div>
 
 <div class="tab-bar" id="tabs">
-  <button class="tab-btn active" data-tab="news">📺 新闻</button>
+  <button class="tab-btn active" data-tab="robots">🤖 机器人对比 <span class="badge" id="robotsBadge">0</span></button>
   <button class="tab-btn" data-tab="models">🧠 模型选型 <span class="badge" id="modelsBadge">0</span></button>
-  <button class="tab-btn" data-tab="robots">🤖 机器人档案 <span class="badge" id="robotsBadge">0</span></button>
+  <button class="tab-btn" data-tab="news">📺 新闻 <span class="badge" id="newsBadge">0</span></button>
   <button class="tab-btn" data-tab="skills">🛠 技能推荐 <span class="badge" id="skillsBadge">0</span></button>
 </div>
 
 <div class="main">
 
-<!-- ══════════════ TAB 1: NEWS ══════════════ -->
-<div class="tab-content active" id="tab-news">
-  <div class="filters" id="newsFilters">
-    <label>来源：
-      <select id="newsSource">
-        <option value="all">全部</option>
-        <option value="xwlb">新闻联播</option>
-        <option value="global">全球动态</option>
-      </select>
-    </label>
-    <label>行业：
-      <select id="newsIndustry">
-        <option value="all">全部行业</option>
-      </select>
-    </label>
-    <label>
-      <input type="checkbox" id="newsSpecial"> 🔔 仅特别关注
-    </label>
-  </div>
-  <div id="newsContainer">
-    <div class="vc-card" style="text-align:center;padding:40px;color:var(--meta)">加载新闻数据中...</div>
-  </div>
-</div>
-
-<!-- ══════════════ TAB 2: MODELS ══════════════ -->
-<div class="tab-content" id="tab-models">
-  <div class="filters" id="modelFilters">
-    <label>能力：
-      <select id="mfCapability">
-        <option value="all">全部能力</option>
-      </select>
-    </label>
-    <label>国内可用：
-      <select id="mfDomestic">
-        <option value="all">全部</option>
-        <option value="直连">直连</option>
-        <option value="需代理">需代理</option>
-      </select>
-    </label>
-    <label>厂商：
-      <select id="mfVendor">
-        <option value="all">全部厂商</option>
-      </select>
-    </label>
-    <label>排序：
-      <select id="mfSort">
-        <option value="price">价格↓</option>
-        <option value="price_asc">价格↑</option>
-        <option value="name">名称</option>
-      </select>
-    </label>
-  </div>
-  <div class="stats-bar" id="modelStats"></div>
-  <div class="grid" id="modelGrid">
-    <div class="vc-card" style="text-align:center;padding:40px;color:var(--meta)">加载模型数据中...</div>
-  </div>
-</div>
-
-<!-- ══════════════ TAB 3: ROBOTS ══════════════ -->
-<div class="tab-content" id="tab-robots">
+<!-- ══════════════ TAB 1: ROBOTS (DEFAULT) ══════════════ -->
+<div class="tab-content active" id="tab-robots">
+  <!-- Category tabs -->
   <div class="cat-tabs" id="robotCatTabs">
     <button class="active" data-cat="humanoid">🤖 人形机器人</button>
     <button data-cat="commercial_cleaner">🧹 商用清洁</button>
@@ -723,13 +219,16 @@ a:hover { text-decoration: underline; }
     <button data-cat="ai_toy">🧸 AI玩具</button>
   </div>
 
+  <!-- Brand strip -->
   <div class="brand-cards" id="brandCards"></div>
 
+  <!-- Quick filter pills -->
+  <div class="quick-filters" id="quickFilters"></div>
+
+  <!-- Standard filters -->
   <div class="filters" id="robotFilters">
     <label>二级分类：
-      <select id="rfType2">
-        <option value="all">全部</option>
-      </select>
+      <select id="rfType2"><option value="all">全部</option></select>
     </label>
     <label>状态：
       <select id="rfStatus">
@@ -739,14 +238,20 @@ a:hover { text-decoration: underline; }
         <option value="原型">原型</option>
       </select>
     </label>
+    <label style="margin-left:auto;font-size:11px;color:var(--meta)">
+      <input type="checkbox" id="showDiff" onchange="renderRobots()"> 仅显示差异
+    </label>
   </div>
 
+  <!-- Column toggles -->
   <div class="col-toggles" id="colToggles"></div>
 
+  <!-- Stats -->
   <div class="stats-bar" id="robotStats">
     <span id="robotStatsLeft">共 <b>0</b> 个型号</span>
   </div>
 
+  <!-- Table -->
   <div style="overflow-x:auto;-webkit-overflow-scrolling:touch">
     <table class="robot-table" id="robotTable">
       <thead id="robotThead"></thead>
@@ -754,6 +259,7 @@ a:hover { text-decoration: underline; }
     </table>
   </div>
 
+  <!-- Pagination -->
   <div class="pagination" id="robotPagination">
     <button id="robotPrev" onclick="robotPagePrev()">‹ 上一页</button>
     <span class="page-info" id="robotPageInfo">第 <b>1</b> / <b>1</b> 页</span>
@@ -761,22 +267,36 @@ a:hover { text-decoration: underline; }
   </div>
 </div>
 
-<!-- ══════════════ ECOSYSTEM OVERLAY ══════════════ -->
-<div id="ecosystemOverlay" class="overlay" onclick="if(event.target===this)closeEcosystem()">
-  <div class="overlay-content" id="ecosystemPanel" style="max-width:680px;max-height:80vh;overflow-y:auto"></div>
+<!-- ══════════════ TAB 2: MODELS ══════════════ -->
+<div class="tab-content" id="tab-models">
+  <div class="filters" id="modelFilters">
+    <label>能力：<select id="mfCapability"><option value="all">全部能力</option></select></label>
+    <label>国内可用：<select id="mfDomestic"><option value="all">全部</option><option value="直连">直连</option><option value="需代理">需代理</option></select></label>
+    <label>厂商：<select id="mfVendor"><option value="all">全部厂商</option></select></label>
+    <label>排序：<select id="mfSort"><option value="price">价格↓</option><option value="price_asc">价格↑</option><option value="name">名称</option></select></label>
+  </div>
+  <div class="stats-bar" id="modelStats"></div>
+  <div class="grid" id="modelGrid">
+    <div class="vc-card" style="text-align:center;padding:40px;color:var(--meta)">加载模型数据中...</div>
+  </div>
+</div>
+
+<!-- ══════════════ TAB 3: NEWS ══════════════ -->
+<div class="tab-content" id="tab-news">
+  <div class="filters" id="newsFilters">
+    <label>来源：<select id="newsSource"><option value="all">全部</option><option value="xwlb">新闻联播</option><option value="global">全球动态</option></select></label>
+    <label>行业：<select id="newsIndustry"><option value="all">全部行业</option></select></label>
+    <label><input type="checkbox" id="newsSpecial"> 🔔 仅特别关注</label>
+  </div>
+  <div id="newsContainer">
+    <div class="vc-card" style="text-align:center;padding:40px;color:var(--meta)">加载新闻数据中...</div>
+  </div>
 </div>
 
 <!-- ══════════════ TAB 4: SKILLS ══════════════ -->
 <div class="tab-content" id="tab-skills">
   <div class="filters">
-    <label>场景：
-      <select id="sfScene">
-        <option value="all">全部场景</option>
-        <option value="work">工作</option>
-        <option value="life">生活</option>
-        <option value="research">研究</option>
-      </select>
-    </label>
+    <label>场景：<select id="sfScene"><option value="all">全部场景</option><option value="work">工作</option><option value="life">生活</option><option value="research">研究</option></select></label>
   </div>
   <div id="skillsContainer">
     <div class="vc-card" style="text-align:center;padding:40px;color:var(--meta)">加载技能数据中...</div>
@@ -785,17 +305,34 @@ a:hover { text-decoration: underline; }
 
 </div><!-- /main -->
 
+<!-- ══════════════ ECOSYSTEM OVERLAY ══════════════ -->
+<div id="ecosystemOverlay" class="overlay" onclick="if(event.target===this)closeEcosystem()">
+  <div class="overlay-content" id="ecosystemPanel" style="max-width:680px;max-height:80vh;overflow-y:auto"></div>
+</div>
+
+<!-- ══════════════ COMPARE OVERLAY ══════════════ -->
+<div id="compareOverlay" class="overlay" onclick="if(event.target===this)closeCompare()">
+  <div class="overlay-content" id="comparePanel" style="max-width:1100px;max-height:85vh;overflow-y:auto"></div>
+</div>
+
+<!-- ══════════════ COMPARE FLOATING BAR ══════════════ -->
+<div class="cmp-bar" id="cmpBar">
+  <div class="cmp-bar-inner">
+    <span>已选 <span class="cmp-count" id="cmpCount">0</span> 个型号</span>
+    <button id="cmpBtn" onclick="openCompare()" disabled>对比</button>
+    <button class="cmp-clear" onclick="clearCompare()">清空</button>
+  </div>
+</div>
+
 <script>
 // ── DATA ───────────────────────────────────────────────────────────
 let state = { models: [], robots: [], news: [], skills: [] };
 let searchResults = null;
+let compareList = []; // array of selected robot keys (厂商+型号)
 
 async function loadJSON(url) {
-  try {
-    const r = await fetch(url);
-    if (!r.ok) return null;
-    return await r.json();
-  } catch(e) { return null; }
+  try { const r = await fetch(url); if (!r.ok) return null; return await r.json(); }
+  catch(e) { return null; }
 }
 
 async function init() {
@@ -805,191 +342,70 @@ async function init() {
     loadJSON('./xwlb.json'),
     loadJSON('./skills.json'),
   ]);
-
   state.models = models || [];
   state.robots = robots || [];
   state.news = news || { days: [] };
   state.skills = skills || [];
 
-  document.getElementById('updateStatus').textContent =
-    `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
-
-  document.getElementById('modelsBadge').textContent = state.models.length;
-  document.getElementById('skillsBadge').textContent = state.skills.length;
+  updateStats();
 
   renderModels();
   renderNews();
   renderSkills();
 
-  // Load initial robot category
   loadRobotCategory('humanoid').then(data => {
     state.robots = data;
-    document.getElementById('robotsBadge').textContent = state.robots.length;
+    updateStats();
     renderRobots();
-    document.getElementById('updateStatus').textContent =
-      `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
   });
 
   loadEcosystem();
+}
+
+function updateStats() {
+  const nd = (state.news.days||[]).length;
+  document.getElementById('updateStatus').textContent =
+    `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${nd}天新闻 · ${state.skills.length}技能`;
+  document.getElementById('modelsBadge').textContent = state.models.length;
+  document.getElementById('robotsBadge').textContent = state.robots.length;
+  document.getElementById('newsBadge').textContent = nd;
+  document.getElementById('skillsBadge').textContent = state.skills.length;
 }
 
 // ── TAB SWITCHING ──────────────────────────────────────────────────
 document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-    document.querySelectorAll('.tab-content').forEach(t => {
-      t.classList.remove('active');
-      void t.offsetWidth;
-    });
+    document.querySelectorAll('.tab-content').forEach(t => { t.classList.remove('active'); void t.offsetWidth; });
     btn.classList.add('active');
     document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
   });
 });
 
-// ── GLOBAL SEARCH ──────────────────────────────────────────────────
-const SEARCHABLE_FIELDS = ['标题','title','型号','厂商','名称','model_name','vendor','desc','reason'];
-
-document.getElementById('globalSearch').addEventListener('input', function() {
-  const q = this.value.trim().toLowerCase();
-  const container = document.getElementById('newsContainer');
-  if (!q || q.length < 2) {
-    searchResults = null;
-    renderNews();
-    return;
-  }
-
-  const data = state.news;
-  if (!data.days) return;
-
-  const results = [];
-  data.days.forEach(day => {
-    const matchingInds = (day.industries||[])
-      .map(ind => {
-        const matchingItems = (ind.items||[]).filter(item =>
-          (item.title||'').toLowerCase().includes(q) ||
-          (item.summary||'').toLowerCase().includes(q)
-        );
-        return matchingItems.length ? { ...ind, items: matchingItems } : null;
-      })
-      .filter(Boolean);
-    if (matchingInds.length) {
-      results.push({ ...day, industries: matchingInds, _total: matchingInds.reduce((a,i) => a+i.items.length, 0) });
-    }
-  });
-
-  searchResults = { days: results };
-
-  if (!results.length) {
-    container.innerHTML = `<div class="empty-state">
-      <h3>🔍 未找到"${q}"的相关新闻</h3>
-      <p>试试其他关键词</p>
-    </div>`;
-    return;
-  }
-
-  renderNews();
-});
-
 // ── FILTER HELPERS ─────────────────────────────────────────────────
 function populateSelect(id, values) {
   const sel = document.getElementById(id);
-  values.forEach(v => {
-    const opt = document.createElement('option');
-    opt.value = v; opt.textContent = v;
-    sel.appendChild(opt);
-  });
+  values.forEach(v => { const opt = document.createElement('option'); opt.value = v; opt.textContent = v; sel.appendChild(opt); });
 }
 
 // ══════════════════════════════════════════════════════════════════
-// MODELS
+// ROBOTS - MAIN FUNCTION
 // ══════════════════════════════════════════════════════════════════
-function renderModels() {
-  const models = state.models;
-  if (!models.length) return;
-
-  const caps = [...new Set(models.map(m => m.capability_type).filter(Boolean))];
-  const vendors = [...new Set(models.map(m => m.vendor).filter(Boolean))];
-  populateSelect('mfCapability', caps);
-  populateSelect('mfVendor', vendors);
-
-  function filterModels() {
-    const cap = document.getElementById('mfCapability').value;
-    const dom = document.getElementById('mfDomestic').value;
-    const ven = document.getElementById('mfVendor').value;
-    const sort = document.getElementById('mfSort').value;
-
-    let list = models.filter(m => {
-      if (cap !== 'all' && m.capability_type !== cap) return false;
-      if (dom !== 'all' && m.domestic_availability !== dom) return false;
-      if (ven !== 'all' && m.vendor !== ven) return false;
-      return true;
-    });
-
-    list.sort((a,b) => {
-      if (sort === 'name') return a.model_name.localeCompare(b.model_name);
-      const getPrice = (s) => parseFloat((s||'').replace(/[^0-9.]/g,'')) || 99999;
-      return sort === 'price_asc' ? getPrice(a.output_price) - getPrice(b.output_price)
-                                    : getPrice(b.output_price) - getPrice(a.output_price);
-    });
-
-    document.getElementById('modelStats').innerHTML =
-      `<span>共 <b>${list.length}</b> 个模型</span>`;
-
-    const grid = document.getElementById('modelGrid');
-    grid.innerHTML = list.map(m => `
-      <div class="entity-card">
-        <div class="name"><a href="${m.official_url||'#'}" target="_blank">${m.model_name}</a></div>
-        <div class="vendor">${m.vendor||''}</div>
-        <div class="tags">
-          ${m.capability_type ? `<span class="tag">${m.capability_type}</span>` : ''}
-          ${m.domestic_availability === '直连' ? `<span class="tag cn">${m.domestic_availability}</span>`
-            : m.domestic_availability ? `<span class="tag">${m.domestic_availability}</span>` : ''}
-        </div>
-        <div class="meta">
-          ${m.output_price ? `<span>💰 ${m.output_price}</span>` : ''}
-          ${m.context_window ? `<span>📏 ${m.context_window}</span>` : ''}
-        </div>
-        ${m.promotions ? `<div style="font-size:11px;color:var(--warn);margin-top:4px">🏷 ${m.promotions}</div>` : ''}
-        <div class="links">
-          ${m.official_url ? `<a href="${m.official_url}" target="_blank">官网</a>` : ''}
-          ${m.tech_report_url ? `<a href="${m.tech_report_url}" target="_blank">技术报告</a>` : ''}
-        </div>
-      </div>
-    `).join('');
-  }
-
-  ['mfCapability','mfDomestic','mfVendor','mfSort'].forEach(id => {
-    document.getElementById(id).addEventListener('change', filterModels);
-  });
-  filterModels();
-}
-
-// ══════════════════════════════════════════════════════════════════
-// ROBOTS
-// ══════════════════════════════════════════════════════════════════
-
 let ecosystemData = null;
 
 async function loadEcosystem() {
   if (ecosystemData) return ecosystemData;
-  try {
-    const r = await fetch('./robots/brand_ecosystem.json');
-    if (!r.ok) return null;
-    const d = await r.json();
-    ecosystemData = d;
-    return d;
-  } catch(e) { return null; }
+  try { const r = await fetch('./robots/brand_ecosystem.json'); if (!r.ok) return null; const d = await r.json(); ecosystemData = d; return d; }
+  catch(e) { return null; }
 }
 
 function getBrandEcosystem(vendor) {
   if (!ecosystemData) return null;
-  const v = vendor.replace(/[()（]/g,'(').replace(/[)）]/g,')').toLowerCase();
-  return ecosystemData.brands.find(b => b.name.replace(/[()（]/g,'(').replace(/[)）]/g,')').toLowerCase() === v) || null;
+  const v = vendor.replace(/[()（）]/g,'(').replace(/[)）]/g,')').toLowerCase();
+  return ecosystemData.brands.find(b => b.name.replace(/[()（）]/g,'(').replace(/[)）]/g,')').toLowerCase() === v) || null;
 }
 
-function closeEcosystem() {
-  document.getElementById('ecosystemOverlay').classList.remove('show');
-}
+function closeEcosystem() { document.getElementById('ecosystemOverlay').classList.remove('show'); }
 
 function showEcosystemPanel(vendor) {
   const eco = getBrandEcosystem(vendor);
@@ -998,17 +414,12 @@ function showEcosystemPanel(vendor) {
   if (!eco) {
     panel.innerHTML = `<div style="text-align:center;padding:30px;color:var(--meta)">暂无 ${vendor} 的生态数据</div>
       <div style="text-align:center;margin-top:12px"><button onclick="closeEcosystem()" style="background:var(--fg);border:none;color:#fff;padding:8px 20px;border-radius:6px;cursor:pointer;font-family:inherit;font-size:13px">关闭</button></div>`;
-    overlay.classList.add('show');
-    return;
+    overlay.classList.add('show'); return;
   }
-
   let html = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
     <h2 style="font-size:18px;color:var(--fg);margin:0;letter-spacing:-0.04em">${eco.name}</h2>
-    <span style="font-size:11px;color:var(--success);letter-spacing:0.02em">● ${eco.ecosystem.open_source_degree}</span>
-    <button onclick="closeEcosystem()" style="background:none;border:none;color:var(--meta);font-size:20px;cursor:pointer;line-height:1">✕</button>
-  </div>`;
-
-  // Datasets
+    <span style="font-size:11px;color:var(--success)">● ${eco.ecosystem.open_source_degree}</span>
+    <button onclick="closeEcosystem()" style="background:none;border:none;color:var(--meta);font-size:20px;cursor:pointer;line-height:1">✕</button></div>`;
   if (eco.ecosystem.datasets && eco.ecosystem.datasets.length) {
     html += `<div class="vc-card" style="margin-bottom:12px"><div class="vc-card-header">训练数据集</div>`;
     eco.ecosystem.datasets.forEach(d => {
@@ -1017,43 +428,29 @@ function showEcosystemPanel(vendor) {
         <span style="font-weight:500">${d.name}</span>
         <span style="font-size:11px;color:var(--muted)">${d.type}</span>
         ${d.scale ? `<span style="font-size:11px;color:var(--accent)">${d.scale}</span>` : ''}
-        ${d.url ? `<a href="${d.url}" target="_blank" style="font-size:11px;color:var(--accent)">详情</a>` : ''}
-      </div>`;
-    });
+        ${d.url ? `<a href="${d.url}" target="_blank" style="font-size:11px;color:var(--accent)">详情</a>` : ''}</div>`; });
     html += `</div>`;
   }
-
-  // Models
   if (eco.ecosystem.models && eco.ecosystem.models.length) {
     html += `<div class="vc-card" style="margin-bottom:12px"><div class="vc-card-header">基础模型</div>`;
     eco.ecosystem.models.forEach(m => {
       html += `<div style="padding:6px 0;box-shadow:0 -1px 0 0 var(--border-soft)">
-        <div><span style="font-weight:500">${m.name}</span> <span style="font-size:11px;color:var(--muted)">${m.type}</span> ${m.open_source?'<span style="font-size:10px;color:var(--success);letter-spacing:0.02em">开源</span>':'<span style="font-size:10px;color:var(--warn);letter-spacing:0.02em">闭源</span>'}</div>
-        ${m.capabilities ? `<div style="font-size:11px;color:var(--muted);margin-top:2px">${m.capabilities}</div>` : ''}
-      </div>`;
-    });
+        <div><span style="font-weight:500">${m.name}</span> <span style="font-size:11px;color:var(--muted)">${m.type}</span> ${m.open_source?'<span style="font-size:10px;color:var(--success)">开源</span>':'<span style="font-size:10px;color:var(--warn)">闭源</span>'}</div>
+        ${m.capabilities ? `<div style="font-size:11px;color:var(--muted);margin-top:2px">${m.capabilities}</div>` : ''}</div>`; });
     html += `</div>`;
   }
-
-  // Key events
   if (eco.ecosystem.key_events && eco.ecosystem.key_events.length) {
     html += `<div class="vc-card" style="margin-bottom:12px"><div class="vc-card-header">关键事件</div>`;
     const sorted = [...eco.ecosystem.key_events].sort((a,b) => b.date.localeCompare(a.date));
     sorted.forEach(e => {
       html += `<div style="display:flex;gap:12px;padding:5px 0;box-shadow:0 -1px 0 0 var(--border-soft)">
         <span style="font-size:11px;color:var(--accent);min-width:80px;flex-shrink:0;font-family:var(--font-mono)">${e.date.replace('00','?')}</span>
-        <span style="font-size:13px;color:var(--fg)">${e.event}</span>
-      </div>`;
-    });
+        <span style="font-size:13px;color:var(--fg)">${e.event}</span></div>`; });
     html += `</div>`;
   }
-
-  // Open source & ROS
-  html += `<div style="display:flex;gap:16px;font-size:12px;color:var(--muted);padding:8px 0;letter-spacing:0.02em">
+  html += `<div style="display:flex;gap:16px;font-size:12px;color:var(--muted);padding:8px 0">
     <span>🔧 ROS集成: ${eco.ecosystem.ros}</span>
-    <span>📋 开源程度: ${eco.ecosystem.open_source_degree}</span>
-  </div>`;
-
+    <span>📋 开源程度: ${eco.ecosystem.open_source_degree}</span></div>`;
   panel.innerHTML = html;
   overlay.classList.add('show');
 }
@@ -1061,6 +458,15 @@ function showEcosystemPanel(vendor) {
 const ROBOT_CONFIG = {
   humanoid: {
     label: '🤖 人形机器人', file: 'humanoid.json',
+    priceKey: '售价', weightKey: '重量', rangeKey: '身高',
+    enduranceKey: '续航_行走', loadKey: '负载_单臂',
+    quickFilters: [
+      { label: '价格', key: 'price_ranges', options: ['全部','<5万','5-20万','20-50万','>50万'] },
+      { label: '身高', key: 'height_ranges', options: ['全部','<120cm','120-150cm','150-170cm','>170cm'] },
+      { label: '重量', key: 'weight_ranges', options: ['全部','<20kg','20-40kg','40-60kg','>60kg'] },
+      { label: '负载', key: 'load_ranges', options: ['全部','<5kg','5-10kg','10-20kg','>20kg'] },
+      { label: '续航', key: 'endurance_ranges', options: ['全部','<1h','1-2h','2-4h','>4h'] },
+    ],
     defaultCols: ['厂商','型号','类型','身高','重量','负载_单臂','续航_行走','自由度_总数','行走速度','售价','量产状态'],
     allCols: [
       {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
@@ -1077,10 +483,24 @@ const ROBOT_CONFIG = {
       {key:'开源程度',label:'开源',sort:true},{key:'训练数据集',label:'数据集',sort:false},
       {key:'基础模型',label:'基础模型',sort:false},{key:'售价',label:'售价',sort:true},
       {key:'量产状态',label:'量产状态',sort:true},{key:'数据级别',label:'数据级别',sort:true},
-    ]
+    ],
+    matchQuickFilter: function(r, qf) {
+      if (qf === 'price_ranges') return matchPrice(r, this);
+      if (qf === 'height_ranges') return matchHeight(r, this);
+      if (qf === 'weight_ranges') return matchWeight(r, this);
+      if (qf === 'load_ranges') return matchLoad(r, this);
+      if (qf === 'endurance_ranges') return matchEndurance(r, this);
+      return true;
+    }
   },
   commercial_cleaner: {
     label: '🧹 商用清洁', file: 'commercial_cleaner.json',
+    priceKey: '价格', weightKey: null, rangeKey: null,
+    enduranceKey: '续航', loadKey: null,
+    quickFilters: [
+      { label: '价格', key: 'price_ranges', options: ['全部','<2万','2-5万','5-10万','>10万'] },
+      { label: '续航', key: 'endurance_ranges', options: ['全部','<2h','2-4h','4-6h','>6h'] },
+    ],
     defaultCols: ['厂商','型号','清洁类型','清洁宽度','清洁效率','续航','清水箱','价格','状态'],
     allCols: [
       {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
@@ -1099,10 +519,23 @@ const ROBOT_CONFIG = {
       {key:'边缘清洁',label:'边缘清洁',sort:true},{key:'噪音',label:'噪音(dB)',sort:true},
       {key:'适用地面',label:'适用地面',sort:false},{key:'价格',label:'价格',sort:true},
       {key:'状态',label:'状态',sort:true},
-    ]
+    ],
+    matchQuickFilter: function(r, qf) {
+      if (qf === 'price_ranges') return matchPrice(r, this);
+      if (qf === 'endurance_ranges') return matchEndurance(r, this);
+      return true;
+    }
   },
   industrial_quadruped: {
     label: '🐕 四足工业', file: 'industrial_quadruped.json',
+    priceKey: '价格', weightKey: '重量', rangeKey: null,
+    enduranceKey: '续航', loadKey: '负载行走',
+    quickFilters: [
+      { label: '价格', key: 'price_ranges', options: ['全部','<5万','5-20万','20-50万','>50万'] },
+      { label: '重量', key: 'weight_ranges', options: ['全部','<20kg','20-40kg','40-60kg','>60kg'] },
+      { label: '负载', key: 'load_ranges', options: ['全部','<10kg','10-20kg','20-30kg','>30kg'] },
+      { label: '续航', key: 'endurance_ranges', options: ['全部','<1h','1-2h','2-3h','>3h'] },
+    ],
     defaultCols: ['厂商','型号','重量','负载行走','续航','行走速度','防水等级','SDK语言','价格','状态'],
     allCols: [
       {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
@@ -1121,10 +554,24 @@ const ROBOT_CONFIG = {
       {key:'GPIO',label:'GPIO',sort:false},{key:'电源输出',label:'电源输出',sort:false},
       {key:'计算扩展',label:'计算扩展',sort:false},{key:'自定义负载',label:'自定义负载',sort:true},
       {key:'价格',label:'价格',sort:true},{key:'状态',label:'状态',sort:true},
-    ]
+    ],
+    matchQuickFilter: function(r, qf) {
+      if (qf === 'price_ranges') return matchPrice(r, this);
+      if (qf === 'weight_ranges') return matchWeight(r, this);
+      if (qf === 'load_ranges') return matchLoad(r, this);
+      if (qf === 'endurance_ranges') return matchEndurance(r, this);
+      return true;
+    }
   },
   delivery_vehicle: {
     label: '🚚 无人配送车', file: 'delivery_vehicle.json',
+    priceKey: '价格', weightKey: null, rangeKey: null,
+    enduranceKey: '续航里程', loadKey: '载重',
+    quickFilters: [
+      { label: '价格', key: 'price_ranges', options: ['全部','<5万','5-15万','15-30万','>30万'] },
+      { label: '续航', key: 'endurance_ranges', options: ['全部','<50km','50-100km','100-200km','>200km'] },
+      { label: '载重', key: 'load_ranges', options: ['全部','<200kg','200-500kg','500-1000kg','>1000kg'] },
+    ],
     defaultCols: ['厂商','型号','类型','载重','货箱容积','续航里程','最高速度','自动驾驶等级','价格','状态'],
     allCols: [
       {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
@@ -1135,10 +582,22 @@ const ROBOT_CONFIG = {
       {key:'传感器配置',label:'传感器',sort:false},{key:'自动驾驶等级',label:'自动驾驶等级',sort:true},
       {key:'运行温度',label:'工作温度(℃)',sort:true},{key:'价格',label:'价格',sort:true},
       {key:'状态',label:'状态',sort:true},
-    ]
+    ],
+    matchQuickFilter: function(r, qf) {
+      if (qf === 'price_ranges') return matchPrice(r, this);
+      if (qf === 'endurance_ranges') return matchEndurance(r, this);
+      if (qf === 'load_ranges') return matchLoad(r, this);
+      return true;
+    }
   },
   ai_toy: {
     label: '🧸 AI玩具', file: 'ai_toy.json',
+    priceKey: '价格', weightKey: '重量', rangeKey: null,
+    enduranceKey: '续航', loadKey: null,
+    quickFilters: [
+      { label: '价格', key: 'price_ranges', options: ['全部','<500','500-2000','2000-5000','>5000'] },
+      { label: '续航', key: 'endurance_ranges', options: ['全部','<1h','1-3h','3-6h','>6h'] },
+    ],
     defaultCols: ['厂商','型号','形态','尺寸','重量','续航','交互方式','AI能力','适用年龄','价格','状态'],
     allCols: [
       {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
@@ -1147,9 +606,80 @@ const ROBOT_CONFIG = {
       {key:'交互方式',label:'交互方式',sort:false},{key:'AI能力',label:'AI能力',sort:false},
       {key:'适用年龄',label:'适用年龄',sort:true},{key:'编程方式',label:'编程方式',sort:false},
       {key:'价格',label:'价格',sort:true},{key:'状态',label:'状态',sort:true},
-    ]
+    ],
+    matchQuickFilter: function(r, qf) {
+      if (qf === 'price_ranges') return matchPrice(r, this);
+      if (qf === 'endurance_ranges') return matchEndurance(r, this);
+      return true;
+    }
   }
 };
+
+// Quick filter matching helpers
+function matchPrice(r, cfg) {
+  const v = document.querySelector(`.qf-pill[data-qf="${cfg.priceKey||'price'}"].active`);
+  if (!v) return true;
+  const val = parseFloat((r[cfg.priceKey]||'').replace(/[^0-9.]/g,''));
+  if (isNaN(val)) return true;
+  const opt = v.textContent;
+  if (opt.startsWith('<')) return val < parseFloat(opt.slice(1));
+  if (opt.startsWith('>')) return val > parseFloat(opt.slice(1));
+  const parts = opt.split('-');
+  if (parts.length === 2) return val >= parseFloat(parts[0]) && val <= parseFloat(parts[1]);
+  return true;
+}
+function matchWeight(r, cfg) {
+  const v = document.querySelector(`.qf-pill[data-qf="weight"].active`);
+  if (!v) return true;
+  const key = cfg.weightKey; if (!key) return true;
+  const val = parseFloat((r[key]||'').replace(/[^0-9.]/g,''));
+  if (isNaN(val)) return true;
+  const opt = v.textContent;
+  if (opt.startsWith('<')) return val < parseFloat(opt.slice(1));
+  if (opt.startsWith('>')) return val > parseFloat(opt.slice(1));
+  const parts = opt.split('-');
+  if (parts.length === 2) return val >= parseFloat(parts[0]) && val <= parseFloat(parts[1]);
+  return true;
+}
+function matchLoad(r, cfg) {
+  const v = document.querySelector(`.qf-pill[data-qf="load"].active`);
+  if (!v) return true;
+  const key = cfg.loadKey; if (!key) return true;
+  const val = parseFloat((r[key]||'').replace(/[^0-9.]/g,''));
+  if (isNaN(val)) return true;
+  const opt = v.textContent;
+  if (opt.startsWith('<')) return val < parseFloat(opt.slice(1));
+  if (opt.startsWith('>')) return val > parseFloat(opt.slice(1));
+  const parts = opt.split('-');
+  if (parts.length === 2) return val >= parseFloat(parts[0]) && val <= parseFloat(parts[1]);
+  return true;
+}
+function matchHeight(r, cfg) {
+  const v = document.querySelector(`.qf-pill[data-qf="height"].active`);
+  if (!v) return true;
+  const key = cfg.rangeKey; if (!key) return true;
+  const val = parseFloat((r[key]||'').replace(/[^0-9.]/g,''));
+  if (isNaN(val)) return true;
+  const opt = v.textContent;
+  if (opt.startsWith('<')) return val < parseFloat(opt.slice(1));
+  if (opt.startsWith('>')) return val > parseFloat(opt.slice(1));
+  const parts = opt.split('-');
+  if (parts.length === 2) return val >= parseFloat(parts[0]) && val <= parseFloat(parts[1]);
+  return true;
+}
+function matchEndurance(r, cfg) {
+  const v = document.querySelector(`.qf-pill[data-qf="endurance"].active`);
+  if (!v) return true;
+  const key = cfg.enduranceKey; if (!key) return true;
+  const val = parseFloat((r[key]||'').replace(/[^0-9.]/g,''));
+  if (isNaN(val)) return true;
+  const opt = v.textContent;
+  if (opt.startsWith('<')) return val < parseFloat(opt.slice(1));
+  if (opt.startsWith('>')) return val > parseFloat(opt.slice(1));
+  const parts = opt.split('-');
+  if (parts.length === 2) return val >= parseFloat(parts[0]) && val <= parseFloat(parts[1]);
+  return true;
+}
 
 let robotData = {};
 let currentRobotCat = 'humanoid';
@@ -1169,79 +699,88 @@ async function loadRobotCategory(cat) {
 
 function renderRobots() {
   const robots = state.robots || [];
-  const cfg = ROBOT_CONFIG[currentRobotCat];
+  let cfg = ROBOT_CONFIG[currentRobotCat];
   if (!cfg || !robots.length) {
-    document.getElementById('robotBody').innerHTML =
-      '<tr><td colspan="10" style="text-align:center;color:var(--meta);padding:40px">暂无数据</td></tr>';
+    document.getElementById('robotBody').innerHTML = '<tr><td colspan="10" style="text-align:center;color:var(--meta);padding:40px">暂无数据</td></tr>';
     return;
   }
 
   const visibleCols = getVisibleCols();
+  const showDiff = document.getElementById('showDiff').checked;
 
   // Brand cards
   const brands = {};
-  robots.forEach(r => {
-    const vendor = r['厂商'] || '未知';
-    if (!brands[vendor]) brands[vendor] = { count: 0, url: r['官网'] || '#' };
-    brands[vendor].count++;
-  });
-
+  robots.forEach(r => { const v = r['厂商']||'未知'; if(!brands[v]) brands[v]={count:0,url:r['官网']||'#'}; brands[v].count++; });
   document.getElementById('brandCards').innerHTML =
-    Object.entries(brands).map(([name, info]) => `
-      <div class="brand-card" onclick="showEcosystemPanel('${name.replace(/'/g,"\\'")}')">
+    Object.entries(brands).map(([name,info]) =>
+      `<div class="brand-card" onclick="showEcosystemPanel('${name.replace(/'/g,"\\'")}')">
         <div class="name">${name}</div>
-        <div class="count">${info.count}款型号</div>
-        <span class="link">查看品牌档案 ▶</span>
-      </div>
-    `).join('');
+        <div class="count">${info.count}款</div>
+      </div>`
+    ).join('');
+
+  // Quick filter pills
+  const qfContainer = document.getElementById('quickFilters');
+  qfContainer.innerHTML = cfg.quickFilters.map(g => {
+    const qfKey = g.key;
+    return `<div class="qf-group">
+      <span class="qf-label">${g.label}</span>
+      ${g.options.map(o => {
+        const dataQf = o === '全部' ? '' : qfKey;
+        return `<button class="qf-pill ${o==='全部'?'active':''}" data-qf="${dataQf}" data-value="${o}" onclick="toggleQuickFilter(this,'${qfKey}')">${o}</button>`;
+      }).join('')}
+    </div>`;
+  }).join('');
 
   // Type 2 filter
   const type2s = [...new Set(robots.map(r => r['类型']||r['形态']||'').filter(Boolean))];
   const sel = document.getElementById('rfType2');
   const oldVal = sel.value;
-  sel.innerHTML = '<option value="all">全部</option>' +
-    type2s.map(t => `<option value="${t}">${t}</option>`).join('');
+  sel.innerHTML = '<option value="all">全部</option>' + type2s.map(t => `<option value="${t}">${t}</option>`).join('');
   sel.value = type2s.includes(oldVal) ? oldVal : 'all';
 
   // Column toggles
   document.getElementById('colToggles').innerHTML =
-    cfg.allCols.map(c => `
-      <label><input type="checkbox" class="col-toggle" data-key="${c.key}"
-        ${visibleCols.includes(c.key)?'checked':''}> ${c.label}</label>
-    `).join('');
-
-  document.querySelectorAll('.col-toggle').forEach(cb => {
-    cb.addEventListener('change', () => {
-      saveVisibleCols();
-      renderRobots();
-    });
-  });
+    cfg.allCols.map(c => `<label><input type="checkbox" class="col-toggle" data-key="${c.key}" ${visibleCols.includes(c.key)?'checked':''}> ${c.label}</label>`).join('');
+  document.querySelectorAll('.col-toggle').forEach(cb => { cb.addEventListener('change', () => { saveVisibleCols(); renderRobots(); }); });
 
   // Filter
   const type2 = document.getElementById('rfType2').value;
   const status = document.getElementById('rfStatus').value;
 
   let list = robots.filter(r => {
-    if (type2 !== 'all') {
-      const t = r['类型'] || r['形态'] || '';
-      if (t !== type2) return false;
-    }
+    if (type2 !== 'all') { const t = r['类型']||r['形态']||''; if (t !== type2) return false; }
     if (status !== 'all') {
       const s = (r['状态']||'').toLowerCase();
       if (status === '已量产' && !s.includes('量产') && !s.includes('在售')) return false;
       if (status === '预售' && !s.includes('预售')) return false;
       if (status === '原型' && !s.includes('原型') && !s.includes('测试')) return false;
     }
+    // Quick filters
+    for (const g of cfg.quickFilters) {
+      if (!cfg.matchQuickFilter(r, g.key)) return false;
+    }
     return true;
   });
 
+  // Show diff mode: find columns where all values are same
+  let diffCols = null;
+  if (showDiff && list.length >= 2) {
+    diffCols = [];
+    const keys = visibleCols.filter(k => k !== '厂商' && k !== '型号');
+    keys.forEach(k => {
+      const vals = [...new Set(list.map(r => (r[k]||'').toString().trim()))];
+      if (vals.length >= 2) diffCols.push(k);
+    });
+  }
+
   // Sort
   if (robotSortKey) {
-    list.sort((a, b) => {
-      let va = a[robotSortKey] || '', vb = b[robotSortKey] || '';
-      const na = parseFloat(va), nb = parseFloat(vb);
-      if (!isNaN(na) && !isNaN(nb)) return robotSortAsc ? na - nb : nb - na;
-      return robotSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+    list.sort((a,b) => {
+      let va = a[robotSortKey]||'', vb = b[robotSortKey]||'';
+      const na=parseFloat(va), nb=parseFloat(vb);
+      if(!isNaN(na)&&!isNaN(nb)) return robotSortAsc?na-nb:nb-na;
+      return robotSortAsc?va.localeCompare(vb):vb.localeCompare(va);
     });
   }
 
@@ -1250,41 +789,129 @@ function renderRobots() {
   const totalPages = Math.ceil(list.length / pageSize) || 1;
   if (robotPage >= totalPages) robotPage = 0;
   const page = robotPage;
-  const pageList = list.slice(page * pageSize, (page + 1) * pageSize);
+  const pageList = list.slice(page*pageSize, (page+1)*pageSize);
 
   // Stats
-  document.getElementById('robotStatsLeft').innerHTML =
-    `<span>共 <b>${list.length}</b> 个型号（本类共${robots.length}个）</span>`;
-  document.getElementById('robotPageInfo').innerHTML =
-    `第 <b>${page + 1}</b> / <b>${totalPages}</b> 页（每页${pageSize}条）`;
+  document.getElementById('robotStatsLeft').innerHTML = `<span>共 <b>${list.length}</b> 个型号（本类${robots.length}个）</span>`;
+  document.getElementById('robotPageInfo').innerHTML = `第 <b>${page+1}</b> / <b>${totalPages}</b> 页（每页${pageSize}条）`;
   document.getElementById('robotPrev').disabled = page === 0;
   document.getElementById('robotNext').disabled = page >= totalPages - 1;
 
-  // Table header
+  // Table header (with compare checkbox column)
   const sortedCol = cfg.allCols.filter(c => visibleCols.includes(c.key));
+  const showCols = showDiff && diffCols ? sortedCol.filter(c => c.key === '厂商'||c.key==='型号'||diffCols.includes(c.key)) : sortedCol;
+  
   document.getElementById('robotThead').innerHTML = '<tr>' +
-    sortedCol.map(c => {
+    `<th class="cmp-cell" style="cursor:default;width:30px"><input type="checkbox" id="cmpSelectAll" onchange="toggleSelectAll(this)" title="全选对比"></th>` +
+    showCols.map(c => {
       const isSorted = robotSortKey === c.key;
-      const arrow = isSorted ? (robotSortAsc ? ' ↑' : ' ↓') : '';
+      const arrow = isSorted?(robotSortAsc?' ↑':' ↓'):'';
       return `<th onclick="sortRobot('${c.key}')" style="cursor:pointer${c.sort?'':';cursor:default'}">${c.label}${arrow}${c.sort?' ▾':''}</th>`;
     }).join('') + '</tr>';
 
   // Table body
-  document.getElementById('robotBody').innerHTML = pageList.map(r => {
-    const vendorHtml = r['官网'] ? `<a href="${r['官网']}" target="_blank" style="color:var(--accent);text-decoration:none">${r['厂商']||''}</a>` : (r['厂商']||'');
-    const level = r['数据级别'] || '';
-    const levelBadge = level.includes('官方') ? '<span style="font-size:9px;color:var(--success);margin-left:4px">✓</span>'
-      : level.includes('新闻') ? '<span style="font-size:9px;color:var(--warn);margin-left:4px">📰</span>'
+  document.getElementById('robotBody').innerHTML = pageList.map((r,idx) => {
+    const rid = r['厂商']+'|'+r['型号'];
+    const isCmp = compareList.includes(rid);
+    const level = r['数据级别']||'';
+    const levelBadge = level.includes('官方')?'<span style="font-size:9px;color:var(--success);margin-left:4px">✓</span>'
+      : level.includes('新闻')?'<span style="font-size:9px;color:var(--warn);margin-left:4px">📰</span>'
       : '<span style="font-size:9px;color:var(--meta);margin-left:4px">?</span>';
-    return '<tr>' + sortedCol.map(c => {
-      if (c.key === '厂商') return `<td><span onclick="showEcosystemPanel('${(r['厂商']||'').replace(/'/g,"\\'")}')" style="cursor:pointer;color:var(--accent)">${r['厂商']||''}</span>${levelBadge}</td>`;
-      if (c.key === '型号' && r['官网']) {
-        return `<td><a href="${r['官网']}" target="_blank" style="color:var(--fg);text-decoration:none">${r['型号']||''}</a></td>`;
-      }
-      const val = r[c.key] || '';
-      return `<td>${val}</td>`;
-    }).join('') + '</tr>';
+    return '<tr>' +
+      `<td class="cmp-cell"><input type="checkbox" class="cmp-check" data-rid="${rid}" ${isCmp?'checked':''} onchange="toggleCompare('${rid}',this.checked)"></td>` +
+      showCols.map(c => {
+        if (c.key === '厂商') return `<td><span onclick="showEcosystemPanel('${(r['厂商']||'').replace(/'/g,"\\'")}')" style="cursor:pointer;color:var(--accent)">${r['厂商']||''}</span>${levelBadge}</td>`;
+        if (c.key === '型号' && r['官网']) return `<td><a href="${r['官网']}" target="_blank" style="color:var(--fg);text-decoration:none">${r['型号']||''}</a></td>`;
+        const val = r[c.key]||'';
+        return `<td>${val}</td>`;
+      }).join('') + '</tr>';
   }).join('');
+}
+
+function toggleQuickFilter(btn, groupKey) {
+  const siblings = btn.parentElement.querySelectorAll('.qf-pill');
+  siblings.forEach(s => s.classList.remove('active'));
+  btn.classList.add('active');
+  renderRobots();
+}
+
+function toggleCompare(rid, checked) {
+  if (checked) {
+    if (!compareList.includes(rid)) compareList.push(rid);
+  } else {
+    compareList = compareList.filter(r => r !== rid);
+  }
+  updateCompareBar();
+}
+
+function toggleSelectAll(el) {
+  const checked = el.checked;
+  document.querySelectorAll('.cmp-check').forEach(cb => {
+    cb.checked = checked;
+    toggleCompare(cb.dataset.rid, checked);
+  });
+}
+
+function clearCompare() {
+  compareList = [];
+  document.querySelectorAll('.cmp-check').forEach(cb => cb.checked = false);
+  if (document.getElementById('cmpSelectAll')) document.getElementById('cmpSelectAll').checked = false;
+  updateCompareBar();
+}
+
+function updateCompareBar() {
+  const bar = document.getElementById('cmpBar');
+  const count = document.getElementById('cmpCount');
+  const btn = document.getElementById('cmpBtn');
+  count.textContent = compareList.length;
+  btn.disabled = compareList.length < 2;
+  bar.classList.toggle('show', compareList.length > 0);
+}
+
+function openCompare() {
+  if (compareList.length < 2) return;
+  const robots = state.robots || [];
+  const selected = compareList.map(rid => {
+    const [vendor, model] = rid.split('|');
+    return robots.find(r => (r['厂商']||'') === vendor && (r['型号']||'') === model);
+  }).filter(Boolean);
+
+  if (selected.length < 2) return;
+
+  const cfg = ROBOT_CONFIG[currentRobotCat];
+  const allKeys = cfg.allCols.map(c => c.key);
+
+  // Build compare table: rows = parameters, columns = selected robots
+  let html = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+    <h2 style="font-size:18px;color:var(--fg);margin:0;letter-spacing:-0.04em">参数对比</h2>
+    <button onclick="closeCompare()" style="background:none;border:none;color:var(--meta);font-size:20px;cursor:pointer">✕</button>
+  </div>
+  <div style="overflow-x:auto">
+  <table class="cmp-table">
+    <tr><th></th>${selected.map(r => `<th>${r['厂商']||''} ${r['型号']||''}</th>`).join('')}</tr>`;
+
+  allKeys.forEach(key => {
+    const colDef = cfg.allCols.find(c => c.key === key);
+    if (!colDef) return;
+    const vals = selected.map(r => (r[key]||'').toString().trim());
+    const allSame = new Set(vals).size === 1;
+    html += `<tr>
+      <td>${colDef.label}</td>
+      ${vals.map(v => `<td class="${allSame?'':'diff'}">${v||'-'}</td>`).join('')}
+    </tr>`;
+  });
+
+  html += `</table></div>
+    <div style="margin-top:16px;text-align:center">
+      <button onclick="closeCompare()" style="background:var(--fg);border:none;color:#fff;padding:8px 24px;border-radius:6px;cursor:pointer;font-family:inherit;font-size:13px">关闭对比</button>
+    </div>`;
+
+  document.getElementById('comparePanel').innerHTML = html;
+  document.getElementById('compareOverlay').classList.add('show');
+}
+
+function closeCompare() {
+  document.getElementById('compareOverlay').classList.remove('show');
 }
 
 function getVisibleCols() {
@@ -1300,15 +927,14 @@ function saveVisibleCols() {
 }
 
 let robotPage = 0;
-const ROBOT_PAGE_SIZE = 10;
-function robotPagePrev() { if (robotPage > 0) { robotPage--; renderRobots(); } }
+function robotPagePrev() { if(robotPage>0){robotPage--;renderRobots();} }
 function robotPageNext() { robotPage++; renderRobots(); }
 
 function sortRobot(key) {
-  const col = ROBOT_CONFIG[currentRobotCat].allCols.find(c => c.key === key);
-  if (!col || !col.sort) return;
-  if (robotSortKey === key) robotSortAsc = !robotSortAsc;
-  else { robotSortKey = key; robotSortAsc = true; }
+  const col = ROBOT_CONFIG[currentRobotCat].allCols.find(c=>c.key===key);
+  if(!col||!col.sort) return;
+  if(robotSortKey===key) robotSortAsc=!robotSortAsc;
+  else{robotSortKey=key;robotSortAsc=true;}
   renderRobots();
 }
 
@@ -1317,26 +943,70 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('robotCatTabs')?.addEventListener('click', async (e) => {
     const btn = e.target.closest('button');
     if (!btn || !btn.dataset.cat) return;
-
     document.querySelectorAll('#robotCatTabs button').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
-
     currentRobotCat = btn.dataset.cat;
-    robotSortKey = null;
-    robotSortAsc = true;
-    robotPage = 0;
-
+    robotSortKey = null; robotSortAsc = true; robotPage = 0;
+    compareList = []; updateCompareBar();
     state.robots = await loadRobotCategory(currentRobotCat);
-    document.getElementById('robotsBadge').textContent = state.robots.length;
-    document.getElementById('updateStatus').textContent =
-      `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
+    updateStats();
     renderRobots();
   });
 
-  ['rfType2', 'rfStatus'].forEach(id => {
-    document.getElementById(id)?.addEventListener('change', () => renderRobots());
-  });
+  ['rfType2','rfStatus'].forEach(id => { document.getElementById(id)?.addEventListener('change', () => renderRobots()); });
 });
+
+// ══════════════════════════════════════════════════════════════════
+// MODELS
+// ══════════════════════════════════════════════════════════════════
+function renderModels() {
+  const models = state.models;
+  if (!models.length) return;
+  const caps = [...new Set(models.map(m=>m.capability_type).filter(Boolean))];
+  const vendors = [...new Set(models.map(m=>m.vendor).filter(Boolean))];
+  populateSelect('mfCapability', caps);
+  populateSelect('mfVendor', vendors);
+
+  function filterModels() {
+    const cap = document.getElementById('mfCapability').value;
+    const dom = document.getElementById('mfDomestic').value;
+    const ven = document.getElementById('mfVendor').value;
+    const sort = document.getElementById('mfSort').value;
+    let list = models.filter(m => {
+      if(cap!=='all'&&m.capability_type!==cap) return false;
+      if(dom!=='all'&&m.domestic_availability!==dom) return false;
+      if(ven!=='all'&&m.vendor!==ven) return false;
+      return true;
+    });
+    list.sort((a,b) => {
+      if(sort==='name') return a.model_name.localeCompare(b.model_name);
+      const getPrice=(s)=>parseFloat((s||'').replace(/[^0-9.]/g,''))||99999;
+      return sort==='price_asc'?getPrice(a.output_price)-getPrice(b.output_price):getPrice(b.output_price)-getPrice(a.output_price);
+    });
+    document.getElementById('modelStats').innerHTML = `<span>共 <b>${list.length}</b> 个模型</span>`;
+    document.getElementById('modelGrid').innerHTML = list.map(m => `
+      <div class="entity-card">
+        <div class="name"><a href="${m.official_url||'#'}" target="_blank">${m.model_name}</a></div>
+        <div class="vendor">${m.vendor||''}</div>
+        <div class="tags">
+          ${m.capability_type?`<span class="tag">${m.capability_type}</span>`:''}
+          ${m.domestic_availability==='直连'?`<span class="tag cn">${m.domestic_availability}</span>`:m.domestic_availability?`<span class="tag">${m.domestic_availability}</span>`:''}
+        </div>
+        <div class="meta">
+          ${m.output_price?`<span>💰 ${m.output_price}</span>`:''}
+          ${m.context_window?`<span>📏 ${m.context_window}</span>`:''}
+        </div>
+        ${m.promotions?`<div style="font-size:11px;color:var(--warn);margin-top:4px">🏷 ${m.promotions}</div>`:''}
+        <div class="links">
+          ${m.official_url?`<a href="${m.official_url}" target="_blank">官网</a>`:''}
+          ${m.tech_report_url?`<a href="${m.tech_report_url}" target="_blank">技术报告</a>`:''}
+        </div>
+      </div>
+    `).join('');
+  }
+  ['mfCapability','mfDomestic','mfVendor','mfSort'].forEach(id => { document.getElementById(id).addEventListener('change', filterModels); });
+  filterModels();
+}
 
 // ══════════════════════════════════════════════════════════════════
 // NEWS
@@ -1344,34 +1014,25 @@ document.addEventListener('DOMContentLoaded', () => {
 function renderNews() {
   const data = searchResults || state.news;
   if (!data.days || !data.days.length) {
-    document.getElementById('newsContainer').innerHTML =
-      '<div class="empty-state"><h3>暂无新闻数据</h3><p>数据采集中...</p></div>';
+    document.getElementById('newsContainer').innerHTML = '<div class="empty-state"><h3>暂无新闻数据</h3><p>数据采集中...</p></div>';
     return;
   }
-
   if (!searchResults) {
-    const inds = [...new Set(state.news.days.flatMap(d => (d.industries||[]).map(i => i.name)))];
+    const inds = [...new Set(state.news.days.flatMap(d=>(d.industries||[]).map(i=>i.name)))];
     const sel = document.getElementById('newsIndustry');
-    if (sel.options.length <= 1) {
-      populateSelect('newsIndustry', inds);
-    }
+    if (sel.options.length <= 1) populateSelect('newsIndustry', inds);
   }
-
   function filterNews() {
     const src = document.getElementById('newsSource').value;
     const ind = document.getElementById('newsIndustry').value;
     const spec = document.getElementById('newsSpecial').checked;
-
     let days = data.days;
-    if (src !== 'all') { days = days.filter(d => d.source === src); }
-    if (spec) { days = days.filter(d => d.special_count > 0); }
-
-    const container = document.getElementById('newsContainer');
-    container.innerHTML = days.map(day => {
+    if (src !== 'all') days = days.filter(d => d.source === src);
+    if (spec) days = days.filter(d => d.special_count > 0);
+    document.getElementById('newsContainer').innerHTML = days.map(day => {
       let industries = day.industries || [];
-      if (ind !== 'all') { industries = industries.filter(i => i.name === ind); }
+      if (ind !== 'all') industries = industries.filter(i => i.name === ind);
       if (!industries.length) return '';
-
       return `<div class="news-day">
         <div class="date">📺 ${day.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')}
           <span class="meta">${day.total_items}条 · ${day.industry_count}个行业 ${day.special_count>0?' 🔔'+day.special_count+'条特别关注':''}</span>
@@ -1390,11 +1051,8 @@ function renderNews() {
       </div>`;
     }).join('');
   }
-
   if (!window._newsListenersAttached) {
-    ['newsSource','newsIndustry'].forEach(id => {
-      document.getElementById(id).addEventListener('change', filterNews);
-    });
+    ['newsSource','newsIndustry'].forEach(id => { document.getElementById(id).addEventListener('change', filterNews); });
     document.getElementById('newsSpecial').addEventListener('change', filterNews);
     window._newsListenersAttached = true;
   }
@@ -1408,20 +1066,15 @@ function renderSkills() {
   const scene = document.getElementById('sfScene').value;
   let list = state.skills;
   if (scene !== 'all') list = list.filter(s => s.scene === scene);
-
-  const container = document.getElementById('skillsContainer');
-  container.innerHTML = list.map(s => `
+  document.getElementById('skillsContainer').innerHTML = list.map(s => `
     <div class="skill-card">
       <div class="name">${s.name}</div>
-      <div class="tags" style="margin:2px 0">
-        <span class="tag">${s.scene === 'work' ? '工作' : s.scene === 'life' ? '生活' : '研究'}</span>
-      </div>
+      <div class="tags" style="margin:2px 0"><span class="tag">${s.scene==='work'?'工作':s.scene==='life'?'生活':'研究'}</span></div>
       <div class="desc">${s.desc}</div>
       <div class="reason">💡 <strong>推荐理由：</strong>${s.reason}</div>
     </div>
   `).join('');
 }
-
 document.getElementById('sfScene')?.addEventListener('change', renderSkills);
 
 // ── START ──────────────────────────────────────────────────────────
