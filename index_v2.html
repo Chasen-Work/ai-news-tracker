@@ -1,0 +1,1643 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIHOT · 智能情报站</title>
+<meta name="description" content="AIHOT智能情报站 - 每日AI行业新闻、大模型选型对比、机器人档案、实用技能推荐">
+<style>
+/* ═══════════════════════════════════════
+   ROOT VARIABLES
+   ═══════════════════════════════════════ */
+:root {
+  --bg-primary: #070a10;
+  --bg-secondary: #0d1117;
+  --bg-tertiary: #161b22;
+  --bg-elevated: #1c2333;
+  --border: #21262d;
+  --border-light: #2d3341;
+  --text-primary: #e6edf3;
+  --text-secondary: #8b949e;
+  --text-tertiary: #5d6575;
+  --accent: #3b82f6;
+  --accent-hover: #60a5fa;
+  --accent-soft: rgba(59,130,246,0.12);
+  --accent-border: rgba(59,130,246,0.25);
+  --green: #22c55e;
+  --green-soft: rgba(34,197,94,0.12);
+  --orange: #f59e0b;
+  --orange-soft: rgba(245,158,11,0.12);
+  --red: #ef4444;
+  --red-soft: rgba(239,68,68,0.12);
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md: 0 4px 12px rgba(0,0,0,0.25);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.35);
+  --transition: 0.2s ease;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro", "PingFang SC", "Noto Sans SC", "Helvetica Neue", sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-tertiary); }
+
+/* ═══════════════════════════════════════
+   HEADER
+   ═══════════════════════════════════════ */
+.header {
+  background: rgba(7,10,16,0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 0;
+}
+
+.header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 16px 32px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.header-logo {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
+}
+
+.header-logo span { color: var(--accent); }
+
+.header-tagline {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin-top: 1px;
+}
+
+.header-center {
+  flex: 1;
+  max-width: 480px;
+}
+
+.search-box {
+  position: relative;
+  width: 100%;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px 14px 8px 36px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 13px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.search-box input::placeholder { color: var(--text-tertiary); }
+.search-box input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+
+.search-box .search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-tertiary);
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.status-badge {
+  font-size: 11px;
+  color: var(--text-secondary);
+  padding: 4px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.status-badge .dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--green);
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+/* ═══════════════════════════════════════
+   TABS
+   ═══════════════════════════════════════ */
+.tabs-wrapper {
+  border-bottom: 1px solid var(--border);
+}
+
+.tabs {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+  padding: 0 32px;
+  overflow-x: auto;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: var(--text-tertiary);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: color var(--transition), border-color var(--transition);
+  font-family: inherit;
+  white-space: nowrap;
+  position: relative;
+}
+
+.tab-btn:hover { color: var(--text-secondary); }
+.tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+.tab-btn .badge {
+  font-size: 10px;
+  font-weight: 600;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 10px;
+  padding: 1px 7px;
+  margin-left: 6px;
+}
+
+/* ═══════════════════════════════════════
+   MAIN LAYOUT
+   ═══════════════════════════════════════ */
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 32px 40px;
+}
+
+.tab-content {
+  display: none;
+  animation: fadeIn 0.25s ease;
+}
+
+.tab-content.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════════════════════════════════
+   FILTERS
+   ═══════════════════════════════════════ */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 20px;
+}
+
+.filter-bar select, .filter-bar input[type="text"] {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-family: inherit;
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.filter-bar select:focus, .filter-bar input:focus {
+  border-color: var(--accent);
+}
+
+.filter-bar label {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ═══════════════════════════════════════
+   STATS BAR
+   ═══════════════════════════════════════ */
+.stats-bar {
+  display: flex;
+  gap: 20px;
+  padding: 8px 0 16px;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.stats-bar span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.stats-bar .num {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* ═══════════════════════════════════════
+   SECTION CARDS
+   ═══════════════════════════════════════ */
+.section-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  margin-bottom: 16px;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.section-card:hover {
+  border-color: var(--border-light);
+  box-shadow: var(--shadow-sm);
+}
+
+.section-card .section-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 14px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* ═══════════════════════════════════════
+   NEWS SECTION
+   ═══════════════════════════════════════ */
+.news-day {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  margin-bottom: 20px;
+  transition: border-color var(--transition);
+}
+
+.news-day:hover {
+  border-color: var(--border-light);
+}
+
+.news-date {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-date-meta {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--text-tertiary);
+}
+
+.news-industry {
+  margin-top: 16px;
+}
+
+.news-industry:first-child { margin-top: 12px; }
+
+.industry-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.industry-badge {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--orange);
+  background: var(--orange-soft);
+  padding: 2px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.3px;
+}
+
+.industry-count {
+  font-size: 11px;
+  color: var(--text-tertiary);
+}
+
+.news-item {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(30,39,54,0.4);
+  cursor: pointer;
+  transition: background var(--transition);
+  border-radius: var(--radius-sm);
+  padding: 8px 10px;
+  margin: 0 -10px;
+}
+
+.news-item:last-child { border-bottom: none; }
+.news-item:hover { background: var(--bg-tertiary); }
+
+.news-item .title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.news-item .summary {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-top: 6px;
+  line-height: 1.7;
+  display: none;
+}
+
+.news-item.expanded .summary { display: block; }
+
+.special-tag {
+  font-size: 10px;
+  background: var(--orange-soft);
+  color: var(--orange);
+  padding: 1px 7px;
+  border-radius: 3px;
+  margin-left: 8px;
+  font-weight: 500;
+}
+
+/* ═══════════════════════════════════════
+   MODEL/ENTITY GRID
+   ═══════════════════════════════════════ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 14px;
+}
+
+.entity-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  transition: all var(--transition);
+  cursor: default;
+}
+
+.entity-card:hover {
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 1px var(--accent-soft);
+  transform: translateY(-2px);
+}
+
+.entity-card .name {
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.entity-card .name a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.entity-card .name a:hover { color: var(--accent); }
+
+.entity-card .vendor {
+  font-size: 12px;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+.entity-card .tags {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.tag {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.tag-blue { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-border); }
+.tag-green { background: var(--green-soft); color: var(--green); border: 1px solid rgba(34,197,94,0.25); }
+.tag-orange { background: var(--orange-soft); color: var(--orange); border: 1px solid rgba(245,158,11,0.25); }
+
+.entity-card .meta {
+  font-size: 12px;
+  color: var(--text-secondary);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.entity-card .meta span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.entity-card .links {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+}
+
+.entity-card .links a {
+  font-size: 11px;
+  color: var(--accent);
+  text-decoration: none;
+  padding: 3px 10px;
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-sm);
+  transition: background var(--transition);
+}
+
+.entity-card .links a:hover { background: var(--accent-soft); }
+
+.status-tag {
+  font-size: 10px;
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+
+.status-production { background: var(--green-soft); color: var(--green); }
+.status-preview { background: var(--orange-soft); color: var(--orange); }
+.status-prototype { background: var(--red-soft); color: var(--red); }
+
+/* ═══════════════════════════════════════
+   ROBOT TABLE
+   ═══════════════════════════════════════ */
+.cat-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.cat-tab {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: var(--radius-md);
+  transition: all var(--transition);
+  font-family: inherit;
+}
+
+.cat-tab:hover {
+  color: var(--text-primary);
+  border-color: var(--text-tertiary);
+}
+
+.cat-tab.active {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+}
+
+.brand-cards {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.brand-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 14px 18px;
+  min-width: 150px;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.brand-card:hover {
+  border-color: var(--accent-border);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.brand-card .name { font-size: 14px; font-weight: 600; }
+.brand-card .sub { font-size: 11px; color: var(--text-secondary); margin-top: 2px; }
+.brand-card .count { font-size: 11px; color: var(--accent); margin-top: 4px; }
+.brand-card .link {
+  font-size: 11px;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 8px;
+  padding: 2px 10px;
+  border: 1px solid var(--accent-border);
+  border-radius: var(--radius-sm);
+  display: inline-block;
+  transition: background var(--transition);
+}
+
+.brand-card .link:hover { background: var(--accent-soft); }
+
+/* Column toggles */
+.col-toggles {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: 14px;
+}
+
+.col-toggles label {
+  font-size: 11px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition);
+}
+
+.col-toggles label:hover { background: var(--bg-tertiary); }
+.col-toggles input { accent-color: var(--accent); }
+
+/* Robot table */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+}
+
+.robot-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.robot-table th {
+  text-align: left;
+  padding: 10px 12px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: var(--bg-tertiary);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  white-space: nowrap;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.robot-table th.sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.robot-table th.sortable:hover { color: var(--text-primary); }
+
+.robot-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(33,38,45,0.4);
+}
+
+.robot-table tbody tr {
+  transition: background var(--transition);
+}
+
+.robot-table tbody tr:hover td {
+  background: var(--bg-tertiary);
+}
+
+.robot-table .cat-row td {
+  background: var(--bg-elevated);
+  font-weight: 600;
+  font-size: 11px;
+  color: var(--accent);
+  padding: 6px 12px;
+  letter-spacing: 0.5px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 20px 0 10px;
+}
+
+.pagination button {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 12px;
+  font-family: inherit;
+  transition: all var(--transition);
+}
+
+.pagination button:hover:not(:disabled) {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.pagination button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.pagination .page-info {
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding: 0 10px;
+}
+
+.pagination .page-info b { color: var(--text-primary); }
+
+/* ═══════════════════════════════════════
+   OVERLAY (Ecosystem Modal)
+   ═══════════════════════════════════════ */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.65);
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  animation: overlayIn 0.2s ease;
+}
+
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.overlay-content {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 28px;
+  margin: 60px auto;
+  width: 90%;
+  max-width: 700px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+}
+
+.overlay-close {
+  float: right;
+  background: none;
+  border: none;
+  color: var(--text-tertiary);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition), color var(--transition);
+}
+
+.overlay-close:hover {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+}
+
+/* ═══════════════════════════════════════
+   SKILL CARDS
+   ═══════════════════════════════════════ */
+.skill-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  transition: border-color var(--transition);
+}
+
+.skill-card:hover {
+  border-color: var(--border-light);
+}
+
+.skill-card .name {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.skill-card .desc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin: 6px 0;
+  line-height: 1.6;
+}
+
+.skill-card .reason {
+  font-size: 12px;
+  color: var(--text-primary);
+  margin-top: 6px;
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE
+   ═══════════════════════════════════════ */
+@media (max-width: 900px) {
+  .header-inner {
+    flex-wrap: wrap;
+    padding: 12px 20px 8px;
+  }
+  .header-center { order: 3; max-width: 100%; flex-basis: 100%; }
+  .header-right { gap: 8px; }
+  .tabs { padding: 0 20px; }
+  .main { padding: 16px 20px 32px; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+}
+
+@media (max-width: 640px) {
+  .header-inner { padding: 10px 14px 6px; gap: 10px; }
+  .header-left { gap: 8px; }
+  .header-logo { font-size: 18px; }
+  .header-tagline { display: none; }
+  .tabs { padding: 0 14px; }
+  .tab-btn { font-size: 12px; padding: 8px 12px; }
+  .main { padding: 12px 14px 24px; }
+  .grid { grid-template-columns: 1fr; }
+  .filter-bar { flex-direction: column; }
+  .filter-bar select { width: 100%; }
+  .brand-cards { flex-direction: column; }
+  .brand-card { min-width: auto; width: 100%; }
+  .cat-tabs { gap: 4px; }
+  .cat-tab { font-size: 12px; padding: 6px 12px; }
+  .col-toggles { flex-direction: column; max-height: 200px; overflow-y: auto; }
+  .robot-table { font-size: 11px; }
+  .robot-table th, .robot-table td { padding: 6px 8px; }
+  .section-card { padding: 14px; }
+  .news-day { padding: 14px 16px; }
+  .news-date { font-size: 14px; }
+  .news-item .title { font-size: 13px; }
+  .stats-bar { gap: 12px; font-size: 12px; flex-wrap: wrap; }
+  .pagination { flex-wrap: wrap; }
+  .pagination button { padding: 8px 14px; font-size: 13px; }
+  .status-badge { font-size: 10px; padding: 3px 10px; }
+}
+
+@media (max-width: 400px) {
+  .header-logo { font-size: 16px; }
+  .tab-btn { font-size: 11px; padding: 6px 10px; }
+  .main { padding: 8px 10px 20px; }
+  .news-day { padding: 10px 12px; }
+  .robot-table { font-size: 10px; }
+  .robot-table th, .robot-table td { padding: 4px 5px; white-space: nowrap; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<div class="header">
+  <div class="header-inner">
+    <div class="header-left">
+      <div class="header-logo">AI<span>HOT</span> · 智能情报站</div>
+      <div class="header-tagline">新闻联播 · 模型选型 · 机器人档案 · 技能推荐</div>
+    </div>
+    <div class="header-center">
+      <div class="search-box">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="globalSearch" placeholder="搜索新闻标题、模型名称、机器人厂商..." autocomplete="off">
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="status-badge" id="updateStatus">
+        <span class="dot"></span>数据加载中...
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══ TABS ═══ -->
+<div class="tabs-wrapper">
+  <div class="tabs" id="tabs">
+    <button class="active tab-btn" data-tab="news">📺 新闻</button>
+    <button class="tab-btn" data-tab="models">🧠 模型选型 <span class="badge" id="modelCount">0</span></button>
+    <button class="tab-btn" data-tab="robots">🤖 机器人档案 <span class="badge" id="robotCount">0</span></button>
+    <button class="tab-btn" data-tab="skills">🛠 技能推荐 <span class="badge" id="skillCount">0</span></button>
+  </div>
+</div>
+
+<!-- ═══ MAIN ═══ -->
+<div class="main">
+
+<!-- ────── NEWS TAB ────── -->
+<div class="tab-content active" id="tab-news">
+  <div class="filter-bar" id="newsFilters">
+    <label>来源：
+      <select id="newsSource">
+        <option value="all">全部</option>
+        <option value="xwlb">新闻联播</option>
+        <option value="global">全球动态</option>
+      </select>
+    </label>
+    <label>行业：
+      <select id="newsIndustry">
+        <option value="all">全部行业</option>
+      </select>
+    </label>
+    <label>
+      <input type="checkbox" id="newsSpecial"> 🔔 仅特别关注
+    </label>
+    <span style="flex:1"></span>
+    <label style="font-size:11px;color:var(--text-tertiary)" id="newsCount"></label>
+  </div>
+  <div id="newsContainer">
+    <div class="section-card" style="text-align:center;padding:60px;color:var(--text-tertiary)">加载新闻数据中...</div>
+  </div>
+</div>
+
+<!-- ────── MODELS TAB ────── -->
+<div class="tab-content" id="tab-models">
+  <div class="filter-bar">
+    <label>能力：
+      <select id="mfCapability">
+        <option value="all">全部能力</option>
+      </select>
+    </label>
+    <label>国内可用：
+      <select id="mfDomestic">
+        <option value="all">全部</option>
+        <option value="直连">直连</option>
+        <option value="需代理">需代理</option>
+      </select>
+    </label>
+    <label>厂商：
+      <select id="mfVendor">
+        <option value="all">全部厂商</option>
+      </select>
+    </label>
+    <label>排序：
+      <select id="mfSort">
+        <option value="price">价格↓</option>
+        <option value="price_asc">价格↑</option>
+        <option value="name">名称</option>
+      </select>
+    </label>
+  </div>
+  <div class="stats-bar" id="modelStats"></div>
+  <div class="grid" id="modelGrid"></div>
+</div>
+
+<!-- ────── ROBOTS TAB ────── -->
+<div class="tab-content" id="tab-robots">
+  <div class="cat-tabs" id="robotCatTabs">
+    <button class="cat-tab active" data-cat="humanoid">🤖 人形机器人</button>
+    <button class="cat-tab" data-cat="commercial_cleaner">🧹 商用清洁</button>
+    <button class="cat-tab" data-cat="industrial_quadruped">🐕 四足工业</button>
+    <button class="cat-tab" data-cat="delivery_vehicle">🚚 无人配送车</button>
+    <button class="cat-tab" data-cat="ai_toy">🧸 AI玩具</button>
+  </div>
+
+  <div class="brand-cards" id="brandCards"></div>
+
+  <div class="filter-bar" id="robotFilters">
+    <label>二级分类：
+      <select id="rfType2"><option value="all">全部</option></select>
+    </label>
+    <label>状态：
+      <select id="rfStatus">
+        <option value="all">全部状态</option>
+        <option value="已量产">已量产</option>
+        <option value="预售">预售中</option>
+        <option value="原型">原型</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="col-toggles" id="colToggles"></div>
+
+  <div class="stats-bar" id="robotStats">
+    <span id="robotStatsLeft">共 <b>0</b> 个型号</span>
+  </div>
+
+  <div class="table-wrap">
+    <table class="robot-table" id="robotTable">
+      <thead id="robotThead"></thead>
+      <tbody id="robotBody"></tbody>
+    </table>
+  </div>
+
+  <div class="pagination" id="robotPagination">
+    <button id="robotPrev" onclick="robotPagePrev()">‹ 上一页</button>
+    <span class="page-info" id="robotPageInfo">第 <b>1</b> / <b>1</b> 页</span>
+    <button id="robotNext" onclick="robotPageNext()">下一页 ›</button>
+  </div>
+</div>
+
+<!-- ────── ECOSYSTEM OVERLAY ────── -->
+<div id="ecosystemOverlay" class="overlay" onclick="if(event.target===this)closeEcosystem()">
+  <div class="overlay-content" id="ecosystemPanel" style="max-width:700px;max-height:80vh;overflow-y:auto"></div>
+</div>
+
+<!-- ────── SKILLS TAB ────── -->
+<div class="tab-content" id="tab-skills">
+  <div class="filter-bar">
+    <label>场景：
+      <select id="sfScene">
+        <option value="all">全部场景</option>
+        <option value="work">工作</option>
+        <option value="life">生活</option>
+        <option value="research">研究</option>
+      </select>
+    </label>
+  </div>
+  <div id="skillsContainer"></div>
+</div>
+
+</div><!-- /main -->
+
+<script>
+// ── DATA ───────────────────────────────────────────────────────────
+let state = { models: [], robots: [], news: [], skills: [] };
+
+async function loadJSON(url) {
+  try {
+    const r = await fetch(url);
+    if (!r.ok) return null;
+    return await r.json();
+  } catch(e) { return null; }
+}
+
+async function init() {
+  const [models, robots, news, skills] = await Promise.all([
+    loadJSON('./models/manual_models.json'),
+    loadJSON('./robots/manual_robots.json'),
+    loadJSON('./xwlb.json'),
+    loadJSON('./skills.json'),
+  ]);
+
+  state.models = models || [];
+  state.robots = robots || [];
+  state.news = news || { days: [] };
+  state.skills = skills || [];
+
+  const mCount = state.models.length;
+  const rCount = state.robots.length;
+  const nDays = (state.news.days||[]).length;
+  const sCount = state.skills.length;
+
+  document.getElementById('updateStatus').innerHTML =
+    `<span class="dot"></span>${mCount}模型 · ${rCount}机器人 · ${nDays}天新闻 · ${sCount}技能`;
+  document.getElementById('modelCount').textContent = mCount;
+  document.getElementById('robotCount').textContent = rCount;
+  document.getElementById('skillCount').textContent = sCount;
+
+  renderModels();
+  renderNews();
+  renderSkills();
+
+  // Load initial robot category
+  loadRobotCategory('humanoid').then(data => {
+    state.robots = data;
+    renderRobots();
+    const count = (data||[]).length;
+    document.getElementById('updateStatus').innerHTML =
+      `<span class="dot"></span>${mCount}模型 · ${count}机器人 · ${nDays}天新闻 · ${sCount}技能`;
+    document.getElementById('robotCount').textContent = count;
+  });
+
+  // Load ecosystem data
+  loadEcosystem();
+}
+
+// ── TAB SWITCHING ──────────────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('tab-' + btn.dataset.tab).classList.add('active');
+  });
+});
+
+// ── FILTER HELPERS ─────────────────────────────────────────────────
+function populateSelect(id, values) {
+  const sel = document.getElementById(id);
+  values.forEach(v => {
+    const opt = document.createElement('option');
+    opt.value = v; opt.textContent = v;
+    sel.appendChild(opt);
+  });
+}
+
+// ══════════════════════════════════════════════════════════════════
+// MODELS
+// ══════════════════════════════════════════════════════════════════
+function renderModels() {
+  const models = state.models;
+  if (!models.length) return;
+
+  const caps = [...new Set(models.map(m => m.capability_type).filter(Boolean))];
+  const vendors = [...new Set(models.map(m => m.vendor).filter(Boolean))];
+  populateSelect('mfCapability', caps);
+  populateSelect('mfVendor', vendors);
+
+  function filterModels() {
+    const cap = document.getElementById('mfCapability').value;
+    const dom = document.getElementById('mfDomestic').value;
+    const ven = document.getElementById('mfVendor').value;
+    const sort = document.getElementById('mfSort').value;
+
+    let list = models.filter(m => {
+      if (cap !== 'all' && m.capability_type !== cap) return false;
+      if (dom !== 'all' && m.domestic_availability !== dom) return false;
+      if (ven !== 'all' && m.vendor !== ven) return false;
+      return true;
+    });
+
+    list.sort((a,b) => {
+      if (sort === 'name') return a.model_name.localeCompare(b.model_name);
+      const getPrice = (s) => parseFloat((s||'').replace(/[^0-9.]/g,'')) || 99999;
+      return sort === 'price_asc' ? getPrice(a.output_price) - getPrice(b.output_price)
+                                    : getPrice(b.output_price) - getPrice(a.output_price);
+    });
+
+    document.getElementById('modelStats').innerHTML =
+      `<span>共 <b>${list.length}</b> 个模型</span>`;
+
+    const grid = document.getElementById('modelGrid');
+    grid.innerHTML = list.map(m => `
+      <div class="entity-card">
+        <div class="name"><a href="${m.official_url||'#'}" target="_blank">${m.model_name}</a></div>
+        <div class="vendor">${m.vendor||''}</div>
+        <div class="tags">
+          ${m.capability_type ? `<span class="tag tag-blue">${m.capability_type}</span>` : ''}
+          ${m.domestic_availability === '直连' ? `<span class="tag tag-green">${m.domestic_availability}</span>`
+            : m.domestic_availability ? `<span class="tag tag-orange">${m.domestic_availability}</span>` : ''}
+        </div>
+        <div class="meta">
+          ${m.output_price ? `<span>💰 ${m.output_price}</span>` : ''}
+          ${m.context_window ? `<span>📏 ${m.context_window}</span>` : ''}
+        </div>
+        ${m.promotions ? `<div style="font-size:12px;color:var(--orange);margin-top:6px">🏷 ${m.promotions}</div>` : ''}
+        <div class="links">
+          ${m.official_url ? `<a href="${m.official_url}" target="_blank">官网</a>` : ''}
+          ${m.tech_report_url ? `<a href="${m.tech_report_url}" target="_blank">技术报告</a>` : ''}
+        </div>
+      </div>
+    `).join('');
+  }
+
+  ['mfCapability','mfDomestic','mfVendor','mfSort'].forEach(id => {
+    document.getElementById(id).addEventListener('change', filterModels);
+  });
+  filterModels();
+}
+
+// ══════════════════════════════════════════════════════════════════
+// ROBOTS
+// ══════════════════════════════════════════════════════════════════
+
+let ecosystemData = null;
+
+async function loadEcosystem() {
+  if (ecosystemData) return ecosystemData;
+  try {
+    const r = await fetch('./robots/brand_ecosystem.json');
+    if (!r.ok) return null;
+    const d = await r.json();
+    ecosystemData = d;
+    return d;
+  } catch(e) { return null; }
+}
+
+function getBrandEcosystem(vendor) {
+  if (!ecosystemData) return null;
+  const v = vendor.replace(/[()（]/g,'(').replace(/[)）]/g,')').toLowerCase();
+  return ecosystemData.brands.find(b => b.name.replace(/[()（]/g,'(').replace(/[)）]/g,')').toLowerCase() === v) || null;
+}
+
+function showEcosystemPanel(vendor) {
+  const eco = getBrandEcosystem(vendor);
+  const overlay = document.getElementById('ecosystemOverlay');
+  const panel = document.getElementById('ecosystemPanel');
+  if (!eco) {
+    panel.innerHTML = `<div style="text-align:center;padding:40px;color:var(--text-tertiary)">暂无 ${vendor} 的生态数据</div>
+      <div style="text-align:center;margin-top:16px"><button onclick="closeEcosystem()" style="background:var(--accent);border:none;color:#fff;padding:9px 24px;border-radius:8px;cursor:pointer;font-size:13px">关闭</button></div>`;
+    overlay.style.display = 'block';
+    return;
+  }
+
+  let html = `<div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+    <h2 style="font-size:20px;color:var(--text-primary);margin:0">${eco.name}</h2>
+    <span style="font-size:11px;color:var(--green);background:var(--green-soft);padding:2px 10px;border-radius:4px">${eco.ecosystem.open_source_degree}</span>
+    <button onclick="closeEcosystem()" class="overlay-close">✕</button>
+  </div>`;
+
+  if (eco.ecosystem.datasets && eco.ecosystem.datasets.length) {
+    html += `<div class="section-card"><div class="section-title">📊 训练数据集</div>`;
+    eco.ecosystem.datasets.forEach(d => {
+      html += `<div style="display:flex;align-items:center;gap:10px;padding:8px 0;border-bottom:1px solid var(--border);font-size:13px">
+        <span style="color:${d.open_source?'var(--green)':'var(--text-tertiary)'}">${d.open_source?'🔓':'🔒'}</span>
+        <span style="font-weight:500">${d.name}</span>
+        <span style="font-size:12px;color:var(--text-secondary)">${d.type}</span>
+        ${d.scale ? `<span style="font-size:12px;color:var(--accent)">${d.scale}</span>` : ''}
+        ${d.url ? `<a href="${d.url}" target="_blank" style="font-size:12px;color:var(--accent);margin-left:auto">详情 →</a>` : ''}
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  if (eco.ecosystem.models && eco.ecosystem.models.length) {
+    html += `<div class="section-card"><div class="section-title">🧠 基础模型</div>`;
+    eco.ecosystem.models.forEach(m => {
+      html += `<div style="padding:8px 0;border-bottom:1px solid var(--border)">
+        <div style="display:flex;align-items:center;gap:8px;font-size:13px">
+          <span style="font-weight:500">${m.name}</span>
+          <span style="font-size:12px;color:var(--text-secondary)">${m.type}</span>
+          ${m.open_source
+            ? '<span style="font-size:10px;padding:1px 6px;border-radius:3px;background:var(--green-soft);color:var(--green)">开源</span>'
+            : '<span style="font-size:10px;padding:1px 6px;border-radius:3px;background:var(--orange-soft);color:var(--orange)">闭源</span>'}
+        </div>
+        ${m.capabilities ? `<div style="font-size:12px;color:var(--text-secondary);margin-top:4px">${m.capabilities}</div>` : ''}
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  if (eco.ecosystem.key_events && eco.ecosystem.key_events.length) {
+    html += `<div class="section-card"><div class="section-title">📅 关键事件</div>`;
+    const sorted = [...eco.ecosystem.key_events].sort((a,b) => b.date.localeCompare(a.date));
+    sorted.forEach(e => {
+      html += `<div style="display:flex;gap:14px;padding:6px 0;border-bottom:1px solid var(--border);font-size:13px">
+        <span style="font-size:12px;color:var(--accent);min-width:85px;flex-shrink:0">${e.date.replace('00','?')}</span>
+        <span>${e.event}</span>
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  html += `<div style="display:flex;gap:20px;font-size:12px;color:var(--text-secondary);padding:12px 0">
+    <span>🔧 ROS集成: ${eco.ecosystem.ros}</span>
+    <span>📋 开源程度: ${eco.ecosystem.open_source_degree}</span>
+  </div>`;
+
+  panel.innerHTML = html;
+  overlay.style.display = 'block';
+}
+
+function closeEcosystem() {
+  document.getElementById('ecosystemOverlay').style.display = 'none';
+}
+
+const ROBOT_CONFIG = {
+  humanoid: {
+    label: '🤖 人形机器人', file: 'humanoid.json',
+    defaultCols: ['厂商','型号','类型','身高','重量','负载_单臂','续航_行走','自由度_总数','行走速度','售价','量产状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'类型',label:'类型',sort:true},{key:'身高',label:'身高(cm)',sort:true},
+      {key:'重量',label:'重量(kg)',sort:true},{key:'负载_单臂',label:'负载(kg)',sort:true},
+      {key:'负载_双臂',label:'双臂负载(kg)',sort:true},{key:'续航_行走',label:'行走续航(min)',sort:true},
+      {key:'电池容量',label:'电池(Wh)',sort:true},{key:'自由度_总数',label:'自由度',sort:true},
+      {key:'自由度_手部',label:'手部自由度',sort:true},{key:'关节扭矩',label:'关节扭矩(Nm)',sort:true},
+      {key:'行走速度',label:'行走速度(m/s)',sort:true},{key:'爬坡角度',label:'爬坡(°)',sort:true},
+      {key:'越障高度',label:'越障(cm)',sort:true},{key:'摄像头',label:'摄像头',sort:false},
+      {key:'激光雷达',label:'LiDAR',sort:false},{key:'算力',label:'算力(TOPS)',sort:true},
+      {key:'主控芯片',label:'芯片',sort:false},{key:'操作系统',label:'系统',sort:false},
+      {key:'SDK语言',label:'SDK',sort:false},{key:'仿真支持',label:'仿真',sort:false},
+      {key:'开源程度',label:'开源',sort:true},{key:'训练数据集',label:'数据集',sort:false},
+      {key:'基础模型',label:'基础模型',sort:false},{key:'售价',label:'售价',sort:true},
+      {key:'量产状态',label:'量产状态',sort:true},{key:'数据级别',label:'数据级别',sort:true},
+    ]
+  },
+  commercial_cleaner: {
+    label: '🧹 商用清洁', file: 'commercial_cleaner.json',
+    defaultCols: ['厂商','型号','清洁类型','清洁宽度','清洁效率','续航','清水箱','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'清洁类型',label:'清洁类型',sort:true},{key:'清洁宽度',label:'清洁宽度(mm)',sort:true},
+      {key:'清洁效率',label:'效率(㎡/h)',sort:true},{key:'吸力',label:'吸力(Pa)',sort:true},
+      {key:'清水箱',label:'清水箱(L)',sort:true},{key:'污水箱',label:'污水箱(L)',sort:true},
+      {key:'垃圾箱',label:'垃圾箱(L)',sort:true},{key:'续航',label:'续航(h)',sort:true},
+      {key:'电池',label:'电池(Wh)',sort:true},{key:'自动回充',label:'自动回充',sort:false},
+      {key:'自动加水',label:'自动加水',sort:false},{key:'自动排水',label:'自动排水',sort:false},
+      {key:'自动自清洁',label:'自清洁',sort:false},{key:'工作站一体',label:'工作站',sort:false},
+      {key:'导航方式',label:'导航',sort:true},{key:'定位精度',label:'定位精度(mm)',sort:true},
+      {key:'建图面积',label:'建图(㎡)',sort:true},{key:'AI污渍检测',label:'AI检测',sort:false},
+      {key:'自动门联动',label:'自动门',sort:false},{key:'多机调度',label:'多机调度',sort:false},
+      {key:'远程部署',label:'远程部署',sort:false},{key:'云平台',label:'云平台',sort:false},
+      {key:'通过宽度',label:'通过宽度(mm)',sort:true},{key:'机身尺寸',label:'机身尺寸',sort:false},
+      {key:'边缘清洁',label:'边缘清洁',sort:true},{key:'噪音',label:'噪音(dB)',sort:true},
+      {key:'适用地面',label:'适用地面',sort:false},{key:'价格',label:'价格',sort:true},
+      {key:'状态',label:'状态',sort:true},
+    ]
+  },
+  industrial_quadruped: {
+    label: '🐕 四足工业', file: 'industrial_quadruped.json',
+    defaultCols: ['厂商','型号','重量','负载行走','续航','行走速度','防水等级','SDK语言','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'站立尺寸',label:'尺寸(mm)',sort:false},{key:'重量',label:'重量(kg)',sort:true},
+      {key:'负载行走',label:'负载行走(kg)',sort:true},{key:'负载站立',label:'负载站立(kg)',sort:true},
+      {key:'续航',label:'续航(min)',sort:true},{key:'行走速度',label:'速度(m/s)',sort:true},
+      {key:'防水等级',label:'防水',sort:true},{key:'工作温度',label:'工作温度(℃)',sort:true},
+      {key:'SDK语言',label:'SDK语言',sort:false},{key:'是否依赖ROS',label:'依赖ROS',sort:false},
+      {key:'SDK文档质量',label:'文档质量',sort:true},{key:'摄像头数量',label:'摄像头',sort:true},
+      {key:'摄像头类型',label:'摄像头类型',sort:false},{key:'SDK开放图像流',label:'图像流',sort:false},
+      {key:'LiDAR点云',label:'LiDAR点云',sort:false},{key:'深度图获取',label:'深度图',sort:false},
+      {key:'高级控制',label:'高级控制',sort:false},{key:'低级控制',label:'低级控制',sort:false},
+      {key:'关节增益可调',label:'增益可调',sort:false},{key:'步态自定义',label:'步态自定义',sort:false},
+      {key:'控制频率',label:'控制频率(Hz)',sort:true},{key:'力矩反馈',label:'力矩反馈',sort:false},
+      {key:'以太网',label:'以太网',sort:false},{key:'USB',label:'USB',sort:false},
+      {key:'GPIO',label:'GPIO',sort:false},{key:'电源输出',label:'电源输出',sort:false},
+      {key:'计算扩展',label:'计算扩展',sort:false},{key:'自定义负载',label:'自定义负载',sort:true},
+      {key:'价格',label:'价格',sort:true},{key:'状态',label:'状态',sort:true},
+    ]
+  },
+  delivery_vehicle: {
+    label: '🚚 无人配送车', file: 'delivery_vehicle.json',
+    defaultCols: ['厂商','型号','类型','载重','货箱容积','续航里程','最高速度','自动驾驶等级','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'类型',label:'类型',sort:true},{key:'外形尺寸',label:'尺寸(mm)',sort:false},
+      {key:'载重',label:'载重(kg)',sort:true},{key:'货箱容积',label:'货箱容积',sort:true},
+      {key:'续航里程',label:'续航(km)',sort:true},{key:'最高速度',label:'最高速度(km/h)',sort:true},
+      {key:'电池',label:'电池(kWh)',sort:true},{key:'转弯半径',label:'转弯半径(m)',sort:true},
+      {key:'传感器配置',label:'传感器',sort:false},{key:'自动驾驶等级',label:'自动驾驶等级',sort:true},
+      {key:'运行温度',label:'工作温度(℃)',sort:true},{key:'价格',label:'价格',sort:true},
+      {key:'状态',label:'状态',sort:true},
+    ]
+  },
+  ai_toy: {
+    label: '🧸 AI玩具', file: 'ai_toy.json',
+    defaultCols: ['厂商','型号','形态','尺寸','重量','续航','交互方式','AI能力','适用年龄','价格','状态'],
+    allCols: [
+      {key:'厂商',label:'厂商',sort:true},{key:'型号',label:'型号',sort:true},
+      {key:'形态',label:'形态',sort:true},{key:'尺寸',label:'尺寸(mm)',sort:false},
+      {key:'重量',label:'重量(g)',sort:true},{key:'续航',label:'续航(min)',sort:true},
+      {key:'交互方式',label:'交互方式',sort:false},{key:'AI能力',label:'AI能力',sort:false},
+      {key:'适用年龄',label:'适用年龄',sort:true},{key:'编程方式',label:'编程方式',sort:false},
+      {key:'价格',label:'价格',sort:true},{key:'状态',label:'状态',sort:true},
+    ]
+  }
+};
+
+let robotData = {};
+let currentRobotCat = 'humanoid';
+let robotSortKey = null;
+let robotSortAsc = true;
+
+async function loadRobotCategory(cat) {
+  const cfg = ROBOT_CONFIG[cat];
+  if (!cfg) return [];
+  if (robotData[cat]) return robotData[cat];
+  const resp = await fetch(`./robots/${cfg.file}`);
+  if (!resp.ok) return [];
+  const data = await resp.json();
+  robotData[cat] = data;
+  return data;
+}
+
+function renderRobots() {
+  const robots = state.robots || [];
+  const cfg = ROBOT_CONFIG[currentRobotCat];
+  if (!cfg || !robots.length) {
+    document.getElementById('robotBody').innerHTML =
+      '<tr><td colspan="10" style="text-align:center;color:var(--text-tertiary);padding:50px">暂无数据</td></tr>';
+    return;
+  }
+
+  const visibleCols = getVisibleCols();
+
+  const brands = {};
+  robots.forEach(r => {
+    const vendor = r['厂商'] || '未知';
+    if (!brands[vendor]) brands[vendor] = { count: 0, url: r['官网'] || '#' };
+    brands[vendor].count++;
+  });
+
+  document.getElementById('brandCards').innerHTML =
+    Object.entries(brands).map(([name, info]) => `
+      <div class="brand-card" onclick="showEcosystemPanel('${name.replace(/'/g,"\\'")}')">
+        <div class="name">${name}</div>
+        <div class="count">${info.count}款型号</div>
+        <span class="link">查看档案 ▶</span>
+      </div>
+    `).join('');
+
+  const type2s = [...new Set(robots.map(r => r['类型']||r['形态']||'').filter(Boolean))];
+  const sel = document.getElementById('rfType2');
+  const oldVal = sel.value;
+  sel.innerHTML = '<option value="all">全部</option>' +
+    type2s.map(t => `<option value="${t}">${t}</option>`).join('');
+  sel.value = type2s.includes(oldVal) ? oldVal : 'all';
+
+  document.getElementById('colToggles').innerHTML =
+    cfg.allCols.map(c => `
+      <label><input type="checkbox" class="col-toggle" data-key="${c.key}"
+        ${visibleCols.includes(c.key)?'checked':''}> ${c.label}</label>
+    `).join('');
+
+  document.querySelectorAll('.col-toggle').forEach(cb => {
+    cb.addEventListener('change', () => {
+      saveVisibleCols();
+      renderRobots();
+    });
+  });
+
+  const type2 = document.getElementById('rfType2').value;
+  const status = document.getElementById('rfStatus').value;
+
+  let list = robots.filter(r => {
+    if (type2 !== 'all') {
+      const t = r['类型'] || r['形态'] || '';
+      if (t !== type2) return false;
+    }
+    if (status !== 'all') {
+      const s = (r['状态']||'').toLowerCase();
+      if (status === '已量产' && !s.includes('量产') && !s.includes('在售')) return false;
+      if (status === '预售' && !s.includes('预售')) return false;
+      if (status === '原型' && !s.includes('原型') && !s.includes('测试')) return false;
+    }
+    return true;
+  });
+
+  if (robotSortKey) {
+    list.sort((a, b) => {
+      let va = a[robotSortKey] || '', vb = b[robotSortKey] || '';
+      const na = parseFloat(va), nb = parseFloat(vb);
+      if (!isNaN(na) && !isNaN(nb)) return robotSortAsc ? na - nb : nb - na;
+      return robotSortAsc ? va.localeCompare(vb) : vb.localeCompare(va);
+    });
+  }
+
+  const pageSize = 10;
+  const totalPages = Math.ceil(list.length / pageSize) || 1;
+  if (robotPage >= totalPages) robotPage = 0;
+  const page = robotPage;
+  const pageList = list.slice(page * pageSize, (page + 1) * pageSize);
+
+  document.getElementById('robotStatsLeft').innerHTML =
+    `<span>共 <b>${list.length}</b> 个型号（全类${robots.length}个）</span>`;
+  document.getElementById('robotPageInfo').innerHTML =
+    `第 <b>${page + 1}</b> / <b>${totalPages}</b> 页（每页${pageSize}条）`;
+  document.getElementById('robotPrev').disabled = page === 0;
+  document.getElementById('robotNext').disabled = page >= totalPages - 1;
+
+  const sortedCol = cfg.allCols.filter(c => visibleCols.includes(c.key));
+  document.getElementById('robotThead').innerHTML = '<tr>' +
+    sortedCol.map(c => {
+      const isSorted = robotSortKey === c.key;
+      const arrow = isSorted ? (robotSortAsc ? ' ↑' : ' ↓') : '';
+      return `<th class="${c.sort?'sortable':''}" onclick="${c.sort?`sortRobot('${c.key}')`:''}">${c.label}${arrow}</th>`;
+    }).join('') + '</tr>';
+
+  document.getElementById('robotBody').innerHTML = pageList.map(r => {
+    const vendorHtml = r['官网'] ? `<a href="${r['官网']}" target="_blank" style="color:var(--accent);text-decoration:none">${r['厂商']||''}</a>` : (r['厂商']||'');
+    const level = r['数据级别'] || '';
+    const levelBadge = level.includes('官方') ? '<span style="font-size:9px;color:var(--green);margin-left:4px">✓</span>'
+      : level.includes('新闻') ? '<span style="font-size:9px;color:var(--orange);margin-left:4px">📰</span>'
+      : '<span style="font-size:9px;color:var(--text-tertiary);margin-left:4px">?</span>';
+    return '<tr>' + sortedCol.map(c => {
+      if (c.key === '厂商') return `<td><span onclick="showEcosystemPanel('${(r['厂商']||'').replace(/'/g,"\\'")}')" style="cursor:pointer;color:var(--accent);font-weight:500">${r['厂商']||''}</span>${levelBadge}</td>`;
+      if (c.key === '型号' && r['官网']) {
+        return `<td><a href="${r['官网']}" target="_blank" style="color:var(--text-primary);text-decoration:none">${r['型号']||''}</a></td>`;
+      }
+      const val = r[c.key] || '';
+      return `<td>${val}</td>`;
+    }).join('') + '</tr>';
+  }).join('');
+}
+
+function getVisibleCols() {
+  const key = `robot_cols_${currentRobotCat}`;
+  const saved = localStorage.getItem(key);
+  if (saved) return JSON.parse(saved);
+  return ROBOT_CONFIG[currentRobotCat].defaultCols;
+}
+
+function saveVisibleCols() {
+  const checked = [...document.querySelectorAll('.col-toggle:checked')].map(cb => cb.dataset.key);
+  localStorage.setItem(`robot_cols_${currentRobotCat}`, JSON.stringify(checked));
+}
+
+let robotPage = 0;
+const ROBOT_PAGE_SIZE = 10;
+function robotPagePrev() { if (robotPage > 0) { robotPage--; renderRobots(); } }
+function robotPageNext() { robotPage++; renderRobots(); }
+
+function sortRobot(key) {
+  const col = ROBOT_CONFIG[currentRobotCat].allCols.find(c => c.key === key);
+  if (!col || !col.sort) return;
+  if (robotSortKey === key) robotSortAsc = !robotSortAsc;
+  else { robotSortKey = key; robotSortAsc = true; }
+  renderRobots();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  document.getElementById('robotCatTabs')?.addEventListener('click', async (e) => {
+    const btn = e.target.closest('button');
+    if (!btn || !btn.dataset.cat) return;
+
+    document.querySelectorAll('#robotCatTabs button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    currentRobotCat = btn.dataset.cat;
+    robotSortKey = null;
+    robotSortAsc = true;
+    robotPage = 0;
+
+    state.robots = await loadRobotCategory(currentRobotCat);
+    const count = (state.robots||[]).length;
+    document.getElementById('updateStatus').innerHTML =
+      `<span class="dot"></span>${state.models.length}模型 · ${count}机器人 · ${(state.news.days||[]).length}天新闻 · ${state.skills.length}技能`;
+    document.getElementById('robotCount').textContent = count;
+    renderRobots();
+  });
+
+  ['rfType2', 'rfStatus'].forEach(id => {
+    document.getElementById(id)?.addEventListener('change', () => renderRobots());
+  });
+});
+
+// ══════════════════════════════════════════════════════════════════
+// NEWS
+// ══════════════════════════════════════════════════════════════════
+function renderNews() {
+  const data = state.news;
+  if (!data.days || !data.days.length) {
+    document.getElementById('newsContainer').innerHTML =
+      '<div class="section-card" style="text-align:center;padding:60px;color:var(--text-tertiary)">暂无新闻数据</div>';
+    return;
+  }
+
+  const inds = [...new Set(data.days.flatMap(d => (d.industries||[]).map(i => i.name)))];
+  populateSelect('newsIndustry', inds);
+
+  function filterNews() {
+    const src = document.getElementById('newsSource').value;
+    const ind = document.getElementById('newsIndustry').value;
+    const spec = document.getElementById('newsSpecial').checked;
+
+    let days = data.days;
+    if (src !== 'all') days = days.filter(d => d.source === src);
+    if (spec) days = days.filter(d => d.special_count > 0);
+
+    const container = document.getElementById('newsContainer');
+    let totalItems = 0;
+    container.innerHTML = days.map(day => {
+      let industries = day.industries || [];
+      if (ind !== 'all') industries = industries.filter(i => i.name === ind);
+      if (!industries.length) return '';
+      const dayItems = industries.reduce((s,i) => s + (i.items||[]).length, 0);
+      totalItems += dayItems;
+      return `<div class="news-day">
+        <div class="news-date">📺 ${day.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')}
+          <span class="news-date-meta">${day.total_items}条 · ${day.industry_count}个行业${day.special_count>0?' · 🔔'+day.special_count+'条特别关注':''}</span>
+        </div>
+        ${industries.map(ind2 => `
+          <div class="news-industry">
+            <div class="industry-header">
+              <span class="industry-badge">${ind2.name}</span>
+              <span class="industry-count">${ind2.count}条${ind2.special?' · 🔔特别关注':''}</span>
+            </div>
+            ${(ind2.items||[]).map(item => `
+              <div class="news-item" onclick="this.classList.toggle('expanded')">
+                <div class="title">${item.title||''}${item.special?'<span class="special-tag">🔔 特别关注</span>':''}</div>
+                <div class="summary">${item.summary||''}</div>
+              </div>
+            `).join('')}
+          </div>
+        `).join('')}
+      </div>`;
+    }).join('');
+    document.getElementById('newsCount').textContent = totalItems > 0 ? `共 ${totalItems} 条新闻` : '';
+  }
+
+  ['newsSource','newsIndustry'].forEach(id => {
+    document.getElementById(id).addEventListener('change', filterNews);
+  });
+  document.getElementById('newsSpecial').addEventListener('change', filterNews);
+  filterNews();
+}
+
+// ── GLOBAL SEARCH ──────────────────────────────────────────────────
+document.getElementById('globalSearch')?.addEventListener('input', (e) => {
+  const q = e.target.value.trim().toLowerCase();
+  if (!q) return;
+
+  // Search across all tabs' current content
+  const allText = document.querySelectorAll('.tab-content.active *');
+  let found = false;
+  allText.forEach(el => {
+    if (el.textContent && el.textContent.toLowerCase().includes(q)) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      found = true;
+    }
+  });
+});
+
+// ── START ──────────────────────────────────────────────────────────
+init();
+
+// ══════════════════════════════════════════════════════════════════
+// SKILLS
+// ══════════════════════════════════════════════════════════════════
+function renderSkills() {
+  const scene = document.getElementById('sfScene').value;
+  let list = state.skills;
+  if (scene !== 'all') list = list.filter(s => s.scene === scene);
+
+  const container = document.getElementById('skillsContainer');
+  container.innerHTML = list.map(s => `
+    <div class="skill-card">
+      <div class="name">${s.name}</div>
+      <div class="tags" style="margin:4px 0;display:flex;gap:4px">
+        <span class="tag ${s.scene === 'work' ? 'tag-blue' : s.scene === 'life' ? 'tag-green' : 'tag-orange'}">${s.scene === 'work' ? '工作' : s.scene === 'life' ? '生活' : '研究'}</span>
+      </div>
+      <div class="desc">${s.desc}</div>
+      <div class="reason">💡 <strong>推荐理由：</strong>${s.reason}</div>
+    </div>
+  `).join('');
+}
+
+document.getElementById('sfScene').addEventListener('change', renderSkills);
+</script>
+</body>
+</html>
