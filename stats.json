@@ -1,22 +1,22 @@
 {
- "total_items": 599,
- "total_entities": 90,
- "total_dailies": 9,
+ "total_items": 666,
+ "total_entities": 94,
+ "total_dailies": 10,
  "categories": {
-  "tip": 168,
-  "ai-products": 167,
-  "industry": 145,
-  "ai-models": 63,
-  "paper": 56
+  "ai-products": 188,
+  "tip": 187,
+  "industry": 163,
+  "ai-models": 67,
+  "paper": 61
  },
  "entity_types": {
-  "company": 46,
-  "model": 44
+  "company": 49,
+  "model": 45
  },
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 16
+   "count": 19
   },
   {
    "name": "Hugging Face：Blog（RSS）",
@@ -24,35 +24,35 @@
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 12
+   "count": 14
   },
   {
    "name": "Bloomberg：Technology（RSS）",
-   "count": 10
+   "count": 12
   },
   {
    "name": "X：Rohan Paul (@rohanpaul_ai)",
-   "count": 9
+   "count": 10
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 9
+   "count": 10
   },
   {
    "name": "X：OpenRouter (@OpenRouter)",
-   "count": 7
+   "count": 8
   },
   {
    "name": "X：Kim (@kimmonismus)",
    "count": 5
   },
   {
-   "name": "Claude：Blog（网页）",
+   "name": "Gary Marcus：The Road to AI We Can Trust（RSS）",
    "count": 5
   },
   {
-   "name": "X：Replit (@Replit)",
-   "count": 4
+   "name": "Claude：Blog（网页）",
+   "count": 5
   }
  ],
  "by_date": [
@@ -94,8 +94,12 @@
   },
   {
    "date": "2026-06-10",
-   "count": 51
+   "count": 65
+  },
+  {
+   "date": "2026-06-11",
+   "count": 53
   }
  ],
- "updated_at": "2026-06-10T17:00:03Z"
+ "updated_at": "2026-06-11T17:00:09Z"
 }
