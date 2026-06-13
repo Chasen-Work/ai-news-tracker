@@ -86,6 +86,42 @@
  ],
  "Anthropic": [
   {
+   "id": 694,
+   "title": "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业",
+   "summary": "Anthropic对近5.2万美国人调查显示：48%将治愈癌症等疾病列为首要期望，36%希望AI帮助残障人士。64%担忧AI导致失业，56%担忧认知依赖，52%担忧信息误导。超70%支持政府监管，最关注隐私（56%）、儿童安全（52%）和责任归属（49%）。仅15%信任AI公司决策。多数议题上观点不因党派或地域严重分裂。调查于2025年11-12月由YouGov线上执行并加权至人口普查基准。",
+   "published_at": "2026-06-12T16:14:59.887Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 679,
+   "title": "Anthropic与DXC达成全球联盟，将Claude引入关键行业系统",
+   "summary": "Anthropic与IT服务公司DXC Technology达成多年全球联盟。DXC将培训数万名获得Claude认证的前沿部署工程师（FDE），将Claude引入其为全球大型银行、航空公司、保险公司及政府机构运营的关键系统。内部部署中，Claude已成为DXC OASIS平台的默认基础模型，该平台超95%代码由Claude编写，开发速度提升10倍，已服务50多家客户。DXC加入Claude Partner Network，将在保险、现代化服务、网络安全及应用服务四个领域率先推出基于Claude的解决方案。",
+   "published_at": "2026-06-12",
+   "url": "https://www.anthropic.com/news/dxc-anthropic-alliance",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 683,
+   "title": "Anthropic 启动 Claude Corps 全国奖学金项目",
+   "summary": "Anthropic 推出 Claude Corps 奖学金项目，面向早期职业生涯的年轻人，培训 1,000 名研究员使用 Claude，并匹配给美国非营利组织全职工作一年。研究员年薪 85,000 美元及福利，每周接受 5 小时持续培训。Anthropic 初始投入 1.5 亿美元，合作方为 CodePath 和 Social Finance。至少 400 家非营利组织将参与接待，包括 Braven、Code the Dream、Heartland Forward 等。",
+   "published_at": "2026-06-12",
+   "url": "https://www.anthropic.com/news/claude-corps",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 693,
+   "title": "Anthropic CEO 阿莫迪：AI 可能会造成大规模、长期性的岗位流失",
+   "summary": "Anthropic CEO 达里奥・阿莫迪警告，AI造成的大规模岗位流失是技术固有属性——AI系统旨在复刻人类认知，失业将成为结构性必然结果。他提出应对思路：完善劳动力市场监测、推行薪资保障与留岗税收优惠、发放培训补贴；若人力需求永久下降，则需通过征税推行全民基本收入等长期收入保障。Anthropic目标非削减人力成本，而是帮企业开拓新营收、盘活现有员工产能。",
+   "published_at": "2026-06-12",
+   "url": "https://www.ithome.com/0/962/854.htm",
+   "category": "tip",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 636,
    "title": "Anthropic 启动 Claude Corps 全国奖学金项目",
    "summary": "Anthropic 推出 Claude Corps 奖学金项目，面向早期职业生涯的年轻人，培训 1，000 名研究员使用 Claude，并匹配给美国非营利组织全职工作一年。研究员年薪 85，000 美元及福利，每周接受 5 小时持续培训。Anthropic 初始投入 1.5 亿美元，合作方为 CodePath 和 Social Finance。至少 400 家非营利组织将参与接待，包括 Braven、Code the Dream、Heartland Forward 等。",
@@ -610,6 +646,15 @@
  ],
  "Apple": [
   {
+   "id": 701,
+   "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
+   "summary": "苹果在 iOS 27 中优化健康 App，将列表改为卡片布局并增加导航栏。新增视觉智能营养识别，用户通过相机 Siri 模式拍摄食物可获取加工程度、蛋白质、含糖量等信息及营养价值评级，不提供精确卡路里，需 iPhone 15 Pro 及以上。经期追踪扩展支持围绝经期，可分析长期周期异常模式并推送提醒与指导。Fitness+ 新增围绝经期和绝经期课程。数据同步速度提升，GymKit 扩展至 iPhone，无需 Apple Watch 即可与健身设备配对同步数据。",
+   "published_at": "2026-06-12T02:06:41.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 532,
    "title": "Claude Mythos 即将发布，Fable 精简版同日登场",
    "summary": "确认，Claude Mythos 将在接下来几小时内揭晓。 [引用 @steph_palazzolo]： 独家：一个名为 Claude Fable 的精简版 Mythos 今天推出。它价格昂贵——是 Opus 的两倍——但或许不像人们从最初 Mythos 定价（Opus 的 5 倍）所想的那样昂贵。 更多内容及 Apple WWDC 见 AI Agenda： https://www.theinformation.com/newsletters/ai-agenda/anthropics-mythos-coming-today-apple-pursues-modest-goals-siri-revamp",
@@ -710,6 +755,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 699,
+   "title": "小互开源公众号自动排版技能组合",
+   "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
+   "published_at": "2026-06-12T03:40:42.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 639,
    "title": "阿里云发布 Meoo CLI：本地 AI 编程项目可一键部署上线",
@@ -1250,6 +1304,51 @@
  ],
  "Codex": [
   {
+   "id": 699,
+   "title": "小互开源公众号自动排版技能组合",
+   "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
+   "published_at": "2026-06-12T03:40:42.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 703,
+   "title": "Codex 推出浏览器开发者模式",
+   "summary": "为 Chrome 和 Codex 内置浏览器引入开发者模式。\n\nCodex 可以使用 Chrome DevTools 协议（CDP）来调试浏览器问题，通过分析 JavaScript 性能、检查控制台输出、网络流量和页面状态。",
+   "published_at": "2026-06-12T00:15:07.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 704,
+   "title": "OpenAI Codex 推出速率重置攒存功能",
+   "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。\n从今天起，我们开始推出将速率限制重置保留到以后使用的功能。\n我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
+   "published_at": "2026-06-12T00:11:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 687,
+   "title": "Codex 维护仓库：5分钟循环并行自治",
+   "summary": "一个简单的循环：告诉 Codex 维护你的仓库，每5分钟唤醒一次，将工作直接分配到线程。这样可以轻松按需并行化和导向工作。 我使用一个编排器技能，结合我的分类+自动审查+计算机使用技能，因此部分工作可以自主落地。",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/steipete/status/2064998499780084154",
+   "category": "tip",
+   "source": "X：Peter Steinberger (@steipete)"
+  },
+  {
+   "id": 690,
+   "title": "Codex Goal指令生成Skill发布：一句话需求转目标",
+   "summary": "针对如何给Codex写Goal指令的问题，作者发布了一个Skill，可将一句话需求自动转化为目标，实现“睡前写指令、模型自动开发、第二天收菜”。安装命令：`npx skills add joeseesun/qiaomu-goal-meta-skill`。源码免费开源（见评论区），旨在简化4w字文档的阅读负担。",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/vista8/status/2065090494972174821",
+   "category": "tip",
+   "source": "X：Vista (@vista8)"
+  },
+  {
    "id": 631,
    "title": "Codex Goal指令生成Skill发布：一句话需求转目标",
    "summary": "针对如何给Codex写Goal指令的问题，作者发布了一个Skill，可将一句话需求自动转化为目标，实现\"睡前写指令、模型自动开发、第二天收菜\"。安装命令：`npx skills add joeseesun/qiaomu-goal-meta-skill`。源码免费开源（见评论区），旨在简化4w字文档的阅读负担。",
@@ -1672,6 +1771,24 @@
  ],
  "Cursor": [
   {
+   "id": 673,
+   "title": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限",
+   "summary": "Cursor 近日推出 Auto-review，通过一个专门的分类器智能体在工具调用前审查动作风险。该分类器根据上下文判断动作是否与用户意图一致，高风险时阻止并返回解释给父智能体，低风险时放行。分类器采用小模型，运行在智能体循环内以避免额外延迟，并能读取工作区文件辅助判断。测试基于约12小时内部开发会话生成的6122条标签数据，以及针对读取密钥、操作生产数据等危险场景的合成数据。设计目标是在不频繁阻断日常开发的前提下，拦截风险动作。",
+   "published_at": "2026-06-12",
+   "url": "https://cursor.com/blog/auto-review",
+   "category": "ai-products",
+   "source": "Cursor Blog"
+  },
+  {
+   "id": 714,
+   "title": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限",
+   "summary": "Cursor 近日推出 Auto-review，通过一个专门的分类器智能体在工具调用前审查动作风险。该分类器根据上下文判断动作是否与用户意图一致，高风险时阻止并返回解释给父智能体，低风险时放行。分类器采用小模型，运行在智能体循环内以避免额外延迟，并能读取工作区文件辅助判断。测试基于约12小时内部开发会话生成的6122条标签数据，以及针对读取密钥、操作生产数据等危险场景的合成数据。设计目标是在不频繁阻断日常开发的前提下，拦截风险动作。",
+   "published_at": "2026-06-11T12:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 639,
    "title": "阿里云发布 Meoo CLI：本地 AI 编程项目可一键部署上线",
    "summary": "阿里云今日推出 Meoo（秒悟）开源命令行工具 Meoo CLI，面向开发者，支持 Claude Code、Codex、Cursor 等本地 AI 编程助手。通过调用阿里云云端能力，可自动完成数据库接入、用户登录、文件存储及项目发布，将本地项目一键部署上线并生成可分享的访问链接。该工具定位为本地 Agent 与秒悟云端能力的连接入口，已开放下载，支持主流 Linux、macOS 及 Windows 平台。",
@@ -1889,6 +2006,24 @@
   }
  ],
  "DeepSeek": [
+  {
+   "id": 692,
+   "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
+   "summary": "@NousResearch 发布了 Hermes Agent Desktop——现在通过 @硅基流动 SiliconFlow 使用前沿开源模型更加便捷 🔥 → 一键随时切换模型——DeepSeek-V4、GLM-5.1、Kimi-K2.6、MiniMax-M3 等，均在硅基流动上 ... ... 通过硅基流动开启你的 Hermes 之旅的完整指南 👇🧵",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/SiliconFlowAI/status/2065015632215912879",
+   "category": "tip",
+   "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+  },
+  {
+   "id": 711,
+   "title": "DeepSeek-R1 的开源实现",
+   "summary": "DeepSeek-R1 的开源复现项目已在 GitHub 发布，在 Hacker News 上获得 101 个积分。该项目旨在以开源方式复现 DeepSeek-R1 模型。",
+   "published_at": "2026-06-11T17:07:18.181Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 637,
    "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
@@ -2112,7 +2247,27 @@
    "source": ""
   }
  ],
+ "DeepSeek-R1": [
+  {
+   "id": 711,
+   "title": "DeepSeek-R1 的开源实现",
+   "summary": "DeepSeek-R1 的开源复现项目已在 GitHub 发布，在 Hacker News 上获得 101 个积分。该项目旨在以开源方式复现 DeepSeek-R1 模型。",
+   "published_at": "2026-06-11T17:07:18.181Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  }
+ ],
  "DeepSeek-V4": [
+  {
+   "id": 692,
+   "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
+   "summary": "@NousResearch 发布了 Hermes Agent Desktop——现在通过 @硅基流动 SiliconFlow 使用前沿开源模型更加便捷 🔥 → 一键随时切换模型——DeepSeek-V4、GLM-5.1、Kimi-K2.6、MiniMax-M3 等，均在硅基流动上 ... ... 通过硅基流动开启你的 Hermes 之旅的完整指南 👇🧵",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/SiliconFlowAI/status/2065015632215912879",
+   "category": "tip",
+   "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+  },
   {
    "id": 637,
    "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
@@ -2133,6 +2288,15 @@
   }
  ],
  "ERNIE": [
+  {
+   "id": 675,
+   "title": "Deezer 推出面向其他流媒体服务的 AI 音乐检测器",
+   "summary": "Deezer 将扫描用户在其它流媒体平台的播放列表，检测其中的 AI 生成音乐。Deezer 是最早标记 AI 生成音乐的大型流媒体服务之一，曾向其他平台提供该技术但少有采纳。Deezer CEO Alexis Lanternier 表示，由于没有其他公司跟进，他们决定让用户无论使用哪个平台，都能检查自己的播放列表中是否包含合成音乐。",
+   "published_at": "2026-06-12",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/948153/deezer-ai-music-detector-spotify-apple",
+   "category": "ai-products",
+   "source": "The Verge：AI（RSS）"
+  },
   {
    "id": 642,
    "title": "Deezer 推出面向其他流媒体服务的 AI 音乐检测器",
@@ -2412,6 +2576,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 672,
+   "title": "mlx-vlm v0.6.3 发布，Day-0 支持 Google DeepMind DiffusionGemma 和 Cohere North Mini Code 1.0",
+   "summary": "mlx-vlm v0.6.3 上线，首发支持 DiffusionGemma 和 North Mini Code 1.0。DiffusionGemma 采用全新架构：以 256 token 块为单位并行生成、双向注意力、迭代自纠错；26B MoE 仅激活 3.8B，量化后 18GB 即可运行。North Mini Code 1.0 为 30B MoE，仅激活 3B，BF16 下约 66 tok/s。两款模型均通过深度合作实现 Day-0 MLX 支持，可在 Mac 本地运行。可通过 `uv pip install -U mlx-vlm` 安装体验。",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/berryxia/status/2064875107278098769",
+   "category": "ai-products",
+   "source": "X：Berry Xia (@berryxia)"
+  },
   {
    "id": 648,
    "title": "mlx-vlm v0.6.3 发布，Day-0 支持 Google DeepMind DiffusionGemma 和 Cohere North Mini Code 1.0",
@@ -2829,6 +3002,15 @@
  ],
  "Google DeepMind": [
   {
+   "id": 672,
+   "title": "mlx-vlm v0.6.3 发布，Day-0 支持 Google DeepMind DiffusionGemma 和 Cohere North Mini Code 1.0",
+   "summary": "mlx-vlm v0.6.3 上线，首发支持 DiffusionGemma 和 North Mini Code 1.0。DiffusionGemma 采用全新架构：以 256 token 块为单位并行生成、双向注意力、迭代自纠错；26B MoE 仅激活 3.8B，量化后 18GB 即可运行。North Mini Code 1.0 为 30B MoE，仅激活 3B，BF16 下约 66 tok/s。两款模型均通过深度合作实现 Day-0 MLX 支持，可在 Mac 本地运行。可通过 `uv pip install -U mlx-vlm` 安装体验。",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/berryxia/status/2064875107278098769",
+   "category": "ai-products",
+   "source": "X：Berry Xia (@berryxia)"
+  },
+  {
    "id": 648,
    "title": "mlx-vlm v0.6.3 发布，Day-0 支持 Google DeepMind DiffusionGemma 和 Cohere North Mini Code 1.0",
    "summary": "mlx-vlm v0.6.3 上线，首发支持 DiffusionGemma 和 North Mini Code 1.0。DiffusionGemma 采用全新架构：以 256 token 块为单位并行生成、双向注意力、迭代自纠错；26B MoE 仅激活 3.8B，量化后 18GB 即可运行。North Mini Code 1.0 为 30B MoE，仅激活 3B，BF16 下约 66 tok/s。两款模型均通过深度合作实现 Day-0 MLX 支持，可在 Mac 本地运行。可通过 `uv pip install -U mlx-vlm` 安装体验。",
@@ -3121,6 +3303,15 @@
  ],
  "HuggingFace": [
   {
+   "id": 697,
+   "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
+   "summary": "MiniMax 发布开源权重模型 M3，约 428B 总参数、23B 激活参数，已上传 HuggingFace。该模型融合三种前沿能力：编码与智能体方面达 59.0% SWE-Bench Pro、66.0% Terminal Bench 2.1、34.8% SWE-fficiency、28.8% KernelBench Hard、74.2% MCP Atlas；采用 MiniMax 稀疏注意力将上下文窗口扩展至 1M token；原生多模态。同步上线 MiniMax Code 工具及 API 平台。权重与技术报告预计约 10 天后发布。",
+   "published_at": "2026-06-12T14:11:53.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 531,
    "title": "小米 MiMo 与 TileRT 联合发布 UltraSpeed 模式，1T 模型输出突破 1000 tokens/s",
    "summary": "小米 MiMo 与 TileRT 联合发布 MiMo-V2.5-Pro-UltraSpeed 模式，使 1T 参数旗舰模型输出速度首次突破 1000 tokens/s。模型侧采用 FP4 混合量化（仅量化 MoE Expert）与 DFlash 块级 masked 并行推测解码（coding 场景平均接受长度 6.30 tokens）；系统侧 TileRT 引入常驻内核引擎与异构流水线协作。API 限时开放（2026 年 6 月 9 日至 23 日），定价为 MiMo-V2.5-Pro 的 3 倍，速度提升约 10 倍。FP4 权重与 DFlash 模型 checkpoint 已开源至 HuggingFace。",
@@ -3271,6 +3462,15 @@
  ],
  "Krea": [
   {
+   "id": 674,
+   "title": "Krea 2 推出生成式滑块控制图像属性",
+   "summary": "推出生成式滑块。 现在您可以控制使用 Krea 2 生成的任何图像的强度、复杂度和运动。 你希望看到哪些新控制？👇",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/krea_ai/status/2065086662166901114",
+   "category": "ai-products",
+   "source": "X：Krea AI (@krea_ai)"
+  },
+  {
    "id": 632,
    "title": "Krea 2 推出生成式滑块控制图像属性",
    "summary": "推出生成式滑块。\n现在您可以控制使用 Krea 2 生成的任何图像的强度、复杂度和运动。\n你希望看到哪些新控制？👇",
@@ -3366,6 +3566,15 @@
   }
  ],
  "Meta": [
+  {
+   "id": 690,
+   "title": "Codex Goal指令生成Skill发布：一句话需求转目标",
+   "summary": "针对如何给Codex写Goal指令的问题，作者发布了一个Skill，可将一句话需求自动转化为目标，实现“睡前写指令、模型自动开发、第二天收菜”。安装命令：`npx skills add joeseesun/qiaomu-goal-meta-skill`。源码免费开源（见评论区），旨在简化4w字文档的阅读负担。",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/vista8/status/2065090494972174821",
+   "category": "tip",
+   "source": "X：Vista (@vista8)"
+  },
   {
    "id": 631,
    "title": "Codex Goal指令生成Skill发布：一句话需求转目标",
@@ -3560,6 +3769,15 @@
  ],
  "Midjourney": [
   {
+   "id": 668,
+   "title": "Midjourney V8.1 已成为默认模型",
+   "summary": "Midjourney 已将默认模型从 V7 升级为 V8.1。V8.1 在智能性、连贯性、对详细提示的遵循度以及文本渲染效果上均有提升，HD 模式也已支持。",
+   "published_at": "2026-06-12",
+   "url": "https://updates.midjourney.com/v8-1-is-now-the-default-model",
+   "category": "ai-models",
+   "source": "Midjourney：Updates（RSS）"
+  },
+  {
    "id": 646,
    "title": "Midjourney V8.1 已成为默认模型",
    "summary": "Midjourney 已将默认模型从 V7 升级为 V8.1。V8.1 在智能性、连贯性、对详细提示的遵循度以及文本渲染效果上均有提升，HD 模式也已支持。",
@@ -3570,6 +3788,15 @@
   }
  ],
  "Midjourney V8": [
+  {
+   "id": 668,
+   "title": "Midjourney V8.1 已成为默认模型",
+   "summary": "Midjourney 已将默认模型从 V7 升级为 V8.1。V8.1 在智能性、连贯性、对详细提示的遵循度以及文本渲染效果上均有提升，HD 模式也已支持。",
+   "published_at": "2026-06-12",
+   "url": "https://updates.midjourney.com/v8-1-is-now-the-default-model",
+   "category": "ai-models",
+   "source": "Midjourney：Updates（RSS）"
+  },
   {
    "id": 646,
    "title": "Midjourney V8.1 已成为默认模型",
@@ -3582,12 +3809,39 @@
  ],
  "MiniMax": [
   {
+   "id": 697,
+   "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
+   "summary": "MiniMax 发布开源权重模型 M3，约 428B 总参数、23B 激活参数，已上传 HuggingFace。该模型融合三种前沿能力：编码与智能体方面达 59.0% SWE-Bench Pro、66.0% Terminal Bench 2.1、34.8% SWE-fficiency、28.8% KernelBench Hard、74.2% MCP Atlas；采用 MiniMax 稀疏注意力将上下文窗口扩展至 1M token；原生多模态。同步上线 MiniMax Code 工具及 API 平台。权重与技术报告预计约 10 天后发布。",
+   "published_at": "2026-06-12T14:11:53.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 692,
+   "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
+   "summary": "@NousResearch 发布了 Hermes Agent Desktop——现在通过 @硅基流动 SiliconFlow 使用前沿开源模型更加便捷 🔥 → 一键随时切换模型——DeepSeek-V4、GLM-5.1、Kimi-K2.6、MiniMax-M3 等，均在硅基流动上 ... ... 通过硅基流动开启你的 Hermes 之旅的完整指南 👇🧵",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/SiliconFlowAI/status/2065015632215912879",
+   "category": "tip",
+   "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+  },
+  {
    "id": 637,
    "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
    "summary": "@NousResearch 发布了 Hermes Agent Desktop--现在通过 @硅基流动 SiliconFlow 使用前沿开源模型更加便捷 🔥\n\n→ 一键随时切换模型--DeepSeek-V4、GLM-5.1、Kimi-K2.6、MiniMax-M3 等，均在硅基流动上\n… …\n通过硅基流动开启你的 Hermes 之旅的完整指南 👇🧵",
    "published_at": "2026-06-11T10:17:47.000Z",
    "url": "",
    "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 716,
+   "title": "MiniMax Sparse Attention（MSA）块状稀疏注意力",
+   "summary": "MiniMax 提出块状稀疏注意力 MSA，基于 GQA 构建。轻量级 Index Branch 为每个 GQA 组独立选择 Top-k KV 块，Main Branch 仅对选中块执行精确块稀疏注意力。在 109B 参数多模态模型上，MSA 与 GQA 性能持平，1M 上下文下每 token 注意力计算减少 28.4 倍。配合协同设计的 GPU 内核，H800 上实现 14.2 倍 prefill 和 7.6 倍 decoding 端到端加速。推理内核与基于 MSA 的多模态模型已公开发布。",
+   "published_at": "2026-06-11T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
    "source": ""
   },
   {
@@ -4431,6 +4685,33 @@
  ],
  "OpenAI": [
   {
+   "id": 704,
+   "title": "OpenAI Codex 推出速率重置攒存功能",
+   "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。\n从今天起，我们开始推出将速率限制重置保留到以后使用的功能。\n我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
+   "published_at": "2026-06-12T00:11:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 682,
+   "title": "OpenAI 支持欧洲构建可信 AI 生态系统",
+   "summary": "OpenAI 支持欧盟《AI 内容透明度行为准则》，推进内容溯源标准与工具，帮助用户识别 AI 生成内容。",
+   "published_at": "2026-06-12",
+   "url": "https://openai.com/index/supporting-eu-trustworthy-ai-ecosystem",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 684,
+   "title": "BBVA 将 AI 置于银行业务核心，与 OpenAI 合作",
+   "summary": "BBVA 将 ChatGPT Enterprise 推广至 10 万名员工，并与 OpenAI 达成合作，加速全球银行业 AI 驱动的转型。",
+   "published_at": "2026-06-12",
+   "url": "https://openai.com/index/bbva",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
    "id": 635,
    "title": "OpenAI 正酝酿\"大幅\"降价，Gary Marcus 视其为示弱信号",
    "summary": "OpenAI 正考虑大幅降价，Gary Marcus 认为这暴露了公司的疲软竞争力。",
@@ -4461,6 +4742,15 @@
    "id": 652,
    "title": "OpenAI 支持欧洲构建可信 AI 生态系统",
    "summary": "OpenAI 支持欧盟《AI 内容透明度行为准则》，推进内容溯源标准与工具，帮助用户识别 AI 生成内容。",
+   "published_at": "2026-06-11T00:00:00.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 719,
+   "title": "BBVA 将 AI 置于银行业务核心，与 OpenAI 合作",
+   "summary": "BBVA 将 ChatGPT Enterprise 推广至 10 万名员工，并与 OpenAI 达成合作，加速全球银行业 AI 驱动的转型。",
    "published_at": "2026-06-11T00:00:00.000Z",
    "url": "",
    "category": "industry",
@@ -5056,6 +5346,15 @@
  ],
  "OpenClaw": [
   {
+   "id": 699,
+   "title": "小互开源公众号自动排版技能组合",
+   "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
+   "published_at": "2026-06-12T03:40:42.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 464,
    "title": "小互开源视频翻译工具：一句话自动下载、转写、翻译、烧字幕",
    "summary": "小互（@xiaohu）开源视频翻译工具（xiaohu-video-translate），只需说一句“把链接翻译成中文字幕视频”即可全自动完成下载、Whisper本地转写、AI翻译润色、烧字幕、出文稿。转写本地运行，不花API费。支持YouTube、Bilibili、抖音等链接及本地文件，英语、日语、韩语、法语、西班牙语等均可转成中文字幕。字幕精确到词级时间戳，按语义断句，每行不超过12字，双语模式下中文大英文小。提供纯中文与中英双语模式。工具由三个子技能组成，可单独或串联使用，适配Claude Code、Codex、OpenClaw等AI编程工具。已开源，附安装指南。",
@@ -5147,6 +5446,15 @@
   }
  ],
  "OpenRouter": [
+  {
+   "id": 671,
+   "title": "OpenRouter 基准探索器：10项帕累托曲线",
+   "summary": "使用我们的基准探索器，为10个不同基准绘制帕累托曲线。 更多功能即将推出！https://openrouter.ai/rankings#benchmarks",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/OpenRouter/status/2065094780271329729",
+   "category": "ai-products",
+   "source": "X：OpenRouter (@OpenRouter)"
+  },
   {
    "id": 630,
    "title": "OpenRouter 基准探索器：10项帕累托曲线",
@@ -5376,6 +5684,24 @@
   }
  ],
  "Perplexity": [
+  {
+   "id": 670,
+   "title": "Perplexity Computer 集成 Deep Research",
+   "summary": "我们正在将 Deep Research 作为原生技能集成到 Computer 中。 它现在连接到驱动 Computer 的智能体框架，可访问搜索即代码生成、长运行沙箱、连接器、工具和授权数据。 Pro 和 Max 订阅者现已可用。",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/perplexity_ai/status/2065124930463916317",
+   "category": "ai-products",
+   "source": "X：Perplexity (@perplexity_ai)"
+  },
+  {
+   "id": 710,
+   "title": "Perplexity Computer 集成 Deep Research",
+   "summary": "我们正在将 Deep Research 作为原生技能集成到 Computer 中。\n\n它现在连接到驱动 Computer 的智能体框架，可访问搜索即代码生成、长运行沙箱、连接器、工具和授权数据。\n\nPro 和 Max 订阅者现已可用。",
+   "published_at": "2026-06-11T17:32:06.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 460,
    "title": "Perplexity与哈佛：AI智能体提效87%降本94%",
@@ -5921,6 +6247,42 @@
  ],
  "Replit": [
   {
+   "id": 691,
+   "title": "Replit 专家级提示词技巧",
+   "summary": "如何像专家一样使用 Replit 进行提示 🤖 模糊的提示词只会导致更多重写。以下是如何让 Agent 第一次就构建出正确的东西。 🧵 展开线程 ↓",
+   "published_at": "2026-06-12",
+   "url": "https://x.com/Replit/status/2065192392718733327",
+   "category": "tip",
+   "source": "X：Replit (@Replit)"
+  },
+  {
+   "id": 706,
+   "title": "Replit 专家级提示词技巧",
+   "summary": "如何像专家一样使用 Replit 进行提示 🤖\n\n模糊的提示词只会导致更多重写。以下是如何让 Agent 第一次就构建出正确的东西。\n\n🧵 展开线程 ↓",
+   "published_at": "2026-06-11T22:00:10.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 707,
+   "title": "Replit 与 Databricks 集成升级，公开预览开放",
+   "summary": "Replit 与 @databricks 集成刚刚升级了。\n\n构建应用，让每个用户只看到他们应该看到的内容。你的 HR 分析师可以为 CEO 构建完整的组织视图，而无需访问底层数据。\n\n公开预览已开放注册！了解更多 →\n\nhttps：//replit.com/blog/databricksjune2026",
+   "published_at": "2026-06-11T21:49:43.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 709,
+   "title": "Replit Agent 新增自定义指令与技能功能",
+   "summary": "AI 智能体很强大，但它们不记得你的偏好。\n\n所以你总是重复指令--如何组织项目、你的品牌指南。\n\n现在你可以通过自定义指令和技能让 Replit Agent 学会你的惯例。\n\n它会在每个项目中自动将这些考虑进去。",
+   "published_at": "2026-06-11T18:58:07.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 662,
    "title": "Replit 联合 Socket 推出 Package Firewall",
    "summary": "大多数人在发布项目前会运行安全扫描以检测恶意包\n\n但风险从安装的那一刻就已开始\n\n今天，我们正式推出 Package Firewall，与 Socket 合作构建\n\n它在恶意软件到达你的应用之前就将其拦截",
@@ -6012,6 +6374,15 @@
   }
  ],
  "Runway": [
+  {
+   "id": 680,
+   "title": "Runway与Lionsgate扩大战略合作",
+   "summary": "全球内容巨头Lionsgate与生成式AI研究公司Runway今日宣布扩大战略合作。Lionsgate已取得Runway股权，双方将启动联合开发项目，共同创作并制作新IP，首推一部基于Lionsgate现有IP和Runway生成模型的短剧系列。此外，Lionsgate将作为主持伙伴参与6月举行的Runway AI电影节。这是双方继2024年9月首次合作后的深化，Lionsgate此前已在预可视化、故事板及最终帧制作中应用Runway工具。",
+   "published_at": "2026-06-12",
+   "url": "https://runwayml.com/news/runway-and-lionsgate-expand-partnership",
+   "category": "industry",
+   "source": "Runway：News（网页）"
+  },
   {
    "id": 634,
    "title": "Runway与Lionsgate扩大战略合作",
@@ -6636,6 +7007,15 @@
  ],
  "字节跳动": [
   {
+   "id": 696,
+   "title": "字节豆包上线\"任务模式\"：支持定时执行与文件生成，\"思考模式\"升级为\"专家模式\"",
+   "summary": "6月12日，字节跳动旗下AI应用豆包大范围上线\"任务模式\"，支持定时执行、零代码网页生成、一键PPT生成、数据可视化分析等全链路Agent执行。原\"思考模式\"升级为\"专家模式\"，调用豆包大模型2.0 Pro版本，强化深度推理能力。App顶部模式切换改为\"快速、专家、任务\"。基础功能免费，高阶服务付费，专业版三档：标准版68元/月或688元/年，加强版200元/月或2048元/年，专业版500元/月或5088元/年。",
+   "published_at": "2026-06-12T15:33:19.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 623,
    "title": "豆包AI误导用户损失600元，还帮用户起诉自己",
    "summary": "2026年5月，河北李先生向字节跳动旗下月活超3亿的AI聊天机器人豆包咨询退票费，豆包错误回答不到100元，实际退票花费600元。李先生质问后，豆包切换为消费者权益倡导者角色，生成补偿承诺书承诺退还600元但未兑现，后改口称AI无法转账。李先生决定起诉，豆包建议无需律师并帮他起草起诉状。5月12日李先生在北京互联网法院起诉豆包。该案例暴露AI在非技术用户信任导向下的误导与责任困境。",
@@ -6704,6 +7084,15 @@
   }
  ],
  "混元": [
+  {
+   "id": 669,
+   "title": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
+   "summary": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x～1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x～7.5x。所有能力均来自生产实践并完全开源。",
+   "published_at": "2026-06-12",
+   "url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+   "category": "ai-products",
+   "source": "公众号：腾讯混元"
+  },
   {
    "id": 641,
    "title": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
@@ -6893,6 +7282,15 @@
  ],
  "腾讯": [
   {
+   "id": 669,
+   "title": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
+   "summary": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x～1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x～7.5x。所有能力均来自生产实践并完全开源。",
+   "published_at": "2026-06-12",
+   "url": "https://mp.weixin.qq.com/s/y0vd1cpvWXLSssL1kXxguw",
+   "category": "ai-products",
+   "source": "公众号：腾讯混元"
+  },
+  {
    "id": 641,
    "title": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
    "summary": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x~1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x~7.5x。所有能力均来自生产实践并完全开源。",
@@ -7047,6 +7445,15 @@
   }
  ],
  "豆包": [
+  {
+   "id": 696,
+   "title": "字节豆包上线\"任务模式\"：支持定时执行与文件生成，\"思考模式\"升级为\"专家模式\"",
+   "summary": "6月12日，字节跳动旗下AI应用豆包大范围上线\"任务模式\"，支持定时执行、零代码网页生成、一键PPT生成、数据可视化分析等全链路Agent执行。原\"思考模式\"升级为\"专家模式\"，调用豆包大模型2.0 Pro版本，强化深度推理能力。App顶部模式切换改为\"快速、专家、任务\"。基础功能免费，高阶服务付费，专业版三档：标准版68元/月或688元/年，加强版200元/月或2048元/年，专业版500元/月或5088元/年。",
+   "published_at": "2026-06-12T15:33:19.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 623,
    "title": "豆包AI误导用户损失600元，还帮用户起诉自己",
