@@ -86,6 +86,51 @@
  ],
  "Anthropic": [
   {
+   "id": 740,
+   "title": "Anthropic 秘密申请上市，估值 9650 亿美元",
+   "summary": "Anthropic，这家估值达 9650 亿美元的 AI 巨头、史上增长最快的初创公司之一，在秘密提交 IPO 申请后，再次投下重磅炸弹。",
+   "published_at": "2026-06-13T11:00:00.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 744,
+   "title": "SemiAnalysis 洞察 Token 经济：200 美元 AI 订阅榨出 70 倍用量",
+   "summary": "SemiAnalysis 购买了 Anthropic 和 OpenAI 的全部订阅方案，模拟高强度编码任务直至触及每周上限。月费 200 美元的 Claude Max 20x 方案，按 API 价格换算最高可消耗约值 8000 美元的 token；ChatGPT Pro 20x 方案对应最高约值 14000 美元的 token。用户通过订阅可获取 40 至 70 倍的 API 价值，该机构指出这种价格体系在重度用户持续榨满上限后可能难以长期维持。",
+   "published_at": "2026-06-13T06:09:26.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 745,
+   "title": "Anthropic的安全警告可能适得其反--政府已撤回其最强大AI",
+   "summary": "Anthropic对政府撤回其最强大AI模型表达不满，称仅基于一个狭窄的潜在越狱发现就召回已部署给数亿用户的商业模型不合理。",
+   "published_at": "2026-06-13T02:26:30.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 730,
+   "title": "TCS与Anthropic合作，将Claude引入受监管行业",
+   "summary": "Anthropic宣布与塔塔咨询服务（TCS）合作。TCS将向56个国家的5万名员工提供Claude，并为金融、医疗等受监管行业客户构建基于Claude的产品，同时加入Claude Partner Network。作为“客户零号”，TCS将在自身工程、财务、法律、营销和销售团队中率先使用Claude，并组建专门团队为客户设计和运维Claude系统。具体用例包括：Diligenta用Claude改善2200万保单持有人的体验；银行产品团队用Claude Code提升软件工程效率；工程团队贡献可复用技能和插件；TCS iON提供Claude培训与认证。",
+   "published_at": "2026-06-13",
+   "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 736,
+   "title": "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业",
+   "summary": "Anthropic对近5.2万美国人调查显示：48%将治愈癌症等疾病列为首要期望，36%希望AI帮助残障人士。64%担忧AI导致失业，56%担忧认知依赖，52%担忧信息误导。超70%支持政府监管，最关注隐私（56%）、儿童安全（52%）和责任归属（49%）。仅15%信任AI公司决策。多数议题上观点不因党派或地域严重分裂。调查于2025年11-12月由YouGov线上执行并加权至人口普查基准。",
+   "published_at": "2026-06-13",
+   "url": "https://www.anthropic.com/news/anthropic-public-record",
+   "category": "tip",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
    "id": 694,
    "title": "Anthropic首次公众调查：近半美国人盼AI治愈疾病，超六成担忧失业",
    "summary": "Anthropic对近5.2万美国人调查显示：48%将治愈癌症等疾病列为首要期望，36%希望AI帮助残障人士。64%担忧AI导致失业，56%担忧认知依赖，52%担忧信息误导。超70%支持政府监管，最关注隐私（56%）、儿童安全（52%）和责任归属（49%）。仅15%信任AI公司决策。多数议题上观点不因党派或地域严重分裂。调查于2025年11-12月由YouGov线上执行并加权至人口普查基准。",
@@ -646,6 +691,15 @@
  ],
  "Apple": [
   {
+   "id": 722,
+   "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
+   "summary": "苹果在 iOS 27 中优化健康 App，将列表改为卡片布局并增加导航栏。新增视觉智能营养识别，用户通过相机 Siri 模式拍摄食物可获取加工程度、蛋白质、含糖量等信息及营养价值评级，不提供精确卡路里，需 iPhone 15 Pro 及以上。经期追踪扩展支持围绝经期，可分析长期周期异常模式并推送提醒与指导。Fitness+ 新增围绝经期和绝经期课程。数据同步速度提升，GymKit 扩展至 iPhone，无需 Apple Watch 即可与健身设备配对同步数据。",
+   "published_at": "2026-06-13",
+   "url": "https://www.ithome.com/0/963/302.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 701,
    "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
    "summary": "苹果在 iOS 27 中优化健康 App，将列表改为卡片布局并增加导航栏。新增视觉智能营养识别，用户通过相机 Siri 模式拍摄食物可获取加工程度、蛋白质、含糖量等信息及营养价值评级，不提供精确卡路里，需 iPhone 15 Pro 及以上。经期追踪扩展支持围绝经期，可分析长期周期异常模式并推送提醒与指导。Fitness+ 新增围绝经期和绝经期课程。数据同步速度提升，GymKit 扩展至 iPhone，无需 Apple Watch 即可与健身设备配对同步数据。",
@@ -755,6 +809,51 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 727,
+   "title": "Claude Code v2.1.175 发布：新增 enforceAvailableModels 管理设置",
+   "summary": "Claude Code v2.1.175 新增 enforceAvailableModels 管理设置。启用该设置后，availableModels 允许列表也会约束 Default 模型——若 Default 模型解析到被禁用的模型，则自动回退至第一个允许的模型；用户或项目设置无法再扩大受管理的 availableModels 列表。",
+   "published_at": "2026-06-13",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.175",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 728,
+   "title": "Claude Code v2.1.174 发布",
+   "summary": "新增 `wheelScrollAccelerationEnabled` 设置，全屏禁用鼠标滚轮加速。修复 /model 选择器：Opus 在 Max/Team Premium/Enterprise 独立行，Sonnet 在 Pro/Team，Opus 在 API 按量付费账户；修复固定 Sonnet 版本时的硬编码标签；企业账户误显示积分横幅；Bedrock GovCloud 区域前缀错误导致 400 错误；后台会话继承另一会话环境变量；macOS/Linux 退出时 1-2 秒暂停；git co-author 模型名错误；/advisor 预选被 availableModels 屏蔽；skill 热重载仅发送变更；Workflow…",
+   "published_at": "2026-06-13",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.174",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 729,
+   "title": "Claude Code v2.1.176 发布",
+   "summary": "Claude Code v2.1.176 更新：会话标题现按对话语言生成；新增 footerLinksRegexes 设置支持正则匹配页脚行链接徽章；优化 Bedrock 凭证缓存。修复多项问题：环境变量不可再绕过 availableModels 限制；/fast 切换至白名单外模型时拒绝；auto 模式退化为可用 Opus 模型；修正路径 hook 条件匹配；修复 Linux 沙箱内符号链接启动问题；修复 tmux 内 SSH 剪贴板问题；修复 Remote Control 多项连接问题。",
+   "published_at": "2026-06-13",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.176",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 730,
+   "title": "TCS与Anthropic合作，将Claude引入受监管行业",
+   "summary": "Anthropic宣布与塔塔咨询服务（TCS）合作。TCS将向56个国家的5万名员工提供Claude，并为金融、医疗等受监管行业客户构建基于Claude的产品，同时加入Claude Partner Network。作为“客户零号”，TCS将在自身工程、财务、法律、营销和销售团队中率先使用Claude，并组建专门团队为客户设计和运维Claude系统。具体用例包括：Diligenta用Claude改善2200万保单持有人的体验；银行产品团队用Claude Code提升软件工程效率；工程团队贡献可复用技能和插件；TCS iON提供Claude培训与认证。",
+   "published_at": "2026-06-13",
+   "url": "https://www.anthropic.com/news/tcs-anthropic-partnership",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 733,
+   "title": "小互开源公众号自动排版技能组合",
+   "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
+   "published_at": "2026-06-13",
+   "url": "https://x.com/xiaohu/status/2065278092441268246",
+   "category": "tip",
+   "source": "X：小互 (@xiaohu)"
+  },
   {
    "id": 699,
    "title": "小互开源公众号自动排版技能组合",
@@ -1303,6 +1402,42 @@
   }
  ],
  "Codex": [
+  {
+   "id": 739,
+   "title": "/architect：减少80%的Fable token，Fable负责协调/审核，Codex负责构建",
+   "summary": "/architect项目将Fable token减少80%，由Fable进行协调和审核，Codex负责构建任务。",
+   "published_at": "2026-06-13T16:46:05.572Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 725,
+   "title": "OpenAI Codex 推出速率重置攒存功能",
+   "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。 从今天起，我们开始推出将速率限制重置保留到以后使用的功能。 我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
+   "published_at": "2026-06-13",
+   "url": "https://x.com/OpenAI/status/2065225362544726371",
+   "category": "ai-products",
+   "source": "X：OpenAI (@OpenAI)"
+  },
+  {
+   "id": 726,
+   "title": "Codex 推出浏览器开发者模式",
+   "summary": "为 Chrome 和 Codex 内置浏览器引入开发者模式。 Codex 可以使用 Chrome DevTools 协议（CDP）来调试浏览器问题，通过分析 JavaScript 性能、检查控制台输出、网络流量和页面状态。",
+   "published_at": "2026-06-13",
+   "url": "https://x.com/OpenAIDevs/status/2065226355495895521",
+   "category": "ai-products",
+   "source": "X：OpenAI Developers (@OpenAIDevs)"
+  },
+  {
+   "id": 733,
+   "title": "小互开源公众号自动排版技能组合",
+   "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
+   "published_at": "2026-06-13",
+   "url": "https://x.com/xiaohu/status/2065278092441268246",
+   "category": "tip",
+   "source": "X：小互 (@xiaohu)"
+  },
   {
    "id": 699,
    "title": "小互开源公众号自动排版技能组合",
@@ -2577,6 +2712,15 @@
  ],
  "Google": [
   {
+   "id": 731,
+   "title": "Google Research研究：AI如何帮助用户理解皮肤问题",
+   "summary": "Google Research 在《JAMA Dermatology》发表两项研究，探索 AI 帮助普通人理解自身皮肤问题。一项涉及 2345 名参与者的定量研究显示，AI 辅助显著提升了用户识别皮肤疾病名称的能力，并影响了其就医或自我护理的下一步决策。另一项混合方法研究对比了用户通过 AI 工具与医生对话获取的认知。这些工作基于此前开发的 AI 鉴别诊断模型和 SCIN 数据集，旨在通过高质量信息支持皮肤健康决策。",
+   "published_at": "2026-06-13",
+   "url": "https://research.google/blog/research-into-how-ai-can-help-users-understand-skin-conditions",
+   "category": "paper",
+   "source": "Google Research：Blog（网页）"
+  },
+  {
    "id": 672,
    "title": "mlx-vlm v0.6.3 发布，Day-0 支持 Google DeepMind DiffusionGemma 和 Cohere North Mini Code 1.0",
    "summary": "mlx-vlm v0.6.3 上线，首发支持 DiffusionGemma 和 North Mini Code 1.0。DiffusionGemma 采用全新架构：以 256 token 块为单位并行生成、双向注意力、迭代自纠错；26B MoE 仅激活 3.8B，量化后 18GB 即可运行。North Mini Code 1.0 为 30B MoE，仅激活 3B，BF16 下约 66 tok/s。两款模型均通过深度合作实现 Day-0 MLX 支持，可在 Mac 本地运行。可通过 `uv pip install -U mlx-vlm` 安装体验。",
@@ -3303,10 +3447,28 @@
  ],
  "HuggingFace": [
   {
+   "id": 720,
+   "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
+   "summary": "MiniMax 发布开源权重模型 M3，约 428B 总参数、23B 激活参数，已上传 HuggingFace。该模型融合三种前沿能力：编码与智能体方面达 59.0% SWE-Bench Pro、66.0% Terminal Bench 2.1、34.8% SWE-fficiency、28.8% KernelBench Hard、74.2% MCP Atlas；采用 MiniMax 稀疏注意力将上下文窗口扩展至 1M token；原生多模态。同步上线 MiniMax Code 工具及 API 平台。权重与技术报告预计约 10 天后发布。",
+   "published_at": "2026-06-13",
+   "url": "https://x.com/MiniMax_AI/status/2065436935188058208",
+   "category": "ai-models",
+   "source": "X：MiniMax (@MiniMax_AI)"
+  },
+  {
    "id": 697,
    "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
    "summary": "MiniMax 发布开源权重模型 M3，约 428B 总参数、23B 激活参数，已上传 HuggingFace。该模型融合三种前沿能力：编码与智能体方面达 59.0% SWE-Bench Pro、66.0% Terminal Bench 2.1、34.8% SWE-fficiency、28.8% KernelBench Hard、74.2% MCP Atlas；采用 MiniMax 稀疏注意力将上下文窗口扩展至 1M token；原生多模态。同步上线 MiniMax Code 工具及 API 平台。权重与技术报告预计约 10 天后发布。",
    "published_at": "2026-06-12T14:11:53.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 751,
+   "title": "inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型",
+   "summary": "VISTA-4B 是基于 Qwen3.5-4B 骨干的 GUI 定位模型，输入截图与自然语言指令，输出归一化 0-1000 坐标。训练采用视图一致 GRPO 和自验证交叉视图锚定。在 GUI 定位基准上，SSPro 得分 64.2（相比 GRPO-4B 提升 2.0），SSV2 得分 93.8（下降 0.4），OSWorld-G 得分 61.2（提升 1.3），OSWorld-G-R 得分 69.7（提升 0.5）。模型已开源在 HuggingFace，推荐使用提示词并返回 【x，y】 格式坐标。",
+   "published_at": "2026-06-12T08:59:41.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
@@ -3567,6 +3729,15 @@
  ],
  "Meta": [
   {
+   "id": 742,
+   "title": "扎克伯格承认 Meta AI 转型\"脱轨\"：裁员 10%、转岗 7000 人后组织调整过快",
+   "summary": "路透社披露的 Meta 内部备忘录显示，CEO 扎克伯格承认公司在 AI 转型中组织调整节奏过快，带来员工安置、管理跨度等问题，预计未来\"几乎肯定会犯更多错误\"。Meta 今年 5 月已裁减全球 10% 员工，并将 7000 人转入 AI 相关新项目。为缓解协作问题，公司将增加团队建设预算，7 月举办黑客松。新成立的应用 AI 工程部门个人贡献者与管理者比例最高达 50：1。扎克伯格重申今年不再全公司裁员。",
+   "published_at": "2026-06-13T06:49:25.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 690,
    "title": "Codex Goal指令生成Skill发布：一句话需求转目标",
    "summary": "针对如何给Codex写Goal指令的问题，作者发布了一个Skill，可将一句话需求自动转化为目标，实现“睡前写指令、模型自动开发、第二天收菜”。安装命令：`npx skills add joeseesun/qiaomu-goal-meta-skill`。源码免费开源（见评论区），旨在简化4w字文档的阅读负担。",
@@ -3808,6 +3979,15 @@
   }
  ],
  "MiniMax": [
+  {
+   "id": 720,
+   "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
+   "summary": "MiniMax 发布开源权重模型 M3，约 428B 总参数、23B 激活参数，已上传 HuggingFace。该模型融合三种前沿能力：编码与智能体方面达 59.0% SWE-Bench Pro、66.0% Terminal Bench 2.1、34.8% SWE-fficiency、28.8% KernelBench Hard、74.2% MCP Atlas；采用 MiniMax 稀疏注意力将上下文窗口扩展至 1M token；原生多模态。同步上线 MiniMax Code 工具及 API 平台。权重与技术报告预计约 10 天后发布。",
+   "published_at": "2026-06-13",
+   "url": "https://x.com/MiniMax_AI/status/2065436935188058208",
+   "category": "ai-models",
+   "source": "X：MiniMax (@MiniMax_AI)"
+  },
   {
    "id": 697,
    "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
@@ -4685,6 +4865,51 @@
  ],
  "OpenAI": [
   {
+   "id": 744,
+   "title": "SemiAnalysis 洞察 Token 经济：200 美元 AI 订阅榨出 70 倍用量",
+   "summary": "SemiAnalysis 购买了 Anthropic 和 OpenAI 的全部订阅方案，模拟高强度编码任务直至触及每周上限。月费 200 美元的 Claude Max 20x 方案，按 API 价格换算最高可消耗约值 8000 美元的 token；ChatGPT Pro 20x 方案对应最高约值 14000 美元的 token。用户通过订阅可获取 40 至 70 倍的 API 价值，该机构指出这种价格体系在重度用户持续榨满上限后可能难以长期维持。",
+   "published_at": "2026-06-13T06:09:26.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 746,
+   "title": "OpenAI 遭多州总检察长联合调查",
+   "summary": "OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。",
+   "published_at": "2026-06-13T00:27:02.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 725,
+   "title": "OpenAI Codex 推出速率重置攒存功能",
+   "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。 从今天起，我们开始推出将速率限制重置保留到以后使用的功能。 我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
+   "published_at": "2026-06-13",
+   "url": "https://x.com/OpenAI/status/2065225362544726371",
+   "category": "ai-products",
+   "source": "X：OpenAI (@OpenAI)"
+  },
+  {
+   "id": 737,
+   "title": "OpenAI 推出面向新时代工作的新 Academy 课程",
+   "summary": "OpenAI 发布三门 Academy 课程，帮助用户掌握实用 AI 技能、创建可重复工作流，并在日常工作中应用 AI 智能体。",
+   "published_at": "2026-06-13",
+   "url": "https://openai.com/index/academy-courses-applying-ai-at-work",
+   "category": "tip",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 750,
+   "title": "OpenAI 推出面向新时代工作的新 Academy 课程",
+   "summary": "OpenAI 发布三门 Academy 课程，帮助用户掌握实用 AI 技能、创建可重复工作流，并在日常工作中应用 AI 智能体。",
+   "published_at": "2026-06-12T10:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 704,
    "title": "OpenAI Codex 推出速率重置攒存功能",
    "summary": "我们听说您希望能在自己方便的时候使用 Codex 速率限制重置。\n从今天起，我们开始推出将速率限制重置保留到以后使用的功能。\n我们从 Go、Plus、Pro 和 Business 用户开始，每人提供一次免费重置：",
@@ -5346,6 +5571,15 @@
  ],
  "OpenClaw": [
   {
+   "id": 733,
+   "title": "小互开源公众号自动排版技能组合",
+   "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
+   "published_at": "2026-06-13",
+   "url": "https://x.com/xiaohu/status/2065278092441268246",
+   "category": "tip",
+   "source": "X：小互 (@xiaohu)"
+  },
+  {
    "id": 699,
    "title": "小互开源公众号自动排版技能组合",
    "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
@@ -5446,6 +5680,33 @@
   }
  ],
  "OpenRouter": [
+  {
+   "id": 738,
+   "title": "如何在OpenRouter上获得最低成本的LLM推理",
+   "summary": "在OpenRouter上追加`:floor`可获取最便宜提供商，通过`max_price`设定花费上限，并可免费使用20多个零成本模型。同时需注意避免计费陷阱。",
+   "published_at": "2026-06-13",
+   "url": "https://openrouter.ai/blog/tutorials/how-to-get-the-lowest-cost-llm-inference-on-openrouter",
+   "category": "tip",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
+  {
+   "id": 748,
+   "title": "Hermes Agent 在 OpenRouter 上的使用指南：设置、模型与路由",
+   "summary": "Hermes Agent 已通过 OpenRouter 处理超过 17 万亿 tokens。使用指南包括设置流程、选择支持 64K 上下文窗口的模型，以及调整路由策略以兼顾成本与可靠性。",
+   "published_at": "2026-06-12T16:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 749,
+   "title": "如何在OpenRouter上获得最低成本的LLM推理",
+   "summary": "在OpenRouter上追加`：floor`可获取最便宜提供商，通过`max_price`设定花费上限，并可免费使用20多个零成本模型。同时需注意避免计费陷阱。",
+   "published_at": "2026-06-12T16:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 671,
    "title": "OpenRouter 基准探索器：10项帕累托曲线",
@@ -5749,6 +6010,15 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 751,
+   "title": "inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型",
+   "summary": "VISTA-4B 是基于 Qwen3.5-4B 骨干的 GUI 定位模型，输入截图与自然语言指令，输出归一化 0-1000 坐标。训练采用视图一致 GRPO 和自验证交叉视图锚定。在 GUI 定位基准上，SSPro 得分 64.2（相比 GRPO-4B 提升 2.0），SSV2 得分 93.8（下降 0.4），OSWorld-G 得分 61.2（提升 1.3），OSWorld-G-R 得分 69.7（提升 0.5）。模型已开源在 HuggingFace，推荐使用提示词并返回 【x，y】 格式坐标。",
+   "published_at": "2026-06-12T08:59:41.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 665,
    "title": "Bebop：通过带拒绝采样的多token预测加速RL训练",
@@ -6114,6 +6384,15 @@
   }
  ],
  "Qwen3.5": [
+  {
+   "id": 751,
+   "title": "inclusionAI 发布 VISTA-4B GUI 定位视觉语言模型",
+   "summary": "VISTA-4B 是基于 Qwen3.5-4B 骨干的 GUI 定位模型，输入截图与自然语言指令，输出归一化 0-1000 坐标。训练采用视图一致 GRPO 和自验证交叉视图锚定。在 GUI 定位基准上，SSPro 得分 64.2（相比 GRPO-4B 提升 2.0），SSV2 得分 93.8（下降 0.4），OSWorld-G 得分 61.2（提升 1.3），OSWorld-G-R 得分 69.7（提升 0.5）。模型已开源在 HuggingFace，推荐使用提示词并返回 【x，y】 格式坐标。",
+   "published_at": "2026-06-12T08:59:41.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 665,
    "title": "Bebop：通过带拒绝采样的多token预测加速RL训练",
@@ -7007,6 +7286,15 @@
  ],
  "字节跳动": [
   {
+   "id": 724,
+   "title": "字节豆包上线“任务模式”：支持定时执行与文件生成，“思考模式”升级为“专家模式”",
+   "summary": "6月12日，字节跳动旗下AI应用豆包大范围上线“任务模式”，支持定时执行、零代码网页生成、一键PPT生成、数据可视化分析等全链路Agent执行。原“思考模式”升级为“专家模式”，调用豆包大模型2.0 Pro版本，强化深度推理能力。App顶部模式切换改为“快速、专家、任务”。基础功能免费，高阶服务付费，专业版三档：标准版68元/月或688元/年，加强版200元/月或2048元/年，专业版500元/月或5088元/年。",
+   "published_at": "2026-06-13",
+   "url": "https://www.ithome.com/0/963/725.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 696,
    "title": "字节豆包上线\"任务模式\"：支持定时执行与文件生成，\"思考模式\"升级为\"专家模式\"",
    "summary": "6月12日，字节跳动旗下AI应用豆包大范围上线\"任务模式\"，支持定时执行、零代码网页生成、一键PPT生成、数据可视化分析等全链路Agent执行。原\"思考模式\"升级为\"专家模式\"，调用豆包大模型2.0 Pro版本，强化深度推理能力。App顶部模式切换改为\"快速、专家、任务\"。基础功能免费，高阶服务付费，专业版三档：标准版68元/月或688元/年，加强版200元/月或2048元/年，专业版500元/月或5088元/年。",
@@ -7064,6 +7352,15 @@
   }
  ],
  "智谱": [
+  {
+   "id": 743,
+   "title": "智谱 GLM-5.2 全量开放，支持 1M 上下文且下周开源",
+   "summary": "GLM-5.2 是智谱迄今能力最强的开源模型，支持真正可用的 1M 上下文，在长程任务中继续保持领先，并被智谱称为最强的国产 Coding 模型。今晚 5：21 起面向 GLM Coding Plan 全量用户开放（覆盖 Lite、Pro、Max、团队版）。API 将于下周上线，模型下周正式开源，遵循 MIT 协议。",
+   "published_at": "2026-06-13T06:19:36.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 17,
    "title": "智谱：建议 A 股发行并在科创板上市",
@@ -7445,6 +7742,15 @@
   }
  ],
  "豆包": [
+  {
+   "id": 724,
+   "title": "字节豆包上线“任务模式”：支持定时执行与文件生成，“思考模式”升级为“专家模式”",
+   "summary": "6月12日，字节跳动旗下AI应用豆包大范围上线“任务模式”，支持定时执行、零代码网页生成、一键PPT生成、数据可视化分析等全链路Agent执行。原“思考模式”升级为“专家模式”，调用豆包大模型2.0 Pro版本，强化深度推理能力。App顶部模式切换改为“快速、专家、任务”。基础功能免费，高阶服务付费，专业版三档：标准版68元/月或688元/年，加强版200元/月或2048元/年，专业版500元/月或5088元/年。",
+   "published_at": "2026-06-13",
+   "url": "https://www.ithome.com/0/963/725.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
   {
    "id": 696,
    "title": "字节豆包上线\"任务模式\"：支持定时执行与文件生成，\"思考模式\"升级为\"专家模式\"",

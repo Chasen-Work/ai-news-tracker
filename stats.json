@@ -1,13 +1,13 @@
 {
- "total_items": 719,
+ "total_items": 752,
  "total_entities": 95,
- "total_dailies": 11,
+ "total_dailies": 12,
  "categories": {
-  "ai-products": 206,
-  "tip": 201,
-  "industry": 173,
-  "ai-models": 72,
-  "paper": 67
+  "tip": 215,
+  "ai-products": 214,
+  "industry": 179,
+  "ai-models": 76,
+  "paper": 68
  },
  "entity_types": {
   "company": 49,
@@ -16,23 +16,23 @@
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 20
+   "count": 22
   },
   {
    "name": "Hugging Face：Blog（RSS）",
-   "count": 16
+   "count": 17
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
    "count": 16
   },
   {
-   "name": "Bloomberg：Technology（RSS）",
+   "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
    "count": 13
   },
   {
-   "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 12
+   "name": "Bloomberg：Technology（RSS）",
+   "count": 13
   },
   {
    "name": "X：Rohan Paul (@rohanpaul_ai)",
@@ -43,15 +43,15 @@
    "count": 9
   },
   {
+   "name": "Anthropic：Newsroom（网页）",
+   "count": 7
+  },
+  {
    "name": "X：Kim (@kimmonismus)",
    "count": 6
   },
   {
-   "name": "X：Replit (@Replit)",
-   "count": 5
-  },
-  {
-   "name": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+   "name": "X：邵猛 (@shao__meng)",
    "count": 5
   }
  ],
@@ -102,8 +102,12 @@
   },
   {
    "date": "2026-06-12",
-   "count": 38
+   "count": 44
+  },
+  {
+   "date": "2026-06-13",
+   "count": 27
   }
  ],
- "updated_at": "2026-06-12T17:00:21Z"
+ "updated_at": "2026-06-13T17:00:15Z"
 }
