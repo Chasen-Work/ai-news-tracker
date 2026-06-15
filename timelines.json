@@ -86,6 +86,69 @@
  ],
  "Anthropic": [
   {
+   "id": 764,
+   "title": "白宫AI监管决定被指偏袒OpenAI与亚马逊",
+   "summary": "白宫周五做出的AI监管决定被指偏袒OpenAI、亚马逊等企业，同时对Anthropic施压不足24小时，缺乏透明度和事实依据。Gary Marcus、Dean W Ball及卡托研究所Kevin Frazier等专家指出，这种由少数人闭门快速决策的做法带有腐败嫌疑，可能促使其他国家加速发展\"主权AI\"甚至中国AI，并导致美国人才流失。Anthropic声明称政府应在法定程序中基于技术事实阻止不安全部署，而非当前方式。Marcus呼吁建立独立机构负责AI监管，确保公平、清晰、基于证据的执行。",
+   "published_at": "2026-06-14T16:15:35.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 767,
+   "title": "Anthropic 暂停新模型访问，印度辩论 AI 未来",
+   "summary": "Anthropic 暂停了新模型的访问权限，印度科技领袖围绕这一事件展开辩论，探讨其是否是对该国 AI 雄心的警示。",
+   "published_at": "2026-06-14T03:00:00.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 768,
+   "title": "Anthropic 上市前夕",
+   "summary": "Anthropic CEO Dario Amodei透露内部模型Mythos有上千漏洞，能黑银行、窃取国家机密；预言AI一到五年内砍掉一半入门级白领工作；称Claude已被美军用于对伊朗战争，涉及女校150人死亡拷问；解释离开OpenAI因信任崩塌；回怼黄仁勋末日营销指控；给出文明崩溃概率10%-25%。",
+   "published_at": "2026-06-14T02:56:45.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 756,
+   "title": "Anthropic的安全警告可能适得其反——政府已撤回其最强大AI",
+   "summary": "Anthropic对政府撤回其最强大AI模型表达不满，称仅基于一个狭窄的潜在越狱发现就召回已部署给数亿用户的商业模型不合理。",
+   "published_at": "2026-06-14",
+   "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 758,
+   "title": "Anthropic 秘密申请上市，估值 9650 亿美元",
+   "summary": "Anthropic，这家估值达 9650 亿美元的 AI 巨头、史上增长最快的初创公司之一，在秘密提交 IPO 申请后，再次投下重磅炸弹。",
+   "published_at": "2026-06-14",
+   "url": "https://www.bloomberg.com/news/articles/2026-06-13/global-capitalism-bets-it-all-on-ai-future-that-alarms-voters",
+   "category": "industry",
+   "source": "Bloomberg：Technology（RSS）"
+  },
+  {
+   "id": 759,
+   "title": "亚马逊首席执行官与美国官员会谈引发对 Anthropic 模型的整治",
+   "summary": "亚马逊 CEO 与美国官员的会谈直接导致美国政府对 Anthropic 公司的 AI 模型采取整治行动。此次事件涉及对 Anthropic 旗下大语言模型的监管升级，具体措施及模型版本细节尚未披露。",
+   "published_at": "2026-06-14",
+   "url": "https://www.wsj.com/tech/ai/amazon-ceos-talks-with-u-s-officials-triggered-crackdown-on-anthropic-models-dcc90578",
+   "category": "industry",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 762,
+   "title": "SemiAnalysis 洞察 Token 经济：200 美元 AI 订阅榨出 70 倍用量",
+   "summary": "SemiAnalysis 购买了 Anthropic 和 OpenAI 的全部订阅方案，模拟高强度编码任务直至触及每周上限。月费 200 美元的 Claude Max 20x 方案，按 API 价格换算最高可消耗约值 8000 美元的 token；ChatGPT Pro 20x 方案对应最高约值 14000 美元的 token。用户通过订阅可获取 40 至 70 倍的 API 价值，该机构指出这种价格体系在重度用户持续榨满上限后可能难以长期维持。",
+   "published_at": "2026-06-14",
+   "url": "https://www.ithome.com/0/963/834.htm",
+   "category": "tip",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 740,
    "title": "Anthropic 秘密申请上市，估值 9650 亿美元",
    "summary": "Anthropic，这家估值达 9650 亿美元的 AI 巨头、史上增长最快的初创公司之一，在秘密提交 IPO 申请后，再次投下重磅炸弹。",
@@ -1402,6 +1465,15 @@
   }
  ],
  "Codex": [
+  {
+   "id": 763,
+   "title": "/architect：减少80%的Fable token，Fable负责协调/审核，Codex负责构建",
+   "summary": "/architect项目将Fable token减少80%，由Fable进行协调和审核，Codex负责构建任务。",
+   "published_at": "2026-06-14",
+   "url": "https://github.com/DanMcInerney/architect-loop",
+   "category": "tip",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
   {
    "id": 739,
    "title": "/architect：减少80%的Fable token，Fable负责协调/审核，Codex负责构建",
@@ -2721,6 +2793,15 @@
    "source": "Google Research：Blog（网页）"
   },
   {
+   "id": 772,
+   "title": "Google 起诉被指使用 AI 发送诈骗短信的中国网络犯罪团伙\"Outsider Enterprise\"",
+   "summary": "Google 起诉一个名为\"Outsider Enterprise\"的组织，指控其利用人工智能在两周内发送了 250 万条诈骗短信，导致数十万受害者上当。该组织被描述为中国网络犯罪团伙。",
+   "published_at": "2026-06-12T17:26:08.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 672,
    "title": "mlx-vlm v0.6.3 发布，Day-0 支持 Google DeepMind DiffusionGemma 和 Cohere North Mini Code 1.0",
    "summary": "mlx-vlm v0.6.3 上线，首发支持 DiffusionGemma 和 North Mini Code 1.0。DiffusionGemma 采用全新架构：以 256 token 块为单位并行生成、双向注意力、迭代自纠错；26B MoE 仅激活 3.8B，量化后 18GB 即可运行。North Mini Code 1.0 为 30B MoE，仅激活 3B，BF16 下约 66 tok/s。两款模型均通过深度合作实现 Day-0 MLX 支持，可在 Mac 本地运行。可通过 `uv pip install -U mlx-vlm` 安装体验。",
@@ -3728,6 +3809,24 @@
   }
  ],
  "Meta": [
+  {
+   "id": 769,
+   "title": "Meta 开始撤销 20 亿美元收购 Manus 的交易",
+   "summary": "据 TechCrunch 报道，Meta 已开始撤销对 Manus 的 20 亿美元收购交易，此前北京要求该交易必须反转。目前收购解除程序已启动。",
+   "published_at": "2026-06-14T00:03:49.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 760,
+   "title": "扎克伯格承认 Meta AI 转型“脱轨”：裁员 10%、转岗 7000 人后组织调整过快",
+   "summary": "路透社披露的 Meta 内部备忘录显示，CEO 扎克伯格承认公司在 AI 转型中组织调整节奏过快，带来员工安置、管理跨度等问题，预计未来“几乎肯定会犯更多错误”。Meta 今年 5 月已裁减全球 10% 员工，并将 7000 人转入 AI 相关新项目。为缓解协作问题，公司将增加团队建设预算，7 月举办黑客松。新成立的应用 AI 工程部门个人贡献者与管理者比例最高达 50:1。扎克伯格重申今年不再全公司裁员。",
+   "published_at": "2026-06-14",
+   "url": "https://www.ithome.com/0/963/858.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
   {
    "id": 742,
    "title": "扎克伯格承认 Meta AI 转型\"脱轨\"：裁员 10%、转岗 7000 人后组织调整过快",
@@ -4864,6 +4963,42 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 764,
+   "title": "白宫AI监管决定被指偏袒OpenAI与亚马逊",
+   "summary": "白宫周五做出的AI监管决定被指偏袒OpenAI、亚马逊等企业，同时对Anthropic施压不足24小时，缺乏透明度和事实依据。Gary Marcus、Dean W Ball及卡托研究所Kevin Frazier等专家指出，这种由少数人闭门快速决策的做法带有腐败嫌疑，可能促使其他国家加速发展\"主权AI\"甚至中国AI，并导致美国人才流失。Anthropic声明称政府应在法定程序中基于技术事实阻止不安全部署，而非当前方式。Marcus呼吁建立独立机构负责AI监管，确保公平、清晰、基于证据的执行。",
+   "published_at": "2026-06-14T16:15:35.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 768,
+   "title": "Anthropic 上市前夕",
+   "summary": "Anthropic CEO Dario Amodei透露内部模型Mythos有上千漏洞，能黑银行、窃取国家机密；预言AI一到五年内砍掉一半入门级白领工作；称Claude已被美军用于对伊朗战争，涉及女校150人死亡拷问；解释离开OpenAI因信任崩塌；回怼黄仁勋末日营销指控；给出文明崩溃概率10%-25%。",
+   "published_at": "2026-06-14T02:56:45.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 761,
+   "title": "OpenAI 遭多州总检察长联合调查",
+   "summary": "OpenAI 正被一个由多州总检察长组成的联盟调查，该联盟已向这家人工智能公司索取涵盖广泛主题的信息。",
+   "published_at": "2026-06-14",
+   "url": "https://www.bloomberg.com/news/articles/2026-06-13/openai-probed-by-coalition-of-state-attorneys-general",
+   "category": "industry",
+   "source": "Bloomberg：Technology（RSS）"
+  },
+  {
+   "id": 762,
+   "title": "SemiAnalysis 洞察 Token 经济：200 美元 AI 订阅榨出 70 倍用量",
+   "summary": "SemiAnalysis 购买了 Anthropic 和 OpenAI 的全部订阅方案，模拟高强度编码任务直至触及每周上限。月费 200 美元的 Claude Max 20x 方案，按 API 价格换算最高可消耗约值 8000 美元的 token；ChatGPT Pro 20x 方案对应最高约值 14000 美元的 token。用户通过订阅可获取 40 至 70 倍的 API 价值，该机构指出这种价格体系在重度用户持续榨满上限后可能难以长期维持。",
+   "published_at": "2026-06-14",
+   "url": "https://www.ithome.com/0/963/834.htm",
+   "category": "tip",
+   "source": "IT之家（RSS）"
+  },
   {
    "id": 744,
    "title": "SemiAnalysis 洞察 Token 经济：200 美元 AI 订阅榨出 70 倍用量",
@@ -7352,6 +7487,15 @@
   }
  ],
  "智谱": [
+  {
+   "id": 753,
+   "title": "智谱 GLM-5.2 全量开放，支持 1M 上下文且下周开源",
+   "summary": "GLM-5.2 是智谱迄今能力最强的开源模型，支持真正可用的 1M 上下文，在长程任务中继续保持领先，并被智谱称为最强的国产 Coding 模型。今晚 5:21 起面向 GLM Coding Plan 全量用户开放（覆盖 Lite、Pro、Max、团队版）。API 将于下周上线，模型下周正式开源，遵循 MIT 协议。",
+   "published_at": "2026-06-14",
+   "url": "https://mp.weixin.qq.com/s/LDrbtLM0wiCTJorvd5GY9w",
+   "category": "ai-models",
+   "source": "公众号：智谱（GLM）"
+  },
   {
    "id": 743,
    "title": "智谱 GLM-5.2 全量开放，支持 1M 上下文且下周开源",
