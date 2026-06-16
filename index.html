@@ -184,6 +184,26 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
 .src-badge-xwlb{background:rgba(217,119,6,0.10);color:#b45309}
 .src-badge-aihot{background:rgba(0,112,243,0.10);color:#0070f3}
 .aihot-section{margin-top:var(--space-4);padding-top:var(--space-3)}
+/* ── 关注按钮 ── */
+.follow-btn{display:inline-flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;width:24px;height:24px;border-radius:4px;transition:all .15s;flex-shrink:0;line-height:1;user-select:none;color:var(--meta);background:none;border:none;font-family:inherit}
+.follow-btn:hover{background:rgba(0,0,0,0.04);color:var(--fg)}
+.follow-btn.active{color:#f59e0b}
+.follow-btn.active:hover{background:rgba(245,158,11,0.08)}
+.news-item .title{display:flex;align-items:flex-start;gap:4px}
+.news-item .title-text{flex:1;min-width:0}
+/* ── 关注面板 ── */
+.follow-panel{position:fixed;bottom:20px;right:20px;z-index:300;background:#fff;border:none;box-shadow:0 0 0 1px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.10);border-radius:var(--radius-md);padding:var(--space-3);max-width:300px;font-size:var(--text-sm);display:none}
+.follow-panel.show{display:block}
+.follow-panel .fp-title{font-weight:600;color:var(--fg);margin-bottom:var(--space-2);font-size:var(--text-xs)}
+.follow-panel .fp-item{display:flex;align-items:center;justify-content:space-between;padding:3px 0;gap:6px}
+.follow-panel .fp-item .fp-tag{font-size:10px;padding:0 5px;border-radius:3px;background:rgba(0,0,0,0.04);color:var(--muted)}
+.follow-panel .fp-item .fp-text{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:var(--fg)}
+.follow-panel .fp-item .fp-del{cursor:pointer;font-size:14px;color:var(--meta);opacity:0;transition:opacity .15s}
+.follow-panel .fp-item:hover .fp-del{opacity:1}
+.follow-panel .fp-empty{padding:12px;text-align:center;color:var(--meta);font-size:var(--text-xs)}
+.fp-toggle{position:fixed;bottom:20px;right:20px;z-index:301;background:var(--accent);color:#fff;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.15);font-size:18px;border:none;font-family:inherit;transition:transform .15s}
+.fp-toggle:hover{transform:scale(1.1)}
+.fp-badge{position:absolute;top:-4px;right:-4px;background:var(--danger);color:#fff;font-size:10px;width:18px;height:18px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:600}
 .search-panel{display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:none;box-shadow:0 0 0 1px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.10);border-radius:var(--radius-md);max-height:420px;overflow-y:auto;z-index:200;padding:var(--space-2)}
 .search-panel.show{display:block}
 .search-panel .sp-empty{padding:24px;text-align:center;color:var(--meta);font-size:var(--text-sm)}
@@ -392,6 +412,10 @@ async function init() {
   });
 
   loadEcosystem();
+
+  // 初始化关注面板
+  updateFollowBadge();
+  renderFollowList();
 }
 
 function updateStats() {
@@ -1120,21 +1144,27 @@ function renderNews() {
   let html = '';
   sortedDates.forEach(date => {
     const items = byDate[date];
-    const dateDisplay = date.replace(/-/g,'年').replace(/-(?:\d{2})$/,'月$1日')
-      .replace(/^(\d{4})年0?(\d{1,2})月(\d{1,2})日$/, (_,y,m,d) => `${y}年${m}月${d}日`);
+    const dateDisplay = date.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_,y,m,d) => `${parseInt(y)}年${parseInt(m)}月${parseInt(d)}日`);
     html += `<div class="news-day">
       <div class="date">${dateDisplay} <span class="meta">${items.length}条</span></div>
-      ${items.map(item => `
+      ${items.map(item => {
+        const kw = extractKeyword(item.title);
+        const followed = isFollowed(kw, 'keyword');
+        return `
         <div class="news-item" onclick="this.classList.toggle('expanded')">
           <div class="title">
-            <span class="src-badge src-badge-${item.badge}">${item.badge === 'xwlb' ? '联播' : '动态'}</span>
-            ${item.title}
-            ${item.special ? '<span class="spec-tag">🔔 特别关注</span>' : ''}
-            ${item.url ? `<span class="spec-tag" onclick="event.stopPropagation();window.open('${item.url}','_blank')" style="cursor:pointer">🔗 原文</span>` : ''}
+            <button class="follow-btn ${followed ? 'active' : ''}" 
+              onclick="event.stopPropagation();toggleFollow('${kw.replace(/'/g, "\\'")}', 'keyword')"
+              title="${followed ? '取消关注' : '关注此话题'}">${followed ? '★' : '☆'}</button>
+            <span class="title-text">
+              <span class="src-badge src-badge-${item.badge}">${item.badge === 'xwlb' ? '联播' : '动态'}</span>
+              ${item.title}
+              ${item.special ? '<span class="spec-tag">🔔 特别关注</span>' : ''}
+              ${item.url ? `<span class="spec-tag" onclick="event.stopPropagation();window.open('${item.url}','_blank')" style="cursor:pointer">🔗 原文</span>` : ''}
+            </span>
           </div>
           <div class="summary">${item.summary || ''}</div>
-        </div>
-      `).join('')}
+        </div>`;}).join('')}
     </div>`;
   });
 
@@ -1168,6 +1198,73 @@ function renderSkills() {
   `).join('');
 }
 document.getElementById('sfScene')?.addEventListener('change', renderSkills);
+
+// ══════════════════════════════════════════════════════════════════
+// FOLLOW - 关注话题管理
+// ══════════════════════════════════════════════════════════════════
+function getFollowed() {
+  try { return JSON.parse(localStorage.getItem('followedTopics') || '[]'); }
+  catch(e) { return []; }
+}
+function saveFollowed(list) {
+  localStorage.setItem('followedTopics', JSON.stringify(list));
+  updateFollowBadge();
+  renderFollowList();
+}
+function updateFollowBadge() {
+  const list = getFollowed();
+  const badge = document.getElementById('fpBadge');
+  if (list.length > 0) { badge.textContent = list.length; badge.style.display = 'flex'; }
+  else { badge.style.display = 'none'; }
+}
+function renderFollowList() {
+  const list = getFollowed();
+  const el = document.getElementById('followList');
+  if (!list.length) {
+    el.innerHTML = '<div class="fp-empty">点击新闻条目上的 ☆ 即可关注话题</div>';
+    return;
+  }
+  el.innerHTML = list.map((item, i) => `
+    <div class="fp-item">
+      <span class="fp-tag">${item.type === 'keyword' ? '关键词' : item.type === 'category' ? '分类' : '来源'}</span>
+      <span class="fp-text">${item.text}</span>
+      <span class="fp-del" onclick="removeFollow(${i})">✕</span>
+    </div>
+  `).join('');
+}
+function removeFollow(index) {
+  const list = getFollowed();
+  list.splice(index, 1);
+  saveFollowed(list);
+  renderNews(); // 刷新新闻页，更新★状态
+}
+function toggleFollow(text, type) {
+  const list = getFollowed();
+  const idx = list.findIndex(i => i.text === text && i.type === type);
+  if (idx >= 0) {
+    list.splice(idx, 1);
+  } else {
+    list.push({ text, type });
+  }
+  saveFollowed(list);
+  renderNews(); // 刷新新闻页更新★状态
+  return idx < 0; // true = 已关注, false = 已取消
+}
+function isFollowed(text, type) {
+  return getFollowed().some(i => i.text === text && i.type === type);
+}
+function extractKeyword(title) {
+  // 提取标题中的主要关键词（首个有意义的名词短语）
+  let kw = title.replace(/^【[^】]+】/g, '').trim();
+  // 去掉常见后缀
+  kw = kw.replace(/[：:].*$/, '').replace(/发布|上线|推出|更新|引发.*$/, '').trim();
+  // 取前20个字
+  if (kw.length > 20) kw = kw.slice(0, 20);
+  return kw || title.slice(0, 15);
+}
+function toggleFollowPanel() {
+  document.getElementById('followPanel').classList.toggle('show');
+}
 
 // ══════════════════════════════════════════════════════════════════
 // SEARCH - 全局搜索
@@ -1331,5 +1428,14 @@ document.addEventListener('click', e => {
 // ── START ──────────────────────────────────────────────────────────
 init();
 </script>
+<!-- 关注面板 -->
+<div class="fp-toggle" id="fpToggle" onclick="toggleFollowPanel()" title="关注管理">
+  ★
+  <span class="fp-badge" id="fpBadge" style="display:none">0</span>
+</div>
+<div class="follow-panel" id="followPanel">
+  <div class="fp-title">📌 关注的话题</div>
+  <div id="followList"></div>
+</div>
 </body>
 </html>
