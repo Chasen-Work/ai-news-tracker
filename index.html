@@ -178,6 +178,31 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
 @media(max-width:900px){.header-inner{flex-wrap:wrap;gap:var(--space-2);padding:var(--space-3) var(--space-4)}.header-right{width:100%}.search-bar{max-width:100%}.header-brand .sub{display:none}}
 @media(max-width:768px){.header-inner{padding:var(--space-2) var(--space-4)}.header-brand h1{font-size:var(--text-lg)}.tab-bar{padding:0 var(--space-4)}.tab-btn{font-size:var(--text-xs);padding:8px 12px}.main{padding:var(--space-4)}.grid{grid-template-columns:1fr}.filters{flex-direction:column;align-items:stretch}.filters select{width:100%;min-width:auto}.brand-cards{flex-direction:column}.brand-card{min-width:auto;width:100%}.cat-tabs button{font-size:11px;padding:5px 10px}.col-toggles{flex-direction:column;max-height:180px;overflow-y:auto}.robot-table{font-family:var(--font-body);font-size:10px}.robot-table th,.robot-table td{padding:4px 5px;white-space:nowrap}.cmp-table{font-size:10px}.cmp-table th,.cmp-table td{padding:4px 6px}.quick-filters{flex-direction:column}.qf-group{width:100%}.news-day{padding:var(--space-4)}.stats-bar{gap:var(--space-2);font-size:11px;flex-wrap:wrap}.pagination{flex-wrap:wrap}.overlay-content{margin:20px auto;padding:var(--space-4);width:96%}}
 @media(max-width:480px){.header-brand h1{font-size:var(--text-base)}.tab-btn{font-size:11px;padding:6px 10px}.main{padding:var(--space-3)}.news-item .title{font-size:var(--text-xs)}}
+
+/* ── 搜索面板 ── */
+.search-panel{display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:none;box-shadow:0 0 0 1px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.10);border-radius:var(--radius-md);max-height:420px;overflow-y:auto;z-index:200;padding:var(--space-2)}
+.search-panel.show{display:block}
+.search-panel .sp-empty{padding:24px;text-align:center;color:var(--meta);font-size:var(--text-sm)}
+.search-panel .sp-group{margin-bottom:var(--space-2)}
+.search-panel .sp-group:last-child{margin-bottom:0}
+.search-panel .sp-header{font-size:11px;font-weight:600;color:var(--meta);padding:4px 10px;display:flex;align-items:center;gap:6px}
+.search-panel .sp-header .sp-badge{font-size:10px;padding:0 6px;border-radius:var(--radius-pill)}
+.search-panel .sp-item{display:flex;align-items:center;gap:8px;padding:6px 10px;cursor:pointer;border-radius:var(--radius-sm);transition:background var(--motion-fast);font-size:var(--text-sm)}
+.search-panel .sp-item:hover{background:rgba(0,0,0,0.04)}
+.search-panel .sp-item .sp-tag{font-size:10px;padding:1px 6px;border-radius:3px;font-weight:500;flex-shrink:0}
+.search-panel .sp-item .sp-title{color:var(--fg);flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.search-panel .sp-item .sp-source{font-size:11px;color:var(--meta);flex-shrink:0}
+.search-panel .sp-more{padding:4px 10px;font-size:11px;color:var(--accent);cursor:pointer;border-radius:var(--radius-sm);transition:background var(--motion-fast)}
+.search-panel .sp-more:hover{background:rgba(0,112,243,0.06)}
+/* Tag colors */
+.sp-tag-robot{background:rgba(0,112,243,0.10);color:#0070f3}
+.sp-tag-model{background:rgba(22,163,74,0.10);color:#16a34a}
+.sp-tag-news{background:rgba(217,119,6,0.10);color:#d97706}
+.sp-tag-skill{background:rgba(128,90,213,0.10);color:#805ad5}
+/* 高亮匹配词 */
+.sp-item em{font-style:normal;background:rgba(0,112,243,0.12);color:var(--accent);padding:0 2px;border-radius:2px}
+/* 搜索面板在手机上全屏 */
+@media(max-width:768px){.search-panel{position:fixed;top:56px;left:0;right:0;max-height:calc(100vh - 60px);border-radius:0;box-shadow:0 4px 24px rgba(0,0,0,0.15)}}
 </style>
 </head>
 <body>
@@ -191,6 +216,7 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
     <div class="header-center">
       <div class="search-bar">
         <input type="text" id="globalSearch" placeholder="搜索机器人、模型、新闻..." autocomplete="off">
+        <div class="search-panel" id="searchPanel"></div>
       </div>
     </div>
     <div class="header-right">
@@ -1076,6 +1102,146 @@ function renderSkills() {
   `).join('');
 }
 document.getElementById('sfScene')?.addEventListener('change', renderSkills);
+
+// ══════════════════════════════════════════════════════════════════
+// SEARCH - 全局搜索
+// ══════════════════════════════════════════════════════════════════
+function highlight(text, query) {
+  const q = query.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  return text.replace(new RegExp(q, 'gi'), m => `<em>${m}</em>`);
+}
+
+function doSearch(query) {
+  const panel = document.getElementById('searchPanel');
+  if (!query || query.trim().length < 1) {
+    panel.classList.remove('show');
+    panel.innerHTML = '';
+    return;
+  }
+  const q = query.trim().toLowerCase();
+  const results = { robot: [], model: [], news: [], skill: [] };
+
+  // Search robots: 厂商, 型号, 类型_一级, 类型_二级
+  (state.robots || []).forEach(r => {
+    const fields = [r['厂商'], r['型号'], r['类型_一级'], r['类型_二级']].filter(Boolean);
+    if (fields.some(f => f.toLowerCase().includes(q))) {
+      results.robot.push({
+        title: `${r['厂商']} ${r['型号']}`,
+        subtitle: r['类型_一级'] || '',
+        data: r
+      });
+    }
+  });
+
+  // Search models: model_name, vendor, capability_type
+  (state.models || []).forEach(m => {
+    const fields = [m.model_name, m.vendor, m.capability_type].filter(Boolean);
+    if (fields.some(f => f.toLowerCase().includes(q))) {
+      results.model.push({
+        title: m.model_name,
+        subtitle: m.vendor || '',
+        data: m
+      });
+    }
+  });
+
+  // Search news (xwlb): items title + summary
+  const days = state.news.days || [];
+  days.forEach(day => {
+    (day.industries || []).forEach(ind => {
+      (ind.items || []).forEach(item => {
+        const title = item.title || '';
+        const summary = item.summary || '';
+        if (title.toLowerCase().includes(q) || summary.toLowerCase().includes(q)) {
+          const dateStr = (day.date || '').replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3');
+          results.news.push({
+            title: title,
+            subtitle: `${dateStr} · ${ind.name}`,
+            data: item
+          });
+        }
+      });
+    });
+  });
+
+  // Search skills: name, desc
+  (state.skills || []).forEach(s => {
+    if ((s.name || '').toLowerCase().includes(q) || (s.desc || '').toLowerCase().includes(q)) {
+      results.skill.push({
+        title: s.name,
+        subtitle: s.scene === 'work' ? '工作' : s.scene === 'life' ? '生活' : '研究',
+        data: s
+      });
+    }
+  });
+
+  const total = results.robot.length + results.model.length + results.news.length + results.skill.length;
+  if (total === 0) {
+    panel.innerHTML = '<div class="sp-empty">没有找到 "<strong>' + query.trim() + '</strong>" 相关内容</div>';
+    panel.classList.add('show');
+    return;
+  }
+
+  // Group labels & limits
+  const groups = [
+    { key: 'robot', label: '机器人', tag: '机器人', cls: 'sp-tag-robot', tab: 'robots', limit: 5 },
+    { key: 'model', label: '模型', tag: '模型', cls: 'sp-tag-model', tab: 'models', limit: 5 },
+    { key: 'news', label: '新闻', tag: '新闻', cls: 'sp-tag-news', tab: 'news', limit: 5 },
+    { key: 'skill', label: '技能', tag: '技能', cls: 'sp-tag-skill', tab: 'skills', limit: 5 },
+  ];
+
+  let html = '';
+  groups.forEach(g => {
+    const items = results[g.key];
+    if (!items.length) return;
+    html += '<div class="sp-group">';
+    html += `<div class="sp-header"><span class="sp-badge ${g.cls}">${g.tag}</span> ${items.length}条</div>`;
+    items.slice(0, g.limit).forEach(item => {
+      const titleHtml = highlight(item.title, query.trim());
+      html += `<div class="sp-item" data-tab="${g.tab}" onclick="switchToTab('${g.tab}')">
+        <span class="sp-tag ${g.cls}">${g.tag}</span>
+        <span class="sp-title">${titleHtml}</span>
+        <span class="sp-source">${item.subtitle ? highlight(item.subtitle, query.trim()) : ''}</span>
+      </div>`;
+    });
+    if (items.length > g.limit) {
+      html += `<div class="sp-more" onclick="switchToTab('${g.tab}')">查看全部 ${items.length} 条 ›</div>`;
+    }
+    html += '</div>';
+  });
+
+  panel.innerHTML = html;
+  panel.classList.add('show');
+}
+
+function switchToTab(tabName) {
+  document.getElementById('searchPanel').classList.remove('show');
+  const btn = document.querySelector(`.tab-btn[data-tab="${tabName}"]`);
+  if (btn) btn.click();
+}
+
+// Search input debounce
+let searchTimer = null;
+document.getElementById('globalSearch').addEventListener('input', function() {
+  clearTimeout(searchTimer);
+  searchTimer = setTimeout(() => doSearch(this.value), 250);
+});
+
+// ESC关闭面板
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    document.getElementById('searchPanel').classList.remove('show');
+  }
+});
+
+// 点击外部关闭面板
+document.addEventListener('click', e => {
+  const panel = document.getElementById('searchPanel');
+  const input = document.getElementById('globalSearch');
+  if (!input.contains(e.target) && !panel.contains(e.target)) {
+    panel.classList.remove('show');
+  }
+});
 
 // ── START ──────────────────────────────────────────────────────────
 init();
