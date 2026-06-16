@@ -189,6 +189,15 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
 .follow-btn:hover{background:rgba(0,0,0,0.04);color:var(--fg)}
 .follow-btn.active{color:#f59e0b}
 .follow-btn.active:hover{background:rgba(245,158,11,0.08)}
+/* ── 标签分组 ── */
+.news-tag{margin-bottom:var(--space-2)}
+.news-tag.tag-followed{background:rgba(245,158,11,0.04);border-radius:var(--radius-md);padding:var(--space-1) 0}
+.tag-header{display:flex;align-items:center;gap:var(--space-2);padding:var(--space-1) var(--space-2);margin-bottom:var(--space-1)}
+.tag-header .tag-name{font-size:var(--text-xs);font-weight:600;color:var(--fg);letter-spacing:0.02em}
+.tag-header .tag-count{font-size:10px;color:var(--meta)}
+.tag-follow-btn{background:none;border:none;cursor:pointer;font-size:13px;color:var(--meta);padding:0;line-height:1;transition:color .15s;font-family:inherit}
+.tag-follow-btn:hover{color:var(--fg)}
+.tag-follow-btn.active{color:#f59e0b}
 .news-item .title{display:flex;align-items:flex-start;gap:4px}
 .news-item .title-text{flex:1;min-width:0}
 /* ── 关注面板 ── */
@@ -334,9 +343,7 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
 <!-- ══════════════ TAB 3: NEWS ══════════════ -->
 <div class="tab-content" id="tab-news">
   <div class="filters" id="newsFilters">
-    <label>来源：<select id="newsSource"><option value="all">全部</option><option value="xwlb">新闻联播</option><option value="aihot">AI动态</option></select></label>
-    <label>行业：<select id="newsIndustry"><option value="all">全部行业</option></select></label>
-    <label><input type="checkbox" id="newsSpecial"> 🔔 仅特别关注</label>
+    <label>标签：<select id="newsTag"><option value="all">全部标签</option></select></label>
   </div>
   <div id="newsContainer">
     <div class="vc-card" style="text-align:center;padding:40px;color:var(--meta)">加载新闻数据中...</div>
@@ -1066,94 +1073,143 @@ function renderModels() {
 }
 
 // ══════════════════════════════════════════════════════════════════
-// NEWS - 新闻联播 + AI动态 混合展示
+// NEWS - 统一标签体系
 // ══════════════════════════════════════════════════════════════════
-const AIHOT_CAT_NAMES = {
-  'tip': '技巧观点',
-  'ai-products': '产品发布',
-  'industry': '行业动态',
-  'ai-models': '模型发布',
-  'paper': '论文研究',
+// 统一标签（固定顺序，关注话题排最前面）
+const UNIFIED_TAGS = [
+  "科技/AI",     // ← 来自xwlb科技/产业 + AIHOT行业动态/产品发布/模型发布/论文
+  "时政/外交",
+  "经济/金融",
+  "国际动态",
+  "民生/社会",
+  "军事/国防",
+  "生态/环境",
+  "文化/教育",
+  "法治/治理",
+  "农业/农村",
+  "基础设施",
+  "体育/健康",
+  "技巧观点",   // ← 来自AIHOT tip
+];
+
+// 原始标签 → 统一标签 映射
+const TAG_MAP = {
+  // xwlb industries
+  "时政/外交": "时政/外交",
+  "经济/金融": "经济/金融",
+  "科技/产业": "科技/AI",
+  "民生/社会": "民生/社会",
+  "军事/国防": "军事/国防",
+  "国际动态": "国际动态",
+  "生态/环境": "生态/环境",
+  "文化/教育": "文化/教育",
+  "法治/治理": "法治/治理",
+  "农业/农村": "农业/农村",
+  "基础设施": "基础设施",
+  "体育/健康": "体育/健康",
+  // AIHOT categories
+  "industry": "科技/AI",
+  "ai-products": "科技/AI",
+  "ai-models": "科技/AI",
+  "paper": "科技/AI",
+  "tip": "技巧观点",
 };
 
 function renderNews() {
-  const src = document.getElementById('newsSource').value;
-  const ind = document.getElementById('newsIndustry').value;
-  const spec = document.getElementById('newsSpecial').checked;
+  const tagFilter = document.getElementById('newsTag').value;
 
-  // 收集行业到筛选器
-  const aihotCats = [...new Set((state.aihotItems||[]).map(i => i.category).filter(Boolean))];
-  const allInds = [...new Set([
-    ...(state.news.days||[]).flatMap(d=>(d.industries||[]).map(i=>i.name)),
-    ...aihotCats.map(c => AIHOT_CAT_NAMES[c] || c)
-  ])];
-  const sel = document.getElementById('newsIndustry');
-  if (sel.options.length <= 1) populateSelect('newsIndustry', allInds);
+  // 收集所有出现过的统一标签 -> 填充筛选器
+  const allTags = new Set();
+  (state.news.days || []).forEach(day =>
+    (day.industries || []).forEach(ind => allTags.add(TAG_MAP[ind.name] || ind.name))
+  );
+  (state.aihotItems || []).forEach(item =>
+    allTags.add(TAG_MAP[item.category] || '其他')
+  );
+  const sel = document.getElementById('newsTag');
+  if (sel.options.length <= 1) {
+    UNIFIED_TAGS.filter(t => allTags.has(t)).forEach(t => {
+      const opt = document.createElement('option');
+      opt.value = t; opt.textContent = t;
+      sel.appendChild(opt);
+    });
+  }
 
-  // 按日期合并：{ date: [item, item, ...] }
-  const byDate = {};
+  // 按日期+统一标签分组：{ date: { tag: [item, ...] } }
+  const byDateTag = {};
 
   // XWLB items
-  if (src === 'all' || src === 'xwlb') {
-    (state.news.days || []).forEach(day => {
-      const dateKey = day.date; // "20260615"
-      (day.industries || []).forEach(ind2 => {
-        if (ind !== 'all' && ind2.name !== ind) return;
-        if (spec && !ind2.special) return;
-        (ind2.items || []).forEach(item => {
-          const dateDisplay = dateKey.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3');
-          if (!byDate[dateDisplay]) byDate[dateDisplay] = [];
-          byDate[dateDisplay].push({
-            badge: 'xwlb',
-            title: item.title || '',
-            summary: item.summary || '',
-            special: item.special,
-            industry: ind2.name,
-          });
+  (state.news.days || []).forEach(day => {
+    const dateKey = day.date.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3');
+    (day.industries || []).forEach(ind => {
+      const unified = TAG_MAP[ind.name] || '其他';
+      if (tagFilter !== 'all' && unified !== tagFilter) return;
+      (ind.items || []).forEach(item => {
+        if (!byDateTag[dateKey]) byDateTag[dateKey] = {};
+        if (!byDateTag[dateKey][unified]) byDateTag[dateKey][unified] = [];
+        byDateTag[dateKey][unified].push({
+          badge: 'xwlb', title: item.title || '', summary: item.summary || '',
+          special: item.special, industry: unified,
         });
       });
     });
-  }
+  });
 
   // AIHOT items
-  if (src === 'all' || src === 'aihot') {
-    (state.aihotItems || []).forEach(item => {
-      const ts = item.published_at || '';
-      const date = ts.slice(0, 10); // "2026-06-16"
-      if (!date) return;
-      const cat = AIHOT_CAT_NAMES[item.category] || item.category || '';
-      if (ind !== 'all' && cat !== ind && item.category !== ind && AIHOT_CAT_NAMES[ind] !== cat && !Object.keys(AIHOT_CAT_NAMES).find(k => AIHOT_CAT_NAMES[k] === ind && k === item.category)) {
-        // Complex filter matching: try direct match, or map both ways
-        const catKeys = Object.keys(AIHOT_CAT_NAMES);
-        const indReverse = catKeys.find(k => AIHOT_CAT_NAMES[k] === ind);
-        if (item.category !== ind && item.category !== indReverse && cat !== ind) return;
-      }
-      if (!byDate[date]) byDate[date] = [];
-      byDate[date].push({
-        badge: 'aihot',
-        title: item.title || '',
-        summary: item.summary || '',
-        url: item.url || '',
-        industry: cat,
-      });
+  (state.aihotItems || []).forEach(item => {
+    const ts = item.published_at || '';
+    const date = ts.slice(0, 10);
+    if (!date) return;
+    const unified = TAG_MAP[item.category] || '其他';
+    if (tagFilter !== 'all' && unified !== tagFilter) return;
+    if (!byDateTag[date]) byDateTag[date] = {};
+    if (!byDateTag[date][unified]) byDateTag[date][unified] = [];
+    byDateTag[date][unified].push({
+      badge: 'aihot', title: item.title || '', summary: item.summary || '',
+      url: item.url || '', industry: unified,
     });
+  });
+
+  // 计算标签排序：关注的话题靠前，其余按 UNIFIED_TAGS 顺序
+  const followedCats = new Set(
+    getFollowed().filter(f => f.type === 'category').map(f => f.text)
+  );
+  function tagSortKey(tag) {
+    if (followedCats.has(tag)) return 0; // 关注靠前
+    const idx = UNIFIED_TAGS.indexOf(tag);
+    return idx >= 0 ? idx + 1 : 999;
   }
 
-  // 日期倒序渲染
-  const sortedDates = Object.keys(byDate).sort().reverse();
+  // 渲染
+  const sortedDates = Object.keys(byDateTag).sort().reverse();
   let html = '';
   sortedDates.forEach(date => {
-    const items = byDate[date];
+    const tags = Object.keys(byDateTag[date]).sort((a, b) => tagSortKey(a) - tagSortKey(b));
+    const total = tags.reduce((s, t) => s + byDateTag[date][t].length, 0);
     const dateDisplay = date.replace(/^(\d{4})-(\d{2})-(\d{2})$/, (_,y,m,d) => `${parseInt(y)}年${parseInt(m)}月${parseInt(d)}日`);
     html += `<div class="news-day">
-      <div class="date">${dateDisplay} <span class="meta">${items.length}条</span></div>
-      ${items.map(item => {
+      <div class="date">${dateDisplay} <span class="meta">共${total}条</span></div>`;
+
+    tags.forEach(tag => {
+      const items = byDateTag[date][tag];
+      const isCatFollowed = followedCats.has(tag);
+      html += `<div class="news-tag ${isCatFollowed ? 'tag-followed' : ''}">
+        <div class="tag-header">
+          <span class="tag-name">${tag}</span>
+          <span class="tag-count">${items.length}条</span>
+          <button class="tag-follow-btn ${isCatFollowed ? 'active' : ''}"
+            onclick="event.stopPropagation();toggleFollow('${tag}', 'category')"
+            title="${isCatFollowed ? '取消关注此分类' : '关注此分类'}">
+            ${isCatFollowed ? '★' : '☆'}
+          </button>
+        </div>`;
+
+      items.forEach(item => {
         const kw = extractKeyword(item.title);
         const followed = isFollowed(kw, 'keyword');
-        return `
-        <div class="news-item" onclick="this.classList.toggle('expanded')">
+        html += `<div class="news-item" onclick="this.classList.toggle('expanded')">
           <div class="title">
-            <button class="follow-btn ${followed ? 'active' : ''}" 
+            <button class="follow-btn ${followed ? 'active' : ''}"
               onclick="event.stopPropagation();toggleFollow('${kw.replace(/'/g, "\\'")}', 'keyword')"
               title="${followed ? '取消关注' : '关注此话题'}">${followed ? '★' : '☆'}</button>
             <span class="title-text">
@@ -1164,20 +1220,19 @@ function renderNews() {
             </span>
           </div>
           <div class="summary">${item.summary || ''}</div>
-        </div>`;}).join('')}
-    </div>`;
+        </div>`;
+      });
+      html += `</div>`;
+    });
+    html += `</div>`;
   });
 
   document.getElementById('newsContainer').innerHTML = html ||
     '<div class="empty-state"><h3>暂无匹配的新闻</h3></div>';
 }
-
 // 新闻筛选器事件绑定
 if (!window._newsListenersAttached) {
-  ['newsSource','newsIndustry'].forEach(id => {
-    document.getElementById(id).addEventListener('change', renderNews);
-  });
-  document.getElementById('newsSpecial').addEventListener('change', renderNews);
+  document.getElementById('newsTag').addEventListener('change', renderNews);
   window._newsListenersAttached = true;
 }
 
@@ -1335,7 +1390,7 @@ function doSearch(query) {
     if (title.toLowerCase().includes(q) || summary.toLowerCase().includes(q)) {
       const ts = item.published_at || '';
       const date = ts.slice(0, 10);
-      const cat = AIHOT_CAT_NAMES[item.category] || item.category || '';
+      const cat = TAG_MAP[item.category] || item.category || '';
       results.news.push({
         title: title,
         subtitle: `${date} · ${cat}`,
