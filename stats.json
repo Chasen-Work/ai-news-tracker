@@ -1,12 +1,12 @@
 {
- "total_items": 773,
+ "total_items": 789,
  "total_entities": 95,
- "total_dailies": 13,
+ "total_dailies": 14,
  "categories": {
-  "tip": 221,
-  "ai-products": 218,
-  "industry": 189,
-  "ai-models": 77,
+  "tip": 228,
+  "ai-products": 221,
+  "industry": 194,
+  "ai-models": 78,
   "paper": 68
  },
  "entity_types": {
@@ -47,12 +47,12 @@
    "count": 7
   },
   {
-   "name": "X：Kim (@kimmonismus)",
+   "name": "X：Vista (@vista8)",
    "count": 6
   },
   {
-   "name": "X：邵猛 (@shao__meng)",
-   "count": 5
+   "name": "X：Kim (@kimmonismus)",
+   "count": 6
   }
  ],
  "by_date": [
@@ -110,8 +110,12 @@
   },
   {
    "date": "2026-06-14",
-   "count": 17
+   "count": 18
+  },
+  {
+   "date": "2026-06-15",
+   "count": 15
   }
  ],
- "updated_at": "2026-06-14T17:00:16Z"
+ "updated_at": "2026-06-15T17:00:25Z"
 }

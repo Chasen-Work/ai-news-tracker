@@ -3,15 +3,22 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 76,
-  "last_seen": "2026-06-14T16:15:35.000Z"
+  "mentions": 80,
+  "last_seen": "2026-06-15T07:25:41.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 74,
-  "last_seen": "2026-06-14T16:15:35.000Z"
+  "mentions": 79,
+  "last_seen": "2026-06-15T07:25:41.000Z"
+ },
+ {
+  "id": 10,
+  "name": "NVIDIA",
+  "type": "company",
+  "mentions": 50,
+  "last_seen": "2026-06-15T15:43:04.000Z"
  },
  {
   "id": 47,
@@ -21,18 +28,11 @@
   "last_seen": "2026-06-13"
  },
  {
-  "id": 10,
-  "name": "NVIDIA",
-  "type": "company",
-  "mentions": 48,
-  "last_seen": "2026-06-10"
- },
- {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 47,
-  "last_seen": "2026-06-14"
+  "mentions": 48,
+  "last_seen": "2026-06-14T17:00:00.000Z"
  },
  {
   "id": 48,
@@ -45,8 +45,8 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 30,
-  "last_seen": "2026-06-12T08:59:41.000Z"
+  "mentions": 31,
+  "last_seen": "2026-06-15T00:00:00.000Z"
  },
  {
   "id": 46,
@@ -77,6 +77,13 @@
   "last_seen": "2026-06-12"
  },
  {
+  "id": 3,
+  "name": "MiniMax",
+  "type": "company",
+  "mentions": 20,
+  "last_seen": "2026-06-15T14:40:02.000Z"
+ },
+ {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
@@ -84,11 +91,11 @@
   "last_seen": "2026-06-10"
  },
  {
-  "id": 3,
-  "name": "MiniMax",
+  "id": 43,
+  "name": "Meta",
   "type": "company",
   "mentions": 19,
-  "last_seen": "2026-06-13"
+  "last_seen": "2026-06-15T07:25:41.000Z"
  },
  {
   "id": 24,
@@ -98,18 +105,11 @@
   "last_seen": "2026-06-12"
  },
  {
-  "id": 43,
-  "name": "Meta",
-  "type": "company",
-  "mentions": 17,
-  "last_seen": "2026-06-14T00:03:49.000Z"
- },
- {
   "id": 4,
   "name": "xAI",
   "type": "company",
-  "mentions": 14,
-  "last_seen": "2026-06-11T00:00:00.000Z"
+  "mentions": 15,
+  "last_seen": "2026-06-15T00:00:00.000Z"
  },
  {
   "id": 20,
@@ -490,6 +490,13 @@
   "last_seen": "2026-06-08T08:00:32.000Z"
  },
  {
+  "id": 180,
+  "name": "Qwen 3.6",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-06-15T00:00:00.000Z"
+ },
+ {
   "id": 256,
   "name": "qwen",
   "type": "model",
@@ -614,13 +621,6 @@
   "type": "company",
   "mentions": 1,
   "last_seen": "2026-06-01T05:00:41.000Z"
- },
- {
-  "id": 180,
-  "name": "Qwen 3.6",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-01T04:30:11.000Z"
  },
  {
   "id": 193,
