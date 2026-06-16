@@ -1057,104 +1057,86 @@ function renderNews() {
   const ind = document.getElementById('newsIndustry').value;
   const spec = document.getElementById('newsSpecial').checked;
 
-  // 收集AIHOT行业到筛选器
+  // 收集行业到筛选器
   const aihotCats = [...new Set((state.aihotItems||[]).map(i => i.category).filter(Boolean))];
   const allInds = [...new Set([
     ...(state.news.days||[]).flatMap(d=>(d.industries||[]).map(i=>i.name)),
     ...aihotCats.map(c => AIHOT_CAT_NAMES[c] || c)
   ])];
   const sel = document.getElementById('newsIndustry');
-  if (sel.options.length <= 1) {
-    populateSelect('newsIndustry', allInds);
-  }
+  if (sel.options.length <= 1) populateSelect('newsIndustry', allInds);
 
-  let html = '';
+  // 按日期合并：{ date: [item, item, ...] }
+  const byDate = {};
 
-  // ── XWLB section ──
+  // XWLB items
   if (src === 'all' || src === 'xwlb') {
-    const xwlbDays = state.news.days || [];
-    xwlbDays.forEach(day => {
-      let industries = day.industries || [];
-      if (ind !== 'all') industries = industries.filter(i => i.name === ind);
-      if (spec) industries = industries.filter(i => i.special);
-      if (!industries.length && !spec) return;
-
-      html += `<div class="news-day">
-        <div class="date">
-          <span class="src-badge src-badge-xwlb">联播</span>
-          ${day.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')}
-          <span class="meta">${day.total_items}条 · ${day.industry_count}个行业 ${day.special_count>0?' 🔔'+day.special_count+'条特别关注':''}</span>
-        </div>
-        ${industries.map(ind2 => `
-          <div class="news-industry">
-            <div class="ind-title">📌 ${ind2.name} <span class="count">${ind2.count}条${ind2.special?' 🔔':''}</span></div>
-            ${(ind2.items||[]).map(item => `
-              <div class="news-item" onclick="this.classList.toggle('expanded')">
-                <div class="title"><span class="src-badge src-badge-xwlb">联播</span>${item.title||''}${item.special?'<span class="spec-tag">🔔 特别关注</span>':''}</div>
-                <div class="summary">${item.summary||''}</div>
-              </div>
-            `).join('')}
-          </div>
-        `).join('')}
-      </div>`;
+    (state.news.days || []).forEach(day => {
+      const dateKey = day.date; // "20260615"
+      (day.industries || []).forEach(ind2 => {
+        if (ind !== 'all' && ind2.name !== ind) return;
+        if (spec && !ind2.special) return;
+        (ind2.items || []).forEach(item => {
+          const dateDisplay = dateKey.replace(/(\d{4})(\d{2})(\d{2})/, '$1-$2-$3');
+          if (!byDate[dateDisplay]) byDate[dateDisplay] = [];
+          byDate[dateDisplay].push({
+            badge: 'xwlb',
+            title: item.title || '',
+            summary: item.summary || '',
+            special: item.special,
+            industry: ind2.name,
+          });
+        });
+      });
     });
   }
 
-  // ── AIHOT section ──
+  // AIHOT items
   if (src === 'all' || src === 'aihot') {
-    const aihot = state.aihotItems || [];
-    // 按日期分组
-    const byDate = {};
-    aihot.forEach(item => {
+    (state.aihotItems || []).forEach(item => {
       const ts = item.published_at || '';
       const date = ts.slice(0, 10); // "2026-06-16"
-      if (!byDate[date]) byDate[date] = [];
-      byDate[date].push(item);
-    });
-
-    Object.keys(byDate).sort().reverse().forEach(date => {
-      let items = byDate[date];
-      // 行业筛选
-      if (ind !== 'all') {
-        const catCN = AIHOT_CAT_NAMES[ind] || ind;
-        const catKey = Object.keys(AIHOT_CAT_NAMES).find(k => AIHOT_CAT_NAMES[k] === ind) || ind;
-        items = items.filter(i => i.category === catKey || AIHOT_CAT_NAMES[i.category] === ind);
+      if (!date) return;
+      const cat = AIHOT_CAT_NAMES[item.category] || item.category || '';
+      if (ind !== 'all' && cat !== ind && item.category !== ind && AIHOT_CAT_NAMES[ind] !== cat && !Object.keys(AIHOT_CAT_NAMES).find(k => AIHOT_CAT_NAMES[k] === ind && k === item.category)) {
+        // Complex filter matching: try direct match, or map both ways
+        const catKeys = Object.keys(AIHOT_CAT_NAMES);
+        const indReverse = catKeys.find(k => AIHOT_CAT_NAMES[k] === ind);
+        if (item.category !== ind && item.category !== indReverse && cat !== ind) return;
       }
-      if (!items.length) return;
-
-      // 按分类分组
-      const byCat = {};
-      items.forEach(item => {
-        const cat = AIHOT_CAT_NAMES[item.category] || item.category || '其他';
-        if (!byCat[cat]) byCat[cat] = [];
-        byCat[cat].push(item);
+      if (!byDate[date]) byDate[date] = [];
+      byDate[date].push({
+        badge: 'aihot',
+        title: item.title || '',
+        summary: item.summary || '',
+        url: item.url || '',
+        industry: cat,
       });
-
-      const dateDisplay = date.replace(/-/g,'年').replace(/-(\d{2})$/,'月$1日');
-      html += `<div class="news-day aihot-section">
-        <div class="date">
-          <span class="src-badge src-badge-aihot">动态</span>
-          ${dateDisplay}
-          <span class="meta">${items.length}条</span>
-        </div>
-        ${Object.keys(byCat).map(cat => `
-          <div class="news-industry">
-            <div class="ind-title">📌 ${cat} <span class="count">${byCat[cat].length}条</span></div>
-            ${byCat[cat].map(item => `
-              <div class="news-item" onclick="this.classList.toggle('expanded')">
-                <div class="title">
-                  <span class="src-badge src-badge-aihot">动态</span>
-                  ${item.title||''}
-                  ${item.url ? `<span class="spec-tag" onclick="event.stopPropagation();window.open('${item.url}','_blank')" style="cursor:pointer">🔗 原文</span>` : ''}
-                </div>
-                <div class="summary">${item.summary||''}</div>
-              </div>
-            `).join('')}
-          </div>
-        `).join('')}
-      </div>`;
     });
   }
+
+  // 日期倒序渲染
+  const sortedDates = Object.keys(byDate).sort().reverse();
+  let html = '';
+  sortedDates.forEach(date => {
+    const items = byDate[date];
+    const dateDisplay = date.replace(/-/g,'年').replace(/-(?:\d{2})$/,'月$1日')
+      .replace(/^(\d{4})年0?(\d{1,2})月(\d{1,2})日$/, (_,y,m,d) => `${y}年${m}月${d}日`);
+    html += `<div class="news-day">
+      <div class="date">${dateDisplay} <span class="meta">${items.length}条</span></div>
+      ${items.map(item => `
+        <div class="news-item" onclick="this.classList.toggle('expanded')">
+          <div class="title">
+            <span class="src-badge src-badge-${item.badge}">${item.badge === 'xwlb' ? '联播' : '动态'}</span>
+            ${item.title}
+            ${item.special ? '<span class="spec-tag">🔔 特别关注</span>' : ''}
+            ${item.url ? `<span class="spec-tag" onclick="event.stopPropagation();window.open('${item.url}','_blank')" style="cursor:pointer">🔗 原文</span>` : ''}
+          </div>
+          <div class="summary">${item.summary || ''}</div>
+        </div>
+      `).join('')}
+    </div>`;
+  });
 
   document.getElementById('newsContainer').innerHTML = html ||
     '<div class="empty-state"><h3>暂无匹配的新闻</h3></div>';
