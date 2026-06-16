@@ -86,6 +86,42 @@
  ],
  "Anthropic": [
   {
+   "id": 823,
+   "title": "五角大楼将大部分日常AI工作流从Anthropic转移，目标9月前完全切断",
+   "summary": "五角大楼宣布已将超2/3日常AI工作流从Anthropic转移，目标9月前清零。起因是年初五角大楼要求Anthropic签署协议允许Claude用于大规模监控和全自动武器，CEO Dario Amodei以模型不可靠为由拒绝。五角大楼将其列为\"供应链风险\"，起诉未果。OpenAI调整立场获得订单。Polymarket预测6月底前和解概率仅9%。此事件凸显AI公司需在原则与政府合作间抉择。",
+   "published_at": "2026-06-16T00:30:44.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 804,
+   "title": "AI裁员浪潮成为火药桶",
+   "summary": "今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是“银弹借口”。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片商Cerebras上市首日市值达670亿美元，SpaceX上市市值2.1万亿美元，Anthropic和OpenAI估值均约1万亿美元。Meta在扎克伯格购入1.7亿美元豪宅后宣布裁员8000人。民调显示65%选民认为中产阶级生活遥不可及，76%美国人将生活成本列为首要经济问题。",
+   "published_at": "2026-06-16",
+   "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg",
+   "category": "tip",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 805,
+   "title": "AI 应用黄金时代已至：Fable 被禁、Nadella 的护城河论点与 Salesforce 收购 Fin",
+   "summary": "美国政府关闭 Anthropic 的 Fable 访问，开源和本地模型成必备；Satya Nadella 主张 AI 生态护城河应是人类专业知识和模型外围系统；Salesforce 以 36 亿美元收购 Fin（前 Intercom），Fin 利用开源模型实现性价比。这三件事标志 AI 应用进入黄金时代。构建 AI 应用的难点：在 Kimi K2.6、Qwen 3.6 27b、GLM 5.1 等不同特性模型中选择；设计智能体系统的 hill-climbing 循环；持续评估模型+循环性能以最大化 token 预算中的智能。掌握这三项技能的公司将主导这一时代。",
+   "published_at": "2026-06-16",
+   "url": "https://www.tomtunguz.com/golden-age-of-applications",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
+   "id": 834,
+   "title": "OpenRouter Presets：当模型下线时保持 AI 智能体运行",
+   "summary": "Anthropic 在 Claude Fable 5 发布仅数天后便对其进行了限制。如果代码硬编码模型 slug，该限制也会导致服务中断。OpenRouter 的 Presets 功能将模型选择移至服务器端，使用户无需重新部署即可切换模型、设置回退策略并强制执行数据策略。",
+   "published_at": "2026-06-15T12:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 786,
    "title": "AI裁员浪潮成为火药桶",
    "summary": "今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是\"银弹借口\"。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片商Cerebras上市首日市值达670亿美元，SpaceX上市市值2.1万亿美元，Anthropic和OpenAI估值均约1万亿美元。Meta在扎克伯格购入1.7亿美元豪宅后宣布裁员8000人。民调显示65%选民认为中产阶级生活遥不可及，76%美国人将生活成本列为首要经济问题。",
@@ -799,6 +835,15 @@
  ],
  "Apple": [
   {
+   "id": 828,
+   "title": "项目负责人揭秘为何苹果 AI 版 Siri 姗姗来迟：推倒重来，彻底重构",
+   "summary": "苹果AI版Siri迟迟未上线，项目负责人迈克·罗克韦尔在WWDC技术分享会上透露，去年团队曾做出在原有Siri基础上小幅改良、新增工具调用的可运行版本，但因无法达到产品愿景，最终选择推倒重来，完整从零重构系统，依托全新大模型搭建。重构后的Siri拥有独立应用程序，原生支持多模态交互，隐私保护贯穿底层架构，并覆盖iPhone、iPad、Mac、Apple Watch、Vision Pro、CarPlay、AirPods等全平台，提供统一连贯体验。",
+   "published_at": "2026-06-15T23:16:58.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 722,
    "title": "苹果 iOS 27 健康 App 大改：卡片布局、营养识别、围绝经期追踪",
    "summary": "苹果在 iOS 27 中优化健康 App，将列表改为卡片布局并增加导航栏。新增视觉智能营养识别，用户通过相机 Siri 模式拍摄食物可获取加工程度、蛋白质、含糖量等信息及营养价值评级，不提供精确卡路里，需 iPhone 15 Pro 及以上。经期追踪扩展支持围绝经期，可分析长期周期异常模式并推送提醒与指导。Fitness+ 新增围绝经期和绝经期课程。数据同步速度提升，GymKit 扩展至 iPhone，无需 Apple Watch 即可与健身设备配对同步数据。",
@@ -917,6 +962,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 798,
+   "title": "Claude Code v2.1.178 发布",
+   "summary": "本次更新新增 `Tool(param:value)` 语法用于权限规则匹配工具输入参数；嵌套 `skills` 目录中的技能自动加载，名称冲突时以 `<dir>:<name>` 形式保留；嵌套 `agent`、`workflow`、`output-style` 冲突时取最近目录。改进自动模式下子 agent 生成前的分类器评估；`/doctor` 采用扁平树布局；工作流提示词高亮为紫色闪烁，仅触发显式短语；`/bug` 提交前需填写描述。修复了 CLI 继承过期 WebSocket/OAuth 文件描述符导致的崩溃、Chrome 中 OAuth token 账号不匹配导致连接失败、子 agent 转录显示工具结果、后台恢复不从头重启…",
+   "published_at": "2026-06-16",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.178",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
   {
    "id": 727,
    "title": "Claude Code v2.1.175 发布：新增 enforceAvailableModels 管理设置",
@@ -2032,6 +2086,15 @@
  ],
  "Cursor": [
   {
+   "id": 815,
+   "title": "SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor",
+   "summary": "SpaceX 在历史性 IPO 数天后，同意以 600 亿美元股票收购 AI 编程初创公司 Cursor，旨在帮助其围绕 xAI 构建的 AI 部门追赶主要 AI 实验室。此前 Cursor 正接近完成一轮 20 亿美元融资，估值 500 亿美元，投资方包括 Andreessen Horowitz、Thrive 和 Nvidia。SpaceX 在 IPO 期间向投资者表示，其 AI 产品可寻址市场达 26 万亿美元。交易预计于今年第三季度完成。",
+   "published_at": "2026-06-16T11:21:41.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 673,
    "title": "Cursor 推出 Auto-review 机制：用分类器智能体动态管控智能体自主权限",
    "summary": "Cursor 近日推出 Auto-review，通过一个专门的分类器智能体在工具调用前审查动作风险。该分类器根据上下文判断动作是否与用户意图一致，高风险时阻止并返回解释给父智能体，低风险时放行。分类器采用小模型，运行在智能体循环内以避免额外延迟，并能读取工作区文件辅助判断。测试基于约12小时内部开发会话生成的6122条标签数据，以及针对读取密钥、操作生产数据等危险场景的合成数据。设计目标是在不频繁阻断日常开发的前提下，拦截风险动作。",
@@ -2268,6 +2331,24 @@
  ],
  "DeepSeek": [
   {
+   "id": 808,
+   "title": "微软考虑为 Copilot Cowork 集成 DeepSeek V4",
+   "summary": "微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。",
+   "published_at": "2026-06-16T18:08:26.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 816,
+   "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+   "summary": "中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金投入 CEO 梁文锋管理的有限合伙企业，无投票权且锁定期五年；仅国资 AI 基金直接投资并保留投票权。创始人梁文锋个人投入约 200 亿元，腾讯和宁德时代为主要外部投资者。梁文锋表示优先基础 AI 研究与 AGI 开发，将继续开源。DeepSeek 去年初凭 V3、R1 模型获全球关注，今年 4 月发布运行于华为芯片的最大开源权重模型 V4，并将 V4 Pro 永久折扣 75%，输入价格约为 OpenAI GPT-5.5 的 1/11，输出价格约为 1/35。",
+   "published_at": "2026-06-16T09:40:48.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 692,
    "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
    "summary": "@NousResearch 发布了 Hermes Agent Desktop——现在通过 @硅基流动 SiliconFlow 使用前沿开源模型更加便捷 🔥 → 一键随时切换模型——DeepSeek-V4、GLM-5.1、Kimi-K2.6、MiniMax-M3 等，均在硅基流动上 ... ... 通过硅基流动开启你的 Hermes 之旅的完整指南 👇🧵",
@@ -2470,6 +2551,15 @@
  ],
  "DeepSeek V4": [
   {
+   "id": 808,
+   "title": "微软考虑为 Copilot Cowork 集成 DeepSeek V4",
+   "summary": "微软正考虑为 Copilot Cowork 提供微软托管的 DeepSeek V4 版本，作为更便宜的模型选项。Copilot Cowork 将放弃无限定价，转向按使用量计费，原因是成本过高（用户每周执行数百项任务导致费用激增）。若采用 DeepSeek，该模型将是可选的、经过微调与安全防护，并完全托管于 Azure。Axios 报道称微软已微调了一个可用模型，最终决定待定。",
+   "published_at": "2026-06-16T18:08:26.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 495,
    "title": "硅基流动联合CodeWhale推出DeepSeek V4终端最佳性价比组合",
    "summary": "硅基流动宣布，通过V4-Pro（质量）与V4-Flash（速度）两行配置，即可在终端获得DeepSeek V4的最佳性价比组合。专为DeepSeek V4构建的终端编码智能体CodeWhale现已内置SiliconFlow。CodeWhale具备流式推理（显示思考过程）、自动路由（根据任务复杂度切换模型与思考深度）、零漂移（通过书面宪法为每轮排序权威，保持V4定向）以及自我改进（V4协助编写框架，框架提升后每个会话更强大）等特性。",
@@ -2581,6 +2671,15 @@
  ],
  "GPT-4": [
   {
+   "id": 832,
+   "title": "免费LLM API比较：速率限制、模型与真实成本（2026）",
+   "summary": "13个平台提供免费LLM API，含永久免费层与试用额度。OpenRouter拥有20+免费模型，单密钥无需信用卡；Groq以约320 tokens/秒运行Llama 3.3 70B；Google AI Studio支持1M上下文；Mistral实验层约10亿token/月但需同意数据训练；Cerebras约1M token/天；GitHub Models提供GPT-4o、Claude 3.5 Sonnet等前沿模型。各免费层有速率限制、数据训练授权、上下文缩减等隐藏成本，建议早期测试2-3个方案并设置故障转移。",
+   "published_at": "2026-06-15T17:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 539,
    "title": "OpenRouter 推出 Advisor 工具：让低成本模型可随时调用强模型增强生成",
    "summary": "OpenRouter 发布 advisor 服务器工具，允许一个快速、便宜的模型在生成过程中咨询一个更强大的模型。具体而言，可用 GPT-4o Mini 处理日常例行工作，在关键时刻调用 Claude Fable 解决真正重要的问题，从而实现成本和质量的动态平衡。",
@@ -2638,6 +2737,24 @@
   }
  ],
  "GPT-5.5": [
+  {
+   "id": 816,
+   "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+   "summary": "中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金投入 CEO 梁文锋管理的有限合伙企业，无投票权且锁定期五年；仅国资 AI 基金直接投资并保留投票权。创始人梁文锋个人投入约 200 亿元，腾讯和宁德时代为主要外部投资者。梁文锋表示优先基础 AI 研究与 AGI 开发，将继续开源。DeepSeek 去年初凭 V3、R1 模型获全球关注，今年 4 月发布运行于华为芯片的最大开源权重模型 V4，并将 V4 Pro 永久折扣 75%，输入价格约为 OpenAI GPT-5.5 的 1/11，输出价格约为 1/35。",
+   "published_at": "2026-06-16T09:40:48.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 833,
+   "title": "智能体AI治理：你的API密钥就是护栏",
+   "summary": "智能体AI使用量将在未来两年急剧上升，但治理滞后--仅五分之一企业拥有成熟治理模型。典型事故：销售智能体重试失败调用后自行升级到GPT-5.5，一夜消耗200美元。API路由层位于智能体与模型之间，是强制执行预算上限、模型白名单、提供方准入和请求日志的理想点。IBM报告指出97%遭遇AI安全事件的组织缺乏AI访问控制。最小可行治理方案：为每个智能体工作流分配独立API密钥，在API密钥层面实现预算控制、模型准入和审计追踪。",
+   "published_at": "2026-06-15T16:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 551,
    "title": "FrontierCode 基准测试：AI 编程评估新标准——维护者审核通过率最高仅 13.4%",
@@ -2837,6 +2954,24 @@
   }
  ],
  "Google": [
+  {
+   "id": 817,
+   "title": "Google Cloud 推出 OKF v0.1：供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文",
+   "summary": "Google Cloud 发布 Open Knowledge Format （OKF） v0.1，一种供应商中立的 Markdown 规范，为 AI 智能体提供结构化上下文知识。OKF 将知识表示为带 YAML 前置元数据的 markdown 文件目录，每个概念对应一个文件，通过 `type`、`title`、`description` 等少量保留字段实现互操作。无需专有服务、SDK 或运行时，目录可托管在 GitHub、以 tarball 传输或挂载到任意文件系统。OKF 旨在解决组织内部知识碎片化问题--表结构、指标定义、runbook 等散落在不同 catalog 和 wiki 中，各厂商方案互不兼容。遵循最少意见原则，只强制 `type` 字段，生产者和消费者可独立实现。使用场景包括数据团队将 BigQuery 表定义导出为代码、为智能体存储 incident runbook、跨组织知识交换等。",
+   "published_at": "2026-06-16T08:18:58.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 832,
+   "title": "免费LLM API比较：速率限制、模型与真实成本（2026）",
+   "summary": "13个平台提供免费LLM API，含永久免费层与试用额度。OpenRouter拥有20+免费模型，单密钥无需信用卡；Groq以约320 tokens/秒运行Llama 3.3 70B；Google AI Studio支持1M上下文；Mistral实验层约10亿token/月但需同意数据训练；Cerebras约1M token/天；GitHub Models提供GPT-4o、Claude 3.5 Sonnet等前沿模型。各免费层有速率限制、数据训练授权、上下文缩减等隐藏成本，建议早期测试2-3个方案并设置故障转移。",
+   "published_at": "2026-06-15T17:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 731,
    "title": "Google Research研究：AI如何帮助用户理解皮肤问题",
@@ -3710,6 +3845,15 @@
  ],
  "IBM": [
   {
+   "id": 833,
+   "title": "智能体AI治理：你的API密钥就是护栏",
+   "summary": "智能体AI使用量将在未来两年急剧上升，但治理滞后--仅五分之一企业拥有成熟治理模型。典型事故：销售智能体重试失败调用后自行升级到GPT-5.5，一夜消耗200美元。API路由层位于智能体与模型之间，是强制执行预算上限、模型白名单、提供方准入和请求日志的理想点。IBM报告指出97%遭遇AI安全事件的组织缺乏AI访问控制。最小可行治理方案：为每个智能体工作流分配独立API密钥，在API密钥层面实现预算控制、模型准入和审计追踪。",
+   "published_at": "2026-06-15T16:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 580,
    "title": "IBM CEO：AI不一定导致员工减少",
    "summary": "IBM CEO Arvind Krishna表示AI不会必然导致员工数量减少。他透露IBM已在量子计算（一种更快形式的AI）上投资100亿美元，并指出联邦政府承诺投入10亿美元在纽约Albany建设芯片制造设施，体现了公私部门间的紧密合作。",
@@ -3804,6 +3948,17 @@
    "source": ""
   }
  ],
+ "Llama 3": [
+  {
+   "id": 832,
+   "title": "免费LLM API比较：速率限制、模型与真实成本（2026）",
+   "summary": "13个平台提供免费LLM API，含永久免费层与试用额度。OpenRouter拥有20+免费模型，单密钥无需信用卡；Groq以约320 tokens/秒运行Llama 3.3 70B；Google AI Studio支持1M上下文；Mistral实验层约10亿token/月但需同意数据训练；Cerebras约1M token/天；GitHub Models提供GPT-4o、Claude 3.5 Sonnet等前沿模型。各免费层有速率限制、数据训练授权、上下文缩减等隐藏成本，建议早期测试2-3个方案并设置故障转移。",
+   "published_at": "2026-06-15T17:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  }
+ ],
  "Luma": [
   {
    "id": 535,
@@ -3863,6 +4018,42 @@
   }
  ],
  "Meta": [
+  {
+   "id": 807,
+   "title": "Meta 解散工程部门引发热议",
+   "summary": "6月16日，一篇标题为\"Why is Meta destroying its engineering organization？\"的博客文章出现在 Hacker News，获得110个点赞。文章指出 Meta 正在解散其工程组织，引发业界广泛讨论。具体原因和后续影响尚未明确。",
+   "published_at": "2026-06-16T18:37:24.744Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 794,
+   "title": "Meta 在 Facebook 上线“AI Mode”，基于平台公开信息合成答案",
+   "summary": "Meta 宣布在 Facebook 推出“AI Mode”搜索功能，利用 Meta AI 从公开帖子（含群组和 Reels）提取信息并合成答案，用户可用自然语言提问获得摘要。同时新增视频拼贴剪辑、过渡效果及 AI 照片预设（可更换服装、发型和配饰），体育迷可在 Stories 中点击“AI Edit”虚拟穿上队服。这些更新延续了此前动态头像、Marketplace 自动回复和创作者 AI 助手的部署节奏。此外，Meta 近期启动了 Facebook、Instagram 和 WhatsApp 的全球订阅计划（每月 3.99 美元起），更多 AI 订阅层级正在规划中。",
+   "published_at": "2026-06-16",
+   "url": "https://techcrunch.com/2026/06/15/metas-new-ai-mode-on-facebook-pulls-from-public-info-across-its-platforms",
+   "category": "ai-products",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 804,
+   "title": "AI裁员浪潮成为火药桶",
+   "summary": "今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是“银弹借口”。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片商Cerebras上市首日市值达670亿美元，SpaceX上市市值2.1万亿美元，Anthropic和OpenAI估值均约1万亿美元。Meta在扎克伯格购入1.7亿美元豪宅后宣布裁员8000人。民调显示65%选民认为中产阶级生活遥不可及，76%美国人将生活成本列为首要经济问题。",
+   "published_at": "2026-06-16",
+   "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg",
+   "category": "tip",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 830,
+   "title": "Meta 在 Facebook 上线\"AI Mode\"，基于平台公开信息合成答案",
+   "summary": "Meta 宣布在 Facebook 推出\"AI Mode\"搜索功能，利用 Meta AI 从公开帖子（含群组和 Reels）提取信息并合成答案，用户可用自然语言提问获得摘要。同时新增视频拼贴剪辑、过渡效果及 AI 照片预设（可更换服装、发型和配饰），体育迷可在 Stories 中点击\"AI Edit\"虚拟穿上队服。这些更新延续了此前动态头像、Marketplace 自动回复和创作者 AI 助手的部署节奏。此外，Meta 近期启动了 Facebook、Instagram 和 WhatsApp 的全球订阅计划（每月 3.99 美元起），更多 AI 订阅层级正在规划中。",
+   "published_at": "2026-06-15T18:30:58.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 786,
    "title": "AI裁员浪潮成为火药桶",
@@ -4037,6 +4228,24 @@
  ],
  "Microsoft": [
   {
+   "id": 809,
+   "title": "Copilot Cowork 全球正式可用，支持多模型",
+   "summary": "Copilot Cowork 现已全球正式可用，并支持多模型！\n每个组织都可以让长期运行的智能体处理复杂的多步骤任务，基于你组织的独特知识和专有技术。 https：//www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/？v=15",
+   "published_at": "2026-06-16T15:50:53.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 824,
+   "title": "Grok for PowerPoint 发布：在 Microsoft PowerPoint 内直接生成和编辑幻灯片",
+   "summary": "xAI 于 6 月 16 日发布 Grok for PowerPoint，作为免费 Microsoft 365 插件上线。用户无需离开应用即可利用 Grok 将大纲转为完整幻灯片，进行内容研究、撰写、排版，并支持添加单张幻灯片、调整样式主题、重构章节。插件还能调用 Grok 连接器，从邮件或 SharePoint 中获取信息。该插件同样适用于 Word 和 Excel。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 198,
    "title": "黄仁勋与纳德拉共议智能体AI时代",
    "summary": "智能体AI时代来了。 从台北，黄仁勋与@satyanadella共同出席#MSBuild，展示NVIDIA与@Microsoft如何携手构建，从Windows设备到规模化AI工厂。 ▶️ 观看对话：https://nvda.ws/4uefQbs",
@@ -4150,6 +4359,15 @@
   }
  ],
  "MiniMax": [
+  {
+   "id": 790,
+   "title": "MiniMax 开源 M3 模型权重及 MSA 技术论文",
+   "summary": "MiniMax 上周五开源了 428B 总参数、23B 激活参数的 M3 模型权重，同步发布 MSA（MiniMax Sparse Attention）技术论文，该架构显著降低长上下文计算成本。M3 是首个从预训练阶段就进行文本、图像等多模态交错混合训练的开源模型。发布两周后，M3 在 Artificial Analysis 综合智能指数、GDPval-AA 排行榜均获开源模型第一，Code Arena WebDev 跻身帕累托最优序列，Vals.AI 榜单居国产模型首位。输出速度已从约 30 TPS 提升至约 80 TPS，计划再提速 30–40%；Token Plan 后台新增调用量看板。",
+   "published_at": "2026-06-16",
+   "url": "https://mp.weixin.qq.com/s/AW6L89QZkwN-jD27hQ84ww",
+   "category": "ai-models",
+   "source": "公众号：MiniMax（稀宇科技）"
+  },
   {
    "id": 781,
    "title": "MiniMax 开源 M3 模型权重及 MSA 技术论文",
@@ -4333,6 +4551,15 @@
  ],
  "Mistral": [
   {
+   "id": 832,
+   "title": "免费LLM API比较：速率限制、模型与真实成本（2026）",
+   "summary": "13个平台提供免费LLM API，含永久免费层与试用额度。OpenRouter拥有20+免费模型，单密钥无需信用卡；Groq以约320 tokens/秒运行Llama 3.3 70B；Google AI Studio支持1M上下文；Mistral实验层约10亿token/月但需同意数据训练；Cerebras约1M token/天；GitHub Models提供GPT-4o、Claude 3.5 Sonnet等前沿模型。各免费层有速率限制、数据训练授权、上下文缩减等隐藏成本，建议早期测试2-3个方案并设置故障转移。",
+   "published_at": "2026-06-15T17:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 584,
    "title": "Hugging Face 博客发布语音智能体代码切换基准测试",
    "summary": "Hugging Face 博客发布针对语音智能体处理代码切换语音的基准测试。数据集覆盖西班牙语-英语、法语-英语、加拿大法语-英语和德语-英语四对语言，基于人力资源与IT服务管理场景构建。采用词错误率、语义词错误率和答案错误率三项指标评估七种ASR系统，包括AssemblyAI Universal 3-Pro、Deepgram Nova 3 Multilang、ElevenLabs Scribe V2、Gemini 3 Flash、Mistral AI Voxtral Small 24B-2507、Nvidia Parakeet TDT 0.6b V3和OpenAI Whisper Large V3 Turbo。主要发现：代码切换的转录成本因语言对和模型而异；ElevenLabs Scribe V2、Gemini 3 Flash和AssemblyAI Universal 3-Pro在所有指标上表现最佳。数据集和测试框架通过AU-Harness开源发布。",
@@ -4343,6 +4570,33 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 815,
+   "title": "SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor",
+   "summary": "SpaceX 在历史性 IPO 数天后，同意以 600 亿美元股票收购 AI 编程初创公司 Cursor，旨在帮助其围绕 xAI 构建的 AI 部门追赶主要 AI 实验室。此前 Cursor 正接近完成一轮 20 亿美元融资，估值 500 亿美元，投资方包括 Andreessen Horowitz、Thrive 和 Nvidia。SpaceX 在 IPO 期间向投资者表示，其 AI 产品可寻址市场达 26 万亿美元。交易预计于今年第三季度完成。",
+   "published_at": "2026-06-16T11:21:41.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 792,
+   "title": "Flash-KMeans：IO感知的精确K-Means，在GPU上比FAISS快200倍以上",
+   "summary": "UC Berkeley与UT Austin团队开源Flash-KMeans（Apache 2.0，`pip install flash-kmeans`），精确实现标准Lloyd's k-Means，通过重构GPU数据流而非改变数学或近似来提速。在NVIDIA H200上，端到端速度比最佳基线快17.9×，比cuML快33×，比FAISS快200×以上。其FlashAssign核避免物化完整N×K距离矩阵，将IO复杂度从O(NK)降至O(Nd+Kd)，单核加速最高21.2×；Sort-Inverse Update核通过排序聚类ID减少原子争用，单核加速最高6.3×。支持out-of-core处理，在1B数据点、K=32768时单次迭代…",
+   "published_at": "2026-06-16",
+   "url": "https://www.marktechpost.com/2026/06/15/meet-flash-kmeans-an-io-aware-exact-k-means-that-runs-over-200x-faster-than-faiss-on-gpus",
+   "category": "ai-products",
+   "source": "MarkTechPost（RSS）"
+  },
+  {
+   "id": 800,
+   "title": "Nvidia 加入 AI 债务热潮，发行 200 亿美元债券",
+   "summary": "Nvidia 计划通过自 2021 年以来的首次债券发行筹集至少 200 亿美元，消息援引知情人士透露。此举标志着 Nvidia 加入 AI 领域的债务融资热潮。",
+   "published_at": "2026-06-16",
+   "url": "https://the-decoder.com/nvidia-joins-ai-debt-boom-with-20-billion-bond-sale",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
   {
    "id": 780,
    "title": "Nvidia 加入 AI 债务热潮，发行 200 亿美元债券",
@@ -5062,6 +5316,42 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 813,
+   "title": "2025年OpenAI亏损额激增近8倍，支出高达340亿美元",
+   "summary": "据Hacker News热门文章，OpenAI在2025年亏损额激增近8倍，年度总支出达到340亿美元。原文来自wheresyoured.at的独家财务分析报道，该信息在Hacker News上获得超过100个点赞。",
+   "published_at": "2026-06-16T13:01:23.690Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 816,
+   "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+   "summary": "中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金投入 CEO 梁文锋管理的有限合伙企业，无投票权且锁定期五年；仅国资 AI 基金直接投资并保留投票权。创始人梁文锋个人投入约 200 亿元，腾讯和宁德时代为主要外部投资者。梁文锋表示优先基础 AI 研究与 AGI 开发，将继续开源。DeepSeek 去年初凭 V3、R1 模型获全球关注，今年 4 月发布运行于华为芯片的最大开源权重模型 V4，并将 V4 Pro 永久折扣 75%，输入价格约为 OpenAI GPT-5.5 的 1/11，输出价格约为 1/35。",
+   "published_at": "2026-06-16T09:40:48.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 823,
+   "title": "五角大楼将大部分日常AI工作流从Anthropic转移，目标9月前完全切断",
+   "summary": "五角大楼宣布已将超2/3日常AI工作流从Anthropic转移，目标9月前清零。起因是年初五角大楼要求Anthropic签署协议允许Claude用于大规模监控和全自动武器，CEO Dario Amodei以模型不可靠为由拒绝。五角大楼将其列为\"供应链风险\"，起诉未果。OpenAI调整立场获得订单。Polymarket预测6月底前和解概率仅9%。此事件凸显AI公司需在原则与政府合作间抉择。",
+   "published_at": "2026-06-16T00:30:44.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 804,
+   "title": "AI裁员浪潮成为火药桶",
+   "summary": "今年科技公司已累计裁员约15万人，日均974人，速度比去年快44%；上月裁员近4万创两年新高，AI连续三个月被列为裁员首要原因。Block近半数员工被裁后，CEO Jack Dorsey否认AI是根源，Marc Andreessen则称AI只是“银弹借口”。Uber裁撤23%人事部门，但此前CTO透露AI编码预算四个月内耗尽。与此同时，AI芯片商Cerebras上市首日市值达670亿美元，SpaceX上市市值2.1万亿美元，Anthropic和OpenAI估值均约1万亿美元。Meta在扎克伯格购入1.7亿美元豪宅后宣布裁员8000人。民调显示65%选民认为中产阶级生活遥不可及，76%美国人将生活成本列为首要经济问题。",
+   "published_at": "2026-06-16",
+   "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg",
+   "category": "tip",
+   "source": "TechCrunch：AI（RSS）"
+  },
   {
    "id": 786,
    "title": "AI裁员浪潮成为火药桶",
@@ -5841,6 +6131,15 @@
  ],
  "OpenClaw": [
   {
+   "id": 811,
+   "title": "小米 MiMo Claw 正式版发布：旗舰模型+金山办公，全新订阅服务上线",
+   "summary": "小米推出云端轻量化 Claw 类产品 MiMo Claw 正式版，搭载与 OpenClaw 框架深度适配的 MiMo-V2.5-Pro 旗舰模型。该模型原生兼容 MCP 工具调用协议，内置百万级超长上下文，支持单会话千次以上连续工具调用；依托 MTP 三层解码架构，在 OpenClaw 标准 Agent 工作流中吞吐效率提升约 3 倍。ClawEval 测试中任务达标率（Pass3）达 63.8%，Token 消耗较同类产品降低 40%-60%。联动金山办公生态，提供 Word、Excel、PPT、PDF 等格式的 AI 生成、预览与在线编辑一站式服务。免费用户每日单次体验时长从1小时升级至4小时，面向高频用户推出 TokenPlan 分层订阅（Lite/Standard/Pro/Max），支持灵活叠加，限时定价14.9元/月、19.9元/月、233.8元/年。",
+   "published_at": "2026-06-16T13:32:48.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 733,
    "title": "小互开源公众号自动排版技能组合",
    "summary": "小互（@xiaohu）升级了公众号排版技能组合，实现一句话完成排版、封面生成并一键发送到公众号草稿箱。该工具已开源，提供20种主题颜色可选，可自动分析内容进行排版，支持非Markdown文件。用户只需在Claude Code、Codex或OpenClaw中提供文章链接或文档位置，即可获得可视化预览界面进行选择，全程无需手动操作。",
@@ -5950,6 +6249,42 @@
   }
  ],
  "OpenRouter": [
+  {
+   "id": 796,
+   "title": "OpenRouter新增免费模型gpt-oss-20b和Gemma4 26B",
+   "summary": "OpenRouter 上新增免费容量，由 @eigenlabs 的 Darkbloom 提供：gpt-oss-20b 和 Gemma 4 26B。 今天就开始使用这些模型吧 ↓",
+   "published_at": "2026-06-16",
+   "url": "https://x.com/OpenRouter/status/2066585705581797616",
+   "category": "ai-products",
+   "source": "X：OpenRouter (@OpenRouter)"
+  },
+  {
+   "id": 831,
+   "title": "OpenRouter新增免费模型gpt-oss-20b和Gemma4 26B",
+   "summary": "OpenRouter 上新增免费容量，由 @eigenlabs 的 Darkbloom 提供：gpt-oss-20b 和 Gemma 4 26B。\n今天就开始使用这些模型吧 ↓",
+   "published_at": "2026-06-15T18:16:42.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 832,
+   "title": "免费LLM API比较：速率限制、模型与真实成本（2026）",
+   "summary": "13个平台提供免费LLM API，含永久免费层与试用额度。OpenRouter拥有20+免费模型，单密钥无需信用卡；Groq以约320 tokens/秒运行Llama 3.3 70B；Google AI Studio支持1M上下文；Mistral实验层约10亿token/月但需同意数据训练；Cerebras约1M token/天；GitHub Models提供GPT-4o、Claude 3.5 Sonnet等前沿模型。各免费层有速率限制、数据训练授权、上下文缩减等隐藏成本，建议早期测试2-3个方案并设置故障转移。",
+   "published_at": "2026-06-15T17:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 834,
+   "title": "OpenRouter Presets：当模型下线时保持 AI 智能体运行",
+   "summary": "Anthropic 在 Claude Fable 5 发布仅数天后便对其进行了限制。如果代码硬编码模型 slug，该限制也会导致服务中断。OpenRouter 的 Presets 功能将模型选择移至服务器端，使用户无需重新部署即可切换模型、设置回退策略并强制执行数据策略。",
+   "published_at": "2026-06-15T12:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 738,
    "title": "如何在OpenRouter上获得最低成本的LLM推理",
@@ -6281,6 +6616,51 @@
  ],
  "Qwen": [
   {
+   "id": 825,
+   "title": "Qwen-RobotManip：对齐解锁机器人操作基础模型的规模化能力",
+   "summary": "Qwen-RobotManip 是通义千问基于 Qwen-VL 的视觉-语言-动作（VLA）基础模型，引入覆盖表示、运动和行为三维度的统一对齐框架。仅使用开源机器人数据集和人演示视频，构建约 38，100 小时预训练语料，涵盖 15 种机器人形态。在 LIBERO-Plus 达 91.4%，RoboTwin-C2R Hard 达 69.4%，RoboCasa365 Composite-Unseen 达 14.9%，EBench 达 45.6%，RoboTwin-IF 达 72.0%，并在 RoboChallenge Table30 v1 generalist track 夺冠。模型采用 80 维状态-动作表示、人-机器人数据合成管道（1，933 小时第一人称视频转 24，808 小时数据）及上下文策略适配。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 826,
+   "title": "Qwen-RobotWorld：具身智能体的无界世界",
+   "summary": "Qwen-RobotWorld以语言为统一动作接口，采用双流Multimodal Diffusion Transformer（MMDiT）架构，将Qwen2.5-VL作为动作编码器。在4个基准测试中取得顶尖成绩，统一20余种机器人形态，基于860万跨场景训练对和1300多项操作技能。语言接口标准化500多种动作类别，支持操作、自动驾驶、室内导航的联合训练。还支持Scene2Robot人类到机器人转移及2-4路多视角几何一致视频生成。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 827,
+   "title": "Qwen-RobotNav：面向智能体导航系统的可扩展导航模型",
+   "summary": "Qwen 发布 Qwen-RobotNav，基于 Qwen3-VL 在 15.6M 样本上训练，统一了视觉语言导航、目标导航、目标跟踪、自动驾驶和具身问答五个领域，无需修改架构即可在推理时切换任务模式和观察参数。模型在多项基准取得 SOTA：VLN-CE RxR 成功率 76.5%，HM3Dv2 目标导航 75.6%（仅 RGB），EVT-Bench 跟踪率 90.0%，NAVSIM PDMS 91.4，以及三项 EQA 新标杆。模型暴露四个可调轴（视觉 token 预算、时间衰减、相机权重、帧采样模式）。作为智能体系统的一部分，上层规划器 Qwen3.7-Plus 在 EXPRESS-Bench 上提升 15.4%，导航步数减少 77%。模型已零样本部署在 Unitree Go2 四足机器人上，无需环境微调。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 791,
+   "title": "下一代投机解码：DFlash 与 Spec V2",
+   "summary": "Z Lab、Modal 与 SGLang 团队联合发布 DFlash 投机解码模型和 SGLang 的默认 Spec V2 引擎。DFlash 采用块扩散+KV 注入并行生成整块 draft token，在 Qwen 3.5 397B-A17B（BF16）的 HumanEval 数据集上、并发 1 时吞吐量达到基线的 4.3",
+   "published_at": "2026-06-16",
+   "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
+   "category": "ai-models",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
+   "id": 805,
+   "title": "AI 应用黄金时代已至：Fable 被禁、Nadella 的护城河论点与 Salesforce 收购 Fin",
+   "summary": "美国政府关闭 Anthropic 的 Fable 访问，开源和本地模型成必备；Satya Nadella 主张 AI 生态护城河应是人类专业知识和模型外围系统；Salesforce 以 36 亿美元收购 Fin（前 Intercom），Fin 利用开源模型实现性价比。这三件事标志 AI 应用进入黄金时代。构建 AI 应用的难点：在 Kimi K2.6、Qwen 3.6 27b、GLM 5.1 等不同特性模型中选择；设计智能体系统的 hill-climbing 循环；持续评估模型+循环性能以最大化 token 预算中的智能。掌握这三项技能的公司将主导这一时代。",
+   "published_at": "2026-06-16",
+   "url": "https://www.tomtunguz.com/golden-age-of-applications",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
    "id": 787,
    "title": "AI 应用黄金时代已至：Fable 被禁、Nadella 的护城河论点与 Salesforce 收购 Fin",
    "summary": "美国政府关闭 Anthropic 的 Fable 访问，开源和本地模型成必备；Satya Nadella 主张 AI 生态护城河应是人类专业知识和模型外围系统；Salesforce 以 36 亿美元收购 Fin（前 Intercom），Fin 利用开源模型实现性价比。这三件事标志 AI 应用进入黄金时代。构建 AI 应用的难点：在 Kimi K2.6、Qwen 3.6 27b、GLM 5.1 等不同特性模型中选择；设计智能体系统的 hill-climbing 循环；持续评估模型+循环性能以最大化 token 预算中的智能。掌握这三项技能的公司将主导这一时代。",
@@ -6580,7 +6960,27 @@
    "source": ""
   }
  ],
+ "Qwen 3.5": [
+  {
+   "id": 791,
+   "title": "下一代投机解码：DFlash 与 Spec V2",
+   "summary": "Z Lab、Modal 与 SGLang 团队联合发布 DFlash 投机解码模型和 SGLang 的默认 Spec V2 引擎。DFlash 采用块扩散+KV 注入并行生成整块 draft token，在 Qwen 3.5 397B-A17B（BF16）的 HumanEval 数据集上、并发 1 时吞吐量达到基线的 4.3",
+   "published_at": "2026-06-16",
+   "url": "https://www.lmsys.org/blog/2026-06-15-next-generation-speculative-decoding-dflash-v2",
+   "category": "ai-models",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  }
+ ],
  "Qwen 3.6": [
+  {
+   "id": 805,
+   "title": "AI 应用黄金时代已至：Fable 被禁、Nadella 的护城河论点与 Salesforce 收购 Fin",
+   "summary": "美国政府关闭 Anthropic 的 Fable 访问，开源和本地模型成必备；Satya Nadella 主张 AI 生态护城河应是人类专业知识和模型外围系统；Salesforce 以 36 亿美元收购 Fin（前 Intercom），Fin 利用开源模型实现性价比。这三件事标志 AI 应用进入黄金时代。构建 AI 应用的难点：在 Kimi K2.6、Qwen 3.6 27b、GLM 5.1 等不同特性模型中选择；设计智能体系统的 hill-climbing 循环；持续评估模型+循环性能以最大化 token 预算中的智能。掌握这三项技能的公司将主导这一时代。",
+   "published_at": "2026-06-16",
+   "url": "https://www.tomtunguz.com/golden-age-of-applications",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
   {
    "id": 787,
    "title": "AI 应用黄金时代已至：Fable 被禁、Nadella 的护城河论点与 Salesforce 收购 Fin",
@@ -6600,7 +7000,45 @@
    "source": ""
   }
  ],
+ "Qwen-": [
+  {
+   "id": 825,
+   "title": "Qwen-RobotManip：对齐解锁机器人操作基础模型的规模化能力",
+   "summary": "Qwen-RobotManip 是通义千问基于 Qwen-VL 的视觉-语言-动作（VLA）基础模型，引入覆盖表示、运动和行为三维度的统一对齐框架。仅使用开源机器人数据集和人演示视频，构建约 38，100 小时预训练语料，涵盖 15 种机器人形态。在 LIBERO-Plus 达 91.4%，RoboTwin-C2R Hard 达 69.4%，RoboCasa365 Composite-Unseen 达 14.9%，EBench 达 45.6%，RoboTwin-IF 达 72.0%，并在 RoboChallenge Table30 v1 generalist track 夺冠。模型采用 80 维状态-动作表示、人-机器人数据合成管道（1，933 小时第一人称视频转 24，808 小时数据）及上下文策略适配。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 826,
+   "title": "Qwen-RobotWorld：具身智能体的无界世界",
+   "summary": "Qwen-RobotWorld以语言为统一动作接口，采用双流Multimodal Diffusion Transformer（MMDiT）架构，将Qwen2.5-VL作为动作编码器。在4个基准测试中取得顶尖成绩，统一20余种机器人形态，基于860万跨场景训练对和1300多项操作技能。语言接口标准化500多种动作类别，支持操作、自动驾驶、室内导航的联合训练。还支持Scene2Robot人类到机器人转移及2-4路多视角几何一致视频生成。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 827,
+   "title": "Qwen-RobotNav：面向智能体导航系统的可扩展导航模型",
+   "summary": "Qwen 发布 Qwen-RobotNav，基于 Qwen3-VL 在 15.6M 样本上训练，统一了视觉语言导航、目标导航、目标跟踪、自动驾驶和具身问答五个领域，无需修改架构即可在推理时切换任务模式和观察参数。模型在多项基准取得 SOTA：VLN-CE RxR 成功率 76.5%，HM3Dv2 目标导航 75.6%（仅 RGB），EVT-Bench 跟踪率 90.0%，NAVSIM PDMS 91.4，以及三项 EQA 新标杆。模型暴露四个可调轴（视觉 token 预算、时间衰减、相机权重、帧采样模式）。作为智能体系统的一部分，上层规划器 Qwen3.7-Plus 在 EXPRESS-Bench 上提升 15.4%，导航步数减少 77%。模型已零样本部署在 Unitree Go2 四足机器人上，无需环境微调。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  }
+ ],
  "Qwen2.5": [
+  {
+   "id": 826,
+   "title": "Qwen-RobotWorld：具身智能体的无界世界",
+   "summary": "Qwen-RobotWorld以语言为统一动作接口，采用双流Multimodal Diffusion Transformer（MMDiT）架构，将Qwen2.5-VL作为动作编码器。在4个基准测试中取得顶尖成绩，统一20余种机器人形态，基于860万跨场景训练对和1300多项操作技能。语言接口标准化500多种动作类别，支持操作、自动驾驶、室内导航的联合训练。还支持Scene2Robot人类到机器人转移及2-4路多视角几何一致视频生成。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 349,
    "title": "用Qwen2.5-3B构建多智能体经济体：工程报告",
@@ -6621,6 +7059,15 @@
   }
  ],
  "Qwen3-": [
+  {
+   "id": 827,
+   "title": "Qwen-RobotNav：面向智能体导航系统的可扩展导航模型",
+   "summary": "Qwen 发布 Qwen-RobotNav，基于 Qwen3-VL 在 15.6M 样本上训练，统一了视觉语言导航、目标导航、目标跟踪、自动驾驶和具身问答五个领域，无需修改架构即可在推理时切换任务模式和观察参数。模型在多项基准取得 SOTA：VLN-CE RxR 成功率 76.5%，HM3Dv2 目标导航 75.6%（仅 RGB），EVT-Bench 跟踪率 90.0%，NAVSIM PDMS 91.4，以及三项 EQA 新标杆。模型暴露四个可调轴（视觉 token 预算、时间衰减、相机权重、帧采样模式）。作为智能体系统的一部分，上层规划器 Qwen3.7-Plus 在 EXPRESS-Bench 上提升 15.4%，导航步数减少 77%。模型已零样本部署在 Unitree Go2 四足机器人上，无需环境微调。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 423,
    "title": "Agent 辅助开发，一站式打通 Qwen3-VL Android 端侧推理",
@@ -6775,6 +7222,15 @@
   }
  ],
  "Qwen3.7": [
+  {
+   "id": 827,
+   "title": "Qwen-RobotNav：面向智能体导航系统的可扩展导航模型",
+   "summary": "Qwen 发布 Qwen-RobotNav，基于 Qwen3-VL 在 15.6M 样本上训练，统一了视觉语言导航、目标导航、目标跟踪、自动驾驶和具身问答五个领域，无需修改架构即可在推理时切换任务模式和观察参数。模型在多项基准取得 SOTA：VLN-CE RxR 成功率 76.5%，HM3Dv2 目标导航 75.6%（仅 RGB），EVT-Bench 跟踪率 90.0%，NAVSIM PDMS 91.4，以及三项 EQA 新标杆。模型暴露四个可调轴（视觉 token 预算、时间衰减、相机权重、帧采样模式）。作为智能体系统的一部分，上层规划器 Qwen3.7-Plus 在 EXPRESS-Bench 上提升 15.4%，导航步数减少 77%。模型已零样本部署在 Unitree Go2 四足机器人上，无需环境微调。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 665,
    "title": "Bebop：通过带拒绝采样的多token预测加速RL训练",
@@ -7339,6 +7795,51 @@
  ],
  "xAI": [
   {
+   "id": 812,
+   "title": "美国司法部援引国家安全为xAI未经许可的燃气轮机辩护",
+   "summary": "美国司法部在一份驳回诉讼的动议中称，xAI的聊天机器人Grok对军事行动至关重要，以此为其在密西西比州Southaven的Colossus 2设施运行未经许可的燃气轮机辩护。NAACP已提起诉讼，指控xAI的燃气轮机数量从4月的27台增至57台，导致氮氧化物排放飙升111%。国防部首席数字与人工智能官Cameron Stanley表示，Grok是支持机密和绝密网络军事任务的四款AI模型之一，包括近期针对伊朗的打击。",
+   "published_at": "2026-06-16T13:23:33.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 815,
+   "title": "SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor",
+   "summary": "SpaceX 在历史性 IPO 数天后，同意以 600 亿美元股票收购 AI 编程初创公司 Cursor，旨在帮助其围绕 xAI 构建的 AI 部门追赶主要 AI 实验室。此前 Cursor 正接近完成一轮 20 亿美元融资，估值 500 亿美元，投资方包括 Andreessen Horowitz、Thrive 和 Nvidia。SpaceX 在 IPO 期间向投资者表示，其 AI 产品可寻址市场达 26 万亿美元。交易预计于今年第三季度完成。",
+   "published_at": "2026-06-16T11:21:41.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 824,
+   "title": "Grok for PowerPoint 发布：在 Microsoft PowerPoint 内直接生成和编辑幻灯片",
+   "summary": "xAI 于 6 月 16 日发布 Grok for PowerPoint，作为免费 Microsoft 365 插件上线。用户无需离开应用即可利用 Grok 将大纲转为完整幻灯片，进行内容研究、撰写、排版，并支持添加单张幻灯片、调整样式主题、重构章节。插件还能调用 Grok 连接器，从邮件或 SharePoint 中获取信息。该插件同样适用于 Word 和 Excel。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 793,
+   "title": "Grok Build 推出 Agent Dashboard 管理多个编码会话",
+   "summary": "xAI 为 Grok Build 推出 Agent Dashboard，提供单一屏幕管理多个编码会话。仪表板按状态分组（等待输入、工作中、空闲），每行显示状态标记、名称、分支、权限模式和当前操作。选中会话可打开 peek 面板查看最新输出并直接回复，等待输入的会话支持用箭头键或数字键选择选项。底部输入框用于分派新会话，支持设置模型、启动计划模式或自动批准编辑。通过 `grok dashboard`、`/dashboard` 或 `Ctrl+\\` 打开，关闭后会话继续运行，重新打开即可恢复。",
+   "published_at": "2026-06-16",
+   "url": "https://x.ai/news/agent-dashboard",
+   "category": "ai-products",
+   "source": "xAI：News（网页）"
+  },
+  {
+   "id": 802,
+   "title": "xAI 宣布 Grok 集成至 Warp 终端开发环境",
+   "summary": "xAI 宣布与 Warp 集成，Warp 是一个基于终端的智能体开发环境，拥有近百万开发者。用户可使用 Grok 或 X Premium 订阅在 Warp 中访问 Grok 模型，包括驱动 Grok Build CLI 的 `grok-build-0.1` 模型。设置方式：下载 Warp，在 Agent 设置页连接 SuperGrok 订阅，切换至 `grok-build-0.1` 模型。更多智能体与集成即将推出。",
+   "published_at": "2026-06-16",
+   "url": "https://x.ai/news/grok-warp",
+   "category": "industry",
+   "source": "xAI：News（网页）"
+  },
+  {
    "id": 788,
    "title": "Grok Build 推出 Agent Dashboard 管理多个编码会话",
    "summary": "xAI 为 Grok Build 推出 Agent Dashboard，提供单一屏幕管理多个编码会话。仪表板按状态分组（等待输入、工作中、空闲），每行显示状态标记、名称、分支、权限模式和当前操作。选中会话可打开 peek 面板查看最新输出并直接回复，等待输入的会话支持用箭头键或数字键选择选项。底部输入框用于分派新会话，支持设置模型、启动计划模式或自动批准编辑。通过 `grok dashboard`、`/dashboard` 或 `Ctrl+\\` 打开，关闭后会话继续运行，重新打开即可恢复。",
@@ -7476,6 +7977,15 @@
  ],
  "华为": [
   {
+   "id": 816,
+   "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+   "summary": "中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金投入 CEO 梁文锋管理的有限合伙企业，无投票权且锁定期五年；仅国资 AI 基金直接投资并保留投票权。创始人梁文锋个人投入约 200 亿元，腾讯和宁德时代为主要外部投资者。梁文锋表示优先基础 AI 研究与 AGI 开发，将继续开源。DeepSeek 去年初凭 V3、R1 模型获全球关注，今年 4 月发布运行于华为芯片的最大开源权重模型 V4，并将 V4 Pro 永久折扣 75%，输入价格约为 OpenAI GPT-5.5 的 1/11，输出价格约为 1/35。",
+   "published_at": "2026-06-16T09:40:48.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 607,
    "title": "华为云发布全球首个端到端具身AI平台CloudRobo",
    "summary": "华为云推出全球首个端到端具身AI开发平台CloudRobo，覆盖从数据、模型到部署、集成的全生命周期，基于PB级可信数据底座。在INSPIRE2026上，国家地方共建人形机器人创新中心、Yijiahe Technology、上海交通大学展示了其核心能力：数据与模型双评估系统、主动力控模型快速组装、机器人小时级上云、模型分钟级部署。",
@@ -7582,6 +8092,15 @@
   }
  ],
  "字节跳动": [
+  {
+   "id": 822,
+   "title": "成本砍半，字节跳动推出 Seedance 2.0 Mini 视频生成模型",
+   "summary": "字节跳动火山引擎旗下火山方舟体验中心于 6 月 15 日上线 Seedance 2.0 Mini 视频生成模型，计划近期开放 API。该模型比 Seedance 2.0 Fast 快 2 倍，输出质量相当。图生视频定价 0.023 元/千 tokens，视频生视频 0.014 元/千 tokens，720P 规格下单秒生成成本约 0.5 元，较 Seedance 2.0 标准版降低约一半。模型面向电商内容生产、营销素材批量生成、UGC 创作及特效玩法等高频率、大规模视频生成场景。",
+   "published_at": "2026-06-16T01:49:40.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 724,
    "title": "字节豆包上线“任务模式”：支持定时执行与文件生成，“思考模式”升级为“专家模式”",
@@ -7885,6 +8404,24 @@
  ],
  "腾讯": [
   {
+   "id": 814,
+   "title": "WorkBuddy日活飙升至行业第二的3-4倍，非技术用户涌入",
+   "summary": "从3月至今，WorkBuddy日活用户数已达行业第二名的3-4倍，用户不再限于开发者，大量HR、运营、行政等非技术岗位也在使用。其企业版和项目功能进一步扩展了Agent办公场景。同期，Trae Work、QoderWork、Kimi Work等产品纷纷改名或出新，争夺市场。腾讯云认为这可能是十年一遇的机遇。",
+   "published_at": "2026-06-16T12:42:11.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 816,
+   "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
+   "summary": "中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金投入 CEO 梁文锋管理的有限合伙企业，无投票权且锁定期五年；仅国资 AI 基金直接投资并保留投票权。创始人梁文锋个人投入约 200 亿元，腾讯和宁德时代为主要外部投资者。梁文锋表示优先基础 AI 研究与 AGI 开发，将继续开源。DeepSeek 去年初凭 V3、R1 模型获全球关注，今年 4 月发布运行于华为芯片的最大开源权重模型 V4，并将 V4 Pro 永久折扣 75%，输入价格约为 OpenAI GPT-5.5 的 1/11，输出价格约为 1/35。",
+   "published_at": "2026-06-16T09:40:48.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 669,
    "title": "腾讯混元 AI Infra 新开源：HPC-Ops 推理核心算子全面升级",
    "summary": "腾讯混元 AI Infra 团队开源升级 HPC-Ops 推理算子库，推出五大核心算子。Attention 采用运行时动态负载调度，长文本最高加速 2.95x，端到端 QPM 提升 17%；Router GEMM 以双 BF16 组合实现 FP32 精度，对比 CuBLAS FP32 最高提速 3.22x；FusedMoE 相对 vLLM、SGLang 性能提升 1.2x～1.6x；Fused AllReduce+Norm 对比主流方案最高提速 1.68x；Sampler 将解码采样融合为 2 个 CUDA Kernel，相对 vLLM 提速 4.0x～7.5x。所有能力均来自生产实践并完全开源。",
@@ -8091,6 +8628,17 @@
    "published_at": "2026-06-09T13:00:21.000Z",
    "url": "",
    "category": "industry",
+   "source": ""
+  }
+ ],
+ "通义千问": [
+  {
+   "id": 825,
+   "title": "Qwen-RobotManip：对齐解锁机器人操作基础模型的规模化能力",
+   "summary": "Qwen-RobotManip 是通义千问基于 Qwen-VL 的视觉-语言-动作（VLA）基础模型，引入覆盖表示、运动和行为三维度的统一对齐框架。仅使用开源机器人数据集和人演示视频，构建约 38，100 小时预训练语料，涵盖 15 种机器人形态。在 LIBERO-Plus 达 91.4%，RoboTwin-C2R Hard 达 69.4%，RoboCasa365 Composite-Unseen 达 14.9%，EBench 达 45.6%，RoboTwin-IF 达 72.0%，并在 RoboChallenge Table30 v1 generalist track 夺冠。模型采用 80 维状态-动作表示、人-机器人数据合成管道（1，933 小时第一人称视频转 24，808 小时数据）及上下文策略适配。",
+   "published_at": "2026-06-16T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
    "source": ""
   }
  ],

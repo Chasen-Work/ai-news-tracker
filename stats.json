@@ -1,17 +1,17 @@
 {
- "total_items": 789,
- "total_entities": 95,
- "total_dailies": 14,
+ "total_items": 834,
+ "total_entities": 99,
+ "total_dailies": 15,
  "categories": {
-  "tip": 228,
-  "ai-products": 221,
-  "industry": 194,
-  "ai-models": 78,
+  "tip": 240,
+  "ai-products": 236,
+  "industry": 205,
+  "ai-models": 85,
   "paper": 68
  },
  "entity_types": {
-  "company": 49,
-  "model": 46
+  "company": 50,
+  "model": 49
  },
  "top_sources": [
   {
@@ -35,12 +35,16 @@
    "count": 13
   },
   {
+   "name": "X：OpenRouter (@OpenRouter)",
+   "count": 11
+  },
+  {
    "name": "X：Rohan Paul (@rohanpaul_ai)",
    "count": 10
   },
   {
-   "name": "X：OpenRouter (@OpenRouter)",
-   "count": 10
+   "name": "TechCrunch：AI（RSS）",
+   "count": 9
   },
   {
    "name": "Anthropic：Newsroom（网页）",
@@ -48,10 +52,6 @@
   },
   {
    "name": "X：Vista (@vista8)",
-   "count": 6
-  },
-  {
-   "name": "X：Kim (@kimmonismus)",
    "count": 6
   }
  ],
@@ -114,8 +114,12 @@
   },
   {
    "date": "2026-06-15",
-   "count": 15
+   "count": 22
+  },
+  {
+   "date": "2026-06-16",
+   "count": 38
   }
  ],
- "updated_at": "2026-06-15T17:00:25Z"
+ "updated_at": "2026-06-16T19:05:56Z"
 }

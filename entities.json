@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 80,
-  "last_seen": "2026-06-15T07:25:41.000Z"
+  "mentions": 84,
+  "last_seen": "2026-06-16T13:01:23.690Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 79,
-  "last_seen": "2026-06-15T07:25:41.000Z"
+  "mentions": 83,
+  "last_seen": "2026-06-16T00:30:44.000Z"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 50,
-  "last_seen": "2026-06-15T15:43:04.000Z"
+  "mentions": 53,
+  "last_seen": "2026-06-16T11:21:41.000Z"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 49,
-  "last_seen": "2026-06-13"
+  "mentions": 51,
+  "last_seen": "2026-06-16T08:18:58.000Z"
  },
  {
   "id": 21,
@@ -38,29 +38,43 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 40,
-  "last_seen": "2026-06-13"
+  "mentions": 41,
+  "last_seen": "2026-06-16"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 31,
-  "last_seen": "2026-06-15T00:00:00.000Z"
+  "mentions": 36,
+  "last_seen": "2026-06-16T00:00:00.000Z"
  },
  {
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 28,
-  "last_seen": "2026-06-13"
+  "mentions": 32,
+  "last_seen": "2026-06-16"
  },
  {
   "id": 149,
   "name": "Cursor",
   "type": "company",
-  "mentions": 26,
-  "last_seen": "2026-06-12"
+  "mentions": 27,
+  "last_seen": "2026-06-16T11:21:41.000Z"
+ },
+ {
+  "id": 43,
+  "name": "Meta",
+  "type": "company",
+  "mentions": 23,
+  "last_seen": "2026-06-16T18:37:24.744Z"
+ },
+ {
+  "id": 79,
+  "name": "DeepSeek",
+  "type": "company",
+  "mentions": 23,
+  "last_seen": "2026-06-16T18:08:26.000Z"
  },
  {
   "id": 36,
@@ -70,18 +84,18 @@
   "last_seen": "2026-06-10T08:21:45.000Z"
  },
  {
-  "id": 79,
-  "name": "DeepSeek",
-  "type": "company",
-  "mentions": 21,
-  "last_seen": "2026-06-12"
- },
- {
   "id": 3,
   "name": "MiniMax",
   "type": "company",
+  "mentions": 21,
+  "last_seen": "2026-06-16"
+ },
+ {
+  "id": 4,
+  "name": "xAI",
+  "type": "company",
   "mentions": 20,
-  "last_seen": "2026-06-15T14:40:02.000Z"
+  "last_seen": "2026-06-16T13:23:33.000Z"
  },
  {
   "id": 13,
@@ -91,25 +105,18 @@
   "last_seen": "2026-06-10"
  },
  {
-  "id": 43,
-  "name": "Meta",
-  "type": "company",
-  "mentions": 19,
-  "last_seen": "2026-06-15T07:25:41.000Z"
- },
- {
   "id": 24,
   "name": "腾讯",
   "type": "company",
-  "mentions": 18,
-  "last_seen": "2026-06-12"
+  "mentions": 20,
+  "last_seen": "2026-06-16T12:42:11.000Z"
  },
  {
-  "id": 4,
-  "name": "xAI",
-  "type": "company",
-  "mentions": 15,
-  "last_seen": "2026-06-15T00:00:00.000Z"
+  "id": 2,
+  "name": "GPT-5.5",
+  "type": "model",
+  "mentions": 14,
+  "last_seen": "2026-06-16T09:40:48.000Z"
  },
  {
   "id": 20,
@@ -126,6 +133,20 @@
   "last_seen": "2026-06-12"
  },
  {
+  "id": 560,
+  "name": "Apple",
+  "type": "company",
+  "mentions": 14,
+  "last_seen": "2026-06-15T23:16:58.000Z"
+ },
+ {
+  "id": 25,
+  "name": "OpenClaw",
+  "type": "model",
+  "mentions": 13,
+  "last_seen": "2026-06-16T13:32:48.000Z"
+ },
+ {
   "id": 28,
   "name": "Nemotron",
   "type": "model",
@@ -138,27 +159,6 @@
   "type": "company",
   "mentions": 13,
   "last_seen": "2026-06-12"
- },
- {
-  "id": 560,
-  "name": "Apple",
-  "type": "company",
-  "mentions": 13,
-  "last_seen": "2026-06-13"
- },
- {
-  "id": 2,
-  "name": "GPT-5.5",
-  "type": "model",
-  "mentions": 12,
-  "last_seen": "2026-06-10"
- },
- {
-  "id": 25,
-  "name": "OpenClaw",
-  "type": "model",
-  "mentions": 12,
-  "last_seen": "2026-06-13"
  },
  {
   "id": 93,
@@ -182,18 +182,18 @@
   "last_seen": "2026-06-12"
  },
  {
+  "id": 52,
+  "name": "Microsoft",
+  "type": "company",
+  "mentions": 10,
+  "last_seen": "2026-06-16T15:50:53.000Z"
+ },
+ {
   "id": 51,
   "name": "Runway",
   "type": "company",
   "mentions": 9,
   "last_seen": "2026-06-12"
- },
- {
-  "id": 52,
-  "name": "Microsoft",
-  "type": "company",
-  "mentions": 8,
-  "last_seen": "2026-06-04"
  },
  {
   "id": 304,
@@ -231,6 +231,13 @@
   "last_seen": "2026-06-11"
  },
  {
+  "id": 7,
+  "name": "Qwen3.7",
+  "type": "model",
+  "mentions": 5,
+  "last_seen": "2026-06-16T00:00:00.000Z"
+ },
+ {
   "id": 30,
   "name": "NemoClaw",
   "type": "model",
@@ -266,18 +273,18 @@
   "last_seen": "2026-06-13"
  },
  {
+  "id": 760,
+  "name": "字节跳动",
+  "type": "company",
+  "mentions": 5,
+  "last_seen": "2026-06-16T01:49:40.000Z"
+ },
+ {
   "id": 1,
   "name": "Gemini 3.1 Pro",
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-06-08T03:00:56.000Z"
- },
- {
-  "id": 7,
-  "name": "Qwen3.7",
-  "type": "model",
-  "mentions": 4,
-  "last_seen": "2026-06-10T00:00:00.000Z"
  },
  {
   "id": 31,
@@ -329,11 +336,18 @@
   "last_seen": "2026-06-09"
  },
  {
-  "id": 760,
-  "name": "字节跳动",
+  "id": 434,
+  "name": "DeepSeek V4",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-06-16T18:08:26.000Z"
+ },
+ {
+  "id": 651,
+  "name": "华为",
   "type": "company",
   "mentions": 4,
-  "last_seen": "2026-06-13"
+  "last_seen": "2026-06-16T09:40:48.000Z"
  },
  {
   "id": 16,
@@ -371,11 +385,25 @@
   "last_seen": "2026-06-05"
  },
  {
-  "id": 434,
-  "name": "DeepSeek V4",
+  "id": 134,
+  "name": "IBM",
+  "type": "company",
+  "mentions": 3,
+  "last_seen": "2026-06-15T16:00:00.000Z"
+ },
+ {
+  "id": 180,
+  "name": "Qwen 3.6",
   "type": "model",
   "mentions": 3,
-  "last_seen": "2026-06-09T08:22:26.000Z"
+  "last_seen": "2026-06-16"
+ },
+ {
+  "id": 428,
+  "name": "Qwen2.5",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-06-16T00:00:00.000Z"
  },
  {
   "id": 535,
@@ -385,11 +413,11 @@
   "last_seen": "2026-06-10T00:00:00.000Z"
  },
  {
-  "id": 651,
-  "name": "华为",
-  "type": "company",
+  "id": 669,
+  "name": "GPT-4",
+  "type": "model",
   "mentions": 3,
-  "last_seen": "2026-06-11"
+  "last_seen": "2026-06-15T17:00:00.000Z"
  },
  {
   "id": 701,
@@ -397,6 +425,13 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-06-12"
+ },
+ {
+  "id": 976,
+  "name": "Qwen-",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-06-16T00:00:00.000Z"
  },
  {
   "id": 9,
@@ -476,25 +511,11 @@
   "last_seen": "2026-06-03"
  },
  {
-  "id": 134,
-  "name": "IBM",
-  "type": "company",
-  "mentions": 2,
-  "last_seen": "2026-06-09T21:48:41.000Z"
- },
- {
   "id": 154,
   "name": "CoreWeave",
   "type": "company",
   "mentions": 2,
   "last_seen": "2026-06-08T08:00:32.000Z"
- },
- {
-  "id": 180,
-  "name": "Qwen 3.6",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-15T00:00:00.000Z"
  },
  {
   "id": 256,
@@ -525,13 +546,6 @@
   "last_seen": "2026-06-06"
  },
  {
-  "id": 428,
-  "name": "Qwen2.5",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-06"
- },
- {
   "id": 435,
   "name": "Qwen3-8",
   "type": "model",
@@ -544,6 +558,13 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-06-07"
+ },
+ {
+  "id": 538,
+  "name": "Qwen3-",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-06-16T00:00:00.000Z"
  },
  {
   "id": 604,
@@ -560,11 +581,11 @@
   "last_seen": "2026-06-09T19:38:28.000Z"
  },
  {
-  "id": 669,
-  "name": "GPT-4",
+  "id": 713,
+  "name": "Mistral",
   "type": "model",
   "mentions": 2,
-  "last_seen": "2026-06-10"
+  "last_seen": "2026-06-15T17:00:00.000Z"
  },
  {
   "id": 723,
@@ -637,13 +658,6 @@
   "last_seen": "2026-06-03T00:00:00.000Z"
  },
  {
-  "id": 538,
-  "name": "Qwen3-",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-08T09:54:08.000Z"
- },
- {
   "id": 556,
   "name": "DeepSeek v4",
   "type": "model",
@@ -651,17 +665,31 @@
   "last_seen": "2026-06-07T00:00:00.000Z"
  },
  {
-  "id": 713,
-  "name": "Mistral",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-09T19:38:28.000Z"
- },
- {
   "id": 863,
   "name": "DeepSeek-R1",
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-06-11T17:07:18.181Z"
+ },
+ {
+  "id": 938,
+  "name": "Qwen 3.5",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-06-16"
+ },
+ {
+  "id": 977,
+  "name": "通义千问",
+  "type": "company",
+  "mentions": 1,
+  "last_seen": "2026-06-16T00:00:00.000Z"
+ },
+ {
+  "id": 990,
+  "name": "Llama 3",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-06-15T17:00:00.000Z"
  }
 ]
