@@ -179,7 +179,11 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
 @media(max-width:768px){.header-inner{padding:var(--space-2) var(--space-4)}.header-brand h1{font-size:var(--text-lg)}.tab-bar{padding:0 var(--space-4)}.tab-btn{font-size:var(--text-xs);padding:8px 12px}.main{padding:var(--space-4)}.grid{grid-template-columns:1fr}.filters{flex-direction:column;align-items:stretch}.filters select{width:100%;min-width:auto}.brand-cards{flex-direction:column}.brand-card{min-width:auto;width:100%}.cat-tabs button{font-size:11px;padding:5px 10px}.col-toggles{flex-direction:column;max-height:180px;overflow-y:auto}.robot-table{font-family:var(--font-body);font-size:10px}.robot-table th,.robot-table td{padding:4px 5px;white-space:nowrap}.cmp-table{font-size:10px}.cmp-table th,.cmp-table td{padding:4px 6px}.quick-filters{flex-direction:column}.qf-group{width:100%}.news-day{padding:var(--space-4)}.stats-bar{gap:var(--space-2);font-size:11px;flex-wrap:wrap}.pagination{flex-wrap:wrap}.overlay-content{margin:20px auto;padding:var(--space-4);width:96%}}
 @media(max-width:480px){.header-brand h1{font-size:var(--text-base)}.tab-btn{font-size:11px;padding:6px 10px}.main{padding:var(--space-3)}.news-item .title{font-size:var(--text-xs)}}
 
-/* ── 搜索面板 ── */
+/* ── 来源标识 ── */
+.src-badge{display:inline-flex;align-items:center;gap:3px;font-size:10px;font-weight:500;padding:1px 6px;border-radius:3px;margin-right:6px;vertical-align:middle;flex-shrink:0}
+.src-badge-xwlb{background:rgba(217,119,6,0.10);color:#b45309}
+.src-badge-aihot{background:rgba(0,112,243,0.10);color:#0070f3}
+.aihot-section{margin-top:var(--space-4);padding-top:var(--space-3)}
 .search-panel{display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;background:#fff;border:none;box-shadow:0 0 0 1px rgba(0,0,0,0.08),0 8px 24px rgba(0,0,0,0.10);border-radius:var(--radius-md);max-height:420px;overflow-y:auto;z-index:200;padding:var(--space-2)}
 .search-panel.show{display:block}
 .search-panel .sp-empty{padding:24px;text-align:center;color:var(--meta);font-size:var(--text-sm)}
@@ -310,7 +314,7 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
 <!-- ══════════════ TAB 3: NEWS ══════════════ -->
 <div class="tab-content" id="tab-news">
   <div class="filters" id="newsFilters">
-    <label>来源：<select id="newsSource"><option value="all">全部</option><option value="xwlb">新闻联播</option><option value="global">全球动态</option></select></label>
+    <label>来源：<select id="newsSource"><option value="all">全部</option><option value="xwlb">新闻联播</option><option value="aihot">AI动态</option></select></label>
     <label>行业：<select id="newsIndustry"><option value="all">全部行业</option></select></label>
     <label><input type="checkbox" id="newsSpecial"> 🔔 仅特别关注</label>
   </div>
@@ -362,16 +366,18 @@ async function loadJSON(url) {
 }
 
 async function init() {
-  const [models, robots, news, skills] = await Promise.all([
+  const [models, robots, news, skills, aihotItems] = await Promise.all([
     loadJSON('./models/manual_models.json'),
     loadJSON('./robots/manual_robots.json'),
     loadJSON('./xwlb.json'),
     loadJSON('./skills.json'),
+    loadJSON('./items.json'),
   ]);
   state.models = models || [];
   state.robots = robots || [];
   state.news = news || { days: [] };
   state.skills = skills || [];
+  state.aihotItems = aihotItems || [];
 
   updateStats();
 
@@ -390,11 +396,12 @@ async function init() {
 
 function updateStats() {
   const nd = (state.news.days||[]).length;
+  const ai = (state.aihotItems||[]).length;
   document.getElementById('updateStatus').textContent =
-    `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${nd}天新闻 · ${state.skills.length}技能`;
+    `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${nd+ai}条新闻 · ${state.skills.length}技能`;
   document.getElementById('modelsBadge').textContent = state.models.length;
   document.getElementById('robotsBadge').textContent = state.robots.length;
-  document.getElementById('newsBadge').textContent = nd;
+  document.getElementById('newsBadge').textContent = nd + ai;
   document.getElementById('skillsBadge').textContent = state.skills.length;
 }
 
@@ -1035,32 +1042,47 @@ function renderModels() {
 }
 
 // ══════════════════════════════════════════════════════════════════
-// NEWS
+// NEWS - 新闻联播 + AI动态 混合展示
 // ══════════════════════════════════════════════════════════════════
+const AIHOT_CAT_NAMES = {
+  'tip': '技巧观点',
+  'ai-products': '产品发布',
+  'industry': '行业动态',
+  'ai-models': '模型发布',
+  'paper': '论文研究',
+};
+
 function renderNews() {
-  const data = searchResults || state.news;
-  if (!data.days || !data.days.length) {
-    document.getElementById('newsContainer').innerHTML = '<div class="empty-state"><h3>暂无新闻数据</h3><p>数据采集中...</p></div>';
-    return;
+  const src = document.getElementById('newsSource').value;
+  const ind = document.getElementById('newsIndustry').value;
+  const spec = document.getElementById('newsSpecial').checked;
+
+  // 收集AIHOT行业到筛选器
+  const aihotCats = [...new Set((state.aihotItems||[]).map(i => i.category).filter(Boolean))];
+  const allInds = [...new Set([
+    ...(state.news.days||[]).flatMap(d=>(d.industries||[]).map(i=>i.name)),
+    ...aihotCats.map(c => AIHOT_CAT_NAMES[c] || c)
+  ])];
+  const sel = document.getElementById('newsIndustry');
+  if (sel.options.length <= 1) {
+    populateSelect('newsIndustry', allInds);
   }
-  if (!searchResults) {
-    const inds = [...new Set(state.news.days.flatMap(d=>(d.industries||[]).map(i=>i.name)))];
-    const sel = document.getElementById('newsIndustry');
-    if (sel.options.length <= 1) populateSelect('newsIndustry', inds);
-  }
-  function filterNews() {
-    const src = document.getElementById('newsSource').value;
-    const ind = document.getElementById('newsIndustry').value;
-    const spec = document.getElementById('newsSpecial').checked;
-    let days = data.days;
-    if (src !== 'all') days = days.filter(d => d.source === src);
-    if (spec) days = days.filter(d => d.special_count > 0);
-    document.getElementById('newsContainer').innerHTML = days.map(day => {
+
+  let html = '';
+
+  // ── XWLB section ──
+  if (src === 'all' || src === 'xwlb') {
+    const xwlbDays = state.news.days || [];
+    xwlbDays.forEach(day => {
       let industries = day.industries || [];
       if (ind !== 'all') industries = industries.filter(i => i.name === ind);
-      if (!industries.length) return '';
-      return `<div class="news-day">
-        <div class="date">📺 ${day.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')}
+      if (spec) industries = industries.filter(i => i.special);
+      if (!industries.length && !spec) return;
+
+      html += `<div class="news-day">
+        <div class="date">
+          <span class="src-badge src-badge-xwlb">联播</span>
+          ${day.date.replace(/(\d{4})(\d{2})(\d{2})/,'$1年$2月$3日')}
           <span class="meta">${day.total_items}条 · ${day.industry_count}个行业 ${day.special_count>0?' 🔔'+day.special_count+'条特别关注':''}</span>
         </div>
         ${industries.map(ind2 => `
@@ -1068,21 +1090,83 @@ function renderNews() {
             <div class="ind-title">📌 ${ind2.name} <span class="count">${ind2.count}条${ind2.special?' 🔔':''}</span></div>
             ${(ind2.items||[]).map(item => `
               <div class="news-item" onclick="this.classList.toggle('expanded')">
-                <div class="title">${item.title||''}${item.special?'<span class="spec-tag">🔔 特别关注</span>':''}</div>
+                <div class="title"><span class="src-badge src-badge-xwlb">联播</span>${item.title||''}${item.special?'<span class="spec-tag">🔔 特别关注</span>':''}</div>
                 <div class="summary">${item.summary||''}</div>
               </div>
             `).join('')}
           </div>
         `).join('')}
       </div>`;
-    }).join('');
+    });
   }
-  if (!window._newsListenersAttached) {
-    ['newsSource','newsIndustry'].forEach(id => { document.getElementById(id).addEventListener('change', filterNews); });
-    document.getElementById('newsSpecial').addEventListener('change', filterNews);
-    window._newsListenersAttached = true;
+
+  // ── AIHOT section ──
+  if (src === 'all' || src === 'aihot') {
+    const aihot = state.aihotItems || [];
+    // 按日期分组
+    const byDate = {};
+    aihot.forEach(item => {
+      const ts = item.published_at || '';
+      const date = ts.slice(0, 10); // "2026-06-16"
+      if (!byDate[date]) byDate[date] = [];
+      byDate[date].push(item);
+    });
+
+    Object.keys(byDate).sort().reverse().forEach(date => {
+      let items = byDate[date];
+      // 行业筛选
+      if (ind !== 'all') {
+        const catCN = AIHOT_CAT_NAMES[ind] || ind;
+        const catKey = Object.keys(AIHOT_CAT_NAMES).find(k => AIHOT_CAT_NAMES[k] === ind) || ind;
+        items = items.filter(i => i.category === catKey || AIHOT_CAT_NAMES[i.category] === ind);
+      }
+      if (!items.length) return;
+
+      // 按分类分组
+      const byCat = {};
+      items.forEach(item => {
+        const cat = AIHOT_CAT_NAMES[item.category] || item.category || '其他';
+        if (!byCat[cat]) byCat[cat] = [];
+        byCat[cat].push(item);
+      });
+
+      const dateDisplay = date.replace(/-/g,'年').replace(/-(\d{2})$/,'月$1日');
+      html += `<div class="news-day aihot-section">
+        <div class="date">
+          <span class="src-badge src-badge-aihot">动态</span>
+          ${dateDisplay}
+          <span class="meta">${items.length}条</span>
+        </div>
+        ${Object.keys(byCat).map(cat => `
+          <div class="news-industry">
+            <div class="ind-title">📌 ${cat} <span class="count">${byCat[cat].length}条</span></div>
+            ${byCat[cat].map(item => `
+              <div class="news-item" onclick="this.classList.toggle('expanded')">
+                <div class="title">
+                  <span class="src-badge src-badge-aihot">动态</span>
+                  ${item.title||''}
+                  ${item.url ? `<span class="spec-tag" onclick="event.stopPropagation();window.open('${item.url}','_blank')" style="cursor:pointer">🔗 原文</span>` : ''}
+                </div>
+                <div class="summary">${item.summary||''}</div>
+              </div>
+            `).join('')}
+          </div>
+        `).join('')}
+      </div>`;
+    });
   }
-  filterNews();
+
+  document.getElementById('newsContainer').innerHTML = html ||
+    '<div class="empty-state"><h3>暂无匹配的新闻</h3></div>';
+}
+
+// 新闻筛选器事件绑定
+if (!window._newsListenersAttached) {
+  ['newsSource','newsIndustry'].forEach(id => {
+    document.getElementById(id).addEventListener('change', renderNews);
+  });
+  document.getElementById('newsSpecial').addEventListener('change', renderNews);
+  window._newsListenersAttached = true;
 }
 
 // ══════════════════════════════════════════════════════════════════
@@ -1157,11 +1241,29 @@ function doSearch(query) {
           results.news.push({
             title: title,
             subtitle: `${dateStr} · ${ind.name}`,
+            badge: 'xwlb',
             data: item
           });
         }
       });
     });
+  });
+
+  // Search AIHOT news items: title + summary
+  (state.aihotItems || []).forEach(item => {
+    const title = item.title || '';
+    const summary = item.summary || '';
+    if (title.toLowerCase().includes(q) || summary.toLowerCase().includes(q)) {
+      const ts = item.published_at || '';
+      const date = ts.slice(0, 10);
+      const cat = AIHOT_CAT_NAMES[item.category] || item.category || '';
+      results.news.push({
+        title: title,
+        subtitle: `${date} · ${cat}`,
+        badge: 'aihot',
+        data: item
+      });
+    }
   });
 
   // Search skills: name, desc
@@ -1198,9 +1300,10 @@ function doSearch(query) {
     html += `<div class="sp-header"><span class="sp-badge ${g.cls}">${g.tag}</span> ${items.length}条</div>`;
     items.slice(0, g.limit).forEach(item => {
       const titleHtml = highlight(item.title, query.trim());
+      const badge = item.badge ? `<span class="src-badge src-badge-${item.badge}">${item.badge === 'xwlb' ? '联播' : '动态'}</span>` : '';
       html += `<div class="sp-item" data-tab="${g.tab}" onclick="switchToTab('${g.tab}')">
         <span class="sp-tag ${g.cls}">${g.tag}</span>
-        <span class="sp-title">${titleHtml}</span>
+        <span class="sp-title">${badge}${titleHtml}</span>
         <span class="sp-source">${item.subtitle ? highlight(item.subtitle, query.trim()) : ''}</span>
       </div>`;
     });
