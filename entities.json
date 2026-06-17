@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 94,
-  "last_seen": "2026-06-17"
+  "mentions": 95,
+  "last_seen": "2026-06-17T04:55:33.000Z"
  },
  {
   "id": 35,
@@ -45,7 +45,7 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 39,
+  "mentions": 40,
   "last_seen": "2026-06-17"
  },
  {
@@ -66,13 +66,20 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 26,
+  "mentions": 27,
   "last_seen": "2026-06-17"
  },
  {
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
+  "mentions": 25,
+  "last_seen": "2026-06-17"
+ },
+ {
+  "id": 4,
+  "name": "xAI",
+  "type": "company",
   "mentions": 24,
   "last_seen": "2026-06-17"
  },
@@ -84,11 +91,11 @@
   "last_seen": "2026-06-17"
  },
  {
-  "id": 4,
-  "name": "xAI",
+  "id": 13,
+  "name": "Hugging Face",
   "type": "company",
-  "mentions": 23,
-  "last_seen": "2026-06-17"
+  "mentions": 22,
+  "last_seen": "2026-06-17T10:18:05.000Z"
  },
  {
   "id": 24,
@@ -103,13 +110,6 @@
   "type": "company",
   "mentions": 21,
   "last_seen": "2026-06-16"
- },
- {
-  "id": 13,
-  "name": "Hugging Face",
-  "type": "company",
-  "mentions": 20,
-  "last_seen": "2026-06-10"
  },
  {
   "id": 2,
@@ -273,6 +273,13 @@
   "last_seen": "2026-06-02T17:12:18.000Z"
  },
  {
+  "id": 37,
+  "name": "智谱",
+  "type": "company",
+  "mentions": 5,
+  "last_seen": "2026-06-16T16:00:00.000Z"
+ },
+ {
   "id": 94,
   "name": "Alibaba",
   "type": "company",
@@ -322,13 +329,6 @@
   "last_seen": "2026-06-02"
  },
  {
-  "id": 37,
-  "name": "智谱",
-  "type": "company",
-  "mentions": 4,
-  "last_seen": "2026-06-14"
- },
- {
   "id": 38,
   "name": "Alphabet",
   "type": "company",
@@ -341,6 +341,13 @@
   "type": "company",
   "mentions": 4,
   "last_seen": "2026-06-10"
+ },
+ {
+  "id": 180,
+  "name": "Qwen 3.6",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-06-16T00:00:00.000Z"
  },
  {
   "id": 335,
@@ -420,13 +427,6 @@
   "last_seen": "2026-06-15T16:00:00.000Z"
  },
  {
-  "id": 180,
-  "name": "Qwen 3.6",
-  "type": "model",
-  "mentions": 3,
-  "last_seen": "2026-06-16"
- },
- {
   "id": 535,
   "name": "Qwen3.6",
   "type": "model",
@@ -453,6 +453,13 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-06-12"
+ },
+ {
+  "id": 723,
+  "name": "Claude Sonnet",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-06-16T00:00:00.000Z"
  },
  {
   "id": 9,
@@ -600,13 +607,6 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-06-15T17:00:00.000Z"
- },
- {
-  "id": 723,
-  "name": "Claude Sonnet",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-10T18:06:35.000Z"
  },
  {
   "id": 783,
