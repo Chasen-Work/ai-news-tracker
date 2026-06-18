@@ -1,45 +1,45 @@
 {
- "total_items": 883,
- "total_entities": 103,
- "total_dailies": 16,
+ "total_items": 935,
+ "total_entities": 104,
+ "total_dailies": 17,
  "categories": {
-  "ai-products": 249,
-  "tip": 249,
-  "industry": 218,
-  "ai-models": 93,
-  "paper": 74
+  "ai-products": 267,
+  "tip": 257,
+  "industry": 231,
+  "ai-models": 97,
+  "paper": 83
  },
  "entity_types": {
   "model": 53,
-  "company": 50
+  "company": 51
  },
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 28
+   "count": 31
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 21
+   "count": 23
   },
   {
    "name": "Hugging Face：Blog（RSS）",
-   "count": 17
+   "count": 19
+  },
+  {
+   "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
+   "count": 16
   },
   {
    "name": "Bloomberg：Technology（RSS）",
    "count": 15
   },
   {
-   "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 14
+   "name": "TechCrunch：AI（RSS）",
+   "count": 12
   },
   {
    "name": "X：OpenRouter (@OpenRouter)",
-   "count": 11
-  },
-  {
-   "name": "TechCrunch：AI（RSS）",
    "count": 11
   },
   {
@@ -48,11 +48,11 @@
   },
   {
    "name": "X：Kim (@kimmonismus)",
-   "count": 7
+   "count": 8
   },
   {
    "name": "Gary Marcus：The Road to AI We Can Trust（RSS）",
-   "count": 7
+   "count": 8
   }
  ],
  "by_date": [
@@ -122,8 +122,12 @@
   },
   {
    "date": "2026-06-17",
-   "count": 35
+   "count": 57
+  },
+  {
+   "date": "2026-06-18",
+   "count": 30
   }
  ],
- "updated_at": "2026-06-17T13:00:08Z"
+ "updated_at": "2026-06-18T01:00:12Z"
 }
