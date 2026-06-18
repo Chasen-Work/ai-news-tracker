@@ -106,6 +106,15 @@
  ],
  "Anthropic": [
   {
+   "id": 948,
+   "title": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App",
+   "summary": "在 2026 年 WWDC 期间，苹果发布 Xcode 27，其核心组件首次整合 AI 智能体，能理解 Swift 语言并通过多轮自然语言对话辅助开发。AI 可跨多个文件修改整个代码库，也能根据提示与资源生成应用设计并独立构建完整应用，建成后仍可通过对话添加特效、动画等。Xcode 27 支持接入 Anthropic、OpenAI 和 Google 等第三方 AI 模型，同时引入 Core AI 框架提供现代 Swift API 调用端侧模型，并升级开源框架 MLX。",
+   "published_at": "2026-06-18T00:43:26.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 894,
    "title": "Anthropic与DeepMind CEO呼吁G7组建AI联盟排除中国",
    "summary": "Dario Amodei（Anthropic）与Demis Hassabis（Google DeepMind）在G7闭门会议上呼吁组建美国主导的联盟，为人工智能制定全球规则和标准。Amodei指出，该联盟应以前沿模型和硬件（包括芯片及其他关键组件）的访问权限为手段，将中国排除在外。这一主张被评论为高技术新冷战的开端，竞争方将从根本上被剥夺参与权。",
@@ -229,6 +238,15 @@
    "published_at": "2026-06-16T16:45:18.627Z",
    "url": "",
    "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 950,
+   "title": "如何用 OpenRouter 接入任意编码代理或 AI 工具",
+   "summary": "OpenRouter 提供统一 API 键（sk-or- 开头），兼容 OpenAI Chat API，可接入 300+ 模型和 60+ 供应商。用户只需将 base URL 改为 `https：//openrouter.ai/api/v1`，设置 API 键，并指定模型 slug（如 `openai/gpt-4o` 或 `anthropic/claude-sonnet-4`）即可。同一键可直接用于 Claude Code、Codex CLI、Cursor、Cline 等编码代理与工具。其路由机制在供应商故障时自动切换，代理无需感知失败即可继续多步骤任务。OpenRouter 也提供 Python 和 TypeScript 原生 SDK。",
+   "published_at": "2026-06-16T15:00:00.000Z",
+   "url": "",
+   "category": "tip",
    "source": ""
   },
   {
@@ -1199,6 +1217,15 @@
    "source": ""
   },
   {
+   "id": 950,
+   "title": "如何用 OpenRouter 接入任意编码代理或 AI 工具",
+   "summary": "OpenRouter 提供统一 API 键（sk-or- 开头），兼容 OpenAI Chat API，可接入 300+ 模型和 60+ 供应商。用户只需将 base URL 改为 `https：//openrouter.ai/api/v1`，设置 API 键，并指定模型 slug（如 `openai/gpt-4o` 或 `anthropic/claude-sonnet-4`）即可。同一键可直接用于 Claude Code、Codex CLI、Cursor、Cline 等编码代理与工具。其路由机制在供应商故障时自动切换，代理无需感知失败即可继续多步骤任务。OpenRouter 也提供 Python 和 TypeScript 原生 SDK。",
+   "published_at": "2026-06-16T15:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 798,
    "title": "Claude Code v2.1.178 发布",
    "summary": "本次更新新增 `Tool(param:value)` 语法用于权限规则匹配工具输入参数；嵌套 `skills` 目录中的技能自动加载，名称冲突时以 `<dir>:<name>` 形式保留；嵌套 `agent`、`workflow`、`output-style` 冲突时取最近目录。改进自动模式下子 agent 生成前的分类器评估；`/doctor` 采用扁平树布局；工作流提示词高亮为紫色闪烁，仅触发显式短语；`/bug` 提交前需填写描述。修复了 CLI 继承过期 WebSocket/OAuth 文件描述符导致的崩溃、Chrome 中 OAuth token 账号不匹配导致连接失败、子 agent 转录显示工具结果、后台恢复不从头重启…",
@@ -1882,6 +1909,15 @@
    "source": ""
   },
   {
+   "id": 950,
+   "title": "如何用 OpenRouter 接入任意编码代理或 AI 工具",
+   "summary": "OpenRouter 提供统一 API 键（sk-or- 开头），兼容 OpenAI Chat API，可接入 300+ 模型和 60+ 供应商。用户只需将 base URL 改为 `https：//openrouter.ai/api/v1`，设置 API 键，并指定模型 slug（如 `openai/gpt-4o` 或 `anthropic/claude-sonnet-4`）即可。同一键可直接用于 Claude Code、Codex CLI、Cursor、Cline 等编码代理与工具。其路由机制在供应商故障时自动切换，代理无需感知失败即可继续多步骤任务。OpenRouter 也提供 Python 和 TypeScript 原生 SDK。",
+   "published_at": "2026-06-16T15:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 789,
    "title": "OpenAI 推出合作伙伴网络 OpenAI Partner Network",
    "summary": "OpenAI 宣布推出 OpenAI Partner Network，并投资 1.5 亿美元支持全球合作伙伴构建、销售和交付 AI 解决方案。该计划设立 Select、Advanced、Elite 三级合作伙伴层级，提供 Codex、网络安全、智能体等专业方向认证，并试点 Forward Deployed Experts 项目以支持复杂企业部署。目标在 2026 年底前培训认证 30 万名顾问。案例显示，Paychex 借助 Bain 和 OpenAI 的方案将等待时间降低 80%，人工审核时间减少 30%。",
@@ -2430,6 +2466,15 @@
    "source": "TechCrunch：AI（RSS）"
   },
   {
+   "id": 950,
+   "title": "如何用 OpenRouter 接入任意编码代理或 AI 工具",
+   "summary": "OpenRouter 提供统一 API 键（sk-or- 开头），兼容 OpenAI Chat API，可接入 300+ 模型和 60+ 供应商。用户只需将 base URL 改为 `https：//openrouter.ai/api/v1`，设置 API 键，并指定模型 slug（如 `openai/gpt-4o` 或 `anthropic/claude-sonnet-4`）即可。同一键可直接用于 Claude Code、Codex CLI、Cursor、Cline 等编码代理与工具。其路由机制在供应商故障时自动切换，代理无需感知失败即可继续多步骤任务。OpenRouter 也提供 Python 和 TypeScript 原生 SDK。",
+   "published_at": "2026-06-16T15:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 815,
    "title": "SpaceX 以 600 亿美元股票收购 AI 编程公司 Cursor",
    "summary": "SpaceX 在历史性 IPO 数天后，同意以 600 亿美元股票收购 AI 编程初创公司 Cursor，旨在帮助其围绕 xAI 构建的 AI 部门追赶主要 AI 实验室。此前 Cursor 正接近完成一轮 20 亿美元融资，估值 500 亿美元，投资方包括 Andreessen Horowitz、Thrive 和 Nvidia。SpaceX 在 IPO 期间向投资者表示，其 AI 产品可寻址市场达 26 万亿美元。交易预计于今年第三季度完成。",
@@ -2674,6 +2719,15 @@
   }
  ],
  "DeepSeek": [
+  {
+   "id": 941,
+   "title": "DeepSeek 识图模式正式上线 App 和网页端",
+   "summary": "DeepSeek 识图模式于6月18日在网页和 App 端正式上线，与快速模式、专家模式并列。开启后用户可直接上传图片让 DeepSeek 识别图像，能力超越简单文字提取。目前 App 端仍显示\"图片理解功能内测中\"，网页端无此提示。该模式背后的多模态模型技术细节于今年4月公开，核心框架为\"Thinking with Visual Primitives（以视觉原语思考）\"。",
+   "published_at": "2026-06-18T07:48:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 851,
    "title": "微软考虑为 Copilot Cowork 集成 DeepSeek V4",
@@ -3441,6 +3495,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 948,
+   "title": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App",
+   "summary": "在 2026 年 WWDC 期间，苹果发布 Xcode 27，其核心组件首次整合 AI 智能体，能理解 Swift 语言并通过多轮自然语言对话辅助开发。AI 可跨多个文件修改整个代码库，也能根据提示与资源生成应用设计并独立构建完整应用，建成后仍可通过对话添加特效、动画等。Xcode 27 支持接入 Anthropic、OpenAI 和 Google 等第三方 AI 模型，同时引入 Core AI 框架提供现代 Swift API 调用端侧模型，并升级开源框架 MLX。",
+   "published_at": "2026-06-18T00:43:26.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 913,
    "title": "Noam Shazeer 离开 Google 加入 OpenAI",
@@ -5014,6 +5077,15 @@
  ],
  "Midjourney": [
   {
+   "id": 946,
+   "title": "深入解析 Midjourney Scanner 技术内幕",
+   "summary": "我们全新\"Midjourney Scanner\"的技术深潜。",
+   "published_at": "2026-06-18T01:43:24.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 846,
    "title": "Midjourney V8.1 推出 Draft mode 草稿模式与新功能预览",
    "summary": "Midjourney V8.1 的 Draft mode 草稿模式每次生成24张低分辨率低质量图片。用户可对任意图片点击 \"Vary\"，将其渲染为全质量、全分辨率版本。草稿任务消耗的快速小时数减半。",
@@ -5089,6 +5161,15 @@
   }
  ],
  "MiniMax": [
+  {
+   "id": 943,
+   "title": "MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务",
+   "summary": "MOSS-TTS-Local-Transformer-v1.5 是一款开源 TTS 模型，支持 48 kHz 立体声、零样本声音克隆、最长 10 分钟长文本合成、时长控制及 31 种语言。其核心采用 Qwen3-4B 骨干与约 2B 参数的 MOSS-Audio-Tokenizer-v2 音频编解码器，通过 12 个 RVQ 码本运行。SGLang-Omni 以三阶段流水线部署该模型。在 Seed-TTS-Eval 上词错误率 5.10%、语音相似度 69.23%，CV3-Eval 上 WER 7.48%、SIM 61.59%，MiniMax Multilingual 上 WER 6.37%、SIM 75.31%，X Voice 上 WER 20.48%、SIM 63.00%。",
+   "published_at": "2026-06-18T05:56:08.548Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 790,
    "title": "MiniMax 开源 M3 模型权重及 MSA 技术论文",
@@ -5300,6 +5381,15 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 944,
+   "title": "cuTile Rust：安全无数据竞争的 GPU 内核系统",
+   "summary": "cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。",
+   "published_at": "2026-06-18T03:09:11.275Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 902,
    "title": "NVIDIA GEAR实验室发布ENPIRE：8个Codex智能体自主控制机器人完成物理实验",
@@ -6074,6 +6164,24 @@
  ],
  "OpenAI": [
   {
+   "id": 937,
+   "title": "ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容",
+   "summary": "Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的\"恢复照片\"提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和\"不做审查\"指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。",
+   "published_at": "2026-06-18T11:25:28.101Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 948,
+   "title": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App",
+   "summary": "在 2026 年 WWDC 期间，苹果发布 Xcode 27，其核心组件首次整合 AI 智能体，能理解 Swift 语言并通过多轮自然语言对话辅助开发。AI 可跨多个文件修改整个代码库，也能根据提示与资源生成应用设计并独立构建完整应用，建成后仍可通过对话添加特效、动画等。Xcode 27 支持接入 Anthropic、OpenAI 和 Google 等第三方 AI 模型，同时引入 Core AI 框架提供现代 Swift API 调用端侧模型，并升级开源框架 MLX。",
+   "published_at": "2026-06-18T00:43:26.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 913,
    "title": "Noam Shazeer 离开 Google 加入 OpenAI",
    "summary": "两年前谷歌花 27 亿美元请回的 AI 传奇 Noam Shazeer 已离开谷歌，加入 OpenAI。\n\n对 Gemini 来说是个残酷的消息。",
@@ -6224,6 +6332,15 @@
    "published_at": "2026-06-16T18:00:00.000Z",
    "url": "",
    "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 950,
+   "title": "如何用 OpenRouter 接入任意编码代理或 AI 工具",
+   "summary": "OpenRouter 提供统一 API 键（sk-or- 开头），兼容 OpenAI Chat API，可接入 300+ 模型和 60+ 供应商。用户只需将 base URL 改为 `https：//openrouter.ai/api/v1`，设置 API 键，并指定模型 slug（如 `openai/gpt-4o` 或 `anthropic/claude-sonnet-4`）即可。同一键可直接用于 Claude Code、Codex CLI、Cursor、Cline 等编码代理与工具。其路由机制在供应商故障时自动切换，代理无需感知失败即可继续多步骤任务。OpenRouter 也提供 Python 和 TypeScript 原生 SDK。",
+   "published_at": "2026-06-16T15:00:00.000Z",
+   "url": "",
+   "category": "tip",
    "source": ""
   },
   {
@@ -7187,6 +7304,15 @@
    "source": "OpenRouter：Announcements（RSS）"
   },
   {
+   "id": 950,
+   "title": "如何用 OpenRouter 接入任意编码代理或 AI 工具",
+   "summary": "OpenRouter 提供统一 API 键（sk-or- 开头），兼容 OpenAI Chat API，可接入 300+ 模型和 60+ 供应商。用户只需将 base URL 改为 `https：//openrouter.ai/api/v1`，设置 API 键，并指定模型 slug（如 `openai/gpt-4o` 或 `anthropic/claude-sonnet-4`）即可。同一键可直接用于 Claude Code、Codex CLI、Cursor、Cline 等编码代理与工具。其路由机制在供应商故障时自动切换，代理无需感知失败即可继续多步骤任务。OpenRouter 也提供 Python 和 TypeScript 原生 SDK。",
+   "published_at": "2026-06-16T15:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 873,
    "title": "Subagent：让模型把琐碎任务委托出去",
    "summary": "OpenRouter 推出 openrouter：subagent 服务器工具，允许前沿模型在生成过程中将独立的琐碎任务（如文档总结、结构化数据提取、文本重格式化）委托给更小、更便宜、更快的 worker 模型执行，从而节省前沿模型的 token 消耗。",
@@ -7561,6 +7687,24 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 943,
+   "title": "MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务",
+   "summary": "MOSS-TTS-Local-Transformer-v1.5 是一款开源 TTS 模型，支持 48 kHz 立体声、零样本声音克隆、最长 10 分钟长文本合成、时长控制及 31 种语言。其核心采用 Qwen3-4B 骨干与约 2B 参数的 MOSS-Audio-Tokenizer-v2 音频编解码器，通过 12 个 RVQ 码本运行。SGLang-Omni 以三阶段流水线部署该模型。在 Seed-TTS-Eval 上词错误率 5.10%、语音相似度 69.23%，CV3-Eval 上 WER 7.48%、SIM 61.59%，MiniMax Multilingual 上 WER 6.37%、SIM 75.31%，X Voice 上 WER 20.48%、SIM 63.00%。",
+   "published_at": "2026-06-18T05:56:08.548Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 944,
+   "title": "cuTile Rust：安全无数据竞争的 GPU 内核系统",
+   "summary": "cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。",
+   "published_at": "2026-06-18T03:09:11.275Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 836,
    "title": "Qwen-RobotManip：对齐解锁机器人操作基础模型的规模化能力",
@@ -8114,7 +8258,36 @@
    "source": ""
   }
  ],
+ "Qwen3-32": [
+  {
+   "id": 944,
+   "title": "cuTile Rust：安全无数据竞争的 GPU 内核系统",
+   "summary": "cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。",
+   "published_at": "2026-06-18T03:09:11.275Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  }
+ ],
  "Qwen3-4": [
+  {
+   "id": 943,
+   "title": "MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务",
+   "summary": "MOSS-TTS-Local-Transformer-v1.5 是一款开源 TTS 模型，支持 48 kHz 立体声、零样本声音克隆、最长 10 分钟长文本合成、时长控制及 31 种语言。其核心采用 Qwen3-4B 骨干与约 2B 参数的 MOSS-Audio-Tokenizer-v2 音频编解码器，通过 12 个 RVQ 码本运行。SGLang-Omni 以三阶段流水线部署该模型。在 Seed-TTS-Eval 上词错误率 5.10%、语音相似度 69.23%，CV3-Eval 上 WER 7.48%、SIM 61.59%，MiniMax Multilingual 上 WER 6.37%、SIM 75.31%，X Voice 上 WER 20.48%、SIM 63.00%。",
+   "published_at": "2026-06-18T05:56:08.548Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 944,
+   "title": "cuTile Rust：安全无数据竞争的 GPU 内核系统",
+   "summary": "cuTile Rust 是一个基于 tile 的 GPU 编程系统，允许用 Rust 编写内存安全、无数据竞争的内核。它通过 `#【cutile：：module】` 宏将内核 AST 嵌入主机二进制，在运行时经 CUDA Tile IR JIT 编译为 GPU cubin。可变张量在启动前分割，不可变张量共享，启动器在 GPU 工作期间保持所有权。在 NVIDIA B200 上，逐元素操作达 7 TB/s（约 91% 峰值带宽），GEMM 达 2 PFlop/s（约 92% 密集 f16 峰值）。基于 cuTile Rust 构建的 Grout 推理引擎在 RTX 5090 上解码 Qwen3-4B 达 171 tokens/s，在 B200 上解码 Qwen3-32B 达 82 tokens/s。项目处于早期研究阶段。",
+   "published_at": "2026-06-18T03:09:11.275Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 274,
    "title": "Boson AI 与 LMSYS 发布基于 SGLang-Omni 的 Higgs Audio v3 TTS 端到端服务",
@@ -8769,6 +8942,17 @@
    "source": ""
   }
  ],
+ "gpt-4": [
+  {
+   "id": 950,
+   "title": "如何用 OpenRouter 接入任意编码代理或 AI 工具",
+   "summary": "OpenRouter 提供统一 API 键（sk-or- 开头），兼容 OpenAI Chat API，可接入 300+ 模型和 60+ 供应商。用户只需将 base URL 改为 `https：//openrouter.ai/api/v1`，设置 API 键，并指定模型 slug（如 `openai/gpt-4o` 或 `anthropic/claude-sonnet-4`）即可。同一键可直接用于 Claude Code、Codex CLI、Cursor、Cline 等编码代理与工具。其路由机制在供应商故障时自动切换，代理无需感知失败即可继续多步骤任务。OpenRouter 也提供 Python 和 TypeScript 原生 SDK。",
+   "published_at": "2026-06-16T15:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  }
+ ],
  "llama": [
   {
    "id": 468,
@@ -9349,6 +9533,17 @@
    "source": ""
   }
  ],
+ "月之暗面": [
+  {
+   "id": 939,
+   "title": "Kimi Work 新增目标模式与插件中心，6月推出额度消耗5折福利",
+   "summary": "月之暗面旗下 Kimi Work（Beta 版）新增「目标模式」，支持设定终点后由 Agent 自主循环推进任务，最长连续运行24小时，过程中人类可随时中断调整。同时上线「插件中心」，可选装百度网盘、Canva可画、钉钉、飞书、WPS、Notion、Cloudflare 等外部应用。6月限时福利期间，Kimi 电脑客户端 Work 模式所有任务会员额度消耗减半，即从0.02%降至0.01%。",
+   "published_at": "2026-06-18T09:06:57.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  }
+ ],
  "混元": [
   {
    "id": 669,
@@ -9442,6 +9637,15 @@
   }
  ],
  "百度": [
+  {
+   "id": 939,
+   "title": "Kimi Work 新增目标模式与插件中心，6月推出额度消耗5折福利",
+   "summary": "月之暗面旗下 Kimi Work（Beta 版）新增「目标模式」，支持设定终点后由 Agent 自主循环推进任务，最长连续运行24小时，过程中人类可随时中断调整。同时上线「插件中心」，可选装百度网盘、Canva可画、钉钉、飞书、WPS、Notion、Cloudflare 等外部应用。6月限时福利期间，Kimi 电脑客户端 Work 模式所有任务会员额度消耗减半，即从0.02%降至0.01%。",
+   "published_at": "2026-06-18T09:06:57.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 619,
    "title": "百度百舸联合复旦提出LU-KV框架，被ICML 2026录用",
@@ -9747,6 +9951,15 @@
   }
  ],
  "豆包": [
+  {
+   "id": 938,
+   "title": "火山引擎上线豆包实时语音模型3.0 API 服务，开启邀测",
+   "summary": "火山引擎上线豆包实时语音模型3.0（Seeduplex）API 服务并开启邀测。该模型为原生全双工端到端语音大模型，具备精准遵循、抗干扰、动态判停三大优势。可在多人对话中安静待命，指定话题出现时主动加入；支持通过自定义工具在实时交互中完成预定日历、发送邮件等任务。抗干扰力提升，误回复率与误打断率大幅降低；判停延迟缩短约250ms，复杂场景抢话比例下降40%，用户主动打断延迟缩短约300ms。适用于汽车智能座舱、智能硬件、智能客服等场景。",
+   "published_at": "2026-06-18T10:36:31.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 724,
    "title": "字节豆包上线“任务模式”：支持定时执行与文件生成，“思考模式”升级为“专家模式”",
