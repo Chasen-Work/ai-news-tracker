@@ -3,22 +3,22 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 105,
-  "last_seen": "2026-06-18T11:25:28.101Z"
+  "mentions": 116,
+  "last_seen": "2026-06-19"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 99,
-  "last_seen": "2026-06-18T00:43:26.000Z"
+  "mentions": 103,
+  "last_seen": "2026-06-19"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 64,
-  "last_seen": "2026-06-18T00:43:26.000Z"
+  "mentions": 71,
+  "last_seen": "2026-06-19"
  },
  {
   "id": 10,
@@ -28,18 +28,18 @@
   "last_seen": "2026-06-18T03:09:11.275Z"
  },
  {
-  "id": 21,
-  "name": "Codex",
-  "type": "model",
-  "mentions": 53,
-  "last_seen": "2026-06-18"
- },
- {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 51,
-  "last_seen": "2026-06-18"
+  "mentions": 56,
+  "last_seen": "2026-06-19"
+ },
+ {
+  "id": 21,
+  "name": "Codex",
+  "type": "model",
+  "mentions": 54,
+  "last_seen": "2026-06-18T17:00:00.000Z"
  },
  {
   "id": 6,
@@ -63,25 +63,32 @@
   "last_seen": "2026-06-18"
  },
  {
-  "id": 79,
-  "name": "DeepSeek",
-  "type": "company",
-  "mentions": 28,
-  "last_seen": "2026-06-18T07:48:11.000Z"
- },
- {
   "id": 4,
   "name": "xAI",
   "type": "company",
-  "mentions": 26,
-  "last_seen": "2026-06-18"
+  "mentions": 30,
+  "last_seen": "2026-06-19"
+ },
+ {
+  "id": 79,
+  "name": "DeepSeek",
+  "type": "company",
+  "mentions": 29,
+  "last_seen": "2026-06-19"
  },
  {
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 26,
-  "last_seen": "2026-06-18"
+  "mentions": 28,
+  "last_seen": "2026-06-19"
+ },
+ {
+  "id": 13,
+  "name": "Hugging Face",
+  "type": "company",
+  "mentions": 27,
+  "last_seen": "2026-06-19"
  },
  {
   "id": 43,
@@ -89,13 +96,6 @@
   "type": "company",
   "mentions": 24,
   "last_seen": "2026-06-17"
- },
- {
-  "id": 13,
-  "name": "Hugging Face",
-  "type": "company",
-  "mentions": 23,
-  "last_seen": "2026-06-18"
  },
  {
   "id": 3,
@@ -112,24 +112,31 @@
   "last_seen": "2026-06-17"
  },
  {
-  "id": 23,
-  "name": "Replit",
-  "type": "company",
-  "mentions": 16,
-  "last_seen": "2026-06-18"
- },
- {
   "id": 2,
   "name": "GPT-5.5",
   "type": "model",
-  "mentions": 15,
-  "last_seen": "2026-06-17"
+  "mentions": 19,
+  "last_seen": "2026-06-19"
+ },
+ {
+  "id": 52,
+  "name": "Microsoft",
+  "type": "company",
+  "mentions": 19,
+  "last_seen": "2026-06-19"
  },
  {
   "id": 70,
   "name": "Google DeepMind",
   "type": "company",
-  "mentions": 15,
+  "mentions": 17,
+  "last_seen": "2026-06-19"
+ },
+ {
+  "id": 23,
+  "name": "Replit",
+  "type": "company",
+  "mentions": 16,
   "last_seen": "2026-06-18"
  },
  {
@@ -150,13 +157,6 @@
   "id": 25,
   "name": "OpenClaw",
   "type": "model",
-  "mentions": 14,
-  "last_seen": "2026-06-17"
- },
- {
-  "id": 52,
-  "name": "Microsoft",
-  "type": "company",
   "mentions": 14,
   "last_seen": "2026-06-17"
  },
@@ -210,6 +210,13 @@
   "last_seen": "2026-06-12"
  },
  {
+  "id": 614,
+  "name": "豆包",
+  "type": "company",
+  "mentions": 7,
+  "last_seen": "2026-06-19"
+ },
+ {
   "id": 7,
   "name": "Qwen3.7",
   "type": "model",
@@ -245,18 +252,18 @@
   "last_seen": "2026-06-11"
  },
  {
-  "id": 614,
-  "name": "豆包",
-  "type": "company",
-  "mentions": 6,
-  "last_seen": "2026-06-18T10:36:31.000Z"
- },
- {
   "id": 760,
   "name": "字节跳动",
   "type": "company",
   "mentions": 6,
   "last_seen": "2026-06-17"
+ },
+ {
+  "id": 785,
+  "name": "Midjourney",
+  "type": "company",
+  "mentions": 6,
+  "last_seen": "2026-06-19"
  },
  {
   "id": 976,
@@ -320,13 +327,6 @@
   "type": "company",
   "mentions": 5,
   "last_seen": "2026-06-17"
- },
- {
-  "id": 785,
-  "name": "Midjourney",
-  "type": "company",
-  "mentions": 5,
-  "last_seen": "2026-06-18T01:43:24.000Z"
  },
  {
   "id": 1,
@@ -467,6 +467,13 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-06-16T00:00:00.000Z"
+ },
+ {
+  "id": 1083,
+  "name": "Amazon",
+  "type": "company",
+  "mentions": 3,
+  "last_seen": "2026-06-19"
  },
  {
   "id": 9,
@@ -642,13 +649,6 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-06-17"
- },
- {
-  "id": 1083,
-  "name": "Amazon",
-  "type": "company",
-  "mentions": 2,
-  "last_seen": "2026-06-18"
  },
  {
   "id": 78,

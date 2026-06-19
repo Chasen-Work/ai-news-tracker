@@ -86,6 +86,15 @@
  ],
  "Amazon": [
   {
+   "id": 968,
+   "title": "Grok 现集成 Databricks Agent Bricks",
+   "summary": "Grok 模型现已原生集成到 Databricks Agent Bricks 平台。在 2026 年 Data + AI Summit 上，Databricks 宣布与 SpaceXAI 合作，使 Grok 与其他前沿及开源模型在同一受控平台中可用。Agent Bricks 结合 Lakehouse 数据上下文与控制和选择，帮助工程团队构建处理大规模数据的 AI 智能体。此外，企业也可在 Amazon Bedrock 上运行 Grok 模型。",
+   "published_at": "2026-06-19",
+   "url": "https://x.ai/news/grok-databricks",
+   "category": "industry",
+   "source": "xAI：News（网页）"
+  },
+  {
    "id": 885,
    "title": "Grok 4.3 在 Amazon Bedrock 正式可用",
    "summary": "6 月 17 日，xAI 宣布 Grok 4.3 在 Amazon Bedrock 上全面可用。该模型在前沿模型中达成最低幻觉率，支持 100 万 token 上下文窗口，并提供可配置推理努力（none/low/medium/high）。在 Artificial Analysis Omniscience 基准排名第一，在 Tau2 Telecom 基准评估客服智能体真实工具调用性能排名第一，在 Vals AI Case Law 和 Corporate Finance 基准的复杂文档理解任务排名第一。定价为输入每百万 token 1.25 美元、输出每百万 token 2.50 美元，每美元智能度是其他前沿模型的 2–10 倍。",
@@ -105,6 +114,42 @@
   }
  ],
  "Anthropic": [
+  {
+   "id": 966,
+   "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+   "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+   "published_at": "2026-06-19",
+   "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 970,
+   "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
+   "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
+   "published_at": "2026-06-19",
+   "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
+   "id": 981,
+   "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+   "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+   "published_at": "2026-06-18T19:59:22.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 992,
+   "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
+   "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
+   "published_at": "2026-06-18T16:22:33.561Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 948,
    "title": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App",
@@ -1136,6 +1181,51 @@
  ],
  "Claude Code": [
   {
+   "id": 958,
+   "title": "Claude Code 现已支持 artifacts",
+   "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts——实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试：工程师调查事件，Claude Code 分析日志并发布包含时间线、嫌疑提交和错误率图表的 artifact，团队无需再“走过场式汇报”。",
+   "published_at": "2026-06-19",
+   "url": "https://claude.com/blog/artifacts-in-claude-code",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 975,
+   "title": "驾驭 Claude Code：CLAUDE.md、技能、钩子、规则、子智能体等",
+   "summary": "Claude Code 提供七种自定义指令方式：CLAUDE.md（根目录始终加载，子目录按需加载）、规则（无范围或路径范围）、技能（按需调用，共享 token 预算）、子智能体（隔离上下文运行并返回最终消息）、钩子（生命周期事件触发，绕过压缩）、输出样式（注入系统提示，永不压缩）和附加系统提示（CLI 标志，仅单次有效）。每种方式在加载时机、压缩行为、上下文成本和适用场景上各有不同，例如 CLAUDE.md 适合存放构建命令与编码规范，路径范围规则避免无关上下文消耗，子智能体用于并行隔离任务，钩子用于确定性自动化（如运行 linter 或备份聊天记录）。",
+   "published_at": "2026-06-19",
+   "url": "https://claude.com/blog/steering-claude-code-skills-hooks-rules-subagents-and-more",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 979,
+   "title": "埃森哲：昔日与今朝，以及它如何预示未来",
+   "summary": "埃森哲去年九月高调宣称AI将改变其业务，但本季度财报令人失望，股价下跌约18%，本周跌幅近23%，较52周高点已跌超50%。生成式AI并未带来预期的大幅收益，MIT、麦肯锡、贝恩等多份研究均显示类似结论。Claude Code（特殊神经符号系统，非通用聊天机器人）或能提升程序员生产力，但企业整体AI投资回报未达预期，tokenmaxxing热潮正在消退。",
+   "published_at": "2026-06-19",
+   "url": "https://garymarcus.substack.com/p/accenture-then-and-now-and-how-it",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
+   "id": 982,
+   "title": "Claude Code 现已支持 artifacts",
+   "summary": "从今日起，Claude Code 可将工作进度生成为 artifacts--实时、可分享的交互式网页，涵盖 PR 走查、系统说明、仪表盘、发布清单等。artifacts 基于会话完整上下文（代码库、连接器、对话）自动构建，更新时页面原地刷新，同事即时可见。默认仅作者可见，可分享给组织内成员，由管理员通过组织层级开关和角色权限管控。内部测试中最常见用例为调试：工程师调查事件，Claude Code 分析日志并发布包含时间线、嫌疑提交和错误率图表的 artifact，团队无需再\"走过场式汇报\"。",
+   "published_at": "2026-06-18T18:54:47.698Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 987,
+   "title": "驾驭 Claude Code：CLAUDE.md、技能、钩子、规则、子智能体等",
+   "summary": "Claude Code 提供七种自定义指令方式：CLAUDE.md（根目录始终加载，子目录按需加载）、规则（无范围或路径范围）、技能（按需调用，共享 token 预算）、子智能体（隔离上下文运行并返回最终消息）、钩子（生命周期事件触发，绕过压缩）、输出样式（注入系统提示，永不压缩）和附加系统提示（CLI 标志，仅单次有效）。每种方式在加载时机、压缩行为、上下文成本和适用场景上各有不同，例如 CLAUDE.md 适合存放构建命令与编码规范，路径范围规则避免无关上下文消耗，子智能体用于并行隔离任务，钩子用于确定性自动化（如运行 linter 或备份聊天记录）。",
+   "published_at": "2026-06-18T17:51:29.795Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 887,
    "title": "Omnigent开源：AI智能体团队元框架",
    "summary": "编程的未来不是单一智能体，而是一个完整的AI团队。 Omnigent让你在一个实时会话中运行一个智能体团队：Claude Code、Codex、Cursor、Pi，以及你自己的智能体。 它是一个面向AI智能体的元框架，基于我们内部的Databricks开发工具构建，现已开源给所有人。 由传奇人物@matei_zaharia和Databricks AI团队打造。没错，Matei仍然编写大量代码，包括Omnigent和我们产品的前端代码。",
@@ -1608,6 +1698,24 @@
  ],
  "Claude Opus": [
   {
+   "id": 970,
+   "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
+   "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
+   "published_at": "2026-06-19",
+   "url": "https://www.anthropic.com/research/project-fetch-phase-two",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
+   "id": 992,
+   "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
+   "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
+   "published_at": "2026-06-18T16:22:33.561Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 900,
    "title": "Claude Opus 4.8 Build Day黑客马拉松获奖项目揭晓",
    "summary": "6月13日，Anthropic在旧金山举办12小时黑客马拉松，310名参与者使用Opus 4.8和$500 credits完成原型。第一名Tekton：输入历史建筑照片后，Claude自动搜集图纸等资料，跨339个施工步骤重建3D模型，每个构件附带证据链；自纠循环反复检查直至20项测试全部通过。第二名Sim Francisco：基于美国人口普查数据生成10,000名合成市民，各具独立世界观，实时对新闻投票，精准预测选举结果。第三名Custom Universe：用手机拍摄物件照片，Opus 4.8将其转为可拖放、实时渲染的3D物体，支持文本指令重设风格。",
@@ -1872,6 +1980,15 @@
   }
  ],
  "Codex": [
+  {
+   "id": 991,
+   "title": "企业版新用量分析与更新的支出控制",
+   "summary": "OpenAI 为 ChatGPT Enterprise 推出信用额度用量分析与更新的支出控制功能。全局管理控制台（Global Admin Console）统一展示 ChatGPT 和 Codex 的信用消耗，支持按时间、用户、产品、模型追踪用量趋势。管理员可为整个工作区设置默认限额，按群组配置额度，并为个人设置叠加限制。员工可查看个人用量并申请增加额度（附工作上下文）。这些功能即日起可用。",
+   "published_at": "2026-06-18T17:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 887,
    "title": "Omnigent开源：AI智能体团队元框架",
@@ -2720,6 +2837,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 960,
+   "title": "DeepSeek 识图模式正式上线 App 和网页端",
+   "summary": "DeepSeek 识图模式于6月18日在网页和 App 端正式上线，与快速模式、专家模式并列。开启后用户可直接上传图片让 DeepSeek 识别图像，能力超越简单文字提取。目前 App 端仍显示“图片理解功能内测中”，网页端无此提示。该模式背后的多模态模型技术细节于今年4月公开，核心框架为“Thinking with Visual Primitives（以视觉原语思考）”。",
+   "published_at": "2026-06-19",
+   "url": "https://www.ithome.com/0/966/066.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 941,
    "title": "DeepSeek 识图模式正式上线 App 和网页端",
    "summary": "DeepSeek 识图模式于6月18日在网页和 App 端正式上线，与快速模式、专家模式并列。开启后用户可直接上传图片让 DeepSeek 识别图像，能力超越简单文字提取。目前 App 端仍显示\"图片理解功能内测中\"，网页端无此提示。该模式背后的多模态模型技术细节于今年4月公开，核心框架为\"Thinking with Visual Primitives（以视觉原语思考）\"。",
@@ -3270,6 +3396,42 @@
  ],
  "GPT-5.5": [
   {
+   "id": 954,
+   "title": "GPT-5.5 Instant提升ChatGPT健康智能",
+   "summary": "每周超2.3亿用户通过ChatGPT获取健康信息。GPT-5.5 Instant在健康评估中表现显著提升，最具挑战性评测上达到前沿Thinking模型水平，已面向所有免费用户开放。基于医生编写的HealthBench和HealthBench Professional评估，其回复在准确性、安全性和沟通质量上优于医生手写回复及早期模型，故障模式发生率更低。近两个月生产流量显示，健康类回复事实性问题率下降71%。",
+   "published_at": "2026-06-19",
+   "url": "https://openai.com/index/improving-health-intelligence-in-chatgpt",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 955,
+   "title": "OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型",
+   "summary": "OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。",
+   "published_at": "2026-06-19",
+   "url": "https://x.com/gdb/status/2067675030335668270",
+   "category": "ai-products",
+   "source": "X：Greg Brockman (@gdb)"
+  },
+  {
+   "id": 983,
+   "title": "OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型",
+   "summary": "OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。",
+   "published_at": "2026-06-18T18:25:17.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 995,
+   "title": "GPT-5.5 Instant提升ChatGPT健康智能",
+   "summary": "每周超2.3亿用户通过ChatGPT获取健康信息。GPT-5.5 Instant在健康评估中表现显著提升，最具挑战性评测上达到前沿Thinking模型水平，已面向所有免费用户开放。基于医生编写的HealthBench和HealthBench Professional评估，其回复在准确性、安全性和沟通质量上优于医生手写回复及早期模型，故障模式发生率更低。近两个月生产流量显示，健康类回复事实性问题率下降71%。",
+   "published_at": "2026-06-18T11:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 855,
    "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
    "summary": "中国 AI 初创公司 DeepSeek 完成首轮外部融资，募资超 500 亿元人民币（约 74 亿美元），估值超 500 亿美元。投资结构特殊：多数投资者将资金投入 CEO 梁文锋管理的有限合伙企业，无投票权且锁定期五年；仅国资 AI 基金直接投资并保留投票权。创始人梁文锋个人投入约 200 亿元，腾讯和宁德时代为主要外部投资者。梁文锋表示优先基础 AI 研究与 AGI 开发，将继续开源。DeepSeek 去年初凭 V3、R1 模型获全球关注，今年 4 月发布运行于华为芯片的最大开源权重模型 V4，并将 V4 Pro 永久折扣 75%，输入价格约为 OpenAI GPT-5.5 的 1/11，输出价格约为 1/35。",
@@ -3496,6 +3658,60 @@
  ],
  "Google": [
   {
+   "id": 959,
+   "title": "Adobe 为 Photoshop、Premiere 等多款 Creative Cloud 应用加入 AI 智能体",
+   "summary": "Adobe 将其“创意智能体”扩展至 Photoshop、Premiere 等应用，以公开测试形式提供 AI Assistant。该智能体可自动完成多步骤常规任务，如 Premiere 分拣素材和粗剪、Photoshop 换背景、Illustrator 批量生成文件、InDesign 更新版式等。Firefly 新增面向个人创作者的品牌套件、产品图转短视频及 Quick Cut 自动剪辑功能。Adobe 工具已集成至 ChatGPT、Claude 及 Microsoft 365 Copilot，Google Gemini 和 Slack 集成即将推出。",
+   "published_at": "2026-06-19",
+   "url": "https://the-decoder.com/adobe-adds-ai-agents-to-photoshop-premiere-and-more-creative-cloud-apps",
+   "category": "ai-products",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 963,
+   "title": "Noam Shazeer 离开 Google 加入 OpenAI",
+   "summary": "两年前谷歌花 27 亿美元请回的 AI 传奇 Noam Shazeer 已离开谷歌，加入 OpenAI。 对 Gemini 来说是个残酷的消息。",
+   "published_at": "2026-06-19",
+   "url": "https://x.com/Yuchenj_UW/status/2067401895178817999",
+   "category": "industry",
+   "source": "X：Yuchen Jin (@Yuchenj_UW)"
+  },
+  {
+   "id": 966,
+   "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+   "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+   "published_at": "2026-06-19",
+   "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 978,
+   "title": "Google 庆祝A2A协议发布一周年：协作智能体生态",
+   "summary": "Google 庆祝Agent-to-Agent（A2A）协议发布一周年。A2A专为生成式AI设计，相比传统REST API提供安全边界、零上下文污染、动态自主性和工作负载分布四大架构优势。应用实例FoldRun是一个独立的智能体接口，可在Gemini Enterprise或Gemini CLI等A2A兼容环境中部署，自动管理蛋白质结构预测任务，动态选择AlphaFold 2、OpenFold 3或Boltz-2等模型，无需自定义胶水代码。",
+   "published_at": "2026-06-19",
+   "url": "https://developers.googleblog.com/how-a2a-is-building-a-world-of-collaborative-agents",
+   "category": "tip",
+   "source": "Google Developers Blog（RSS）"
+  },
+  {
+   "id": 981,
+   "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+   "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+   "published_at": "2026-06-18T19:59:22.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 994,
+   "title": "Adobe 为 Photoshop、Premiere 等多款 Creative Cloud 应用加入 AI 智能体",
+   "summary": "Adobe 将其\"创意智能体\"扩展至 Photoshop、Premiere 等应用，以公开测试形式提供 AI Assistant。该智能体可自动完成多步骤常规任务，如 Premiere 分拣素材和粗剪、Photoshop 换背景、Illustrator 批量生成文件、InDesign 更新版式等。Firefly 新增面向个人创作者的品牌套件、产品图转短视频及 Quick Cut 自动剪辑功能。Adobe 工具已集成至 ChatGPT、Claude 及 Microsoft 365 Copilot，Google Gemini 和 Slack 集成即将推出。",
+   "published_at": "2026-06-18T12:59:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 948,
    "title": "苹果 Xcode 27 核心首次深度集成 AI 智能体：支持自然语言修 Bug、构建 App",
    "summary": "在 2026 年 WWDC 期间，苹果发布 Xcode 27，其核心组件首次整合 AI 智能体，能理解 Swift 语言并通过多轮自然语言对话辅助开发。AI 可跨多个文件修改整个代码库，也能根据提示与资源生成应用设计并独立构建完整应用，建成后仍可通过对话添加特效、动画等。Xcode 27 支持接入 Anthropic、OpenAI 和 Google 等第三方 AI 模型，同时引入 Core AI 框架提供现代 Swift API 调用端侧模型，并升级开源框架 MLX。",
@@ -3511,6 +3727,15 @@
    "published_at": "2026-06-18T00:19:56.000Z",
    "url": "",
    "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 997,
+   "title": "xAI 发布 Grok for Word 插件",
+   "summary": "xAI 将 Grok 引入 Microsoft Word，推出免费 365 插件。用户可将笔记转为结构化文档、重写文本以提升清晰度与简洁性，也能通过插件搜索网页、X 平台或生成图表。插件支持连接 SharePoint 和 Google Drive 等外部来源，还可用于 PowerPoint 和 Excel。",
+   "published_at": "2026-06-18T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -4074,6 +4299,24 @@
  ],
  "Google DeepMind": [
   {
+   "id": 966,
+   "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+   "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+   "published_at": "2026-06-19",
+   "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 981,
+   "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+   "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+   "published_at": "2026-06-18T19:59:22.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 894,
    "title": "Anthropic与DeepMind CEO呼吁G7组建AI联盟排除中国",
    "summary": "Dario Amodei（Anthropic）与Demis Hassabis（Google DeepMind）在G7闭门会议上呼吁组建美国主导的联盟，为人工智能制定全球规则和标准。Amodei指出，该联盟应以前沿模型和硬件（包括芯片及其他关键组件）的访问权限为手段，将中国排除在外。这一主张被评论为高技术新冷战的开端，竞争方将从根本上被剥夺参与权。",
@@ -4210,6 +4453,42 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 974,
+   "title": "AI 智能体够格吗？在自有工具上评测开源模型",
+   "summary": "Hugging Face 发布面向 AI 智能体使用场景的基准测试框架，以 transformers 库为案例评估库的智能体友好度。框架使用 pi coding agent 与开源模型驱动，通过 Hugging Face Jobs 分散任务确保硬件一致。评估关注 agent 完成任务的成本、延迟、token 使用量和失败率，而非仅最终结果。此前 hf CLI 经优化后 agent token 使用量减少 1.3-1.8 倍（最高 6 倍），该框架旨在验证类似优化对 transformers 的效果。",
+   "published_at": "2026-06-19",
+   "url": "https://huggingface.co/blog/is-it-agentic-enough",
+   "category": "tip",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 976,
+   "title": "超越 LoRA：如何选择最佳参数高效微调技术？",
+   "summary": "参数高效微调（PEFT）技术中，LoRA 占据绝对主导：Hugging Face Hub 上 20,834 张提及单一 PEFT 技术的模型卡中 20,509 张指向 LoRA（98.4%）；外部站点 10,000 个检查点中 95.0% 是 LoRA；GitHub 搜索 `from peft import` 代码片段的 71.3% 结果为 LoRA。但研究者宣称其他技术超越 LoRA 的论文结果具备偏向性——调整学习率即可让 LoRA 匹配更优技术。Hugging Face 的 PEFT 库提供统一 API 实现 40 余种 PEFT 技术，并开始建立基准测试：在数学数据集上对 LLM 进行思维链推理微调，以帮助用户做出更优选择。",
+   "published_at": "2026-06-19",
+   "url": "https://huggingface.co/blog/peft-beyond-lora",
+   "category": "tip",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 998,
+   "title": "超越 LoRA：如何选择最佳参数高效微调技术？",
+   "summary": "参数高效微调（PEFT）技术中，LoRA 占据绝对主导：Hugging Face Hub 上 20，834 张提及单一 PEFT 技术的模型卡中 20，509 张指向 LoRA（98.4%）；外部站点 10，000 个检查点中 95.0% 是 LoRA；GitHub 搜索 `from peft import` 代码片段的 71.3% 结果为 LoRA。但研究者宣称其他技术超越 LoRA 的论文结果具备偏向性--调整学习率即可让 LoRA 匹配更优技术。Hugging Face 的 PEFT 库提供统一 API 实现 40 余种 PEFT 技术，并开始建立基准测试：在数学数据集上对 LLM 进行思维链推理微调，以帮助用户做出更优选择。",
+   "published_at": "2026-06-18T00:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 999,
+   "title": "AI 智能体够格吗？在自有工具上评测开源模型",
+   "summary": "Hugging Face 发布面向 AI 智能体使用场景的基准测试框架，以 transformers 库为案例评估库的智能体友好度。框架使用 pi coding agent 与开源模型驱动，通过 Hugging Face Jobs 分散任务确保硬件一致。评估关注 agent 完成任务的成本、延迟、token 使用量和失败率，而非仅最终结果。此前 hf CLI 经优化后 agent token 使用量减少 1.3-1.8 倍（最高 6 倍），该框架旨在验证类似优化对 transformers 的效果。",
+   "published_at": "2026-06-18T00:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 893,
    "title": "Strands Robots SDK：用单一智能体打通 Hugging Face Hub 到物理机器人",
@@ -4949,6 +5228,51 @@
  ],
  "Microsoft": [
   {
+   "id": 957,
+   "title": "AI 员工 Viktor 登陆 Microsoft Teams，年化收入达 2000 万美元",
+   "summary": "AI 员工 Viktor 在 Slack 上实现 2000 万美元年化收入（无销售团队、未大规模推广），现已正式进驻 Microsoft Teams。Viktor 定位为零门槛 AI：用户无需学习、无需提示词，像 @同事 一样提及即可获得完整工作成果，甚至无需主动 @ 也能自动完成。产品面向 Teams 的 3.2 亿用户，助力企业内部运营和管理人员零学习成本使用 AI。即日起免费试用，含 100 美元信用额度，无需绑定信用卡。",
+   "published_at": "2026-06-19",
+   "url": "https://x.com/rohanpaul_ai/status/2067755504613613699",
+   "category": "ai-products",
+   "source": "X：Rohan Paul (@rohanpaul_ai)"
+  },
+  {
+   "id": 959,
+   "title": "Adobe 为 Photoshop、Premiere 等多款 Creative Cloud 应用加入 AI 智能体",
+   "summary": "Adobe 将其“创意智能体”扩展至 Photoshop、Premiere 等应用，以公开测试形式提供 AI Assistant。该智能体可自动完成多步骤常规任务，如 Premiere 分拣素材和粗剪、Photoshop 换背景、Illustrator 批量生成文件、InDesign 更新版式等。Firefly 新增面向个人创作者的品牌套件、产品图转短视频及 Quick Cut 自动剪辑功能。Adobe 工具已集成至 ChatGPT、Claude 及 Microsoft 365 Copilot，Google Gemini 和 Slack 集成即将推出。",
+   "published_at": "2026-06-19",
+   "url": "https://the-decoder.com/adobe-adds-ai-agents-to-photoshop-premiere-and-more-creative-cloud-apps",
+   "category": "ai-products",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 980,
+   "title": "AI 员工 Viktor 登陆 Microsoft Teams，年化收入达 2000 万美元",
+   "summary": "AI 员工 Viktor 在 Slack 上实现 2000 万美元年化收入（无销售团队、未大规模推广），现已正式进驻 Microsoft Teams。Viktor 定位为零门槛 AI：用户无需学习、无需提示词，像 @同事 一样提及即可获得完整工作成果，甚至无需主动 @ 也能自动完成。产品面向 Teams 的 3.2 亿用户，助力企业内部运营和管理人员零学习成本使用 AI。即日起免费试用，含 100 美元信用额度，无需绑定信用卡。",
+   "published_at": "2026-06-18T23:45:03.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 994,
+   "title": "Adobe 为 Photoshop、Premiere 等多款 Creative Cloud 应用加入 AI 智能体",
+   "summary": "Adobe 将其\"创意智能体\"扩展至 Photoshop、Premiere 等应用，以公开测试形式提供 AI Assistant。该智能体可自动完成多步骤常规任务，如 Premiere 分拣素材和粗剪、Photoshop 换背景、Illustrator 批量生成文件、InDesign 更新版式等。Firefly 新增面向个人创作者的品牌套件、产品图转短视频及 Quick Cut 自动剪辑功能。Adobe 工具已集成至 ChatGPT、Claude 及 Microsoft 365 Copilot，Google Gemini 和 Slack 集成即将推出。",
+   "published_at": "2026-06-18T12:59:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 997,
+   "title": "xAI 发布 Grok for Word 插件",
+   "summary": "xAI 将 Grok 引入 Microsoft Word，推出免费 365 插件。用户可将笔记转为结构化文档、重写文本以提升清晰度与简洁性，也能通过插件搜索网页、X 平台或生成图表。插件支持连接 SharePoint 和 Google Drive 等外部来源，还可用于 PowerPoint 和 Excel。",
+   "published_at": "2026-06-18T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 842,
    "title": "Copilot Cowork 全球正式可用，支持多模型",
    "summary": "Copilot Cowork 现已全球正式可用，并支持多模型！ 每个组织都可以让长期运行的智能体处理复杂的多步骤任务，基于你组织的独特知识和专有技术。 https://www.microsoft.com/en-us/microsoft-365/blog/2026/06/16/copilot-cowork-is-now-generally-available/?v=15",
@@ -5076,6 +5400,15 @@
   }
  ],
  "Midjourney": [
+  {
+   "id": 961,
+   "title": "深入解析 Midjourney Scanner 技术内幕",
+   "summary": "我们全新“Midjourney Scanner”的技术深潜。",
+   "published_at": "2026-06-19",
+   "url": "https://x.com/midjourney/status/2067422898407837797",
+   "category": "ai-products",
+   "source": "X：Midjourney (@midjourney)"
+  },
   {
    "id": 946,
    "title": "深入解析 Midjourney Scanner 技术内幕",
@@ -6164,10 +6497,109 @@
  ],
  "OpenAI": [
   {
+   "id": 955,
+   "title": "OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型",
+   "summary": "OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。",
+   "published_at": "2026-06-19",
+   "url": "https://x.com/gdb/status/2067675030335668270",
+   "category": "ai-products",
+   "source": "X：Greg Brockman (@gdb)"
+  },
+  {
+   "id": 963,
+   "title": "Noam Shazeer 离开 Google 加入 OpenAI",
+   "summary": "两年前谷歌花 27 亿美元请回的 AI 传奇 Noam Shazeer 已离开谷歌，加入 OpenAI。 对 Gemini 来说是个残酷的消息。",
+   "published_at": "2026-06-19",
+   "url": "https://x.com/Yuchenj_UW/status/2067401895178817999",
+   "category": "industry",
+   "source": "X：Yuchen Jin (@Yuchenj_UW)"
+  },
+  {
+   "id": 966,
+   "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+   "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+   "published_at": "2026-06-19",
+   "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 969,
+   "title": "ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容",
+   "summary": "Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的“恢复照片”提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和“不做审查”指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。",
+   "published_at": "2026-06-19",
+   "url": "https://mindgard.ai/blog/chatgpt-spontaneously-generated-violent-images-from-a-viral-prompt",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 972,
+   "title": "OpenAI与哈佛等合作研究：o3 Deep Research模型辅助诊断儿童罕见病，额外诊断率4.8%",
+   "summary": "波士顿儿童医院、哈佛大学与OpenAI合作，在《NEJM AI》发表研究。团队使用OpenAI o3 Deep Research推理模型重新分析376例此前未确诊的罕见病案例，产出基于证据的候选解释。经专家评审、额外检测和临床确认，医生在18例中建立诊断，额外诊断率达4.8%。研究显示，AI辅助工作流可帮助专家在未解病例中生成可检验假设，使定期再分析更具可扩展性。模型不直接诊断或做临床决策，仅提供证据链供专家审查。",
+   "published_at": "2026-06-19",
+   "url": "https://openai.com/index/diagnose-rare-childhood-diseases",
+   "category": "paper",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 973,
+   "title": "OpenAI 强化学习实现广泛且持久的有益模型",
+   "summary": "OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。",
+   "published_at": "2026-06-19",
+   "url": "https://alignment.openai.com/beneficial-rl",
+   "category": "paper",
+   "source": "OpenAI：Alignment 研究博客（RSS）"
+  },
+  {
+   "id": 981,
+   "title": "OpenAI IPO前连下两城：招揽Transformer共同作者及前白宫AI政策官员",
+   "summary": "OpenAI在IPO前夕连招两位重量级人物：Google DeepMind AI先驱、Transformer架构共同作者Noam Shazeer，以及前特朗普白宫AI政策官员Dean Ball。Shazeer此前通过27亿美元收购协议重返Google，此次离职加盟OpenAI。Ball将于7月6日加入，领导新组建的Strategic Futures团队，向首席战略官Jason Kwon汇报，团队将负责前沿AI政策与内部治理，聚焦灾难性风险、递归自我改进、劳动力市场影响及前沿实验室与政府关系等议题。此举正值Anthropic因美国政府出口管制禁令被迫下架Fable 5和Mythos 5模型。",
+   "published_at": "2026-06-18T19:59:22.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 983,
+   "title": "OpenAI 联合多国医生：GPT-5.5 Instant 健康问答能力追平前沿 Thinking 模型",
+   "summary": "OpenAI 与全球 60 个国家、49 种语言、26 个专科的数百名医生合作，通过医生主导的评估大幅提升了 GPT-5.5 Instant 在健康相关问题的智能水平，现已能与公司前沿 Thinking 模型（推理模型）相当。该模型每周为超过 2.3 亿 ChatGPT 用户服务，能更好识别紧急医疗需求、询问相关上下文、解释不确定性并简化复杂信息。由于面向所有 ChatGPT 免费用户开放，这些改进可惠及更多人。",
+   "published_at": "2026-06-18T18:25:17.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 985,
+   "title": "OpenAI 强化学习实现广泛且持久的有益模型",
+   "summary": "OpenAI 通过强化学习在真实对话场景中训练模型，使其展现诚实、认知谦逊、元认知透明、可纠正性、普遍公平性和对人类福祉的关心等有益特质。训练数据涵盖健康、教育、科学、法律、工程等多个领域。训练后模型在数十项独立对齐评测（包括奖励黑客、欺骗、有害建议、规范遵从等）上均表现提升，且这种改善泛化到未参与训练的领域、任务和评分设定。在对抗性提示或微调下，模型仍难以被导向有害行为，表明有益特质强化学习可产生广泛且持久的对齐泛化。",
+   "published_at": "2026-06-18T18:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 991,
+   "title": "企业版新用量分析与更新的支出控制",
+   "summary": "OpenAI 为 ChatGPT Enterprise 推出信用额度用量分析与更新的支出控制功能。全局管理控制台（Global Admin Console）统一展示 ChatGPT 和 Codex 的信用消耗，支持按时间、用户、产品、模型追踪用量趋势。管理员可为整个工作区设置默认限额，按群组配置额度，并为个人设置叠加限制。员工可查看个人用量并申请增加额度（附工作上下文）。这些功能即日起可用。",
+   "published_at": "2026-06-18T17:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 937,
    "title": "ChatGPT 图像生成器可被绕过滤镜生成暴力和色情内容",
    "summary": "Mindgard 红队研究发现，ChatGPT 的图像生成器可通过简单提示词轻易绕过内容过滤器，在未直接请求的情况下自动生成性暴力、血腥谋杀等露骨图像。一个热门的\"恢复照片\"提示词因输入模糊而绕过输入过滤器，结果如同俄罗斯轮盘赌；进一步添加虚假图像 ID 和\"不做审查\"指令后，模型持续生成高度性化女性图像，甚至出现被捆绑殴打的尸体，并自动赋予惊悚标题。研究指出，OpenAI 此前声称修复的裸体问题仍未解决，暴露了 AI 工具广泛可及性与不足内容过滤的现实风险。",
    "published_at": "2026-06-18T11:25:28.101Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 996,
+   "title": "OpenAI与哈佛等合作研究：o3 Deep Research模型辅助诊断儿童罕见病，额外诊断率4.8%",
+   "summary": "波士顿儿童医院、哈佛大学与OpenAI合作，在《NEJM AI》发表研究。团队使用OpenAI o3 Deep Research推理模型重新分析376例此前未确诊的罕见病案例，产出基于证据的候选解释。经专家评审、额外检测和临床确认，医生在18例中建立诊断，额外诊断率达4.8%。研究显示，AI辅助工作流可帮助专家在未解病例中生成可检验假设，使定期再分析更具可扩展性。模型不直接诊断或做临床决策，仅提供证据链供专家审查。",
+   "published_at": "2026-06-18T08:00:00.000Z",
    "url": "",
    "category": "paper",
    "source": ""
@@ -9042,6 +9474,42 @@
  ],
  "xAI": [
   {
+   "id": 953,
+   "title": "Grok TTS 盲测人类感得分96登顶",
+   "summary": "xAI 的 Grok TTS 模型在 @Vapi_AI 的 Humanness Index 盲测中以 96 分（真人 100 分）位居榜首。该指数选取同一声音和引文，经各模型克隆后由听众盲评。",
+   "published_at": "2026-06-19",
+   "url": "https://x.com/xai/status/2067654108123910495",
+   "category": "ai-models",
+   "source": "X：xAI (@xai)"
+  },
+  {
+   "id": 968,
+   "title": "Grok 现集成 Databricks Agent Bricks",
+   "summary": "Grok 模型现已原生集成到 Databricks Agent Bricks 平台。在 2026 年 Data + AI Summit 上，Databricks 宣布与 SpaceXAI 合作，使 Grok 与其他前沿及开源模型在同一受控平台中可用。Agent Bricks 结合 Lakehouse 数据上下文与控制和选择，帮助工程团队构建处理大规模数据的 AI 智能体。此外，企业也可在 Amazon Bedrock 上运行 Grok 模型。",
+   "published_at": "2026-06-19",
+   "url": "https://x.ai/news/grok-databricks",
+   "category": "industry",
+   "source": "xAI：News（网页）"
+  },
+  {
+   "id": 990,
+   "title": "Grok TTS 盲测人类感得分96登顶",
+   "summary": "xAI 的 Grok TTS 模型在 @Vapi_AI 的 Humanness Index 盲测中以 96 分（真人 100 分）位居榜首。该指数选取同一声音和引文，经各模型克隆后由听众盲评。",
+   "published_at": "2026-06-18T17:02:09.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 997,
+   "title": "xAI 发布 Grok for Word 插件",
+   "summary": "xAI 将 Grok 引入 Microsoft Word，推出免费 365 插件。用户可将笔记转为结构化文档、重写文本以提升清晰度与简洁性，也能通过插件搜索网页、X 平台或生成图表。插件支持连接 SharePoint 和 Google Drive 等外部来源，还可用于 PowerPoint 和 Excel。",
+   "published_at": "2026-06-18T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 885,
    "title": "Grok 4.3 在 Amazon Bedrock 正式可用",
    "summary": "6 月 17 日，xAI 宣布 Grok 4.3 在 Amazon Bedrock 上全面可用。该模型在前沿模型中达成最低幻觉率，支持 100 万 token 上下文窗口，并提供可配置推理努力（none/low/medium/high）。在 Artificial Analysis Omniscience 基准排名第一，在 Tau2 Telecom 基准评估客服智能体真实工具调用性能排名第一，在 Vals AI Case Law 和 Corporate Finance 基准的复杂文档理解任务排名第一。定价为输入每百万 token 1.25 美元、输出每百万 token 2.50 美元，每美元智能度是其他前沿模型的 2–10 倍。",
@@ -9951,6 +10419,15 @@
   }
  ],
  "豆包": [
+  {
+   "id": 952,
+   "title": "火山引擎上线豆包实时语音模型3.0 API 服务，开启邀测",
+   "summary": "火山引擎上线豆包实时语音模型3.0（Seeduplex）API 服务并开启邀测。该模型为原生全双工端到端语音大模型，具备精准遵循、抗干扰、动态判停三大优势。可在多人对话中安静待命，指定话题出现时主动加入；支持通过自定义工具在实时交互中完成预定日历、发送邮件等任务。抗干扰力提升，误回复率与误打断率大幅降低；判停延迟缩短约250ms，复杂场景抢话比例下降40%，用户主动打断延迟缩短约300ms。适用于汽车智能座舱、智能硬件、智能客服等场景。",
+   "published_at": "2026-06-19",
+   "url": "https://mp.weixin.qq.com/s/L4BJnexabQu5DAxDnwEGxw",
+   "category": "ai-models",
+   "source": "公众号：火山引擎"
+  },
   {
    "id": 938,
    "title": "火山引擎上线豆包实时语音模型3.0 API 服务，开启邀测",
