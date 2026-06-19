@@ -2837,6 +2837,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 1004,
+   "title": "DeepSeek研究员开源AutoResearch：AI自主跑通285B模型RL研究闭环",
+   "summary": "DeepSeek研究员Deli Chen将AutoResearch协议开源，并发布Self-play综述论文。其AI智能体首次完全自主地在DeepSeek 285B模型上完成完整RL研究闭环--从实验设计、写代码、提交GPU任务、debug到结论总结，全程零人工干预。系统调用了GRPO工具，被视为持续学习研究的开端。",
+   "published_at": "2026-06-19T03:58:46.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 960,
    "title": "DeepSeek 识图模式正式上线 App 和网页端",
    "summary": "DeepSeek 识图模式于6月18日在网页和 App 端正式上线，与快速模式、专家模式并列。开启后用户可直接上传图片让 DeepSeek 识别图像，能力超越简单文字提取。目前 App 端仍显示“图片理解功能内测中”，网页端无此提示。该模式背后的多模态模型技术细节于今年4月公开，核心框架为“Thinking with Visual Primitives（以视觉原语思考）”。",
@@ -4698,6 +4707,15 @@
   }
  ],
  "HuggingFace": [
+  {
+   "id": 1005,
+   "title": "Salesforce CodeGen教程：生成、验证并重排序Python函数（含单元测试与安全检查）",
+   "summary": "本教程实现一个基于Salesforce CodeGen的端到端代码生成工作流。从HuggingFace加载CodeGen模型（支持350M、2B、codegen2-1B、codegen25-7b等版本），通过自然语言提示生成Python函数，随后进行函数提取、语法检查、静态安全检查、单元测试验证、best-of-N候选重排序、多步程序合成、提示词实验、基准可视化及导出。展示了CodeGen作为结构化代码生成流水线的能力，不仅完成代码补全，还能评估、筛选和组织生成结果。",
+   "published_at": "2026-06-19T02:44:12.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 720,
    "title": "MiniMax M3 开源权重模型发布，已上架 HuggingFace",
@@ -7599,6 +7617,15 @@
  ],
  "OpenClaw": [
   {
+   "id": 1007,
+   "title": "OpenClaw 接入 OpenRouter",
+   "summary": "OpenClaw 已内置 OpenRouter 支持，一条命令即可为 AI 智能体配置统一密钥、统一账单，并实现跨 300 多个模型的自动故障转移。同时提供具体设置步骤以及常见错误的修复方法。",
+   "published_at": "2026-06-18T19:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 844,
    "title": "小米 MiMo Claw 正式版发布：旗舰模型+金山办公，全新订阅服务上线",
    "summary": "小米推出云端轻量化 Claw 类产品 MiMo Claw 正式版，搭载与 OpenClaw 框架深度适配的 MiMo-V2.5-Pro 旗舰模型。该模型原生兼容 MCP 工具调用协议，内置百万级超长上下文，支持单会话千次以上连续工具调用；依托 MTP 三层解码架构，在 OpenClaw 标准 Agent 工作流中吞吐效率提升约 3 倍。ClawEval 测试中任务达标率（Pass³）达 63.8%，Token 消耗较同类产品降低 40%-60%。联动金山办公生态，提供 Word、Excel、PPT、PDF 等格式的 AI 生成、预览与在线编辑一站式服务。免费用户每日单次体验时长从1小时升级至4小时，面向高频用户推出 TokenPla…",
@@ -7726,6 +7753,24 @@
   }
  ],
  "OpenRouter": [
+  {
+   "id": 1007,
+   "title": "OpenClaw 接入 OpenRouter",
+   "summary": "OpenClaw 已内置 OpenRouter 支持，一条命令即可为 AI 智能体配置统一密钥、统一账单，并实现跨 300 多个模型的自动故障转移。同时提供具体设置步骤以及常见错误的修复方法。",
+   "published_at": "2026-06-18T19:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 1008,
+   "title": "如何将 SillyTavern 连接到 OpenRouter（2026 指南）",
+   "summary": "一个 OpenRouter API 密钥即可在 SillyTavern 的下拉菜单中解锁 300 多个模型，其中许多免费。指南包含五步连接流程、推荐尝试的角色扮演模型以及常见错误的修复方法。",
+   "published_at": "2026-06-18T15:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 845,
    "title": "Subagent：让模型把琐碎任务委托出去",
@@ -10524,6 +10569,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 1003,
+   "title": "阿里开源向量数据库Zvec，UCSD黄碧薇教授提出因果AI第四代范式",
+   "summary": "阿里开源内部向量数据库Zvec，pip install zvec免费使用，对标Pinecone每月70美元能力。支持十亿向量毫秒级检索，无需单独起服务，全平台兼容；v0.5.0新增原生全文混合搜索。UCSD黄碧薇教授（causal-learn作者）提出AI四代范式：相关性小模型→因果小模型→相关性大模型（LLM）→因果大模型，认为当前正站在第四代门口。其创立的Aether AI完成首轮融资，致力于从视频中自动抽取物理规律，探索下一代因果AI范式。",
+   "published_at": "2026-06-19T04:49:25.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 890,
    "title": "阿里云发布HappyOyster 1.0：一句话生成可实时交互的数字世界",
