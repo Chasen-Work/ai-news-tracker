@@ -1,5 +1,35 @@
 [
  {
+  "id": 1037,
+  "title": "谷歌 Gemini 联席负责人沙泽尔转投 OpenAI，奥尔特曼发文欢迎",
+  "summary": "当地时间18日，谷歌前工程副总裁、Gemini技术联席负责人诺姆·沙泽尔宣布离职加入OpenAI。他是Transformer架构论文《Attention Is All You Need》共同作者，曾参与LaMDA等AI项目，并撰写了2016年论文《Sparsely-gated Mixture of Experts》。他于2021年离开谷歌创办Character.AI，2024年通过交易回归谷歌DeepMind。OpenAI CEO奥尔特曼发文欢迎，称其是从创立之初最希望合作的人之一。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-20T12:37:50.000Z",
+  "fetched_at": "2026-06-20 13:00:36"
+ },
+ {
+  "id": 1038,
+  "title": "开源教程《Deep Agents 实战》发布",
+  "summary": "LangChain 官方认证大使 @zhanghaili0610 推出开源教程《Deep Agents 实战》，基于 LangChain / LangGraph 生态，讲解如何用 Deep Agents Harness 框架构建真实 Agent 应用。核心是\"三层架构\"：Runtime（LangGraph）、Framework（LangChain）、Harness（Deep Agents）。技术内核为上下文工程，通过虚拟文件系统实现按需读取、中间结果落盘、大文件局部读取。教程共 8 章 + 2 准备篇，覆盖虚拟文件系统（六大工具）、任务规划、子 Agent 委派（异步并行）及 Skills 复用（可在 Claude Code、Cursor 等 30+ 工具中通用）。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-06-20T12:16:16.000Z",
+  "fetched_at": "2026-06-20 13:00:36"
+ },
+ {
+  "id": 1039,
+  "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
+  "summary": "彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。报道称微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型。这一模式构建起跨中美AI模型的双向贸易网络。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-20T06:25:29.000Z",
+  "fetched_at": "2026-06-20 13:00:36"
+ },
+ {
   "id": 1026,
   "title": "AI中心的数据黑洞",
   "summary": "智能的一种定义是样本效率，但近年AI进步主要靠扩充数据分布和增加算力。强化学习本质是合成数据生成——投入大量算力通过验证器筛选“好”数据，再训练模型预测正确输出。这一过程需要每个领域和技能的海量人类专家示例，数据行业年收入已达数十亿美元。近日Epoch报告，开源模型仅落后前沿闭源模型4个月，原因在于数据可从公开API蒸馏，而超参数等不易复制。人类一生接触约2亿token，前沿模型训练在数十到数百T token之间，相差近百万倍——机器人、自动驾驶等领域同样存在巨大效率差距。",

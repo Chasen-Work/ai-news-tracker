@@ -1208,6 +1208,15 @@
  ],
  "Claude Code": [
   {
+   "id": 1038,
+   "title": "开源教程《Deep Agents 实战》发布",
+   "summary": "LangChain 官方认证大使 @zhanghaili0610 推出开源教程《Deep Agents 实战》，基于 LangChain / LangGraph 生态，讲解如何用 Deep Agents Harness 框架构建真实 Agent 应用。核心是\"三层架构\"：Runtime（LangGraph）、Framework（LangChain）、Harness（Deep Agents）。技术内核为上下文工程，通过虚拟文件系统实现按需读取、中间结果落盘、大文件局部读取。教程共 8 章 + 2 准备篇，覆盖虚拟文件系统（六大工具）、任务规划、子 Agent 委派（异步并行）及 Skills 复用（可在 Claude Code、Cursor 等 30+ 工具中通用）。",
+   "published_at": "2026-06-20T12:16:16.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 1015,
    "title": "Claude Code v2.1.183 发布",
    "summary": "Claude Code v2.1.183 增强了自动模式安全性：未经请求时阻止 `git reset --hard`、`git commit --amend`（非本轮提交）、`terraform destroy` 等破坏性命令。新增 `attribution.sessionUrl` 设置，可省略 claude.ai 会话链接；`/config --help` 列出所有速记键；`/config` 切换行为改为 Enter/Space 变更、Esc 保存退出。修复了 thinking 块导致 400 错误、子智能体 WebSearch 空结果、vim 模式光标滞留、Windows Terminal TUI 错乱、多插件技能重复、MCP …",
@@ -2610,6 +2619,15 @@
  ],
  "Cursor": [
   {
+   "id": 1038,
+   "title": "开源教程《Deep Agents 实战》发布",
+   "summary": "LangChain 官方认证大使 @zhanghaili0610 推出开源教程《Deep Agents 实战》，基于 LangChain / LangGraph 生态，讲解如何用 Deep Agents Harness 框架构建真实 Agent 应用。核心是\"三层架构\"：Runtime（LangGraph）、Framework（LangChain）、Harness（Deep Agents）。技术内核为上下文工程，通过虚拟文件系统实现按需读取、中间结果落盘、大文件局部读取。教程共 8 章 + 2 准备篇，覆盖虚拟文件系统（六大工具）、任务规划、子 Agent 委派（异步并行）及 Skills 复用（可在 Claude Code、Cursor 等 30+ 工具中通用）。",
+   "published_at": "2026-06-20T12:16:16.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 887,
    "title": "Omnigent开源：AI智能体团队元框架",
    "summary": "编程的未来不是单一智能体，而是一个完整的AI团队。 Omnigent让你在一个实时会话中运行一个智能体团队：Claude Code、Codex、Cursor、Pi，以及你自己的智能体。 它是一个面向AI智能体的元框架，基于我们内部的Databricks开发工具构建，现已开源给所有人。 由传奇人物@matei_zaharia和Databricks AI团队打造。没错，Matei仍然编写大量代码，包括Omnigent和我们产品的前端代码。",
@@ -2890,6 +2908,15 @@
   }
  ],
  "DeepSeek": [
+  {
+   "id": 1039,
+   "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
+   "summary": "彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。报道称微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型。这一模式构建起跨中美AI模型的双向贸易网络。",
+   "published_at": "2026-06-20T06:25:29.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1020,
    "title": "DeepSeek研究员开源AutoResearch：AI自主跑通285B模型RL研究闭环",
@@ -3261,6 +3288,15 @@
  ],
  "DeepSeek-R1": [
   {
+   "id": 1039,
+   "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
+   "summary": "彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。报道称微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型。这一模式构建起跨中美AI模型的双向贸易网络。",
+   "published_at": "2026-06-20T06:25:29.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 711,
    "title": "DeepSeek-R1 的开源实现",
    "summary": "DeepSeek-R1 的开源复现项目已在 GitHub 发布，在 Hacker News 上获得 101 个积分。该项目旨在以开源方式复现 DeepSeek-R1 模型。",
@@ -3271,6 +3307,15 @@
   }
  ],
  "DeepSeek-V4": [
+  {
+   "id": 1039,
+   "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
+   "summary": "彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。报道称微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型。这一模式构建起跨中美AI模型的双向贸易网络。",
+   "published_at": "2026-06-20T06:25:29.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 692,
    "title": "Hermes Agent Desktop 发布，硅基流动支持一键切换",
@@ -6658,6 +6703,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 1037,
+   "title": "谷歌 Gemini 联席负责人沙泽尔转投 OpenAI，奥尔特曼发文欢迎",
+   "summary": "当地时间18日，谷歌前工程副总裁、Gemini技术联席负责人诺姆·沙泽尔宣布离职加入OpenAI。他是Transformer架构论文《Attention Is All You Need》共同作者，曾参与LaMDA等AI项目，并撰写了2016年论文《Sparsely-gated Mixture of Experts》。他于2021年离开谷歌创办Character.AI，2024年通过交易回归谷歌DeepMind。OpenAI CEO奥尔特曼发文欢迎，称其是从创立之初最希望合作的人之一。",
+   "published_at": "2026-06-20T12:37:50.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1035,
    "title": "禁止开源AI将是一个错误",

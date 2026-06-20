@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 117,
-  "last_seen": "2026-06-19T13:02:47.000Z"
+  "mentions": 118,
+  "last_seen": "2026-06-20T12:37:50.000Z"
  },
  {
   "id": 35,
@@ -31,8 +31,8 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 57,
-  "last_seen": "2026-06-20"
+  "mentions": 58,
+  "last_seen": "2026-06-20T12:16:16.000Z"
  },
  {
   "id": 21,
@@ -59,15 +59,15 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 31,
-  "last_seen": "2026-06-20"
+  "mentions": 32,
+  "last_seen": "2026-06-20T06:25:29.000Z"
  },
  {
   "id": 149,
   "name": "Cursor",
   "type": "company",
-  "mentions": 31,
-  "last_seen": "2026-06-18"
+  "mentions": 32,
+  "last_seen": "2026-06-20T12:16:16.000Z"
  },
  {
   "id": 4,
@@ -385,6 +385,13 @@
   "last_seen": "2026-06-17"
  },
  {
+  "id": 701,
+  "name": "DeepSeek-V4",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-06-20T06:25:29.000Z"
+ },
+ {
   "id": 786,
   "name": "Midjourney V8",
   "type": "model",
@@ -453,13 +460,6 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-06-15T17:00:00.000Z"
- },
- {
-  "id": 701,
-  "name": "DeepSeek-V4",
-  "type": "model",
-  "mentions": 3,
-  "last_seen": "2026-06-12"
  },
  {
   "id": 723,
@@ -623,6 +623,13 @@
   "last_seen": "2026-06-12"
  },
  {
+  "id": 863,
+  "name": "DeepSeek-R1",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-06-20T06:25:29.000Z"
+ },
+ {
   "id": 977,
   "name": "通义千问",
   "type": "company",
@@ -698,13 +705,6 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-06-07T00:00:00.000Z"
- },
- {
-  "id": 863,
-  "name": "DeepSeek-R1",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-11T17:07:18.181Z"
  },
  {
   "id": 938,
