@@ -1,5 +1,25 @@
 [
  {
+  "id": 1042,
+  "title": "美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型",
+  "summary": "美团近期上线tabbit国际版应用，免费集成多家顶级AI模型的最新旗舰版，包括GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash，以及国内Kimi-2.6、GLM-5.1、MiniMax-M3。用户无需单独订阅即可使用这些模型。需注意：只有国际版包含海外模型，国内版仅提供国内模型。该应用旨在抢占AI入口，目前处于免费推广阶段。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-21T10:11:21.000Z",
+  "fetched_at": "2026-06-21 13:00:40"
+ },
+ {
+  "id": 1043,
+  "title": "腾讯元宝父亲节活动：上传照片生成与年轻爸爸的合影",
+  "summary": "腾讯元宝推出父亲节主题活动，用户可选择爸爸年轻时照片与自己的照片，输入提示词（如\"帮我生成一张和爸爸的合影，将图2的我融合到图1爸爸的照片中，我想穿越回__年前，和他一起_____；保留爸爸照片的背景、动作及五官；人物姿态自然协调，整体光线与色调保持一致\"），元宝即可生成合影。活动旨在让用户\"回到过去\"看到爸爸的青春模样。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-06-21T04:51:10.000Z",
+  "fetched_at": "2026-06-21 13:00:40"
+ },
+ {
   "id": 1041,
   "title": "开源教程《Deep Agents 实战》发布",
   "summary": "LangChain 官方认证大使 @zhanghaili0610 推出开源教程《Deep Agents 实战》，基于 LangChain / LangGraph 生态，讲解如何用 Deep Agents Harness 框架构建真实 Agent 应用。核心是“三层架构”：Runtime（LangGraph）、Framework（LangChain）、Harness（Deep Agents）。技术内核为上下文工程，通过虚拟文件系统实现按需读取、中间结果落盘、大文件局部读取。教程共 8 章 + 2 准备篇，覆盖虚拟文件系统（六大工具）、任务规划、子 Agent 委派（异步并行）及 Skills 复用（可在 Claude Code、Cur…",

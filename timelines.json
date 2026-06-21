@@ -1752,6 +1752,15 @@
  ],
  "Claude Opus": [
   {
+   "id": 1042,
+   "title": "美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型",
+   "summary": "美团近期上线tabbit国际版应用，免费集成多家顶级AI模型的最新旗舰版，包括GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash，以及国内Kimi-2.6、GLM-5.1、MiniMax-M3。用户无需单独订阅即可使用这些模型。需注意：只有国际版包含海外模型，国内版仅提供国内模型。该应用旨在抢占AI入口，目前处于免费推广阶段。",
+   "published_at": "2026-06-21T10:11:21.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 970,
    "title": "Anthropic Project Fetch 第二阶段：Claude Opus 4.7 自主完成任务，速度比人类团队快约20倍",
    "summary": "Anthropic 发布 Project Fetch 实验第二阶段结果。在2024年8月原始实验中，配备 Claude Opus 4.1 的人类团队在操控四足机器人时显著超越无 AI 团队。新实验中，Claude Opus 4.7 无需人类协助即完成所有任务，速度比最快人类团队快约20倍，比无 Claude 团队快37倍以上，编码量减少近10倍。模型在传感器连接、路径规划等环节表现出色，但在精确移动沙滩球等闭环控制任务上仍存在困难。这些进展源于通用模型规模化，而非针对机器人领域的专项优化。",
@@ -3549,6 +3558,15 @@
  ],
  "GPT-5.5": [
   {
+   "id": 1042,
+   "title": "美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型",
+   "summary": "美团近期上线tabbit国际版应用，免费集成多家顶级AI模型的最新旗舰版，包括GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash，以及国内Kimi-2.6、GLM-5.1、MiniMax-M3。用户无需单独订阅即可使用这些模型。需注意：只有国际版包含海外模型，国内版仅提供国内模型。该应用旨在抢占AI入口，目前处于免费推广阶段。",
+   "published_at": "2026-06-21T10:11:21.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 954,
    "title": "GPT-5.5 Instant提升ChatGPT健康智能",
    "summary": "每周超2.3亿用户通过ChatGPT获取健康信息。GPT-5.5 Instant在健康评估中表现显著提升，最具挑战性评测上达到前沿Thinking模型水平，已面向所有免费用户开放。基于医生编写的HealthBench和HealthBench Professional评估，其回复在准确性、安全性和沟通质量上优于医生手写回复及早期模型，故障模式发生率更低。近两个月生产流量显示，健康类回复事实性问题率下降71%。",
@@ -3799,6 +3817,15 @@
   }
  ],
  "Gemini 3.5 Flash": [
+  {
+   "id": 1042,
+   "title": "美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型",
+   "summary": "美团近期上线tabbit国际版应用，免费集成多家顶级AI模型的最新旗舰版，包括GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash，以及国内Kimi-2.6、GLM-5.1、MiniMax-M3。用户无需单独订阅即可使用这些模型。需注意：只有国际版包含海外模型，国内版仅提供国内模型。该应用旨在抢占AI入口，目前处于免费推广阶段。",
+   "published_at": "2026-06-21T10:11:21.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 123,
    "title": "OpenRouter 5月发布亮点",
@@ -5719,6 +5746,15 @@
   }
  ],
  "MiniMax": [
+  {
+   "id": 1042,
+   "title": "美团tabbit国际版免费接入GPT-5.5/Claude Opus 4.8等旗舰模型",
+   "summary": "美团近期上线tabbit国际版应用，免费集成多家顶级AI模型的最新旗舰版，包括GPT-5.5、Claude Opus 4.8、Gemini 3.5 Flash，以及国内Kimi-2.6、GLM-5.1、MiniMax-M3。用户无需单独订阅即可使用这些模型。需注意：只有国际版包含海外模型，国内版仅提供国内模型。该应用旨在抢占AI入口，目前处于免费推广阶段。",
+   "published_at": "2026-06-21T10:11:21.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 943,
    "title": "MOSS-TTS-Local-Transformer-v1.5 在 SGLang-Omni 上：原生流式 48 kHz 语音服务",
@@ -10570,6 +10606,15 @@
   }
  ],
  "腾讯": [
+  {
+   "id": 1043,
+   "title": "腾讯元宝父亲节活动：上传照片生成与年轻爸爸的合影",
+   "summary": "腾讯元宝推出父亲节主题活动，用户可选择爸爸年轻时照片与自己的照片，输入提示词（如\"帮我生成一张和爸爸的合影，将图2的我融合到图1爸爸的照片中，我想穿越回__年前，和他一起_____；保留爸爸照片的背景、动作及五官；人物姿态自然协调，整体光线与色调保持一致\"），元宝即可生成合影。活动旨在让用户\"回到过去\"看到爸爸的青春模样。",
+   "published_at": "2026-06-21T04:51:10.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 855,
    "title": "DeepSeek 完成首轮外部融资，估值超 500 亿美元",
