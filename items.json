@@ -1,5 +1,25 @@
 [
  {
+  "id": 1041,
+  "title": "开源教程《Deep Agents 实战》发布",
+  "summary": "LangChain 官方认证大使 @zhanghaili0610 推出开源教程《Deep Agents 实战》，基于 LangChain / LangGraph 生态，讲解如何用 Deep Agents Harness 框架构建真实 Agent 应用。核心是“三层架构”：Runtime（LangGraph）、Framework（LangChain）、Harness（Deep Agents）。技术内核为上下文工程，通过虚拟文件系统实现按需读取、中间结果落盘、大文件局部读取。教程共 8 章 + 2 准备篇，覆盖虚拟文件系统（六大工具）、任务规划、子 Agent 委派（异步并行）及 Skills 复用（可在 Claude Code、Cur…",
+  "url": "https://x.com/shao__meng/status/2068306942184034471",
+  "source": "X：邵猛 (@shao__meng)",
+  "category": "tip",
+  "published_at": "2026-06-21",
+  "fetched_at": "2026-06-21 01:00:51"
+ },
+ {
+  "id": 1040,
+  "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
+  "summary": "彭博社报道，微软已成为全球最大AI模型中转站，既将ChatGPT卖给中国企业，也反向将DeepSeek模型卖给西方客户。报道称微软正在测试DeepSeek-R1和DeepSeek-V4，计划向西方客户提供这些中国模型。这一模式构建起跨中美AI模型的双向贸易网络。",
+  "url": "https://x.com/AYi_AInotes/status/2068218661710512231",
+  "source": "X：阿易 AI Notes (@AYi_AInotes)",
+  "category": "industry",
+  "published_at": "2026-06-21",
+  "fetched_at": "2026-06-21 01:00:51"
+ },
+ {
   "id": 1037,
   "title": "谷歌 Gemini 联席负责人沙泽尔转投 OpenAI，奥尔特曼发文欢迎",
   "summary": "当地时间18日，谷歌前工程副总裁、Gemini技术联席负责人诺姆·沙泽尔宣布离职加入OpenAI。他是Transformer架构论文《Attention Is All You Need》共同作者，曾参与LaMDA等AI项目，并撰写了2016年论文《Sparsely-gated Mixture of Experts》。他于2021年离开谷歌创办Character.AI，2024年通过交易回归谷歌DeepMind。OpenAI CEO奥尔特曼发文欢迎，称其是从创立之初最希望合作的人之一。",

@@ -31,8 +31,8 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 58,
-  "last_seen": "2026-06-20T12:16:16.000Z"
+  "mentions": 59,
+  "last_seen": "2026-06-21"
  },
  {
   "id": 21,
@@ -59,8 +59,8 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 32,
-  "last_seen": "2026-06-20T06:25:29.000Z"
+  "mentions": 33,
+  "last_seen": "2026-06-21"
  },
  {
   "id": 149,
@@ -329,6 +329,13 @@
   "last_seen": "2026-06-17"
  },
  {
+  "id": 701,
+  "name": "DeepSeek-V4",
+  "type": "model",
+  "mentions": 5,
+  "last_seen": "2026-06-21"
+ },
+ {
   "id": 1,
   "name": "Gemini 3.1 Pro",
   "type": "model",
@@ -383,13 +390,6 @@
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-06-17"
- },
- {
-  "id": 701,
-  "name": "DeepSeek-V4",
-  "type": "model",
-  "mentions": 4,
-  "last_seen": "2026-06-20T06:25:29.000Z"
  },
  {
   "id": 786,
@@ -467,6 +467,13 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-06-16T00:00:00.000Z"
+ },
+ {
+  "id": 863,
+  "name": "DeepSeek-R1",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-06-21"
  },
  {
   "id": 1083,
@@ -621,13 +628,6 @@
   "type": "company",
   "mentions": 2,
   "last_seen": "2026-06-12"
- },
- {
-  "id": 863,
-  "name": "DeepSeek-R1",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-20T06:25:29.000Z"
  },
  {
   "id": 977,
