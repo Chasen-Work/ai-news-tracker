@@ -1,5 +1,65 @@
 [
  {
+  "id": 1130,
+  "title": "火山引擎推出Agent Ready基础设施，AgentKit与ArkClaw企业版升级",
+  "summary": "火山引擎在FORCE大会推出面向企业智能应用的Agent Ready基础设施，构建AI云与Agent三层架构。AgentKit升级提供Identity、Runtime、Sandbox、Evaluation等模块，实现Agent可靠、可控、可衡量。Identity已接入数千家身份体系，Runtime支持长程任务和分钟级12万沙箱并发。ArkClaw企业版集成Agent广场、技能中心与企业知识库，支持IDP/SSO/OAuth及飞书、钉钉等IM入口统一管控。实践案例：海底捞门店经营Agent将小时级工作压缩到分钟级，人工跟进时长缩减70%，巡检满意度提升50%；创维酷开借助ArkClaw终端版打造AIOS，Token消耗节省50%，支撑百万级终端。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-24T10:17:58.000Z",
+  "fetched_at": "2026-06-24 13:00:06"
+ },
+ {
+  "id": 1131,
+  "title": "DFlash：块扩散草稿模型实现最高15倍吞吐量提升",
+  "summary": "DFlash 由 UC San Diego 团队提出，是一种用于投机解码的轻量块扩散草稿模型。它一次前向推理生成整块 token，再由目标模型并行验证，保证输出无损。相比 EAGLE-3，DFlash 实现最高 2.5 倍加速，在 Qwen3-8B 等多种模型上平均无损加速超过 6 倍（MATH-500 达 6.08×）。在 NVIDIA Blackwell 上（TensorRT-LLM），gpt-oss-120b 模型吞吐量提升最高 15 倍，约为 EAGLE-3 的 1.5 倍。核心创新是将目标模型多层隐藏特征注入草稿模型每一层的 Key-Value 投影，使接受长度随草稿深度增长。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-06-24T07:21:10.000Z",
+  "fetched_at": "2026-06-24 13:00:06"
+ },
+ {
+  "id": 1132,
+  "title": "MiniCPM-V 4.6 在 Apple Core AI 上高速运行",
+  "summary": "🥳感谢分享，@MLBoy_DaisukeMajima 🚀\nMiniCPM-V 4.6 在设备上以这样的速度运行，实在令人印象深刻--尤其是在 Apple Core AI 上以不到 2B 参数跑出。\n干得漂亮，推动高效多模态 AI 向前发展。🫡",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-06-24T06:57:45.000Z",
+  "fetched_at": "2026-06-24 13:00:06"
+ },
+ {
+  "id": 1133,
+  "title": "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试",
+  "summary": "6月23日，部分用户反馈 ChatGPT 网页版和 App 版上线了双向 AI 语音模型 Bidi 1，位于设置模型选择器中，与标准语音和高级语音并列。该模型支持边说话边监听，用户可在对话中途打断并发出新指令，例如要求从1数到10时中途喊停倒数，模型会立即切换执行。OpenAI 尚未官宣，预计本周启动更大范围测试。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-06-24T04:34:24.000Z",
+  "fetched_at": "2026-06-24 13:00:06"
+ },
+ {
+  "id": 1134,
+  "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
+  "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-06-24T03:32:04.000Z",
+  "fetched_at": "2026-06-24 13:00:06"
+ },
+ {
+  "id": 1135,
+  "title": "今天，豆包正式推出专业版",
+  "summary": "豆包专业版基于豆包2.1系列大模型上线，面向复杂办公与生产力场景。办公任务模式接入可执行Agent任务的豆包2.1模型，支持操作本地电脑、浏览器、调用Skills技能、定时任务，内置Office办公套件，并可生成带后端数据库的在线应用。免费用户可体验豆包2.1 Turbo版办公任务模式，专业版接入豆包2.1 Pro模型。定价：标准套餐68元/月（连续包月），加强套餐200元/月，高级套餐500元/月。大学生认证后标准套餐38元/月，持续6个月。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-24T01:00:00.000Z",
+  "fetched_at": "2026-06-24 13:00:06"
+ },
+ {
   "id": 1117,
   "title": "GPT-5 帮助免疫学家 Derya Unutmaz 解开三年未解之谜",
   "summary": "GPT-5 Pro 帮助免疫学家 Derya Unutmaz 解决了一个长达三年的免疫学谜团，揭示了 T 细胞行为的新见解。这一突破可能为癌症和自身免疫疾病研究提供支持。",
@@ -418,6 +478,26 @@
   "category": "ai-models",
   "published_at": "2026-06-23T00:02:42.000Z",
   "fetched_at": "2026-06-23 13:00:42"
+ },
+ {
+  "id": 1137,
+  "title": "NatureBench：AI编码智能体能否匹配Nature系列论文已发表SOTA？",
+  "summary": "NatureBench是一个跨学科基准测试，包含90个从Nature系列同行评审论文中提取的任务，用于评估AI编码智能体能否超越复现、实现发现。基准基于NatureGym自动化管线，为每个任务提供标准化容器化环境，解决环境碎片化问题。在严格禁用网络搜索的协议下评估10种前沿智能体配置，最强模型仅在17.8%任务上超过已发表SOTA（g>0.1准则）。分析表明，智能体成功主要依赖方法论翻译，失败主因为方法选择错误和计算预算不足。已发布基准、NatureGym管线及公共排行榜。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-23T00:00:00.000Z",
+  "fetched_at": "2026-06-24 13:00:06"
+ },
+ {
+  "id": 1136,
+  "title": "OpenRouter推出统一图像API",
+  "summary": "OpenRouter推出统一图像API，整合Google、OpenAI、Black Forest Labs、Recraft、ByteDance、Sourceful、Microsoft、xAI等30+模型。新API提供标准化请求格式，通过`/api/v1/images/models`端点返回每个模型的分辨率、宽高比、输出数量、输入参考图数量、种子等能力描述；通过`/api/v1/images/models/{id}/endpoints`端点获取具体服务商的定价与参数支持（如Seedream 4.5每张$0.04、FLUX.2 Pro每百万像素$0.03、GPT-5.4 Image 2按token计费）。OpenAI的GPT 5系列图像模型支持SSE流式预览，启用`\"stream\"： true`即可边生成边返回预览。新图像模型将仅添加至专用API，建议现有用户切换。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-23T00:00:00.000Z",
+  "fetched_at": "2026-06-24 13:00:06"
  },
  {
   "id": 1129,

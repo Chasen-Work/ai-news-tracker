@@ -1143,6 +1143,15 @@
  ],
  "Apple": [
   {
+   "id": 1132,
+   "title": "MiniCPM-V 4.6 在 Apple Core AI 上高速运行",
+   "summary": "🥳感谢分享，@MLBoy_DaisukeMajima 🚀\nMiniCPM-V 4.6 在设备上以这样的速度运行，实在令人印象深刻--尤其是在 Apple Core AI 上以不到 2B 参数跑出。\n干得漂亮，推动高效多模态 AI 向前发展。🫡",
+   "published_at": "2026-06-24T06:57:45.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 1051,
    "title": "Show HN：Oak——专为代理设计的 Git 替代方案",
    "summary": "Oak 是开源版本控制系统，专为 AI 智能体（Claude Code、Codex、Cursor）设计。采用 BLAKE3 内容哈希、内容定义分块、diff/merge 及 Blob/Manifest/Commit/Tree 数据模型，可选 SQLite 和 git 后端。以分支-会话为基本工作单元，用分支描述替代逐次提交，通过内容寻址懒加载使智能体数秒内编辑任意仓库。速度远超 git。已发布公开测试版 v0.99.0，支持 macOS（Apple Silicon）、Linux（x86_64）及 Windows，可通过 curl 或 cargo 安装，Apache-2.0 开源。",
@@ -1293,6 +1302,17 @@
    "published_at": "2026-06-08T00:00:00.000Z",
    "url": "",
    "category": "ai-models",
+   "source": ""
+  }
+ ],
+ "ByteDance": [
+  {
+   "id": 1136,
+   "title": "OpenRouter推出统一图像API",
+   "summary": "OpenRouter推出统一图像API，整合Google、OpenAI、Black Forest Labs、Recraft、ByteDance、Sourceful、Microsoft、xAI等30+模型。新API提供标准化请求格式，通过`/api/v1/images/models`端点返回每个模型的分辨率、宽高比、输出数量、输入参考图数量、种子等能力描述；通过`/api/v1/images/models/{id}/endpoints`端点获取具体服务商的定价与参数支持（如Seedream 4.5每张$0.04、FLUX.2 Pro每百万像素$0.03、GPT-5.4 Image 2按token计费）。OpenAI的GPT 5系列图像模型支持SSE流式预览，启用`\"stream\"： true`即可边生成边返回预览。新图像模型将仅添加至专用API，建议现有用户切换。",
+   "published_at": "2026-06-23T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   }
  ],
@@ -1913,6 +1933,15 @@
   }
  ],
  "Claude Opus": [
+  {
+   "id": 1134,
+   "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
+   "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。",
+   "published_at": "2026-06-24T03:32:04.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 1098,
    "title": "Seed2.1 正式发布，深入 AI 生产力",
@@ -3808,6 +3837,24 @@
  ],
  "GPT-5.4": [
   {
+   "id": 1134,
+   "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
+   "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。",
+   "published_at": "2026-06-24T03:32:04.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 1136,
+   "title": "OpenRouter推出统一图像API",
+   "summary": "OpenRouter推出统一图像API，整合Google、OpenAI、Black Forest Labs、Recraft、ByteDance、Sourceful、Microsoft、xAI等30+模型。新API提供标准化请求格式，通过`/api/v1/images/models`端点返回每个模型的分辨率、宽高比、输出数量、输入参考图数量、种子等能力描述；通过`/api/v1/images/models/{id}/endpoints`端点获取具体服务商的定价与参数支持（如Seedream 4.5每张$0.04、FLUX.2 Pro每百万像素$0.03、GPT-5.4 Image 2按token计费）。OpenAI的GPT 5系列图像模型支持SSE流式预览，启用`\"stream\"： true`即可边生成边返回预览。新图像模型将仅添加至专用API，建议现有用户切换。",
+   "published_at": "2026-06-23T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 858,
    "title": "公开聊天数据能否预测真实世界AI失调？",
    "summary": "OpenAI利用WildChat公开数据集（2023年4月至2024年5月收集的100万条对话）模拟模型部署，预测GPT-5.1、GPT-5.2、GPT-5.4在真实生产环境中的不良行为率。与私有生产数据对比发现，WildChat模拟的平均预测误差约3倍；但对技术性和智能体型失调的预测精度下降。研究验证了公开数据集作为外部审计工具的可行性。",
@@ -4197,6 +4244,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 1136,
+   "title": "OpenRouter推出统一图像API",
+   "summary": "OpenRouter推出统一图像API，整合Google、OpenAI、Black Forest Labs、Recraft、ByteDance、Sourceful、Microsoft、xAI等30+模型。新API提供标准化请求格式，通过`/api/v1/images/models`端点返回每个模型的分辨率、宽高比、输出数量、输入参考图数量、种子等能力描述；通过`/api/v1/images/models/{id}/endpoints`端点获取具体服务商的定价与参数支持（如Seedream 4.5每张$0.04、FLUX.2 Pro每百万像素$0.03、GPT-5.4 Image 2按token计费）。OpenAI的GPT 5系列图像模型支持SSE流式预览，启用`\"stream\"： true`即可边生成边返回预览。新图像模型将仅添加至专用API，建议现有用户切换。",
+   "published_at": "2026-06-23T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 1050,
    "title": "东京 AI 公司 Sakana AI 推出多智能体编排系统 Sakana Fugu",
@@ -6110,6 +6166,15 @@
  ],
  "Microsoft": [
   {
+   "id": 1136,
+   "title": "OpenRouter推出统一图像API",
+   "summary": "OpenRouter推出统一图像API，整合Google、OpenAI、Black Forest Labs、Recraft、ByteDance、Sourceful、Microsoft、xAI等30+模型。新API提供标准化请求格式，通过`/api/v1/images/models`端点返回每个模型的分辨率、宽高比、输出数量、输入参考图数量、种子等能力描述；通过`/api/v1/images/models/{id}/endpoints`端点获取具体服务商的定价与参数支持（如Seedream 4.5每张$0.04、FLUX.2 Pro每百万像素$0.03、GPT-5.4 Image 2按token计费）。OpenAI的GPT 5系列图像模型支持SSE流式预览，启用`\"stream\"： true`即可边生成边返回预览。新图像模型将仅添加至专用API，建议现有用户切换。",
+   "published_at": "2026-06-23T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1056,
    "title": "在 AWS、Google Cloud 和 Microsoft Foundry 上使用完整版 Claude Desktop",
    "summary": "通过 AWS、Google Cloud 和 Microsoft Foundry 使用 Claude Desktop 的组织现已获得 Chat、Claude Cowork 和 Claude Code 集成的完整桌面体验。IT 团队可将推理保留在自己的云环境中，对话历史本地存储。支持 IAM Identity Center、Workforce Identity Federation、Microsoft Entra ID 或 Okta 登录；策略模板可导出至 Intune、GPO 或 Jamf；提供离线安装器。Chat、Claude Cowork 和 Claude Code 各有独立策略键，支持精细访问控制。M365 连接器通过 Entr…",
@@ -6659,6 +6724,15 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 1131,
+   "title": "DFlash：块扩散草稿模型实现最高15倍吞吐量提升",
+   "summary": "DFlash 由 UC San Diego 团队提出，是一种用于投机解码的轻量块扩散草稿模型。它一次前向推理生成整块 token，再由目标模型并行验证，保证输出无损。相比 EAGLE-3，DFlash 实现最高 2.5 倍加速，在 Qwen3-8B 等多种模型上平均无损加速超过 6 倍（MATH-500 达 6.08×）。在 NVIDIA Blackwell 上（TensorRT-LLM），gpt-oss-120b 模型吞吐量提升最高 15 倍，约为 EAGLE-3 的 1.5 倍。核心创新是将目标模型多层隐藏特征注入草稿模型每一层的 Key-Value 投影，使接受长度随草稿深度增长。",
+   "published_at": "2026-06-24T07:21:10.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 1092,
    "title": "FastWan-QAD：单卡5090上1.8秒生成5秒视频",
@@ -7505,6 +7579,15 @@
  ],
  "OpenAI": [
   {
+   "id": 1133,
+   "title": "OpenAI ChatGPT 语音最大规模升级：双向AI语音模型 Bidi 1 已上线测试",
+   "summary": "6月23日，部分用户反馈 ChatGPT 网页版和 App 版上线了双向 AI 语音模型 Bidi 1，位于设置模型选择器中，与标准语音和高级语音并列。该模型支持边说话边监听，用户可在对话中途打断并发出新指令，例如要求从1数到10时中途喊停倒数，模型会立即切换执行。OpenAI 尚未官宣，预计本周启动更大范围测试。",
+   "published_at": "2026-06-24T04:34:24.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 1099,
    "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
    "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月–2026年2月）和 WebArena（2025年2月–9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十…",
@@ -7574,6 +7657,15 @@
    "published_at": "2026-06-23T08:00:00.000Z",
    "url": "",
    "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1136,
+   "title": "OpenRouter推出统一图像API",
+   "summary": "OpenRouter推出统一图像API，整合Google、OpenAI、Black Forest Labs、Recraft、ByteDance、Sourceful、Microsoft、xAI等30+模型。新API提供标准化请求格式，通过`/api/v1/images/models`端点返回每个模型的分辨率、宽高比、输出数量、输入参考图数量、种子等能力描述；通过`/api/v1/images/models/{id}/endpoints`端点获取具体服务商的定价与参数支持（如Seedream 4.5每张$0.04、FLUX.2 Pro每百万像素$0.03、GPT-5.4 Image 2按token计费）。OpenAI的GPT 5系列图像模型支持SSE流式预览，启用`\"stream\"： true`即可边生成边返回预览。新图像模型将仅添加至专用API，建议现有用户切换。",
+   "published_at": "2026-06-23T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -8879,6 +8971,15 @@
  ],
  "OpenRouter": [
   {
+   "id": 1136,
+   "title": "OpenRouter推出统一图像API",
+   "summary": "OpenRouter推出统一图像API，整合Google、OpenAI、Black Forest Labs、Recraft、ByteDance、Sourceful、Microsoft、xAI等30+模型。新API提供标准化请求格式，通过`/api/v1/images/models`端点返回每个模型的分辨率、宽高比、输出数量、输入参考图数量、种子等能力描述；通过`/api/v1/images/models/{id}/endpoints`端点获取具体服务商的定价与参数支持（如Seedream 4.5每张$0.04、FLUX.2 Pro每百万像素$0.03、GPT-5.4 Image 2按token计费）。OpenAI的GPT 5系列图像模型支持SSE流式预览，启用`\"stream\"： true`即可边生成边返回预览。新图像模型将仅添加至专用API，建议现有用户切换。",
+   "published_at": "2026-06-23T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1088,
    "title": "AI 治理清单：LLM 架构先行",
    "summary": "Deloitte 报告显示企业 AI 抱负与治理成熟度之间差 53 个百分点，74% 计划两年内部署智能体 AI，仅 21% 拥有成熟治理模型。路由架构是首个治理层。三种姿态--托管网关（如 OpenRouter、Portkey）、自托管网关（如 LiteLLM）和直接 API--默认治理能力不同，直接 API 缺乏统一控制面，造成治理盲区。治理清单可映射为资产盘点、问责制、访问控制、证据记录与合规性五大支柱。路由层能提供跨团队可见性与审计证据，而电子表格不能。",
@@ -9334,6 +9435,24 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 1131,
+   "title": "DFlash：块扩散草稿模型实现最高15倍吞吐量提升",
+   "summary": "DFlash 由 UC San Diego 团队提出，是一种用于投机解码的轻量块扩散草稿模型。它一次前向推理生成整块 token，再由目标模型并行验证，保证输出无损。相比 EAGLE-3，DFlash 实现最高 2.5 倍加速，在 Qwen3-8B 等多种模型上平均无损加速超过 6 倍（MATH-500 达 6.08×）。在 NVIDIA Blackwell 上（TensorRT-LLM），gpt-oss-120b 模型吞吐量提升最高 15 倍，约为 EAGLE-3 的 1.5 倍。核心创新是将目标模型多层隐藏特征注入草稿模型每一层的 Key-Value 投影，使接受长度随草稿深度增长。",
+   "published_at": "2026-06-24T07:21:10.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 1134,
+   "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
+   "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。",
+   "published_at": "2026-06-24T03:32:04.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 1090,
    "title": "我们用免费本地模型对 OpenClaw 仓库进行实时分类",
@@ -9811,6 +9930,15 @@
  ],
  "Qwen-": [
   {
+   "id": 1134,
+   "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
+   "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。",
+   "published_at": "2026-06-24T03:32:04.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 836,
    "title": "Qwen-RobotManip：对齐解锁机器人操作基础模型的规模化能力",
    "summary": "Qwen-RobotManip 是通义千问基于 Qwen-VL 的视觉-语言-动作（VLA）基础模型，引入覆盖表示、运动和行为三维度的统一对齐框架。仅使用开源机器人数据集和人演示视频，构建约 38,100 小时预训练语料，涵盖 15 种机器人形态。在 LIBERO-Plus 达 91.4%，RoboTwin-C2R Hard 达 69.4%，RoboCasa365 Composite-Unseen 达 14.9%，EBench 达 45.6%，RoboTwin-IF 达 72.0%，并在 RoboChallenge Table30 v1 generalist track 夺冠。模型采用 80 维状态-动作表示、人-机器人数据合成管道…",
@@ -9982,6 +10110,15 @@
   }
  ],
  "Qwen3-8": [
+  {
+   "id": 1131,
+   "title": "DFlash：块扩散草稿模型实现最高15倍吞吐量提升",
+   "summary": "DFlash 由 UC San Diego 团队提出，是一种用于投机解码的轻量块扩散草稿模型。它一次前向推理生成整块 token，再由目标模型并行验证，保证输出无损。相比 EAGLE-3，DFlash 实现最高 2.5 倍加速，在 Qwen3-8B 等多种模型上平均无损加速超过 6 倍（MATH-500 达 6.08×）。在 NVIDIA Blackwell 上（TensorRT-LLM），gpt-oss-120b 模型吞吐量提升最高 15 倍，约为 EAGLE-3 的 1.5 倍。核心创新是将目标模型多层隐藏特征注入草稿模型每一层的 Key-Value 投影，使接受长度随草稿深度增长。",
+   "published_at": "2026-06-24T07:21:10.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 379,
    "title": "Job Searcher",
@@ -10814,6 +10951,15 @@
    "published_at": "2026-06-23T20:17:38.000Z",
    "url": "",
    "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1136,
+   "title": "OpenRouter推出统一图像API",
+   "summary": "OpenRouter推出统一图像API，整合Google、OpenAI、Black Forest Labs、Recraft、ByteDance、Sourceful、Microsoft、xAI等30+模型。新API提供标准化请求格式，通过`/api/v1/images/models`端点返回每个模型的分辨率、宽高比、输出数量、输入参考图数量、种子等能力描述；通过`/api/v1/images/models/{id}/endpoints`端点获取具体服务商的定价与参数支持（如Seedream 4.5每张$0.04、FLUX.2 Pro每百万像素$0.03、GPT-5.4 Image 2按token计费）。OpenAI的GPT 5系列图像模型支持SSE流式预览，启用`\"stream\"： true`即可边生成边返回预览。新图像模型将仅添加至专用API，建议现有用户切换。",
+   "published_at": "2026-06-23T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -11799,6 +11945,15 @@
  ],
  "豆包": [
   {
+   "id": 1135,
+   "title": "今天，豆包正式推出专业版",
+   "summary": "豆包专业版基于豆包2.1系列大模型上线，面向复杂办公与生产力场景。办公任务模式接入可执行Agent任务的豆包2.1模型，支持操作本地电脑、浏览器、调用Skills技能、定时任务，内置Office办公套件，并可生成带后端数据库的在线应用。免费用户可体验豆包2.1 Turbo版办公任务模式，专业版接入豆包2.1 Pro模型。定价：标准套餐68元/月（连续包月），加强套餐200元/月，高级套餐500元/月。大学生认证后标准套餐38元/月，持续6个月。",
+   "published_at": "2026-06-24T01:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1093,
    "title": "京东全栈开源JoyAI-VL-Interaction，从“一问一答”走向“边看边说”",
    "summary": "京东近日开源全球首个全栈交互模型JoyAI-VL-Interaction，获vLLM-Omni原生支持。该模型能持续观察视频流、主动判断关键事件并实时响应，支持将复杂任务委托后台Agent处理。在58个真人盲评中，对比豆包视频通话助手胜率77.6%，对比Gemini视频通话助手胜率87.9%，监控预警场景达100%胜率。开源内容包括模型权重、交互数据集、训练方案及完整可部署系统，支持摄像头、直播流等视频输入及语音交互、长期记忆、vLLM部署，适用于安防监控、老人看护、直播讲解等实时场景。",
@@ -11917,6 +12072,15 @@
   }
  ],
  "通义千问": [
+  {
+   "id": 1134,
+   "title": "Qwen-AgentWorld 开源：让 Agent 学会\"先预测，再行动\"",
+   "summary": "通义千问推出首个原生语言世界模型 Qwen-AgentWorld，覆盖 MCP、Search、Terminal、SWE、Web、OS、Android 七大领域。模型基于超 1000 万条真实交互轨迹，经 CPT→SFT→RL 三阶段训练，在 AgentWorldBench 上超越 GPT-5.4（58.25）和 Claude Opus 4.8，Qwen-AgentWorld-397B-A17B 取得 58.71 分。两种范式已验证其能力：作为解耦环境模拟器实现可控 Sim RL，在 WideSearch 上超越真实环境 RL（F1 50.3% vs 45.6%）；作为智能体基础模型，LWM 预热可迁移至七个基准（三个完全未出现在训练集中）。模型与评测基准已开源。",
+   "published_at": "2026-06-24T03:32:04.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 836,
    "title": "Qwen-RobotManip：对齐解锁机器人操作基础模型的规模化能力",

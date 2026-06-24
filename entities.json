@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 130,
-  "last_seen": "2026-06-24"
+  "mentions": 132,
+  "last_seen": "2026-06-24T04:34:24.000Z"
  },
  {
   "id": 35,
@@ -17,8 +17,8 @@
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 85,
-  "last_seen": "2026-06-23"
+  "mentions": 86,
+  "last_seen": "2026-06-23T00:00:00.000Z"
  },
  {
   "id": 48,
@@ -31,8 +31,8 @@
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 64,
-  "last_seen": "2026-06-24"
+  "mentions": 65,
+  "last_seen": "2026-06-24T07:21:10.000Z"
  },
  {
   "id": 21,
@@ -45,15 +45,15 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 45,
-  "last_seen": "2026-06-22T00:00:00.000Z"
+  "mentions": 47,
+  "last_seen": "2026-06-24T07:21:10.000Z"
  },
  {
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 42,
-  "last_seen": "2026-06-22T19:00:00.000Z"
+  "mentions": 43,
+  "last_seen": "2026-06-23T00:00:00.000Z"
  },
  {
   "id": 149,
@@ -66,7 +66,7 @@
   "id": 4,
   "name": "xAI",
   "type": "company",
-  "mentions": 34,
+  "mentions": 35,
   "last_seen": "2026-06-24"
  },
  {
@@ -77,18 +77,18 @@
   "last_seen": "2026-06-24"
  },
  {
+  "id": 36,
+  "name": "Claude Opus",
+  "type": "model",
+  "mentions": 33,
+  "last_seen": "2026-06-24T03:32:04.000Z"
+ },
+ {
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
   "mentions": 33,
   "last_seen": "2026-06-21"
- },
- {
-  "id": 36,
-  "name": "Claude Opus",
-  "type": "model",
-  "mentions": 32,
-  "last_seen": "2026-06-24"
  },
  {
   "id": 43,
@@ -122,8 +122,8 @@
   "id": 52,
   "name": "Microsoft",
   "type": "company",
-  "mentions": 21,
-  "last_seen": "2026-06-23"
+  "mentions": 22,
+  "last_seen": "2026-06-23T00:00:00.000Z"
  },
  {
   "id": 70,
@@ -143,8 +143,8 @@
   "id": 560,
   "name": "Apple",
   "type": "company",
-  "mentions": 17,
-  "last_seen": "2026-06-23"
+  "mentions": 18,
+  "last_seen": "2026-06-24T06:57:45.000Z"
  },
  {
   "id": 23,
@@ -168,6 +168,13 @@
   "last_seen": "2026-06-20"
  },
  {
+  "id": 614,
+  "name": "豆包",
+  "type": "company",
+  "mentions": 14,
+  "last_seen": "2026-06-24T01:00:00.000Z"
+ },
+ {
   "id": 28,
   "name": "Nemotron",
   "type": "model",
@@ -177,13 +184,6 @@
  {
   "id": 51,
   "name": "Runway",
-  "type": "company",
-  "mentions": 13,
-  "last_seen": "2026-06-24"
- },
- {
-  "id": 614,
-  "name": "豆包",
   "type": "company",
   "mentions": 13,
   "last_seen": "2026-06-24"
@@ -208,6 +208,13 @@
   "type": "model",
   "mentions": 10,
   "last_seen": "2026-06-20"
+ },
+ {
+  "id": 338,
+  "name": "GPT-5.4",
+  "type": "model",
+  "mentions": 8,
+  "last_seen": "2026-06-24T03:32:04.000Z"
  },
  {
   "id": 5,
@@ -238,6 +245,13 @@
   "last_seen": "2026-06-24"
  },
  {
+  "id": 976,
+  "name": "Qwen-",
+  "type": "model",
+  "mentions": 7,
+  "last_seen": "2026-06-24T03:32:04.000Z"
+ },
+ {
   "id": 7,
   "name": "Qwen3.7",
   "type": "model",
@@ -250,13 +264,6 @@
   "type": "company",
   "mentions": 6,
   "last_seen": "2026-06-09"
- },
- {
-  "id": 338,
-  "name": "GPT-5.4",
-  "type": "model",
-  "mentions": 6,
-  "last_seen": "2026-06-17"
  },
  {
   "id": 434,
@@ -285,13 +292,6 @@
   "type": "company",
   "mentions": 6,
   "last_seen": "2026-06-19"
- },
- {
-  "id": 976,
-  "name": "Qwen-",
-  "type": "model",
-  "mentions": 6,
-  "last_seen": "2026-06-17"
  },
  {
   "id": 30,
@@ -462,6 +462,13 @@
   "last_seen": "2026-06-22"
  },
  {
+  "id": 435,
+  "name": "Qwen3-8",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-06-24T07:21:10.000Z"
+ },
+ {
   "id": 535,
   "name": "Qwen3.6",
   "type": "model",
@@ -495,6 +502,13 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-06-21"
+ },
+ {
+  "id": 977,
+  "name": "通义千问",
+  "type": "company",
+  "mentions": 3,
+  "last_seen": "2026-06-24T03:32:04.000Z"
  },
  {
   "id": 9,
@@ -602,13 +616,6 @@
   "last_seen": "2026-06-06"
  },
  {
-  "id": 435,
-  "name": "Qwen3-8",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-07"
- },
- {
   "id": 468,
   "name": "Qwen 0.5",
   "type": "model",
@@ -635,13 +642,6 @@
   "type": "company",
   "mentions": 2,
   "last_seen": "2026-06-12"
- },
- {
-  "id": 977,
-  "name": "通义千问",
-  "type": "company",
-  "mentions": 2,
-  "last_seen": "2026-06-17"
  },
  {
   "id": 990,
@@ -754,5 +754,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-06-22T00:00:00.000Z"
+ },
+ {
+  "id": 1392,
+  "name": "ByteDance",
+  "type": "company",
+  "mentions": 1,
+  "last_seen": "2026-06-23T00:00:00.000Z"
  }
 ]
