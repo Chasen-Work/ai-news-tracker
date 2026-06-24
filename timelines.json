@@ -124,6 +124,33 @@
  ],
  "Anthropic": [
   {
+   "id": 1103,
+   "title": "Anthropic 推出 Claude Tag：在 Slack 中通过 @Claude 协作",
+   "summary": "Anthropic 推出 Claude Tag，一种在 Slack 频道中通过 @Claude 委托任务的新协作方式。Claude 可记住频道上下文，支持多用户交互，经授权后可自动学习其他频道和数据源。开启“环境”行为后，能主动更新未解决的线程或任务。支持异步工作，可自主推进项目数小时或数天。即日起面向 Claude Enterprise 和 Team 客户提供 beta 版。管理员可精细控制工具和渠道访问权限、设置 token 消耗限额，并查看所有操作日志。",
+   "published_at": "2026-06-24",
+   "url": "https://www.anthropic.com/news/introducing-claude-tag",
+   "category": "ai-products",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 1106,
+   "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
+   "summary": "2026年6月22日，五眼联盟（美、英、加、澳、新）网络安全部门联合警告，即将到来的AI模型（如OpenAI的GPT-5.5-Cyber、Anthropic的Mythos）将降低编写复杂攻击代码的门槛。自动化智能体可全天候扫描互联网漏洞，大幅缩短安全窗口期。AI驱动的超个性化钓鱼诈骗已在亚太蔓延，印度2026年初勒索软件事件激增165%。五眼联盟建议企业部署自动化防御AI，个人用户开启多因素认证、删除闲置账户。",
+   "published_at": "2026-06-24",
+   "url": "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats",
+   "category": "industry",
+   "source": "Artificial Intelligence News（RSS）"
+  },
+  {
+   "id": 1123,
+   "title": "Anthropic 推出 Claude Tag：在 Slack 中通过 @Claude 协作",
+   "summary": "Anthropic 推出 Claude Tag，一种在 Slack 频道中通过 @Claude 委托任务的新协作方式。Claude 可记住频道上下文，支持多用户交互，经授权后可自动学习其他频道和数据源。开启\"环境\"行为后，能主动更新未解决的线程或任务。支持异步工作，可自主推进项目数小时或数天。即日起面向 Claude Enterprise 和 Team 客户提供 beta 版。管理员可精细控制工具和渠道访问权限、设置 token 消耗限额，并查看所有操作日志。",
+   "published_at": "2026-06-23T17:09:41.902Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1083,
    "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
    "summary": "2026年6月22日，五眼联盟（美、英、加、澳、新）网络安全部门联合警告，即将到来的AI模型（如OpenAI的GPT-5.5-Cyber、Anthropic的Mythos）将降低编写复杂攻击代码的门槛。自动化智能体可全天候扫描互联网漏洞，大幅缩短安全窗口期。AI驱动的超个性化钓鱼诈骗已在亚太蔓延，印度2026年初勒索软件事件激增165%。五眼联盟建议企业部署自动化防御AI，个人用户开启多因素认证、删除闲置账户。",
@@ -1271,6 +1298,15 @@
  ],
  "Claude Code": [
   {
+   "id": 1104,
+   "title": "Claude Code v2.1.187 发布",
+   "summary": "Claude Code v2.1.187 新增 `sandbox.credentials` 设置，可阻止沙箱化命令读取凭证和秘密环境变量；模型选择器及相关参数现已支持组织配置的模型限制，选中受限模型时显示“受组织设置限制”提示。全屏模式下选择菜单支持鼠标点击。修复多项问题：`--resume` 在 `-p` 无模型回合时失败、`--json-schema` 和工作流智能体结构化输出循环、远程 MCP 工具调用 5 分钟无响应后阻塞、Remote 会话启动延迟约 2.7 秒、韩文/中日韩文本粘贴乱码、子智能体深度追踪不准确、被杀智能体工作树注册残留未清理等。",
+   "published_at": "2026-06-24",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.187",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
    "id": 1051,
    "title": "Show HN：Oak——专为代理设计的 Git 替代方案",
    "summary": "Oak 是开源版本控制系统，专为 AI 智能体（Claude Code、Codex、Cursor）设计。采用 BLAKE3 内容哈希、内容定义分块、diff/merge 及 Blob/Manifest/Commit/Tree 数据模型，可选 SQLite 和 git 后端。以分支-会话为基本工作单元，用分支描述替代逐次提交，通过内容寻址懒加载使智能体数秒内编辑任意仓库。速度远超 git。已发布公开测试版 v0.99.0，支持 macOS（Apple Silicon）、Linux（x86_64）及 Windows，可通过 curl 或 cargo 安装，Apache-2.0 开源。",
@@ -1877,6 +1913,15 @@
   }
  ],
  "Claude Opus": [
+  {
+   "id": 1098,
+   "title": "Seed2.1 正式发布，深入 AI 生产力",
+   "summary": "字节Seed发布Seed2.1系列，面向真实生产力场景的智能体，强化通用Agent能力、代码工程交付与多模态理解。Seed2.1 Pro在GDPval基准获最高分，Agents' Last Exam位列参评模型第一梯队；MobileWorld手机GUI任务最高分，CreativeWork多环境任务表现突出。多模态在CharXiv-RQ等多项基准取得SOTA。代码能力上，Seed2.1 Pro在NL2Repo-Bench表现良好，开发者评测相比Claude Opus 4.6获59.1%胜率。模型已在豆包、TRAE上线，API通过火山方舟提供。",
+   "published_at": "2026-06-24",
+   "url": "https://seed.bytedance.com/zh/blog/seed2-1-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-%E6%B7%B1%E5%85%A5-ai-%E7%94%9F%E4%BA%A7%E5%8A%9B",
+   "category": "ai-models",
+   "source": "字节 Seed：Research Feed（网页内嵌数据）"
+  },
   {
    "id": 1086,
    "title": "Seed2.1 正式发布，深入 AI 生产力",
@@ -3703,6 +3748,15 @@
  ],
  "GPT-5": [
   {
+   "id": 1117,
+   "title": "GPT-5 帮助免疫学家 Derya Unutmaz 解开三年未解之谜",
+   "summary": "GPT-5 Pro 帮助免疫学家 Derya Unutmaz 解决了一个长达三年的免疫学谜团，揭示了 T 细胞行为的新见解。这一突破可能为癌症和自身免疫疾病研究提供支持。",
+   "published_at": "2026-06-24",
+   "url": "https://openai.com/index/gpt-5-immunology-mystery",
+   "category": "tip",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
    "id": 874,
    "title": "OpenAI 发布 Deployment Simulation 方法：通过模拟部署预测模型发布前行为",
    "summary": "OpenAI 近日发布 Deployment Simulation 方法，通过在隐私保护下重放历史对话、用新候选模型重新生成回复，模拟模型上线后的实际表现。在多个 GPT-5-series Thinking 部署中，该方法比传统评估更准确地估计了不良行为频率，发现新型对齐问题，并降低模型识别测试的风险。它还能扩展至涉及工具使用的智能体场景。传统评估存在覆盖不足、选择偏差和模型可识别测试等局限，而 Deployment Simulation 使用真实对话分布缓解了这些问题，但无法测量频率低于每 20 万条消息 1 次的行为。",
@@ -3809,6 +3863,15 @@
   }
  ],
  "GPT-5.5": [
+  {
+   "id": 1106,
+   "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
+   "summary": "2026年6月22日，五眼联盟（美、英、加、澳、新）网络安全部门联合警告，即将到来的AI模型（如OpenAI的GPT-5.5-Cyber、Anthropic的Mythos）将降低编写复杂攻击代码的门槛。自动化智能体可全天候扫描互联网漏洞，大幅缩短安全窗口期。AI驱动的超个性化钓鱼诈骗已在亚太蔓延，印度2026年初勒索软件事件激增165%。五眼联盟建议企业部署自动化防御AI，个人用户开启多因素认证、删除闲置账户。",
+   "published_at": "2026-06-24",
+   "url": "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats",
+   "category": "industry",
+   "source": "Artificial Intelligence News（RSS）"
+  },
   {
    "id": 1083,
    "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
@@ -5093,6 +5156,33 @@
  ],
  "Hugging Face": [
   {
+   "id": 1107,
+   "title": "GitHub联合开源联盟呼吁修改加州AI透明度法案以保护开源",
+   "summary": "GitHub 联合 Black Forest Labs、Hugging Face 与 Mozilla Corporation 组成开源联盟，呼吁对加州 AI 透明度法案（SB 942，拟由 SB 1000 修正）进行针对性修改。当前草案要求开发者在下游用户未履行义务时撤销开源许可证，这与开源许可证永久不可撤销的性质冲突。联盟认为该要求非必要，已有直接监管和执法机制，并建议参考欧盟 AI 法案的透明度实践规范，以向下游用户通知最佳实践文档的方式替代撤销条款。GitHub 支持这些修正，以在保持透明度目标的同时兼容开源开发模式。",
+   "published_at": "2026-06-24",
+   "url": "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source",
+   "category": "industry",
+   "source": "GitHub Blog"
+  },
+  {
+   "id": 1113,
+   "title": "huggingface_hub 实现每周发布：AI、开源工具、人工审核闭环",
+   "summary": "Hugging Face 将 huggingface_hub 的发布周期从每 4‑6 周缩短至每周，全部由单个 GitHub Actions 工作流自动完成。流程依赖开源工具和开权重模型（当前为 Z.ai 的 GLM‑5.2）来起草发布说明和 Slack 公告，但保留人类在最终审核环节的决定权。自动步骤包括版本号更新、提交标签推送、PyPI 发布、下游测试分支创建、发布说明草稿、Slack 公告草稿、归档、后置版本提升以及对合入 PR 的评论。所有组件均基于开源生态构建，任何维护者都可直接复制使用。",
+   "published_at": "2026-06-24",
+   "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+   "category": "tip",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 1124,
+   "title": "GitHub联合开源联盟呼吁修改加州AI透明度法案以保护开源",
+   "summary": "GitHub 联合 Black Forest Labs、Hugging Face 与 Mozilla Corporation 组成开源联盟，呼吁对加州 AI 透明度法案（SB 942，拟由 SB 1000 修正）进行针对性修改。当前草案要求开发者在下游用户未履行义务时撤销开源许可证，这与开源许可证永久不可撤销的性质冲突。联盟认为该要求非必要，已有直接监管和执法机制，并建议参考欧盟 AI 法案的透明度实践规范，以向下游用户通知最佳实践文档的方式替代撤销条款。GitHub 支持这些修正，以在保持透明度目标的同时兼容开源开发模式。",
+   "published_at": "2026-06-23T15:48:00.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 1087,
    "title": "huggingface_hub 实现每周发布：AI、开源工具、人工审核闭环",
    "summary": "Hugging Face 将 huggingface_hub 的发布周期从每 4-6 周缩短至每周，全部由单个 GitHub Actions 工作流自动完成。流程依赖开源工具和开权重模型（当前为 Z.ai 的 GLM-5.2）来起草发布说明和 Slack 公告，但保留人类在最终审核环节的决定权。自动步骤包括版本号更新、提交标签推送、PyPI 发布、下游测试分支创建、发布说明草稿、Slack 公告草稿、归档、后置版本提升以及对合入 PR 的评论。所有组件均基于开源生态构建，任何维护者都可直接复制使用。",
@@ -5374,6 +5464,15 @@
  ],
  "HuggingFace": [
   {
+   "id": 1113,
+   "title": "huggingface_hub 实现每周发布：AI、开源工具、人工审核闭环",
+   "summary": "Hugging Face 将 huggingface_hub 的发布周期从每 4‑6 周缩短至每周，全部由单个 GitHub Actions 工作流自动完成。流程依赖开源工具和开权重模型（当前为 Z.ai 的 GLM‑5.2）来起草发布说明和 Slack 公告，但保留人类在最终审核环节的决定权。自动步骤包括版本号更新、提交标签推送、PyPI 发布、下游测试分支创建、发布说明草稿、Slack 公告草稿、归档、后置版本提升以及对合入 PR 的评论。所有组件均基于开源生态构建，任何维护者都可直接复制使用。",
+   "published_at": "2026-06-24",
+   "url": "https://huggingface.co/blog/huggingface-hub-release-ci",
+   "category": "tip",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
    "id": 1087,
    "title": "huggingface_hub 实现每周发布：AI、开源工具、人工审核闭环",
    "summary": "Hugging Face 将 huggingface_hub 的发布周期从每 4-6 周缩短至每周，全部由单个 GitHub Actions 工作流自动完成。流程依赖开源工具和开权重模型（当前为 Z.ai 的 GLM-5.2）来起草发布说明和 Slack 公告，但保留人类在最终审核环节的决定权。自动步骤包括版本号更新、提交标签推送、PyPI 发布、下游测试分支创建、发布说明草稿、Slack 公告草稿、归档、后置版本提升以及对合入 PR 的评论。所有组件均基于开源生态构建，任何维护者都可直接复制使用。",
@@ -5529,6 +5628,24 @@
  ],
  "IBM": [
   {
+   "id": 1099,
+   "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
+   "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月–2026年2月）和 WebArena（2025年2月–9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十…",
+   "published_at": "2026-06-24",
+   "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
+   "category": "ai-products",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 1127,
+   "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
+   "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月-2026年2月）和 WebArena（2025年2月-9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十余个单文件示例应用，涵盖电影推荐、IBM Cloud 架构顾问等场景，每个应用仅需一个 FastAPI 文件。",
+   "published_at": "2026-06-23T12:51:55.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 833,
    "title": "智能体AI治理：你的API密钥就是护栏",
    "summary": "智能体AI使用量将在未来两年急剧上升，但治理滞后--仅五分之一企业拥有成熟治理模型。典型事故：销售智能体重试失败调用后自行升级到GPT-5.5，一夜消耗200美元。API路由层位于智能体与模型之间，是强制执行预算上限、模型白名单、提供方准入和请求日志的理想点。IBM报告指出97%遭遇AI安全事件的组织缺乏AI访问控制。最小可行治理方案：为每个智能体工作流分配独立API密钥，在API密钥层面实现预算控制、模型准入和审计追踪。",
@@ -5586,6 +5703,24 @@
   }
  ],
  "Krea": [
+  {
+   "id": 1095,
+   "title": "Krea 2 技术报告正式发布",
+   "summary": "我们的技术报告已发布。 深入解析创建 Krea 2 所用的数据、架构及训练技巧。 https://www.krea.ai/blog/krea-2-technical-report",
+   "published_at": "2026-06-24",
+   "url": "https://x.com/krea_ai/status/2069473417804591191",
+   "category": "ai-models",
+   "source": "X：Krea AI (@krea_ai)"
+  },
+  {
+   "id": 1122,
+   "title": "Krea 2 技术报告正式发布",
+   "summary": "我们的技术报告已发布。\n\n深入解析创建 Krea 2 所用的数据、架构及训练技巧。\n\nhttps：//www.krea.ai/blog/krea-2-technical-report",
+   "published_at": "2026-06-23T17:31:26.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 674,
    "title": "Krea 2 推出生成式滑块控制图像属性",
@@ -5711,6 +5846,33 @@
   }
  ],
  "Meta": [
+  {
+   "id": 1105,
+   "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+   "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141,000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+   "published_at": "2026-06-24",
+   "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments",
+   "category": "industry",
+   "source": "Ars Technica：AI（RSS）"
+  },
+  {
+   "id": 1115,
+   "title": "Meta 如何为 AI 眼镜设计超窄钢壳电池",
+   "summary": "Meta 工程团队为 Ray-Ban Meta 等智能眼镜开发了宽度仅 7mm 的钢壳电池。传统软包电池难以塑形且空间利用率低，Meta 改用叠片式电极结构以降低阻抗、避免多任务时电压骤降，并将公差控制在约 100 微米以释放更多体积。Gen2 电池容量从 160 mAh 提升至 210 mAh，但续航翻倍主要来自软硬件系统级效率优化。Oakley Meta Vanguards 双电池面临交叉充电与启动关机时序难题，而 Meta Ray-Ban Display 则搭载了最大的 248 mAh 钢壳电池以支持屏幕持续供电。该超窄方案正推广至其他硬件形态。",
+   "published_at": "2026-06-24",
+   "url": "https://engineering.fb.com/2026/06/23/production-engineering/how-meta-built-ultra-narrow-batteries-for-ai-glasses-meta-tech-podcast",
+   "category": "tip",
+   "source": "Meta Engineering Blog（RSS）"
+  },
+  {
+   "id": 1120,
+   "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+   "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141，000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+   "published_at": "2026-06-23T20:17:38.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1017,
    "title": "JAWBONE Act：一项打击政府为压制合法网络言论而施压的新法案",
@@ -6451,6 +6613,24 @@
  ],
  "Mistral": [
   {
+   "id": 1097,
+   "title": "Mistral OCR 4",
+   "summary": "Mistral AI 发布 OCR 4，新增边界框、块分类（标题、表格、方程式、签名等）及逐页逐词置信度分数。支持 170 种语言、10 个语系，可单容器全自托管部署。在 OlmOCRBench 上得分 85.20，独立标注者偏好率平均 72%。定价每 1000 页 $4，Batch API 享 50% 折扣。可通过 API 或 Mistral Studio 的 Document AI 调用。",
+   "published_at": "2026-06-24",
+   "url": "https://mistral.ai/news/ocr-4",
+   "category": "ai-models",
+   "source": "Mistral AI：News（网页）"
+  },
+  {
+   "id": 1125,
+   "title": "Mistral OCR 4",
+   "summary": "Mistral AI 发布 OCR 4，新增边界框、块分类（标题、表格、方程式、签名等）及逐页逐词置信度分数。支持 170 种语言、10 个语系，可单容器全自托管部署。在 OlmOCRBench 上得分 85.20，独立标注者偏好率平均 72%。定价每 1000 页 $4，Batch API 享 50% 折扣。可通过 API 或 Mistral Studio 的 Document AI 调用。",
+   "published_at": "2026-06-23T14:24:55.949Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 1089,
    "title": "OpenRouter：通过API路由实现AI数据驻留合规",
    "summary": "Deloitte 报告显示 77% 的公司将供应商国籍纳入 AI 选型考量。OpenRouter 将数据驻留视为路由决策：通过 API 请求中的 `provider` 对象设置 `order` 或 `only` 限定服务商、`allow_fallbacks` 为 `false` 禁止回退、`data_collection` 为 `deny` 禁止数据存储或训练、`zdr` 为 `true` 要求零数据保留。示例以 `anthropic/claude-sonnet-4.6` 调用，首选 Anthropic 直连和 Amazon Bedrock。针对欧盟需求，可限制仅 Mistral 等欧盟总部供应商。若无可合规供应商，API 返回错误而非路由至不合规服务商。",
@@ -6479,6 +6659,42 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 1092,
+   "title": "FastWan-QAD：单卡5090上1.8秒生成5秒视频",
+   "summary": "Sky Computing Lab 发布 FastWan-QAD 视频生成模型系列，基于 FastVideo 的量化感知蒸馏（QAD）方案训练。在单张 NVIDIA GeForce RTX 5090 上，端到端生成一段 5 秒 480P 视频仅需 1.8 秒。模型、代码及博客已开源。",
+   "published_at": "2026-06-24",
+   "url": "https://x.com/haoailab/status/2069493820732170695",
+   "category": "ai-models",
+   "source": "X：Sky Computing Lab (@haoailab)"
+  },
+  {
+   "id": 1105,
+   "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+   "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141,000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+   "published_at": "2026-06-24",
+   "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments",
+   "category": "industry",
+   "source": "Ars Technica：AI（RSS）"
+  },
+  {
+   "id": 1120,
+   "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+   "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141，000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+   "published_at": "2026-06-23T20:17:38.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1121,
+   "title": "FastWan-QAD：单卡5090上1.8秒生成5秒视频",
+   "summary": "Sky Computing Lab 发布 FastWan-QAD 视频生成模型系列，基于 FastVideo 的量化感知蒸馏（QAD）方案训练。在单张 NVIDIA GeForce RTX 5090 上，端到端生成一段 5 秒 480P 视频仅需 1.8 秒。模型、代码及博客已开源。",
+   "published_at": "2026-06-23T18:52:30.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 1090,
    "title": "我们用免费本地模型对 OpenClaw 仓库进行实时分类",
@@ -7288,6 +7504,69 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 1099,
+   "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
+   "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月–2026年2月）和 WebArena（2025年2月–9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十…",
+   "published_at": "2026-06-24",
+   "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
+   "category": "ai-products",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 1105,
+   "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+   "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141,000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+   "published_at": "2026-06-24",
+   "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments",
+   "category": "industry",
+   "source": "Ars Technica：AI（RSS）"
+  },
+  {
+   "id": 1106,
+   "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
+   "summary": "2026年6月22日，五眼联盟（美、英、加、澳、新）网络安全部门联合警告，即将到来的AI模型（如OpenAI的GPT-5.5-Cyber、Anthropic的Mythos）将降低编写复杂攻击代码的门槛。自动化智能体可全天候扫描互联网漏洞，大幅缩短安全窗口期。AI驱动的超个性化钓鱼诈骗已在亚太蔓延，印度2026年初勒索软件事件激增165%。五眼联盟建议企业部署自动化防御AI，个人用户开启多因素认证、删除闲置账户。",
+   "published_at": "2026-06-24",
+   "url": "https://www.artificialintelligence-news.com/news/five-eyes-warning-ai-cyber-threats",
+   "category": "industry",
+   "source": "Artificial Intelligence News（RSS）"
+  },
+  {
+   "id": 1108,
+   "title": "OpenAI 助力 Appia Foundation 推动先进 AI 共享标准建设",
+   "summary": "OpenAI 通过 Appia Foundation 支持制定先进 AI 的共享标准，涵盖评估框架、安全实践与全球合作。",
+   "published_at": "2026-06-24",
+   "url": "https://openai.com/index/helping-build-shared-standards-for-advanced-ai",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 1109,
+   "title": "Omio 如何构建对话式旅行的未来",
+   "summary": "Omio 利用 OpenAI 技术打造对话式旅行体验，加速产品开发进程，并推动自身向 AI 原生公司转型。",
+   "published_at": "2026-06-24",
+   "url": "https://openai.com/index/omio",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 1120,
+   "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+   "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141，000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+   "published_at": "2026-06-23T20:17:38.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1127,
+   "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
+   "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月-2026年2月）和 WebArena（2025年2月-9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十余个单文件示例应用，涵盖电影推荐、IBM Cloud 架构顾问等场景，每个应用仅需一个 FastAPI 文件。",
+   "published_at": "2026-06-23T12:51:55.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 1083,
    "title": "五眼联盟警告：AI网络威胁数月内将影响普通用户",
@@ -10047,6 +10326,24 @@
  ],
  "Runway": [
   {
+   "id": 1100,
+   "title": "Runway推出Seedance 4K等三款新模型",
+   "summary": "Seedance 4K。Seedance Mini。Kling 3.0 Turbo。现已推出。 全球最佳模型，汇聚一处。 使用优惠码 30RUNWAY，前三个月可享七折优惠。 通过下方链接开始使用。",
+   "published_at": "2026-06-24",
+   "url": "https://x.com/runwayml/status/2069535148450705517",
+   "category": "ai-products",
+   "source": "X：Runway (@runwayml)"
+  },
+  {
+   "id": 1119,
+   "title": "Runway推出Seedance 4K等三款新模型",
+   "summary": "Seedance 4K。Seedance Mini。Kling 3.0 Turbo。现已推出。\n全球最佳模型，汇聚一处。\n\n使用优惠码 30RUNWAY，前三个月可享七折优惠。\n\n通过下方链接开始使用。",
+   "published_at": "2026-06-23T21:36:44.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1054,
    "title": "Aleph 2.0 现已集成到 Figma Weave",
    "summary": "Aleph 2.0 是 Runway 的旗舰视频编辑模型，现已在 Figma Weave 中上线。它是一个基于上下文的视频编辑模型，通过关键帧工作：从视频中提取一帧，重新设计风格并附上时间戳连接回 Aleph 2.0 节点，即可将该编辑传递到主体出现的每一帧，同时保持其他内容不变。支持最长 30 秒、1080p 的片段，可跨多镜头序列应用编辑，无需逐镜头处理。",
@@ -10386,6 +10683,24 @@
  ],
  "llama": [
   {
+   "id": 1099,
+   "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
+   "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月–2026年2月）和 WebArena（2025年2月–9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十…",
+   "published_at": "2026-06-24",
+   "url": "https://huggingface.co/blog/ibm-research/cuga-apps",
+   "category": "ai-products",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 1127,
+   "title": "IBM 开源 CUGA：轻量级智能体框架，提供二十余个单文件示例应用",
+   "summary": "IBM 开源了 CUGA（Configurable Generalist Agent），一个处理规划、执行循环、工具调用和状态管理的轻量级智能体框架。开发者只需提供工具列表和提示词即可构建 CugaAgent。内置计划-执行-反思循环，在 AppWorld（2025年7月-2026年2月）和 WebArena（2025年2月-9月）基准上排名第一。支持 Fast / Balanced / Accurate 三种推理模式，代码执行可在本地、Docker 或 E2B 沙箱中运行。可互换工具支持 OpenAPI、MCP 和 LangChain 函数，通过环境变量一键切换 OpenAI、watsonx、Ollama 等提供商。随框架发布二十余个单文件示例应用，涵盖电影推荐、IBM Cloud 架构顾问等场景，每个应用仅需一个 FastAPI 文件。",
+   "published_at": "2026-06-23T12:51:55.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 468,
    "title": "Pakistan Notice Helper：一款面向本地安全问题的轻量 AI 工具",
    "summary": "Pakistan Notice Helper 是一款安全工具，帮助巴基斯坦用户在点击链接、拨打电话、分享 OTP 或支付前识别可疑消息。它接受文本或截图输入，返回风险等级、简短解释、可见警示标志和安全下一步建议。工具支持英文和乌尔都语，乌尔都模式采用从右向左布局并全界面翻译。最终部署选用 Qwen3.5 4B Q8 模型（通过 llama.cpp + CUDA），在 10 个测试用例中通过了所有高风险诈骗和截图场景。此前曾测试 Qwen3.6 27B（质量高但成本高）和 MiniCPM-V 4.6 Q8（速度慢且不稳定），最终选择了精度、速度和成本平衡的 4B 模型。项目受限于 hackathon 的 32B 模型上限规则。",
@@ -10483,6 +10798,24 @@
   }
  ],
  "xAI": [
+  {
+   "id": 1105,
+   "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+   "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141,000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+   "published_at": "2026-06-24",
+   "url": "https://arstechnica.com/ai/2026/06/oracles-21000-layoffs-help-drive-its-debt-fueled-ai-investments",
+   "category": "industry",
+   "source": "Ars Technica：AI（RSS）"
+  },
+  {
+   "id": 1120,
+   "title": "Oracle因AI应用裁员21000人，债务驱动云基础设施投资",
+   "summary": "Oracle在截至5月31日的财年裁员21000人，员工总数降至141，000人，降幅12.9%。公司称AI技术的采用导致劳动力缩减，同时重组成本达18亿美元，同比增长481%。Oracle计划2026年通过债务和股权筹集450至500亿美元，扩建Oracle Cloud Infrastructure，服务OpenAI、xAI、AMD、Nvidia、Meta等客户。公司债务超1200亿美元。分析人士指出裁员有助于改善现金流，但Oracle也承认大规模裁员可能带来生产力下降、人才短缺和员工士气受损等风险。",
+   "published_at": "2026-06-23T20:17:38.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1053,
    "title": "Grok Build 推出 /goal 模式，支持长时间自主任务执行",
@@ -11465,6 +11798,33 @@
   }
  ],
  "豆包": [
+  {
+   "id": 1093,
+   "title": "京东全栈开源JoyAI-VL-Interaction，从“一问一答”走向“边看边说”",
+   "summary": "京东近日开源全球首个全栈交互模型JoyAI-VL-Interaction，获vLLM-Omni原生支持。该模型能持续观察视频流、主动判断关键事件并实时响应，支持将复杂任务委托后台Agent处理。在58个真人盲评中，对比豆包视频通话助手胜率77.6%，对比Gemini视频通话助手胜率87.9%，监控预警场景达100%胜率。开源内容包括模型权重、交互数据集、训练方案及完整可部署系统，支持摄像头、直播流等视频输入及语音交互、长期记忆、vLLM部署，适用于安防监控、老人看护、直播讲解等实时场景。",
+   "published_at": "2026-06-24",
+   "url": "https://mp.weixin.qq.com/s/IY6XGp4k6VgD9ZPH6YprCA",
+   "category": "ai-models",
+   "source": "公众号：京东JoyAI"
+  },
+  {
+   "id": 1096,
+   "title": "豆包音频生成模型1.0发布，重新定义AI音频创作",
+   "summary": "火山引擎正式发布豆包音频生成模型1.0（Doubao-Seed-Audio 1.0），支持文本与音频参考生成，端到端输出目标音频。单条Prompt可编排多角色对白、情绪语气、背景音乐及环境氛围，长时生成中保持多角色音色一致性，无需后期多轨混音。模型支持0样本多模态输入，无需额外训练即可生成；实现音色与风格解耦控制及“一声多角”能力。一次支持2分钟音频创作，多次延长保持音色统一。已开启火山方舟API邀测，个人用户享30分钟创作额度，即将上线剪映、即梦、番茄等产品。",
+   "published_at": "2026-06-24",
+   "url": "https://mp.weixin.qq.com/s/iL0uyUjOMUEfudeuDP6wQQ",
+   "category": "ai-models",
+   "source": "公众号：火山引擎"
+  },
+  {
+   "id": 1098,
+   "title": "Seed2.1 正式发布，深入 AI 生产力",
+   "summary": "字节Seed发布Seed2.1系列，面向真实生产力场景的智能体，强化通用Agent能力、代码工程交付与多模态理解。Seed2.1 Pro在GDPval基准获最高分，Agents' Last Exam位列参评模型第一梯队；MobileWorld手机GUI任务最高分，CreativeWork多环境任务表现突出。多模态在CharXiv-RQ等多项基准取得SOTA。代码能力上，Seed2.1 Pro在NL2Repo-Bench表现良好，开发者评测相比Claude Opus 4.6获59.1%胜率。模型已在豆包、TRAE上线，API通过火山方舟提供。",
+   "published_at": "2026-06-24",
+   "url": "https://seed.bytedance.com/zh/blog/seed2-1-%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83-%E6%B7%B1%E5%85%A5-ai-%E7%94%9F%E4%BA%A7%E5%8A%9B",
+   "category": "ai-models",
+   "source": "字节 Seed：Research Feed（网页内嵌数据）"
+  },
   {
    "id": 1084,
    "title": "京东全栈开源JoyAI-VL-Interaction，从\"一问一答\"走向\"边看边说\"",
