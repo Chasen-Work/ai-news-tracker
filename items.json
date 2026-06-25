@@ -1,5 +1,35 @@
 [
  {
+  "id": 1174,
+  "title": "Meta员工警告AI内容审核部署过快",
+  "summary": "Meta在2025年已用大语言模型替换约一半人工审核请求，计划年底前将部分内容类型的AI审核比例提升至90%以上，每年节省数十亿美元。Meta否认成本动机，称自3月测试显示其模型错误率比人类低13%，且多捕捉10%违规。但员工指出模型仍会移除或限流无害内容，缺乏足够监督，快速部署已导致外包裁员。此外，Meta已从使用Google Gemini转向自家新基础模型Muse Spark，该模型基于人工审核员的历史决策训练。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-25T10:07:19.000Z",
+  "fetched_at": "2026-06-25 13:00:13"
+ },
+ {
+  "id": 1175,
+  "title": "Anthropic称阿里巴巴非法获取了Claude AI模型的功能",
+  "summary": "Anthropic指控阿里巴巴未经授权提取了其Claude AI模型的能力。该指控基于Anthropic的调查，认为阿里巴巴通过逆向工程或其他手段复制了Claude的核心技术。目前阿里巴巴尚未公开回应。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-25T03:07:48.942Z",
+  "fetched_at": "2026-06-25 13:00:13"
+ },
+ {
+  "id": 1176,
+  "title": "盈透证券（Interactive Brokers）与 Grok 集成：组合分析、情景建模与实时交易指令生成",
+  "summary": "盈透证券（Interactive Brokers）近日与 Grok 集成，用户可在几分钟内免费关联现有账户，无需注册新账户。通过自然语言与 Grok 对话，可完成组合收益分析（如股息与利息预测）、行业/地区/经济事件的风险敞口情景建模、市场趋势研究，并直接生成对冲订单等实时交易指令，实现从数据洞察到执行决策的一体化。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-25T00:00:00.000Z",
+  "fetched_at": "2026-06-25 13:00:13"
+ },
+ {
   "id": 1158,
   "title": "MiniCPM-V 4.6 在 Apple Core AI 上高速运行",
   "summary": "🥳感谢分享，@MLBoy_DaisukeMajima 🚀 MiniCPM-V 4.6 在设备上以这样的速度运行，实在令人印象深刻——尤其是在 Apple Core AI 上以不到 2B 参数跑出。 干得漂亮，推动高效多模态 AI 向前发展。🫡",
@@ -408,6 +438,16 @@
   "category": "ai-products",
   "published_at": "2026-06-24T01:00:00.000Z",
   "fetched_at": "2026-06-24 13:00:06"
+ },
+ {
+  "id": 1177,
+  "title": "Causal-rCM：自回归视频扩散蒸馏的统一教师强制与自强制开源方案",
+  "summary": "Causal-rCM将扩散蒸馏框架rCM扩展至自回归视频扩散，提出教师强制（TF）与自强制（SF）互补训练范式，并发布统一开源算法与基础设施。通过自定义掩码FlashAttention-2 JVP内核，首次实现基于教师强制的连续时间一致性模型（sCM/MeanFlow）用于自回归视频扩散，收敛速度比离散时间版本快10倍。蒸馏后的2步因果Wan2.1-1.3B模型在仅1或2步采样下取得VBench-T2V分数84.63，仅使用合成数据即达到帧级和块级流式视频生成SOTA。该方法还应用于Cosmos 3全模态世界基础模型，实现动作条件生成的交互式世界模型。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-06-24T00:00:00.000Z",
+  "fetched_at": "2026-06-25 13:00:13"
  },
  {
   "id": 1173,

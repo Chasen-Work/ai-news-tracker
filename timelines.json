@@ -160,6 +160,15 @@
  ],
  "Anthropic": [
   {
+   "id": 1175,
+   "title": "Anthropic称阿里巴巴非法获取了Claude AI模型的功能",
+   "summary": "Anthropic指控阿里巴巴未经授权提取了其Claude AI模型的能力。该指控基于Anthropic的调查，认为阿里巴巴通过逆向工程或其他手段复制了Claude的核心技术。目前阿里巴巴尚未公开回应。",
+   "published_at": "2026-06-25T03:07:48.942Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 1143,
    "title": "Figma在Config 2026押注人类判断，画布AI能力却来自第三方",
    "summary": "Figma在Config 2026将设计画布扩展至代码、动画、3D深度和着色器效果，并集成去年收购的Weave工作流系统。新功能包括Code Layers（代码与设计并存）、Motion动画、深度层、Shader及Generative Plugins。协作方面，团队可搜索复用AI提示词、保存工作流为技能、共享插件。Figma的AI功能依赖Anthropic、OpenAI和Google等外部模型，推理成本挤压利润率。同时，Anthropic等公司的竞争产品可直接生成界面，构成威胁。",
@@ -3033,6 +3042,15 @@
  ],
  "Cosmos 3": [
   {
+   "id": 1177,
+   "title": "Causal-rCM：自回归视频扩散蒸馏的统一教师强制与自强制开源方案",
+   "summary": "Causal-rCM将扩散蒸馏框架rCM扩展至自回归视频扩散，提出教师强制（TF）与自强制（SF）互补训练范式，并发布统一开源算法与基础设施。通过自定义掩码FlashAttention-2 JVP内核，首次实现基于教师强制的连续时间一致性模型（sCM/MeanFlow）用于自回归视频扩散，收敛速度比离散时间版本快10倍。蒸馏后的2步因果Wan2.1-1.3B模型在仅1或2步采样下取得VBench-T2V分数84.63，仅使用合成数据即达到帧级和块级流式视频生成SOTA。该方法还应用于Cosmos 3全模态世界基础模型，实现动作条件生成的交互式世界模型。",
+   "published_at": "2026-06-24T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 4,
    "title": "使用NVIDIA Cosmos 3开发物理AI推理、世界与行动模型",
    "summary": "NVIDIA Cosmos 3是一款面向物理AI的前沿基础模型。它能够帮助机器人、自动驾驶车辆和智能空间理解真实世界、预测事件发展并生成适应特定环境与任务的行动。该模型融合了物理推理、世界理解与行动生成能力。",
@@ -4471,6 +4489,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 1174,
+   "title": "Meta员工警告AI内容审核部署过快",
+   "summary": "Meta在2025年已用大语言模型替换约一半人工审核请求，计划年底前将部分内容类型的AI审核比例提升至90%以上，每年节省数十亿美元。Meta否认成本动机，称自3月测试显示其模型错误率比人类低13%，且多捕捉10%违规。但员工指出模型仍会移除或限流无害内容，缺乏足够监督，快速部署已导致外包裁员。此外，Meta已从使用Google Gemini转向自家新基础模型Muse Spark，该模型基于人工审核员的历史决策训练。",
+   "published_at": "2026-06-25T10:07:19.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1140,
    "title": "Gemini 3.5 Flash 中的计算机使用",
@@ -6201,6 +6228,15 @@
   }
  ],
  "Meta": [
+  {
+   "id": 1174,
+   "title": "Meta员工警告AI内容审核部署过快",
+   "summary": "Meta在2025年已用大语言模型替换约一半人工审核请求，计划年底前将部分内容类型的AI审核比例提升至90%以上，每年节省数十亿美元。Meta否认成本动机，称自3月测试显示其模型错误率比人类低13%，且多捕捉10%违规。但员工指出模型仍会移除或限流无害内容，缺乏足够监督，快速部署已导致外包裁员。此外，Meta已从使用Google Gemini转向自家新基础模型Muse Spark，该模型基于人工审核员的历史决策训练。",
+   "published_at": "2026-06-25T10:07:19.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1155,
    "title": "AI被认为会取代工程岗位，但新数据显示工程是2025年最具韧性的岗位",
@@ -12800,6 +12836,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 1175,
+   "title": "Anthropic称阿里巴巴非法获取了Claude AI模型的功能",
+   "summary": "Anthropic指控阿里巴巴未经授权提取了其Claude AI模型的能力。该指控基于Anthropic的调查，认为阿里巴巴通过逆向工程或其他手段复制了Claude的核心技术。目前阿里巴巴尚未公开回应。",
+   "published_at": "2026-06-25T03:07:48.942Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1012,
    "title": "阿里开源向量数据库Zvec，UCSD黄碧薇教授提出因果AI第四代范式",

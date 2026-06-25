@@ -10,15 +10,15 @@
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 121,
-  "last_seen": "2026-06-25"
+  "mentions": 122,
+  "last_seen": "2026-06-25T03:07:48.942Z"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 92,
-  "last_seen": "2026-06-25"
+  "mentions": 93,
+  "last_seen": "2026-06-25T10:07:19.000Z"
  },
  {
   "id": 10,
@@ -94,8 +94,8 @@
   "id": 43,
   "name": "Meta",
   "type": "company",
-  "mentions": 31,
-  "last_seen": "2026-06-25"
+  "mentions": 32,
+  "last_seen": "2026-06-25T10:07:19.000Z"
  },
  {
   "id": 2,
@@ -147,6 +147,13 @@
   "last_seen": "2026-06-24"
  },
  {
+  "id": 93,
+  "name": "阿里",
+  "type": "company",
+  "mentions": 17,
+  "last_seen": "2026-06-25T03:07:48.942Z"
+ },
+ {
   "id": 23,
   "name": "Replit",
   "type": "company",
@@ -159,13 +166,6 @@
   "type": "model",
   "mentions": 16,
   "last_seen": "2026-06-22T00:00:00.000Z"
- },
- {
-  "id": 93,
-  "name": "阿里",
-  "type": "company",
-  "mentions": 16,
-  "last_seen": "2026-06-20"
  },
  {
   "id": 614,
@@ -441,6 +441,13 @@
   "last_seen": "2026-06-25"
  },
  {
+  "id": 9,
+  "name": "Cosmos 3",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-06-24T00:00:00.000Z"
+ },
+ {
   "id": 16,
   "name": "JetBrains",
   "type": "company",
@@ -516,13 +523,6 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-06-25"
- },
- {
-  "id": 9,
-  "name": "Cosmos 3",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-02"
  },
  {
   "id": 11,
