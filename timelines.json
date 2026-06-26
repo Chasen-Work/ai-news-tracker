@@ -1471,6 +1471,24 @@
  ],
  "Claude Code": [
   {
+   "id": 1223,
+   "title": "Claude Code 6个实用Hook玩法",
+   "summary": "Claude Code 内置近30个Hook事件（年初仅13个），本质是写死的规则脚本，运行时不消耗token。6个实用玩法：权限弹窗提醒、开机日程播报（问候+天气+飞书日程）、上下文预压缩时自动生成摘要卡片、结合Skill自动整理下载文件夹、启动后每小时久坐提醒、通过Bark实现手机/手表任务完成/失败推送。让AI从被动聊天框变为事件驱动的自动化系统。",
+   "published_at": "2026-06-26T02:02:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 1224,
+   "title": "小互开源个人IP配图技能\"小互IP Studio\"，含31个原创角色",
+   "summary": "博主小互开源个人IP配图技能\"小互IP Studio\"，包含31个原创角色（15个手绘线稿角色+16个谐音梗meme形象）及一套配图方法论。该Agent可自动读取文章、规划配图类型（情绪图/示意图/四格漫画）、生成并自查返工。默认画风为手绘线稿淡彩，另备5种皮肤（3D盲盒、黑白线稿等）可切换。安装仅需Python3，支持Claude Code、Codex等工具，需自备OpenAI兼容的图像API key（默认GPT-image-2）；也可只输出提示词手动生图。",
+   "published_at": "2026-06-26T01:26:23.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 1179,
    "title": "OpenRouter MCP 服务器发布",
    "summary": "OpenRouter 推出 MCP 服务器，为编程智能体提供实时模型数据、基准排名、定价和文档查询。开发者通过一键安装（支持 Claude Code、Codex CLI、Cursor 等客户端），即可在编辑器内完成模型筛选、价格对比和测试推理，无需切换标签页。服务器整合 Artificial Analysis、Design Arena 及 OpenRouter 自身排名数据，例如推荐 GLM-5.2 作为性价比最佳的编码模型。工具集包括 models-list、model-get、model-endpoints、benchmarks 等，支持通过 chat-send 发送测试提示，比较不同模型（如 Claude Opus 4.8、G…",
@@ -2495,6 +2513,15 @@
   }
  ],
  "Codex": [
+  {
+   "id": 1224,
+   "title": "小互开源个人IP配图技能\"小互IP Studio\"，含31个原创角色",
+   "summary": "博主小互开源个人IP配图技能\"小互IP Studio\"，包含31个原创角色（15个手绘线稿角色+16个谐音梗meme形象）及一套配图方法论。该Agent可自动读取文章、规划配图类型（情绪图/示意图/四格漫画）、生成并自查返工。默认画风为手绘线稿淡彩，另备5种皮肤（3D盲盒、黑白线稿等）可切换。安装仅需Python3，支持Claude Code、Codex等工具，需自备OpenAI兼容的图像API key（默认GPT-image-2）；也可只输出提示词手动生图。",
+   "published_at": "2026-06-26T01:26:23.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 1179,
    "title": "OpenRouter MCP 服务器发布",
@@ -8583,6 +8610,24 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 1222,
+   "title": "近400家美国报纸起诉微软和OpenAI：未经授权抓取新闻内容训练AI",
+   "summary": "代表近400家纸媒的出版商联盟向美国纽约南区联邦地区法院起诉微软和OpenAI，指控其未经授权抓取新闻内容用于训练Copilot、ChatGPT等AI模型，侵犯版权并触犯《数字千年版权法》。起诉书称被告\"系统性且秘密地\"爬取网站，复制文章并删除版权管理信息。原告表示AI产品基于其内容创造数十亿美元价值，但出版商分文未得，称此举或成地方新闻业\"丧钟\"。OpenAI回应训练数据基于公开可获取内容且符合合理使用原则，微软未置评。",
+   "published_at": "2026-06-26T04:37:58.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1224,
+   "title": "小互开源个人IP配图技能\"小互IP Studio\"，含31个原创角色",
+   "summary": "博主小互开源个人IP配图技能\"小互IP Studio\"，包含31个原创角色（15个手绘线稿角色+16个谐音梗meme形象）及一套配图方法论。该Agent可自动读取文章、规划配图类型（情绪图/示意图/四格漫画）、生成并自查返工。默认画风为手绘线稿淡彩，另备5种皮肤（3D盲盒、黑白线稿等）可切换。安装仅需Python3，支持Claude Code、Codex等工具，需自备OpenAI兼容的图像API key（默认GPT-image-2）；也可只输出提示词手动生图。",
+   "published_at": "2026-06-26T01:26:23.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 1181,
    "title": "Codex 在 ChatGPT 移动 App 正式可用",

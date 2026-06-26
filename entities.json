@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 148,
-  "last_seen": "2026-06-26"
+  "mentions": 150,
+  "last_seen": "2026-06-26T04:37:58.000Z"
  },
  {
   "id": 35,
@@ -21,6 +21,13 @@
   "last_seen": "2026-06-26"
  },
  {
+  "id": 48,
+  "name": "Claude Code",
+  "type": "model",
+  "mentions": 73,
+  "last_seen": "2026-06-26T02:02:00.000Z"
+ },
+ {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
@@ -28,18 +35,11 @@
   "last_seen": "2026-06-25"
  },
  {
-  "id": 48,
-  "name": "Claude Code",
-  "type": "model",
-  "mentions": 71,
-  "last_seen": "2026-06-26"
- },
- {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 69,
-  "last_seen": "2026-06-26"
+  "mentions": 70,
+  "last_seen": "2026-06-26T01:26:23.000Z"
  },
  {
   "id": 6,
