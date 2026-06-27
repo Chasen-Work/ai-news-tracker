@@ -3,15 +3,15 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 156,
-  "last_seen": "2026-06-27"
+  "mentions": 157,
+  "last_seen": "2026-06-27T12:25:21.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 127,
-  "last_seen": "2026-06-27"
+  "mentions": 129,
+  "last_seen": "2026-06-27T12:25:21.000Z"
  },
  {
   "id": 47,
@@ -77,6 +77,13 @@
   "last_seen": "2026-06-26"
  },
  {
+  "id": 79,
+  "name": "DeepSeek",
+  "type": "company",
+  "mentions": 37,
+  "last_seen": "2026-06-27T08:16:09.000Z"
+ },
+ {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
@@ -86,13 +93,6 @@
  {
   "id": 43,
   "name": "Meta",
-  "type": "company",
-  "mentions": 36,
-  "last_seen": "2026-06-26"
- },
- {
-  "id": 79,
-  "name": "DeepSeek",
   "type": "company",
   "mentions": 36,
   "last_seen": "2026-06-26"
@@ -122,8 +122,8 @@
   "id": 52,
   "name": "Microsoft",
   "type": "company",
-  "mentions": 23,
-  "last_seen": "2026-06-24T06:00:00.000Z"
+  "mentions": 24,
+  "last_seen": "2026-06-27T12:25:21.000Z"
  },
  {
   "id": 70,
@@ -131,6 +131,13 @@
   "type": "company",
   "mentions": 22,
   "last_seen": "2026-06-24T16:30:01.000Z"
+ },
+ {
+  "id": 93,
+  "name": "阿里",
+  "type": "company",
+  "mentions": 19,
+  "last_seen": "2026-06-27T03:39:06.000Z"
  },
  {
   "id": 560,
@@ -145,13 +152,6 @@
   "type": "company",
   "mentions": 18,
   "last_seen": "2026-06-24"
- },
- {
-  "id": 93,
-  "name": "阿里",
-  "type": "company",
-  "mentions": 18,
-  "last_seen": "2026-06-26"
  },
  {
   "id": 23,
@@ -294,6 +294,13 @@
   "last_seen": "2026-06-25"
  },
  {
+  "id": 1083,
+  "name": "Amazon",
+  "type": "company",
+  "mentions": 7,
+  "last_seen": "2026-06-27T12:25:21.000Z"
+ },
+ {
   "id": 7,
   "name": "Qwen3.7",
   "type": "model",
@@ -334,13 +341,6 @@
   "type": "model",
   "mentions": 6,
   "last_seen": "2026-06-26"
- },
- {
-  "id": 1083,
-  "name": "Amazon",
-  "type": "company",
-  "mentions": 6,
-  "last_seen": "2026-06-25"
  },
  {
   "id": 30,
