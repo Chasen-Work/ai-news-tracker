@@ -104,6 +104,15 @@
  ],
  "Amazon": [
   {
+   "id": 1253,
+   "title": "“Raise Us”启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
+   "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利“Raise Us”，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
+   "published_at": "2026-06-28",
+   "url": "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
    "id": 1244,
    "title": "\"Raise Us\"启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
    "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利\"Raise Us\"，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
@@ -169,6 +178,24 @@
  ],
  "Anthropic": [
   {
+   "id": 1253,
+   "title": "“Raise Us”启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
+   "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利“Raise Us”，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
+   "published_at": "2026-06-28",
+   "url": "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 1254,
+   "title": "AI 账单失控后 DeepSeek 成“香饽饽”，部分美国企业已 100% 切换",
+   "summary": "美国企业面临 AI 账单失控，开始转向 Token 最小化策略。旧金山公司 Lindy 此前主要调用 Anthropic 的 Claude 模型，每月 AI 账单超支甚至超过员工工资。该公司 CEO 弗洛·克里维洛表示，本月初已将 100% 流量切换到 DeepSeek，预计未来几个月可节省数百万美元。企业开始采用按任务匹配模型的“模型路由”，不再将最贵的前沿模型用于所有场景。部分客户已决定暂停 AI 投入，待证明投资回报率后再继续。",
+   "published_at": "2026-06-28",
+   "url": "https://www.ithome.com/0/969/400.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 1244,
    "title": "\"Raise Us\"启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
    "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利\"Raise Us\"，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
@@ -194,6 +221,15 @@
    "url": "https://www.anthropic.com/research/economic-index-june-2026-report",
    "category": "paper",
    "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
   },
   {
    "id": 1242,
@@ -1552,6 +1588,15 @@
    "source": "公众号：数字生命卡兹克"
   },
   {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1241,
    "title": "Leaf 开源项目：将网红峰哥做成实时通话 AI 分身",
    "summary": "开发者 Leaf 开源项目，将网红峰哥做成能实时通话的 AI 分身，集成实时对话、音色克隆和人格注入，工程延迟压到 1 秒内。技术拆解：语音识别用 Cartesia ink-whisper 降噪防误触发；大模型选 MiniMax 高速版，首字响应 361ms；语音合成用 VoxCPM 开源克隆，15 秒素材即可复刻。整体从最初 8-20 秒优化至体感 2-3 秒。人格通过女娲 Skill 从直播语料蒸馏出口头禅和思维逻辑。普通人半小时可跑通：克隆项目后，用 Claude Code 或 Cursor 配置，填两个 API Key 即可使用。",
@@ -2631,6 +2676,15 @@
    "source": "X：小互 (@xiaohu)"
   },
   {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1224,
    "title": "小互开源个人IP配图技能\"小互IP Studio\"，含31个原创角色",
    "summary": "博主小互开源个人IP配图技能\"小互IP Studio\"，包含31个原创角色（15个手绘线稿角色+16个谐音梗meme形象）及一套配图方法论。该Agent可自动读取文章、规划配图类型（情绪图/示意图/四格漫画）、生成并自查返工。默认画风为手绘线稿淡彩，另备5种皮肤（3D盲盒、黑白线稿等）可切换。安装仅需Python3，支持Claude Code、Codex等工具，需自备OpenAI兼容的图像API key（默认GPT-image-2）；也可只输出提示词手动生图。",
@@ -3440,6 +3494,15 @@
    "source": ""
   },
   {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1241,
    "title": "Leaf 开源项目：将网红峰哥做成实时通话 AI 分身",
    "summary": "开发者 Leaf 开源项目，将网红峰哥做成能实时通话的 AI 分身，集成实时对话、音色克隆和人格注入，工程延迟压到 1 秒内。技术拆解：语音识别用 Cartesia ink-whisper 降噪防误触发；大模型选 MiniMax 高速版，首字响应 361ms；语音合成用 VoxCPM 开源克隆，15 秒素材即可复刻。整体从最初 8-20 秒优化至体感 2-3 秒。人格通过女娲 Skill 从直播语料蒸馏出口头禅和思维逻辑。普通人半小时可跑通：克隆项目后，用 Claude Code 或 Cursor 配置，填两个 API Key 即可使用。",
@@ -3829,12 +3892,48 @@
  ],
  "DeepSeek": [
   {
+   "id": 1254,
+   "title": "AI 账单失控后 DeepSeek 成“香饽饽”，部分美国企业已 100% 切换",
+   "summary": "美国企业面临 AI 账单失控，开始转向 Token 最小化策略。旧金山公司 Lindy 此前主要调用 Anthropic 的 Claude 模型，每月 AI 账单超支甚至超过员工工资。该公司 CEO 弗洛·克里维洛表示，本月初已将 100% 流量切换到 DeepSeek，预计未来几个月可节省数百万美元。企业开始采用按任务匹配模型的“模型路由”，不再将最贵的前沿模型用于所有场景。部分客户已决定暂停 AI 投入，待证明投资回报率后再继续。",
+   "published_at": "2026-06-28",
+   "url": "https://www.ithome.com/0/969/400.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 1255,
+   "title": "DeepSeek 开源 DSpark 投机解码框架，加速 DeepSeek-V4 生成速度 60–85%",
+   "summary": "DeepSeek 发布 DSpark 投机解码框架并开源检查点与训练代码。该框架不是新模型，而是在 DeepSeek-V4 权重上附加草稿模块，通过半自回归生成（并行骨干 + 轻量级顺序头）实现无损加速。生产环境下，DeepSeek-V4-Flash 和 V4-Pro 每用户生成速度较 MTP-1 基线分别提升 60–85% 和 57–78%。离线测试中，接受长度比 Eagle3 高 26–31%，比 DFlash 高 16–18%。配套 DeepSpec 训练代码库采用 MIT 许可证。",
+   "published_at": "2026-06-28",
+   "url": "https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1",
+   "category": "paper",
+   "source": "MarkTechPost（RSS）"
+  },
+  {
+   "id": 1260,
+   "title": "DeepSeek 开源 DSpark 投机解码框架，加速 DeepSeek-V4 生成速度 60-85%",
+   "summary": "DeepSeek 发布 DSpark 投机解码框架并开源检查点与训练代码。该框架不是新模型，而是在 DeepSeek-V4 权重上附加草稿模块，通过半自回归生成（并行骨干 + 轻量级顺序头）实现无损加速。生产环境下，DeepSeek-V4-Flash 和 V4-Pro 每用户生成速度较 MTP-1 基线分别提升 60-85% 和 57-78%。离线测试中，接受长度比 Eagle3 高 26-31%，比 DFlash 高 16-18%。配套 DeepSpec 训练代码库采用 MIT 许可证。",
+   "published_at": "2026-06-27T16:59:58.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 1245,
    "title": "AI 账单失控后 DeepSeek 成\"香饽饽\"，部分美国企业已 100% 切换",
    "summary": "美国企业面临 AI 账单失控，开始转向 Token 最小化策略。旧金山公司 Lindy 此前主要调用 Anthropic 的 Claude 模型，每月 AI 账单超支甚至超过员工工资。该公司 CEO 弗洛·克里维洛表示，本月初已将 100% 流量切换到 DeepSeek，预计未来几个月可节省数百万美元。企业开始采用按任务匹配模型的\"模型路由\"，不再将最贵的前沿模型用于所有场景。部分客户已决定暂停 AI 投入，待证明投资回报率后再继续。",
    "published_at": "2026-06-27T08:16:09.000Z",
    "url": "",
    "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -4308,6 +4407,24 @@
   }
  ],
  "DeepSeek-V4": [
+  {
+   "id": 1255,
+   "title": "DeepSeek 开源 DSpark 投机解码框架，加速 DeepSeek-V4 生成速度 60–85%",
+   "summary": "DeepSeek 发布 DSpark 投机解码框架并开源检查点与训练代码。该框架不是新模型，而是在 DeepSeek-V4 权重上附加草稿模块，通过半自回归生成（并行骨干 + 轻量级顺序头）实现无损加速。生产环境下，DeepSeek-V4-Flash 和 V4-Pro 每用户生成速度较 MTP-1 基线分别提升 60–85% 和 57–78%。离线测试中，接受长度比 Eagle3 高 26–31%，比 DFlash 高 16–18%。配套 DeepSpec 训练代码库采用 MIT 许可证。",
+   "published_at": "2026-06-28",
+   "url": "https://www.marktechpost.com/2026/06/27/deepseek-releases-dspark-a-speculative-decoding-framework-that-accelerates-deepseek-v4-per-user-generation-60-85-over-mtp-1",
+   "category": "paper",
+   "source": "MarkTechPost（RSS）"
+  },
+  {
+   "id": 1260,
+   "title": "DeepSeek 开源 DSpark 投机解码框架，加速 DeepSeek-V4 生成速度 60-85%",
+   "summary": "DeepSeek 发布 DSpark 投机解码框架并开源检查点与训练代码。该框架不是新模型，而是在 DeepSeek-V4 权重上附加草稿模块，通过半自回归生成（并行骨干 + 轻量级顺序头）实现无损加速。生产环境下，DeepSeek-V4-Flash 和 V4-Pro 每用户生成速度较 MTP-1 基线分别提升 60-85% 和 57-78%。离线测试中，接受长度比 Eagle3 高 26-31%，比 DFlash 高 16-18%。配套 DeepSpec 训练代码库采用 MIT 许可证。",
+   "published_at": "2026-06-27T16:59:58.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 1040,
    "title": "微软双向转售GPT与DeepSeek成全球最大AI中间商",
@@ -6864,6 +6981,17 @@
    "source": ""
   }
  ],
+ "Llama": [
+  {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  }
+ ],
  "Llama 3": [
   {
    "id": 863,
@@ -7269,6 +7397,15 @@
   }
  ],
  "Microsoft": [
+  {
+   "id": 1253,
+   "title": "“Raise Us”启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
+   "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利“Raise Us”，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
+   "published_at": "2026-06-28",
+   "url": "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
   {
    "id": 1244,
    "title": "\"Raise Us\"启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
@@ -7871,6 +8008,15 @@
   }
  ],
  "Mistral": [
+  {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 1147,
    "title": "Mistral AI 为 Connectors 推出多项安全与可控新能力",
@@ -8872,6 +9018,33 @@
  ],
  "OpenAI": [
   {
+   "id": 1251,
+   "title": "苹果Vision负责人跳槽OpenAI，触控OLED MacBook用M5芯片",
+   "summary": "2026年6月26日，Mark Gurman称苹果Vision产品组副总裁Paul Meade下周离职加入OpenAI硬件部门。他负责Vision Pro、无屏幕AI智能眼镜及AR眼镜研发。苹果计划首款触控OLED MacBook使用M5 Pro/Max芯片，2026年底到2027年初发布；M7 Pro/Max版本2027年底跟进。苹果此前因涨价市值蒸发2300多亿美元。核心高管流失至OpenAI凸显AI硬件竞争加速。",
+   "published_at": "2026-06-28",
+   "url": "https://x.com/berryxia/status/2070916520822321292",
+   "category": "industry",
+   "source": "X：Berry Xia (@berryxia)"
+  },
+  {
+   "id": 1253,
+   "title": "“Raise Us”启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
+   "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利“Raise Us”，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
+   "published_at": "2026-06-28",
+   "url": "https://the-decoder.com/the-companies-most-likely-to-automate-your-job-are-now-funding-a-1-billion-program-to-retrain-you",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 1259,
+   "title": "苹果Vision负责人跳槽OpenAI，触控OLED MacBook用M5芯片",
+   "summary": "2026年6月26日，Mark Gurman称苹果Vision产品组副总裁Paul Meade下周离职加入OpenAI硬件部门。他负责Vision Pro、无屏幕AI智能眼镜及AR眼镜研发。苹果计划首款触控OLED MacBook使用M5 Pro/Max芯片，2026年底到2027年初发布；M7 Pro/Max版本2027年底跟进。苹果此前因涨价市值蒸发2300多亿美元。核心高管流失至OpenAI凸显AI硬件竞争加速。",
+   "published_at": "2026-06-27T17:05:48.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 1244,
    "title": "\"Raise Us\"启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
    "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利\"Raise Us\"，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
@@ -8923,6 +9096,15 @@
    "published_at": "2026-06-26T20:04:55.000Z",
    "url": "",
    "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -10489,6 +10671,15 @@
  ],
  "OpenRouter": [
   {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1179,
    "title": "OpenRouter MCP 服务器发布",
    "summary": "OpenRouter 推出 MCP 服务器，为编程智能体提供实时模型数据、基准排名、定价和文档查询。开发者通过一键安装（支持 Claude Code、Codex CLI、Cursor 等客户端），即可在编辑器内完成模型筛选、价格对比和测试推理，无需切换标签页。服务器整合 Artificial Analysis、Design Arena 及 OpenRouter 自身排名数据，例如推荐 GLM-5.2 作为性价比最佳的编码模型。工具集包括 models-list、model-get、model-endpoints、benchmarks 等，支持通过 chat-send 发送测试提示，比较不同模型（如 Claude Opus 4.8、G…",
@@ -11007,6 +11198,15 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 1263,
+   "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
+   "summary": "Weave 发布智能模型路由工具，通过 `npx @workweave/router` 安装，作为本地代理运行在 localhost：8080。它采用基于 Avengers-Pro 1 的集群评分器，每个请求自动选择最佳模型。支持 Anthropic、OpenAI、Gemini 原生 API，并通过 OpenRouter 接入 DeepSeek、Kimi、GLM、Qwen、Llama、Mistral 等开源模型。用户自行保管提供商密钥，数据本地加密存储。工具兼容 Claude Code、Codex、Cursor 等客户端，并提供 OTLP 追踪，支持自托管部署。",
+   "published_at": "2026-06-26T16:40:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 1178,
    "title": "Ornith-1.0 开源模型家族发布，专注 Agentic Coding 全参数规模",
@@ -12163,6 +12363,24 @@
  ],
  "Runway": [
   {
+   "id": 1249,
+   "title": "Runway API 推出广告本地化 Recipe",
+   "summary": "广告本地化现在可通过 Runway API 以 Recipe 形式使用。 现在您可以通过单次 API 调用翻译静态广告和图形资产。",
+   "published_at": "2026-06-28",
+   "url": "https://x.com/runwayml/status/2070855164584726791",
+   "category": "ai-products",
+   "source": "X：Runway (@runwayml)"
+  },
+  {
+   "id": 1262,
+   "title": "Runway API 推出广告本地化 Recipe",
+   "summary": "广告本地化现在可通过 Runway API 以 Recipe 形式使用。\n\n现在您可以通过单次 API 调用翻译静态广告和图形资产。",
+   "published_at": "2026-06-27T13:02:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1182,
    "title": "Runway发布Agent 2.0",
    "summary": "Runway发布Agent 2.0，帮助营销人员创建、测试和优化广告、视频及营销活动。品牌营销人员可在对话中开发活动概念、生成变体并自动本地化；绩效营销人员可上传创意并导入Meta、YouTube、TikTok或Google广告数据，由Agent分析后生成下一轮待测广告。社交媒体营销人员可一次性生成一周内容，自动裁切为9:16、16:9、1:1等格式；产品营销人员可借助Agent确定定位角度并构建活动资产。Agent 2.0面向所有用户开放。",
@@ -12682,6 +12900,24 @@
   }
  ],
  "xAI": [
+  {
+   "id": 1250,
+   "title": "SpaceX 注册 SpaceXAI 商标，将合并 xAI",
+   "summary": "消息：SpaceX 刚刚注册了“SpaceXAI”商标。 埃隆·马斯克表示 xAI 将解散，不再作为独立公司，因此它将只是 SpaceXAI，SpaceX 的 AI 产品。",
+   "published_at": "2026-06-28",
+   "url": "https://x.com/cb_doge/status/2070973276562530507",
+   "category": "industry",
+   "source": "X：cb_doge (@cb_doge)"
+  },
+  {
+   "id": 1258,
+   "title": "SpaceX 注册 SpaceXAI 商标，将合并 xAI",
+   "summary": "消息：SpaceX 刚刚注册了\"SpaceXAI\"商标。\n\n埃隆·马斯克表示 xAI 将解散，不再作为独立公司，因此它将只是 SpaceXAI，SpaceX 的 AI 产品。",
+   "published_at": "2026-06-27T20:51:20.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1197,
    "title": "多数主流AI聊天机器人政治立场偏左，“反觉醒”模型也不例外",
@@ -13940,6 +14176,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 1248,
+   "title": "阿里千问输入法上线 macOS 版：最快 300 字/分，AI 自动润色",
+   "summary": "阿里千问输入法 macOS 版今日上线官网，支持最快 300 字/分的 AI 语音输入，可自动润色、将口语转为工整文字，并支持 9 种方言，纯净无广告。官方预告 iOS、Android、Windows 版将于近日发布。此前千问团队已于今年 5 月推出千问语音输入法（千问 App 内的组件），具备去语气词、纠错、格式化整理及基于上下文的智能回复等能力，而本次上线的输入法则定位为独立 App，填补千问在移动端 AI 输入法赛道的空白。",
+   "published_at": "2026-06-28",
+   "url": "https://www.ithome.com/0/969/334.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
   {
    "id": 1246,
    "title": "阿里千问输入法上线 macOS 版：最快 300 字/分，AI 自动润色",

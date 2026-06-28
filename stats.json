@@ -1,26 +1,26 @@
 {
- "total_items": 1247,
- "total_entities": 114,
- "total_dailies": 26,
+ "total_items": 1263,
+ "total_entities": 115,
+ "total_dailies": 27,
  "categories": {
-  "ai-products": 365,
-  "tip": 340,
-  "industry": 291,
+  "ai-products": 369,
+  "tip": 343,
+  "industry": 298,
   "ai-models": 132,
-  "paper": 119
+  "paper": 121
  },
  "entity_types": {
-  "model": 61,
+  "model": 62,
   "company": 53
  },
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 40
+   "count": 43
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 36
+   "count": 37
   },
   {
    "name": "Hugging Face：Blog（RSS）",
@@ -158,12 +158,16 @@
   },
   {
    "date": "2026-06-26",
-   "count": 35
+   "count": 36
   },
   {
    "date": "2026-06-27",
-   "count": 16
+   "count": 21
+  },
+  {
+   "date": "2026-06-28",
+   "count": 10
   }
  ],
- "updated_at": "2026-06-27T13:00:38Z"
+ "updated_at": "2026-06-28T01:00:49Z"
 }
