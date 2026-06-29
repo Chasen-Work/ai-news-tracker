@@ -1,10 +1,10 @@
 {
- "total_items": 804,
+ "total_items": 806,
  "total_entities": 115,
- "total_dailies": 27,
+ "total_dailies": 28,
  "categories": {
-  "ai-products": 234,
-  "tip": 218,
+  "ai-products": 235,
+  "tip": 219,
   "industry": 190,
   "paper": 84,
   "ai-models": 78
@@ -16,11 +16,11 @@
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 43
+   "count": 44
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 37
+   "count": 39
   },
   {
    "name": "Hugging Face：Blog（RSS）",
@@ -43,16 +43,16 @@
    "count": 15
   },
   {
+   "name": "The Decoder：AI News（RSS）",
+   "count": 12
+  },
+  {
    "name": "X：OpenRouter (@OpenRouter)",
    "count": 11
   },
   {
    "name": "Claude：Blog（网页）",
    "count": 11
-  },
-  {
-   "name": "X：阿易 AI Notes (@AYi_AInotes)",
-   "count": 10
   }
  ],
  "by_date": [
@@ -166,8 +166,12 @@
   },
   {
    "date": "2026-06-28",
-   "count": 15
+   "count": 10
+  },
+  {
+   "date": "2026-06-29",
+   "count": 7
   }
  ],
- "updated_at": "2026-06-28T13:00:46Z"
+ "updated_at": "2026-06-29T01:00:13Z"
 }
