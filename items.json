@@ -1,5 +1,105 @@
 [
  {
+  "id": 1312,
+  "title": "美军用AI选目标却误炸伊朗学校，Anthropic Claude嵌入Palantir系统首日建议约1000目标",
+  "summary": "美军在打击伊朗时首次大规模使用AI选择目标（Anthropic的Claude模型嵌入Palantir的Maven Smart System，首日建议约1000个目标），但对一所学校的导弹袭击导致约120名儿童死亡。调查发现，情报分析师早在2019年就通过数字工具标记该地点已变为小学，但该工具未连接军方官方目标数据库MIDB，信息从未送达指挥官。MIDB建于1980年代，依赖手动输入，替代系统MARS多年延迟。五角大楼事后宣布推出agentic AI initiative。Project Maven创建人Jack Shanahan批评目标验证不力不可原谅。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-29T12:30:21.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1313,
+  "title": "Meta发布Brain2Qwerty v2：非侵入式实时句子解码",
+  "summary": "Meta公布Brain2Qwerty v2，这是非侵入式脑电信号解码研究的最新里程碑。基于当天发表在《Nature》的v1，v2是性能最高的端到端管道，能从原始脑信号实时解码句子。其从字符级性能提升至解码单词和语义，提高整体沟通准确性。该研究有望帮助数百万因脑损伤或疾病无法沟通的人群。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-06-29T12:10:17.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1314,
+  "title": "小红书 RedKnot 推理引擎：将 KV Cache 按注意力头拆解实现长文本加速",
+  "summary": "RedKnot 将 KV Cache 沿注意力头维度拆解，通过头分类稀疏（局部头占 83.4%-96.8%）、稀疏 FFN 和 SegPagedAttention 三个机制统一算法与存储粒度。在 8 卡 H800 上，TTFT 最高加速 1.6-3.54×，单卡并发提升 4.7-7.8×，预填充 FLOPs 削减 67%-79.5%。DeepSeek-V4-Flash 上 128K 上下文 TTFT 加速达 5.16×，KV 传输最多省 6.3×。精度通常不低于稠密 F1 的 95%。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-29T11:00:07.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1315,
+  "title": "EverOS：开源Markdown优先智能体记忆运行时，支持混合检索与自进化技能",
+  "summary": "EverMind 推出开源智能体记忆运行时 EverOS（Apache 2.0 许可）。它以可编辑的 Markdown 文件为记忆主体，经 SQLite 管理状态、LanceDB 实现混合检索（BM25 关键词 + 向量搜索 + 标量过滤）。每个完成的任务记录为 Case，离线提炼为可复用的 Skill，使记忆随使用自我进化。v1.1.0 新增 Knowledge APIs（支持分类与话题搜索的 Markdown 页面）和 Reflection（跨会话优化 Profile 和 Skill）。据 EverMind 报告，LoCoMo 得分 93.05%，LongMemEval 83.00%，HaluMem 93.04%，p95 检索延迟低于 500ms。运行时可本地优先部署，也提供 EverOS Cloud 托管选项，兼容 OpenAI 协议端点。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-29T10:42:47.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1316,
+  "title": "Claude Code 打开 GitHub 仓库即执行隐藏恶意代码，攻击者可获完全控制",
+  "summary": "安全研究人员在 Mozilla 的 GenAI 漏洞赏金平台 0DIN 发现新攻击向量。一个看似正常的 GitHub 仓库包含 setup 脚本，该脚本运行时从 DNS 条目拉取命令并执行，恶意代码从未存在于仓库中，对扫描器、代码审查和 AI 智能体不可见。开发者使用 Claude Code 等 AI 编码工具打开该仓库时，Claude Code 在设置过程中遇到常规错误消息后自动运行该脚本，打开反向 shell，攻击者可窃取 API 密钥和登录凭据并维持持久访问。研究人员建议 AI 智能体应在运行前显示 setup 脚本内容，开发者应将第三方仓库的 setup 说明视为不受信任代码。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-06-29T10:04:32.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1317,
+  "title": "国务院印发《教育发展\"十五五\"规划》，推进人工智能全学段教育",
+  "summary": "国务院日前印发《教育发展\"十五五\"规划》，要求推进人工智能全学段教育，提升学生人工智能素养及提出问题、解决问题的能力。规划明确完善科学教育体系，强化科技教育与人文教育协同，加强青少年科学素养、批判性思维和创新能力培养。同时实施学生体质强健计划、心理健康促进行动，加大拔尖创新人才自主培养力度，推动学科交叉融合，扩大优质本科招生规模。目标到2030年高质量教育体系基本建成。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-29T09:27:36.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1318,
+  "title": "三星和SK海力士计划投资5900亿美元扩产芯片，AI需求推高内存价格",
+  "summary": "在韩国政府支持下，三星和SK海力士计划投入5900亿美元扩大芯片产能，包括800万亿韩元新建四座工厂、81万亿韩元建封装中心，以及未来15年30万亿韩元用于研发下一代芯片。AI数据中心需求是主要驱动力。Jefferies预测，2026年Q3内存价格将上涨40%至50%，Q4再涨30%至40%，2027年继续上涨40%至45%，到2028年新产能仅上线15%至20%才可能缓解。两家公司合计控制全球近80%的高带宽内存芯片市场。内存涨价已推高消费电子产品成本，苹果已上调Mac和MacBook售价。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-29T08:17:41.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1319,
+  "title": "OpenAI 报告：绘制欧洲 AI 劳动力机遇版图",
+  "summary": "OpenAI 发布新报告，分析 AI 对欧盟就业的影响，划定哪些职业面临自动化、增长或工作流程变化。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-06-29T07:00:00.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1320,
+  "title": "SK 集团会长崔泰源：到 2035 年建设 15GW AI 数据中心，总投资达 1000 万亿韩元",
+  "summary": "SK 集团会长崔泰源 6 月 29 日宣布，计划到 2035 年建成 15GW AI 数据中心容量，作为韩国国家级基础设施和实体 AI 时代核心底座。项目总投资 1000 万亿韩元（约 4.4 万亿元人民币），未来 10 年保持年均 100 万亿韩元以上国内投资，旨在实现从出口传统商品向智能服务的转变，构建韩国智能市场。此外，SK 海力士将向韩国西南部投资 400 万亿韩元，半导体供应项目总投资达 1100 万亿韩元（约 4.84 万亿元人民币）。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-29T06:44:15.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1321,
+  "title": "分享两个Vibe Coding必备的实用Prompt：第一性原理与对抗式审查",
+  "summary": "作者分享Vibe Coding中两个关键Prompt：一是\"从第一性原理出发\"，强制AI跳出类比推理，从基本事实重新推导本质，曾帮作者发现AIHOT抓取海外信源的底层流量路由隐患并彻底重构；二是\"对抗式审查\"，让AI站在恶意用户角度攻防式审查代码，检出OOM死循环、未来时间污染等手工难发现的BUG。两个Prompt形成生成与验证闭环，使纯Vibe Coding项目AIHOT最近一周请求量超千万次。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-06-29T02:08:00.000Z",
+  "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
   "id": 1300,
   "title": "Artifacts 22：Zyphra、Cohere 和 Poolside 正在扩展生态系统广度",
   "summary": "开源模型生态正变得更多元，参与者从少数中国公司扩展到全球各类组织。纯模型制造商包括 DeepSeek、智谱、MiniMax、Poolside、Arcee、Zyphra 及主权 AI 玩家 Cohere、Sovereign、Mistral、Trillion Labs；科技巨头如阿里 Qwen、Google Gemma 和 NVIDIA 各有不同动机；产品公司如 JetBrains、Zed、Krea、Photoroom 则训练高度专业的小模型。NVIDIA 发布 Nemotron-3-Ultra-550B-A55B-BF16，采用 LatentMoE 架构并改用 OpenMDW 许可证。Cohere 以 Apache 2.0 开源其旗舰…",
