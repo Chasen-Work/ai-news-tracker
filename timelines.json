@@ -142,6 +142,24 @@
  ],
  "Anthropic": [
   {
+   "id": 1374,
+   "title": "黑石未来3~5年拟投300亿美元在日本建AI数据中心，联合成立AI XPV平台",
+   "summary": "黑石计划未来3~5年在日本AI数据中心领域投资300亿美元，此前的500MW基础上新增超1GW容量。黑石总裁认为AI投资仍处早期，真正风险是算力短缺而非基建泡沫；谷歌、亚马逊是英伟达潜在挑战者。此外，黑石、阿波罗、博通本月9日成立AI XPV平台，目标2028年向OpenAI、Anthropic等提供超20GW算力，首期350亿美元支持Anthropic在Fluidstack数据中心部署1GW基础设施。",
+   "published_at": "2026-06-30T07:56:46.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1381,
+   "title": "AI News Radar 大更新：新增自媒体板块，支持订阅多平台账号",
+   "summary": "AI News Radar 迎来大更新，新增自媒体板块，支持订阅某书、某音、某站、某X等平台账号，每日按热度推荐 Top10 信息（无热门则不硬凑），同时保留时间轴视图，可在热度优先和时间优先间切换。官方来源包括 OpenAI、Anthropic、Google 等一手消息及 GitHub AI&ML 更新日志。信息流按来源、类型、信号等级分类，标注高优先级与多源认证。项目完全开源，可零 API 部署独立 AI 日报页面，支持手机移动端及暗色界面。",
+   "published_at": "2026-06-30T01:47:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1340,
    "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
    "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude A…",
@@ -1084,6 +1102,15 @@
  ],
  "Claude Code": [
   {
+   "id": 1379,
+   "title": "一个人管理5款产品，80%时间不写代码？Every的复利工程",
+   "summary": "媒体软件公司Every公开「复利工程」方法论，以单人工程团队维护5款产品。核心是四步循环：Plan→Work→Review→Compound，其中Compound将每次解决问题的解法写入CLAUDE.md和docs/solutions/，使AI下次自动避坑。工程师80%时间花在Plan和Review，仅20%用于写代码。配套开源插件支持Claude Code等，含26个专项agent、23条工作流命令、13项技能，可零配置使用。/workflows：review一次并发14个agent审查代码，/workflows：plan在ultrathink模式下可并发40多个研究agent。",
+   "published_at": "2026-06-30T03:23:23.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 1334,
    "title": "美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练",
    "summary": "美团LongCat的1.6万亿参数MoE模型Owl Alpha成为OpenRouter上最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成。据官方推文，Owl Alpha上线后每日调用量全球Top3，在Hermes Agent排名#1，Claude Code排名#2，OpenClaw排名#3。该模型即将退役，后续版本待公布。",
@@ -1938,6 +1965,15 @@
  ],
  "Codex": [
   {
+   "id": 1377,
+   "title": "X（Twitter）发布 hosted X MCP，AI 智能体可直连 X API",
+   "summary": "X（Twitter）官方推出 hosted X MCP，AI 智能体可通过 MCP 协议直接调用 X API 获取实时信息，支持 Grok、Cursor 等工具。用户需注册 X API 并按量付费，个人优惠价每次调用 0.01 美元（1 美元 1000 次）。有用户实测拉取近三天书签仅花 0.1 美元。配置步骤：创建 APP 并充值、获取配置 ID、辅助配置（可交给 Codex/Claude）、授权启动。",
+   "published_at": "2026-06-30T04:40:25.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1297,
    "title": "阿德拉菲尼尔：仅在AI agent工作时阻止Mac睡眠的菜单栏工具",
    "summary": "Adrafinil 是一款 macOS 菜单栏应用，仅在 Claude Code、Codex、Cursor、Gemini CLI、Aider、Hermes、OpenCode、Cline、Pi 等 9 种 AI coding agent 持有活跃会话时阻止系统睡眠（包括合盖睡眠）。无 agent 工作时，合盖后 Mac 正常睡眠。它通过各 agent 的钩子系统调用 CLI，往返延迟低于 50ms，支持引用计数断言、热切出（温度阈值强制释放）、空闲释放及进程嗅探。需要 macOS Tahoe 26.4，Xcode 26+ 构建，以签名公证的磁盘映像提供。",
@@ -2477,6 +2513,15 @@
  ],
  "Cursor": [
   {
+   "id": 1377,
+   "title": "X（Twitter）发布 hosted X MCP，AI 智能体可直连 X API",
+   "summary": "X（Twitter）官方推出 hosted X MCP，AI 智能体可通过 MCP 协议直接调用 X API 获取实时信息，支持 Grok、Cursor 等工具。用户需注册 X API 并按量付费，个人优惠价每次调用 0.01 美元（1 美元 1000 次）。有用户实测拉取近三天书签仅花 0.1 美元。配置步骤：创建 APP 并充值、获取配置 ID、辅助配置（可交给 Codex/Claude）、授权启动。",
+   "published_at": "2026-06-30T04:40:25.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1335,
    "title": "从任何地点构建——Cursor for iOS 公测版发布",
    "summary": "Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。",
@@ -2783,6 +2828,15 @@
    "url": "https://mp.weixin.qq.com/s/qRrZvL0aZzYI82djFSrLug",
    "category": "ai-products",
    "source": "公众号：小红书技术（dots.llm）"
+  },
+  {
+   "id": 1397,
+   "title": "Agents-A1：35B MoE 智能体模型通过扩展 horizon 达到万亿参数级性能",
+   "summary": "研究人员提出 Agents-A1，一个 35B 参数的 Mixture-of-Experts 智能体模型，通过扩展智能体 horizon（长轨迹与异构能力两个视角）达到万亿参数模型性能。团队构建了长 horizon 知识-行动基础设施，生成平均 45K token 的智能体轨迹，并采用三阶段训练：全领域监督微调、领域级教师模型训练、多教师领域路由在线蒸馏（含显著词汇对齐）。对比万亿参数模型 Kimi-K2.6 和 DeepSeek-V4-pro，Agents-A1 在 SEAL-0（56.4）、IFBench（80.6）、HiPhO（46.4）、FrontierScience-Olympiad（79.0）和 MolBench-Bind（56.8）上领先，并在 SciCode（44.3）、HLE（47.6）和 BrowseComp（75.5）上保持强竞争力。",
+   "published_at": "2026-06-29T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
   },
   {
    "id": 1295,
@@ -3209,6 +3263,15 @@
    "url": "https://mp.weixin.qq.com/s/qRrZvL0aZzYI82djFSrLug",
    "category": "ai-products",
    "source": "公众号：小红书技术（dots.llm）"
+  },
+  {
+   "id": 1397,
+   "title": "Agents-A1：35B MoE 智能体模型通过扩展 horizon 达到万亿参数级性能",
+   "summary": "研究人员提出 Agents-A1，一个 35B 参数的 Mixture-of-Experts 智能体模型，通过扩展智能体 horizon（长轨迹与异构能力两个视角）达到万亿参数模型性能。团队构建了长 horizon 知识-行动基础设施，生成平均 45K token 的智能体轨迹，并采用三阶段训练：全领域监督微调、领域级教师模型训练、多教师领域路由在线蒸馏（含显著词汇对齐）。对比万亿参数模型 Kimi-K2.6 和 DeepSeek-V4-pro，Agents-A1 在 SEAL-0（56.4）、IFBench（80.6）、HiPhO（46.4）、FrontierScience-Olympiad（79.0）和 MolBench-Bind（56.8）上领先，并在 SciCode（44.3）、HLE（47.6）和 BrowseComp（75.5）上保持强竞争力。",
+   "published_at": "2026-06-29T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
   },
   {
    "id": 1255,
@@ -3800,6 +3863,24 @@
   }
  ],
  "Google": [
+  {
+   "id": 1373,
+   "title": "Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示",
+   "summary": "Meta通过承包商Covelen发起代号\"Cannes\"的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。",
+   "published_at": "2026-06-30T11:14:52.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1381,
+   "title": "AI News Radar 大更新：新增自媒体板块，支持订阅多平台账号",
+   "summary": "AI News Radar 迎来大更新，新增自媒体板块，支持订阅某书、某音、某站、某X等平台账号，每日按热度推荐 Top10 信息（无热门则不硬凑），同时保留时间轴视图，可在热度优先和时间优先间切换。官方来源包括 OpenAI、Anthropic、Google 等一手消息及 GitHub AI&ML 更新日志。信息流按来源、类型、信号等级分类，标注高优先级与多源认证。项目完全开源，可零 API 部署独立 AI 日报页面，支持手机移动端及暗色界面。",
+   "published_at": "2026-06-30T01:47:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 1338,
    "title": "OpenClaw 发布原生 iOS 与 Android 应用",
@@ -5037,6 +5118,15 @@
   }
  ],
  "Meta": [
+  {
+   "id": 1373,
+   "title": "Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示",
+   "summary": "Meta通过承包商Covelen发起代号\"Cannes\"的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。",
+   "published_at": "2026-06-30T11:14:52.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1348,
    "title": "Meta发布Brain2Qwerty v2：非侵入式实时句子解码",
@@ -6353,6 +6443,33 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 1373,
+   "title": "Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示",
+   "summary": "Meta通过承包商Covelen发起代号\"Cannes\"的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。",
+   "published_at": "2026-06-30T11:14:52.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1374,
+   "title": "黑石未来3~5年拟投300亿美元在日本建AI数据中心，联合成立AI XPV平台",
+   "summary": "黑石计划未来3~5年在日本AI数据中心领域投资300亿美元，此前的500MW基础上新增超1GW容量。黑石总裁认为AI投资仍处早期，真正风险是算力短缺而非基建泡沫；谷歌、亚马逊是英伟达潜在挑战者。此外，黑石、阿波罗、博通本月9日成立AI XPV平台，目标2028年向OpenAI、Anthropic等提供超20GW算力，首期350亿美元支持Anthropic在Fluidstack数据中心部署1GW基础设施。",
+   "published_at": "2026-06-30T07:56:46.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1381,
+   "title": "AI News Radar 大更新：新增自媒体板块，支持订阅多平台账号",
+   "summary": "AI News Radar 迎来大更新，新增自媒体板块，支持订阅某书、某音、某站、某X等平台账号，每日按热度推荐 Top10 信息（无热门则不硬凑），同时保留时间轴视图，可在热度优先和时间优先间切换。官方来源包括 OpenAI、Anthropic、Google 等一手消息及 GitHub AI&ML 更新日志。信息流按来源、类型、信号等级分类，标注高优先级与多源认证。项目完全开源，可零 API 部署独立 AI 日报页面，支持手机移动端及暗色界面。",
+   "published_at": "2026-06-30T01:47:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 1336,
    "title": "EverOS：开源Markdown优先智能体记忆运行时，支持混合检索与自进化技能",

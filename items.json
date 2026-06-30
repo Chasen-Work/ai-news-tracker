@@ -1,5 +1,95 @@
 [
  {
+  "id": 1373,
+  "title": "Meta秘密测试ChatGPT等竞品：承包商假扮未成年发送数万条危机提示",
+  "summary": "Meta通过承包商Covelen发起代号\"Cannes\"的项目，雇佣数百人假扮未成年人，向ChatGPT、Gemini和Character.AI发送关于自杀、自残、饮食障碍和毒品的敏感提示，并将回复录入表格。2025年8月一轮测试中发送了超过4.5万条提示。Meta称这是行业标准安全测试，未将数据用于训练自家模型。被测试公司不知情--Character.AI表示违反其服务条款，OpenAI已调查，Google称未批准。青少年使用AI聊天机器人引发的担忧持续，此前已有用户自杀事件。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-30T11:14:52.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
+  "id": 1374,
+  "title": "黑石未来3~5年拟投300亿美元在日本建AI数据中心，联合成立AI XPV平台",
+  "summary": "黑石计划未来3~5年在日本AI数据中心领域投资300亿美元，此前的500MW基础上新增超1GW容量。黑石总裁认为AI投资仍处早期，真正风险是算力短缺而非基建泡沫；谷歌、亚马逊是英伟达潜在挑战者。此外，黑石、阿波罗、博通本月9日成立AI XPV平台，目标2028年向OpenAI、Anthropic等提供超20GW算力，首期350亿美元支持Anthropic在Fluidstack数据中心部署1GW基础设施。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-30T07:56:46.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
+  "id": 1375,
+  "title": "特斯拉Cybercab量产版在奥斯汀启动公开道路工程测试",
+  "summary": "2026年6月30日，特斯拉在奥斯汀公共道路启动首批量产版Cybercab工程测试。车辆无方向盘与脚踏板，配有安全监督员，马斯克发布实拍视频。从2024年10月概念车首秀到实车上路约20个月。目前不对外开放乘客，投入34台Cybercab在市中心验证硬件可靠性。Cybercab为双座车型，完全围绕无人驾驶打造，无后期改装。此前奥斯汀已有无安全员Model Y无人驾驶出租于1月启用、6月22日开放付费服务。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-06-30T06:45:03.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
+  "id": 1376,
+  "title": "美团 LongCat 发布旗舰模型 LongCat-2.0",
+  "summary": "美团 LongCat 推出旗舰模型 LongCat-2.0，采用 1.6T 参数 MoE 架构（约 48B 活跃参数），原生支持 1M 上下文窗口。定价为 Input Cache $0.015/1M tokens、Input $0.75/1M tokens、Output $2.95/1M tokens。模型专为 Agentic Coding 设计，包含三大技术：LSA 稀疏注意力实现高效 1M 扩展；Zero-Compute Experts 动态激活 33B-56B 参数/token，无算力浪费；MOPD 将专家分为 Agent / Reasoning / Interaction 三组，按任务门控路由。在 SWE-bench Pro 上取得 59.5 分，性能接近主流闭源模型。现已上线 SiliconFlow Day 0 服务。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-06-30T05:42:42.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
+  "id": 1377,
+  "title": "X（Twitter）发布 hosted X MCP，AI 智能体可直连 X API",
+  "summary": "X（Twitter）官方推出 hosted X MCP，AI 智能体可通过 MCP 协议直接调用 X API 获取实时信息，支持 Grok、Cursor 等工具。用户需注册 X API 并按量付费，个人优惠价每次调用 0.01 美元（1 美元 1000 次）。有用户实测拉取近三天书签仅花 0.1 美元。配置步骤：创建 APP 并充值、获取配置 ID、辅助配置（可交给 Codex/Claude）、授权启动。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-30T04:40:25.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
+  "id": 1378,
+  "title": "AI就业争论变得更加混乱",
+  "summary": "截至2026年5月，AI相关裁员接近9万个，预计未来五年美国最多15%的岗位将被AI替代。但Ramp与Revelio Labs对近22，000家公司的报告发现，高AI投入企业（前三个月人均月均支出30美元）总员工数增长10.2%，入门级岗位增长12%。报告认为AI并非普遍导致岗位消失，而是在资源充裕的科技企业里成为扩张工具--降低工程、销售、客服等职能的生产成本，从而推动整体增员。但仅购买订阅而未持续投入的公司未见人头增长，可能加剧企业间的资源鸿沟。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-06-30T04:01:00.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
+  "id": 1379,
+  "title": "一个人管理5款产品，80%时间不写代码？Every的复利工程",
+  "summary": "媒体软件公司Every公开「复利工程」方法论，以单人工程团队维护5款产品。核心是四步循环：Plan→Work→Review→Compound，其中Compound将每次解决问题的解法写入CLAUDE.md和docs/solutions/，使AI下次自动避坑。工程师80%时间花在Plan和Review，仅20%用于写代码。配套开源插件支持Claude Code等，含26个专项agent、23条工作流命令、13项技能，可零配置使用。/workflows：review一次并发14个agent审查代码，/workflows：plan在ultrathink模式下可并发40多个研究agent。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-06-30T03:23:23.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
+  "id": 1380,
+  "title": "具身智能数据采集员：日薪200元起，给机器人当老师",
+  "summary": "具身智能数据采集员以日薪200-250元招兼职，无需学历经验。面试先测量身高体重以适配采集手套，并询问是否晕VR。工作分两种：遥操作采集--穿戴设备控制双臂机器人完成分拣积木、叠纸杯等动作；无机器人示教采集--徒手重复动作（如叠衣服），设备记录轨迹。全球高质量物理交互数据截至2026年初仅约50万小时，不足大语言模型训练数据的两万分之一，需大量人力从零采集。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-06-30T01:58:00.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
+  "id": 1381,
+  "title": "AI News Radar 大更新：新增自媒体板块，支持订阅多平台账号",
+  "summary": "AI News Radar 迎来大更新，新增自媒体板块，支持订阅某书、某音、某站、某X等平台账号，每日按热度推荐 Top10 信息（无热门则不硬凑），同时保留时间轴视图，可在热度优先和时间优先间切换。官方来源包括 OpenAI、Anthropic、Google 等一手消息及 GitHub AI&ML 更新日志。信息流按来源、类型、信号等级分类，标注高优先级与多源认证。项目完全开源，可零 API 部署独立 AI 日报页面，支持手机移动端及暗色界面。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-06-30T01:47:00.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
+ },
+ {
   "id": 1355,
   "title": "Anthropic：当AI成本超过工程师薪酬",
   "summary": "Anthropic在算力上的支出达到每位工程师每年51.5万美元，是其完全薪资（22.4万美元）的2.3倍。相比之下，顶尖1%软件公司的算力支出为8.9万美元，中位数仅为1.37万美元。三个2029年情景预测了这一差距的缩小路径。",
@@ -248,6 +338,16 @@
   "category": "industry",
   "published_at": "2026-06-29T09:27:36.000Z",
   "fetched_at": "2026-06-29 13:00:43"
+ },
+ {
+  "id": 1397,
+  "title": "Agents-A1：35B MoE 智能体模型通过扩展 horizon 达到万亿参数级性能",
+  "summary": "研究人员提出 Agents-A1，一个 35B 参数的 Mixture-of-Experts 智能体模型，通过扩展智能体 horizon（长轨迹与异构能力两个视角）达到万亿参数模型性能。团队构建了长 horizon 知识-行动基础设施，生成平均 45K token 的智能体轨迹，并采用三阶段训练：全领域监督微调、领域级教师模型训练、多教师领域路由在线蒸馏（含显著词汇对齐）。对比万亿参数模型 Kimi-K2.6 和 DeepSeek-V4-pro，Agents-A1 在 SEAL-0（56.4）、IFBench（80.6）、HiPhO（46.4）、FrontierScience-Olympiad（79.0）和 MolBench-Bind（56.8）上领先，并在 SciCode（44.3）、HLE（47.6）和 BrowseComp（75.5）上保持强竞争力。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-06-29T00:00:00.000Z",
+  "fetched_at": "2026-06-30 13:00:41"
  },
  {
   "id": 1300,

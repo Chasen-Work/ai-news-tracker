@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 104,
-  "last_seen": "2026-06-30"
+  "mentions": 107,
+  "last_seen": "2026-06-30T11:14:52.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 90,
-  "last_seen": "2026-06-30"
+  "mentions": 92,
+  "last_seen": "2026-06-30T07:56:46.000Z"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 69,
-  "last_seen": "2026-06-30"
+  "mentions": 71,
+  "last_seen": "2026-06-30T11:14:52.000Z"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 58,
-  "last_seen": "2026-06-30"
+  "mentions": 59,
+  "last_seen": "2026-06-30T03:23:23.000Z"
  },
  {
   "id": 10,
@@ -38,8 +38,8 @@
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 47,
-  "last_seen": "2026-06-29"
+  "mentions": 48,
+  "last_seen": "2026-06-30T04:40:25.000Z"
  },
  {
   "id": 6,
@@ -52,15 +52,15 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 33,
+  "mentions": 34,
   "last_seen": "2026-06-30"
  },
  {
   "id": 149,
   "name": "Cursor",
   "type": "company",
-  "mentions": 33,
-  "last_seen": "2026-06-30"
+  "mentions": 34,
+  "last_seen": "2026-06-30T04:40:25.000Z"
  },
  {
   "id": 46,
@@ -84,18 +84,18 @@
   "last_seen": "2026-06-28"
  },
  {
+  "id": 43,
+  "name": "Meta",
+  "type": "company",
+  "mentions": 24,
+  "last_seen": "2026-06-30T11:14:52.000Z"
+ },
+ {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
   "mentions": 23,
   "last_seen": "2026-06-25"
- },
- {
-  "id": 43,
-  "name": "Meta",
-  "type": "company",
-  "mentions": 23,
-  "last_seen": "2026-06-30"
  },
  {
   "id": 2,
@@ -238,6 +238,13 @@
   "last_seen": "2026-06-26"
  },
  {
+  "id": 701,
+  "name": "DeepSeek-V4",
+  "type": "model",
+  "mentions": 7,
+  "last_seen": "2026-06-30"
+ },
+ {
   "id": 713,
   "name": "Mistral",
   "type": "model",
@@ -257,13 +264,6 @@
   "type": "model",
   "mentions": 6,
   "last_seen": "2026-06-20"
- },
- {
-  "id": 701,
-  "name": "DeepSeek-V4",
-  "type": "model",
-  "mentions": 6,
-  "last_seen": "2026-06-30"
  },
  {
   "id": 34,
