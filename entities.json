@@ -4,35 +4,35 @@
   "name": "OpenAI",
   "type": "company",
   "mentions": 104,
-  "last_seen": "2026-06-29T10:42:47.000Z"
+  "last_seen": "2026-06-30"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 85,
-  "last_seen": "2026-06-29T12:30:21.000Z"
+  "mentions": 90,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 67,
-  "last_seen": "2026-06-29"
+  "mentions": 69,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 55,
-  "last_seen": "2026-06-29T10:04:32.000Z"
+  "mentions": 58,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 50,
-  "last_seen": "2026-06-29"
+  "mentions": 51,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 21,
@@ -45,36 +45,36 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 37,
-  "last_seen": "2026-06-29"
+  "mentions": 38,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
   "mentions": 33,
-  "last_seen": "2026-06-29T11:00:07.000Z"
- },
- {
-  "id": 46,
-  "name": "OpenRouter",
-  "type": "company",
-  "mentions": 31,
-  "last_seen": "2026-06-26T16:40:11.000Z"
+  "last_seen": "2026-06-30"
  },
  {
   "id": 149,
   "name": "Cursor",
   "type": "company",
-  "mentions": 31,
-  "last_seen": "2026-06-29"
+  "mentions": 33,
+  "last_seen": "2026-06-30"
+ },
+ {
+  "id": 46,
+  "name": "OpenRouter",
+  "type": "company",
+  "mentions": 32,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 30,
-  "last_seen": "2026-06-29"
+  "mentions": 31,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 4,
@@ -95,7 +95,7 @@
   "name": "Meta",
   "type": "company",
   "mentions": 23,
-  "last_seen": "2026-06-29T12:10:17.000Z"
+  "last_seen": "2026-06-30"
  },
  {
   "id": 2,
@@ -105,18 +105,18 @@
   "last_seen": "2026-06-29"
  },
  {
+  "id": 52,
+  "name": "Microsoft",
+  "type": "company",
+  "mentions": 18,
+  "last_seen": "2026-06-30"
+ },
+ {
   "id": 3,
   "name": "MiniMax",
   "type": "company",
   "mentions": 16,
   "last_seen": "2026-06-29"
- },
- {
-  "id": 52,
-  "name": "Microsoft",
-  "type": "company",
-  "mentions": 16,
-  "last_seen": "2026-06-28"
  },
  {
   "id": 24,
@@ -143,8 +143,15 @@
   "id": 560,
   "name": "Apple",
   "type": "company",
+  "mentions": 13,
+  "last_seen": "2026-06-30"
+ },
+ {
+  "id": 25,
+  "name": "OpenClaw",
+  "type": "model",
   "mentions": 12,
-  "last_seen": "2026-06-25"
+  "last_seen": "2026-06-30"
  },
  {
   "id": 20,
@@ -159,13 +166,6 @@
   "type": "company",
   "mentions": 10,
   "last_seen": "2026-06-18"
- },
- {
-  "id": 25,
-  "name": "OpenClaw",
-  "type": "model",
-  "mentions": 10,
-  "last_seen": "2026-06-22T00:00:00.000Z"
  },
  {
   "id": 28,
@@ -196,6 +196,13 @@
   "last_seen": "2026-06-29"
  },
  {
+  "id": 1083,
+  "name": "Amazon",
+  "type": "company",
+  "mentions": 8,
+  "last_seen": "2026-06-30"
+ },
+ {
   "id": 1,
   "name": "Gemini 3.1 Pro",
   "type": "model",
@@ -203,11 +210,25 @@
   "last_seen": "2026-06-29"
  },
  {
+  "id": 5,
+  "name": "Composer 2.5",
+  "type": "model",
+  "mentions": 7,
+  "last_seen": "2026-06-30"
+ },
+ {
   "id": 18,
   "name": "Nemotron 3",
   "type": "model",
   "mentions": 7,
   "last_seen": "2026-06-25"
+ },
+ {
+  "id": 183,
+  "name": "llama",
+  "type": "model",
+  "mentions": 7,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 434,
@@ -224,25 +245,11 @@
   "last_seen": "2026-06-29"
  },
  {
-  "id": 1083,
-  "name": "Amazon",
-  "type": "company",
-  "mentions": 7,
-  "last_seen": "2026-06-28"
- },
- {
   "id": 26,
   "name": "混元",
   "type": "company",
   "mentions": 6,
   "last_seen": "2026-06-12"
- },
- {
-  "id": 183,
-  "name": "llama",
-  "type": "model",
-  "mentions": 6,
-  "last_seen": "2026-06-29"
  },
  {
   "id": 304,
@@ -256,14 +263,7 @@
   "name": "DeepSeek-V4",
   "type": "model",
   "mentions": 6,
-  "last_seen": "2026-06-29T11:00:07.000Z"
- },
- {
-  "id": 5,
-  "name": "Composer 2.5",
-  "type": "model",
-  "mentions": 5,
-  "last_seen": "2026-06-27"
+  "last_seen": "2026-06-30"
  },
  {
   "id": 34,
@@ -343,6 +343,13 @@
   "last_seen": "2026-06-09T10:08:57.000Z"
  },
  {
+  "id": 180,
+  "name": "Qwen 3.6",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-06-30"
+ },
+ {
   "id": 193,
   "name": "Gemini 3.5 Flash",
   "type": "model",
@@ -397,13 +404,6 @@
   "type": "company",
   "mentions": 3,
   "last_seen": "2026-06-26"
- },
- {
-  "id": 180,
-  "name": "Qwen 3.6",
-  "type": "model",
-  "mentions": 3,
-  "last_seen": "2026-06-16T00:00:00.000Z"
  },
  {
   "id": 300,
@@ -494,7 +494,21 @@
   "name": "SK海力士",
   "type": "company",
   "mentions": 2,
-  "last_seen": "2026-06-29T08:17:41.000Z"
+  "last_seen": "2026-06-30"
+ },
+ {
+  "id": 268,
+  "name": "Claude Haiku",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-06-30"
+ },
+ {
+  "id": 279,
+  "name": "openclaw",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-06-30"
  },
  {
   "id": 376,
@@ -674,20 +688,6 @@
  {
   "id": 256,
   "name": "qwen",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-04"
- },
- {
-  "id": 268,
-  "name": "Claude Haiku",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-03T00:00:00.000Z"
- },
- {
-  "id": 279,
-  "name": "openclaw",
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-06-04"

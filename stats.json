@@ -1,13 +1,13 @@
 {
- "total_items": 816,
+ "total_items": 831,
  "total_entities": 115,
- "total_dailies": 28,
+ "total_dailies": 29,
  "categories": {
-  "ai-products": 237,
-  "tip": 220,
-  "industry": 194,
-  "paper": 87,
-  "ai-models": 78
+  "ai-products": 244,
+  "tip": 224,
+  "industry": 196,
+  "paper": 88,
+  "ai-models": 79
  },
  "entity_types": {
   "model": 62,
@@ -16,19 +16,19 @@
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 44
+   "count": 46
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 39
+   "count": 41
   },
   {
    "name": "Hugging Face：Blog（RSS）",
-   "count": 29
+   "count": 30
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 27
+   "count": 28
   },
   {
    "name": "TechCrunch：AI（RSS）",
@@ -39,19 +39,19 @@
    "count": 15
   },
   {
+   "name": "The Decoder：AI News（RSS）",
+   "count": 15
+  },
+  {
    "name": "Bloomberg：Technology（RSS）",
    "count": 15
   },
   {
-   "name": "The Decoder：AI News（RSS）",
-   "count": 12
+   "name": "Claude：Blog（网页）",
+   "count": 13
   },
   {
    "name": "X：OpenRouter (@OpenRouter)",
-   "count": 11
-  },
-  {
-   "name": "Claude：Blog（网页）",
    "count": 11
   }
  ],
@@ -170,8 +170,12 @@
   },
   {
    "date": "2026-06-29",
-   "count": 17
+   "count": 10
+  },
+  {
+   "date": "2026-06-30",
+   "count": 22
   }
  ],
- "updated_at": "2026-06-29T13:00:43Z"
+ "updated_at": "2026-06-30T01:00:47Z"
 }

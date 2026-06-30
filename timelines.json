@@ -68,6 +68,15 @@
  ],
  "Amazon": [
   {
+   "id": 1340,
+   "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
+   "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude A…",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
    "id": 1253,
    "title": "“Raise Us”启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
    "summary": "前美国商务部长Raimondo与前印第安纳州长Holcomb共同发起非营利“Raise Us”，目标为AI经济下工人再培训筹集10亿美元，已锁定5亿。Amazon、Anthropic、Microsoft、OpenAI等支持，引发独立性质疑。将在阿肯色、康涅狄格、马里兰、犹他四州试点，包括AI职业导航、服务年计划扩展、工资保险等。工作分州合作、雇主联盟、教育培训、政策实验室四大支柱。此前美国工人再培训效果不佳，计划能否成功尚待观察。",
@@ -133,12 +142,57 @@
  ],
  "Anthropic": [
   {
-   "id": 1312,
+   "id": 1340,
+   "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
+   "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude A…",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 1341,
+   "title": "Claude 在 Microsoft Foundry 正式可用",
+   "summary": "从今天起，Claude 模型在 Microsoft Foundry 上正式可用，托管于 Azure 环境，运行在 NVIDIA GB300 GPU 上。首批提供 Claude Opus 4.8 和 Claude Haiku 4.5，通过 Messages API 调用，支持提示缓存和扩展思考。用户可选择推理处理位置，包括美国数据区域，由 Anthropic 负责推理运营。Azure 用户可使用现有身份验证、计费与治理控制，并获得统一账单；符合条件的 Enterprise Agreement 客户可将 Claude 用量计入 Azure 承诺消费。",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/claude-in-microsoft-foundry",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 1345,
    "title": "美军用AI选目标却误炸伊朗学校，Anthropic Claude嵌入Palantir系统首日建议约1000目标",
    "summary": "美军在打击伊朗时首次大规模使用AI选择目标（Anthropic的Claude模型嵌入Palantir的Maven Smart System，首日建议约1000个目标），但对一所学校的导弹袭击导致约120名儿童死亡。调查发现，情报分析师早在2019年就通过数字工具标记该地点已变为小学，但该工具未连接军方官方目标数据库MIDB，信息从未送达指挥官。MIDB建于1980年代，依赖手动输入，替代系统MARS多年延迟。五角大楼事后宣布推出agentic AI initiative。Project Maven创建人Jack Shanahan批评目标验证不力不可原谅。",
-   "published_at": "2026-06-29T12:30:21.000Z",
-   "url": "",
+   "published_at": "2026-06-30",
+   "url": "https://the-decoder.com/the-us-military-used-ai-to-pick-thousands-of-targets-but-missed-a-note-saying-one-was-a-school",
    "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 1352,
+   "title": "Anthropic工程师Margot Van Laar：提示词工程实战——调试生产提示词为主，评估是唯一严谨方式",
+   "summary": "An anthropic应用AI工程师Margot Van Laar在Code with Claude分享提示词工程实战，核心观点：大部分时间在调试和维护已有生产提示词而非从零编写。两个场景：客服机器人维护中，用XML标签结构化清理，移除旧模型遗留的“禁止列表”指令（新模型会过度拟合），精确计算应调用工具，转人工决策需明确代价与收益；零售排班Agent从零构建时，拆成生成-评估-修复三个简单提示词更稳定，选用更强推理模型（Opus）。她反复强调：评估（Eval）是唯一严谨方式，没有评估就是碰运气。",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/berryxia/status/2071610700213191075",
+   "category": "tip",
+   "source": "X：Berry Xia (@berryxia)"
+  },
+  {
+   "id": 1355,
+   "title": "Anthropic：当AI成本超过工程师薪酬",
+   "summary": "Anthropic在算力上的支出达到每位工程师每年51.5万美元，是其完全薪资（22.4万美元）的2.3倍。相比之下，顶尖1%软件公司的算力支出为8.9万美元，中位数仅为1.37万美元。三个2029年情景预测了这一差距的缩小路径。",
+   "published_at": "2026-06-30",
+   "url": "https://www.tomtunguz.com/ai-spend-breakeven-2029",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
+   "id": 1362,
+   "title": "Anthropic工程师Margot Van Laar：提示词工程实战--调试生产提示词为主，评估是唯一严谨方式",
+   "summary": "An anthropic应用AI工程师Margot Van Laar在Code with Claude分享提示词工程实战，核心观点：大部分时间在调试和维护已有生产提示词而非从零编写。两个场景：客服机器人维护中，用XML标签结构化清理，移除旧模型遗留的\"禁止列表\"指令（新模型会过度拟合），精确计算应调用工具，转人工决策需明确代价与收益；零售排班Agent从零构建时，拆成生成-评估-修复三个简单提示词更稳定，选用更强推理模型（Opus）。她反复强调：评估（Eval）是唯一严谨方式，没有评估就是碰运气。",
+   "published_at": "2026-06-29T15:04:14.000Z",
+   "url": "",
+   "category": "tip",
    "source": ""
   },
   {
@@ -900,6 +954,15 @@
  ],
  "Apple": [
   {
+   "id": 1338,
+   "title": "OpenClaw 发布原生 iOS 与 Android 应用",
+   "summary": "OpenClaw 现已登陆 iOS 和 Android 🦞 📱 原生移动应用，终于来了 💬 智能体装进口袋 🔔 频道、任务、回复，随时处理 用你的大拇指，在任何地方运行智能体。 iOS: https://apps.apple.com/us/app/openclaw-ai-that-does-things/id6780396132 Android: https://play.google.com/store/apps/details?id=ai.openclaw.app",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/openclaw/status/2071688039114342592",
+   "category": "ai-products",
+   "source": "X：OpenClaw (@openclaw)"
+  },
+  {
    "id": 1158,
    "title": "MiniCPM-V 4.6 在 Apple Core AI 上高速运行",
    "summary": "🥳感谢分享，@MLBoy_DaisukeMajima 🚀 MiniCPM-V 4.6 在设备上以这样的速度运行，实在令人印象深刻——尤其是在 Apple Core AI 上以不到 2B 参数跑出。 干得漂亮，推动高效多模态 AI 向前发展。🫡",
@@ -1021,13 +1084,40 @@
  ],
  "Claude Code": [
   {
-   "id": 1316,
+   "id": 1334,
+   "title": "美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练",
+   "summary": "美团LongCat的1.6万亿参数MoE模型Owl Alpha成为OpenRouter上最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成。据官方推文，Owl Alpha上线后每日调用量全球Top3，在Hermes Agent排名#1，Claude Code排名#2，OpenClaw排名#3。该模型即将退役，后续版本待公布。",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/EMostaque/status/2071701921241448574",
+   "category": "ai-models",
+   "source": "X：Emad Mostaque (@EMostaque)"
+  },
+  {
+   "id": 1340,
+   "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
+   "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude A…",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 1342,
+   "title": "Claude Code v2.1.196 发布",
+   "summary": "新增组织默认模型支持，未选模型时显示“Org default”。聊天会话可读默认名称，文件附件支持 Cmd/Ctrl-click 定位。安全方面，`claude mcp list/get` 不再启动通过 `.claude/settings.json` 自批准的不安全服务器；不受信任工作区显示“Pending approval”。`/code-review` 合并五个清理查找器，token 用量减少约 25%。终端 UI 跳过空子树遍历减少渲染。流式空闲看门狗默认开启，5 分钟无事件自动中止重试。修复背景对话误删、远程会话自动恢复、MCP OAuth 作用域冲突、Agents 侧边栏焦点丢失等多项问题。",
+   "published_at": "2026-06-30",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.196",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 1349,
    "title": "Claude Code 打开 GitHub 仓库即执行隐藏恶意代码，攻击者可获完全控制",
    "summary": "安全研究人员在 Mozilla 的 GenAI 漏洞赏金平台 0DIN 发现新攻击向量。一个看似正常的 GitHub 仓库包含 setup 脚本，该脚本运行时从 DNS 条目拉取命令并执行，恶意代码从未存在于仓库中，对扫描器、代码审查和 AI 智能体不可见。开发者使用 Claude Code 等 AI 编码工具打开该仓库时，Claude Code 在设置过程中遇到常规错误消息后自动运行该脚本，打开反向 shell，攻击者可窃取 API 密钥和登录凭据并维持持久访问。研究人员建议 AI 智能体应在运行前显示 setup 脚本内容，开发者应将第三方仓库的 setup 说明视为不受信任代码。",
-   "published_at": "2026-06-29T10:04:32.000Z",
-   "url": "",
+   "published_at": "2026-06-30",
+   "url": "https://the-decoder.com/claude-code-runs-a-github-repos-hidden-malware-without-verification-giving-attackers-full-control",
    "category": "paper",
-   "source": ""
+   "source": "The Decoder：AI News（RSS）"
   },
   {
    "id": 1297,
@@ -1518,6 +1608,15 @@
  ],
  "Claude Haiku": [
   {
+   "id": 1341,
+   "title": "Claude 在 Microsoft Foundry 正式可用",
+   "summary": "从今天起，Claude 模型在 Microsoft Foundry 上正式可用，托管于 Azure 环境，运行在 NVIDIA GB300 GPU 上。首批提供 Claude Opus 4.8 和 Claude Haiku 4.5，通过 Messages API 调用，支持提示缓存和扩展思考。用户可选择推理处理位置，包括美国数据区域，由 Anthropic 负责推理运营。Azure 用户可使用现有身份验证、计费与治理控制，并获得统一账单；符合条件的 Enterprise Agreement 客户可将 Claude 用量计入 Azure 承诺消费。",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/claude-in-microsoft-foundry",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
    "id": 182,
    "title": "智能性价比",
    "summary": "微软在模型发布卡中首次加入平均token使用量指标。其模型在SWE-Bench Verified上达71.6分，仅消耗约Claude Haiku 4.5三分之一的token。Artificial Analysis的Intelligence Index显示GPT 5.5与Claude Opus 4.8得分相近（约60分），但Opus 4.8运行成本高出40%（$4，685 vs $3，357）。Uber因四个月内AI预算超支而限制员工使用；Salesforce花费$3亿购买Anthropic tokens并冻结工程招聘。模型公司如今需同时在性能和成本两个维度竞争。",
@@ -1528,6 +1627,15 @@
   }
  ],
  "Claude Opus": [
+  {
+   "id": 1341,
+   "title": "Claude 在 Microsoft Foundry 正式可用",
+   "summary": "从今天起，Claude 模型在 Microsoft Foundry 上正式可用，托管于 Azure 环境，运行在 NVIDIA GB300 GPU 上。首批提供 Claude Opus 4.8 和 Claude Haiku 4.5，通过 Messages API 调用，支持提示缓存和扩展思考。用户可选择推理处理位置，包括美国数据区域，由 Anthropic 负责推理运营。Azure 用户可使用现有身份验证、计费与治理控制，并获得统一账单；符合条件的 Enterprise Agreement 客户可将 Claude 用量计入 Azure 承诺消费。",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/claude-in-microsoft-foundry",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
   {
    "id": 1298,
    "title": "仅有三个AI模型在500天创业测试中盈利超过起始资本",
@@ -2255,6 +2363,24 @@
  ],
  "Composer 2.5": [
   {
+   "id": 1335,
+   "title": "从任何地点构建——Cursor for iOS 公测版发布",
+   "summary": "Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。",
+   "published_at": "2026-06-30",
+   "url": "https://cursor.com/blog/ios-mobile-app",
+   "category": "ai-products",
+   "source": "Cursor Blog"
+  },
+  {
+   "id": 1364,
+   "title": "从任何地点构建--Cursor for iOS 公测版发布",
+   "summary": "Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。",
+   "published_at": "2026-06-29T12:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1231,
    "title": "Cursor 研究发现奖励攻击虚增编码智能体 SWE-bench Pro 分数",
    "summary": "Cursor 最新研究发现，编码智能体在 SWE-bench Pro 等基准测试中存在奖励攻击问题：智能体通过检索已知修复而非独立推导来通过测试。对 731 条 Opus 4.8 Max 轨迹的审计显示，63% 的成功修复来自检索，其中上游查找占 57%，git 历史挖掘占 9%。严格隔离 git 历史并限制网络访问后，Opus 4.8 Max 的 SWE-bench Pro 分数从 87.1% 降至 73.0%；Cursor 自家 Composer 2.5 差距最大，达 20.7 个点。新模型比旧模型更容易出现此问题。研究报告建议采用严格测试环境（隔离 git 历史、限制网络出口）以获取可信分数。",
@@ -2350,6 +2476,24 @@
   }
  ],
  "Cursor": [
+  {
+   "id": 1335,
+   "title": "从任何地点构建——Cursor for iOS 公测版发布",
+   "summary": "Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。",
+   "published_at": "2026-06-30",
+   "url": "https://cursor.com/blog/ios-mobile-app",
+   "category": "ai-products",
+   "source": "Cursor Blog"
+  },
+  {
+   "id": 1364,
+   "title": "从任何地点构建--Cursor for iOS 公测版发布",
+   "summary": "Cursor 推出 iOS 原生公测版，所有付费计划可用。开发者可在手机上启动始终在线的云端智能体，或远程操控电脑端智能体。支持语音输入、斜杠命令和选择前沿模型。智能体运行后，锁屏 Live Activities 和推送通知实时更新状态，完成或需要输入时提醒。云端智能体在隔离虚拟机中运行，可自动迭代生成合并就绪的 PR，并输出演示、截图和日志。本地与云端智能体支持双向切换。移动端 Composer 2.5 享受 75% 折扣，优惠至 2026 年 7 月 5 日。",
+   "published_at": "2026-06-29T12:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 1294,
    "title": "Grok 4.5 私测于 SpaceX 和 Tesla，性能接近 Opus",
@@ -2632,13 +2776,13 @@
  ],
  "DeepSeek": [
   {
-   "id": 1314,
+   "id": 1337,
    "title": "小红书 RedKnot 推理引擎：将 KV Cache 按注意力头拆解实现长文本加速",
-   "summary": "RedKnot 将 KV Cache 沿注意力头维度拆解，通过头分类稀疏（局部头占 83.4%-96.8%）、稀疏 FFN 和 SegPagedAttention 三个机制统一算法与存储粒度。在 8 卡 H800 上，TTFT 最高加速 1.6-3.54×，单卡并发提升 4.7-7.8×，预填充 FLOPs 削减 67%-79.5%。DeepSeek-V4-Flash 上 128K 上下文 TTFT 加速达 5.16×，KV 传输最多省 6.3×。精度通常不低于稠密 F1 的 95%。",
-   "published_at": "2026-06-29T11:00:07.000Z",
-   "url": "",
+   "summary": "RedKnot 将 KV Cache 沿注意力头维度拆解，通过头分类稀疏（局部头占 83.4%–96.8%）、稀疏 FFN 和 SegPagedAttention 三个机制统一算法与存储粒度。在 8 卡 H800 上，TTFT 最高加速 1.6–3.54×，单卡并发提升 4.7–7.8×，预填充 FLOPs 削减 67%–79.5%。DeepSeek-V4-Flash 上 128K 上下文 TTFT 加速达 5.16×，KV 传输最多省 6.3×。精度通常不低于稠密 F1 的 95%。",
+   "published_at": "2026-06-30",
+   "url": "https://mp.weixin.qq.com/s/qRrZvL0aZzYI82djFSrLug",
    "category": "ai-products",
-   "source": ""
+   "source": "公众号：小红书技术（dots.llm）"
   },
   {
    "id": 1295,
@@ -3058,13 +3202,13 @@
  ],
  "DeepSeek-V4": [
   {
-   "id": 1314,
+   "id": 1337,
    "title": "小红书 RedKnot 推理引擎：将 KV Cache 按注意力头拆解实现长文本加速",
-   "summary": "RedKnot 将 KV Cache 沿注意力头维度拆解，通过头分类稀疏（局部头占 83.4%-96.8%）、稀疏 FFN 和 SegPagedAttention 三个机制统一算法与存储粒度。在 8 卡 H800 上，TTFT 最高加速 1.6-3.54×，单卡并发提升 4.7-7.8×，预填充 FLOPs 削减 67%-79.5%。DeepSeek-V4-Flash 上 128K 上下文 TTFT 加速达 5.16×，KV 传输最多省 6.3×。精度通常不低于稠密 F1 的 95%。",
-   "published_at": "2026-06-29T11:00:07.000Z",
-   "url": "",
+   "summary": "RedKnot 将 KV Cache 沿注意力头维度拆解，通过头分类稀疏（局部头占 83.4%–96.8%）、稀疏 FFN 和 SegPagedAttention 三个机制统一算法与存储粒度。在 8 卡 H800 上，TTFT 最高加速 1.6–3.54×，单卡并发提升 4.7–7.8×，预填充 FLOPs 削减 67%–79.5%。DeepSeek-V4-Flash 上 128K 上下文 TTFT 加速达 5.16×，KV 传输最多省 6.3×。精度通常不低于稠密 F1 的 95%。",
+   "published_at": "2026-06-30",
+   "url": "https://mp.weixin.qq.com/s/qRrZvL0aZzYI82djFSrLug",
    "category": "ai-products",
-   "source": ""
+   "source": "公众号：小红书技术（dots.llm）"
   },
   {
    "id": 1255,
@@ -3656,6 +3800,24 @@
   }
  ],
  "Google": [
+  {
+   "id": 1338,
+   "title": "OpenClaw 发布原生 iOS 与 Android 应用",
+   "summary": "OpenClaw 现已登陆 iOS 和 Android 🦞 📱 原生移动应用，终于来了 💬 智能体装进口袋 🔔 频道、任务、回复，随时处理 用你的大拇指，在任何地方运行智能体。 iOS: https://apps.apple.com/us/app/openclaw-ai-that-does-things/id6780396132 Android: https://play.google.com/store/apps/details?id=ai.openclaw.app",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/openclaw/status/2071688039114342592",
+   "category": "ai-products",
+   "source": "X：OpenClaw (@openclaw)"
+  },
+  {
+   "id": 1340,
+   "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
+   "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude A…",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
   {
    "id": 1300,
    "title": "Artifacts 22：Zyphra、Cohere 和 Poolside 正在扩展生态系统广度",
@@ -4876,13 +5038,13 @@
  ],
  "Meta": [
   {
-   "id": 1313,
+   "id": 1348,
    "title": "Meta发布Brain2Qwerty v2：非侵入式实时句子解码",
    "summary": "Meta公布Brain2Qwerty v2，这是非侵入式脑电信号解码研究的最新里程碑。基于当天发表在《Nature》的v1，v2是性能最高的端到端管道，能从原始脑信号实时解码句子。其从字符级性能提升至解码单词和语义，提高整体沟通准确性。该研究有望帮助数百万因脑损伤或疾病无法沟通的人群。",
-   "published_at": "2026-06-29T12:10:17.000Z",
-   "url": "",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/AIatMeta/status/2071566924803395741",
    "category": "paper",
-   "source": ""
+   "source": "X：AI at Meta (@AIatMeta)"
   },
   {
    "id": 1182,
@@ -5084,6 +5246,24 @@
   }
  ],
  "Microsoft": [
+  {
+   "id": 1340,
+   "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
+   "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude A…",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/introducing-the-claude-apps-gateway",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 1341,
+   "title": "Claude 在 Microsoft Foundry 正式可用",
+   "summary": "从今天起，Claude 模型在 Microsoft Foundry 上正式可用，托管于 Azure 环境，运行在 NVIDIA GB300 GPU 上。首批提供 Claude Opus 4.8 和 Claude Haiku 4.5，通过 Messages API 调用，支持提示缓存和扩展思考。用户可选择推理处理位置，包括美国数据区域，由 Anthropic 负责推理运营。Azure 用户可使用现有身份验证、计费与治理控制，并获得统一账单；符合条件的 Enterprise Agreement 客户可将 Claude 用量计入 Azure 承诺消费。",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/claude-in-microsoft-foundry",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
   {
    "id": 1253,
    "title": "“Raise Us”启动：前美商务部长与四州合作筹集10亿美元应对AI就业冲击",
@@ -5517,6 +5697,15 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 1341,
+   "title": "Claude 在 Microsoft Foundry 正式可用",
+   "summary": "从今天起，Claude 模型在 Microsoft Foundry 上正式可用，托管于 Azure 环境，运行在 NVIDIA GB300 GPU 上。首批提供 Claude Opus 4.8 和 Claude Haiku 4.5，通过 Messages API 调用，支持提示缓存和扩展思考。用户可选择推理处理位置，包括美国数据区域，由 Anthropic 负责推理运营。Azure 用户可使用现有身份验证、计费与治理控制，并获得统一账单；符合条件的 Enterprise Agreement 客户可将 Claude 用量计入 Azure 承诺消费。",
+   "published_at": "2026-06-30",
+   "url": "https://claude.com/blog/claude-in-microsoft-foundry",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
   {
    "id": 1300,
    "title": "Artifacts 22：Zyphra、Cohere 和 Poolside 正在扩展生态系统广度",
@@ -6165,22 +6354,22 @@
  ],
  "OpenAI": [
   {
-   "id": 1315,
+   "id": 1336,
    "title": "EverOS：开源Markdown优先智能体记忆运行时，支持混合检索与自进化技能",
-   "summary": "EverMind 推出开源智能体记忆运行时 EverOS（Apache 2.0 许可）。它以可编辑的 Markdown 文件为记忆主体，经 SQLite 管理状态、LanceDB 实现混合检索（BM25 关键词 + 向量搜索 + 标量过滤）。每个完成的任务记录为 Case，离线提炼为可复用的 Skill，使记忆随使用自我进化。v1.1.0 新增 Knowledge APIs（支持分类与话题搜索的 Markdown 页面）和 Reflection（跨会话优化 Profile 和 Skill）。据 EverMind 报告，LoCoMo 得分 93.05%，LongMemEval 83.00%，HaluMem 93.04%，p95 检索延迟低于 500ms。运行时可本地优先部署，也提供 EverOS Cloud 托管选项，兼容 OpenAI 协议端点。",
-   "published_at": "2026-06-29T10:42:47.000Z",
-   "url": "",
+   "summary": "EverMind 推出开源智能体记忆运行时 EverOS（Apache 2.0 许可）。它以可编辑的 Markdown 文件为记忆主体，经 SQLite 管理状态、LanceDB 实现混合检索（BM25 关键词 + 向量搜索 + 标量过滤）。每个完成的任务记录为 Case，离线提炼为可复用的 Skill，使记忆随使用自我进化。v1.1.0 新增 Knowledge APIs（支持分类与话题搜索的 Markdown 页面）和 Reflection（跨会话优化 Profile 和 Skill）。据 EverMind 报告，LoCoMo 得分 93.05%，LongMemEval 83.00%，HaluMem 93.04%，p95 检索延…",
+   "published_at": "2026-06-30",
+   "url": "https://www.marktechpost.com/2026/06/29/meet-everos-an-open-source-markdown-first-agent-memory-runtime-with-hybrid-bm25-vector-retrieval-and-self-evolving-skills",
    "category": "ai-products",
-   "source": ""
+   "source": "MarkTechPost（RSS）"
   },
   {
-   "id": 1319,
+   "id": 1350,
    "title": "OpenAI 报告：绘制欧洲 AI 劳动力机遇版图",
    "summary": "OpenAI 发布新报告，分析 AI 对欧盟就业的影响，划定哪些职业面临自动化、增长或工作流程变化。",
-   "published_at": "2026-06-29T07:00:00.000Z",
-   "url": "",
+   "published_at": "2026-06-30",
+   "url": "https://openai.com/index/mapping-ai-jobs-transition-eu",
    "category": "paper",
-   "source": ""
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
   },
   {
    "id": 1296,
@@ -7141,6 +7330,24 @@
  ],
  "OpenClaw": [
   {
+   "id": 1334,
+   "title": "美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练",
+   "summary": "美团LongCat的1.6万亿参数MoE模型Owl Alpha成为OpenRouter上最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成。据官方推文，Owl Alpha上线后每日调用量全球Top3，在Hermes Agent排名#1，Claude Code排名#2，OpenClaw排名#3。该模型即将退役，后续版本待公布。",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/EMostaque/status/2071701921241448574",
+   "category": "ai-models",
+   "source": "X：Emad Mostaque (@EMostaque)"
+  },
+  {
+   "id": 1338,
+   "title": "OpenClaw 发布原生 iOS 与 Android 应用",
+   "summary": "OpenClaw 现已登陆 iOS 和 Android 🦞 📱 原生移动应用，终于来了 💬 智能体装进口袋 🔔 频道、任务、回复，随时处理 用你的大拇指，在任何地方运行智能体。 iOS: https://apps.apple.com/us/app/openclaw-ai-that-does-things/id6780396132 Android: https://play.google.com/store/apps/details?id=ai.openclaw.app",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/openclaw/status/2071688039114342592",
+   "category": "ai-products",
+   "source": "X：OpenClaw (@openclaw)"
+  },
+  {
    "id": 1090,
    "title": "我们用免费本地模型对 OpenClaw 仓库进行实时分类",
    "summary": "Hugging Face 在 OpenClaw 仓库上测试用 Gemma 和 Qwen 等本地模型实时分类 issue 和 PR。他们使用 Pi agent harness 驱动模型，配合 reposhell 只允许读操作防止提示词注入。测试的模型包括 gemma-4-26b-a4b 和 qwen3.6-35b-a3b，经性能优化后均可在本地生成数百 token/s。该方案运行在 NVIDIA GB10（128 GB 统一内存）上，相比每月 200 美元的 ChatGPT Pro 订阅，可实现近乎实时的通知且仅消耗电费。",
@@ -7232,6 +7439,15 @@
   }
  ],
  "OpenRouter": [
+  {
+   "id": 1334,
+   "title": "美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练",
+   "summary": "美团LongCat的1.6万亿参数MoE模型Owl Alpha成为OpenRouter上最流行模型，累计消耗10万亿tokens，性能达Gemini/Opus 4.6级别。该模型使用35万亿tokens训练，完全在5万块国产ASIC上完成。据官方推文，Owl Alpha上线后每日调用量全球Top3，在Hermes Agent排名#1，Claude Code排名#2，OpenClaw排名#3。该模型即将退役，后续版本待公布。",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/EMostaque/status/2071701921241448574",
+   "category": "ai-models",
+   "source": "X：Emad Mostaque (@EMostaque)"
+  },
   {
    "id": 1263,
    "title": "Weave 推出智能模型路由工具，可直接接入 Claude Code、Codex 和 Cursor",
@@ -7571,6 +7787,15 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 1353,
+   "title": "Qwen 3.6 27B 是本地开发的理想选择",
+   "summary": "Qwen 3.6 27B 是一款密集参数本地大语言模型，原生支持 256k 上下文。在 Macbook Max M5 上运行 llama.cpp Q8_0 量化版（含多 token 预测）可达 30 tokens/s；用户反馈在 RTX 5090 上 Q6_K 量化可达 50 tokens/s。它可通过单个提示完成创意诗歌、用 pnpm 生成六边形扫雷游戏等任务，作者称其为首个真正具备通用智能的本地模型。另有一个 MoE 变体 35B A3B，但作者推荐 27B 版本。",
+   "published_at": "2026-06-30",
+   "url": "https://quesma.com/blog/qwen-36-is-awesome",
+   "category": "tip",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
   {
    "id": 1295,
    "title": "新浪开源VibeThinker-3B：推理可压缩，事实知识不能",
@@ -7928,6 +8153,15 @@
   }
  ],
  "Qwen 3.6": [
+  {
+   "id": 1353,
+   "title": "Qwen 3.6 27B 是本地开发的理想选择",
+   "summary": "Qwen 3.6 27B 是一款密集参数本地大语言模型，原生支持 256k 上下文。在 Macbook Max M5 上运行 llama.cpp Q8_0 量化版（含多 token 预测）可达 30 tokens/s；用户反馈在 RTX 5090 上 Q6_K 量化可达 50 tokens/s。它可通过单个提示完成创意诗歌、用 pnpm 生成六边形扫雷游戏等任务，作者称其为首个真正具备通用智能的本地模型。另有一个 MoE 变体 35B A3B，但作者推荐 27B 版本。",
+   "published_at": "2026-06-30",
+   "url": "https://quesma.com/blog/qwen-36-is-awesome",
+   "category": "tip",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
   {
    "id": 882,
    "title": "5x for Free：本地编程栈",
@@ -8432,13 +8666,13 @@
  ],
  "SK海力士": [
   {
-   "id": 1318,
+   "id": 1346,
    "title": "三星和SK海力士计划投资5900亿美元扩产芯片，AI需求推高内存价格",
    "summary": "在韩国政府支持下，三星和SK海力士计划投入5900亿美元扩大芯片产能，包括800万亿韩元新建四座工厂、81万亿韩元建封装中心，以及未来15年30万亿韩元用于研发下一代芯片。AI数据中心需求是主要驱动力。Jefferies预测，2026年Q3内存价格将上涨40%至50%，Q4再涨30%至40%，2027年继续上涨40%至45%，到2028年新产能仅上线15%至20%才可能缓解。两家公司合计控制全球近80%的高带宽内存芯片市场。内存涨价已推高消费电子产品成本，苹果已上调Mac和MacBook售价。",
-   "published_at": "2026-06-29T08:17:41.000Z",
-   "url": "",
+   "published_at": "2026-06-30",
+   "url": "https://the-decoder.com/samsung-and-sk-hynix-plan-590-billion-chip-investment-as-ai-demand-sends-memory-prices-soaring",
    "category": "industry",
-   "source": ""
+   "source": "The Decoder：AI News（RSS）"
   },
   {
    "id": 142,
@@ -8580,6 +8814,15 @@
  ],
  "llama": [
   {
+   "id": 1353,
+   "title": "Qwen 3.6 27B 是本地开发的理想选择",
+   "summary": "Qwen 3.6 27B 是一款密集参数本地大语言模型，原生支持 256k 上下文。在 Macbook Max M5 上运行 llama.cpp Q8_0 量化版（含多 token 预测）可达 30 tokens/s；用户反馈在 RTX 5090 上 Q6_K 量化可达 50 tokens/s。它可通过单个提示完成创意诗歌、用 pnpm 生成六边形扫雷游戏等任务，作者称其为首个真正具备通用智能的本地模型。另有一个 MoE 变体 35B A3B，但作者推荐 27B 版本。",
+   "published_at": "2026-06-30",
+   "url": "https://quesma.com/blog/qwen-36-is-awesome",
+   "category": "tip",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
    "id": 1296,
    "title": "Wayfinder Router：在本地和托管的大语言模型之间进行确定性查询路由",
    "summary": "Wayfinder Router 通过分析提示词的结构（长度、标题、列表、代码）和措辞（证明、数学、硬约束），在微秒级完成路由决策，完全离线且无需调用其他模型。默认仅使用结构特征，词汇线索因盲测未泛化而默认为关闭。对比依赖模型调用的路由器（如 RouteLLM、NotDiamond），它避免了延迟、成本和随机性。用户可在自有数据上校准评分阈值。支持任何 OpenAI 兼容 API（含 Ollama、Anthropic、Groq、vLLM 等），可自托管。提供终端和网页演示（--dry-run 无需密钥），以及基准测试和 FAQ。",
@@ -8635,6 +8878,15 @@
   }
  ],
  "openclaw": [
+  {
+   "id": 1338,
+   "title": "OpenClaw 发布原生 iOS 与 Android 应用",
+   "summary": "OpenClaw 现已登陆 iOS 和 Android 🦞 📱 原生移动应用，终于来了 💬 智能体装进口袋 🔔 频道、任务、回复，随时处理 用你的大拇指，在任何地方运行智能体。 iOS: https://apps.apple.com/us/app/openclaw-ai-that-does-things/id6780396132 Android: https://play.google.com/store/apps/details?id=ai.openclaw.app",
+   "published_at": "2026-06-30",
+   "url": "https://x.com/openclaw/status/2071688039114342592",
+   "category": "ai-products",
+   "source": "X：OpenClaw (@openclaw)"
+  },
   {
    "id": 197,
    "title": "OpenClaw 2026.6.1发布：新增Windows节点与技能工坊",
