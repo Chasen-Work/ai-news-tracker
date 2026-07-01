@@ -421,6 +421,59 @@
           {"date": "2026-00", "event": "生产爬坡中"}
         ]
       }
+    },
+    {
+      "name": "赛博格机器人(Cyborg Robotics)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [
+          {"name": "OMCI全身多接触智控系统", "type": "全身协同操作系统", "features": "臂、肩、胸、背多部位分布式承重"},
+          {"name": "TendonFlex仿生筋腱驱动系统", "type": "驱动系统", "features": "高精度力控"}
+        ],
+        "ros": "支持",
+        "open_source_degree": "闭源",
+        "key_events": [
+          {"date": "2025-00", "event": "发布Cyborg-R01全尺寸双足人形机器人（62自由度/411Nm）"},
+          {"date": "2025-00", "event": "发布Cyborg-W01轮式人形机器人"},
+          {"date": "2025-12", "event": "完成Pre-A1+Pre-A2两轮累计数亿元融资"},
+          {"date": "2026-06", "event": "灵巧手亮相2026APEC"}
+        ]
+      }
+    },
+    {
+      "name": "中科慧灵(灵宝CASBOT)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [
+          {"name": "分层端到端模型", "type": "具身智能模型架构", "features": "结合端到端大模型与分段决策优势"}
+        ],
+        "ros": "支持",
+        "open_source_degree": "闭源",
+        "key_events": [
+          {"date": "2024-11", "event": "发布CASBOT 01全尺寸双足人形机器人（179cm/52自由度）"},
+          {"date": "2024-09", "event": "与联想签署战略合作，进入联想智能制造工厂"},
+          {"date": "2026-00", "event": "参加2026春晚，机器人乐队表演"}
+        ]
+      }
+    },
+    {
+      "name": "动易科技(DynamicX)",
+      "ecosystem": {
+        "datasets": [],
+        "models": [],
+        "frameworks": [
+          {"name": "PhyArc摆线关节模组", "type": "一体化关节", "features": "准直驱，最高530Nm，背隙1弧分"}
+        ],
+        "ros": "支持",
+        "open_source_degree": "闭源",
+        "key_events": [
+          {"date": "2025-07", "event": "发布PHYBOT M1全尺寸人形机器人（172cm/32自由度）"},
+          {"date": "2025-07", "event": "发布PHYBOT C1具身智能伙伴机器人"},
+          {"date": "2025-00", "event": "实现全尺寸重型电驱人形机器人拟人态后空翻"}
+        ]
+      }
     }
   ]
 }
