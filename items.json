@@ -1,5 +1,55 @@
 [
  {
+  "id": 1456,
+  "title": "OpenAI论文揭示GPT-5.6三个Pro变体，打破单一顶级策略",
+  "summary": "OpenAI论文首次列出GPT-5.6的三个Pro变体：Luna Pro、Terra Pro和Sol Pro，取代以往单一Pro模式。在基因组学基准中，Sol Pro通过率31.5%居60个测试模型之首，领先标准Sol（28.7%）和Claude Opus 4.8（16.0%）。Pro相比标准版本提升逐级递减：Luna Pro提升7.1个百分点（16.5%→23.6%），Terra Pro提升5.2（23.3%→28.5%），Sol Pro仅提升2.8（28.7%→31.5%）。Terra Pro（28.5%）几乎与标准Sol（28.7%）持平。论文未披露Pro运行的token用量，也不清楚该分层是否会在ChatGPT中实际推出。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-01T10:03:41.000Z",
+  "fetched_at": "2026-07-01 13:00:35"
+ },
+ {
+  "id": 1457,
+  "title": "NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型",
+  "summary": "NVIDIA 发布 Nemotron-Labs-TwoTower，基于冻结的自回归骨干 Nemotron-3-Nano-30B-A3B 的扩散语言模型。采用双塔架构：上下文塔冻结，降噪器塔训练，通过层对齐交叉注意力和状态播种协作。在 2×H100 上 BF16 评估，保留 98.7% 的 AR 基线质量，生成吞吐量提升 2.42 倍（γ=0.8，块大小 S=16）。降噪器在约 2.1T token 上训练，骨干使用 25T token 预训练。总参数约 60B，每 token 活跃参数约 3B/塔。支持扩散、模拟 AR 和 AR 三种解码模式。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-01T08:10:17.000Z",
+  "fetched_at": "2026-07-01 13:00:35"
+ },
+ {
+  "id": 1458,
+  "title": "亚马逊 AWS 砸 10 亿美元，派遣工程师进驻客户公司",
+  "summary": "亚马逊 AWS 宣布设立新部门，组建前置驻场工程师团队，先期投入 10 亿美元（约 67.97 亿元人民币）。团队分批派驻客户企业，每批 5-6 组工程师，驻场周期 45 天，协助客户落地人工智能软件与智能体应用。该模式在 Palantir、Salesforce、Anthropic、谷歌云等企业已有先例，领英数据显示 2023 至 2025 年间同类岗位需求增长 42 倍。新部门员工规模将达数千人，首批客户包括 NBA 与理光。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-01T06:57:42.000Z",
+  "fetched_at": "2026-07-01 13:00:35"
+ },
+ {
+  "id": 1459,
+  "title": "美团 LongCat-2.0 正式发布：国产算力集群训练的万亿参数大模型",
+  "summary": "美团于6月30日发布新一代万亿参数大模型LongCat-2.0并开源。总参数1.6T，平均激活约48B，原生支持1M超长上下文，在五万卡国产算力集群上完成全流程训练与推理。采用LSA稀疏注意力、零计算专家、ScMoE及MOPD多专家融合（Agent/Reasoning/Interaction三组专家）架构。评测中SWE-bench Pro获59.5，SWE-bench Multilingual获77.3。预览版已通过OpenRouter和longcat.ai开放，月调用量跻身OpenRouter全球前三。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-01T02:24:00.000Z",
+  "fetched_at": "2026-07-01 13:00:35"
+ },
+ {
+  "id": 1460,
+  "title": "mattpocockuk 的 /writing-great-skills：编写可预测 AI Skill 的指南",
+  "summary": "mattpocockuk 的 /writing-great-skills 成为其最常调用的 Skill，指导如何编写稳定可预测的 AI Skill。核心：以过程可预测为目标；区分 model-invoked（自动触发）与 user-invoked（用户调用），description 应作触发器；采用三层信息结构（主步骤、参考、外部文件）实现渐进式披露；每步骤需明确完成标准；拆分 Skill 是为了控制模型注意力；利用 leading word 压缩行为要求。同时诊断五种失败模式：Premature completion、Duplication、Sediment、Sprawl、No-op，并提供 No-op 测试作为判断句子是否有效的标准。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-01T01:14:54.000Z",
+  "fetched_at": "2026-07-01 13:00:35"
+ },
+ {
   "id": 1427,
   "title": "Anthropic在Claude Code中植入隐写术代码识别中国用户",
   "summary": "Anthropic在Claude Code中植入隐写术：读取本地时区（Asia/Shanghai或Asia/Urumqi）和ANTHROPIC_BASE_URL环境变量，与一份经base64+XOR（密钥91）加密的147个域名列表（含美团、字节跳动、月之暗面等）比对，识别中国用户。识别后，在请求发送前将系统提示词中日期字符串的单引号（U+0027）替换为其他Unicode字符，连字符改为斜杠，作为2-3比特分类标记传回服务器。该隐蔽行为被社区逆向发现后引发争议，被认为破坏用户信任。",

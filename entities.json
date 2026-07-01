@@ -3,15 +3,15 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 110,
-  "last_seen": "2026-07-01"
+  "mentions": 111,
+  "last_seen": "2026-07-01T10:03:41.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 97,
-  "last_seen": "2026-07-01T00:11:00.000Z"
+  "mentions": 98,
+  "last_seen": "2026-07-01T06:57:42.000Z"
  },
  {
   "id": 47,
@@ -31,8 +31,8 @@
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 52,
-  "last_seen": "2026-07-01"
+  "mentions": 53,
+  "last_seen": "2026-07-01T08:10:17.000Z"
  },
  {
   "id": 21,
@@ -66,15 +66,15 @@
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 32,
-  "last_seen": "2026-06-30"
+  "mentions": 33,
+  "last_seen": "2026-07-01T02:24:00.000Z"
  },
  {
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 31,
-  "last_seen": "2026-06-30"
+  "mentions": 32,
+  "last_seen": "2026-07-01T10:03:41.000Z"
  },
  {
   "id": 4,
@@ -154,6 +154,13 @@
   "last_seen": "2026-06-30"
  },
  {
+  "id": 28,
+  "name": "Nemotron",
+  "type": "model",
+  "mentions": 11,
+  "last_seen": "2026-07-01T08:10:17.000Z"
+ },
+ {
   "id": 20,
   "name": "HuggingFace",
   "type": "company",
@@ -166,13 +173,6 @@
   "type": "company",
   "mentions": 10,
   "last_seen": "2026-06-18"
- },
- {
-  "id": 28,
-  "name": "Nemotron",
-  "type": "model",
-  "mentions": 10,
-  "last_seen": "2026-06-29"
  },
  {
   "id": 51,
@@ -455,6 +455,13 @@
   "last_seen": "2026-06-25"
  },
  {
+  "id": 1502,
+  "name": "GPT-5.6",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-07-01T10:03:41.000Z"
+ },
+ {
   "id": 9,
   "name": "Cosmos 3",
   "type": "model",
@@ -600,13 +607,6 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-06-25"
- },
- {
-  "id": 1502,
-  "name": "GPT-5.6",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-27"
  },
  {
   "id": 11,
