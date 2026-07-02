@@ -1,22 +1,22 @@
 {
- "total_items": 867,
- "total_entities": 116,
- "total_dailies": 30,
+ "total_items": 883,
+ "total_entities": 117,
+ "total_dailies": 31,
  "categories": {
-  "ai-products": 253,
-  "tip": 233,
-  "industry": 205,
+  "ai-products": 261,
+  "tip": 237,
+  "industry": 209,
   "paper": 92,
   "ai-models": 84
  },
  "entity_types": {
-  "model": 63,
+  "model": 64,
   "company": 53
  },
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 48
+   "count": 49
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
@@ -32,11 +32,11 @@
   },
   {
    "name": "TechCrunch：AI（RSS）",
-   "count": 19
+   "count": 20
   },
   {
    "name": "The Decoder：AI News（RSS）",
-   "count": 16
+   "count": 17
   },
   {
    "name": "X：Rohan Paul (@rohanpaul_ai)",
@@ -51,15 +51,11 @@
    "count": 14
   },
   {
-   "name": "X：OpenRouter (@OpenRouter)",
-   "count": 11
+   "name": "MarkTechPost（RSS）",
+   "count": 12
   }
  ],
  "by_date": [
-  {
-   "date": "2026-06-02",
-   "count": 49
-  },
   {
    "date": "2026-06-03",
    "count": 42
@@ -174,8 +170,12 @@
   },
   {
    "date": "2026-07-01",
-   "count": 32
+   "count": 26
+  },
+  {
+   "date": "2026-07-02",
+   "count": 22
   }
  ],
- "updated_at": "2026-07-01T13:00:35Z"
+ "updated_at": "2026-07-02T01:00:14Z"
 }
