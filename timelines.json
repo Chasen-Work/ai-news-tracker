@@ -1219,6 +1219,15 @@
  ],
  "Claude Code": [
   {
+   "id": 1687,
+   "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
+   "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近。",
+   "published_at": "2026-07-04T06:32:47.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 1657,
    "title": "Claude Code v2.1.200 发布",
    "summary": "Claude Code v2.1.200 将 AskUserQuestion 对话框默认改为不自动继续，可通过 /config 设置空闲超时；默认权限模式改为“Manual”。修复了启动时因 .claude.json 中 disabledMcpServers 或 enabledMcpServers 为非数组值导致的崩溃、后台会话在休眠/唤醒或重新打开卡顿会话时无声停止、后台代理因陈旧 daemon.lock 无法重启、子代理因速率限制截断后未返回空结果等问题。改进了屏幕阅读器输出，隐藏装饰性字符，并优化转录符号与嵌套表格朗读。安装脚本在因系统内存不足被终止时会给出说明。",
@@ -1870,6 +1879,15 @@
   }
  ],
  "Claude Opus": [
+  {
+   "id": 1687,
+   "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
+   "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近。",
+   "published_at": "2026-07-04T06:32:47.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 1666,
    "title": "Claude Fable 5 自主优化 AIHOT 网站 SEO/GEO 全记录",
@@ -6376,6 +6394,15 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 1687,
+   "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
+   "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近。",
+   "published_at": "2026-07-04T06:32:47.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 1486,
    "title": "NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型",

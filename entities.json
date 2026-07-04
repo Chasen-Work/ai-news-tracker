@@ -24,15 +24,15 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 70,
-  "last_seen": "2026-07-04"
+  "mentions": 71,
+  "last_seen": "2026-07-04T06:32:47.000Z"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 53,
-  "last_seen": "2026-07-02"
+  "mentions": 54,
+  "last_seen": "2026-07-04T06:32:47.000Z"
  },
  {
   "id": 21,
@@ -52,8 +52,8 @@
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 35,
-  "last_seen": "2026-07-04"
+  "mentions": 36,
+  "last_seen": "2026-07-04T06:32:47.000Z"
  },
  {
   "id": 79,
