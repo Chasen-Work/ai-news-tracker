@@ -3,15 +3,15 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 117,
-  "last_seen": "2026-07-04"
+  "mentions": 118,
+  "last_seen": "2026-07-05T07:50:19.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 102,
-  "last_seen": "2026-07-04"
+  "mentions": 103,
+  "last_seen": "2026-07-05T07:50:19.000Z"
  },
  {
   "id": 47,
@@ -25,14 +25,14 @@
   "name": "Claude Code",
   "type": "model",
   "mentions": 71,
-  "last_seen": "2026-07-04T06:32:47.000Z"
+  "last_seen": "2026-07-05"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
   "mentions": 54,
-  "last_seen": "2026-07-04T06:32:47.000Z"
+  "last_seen": "2026-07-05"
  },
  {
   "id": 21,
@@ -53,7 +53,7 @@
   "name": "Claude Opus",
   "type": "model",
   "mentions": 36,
-  "last_seen": "2026-07-04T06:32:47.000Z"
+  "last_seen": "2026-07-05"
  },
  {
   "id": 79,
@@ -623,6 +623,13 @@
   "last_seen": "2026-07-03"
  },
  {
+  "id": 1641,
+  "name": "Llama",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-07-05T07:50:19.000Z"
+ },
+ {
   "id": 11,
   "name": "SenseNova-U1-8B-MoT-Infographic",
   "type": "model",
@@ -796,13 +803,6 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-06-24T06:00:00.000Z"
- },
- {
-  "id": 1641,
-  "name": "Llama",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-26T16:40:11.000Z"
  },
  {
   "id": 1981,

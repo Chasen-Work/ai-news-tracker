@@ -1,33 +1,43 @@
 [
  {
-  "id": 1686,
-  "title": "26000名学生研究显示AI隐藏学习成本需两年才显现",
-  "summary": "一项追踪26000名7-12年级中学生30个月的面板数据研究发现：使用AI后作业分数提升18%，完成时间从64分钟降至45分钟，但闭卷考试分数下降20%，升学考试成绩下降18%至24%，且完全影响约两年才显现。81%长期用户作业完成时间低于50分钟（外包迹象）。社会学科下降27%，STEM下降22%，英语下降17%，语文下降9%。每周使用AI一小时损失约5%，五小时损失30%。早期损失从约25%降至16%但未消失。",
+  "id": 1707,
+  "title": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用",
+  "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用户自带 API key。项目以 TanStack Start web app 形式运行，上传文件自动解析索引，同一文件名重复上传可产生版本，检索时通过版本元数据字段过滤。",
   "url": "",
   "source": "",
   "category": "tip",
-  "published_at": "2026-07-04T09:08:41.000Z",
-  "fetched_at": "2026-07-04 13:00:44"
+  "published_at": "2026-07-05T07:50:19.000Z",
+  "fetched_at": "2026-07-05 13:00:30"
  },
  {
-  "id": 1687,
+  "id": 1706,
+  "title": "26000名学生研究显示AI隐藏学习成本需两年才显现",
+  "summary": "一项追踪26000名7-12年级中学生30个月的面板数据研究发现：使用AI后作业分数提升18%，完成时间从64分钟降至45分钟，但闭卷考试分数下降20%，升学考试成绩下降18%至24%，且完全影响约两年才显现。81%长期用户作业完成时间低于50分钟（外包迹象）。社会学科下降27%，STEM下降22%，英语下降17%，语文下降9%。每周使用AI一小时损失约5%，五小时损失30%。早期损失从约25%降至16%但未消失。",
+  "url": "https://the-decoder.com/a-26000-student-study-shows-ais-hidden-learning-cost-takes-two-full-years-to-surface",
+  "source": "The Decoder：AI News（RSS）",
+  "category": "tip",
+  "published_at": "2026-07-05",
+  "fetched_at": "2026-07-05 13:00:30"
+ },
+ {
+  "id": 1705,
   "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
-  "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近。",
-  "url": "",
-  "source": "",
+  "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近…",
+  "url": "https://www.marktechpost.com/2026/07/03/nvidia-ai-introduces-aspire-a-self-improving-robotics-framework-reaching-31-zero-shot-on-libero-pro-long-tasks",
+  "source": "MarkTechPost（RSS）",
   "category": "paper",
-  "published_at": "2026-07-04T06:32:47.000Z",
-  "fetched_at": "2026-07-04 13:00:44"
+  "published_at": "2026-07-05",
+  "fetched_at": "2026-07-05 13:00:29"
  },
  {
-  "id": 1688,
+  "id": 1704,
   "title": "我国研制全球首款基于可控存内计算的忆阻器神经动力学芯片",
   "summary": "北京大学集成电路学院联合中科院上海微系统所，发布全球首款基于可控存内计算的忆阻器神经动力学芯片，首次将单步运算时延压缩至2.12毫秒。芯片采用40纳米工艺，存内计算阵列与外围电路总面积0.28平方毫米，运行频率50 MHz，单步积分仅需9级流水。在脑皮层重建等任务中较当前GPU提速50至478倍，突破神经动力学实时计算瓶颈。相关成果7月3日发表于《科学》。",
-  "url": "",
-  "source": "",
+  "url": "https://www.ithome.com/0/972/526.htm",
+  "source": "IT之家（RSS）",
   "category": "paper",
-  "published_at": "2026-07-04T05:01:02.000Z",
-  "fetched_at": "2026-07-04 13:00:44"
+  "published_at": "2026-07-05",
+  "fetched_at": "2026-07-05 13:00:29"
  },
  {
   "id": 1666,
