@@ -160,13 +160,22 @@
  ],
  "Anthropic": [
   {
-   "id": 1707,
-   "title": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用",
-   "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用户自带 API key。项目以 TanStack Start web app 形式运行，上传文件自动解析索引，同一文件名重复上传可产生版本，检索时通过版本元数据字段过滤。",
-   "published_at": "2026-07-05T07:50:19.000Z",
-   "url": "",
+   "id": 1714,
+   "title": "Anthropic Claude Design 反向工程提示词开源更新",
+   "summary": "Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。",
+   "published_at": "2026-07-06",
+   "url": "https://github.com/Trystan-SA/claude-design-system-prompt",
    "category": "tip",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 1715,
+   "title": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用",
+   "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用…",
+   "published_at": "2026-07-06",
+   "url": "https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools",
+   "category": "tip",
+   "source": "MarkTechPost（RSS）"
   },
   {
    "id": 1659,
@@ -1228,6 +1237,24 @@
  ],
  "Claude Code": [
   {
+   "id": 1710,
+   "title": "美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码",
+   "summary": "美团今日宣布 LongCat-2.0 完全开源（MIT 许可），公开模型权重与推理代码。该模型为 MoE 架构，总参数量 1.6T，每 token 激活约 48B，支持 1M token 上下文。技术亮点包括 LongCat Sparse Attention 高效处理长文本、Zero-Compute Experts 动态激活 33B–56B 零浪费计算、MOPD 按任务路由 Agent/Reasoning/Interaction 三组专家。Benchmark 成绩：Terminal-Bench 2.1 70.8；SWE-bench Pro 59.5（超越 GPT-5.5 的 58.6）；SWE-bench Multilingual …",
+   "published_at": "2026-07-06",
+   "url": "https://x.com/Meituan_LongCat/status/2073768940078317713",
+   "category": "ai-models",
+   "source": "X：美团 LongCat (@Meituan_LongCat)"
+  },
+  {
+   "id": 1714,
+   "title": "Anthropic Claude Design 反向工程提示词开源更新",
+   "summary": "Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。",
+   "published_at": "2026-07-06",
+   "url": "https://github.com/Trystan-SA/claude-design-system-prompt",
+   "category": "tip",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
    "id": 1705,
    "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
    "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近…",
@@ -2261,6 +2288,15 @@
   }
  ],
  "Codex": [
+  {
+   "id": 1714,
+   "title": "Anthropic Claude Design 反向工程提示词开源更新",
+   "summary": "Anthropic 旗下 Claude Design 的反向工程系统提示词在 GitHub 以 MIT 许可证开源，包含 20 章提示词和 14 项技能，覆盖内容纪律、美学、无障碍（WCAG、语义 HTML、键盘导航）、交互状态、系统思维等。近日针对 Fable 5/Opus 4.7+ 系列校准，新增自主决策条款：小决定直接执行记录而不询问。项目支持 Claude Code/Claude.ai 及 Codex 两种变体。",
+   "published_at": "2026-07-06",
+   "url": "https://github.com/Trystan-SA/claude-design-system-prompt",
+   "category": "tip",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
   {
    "id": 1582,
    "title": "browser-use 发布开源 AI 视频剪辑 Skill「video-use」",
@@ -3849,6 +3885,15 @@
   }
  ],
  "GPT-5.5": [
+  {
+   "id": 1710,
+   "title": "美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码",
+   "summary": "美团今日宣布 LongCat-2.0 完全开源（MIT 许可），公开模型权重与推理代码。该模型为 MoE 架构，总参数量 1.6T，每 token 激活约 48B，支持 1M token 上下文。技术亮点包括 LongCat Sparse Attention 高效处理长文本、Zero-Compute Experts 动态激活 33B–56B 零浪费计算、MOPD 按任务路由 Agent/Reasoning/Interaction 三组专家。Benchmark 成绩：Terminal-Bench 2.1 70.8；SWE-bench Pro 59.5（超越 GPT-5.5 的 58.6）；SWE-bench Multilingual …",
+   "published_at": "2026-07-06",
+   "url": "https://x.com/Meituan_LongCat/status/2073768940078317713",
+   "category": "ai-models",
+   "source": "X：美团 LongCat (@Meituan_LongCat)"
+  },
   {
    "id": 1567,
    "title": "Senior SWE-Bench：评估AI智能体作为高级工程师的基准测试",
@@ -5610,13 +5655,13 @@
  ],
  "Llama": [
   {
-   "id": 1707,
+   "id": 1715,
    "title": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用",
-   "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用户自带 API key。项目以 TanStack Start web app 形式运行，上传文件自动解析索引，同一文件名重复上传可产生版本，检索时通过版本元数据字段过滤。",
-   "published_at": "2026-07-05T07:50:19.000Z",
-   "url": "",
+   "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用…",
+   "published_at": "2026-07-06",
+   "url": "https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools",
    "category": "tip",
-   "source": ""
+   "source": "MarkTechPost（RSS）"
   },
   {
    "id": 1263,
@@ -6413,6 +6458,15 @@
  ],
  "NVIDIA": [
   {
+   "id": 1712,
+   "title": "NVIDIA Kyber NVL144 延迟超 12 个月至 2028",
+   "summary": "重大延迟：Jensen 在 GTC 上展示 Kyber NVL144 仅 3 个月后，该项目遭遇重大挫折，已推迟超过 12 个月，延至 2028 年。下文我们将解释 Kyber 为何面临大幅延迟，以及 NVIDIA 的 NVL72x2 背靠背机架架构为何也被取消，导致 Rubin Ultra 的扩展域受限。👇️ 1/6🧵",
+   "published_at": "2026-07-06",
+   "url": "https://x.com/SemiAnalysis_/status/2073874671498387899",
+   "category": "industry",
+   "source": "X：SemiAnalysis (@SemiAnalysis_)"
+  },
+  {
    "id": 1705,
    "title": "NVIDIA 联合多所大学提出 ASPIRE：自我改进机器人框架，零样本成功率最高提升 77 分",
    "summary": "NVIDIA 联合密歇根大学、UIUC、UC Berkeley 等提出 ASPIRE，一个持续学习机器人框架。它通过协调器-执行器架构、闭环执行引擎、技能库和进化搜索，编写并优化机器人控制程序。编程智能体使用 Claude Code（Claude Opus 4.6，1M token 上下文窗口）。在 LIBERO-Pro 上最高比最强基线提升 77 分；Robosuite 双手交接成功率从 20% 提升至 92%；BEHAVIOR-1K 收音机拾取任务从 56% 提升至 88%。利用 LIBERO-90 积累的技能，ASPIRE 在零样本条件下对 LIBERO-Pro Long 任务达到约 31% 成功率，此前方法饱和在 4% 附近…",
@@ -7105,13 +7159,13 @@
  ],
  "OpenAI": [
   {
-   "id": 1707,
+   "id": 1715,
    "title": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用",
-   "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用户自带 API key。项目以 TanStack Start web app 形式运行，上传文件自动解析索引，同一文件名重复上传可产生版本，检索时通过版本元数据字段过滤。",
-   "published_at": "2026-07-05T07:50:19.000Z",
-   "url": "",
+   "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用…",
+   "published_at": "2026-07-06",
+   "url": "https://www.marktechpost.com/2026/07/05/llamaindex-legal-kb-agentic-retrieval-over-index-v2-with-retrieve-find-read-and-grep-tools",
    "category": "tip",
-   "source": ""
+   "source": "MarkTechPost（RSS）"
   },
   {
    "id": 1659,
@@ -8206,6 +8260,15 @@
   }
  ],
  "OpenClaw": [
+  {
+   "id": 1710,
+   "title": "美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码",
+   "summary": "美团今日宣布 LongCat-2.0 完全开源（MIT 许可），公开模型权重与推理代码。该模型为 MoE 架构，总参数量 1.6T，每 token 激活约 48B，支持 1M token 上下文。技术亮点包括 LongCat Sparse Attention 高效处理长文本、Zero-Compute Experts 动态激活 33B–56B 零浪费计算、MOPD 按任务路由 Agent/Reasoning/Interaction 三组专家。Benchmark 成绩：Terminal-Bench 2.1 70.8；SWE-bench Pro 59.5（超越 GPT-5.5 的 58.6）；SWE-bench Multilingual …",
+   "published_at": "2026-07-06",
+   "url": "https://x.com/Meituan_LongCat/status/2073768940078317713",
+   "category": "ai-models",
+   "source": "X：美团 LongCat (@Meituan_LongCat)"
+  },
   {
    "id": 1334,
    "title": "美团LongCat Owl Alpha：OpenRouter最流行模型，1.6万亿MoE，国产ASIC训练",

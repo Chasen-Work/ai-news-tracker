@@ -4,14 +4,14 @@
   "name": "OpenAI",
   "type": "company",
   "mentions": 118,
-  "last_seen": "2026-07-05T07:50:19.000Z"
+  "last_seen": "2026-07-06"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 103,
-  "last_seen": "2026-07-05T07:50:19.000Z"
+  "mentions": 104,
+  "last_seen": "2026-07-06"
  },
  {
   "id": 47,
@@ -24,22 +24,22 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 71,
-  "last_seen": "2026-07-05"
+  "mentions": 73,
+  "last_seen": "2026-07-06"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 54,
-  "last_seen": "2026-07-05"
+  "mentions": 55,
+  "last_seen": "2026-07-06"
  },
  {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 51,
-  "last_seen": "2026-07-03"
+  "mentions": 52,
+  "last_seen": "2026-07-06"
  },
  {
   "id": 6,
@@ -94,8 +94,8 @@
   "id": 2,
   "name": "GPT-5.5",
   "type": "model",
-  "mentions": 24,
-  "last_seen": "2026-07-03"
+  "mentions": 25,
+  "last_seen": "2026-07-06"
  },
  {
   "id": 13,
@@ -150,8 +150,8 @@
   "id": 25,
   "name": "OpenClaw",
   "type": "model",
-  "mentions": 12,
-  "last_seen": "2026-06-30"
+  "mentions": 13,
+  "last_seen": "2026-07-06"
  },
  {
   "id": 51,
@@ -627,7 +627,7 @@
   "name": "Llama",
   "type": "model",
   "mentions": 2,
-  "last_seen": "2026-07-05T07:50:19.000Z"
+  "last_seen": "2026-07-06"
  },
  {
   "id": 11,
