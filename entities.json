@@ -24,7 +24,7 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 78,
+  "mentions": 79,
   "last_seen": "2026-07-07"
  },
  {
@@ -133,6 +133,13 @@
   "last_seen": "2026-07-04"
  },
  {
+  "id": 25,
+  "name": "OpenClaw",
+  "type": "model",
+  "mentions": 15,
+  "last_seen": "2026-07-07"
+ },
+ {
   "id": 70,
   "name": "Google DeepMind",
   "type": "company",
@@ -144,13 +151,6 @@
   "name": "Apple",
   "type": "company",
   "mentions": 15,
-  "last_seen": "2026-07-07"
- },
- {
-  "id": 25,
-  "name": "OpenClaw",
-  "type": "model",
-  "mentions": 14,
   "last_seen": "2026-07-07"
  },
  {

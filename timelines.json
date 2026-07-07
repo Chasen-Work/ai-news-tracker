@@ -1318,6 +1318,15 @@
    "source": "Claude：Blog（网页）"
   },
   {
+   "id": 1803,
+   "title": "LLM-as-a-Verifier：一种通用验证框架",
+   "summary": "LLM-as-a-Verifier 是一种无需额外训练的通用验证框架，通过计算评分 token logits 分布的期望生成连续分数，实现细粒度反馈。该框架在 Terminal-Bench V2（86.5%）、SWE-Bench Verified（78.2%）、RoboRewardBench（87.4%）和 MedAgentBench（73.3%）上取得 SOTA 性能。其细粒度信号可用于 Claude Code 扩展，帮助开发者监控和改进智能体系统，也可为强化学习（如 SAC、GRPO）提供密集反馈，提升机器人学和数学推理基准的样本效率。",
+   "published_at": "2026-07-06T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 1710,
    "title": "美团 LongCat-2.0 完全开源（MIT 许可），1.6T MoE 模型开放权重与推理代码",
    "summary": "美团今日宣布 LongCat-2.0 完全开源（MIT 许可），公开模型权重与推理代码。该模型为 MoE 架构，总参数量 1.6T，每 token 激活约 48B，支持 1M token 上下文。技术亮点包括 LongCat Sparse Attention 高效处理长文本、Zero-Compute Experts 动态激活 33B–56B 零浪费计算、MOPD 按任务路由 Agent/Reasoning/Interaction 三组专家。Benchmark 成绩：Terminal-Bench 2.1 70.8；SWE-bench Pro 59.5（超越 GPT-5.5 的 58.6）；SWE-bench Multilingual …",
@@ -8529,6 +8538,15 @@
    "url": "https://x.com/openclaw/status/2074187998602871212",
    "category": "ai-products",
    "source": "X：OpenClaw (@openclaw)"
+  },
+  {
+   "id": 1800,
+   "title": "蚂蚁 inclusionAI 开源多智能体协作基础设施 Avernet V0.1",
+   "summary": "蚂蚁 inclusionAI 开源的多智能体协作基础设施 Avernet V0.1 正式发布。该项目聚焦 Agent 注册、发现、邀请等协作层问题，不替代 Agent 自身推理能力。通过群组、会话和共享上下文构建多方共识，支持自由聊天、领导-跟随等协作模式，并利用协作反馈形成观察、评估到复用、优化的自动进化闭环。支持 OpenClaw、自定义 Agent、第三方 Agent 引擎及现有 bot 平台等异构生态，提供 Docker 与本地两种快速部署路径。",
+   "published_at": "2026-07-06T03:52:54.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
   },
   {
    "id": 1710,
