@@ -1,16 +1,16 @@
 {
- "total_items": 979,
- "total_entities": 120,
- "total_dailies": 36,
+ "total_items": 1003,
+ "total_entities": 121,
+ "total_dailies": 37,
  "categories": {
-  "ai-products": 285,
-  "tip": 265,
-  "industry": 234,
-  "paper": 107,
-  "ai-models": 88
+  "ai-products": 292,
+  "tip": 275,
+  "industry": 237,
+  "paper": 110,
+  "ai-models": 89
  },
  "entity_types": {
-  "model": 66,
+  "model": 67,
   "company": 54
  },
  "top_sources": [
@@ -20,11 +20,11 @@
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 52
+   "count": 54
   },
   {
    "name": "Hugging Face：Blog（RSS）",
-   "count": 31
+   "count": 32
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
@@ -32,23 +32,23 @@
   },
   {
    "name": "TechCrunch：AI（RSS）",
-   "count": 22
+   "count": 23
   },
   {
    "name": "The Decoder：AI News（RSS）",
-   "count": 20
-  },
-  {
-   "name": "MarkTechPost（RSS）",
-   "count": 17
-  },
-  {
-   "name": "X：Rohan Paul (@rohanpaul_ai)",
-   "count": 16
+   "count": 21
   },
   {
    "name": "Claude：Blog（网页）",
-   "count": 16
+   "count": 19
+  },
+  {
+   "name": "MarkTechPost（RSS）",
+   "count": 18
+  },
+  {
+   "name": "X：Rohan Paul (@rohanpaul_ai)",
+   "count": 17
   },
   {
    "name": "Bloomberg：Technology（RSS）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-06-08",
-   "count": 33
-  },
   {
    "date": "2026-06-09",
    "count": 60
@@ -174,8 +170,12 @@
   },
   {
    "date": "2026-07-07",
-   "count": 28
+   "count": 27
+  },
+  {
+   "date": "2026-07-08",
+   "count": 25
   }
  ],
- "updated_at": "2026-07-07T13:00:29Z"
+ "updated_at": "2026-07-08T01:00:30Z"
 }
