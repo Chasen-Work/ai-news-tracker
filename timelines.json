@@ -1291,6 +1291,15 @@
  ],
  "Claude Code": [
   {
+   "id": 1877,
+   "title": "工信部发布Claude Code后门安全风险提示",
+   "summary": "中国工信部发布风险提示，指出 Claude Code 2.1.91 至 2.1.196 版本内置监控机制，未经用户同意即向远程服务器回传用户地域、身份标识等敏感信息。建议相关单位立即全面排查，对受影响版本卸载或升级至已清除后门代码的最新安全版本，并加强开发工具外联权限管控与流量监测，防止敏感数据违规外传。",
+   "published_at": "2026-07-08T06:05:32.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 1814,
    "title": "Rowboat：开源、本地优先的桌面AI助手",
    "summary": "Rowboat 是一个开源、本地优先的桌面 AI 助手，将邮件、会议、Slack 等数据索引为 Obsidian 风格的知识图谱，提供持久上下文记忆。内置邮件客户端、浏览器、会议记录器、代码模式（可调用 Claude Code 或 Codex 代理），并支持按事件或定时运行的背景代理。用户可通过 MCP 协议接入 Exa 搜索、GitHub 等外部工具。所有数据以纯 Markdown 格式本地存储，无供应商锁定，支持 Ollama/LM Studio 本地模型或使用 API 密钥的托管模型。",
@@ -4089,6 +4098,15 @@
  ],
  "GPT-5.3": [
   {
+   "id": 1878,
+   "title": "AI 审计代理在 Cloudflare CIRCL 中发现 7 个漏洞",
+   "summary": "zkSecurity 的 AI 审计代理 zkao 持续扫描 Cloudflare 的 CIRCL 密码学库，使用 Opus 4.6 + skills 和 GPT-5.3 + skills 等模型发现并确认了 7 个真实漏洞。其中包括阈值 RSA 中 float64 精度丢失（AI 自评 Critical）和属性基加密（CP-ABE）访问控制完全失效（Critical，由 zkao 自行发现）。所有漏洞已在上游修复，多数在 HackerOne 上获得确认和奖励。AI 生成的候选发现仍需人工验证，但 zkao 已能自动完成大部分验证工作。",
+   "published_at": "2026-07-08T04:29:33.609Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 1220,
    "title": "OpenAI 与 Broadcom 联合发布 LLM 推理芯片 Jalapeño",
    "summary": "OpenAI 与 Broadcom 发布首款自研推理加速器 Jalapeño，专为当前及未来 LLM 从头设计。早期测试显示，其性能功耗比大幅优于现有 SOTA。工程样片已在实验室以目标频率和功耗运行 GPT-5.3-Codex-Spark 等负载。芯片从设计到流片仅用 9 个月，并利用 OpenAI 模型加速部分流程。OpenAI 计划从 2026 年起与 Microsoft 等合作伙伴部署千兆瓦级数据中心，推出多代计算平台。",
@@ -4400,6 +4418,15 @@
   }
  ],
  "GPT-5.6": [
+  {
+   "id": 1879,
+   "title": "美国商务部批准OpenAI大规模发布GPT-5.6，Sol明日亮相",
+   "summary": "美国商务部正式批准OpenAI大规模发布GPT-5.6。OpenAI宣布GPT-5.6 Sol将于本周四完成最后准备后，与Terra和Luna一同面向公众推出。此前因国家安全考量，美国政府要求分阶段发布，仅允许向经批准的有限实体开放。此次全面放行标志着临时管控结束。获批前，美国商务部下属AI标准与创新中心执行了测试，OpenAI技术团队驻扎华盛顿配合沟通。美国最新AI行政令即将出台，旨在为先进AI模型发布建立正式评估框架。",
+   "published_at": "2026-07-08T03:30:52.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1497,
    "title": "OpenAI论文揭示GPT-5.6三个Pro变体，打破单一顶级策略",
@@ -5555,6 +5582,15 @@
  ],
  "Hugging Face": [
   {
+   "id": 1880,
+   "title": "蚂蚁集团旗下Robbyant开源LingBot-Vision：1B参数边界中心视觉基础模型，用于密集空间感知",
+   "summary": "蚂蚁集团旗下具身智能公司Robbyant开源LingBot-Vision，一套自监督视觉Transformer家族，专为密集空间感知设计。旗舰ViT-g/16参数约1.1B，采用掩膜边界建模训练，将边界作为原生预训练信号。在密集空间任务中，该1B模型匹配或超越参数规模高达7倍的大模型（如7B DINOv3）。模型以Apache-2.0许可证在Hugging Face开源，提供ViT-g、ViT-L（300M）、ViT-B（86M）、ViT-S四个规模。",
+   "published_at": "2026-07-08T03:03:22.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 1819,
    "title": "Hugging Face Storage 成为 SkyPilot 一级后端：零出站费跨云存储",
    "summary": "Hugging Face Storage 现为 SkyPilot 的一级后端。用户通过 `hf://` URL 和现有 HFTOKEN 即可将 Hugging Face Bucket（读写）或模型/数据集/Space 仓库（只读）挂载到 SkyPilot 任务中，支持 MOUNT（FUSE 懒加载）或 COPY 模式。SkyPilot 可将任务调度到 20+ 云、Kubernetes、Slurm 及本地集群的任意可用 GPU 上。Hugging Face 不收取出站及 CDN 费用，故跨云读取数据无额外成本。存储价格 $12–18/TB/月，低于 AWS S3 加出站费。Bucket 基于 Xet，增量检查点和模型变体仅存储和传输改…",
@@ -5772,6 +5808,15 @@
   }
  ],
  "HuggingFace": [
+  {
+   "id": 1881,
+   "title": "Pulpie：用于清理网络的Pareto最优模型",
+   "summary": "Pulpie是一族Pareto最优模型，用于从HTML页面提取主要内容。其最小模型pulpie-orange-small（210M参数）在WebMainBench上取得0.862的ROUGE-5 F1分数，接近600M参数的Dripper（0.864），但成本仅1/20。在NVIDIA L4 GPU上，Pulpie处理速度13.7页/秒，Dripper仅0.68页/秒。清理10亿页HTML，Pulpie成本约$7，900，Dripper需$159，000。模型采用编码器架构，单次前向传播即可标记每个HTML块为内容或模板，已在HuggingFace开源。",
+   "published_at": "2026-07-08T01:33:24.910Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 1731,
    "title": "OpenClaw 登陆 HuggingFace 本地应用",
@@ -6863,6 +6908,15 @@
  ],
  "NVIDIA": [
   {
+   "id": 1881,
+   "title": "Pulpie：用于清理网络的Pareto最优模型",
+   "summary": "Pulpie是一族Pareto最优模型，用于从HTML页面提取主要内容。其最小模型pulpie-orange-small（210M参数）在WebMainBench上取得0.862的ROUGE-5 F1分数，接近600M参数的Dripper（0.864），但成本仅1/20。在NVIDIA L4 GPU上，Pulpie处理速度13.7页/秒，Dripper仅0.68页/秒。清理10亿页HTML，Pulpie成本约$7，900，Dripper需$159，000。模型采用编码器架构，单次前向传播即可标记每个HTML块为内容或模板，已在HuggingFace开源。",
+   "published_at": "2026-07-08T01:33:24.910Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 1712,
    "title": "NVIDIA Kyber NVL144 延迟超 12 个月至 2028",
    "summary": "重大延迟：Jensen 在 GTC 上展示 Kyber NVL144 仅 3 个月后，该项目遭遇重大挫折，已推迟超过 12 个月，延至 2028 年。下文我们将解释 Kyber 为何面临大幅延迟，以及 NVIDIA 的 NVL72x2 背靠背机架架构为何也被取消，导致 Rubin Ultra 的扩展域受限。👇️ 1/6🧵",
@@ -7398,6 +7452,15 @@
  ],
  "Nemotron": [
   {
+   "id": 1901,
+   "title": "Nemotron-Labs-Diffusion：统一自回归、扩散与自我推测解码的三模式语言模型",
+   "summary": "Nemotron-Labs-Diffusion 是一种三模式语言模型，通过联合自回归（AR）和扩散损失训练，在单一架构中统一了 AR、扩散和自我推测解码。研究显示 AR 与扩散目标互补：扩散增强前瞻规划，AR 提供从左至右的语言先验。自我推测模式下，扩散充当草稿模型、AR 负责验证，其接受率和实际设备效率均优于多 token 预测（MTP）。在最优化采样器下，单次前向传播产出 token 数比自我推测最多高 76.5%。该系列包含 3B、8B、14B 参数的基础、指令和视觉语言模型，在准确率和速度上均超越现有开源 AR 和扩散 LM。例如 8B 模型单次前向解码 token 数是 Qwen3-8B 的 6 倍，在 GB200 GPU 上使用 SGLang 运行 SPEED-Bench 时吞吐量提升 4 倍。",
+   "published_at": "2026-07-07T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 1486,
    "title": "NVIDIA 发布 Nemotron-Labs-TwoTower 开放权重扩散语言模型",
    "summary": "NVIDIA 发布 Nemotron-Labs-TwoTower，基于冻结的自回归骨干 Nemotron-3-Nano-30B-A3B 的扩散语言模型。采用双塔架构：上下文塔冻结，降噪器塔训练，通过层对齐交叉注意力和状态播种协作。在 2×H100 上 BF16 评估，保留 98.7% 的 AR 基线质量，生成吞吐量提升 2.42 倍（γ=0.8，块大小 S=16）。降噪器在约 2.1T token 上训练，骨干使用 25T token 预训练。总参数约 60B，每 token 活跃参数约 3B/塔。支持扩散、模拟 AR 和 AR 三种解码模式。",
@@ -7563,6 +7626,24 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 1874,
+   "title": "加拿大不列颠哥伦比亚省拟起诉OpenAI：未上报ChatGPT暴力对话致校园枪击惨案",
+   "summary": "加拿大不列颠哥伦比亚省7月7日宣布将起诉OpenAI，指控其未向执法部门上报一名ChatGPT用户2025年6月封禁前的暴力相关对话内容。该用户随后于今年2月在塔布勒岭制造校园枪击案，杀害8人。OpenAI CEO萨姆·奥尔特曼今年4月为此公开致歉，承认本应上报但未执行。受害家属已在加州法院提起诉讼，省政府正协调独立诉讼，要求赔偿用于社区重建。",
+   "published_at": "2026-07-08T09:55:17.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 1879,
+   "title": "美国商务部批准OpenAI大规模发布GPT-5.6，Sol明日亮相",
+   "summary": "美国商务部正式批准OpenAI大规模发布GPT-5.6。OpenAI宣布GPT-5.6 Sol将于本周四完成最后准备后，与Terra和Luna一同面向公众推出。此前因国家安全考量，美国政府要求分阶段发布，仅允许向经批准的有限实体开放。此次全面放行标志着临时管控结束。获批前，美国商务部下属AI标准与创新中心执行了测试，OpenAI技术团队驻扎华盛顿配合沟通。美国最新AI行政令即将出台，旨在为先进AI模型发布建立正式评估框架。",
+   "published_at": "2026-07-08T03:30:52.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1823,
    "title": "微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型",
@@ -9214,6 +9295,15 @@
    "source": "MarkTechPost（RSS）"
   },
   {
+   "id": 1901,
+   "title": "Nemotron-Labs-Diffusion：统一自回归、扩散与自我推测解码的三模式语言模型",
+   "summary": "Nemotron-Labs-Diffusion 是一种三模式语言模型，通过联合自回归（AR）和扩散损失训练，在单一架构中统一了 AR、扩散和自我推测解码。研究显示 AR 与扩散目标互补：扩散增强前瞻规划，AR 提供从左至右的语言先验。自我推测模式下，扩散充当草稿模型、AR 负责验证，其接受率和实际设备效率均优于多 token 预测（MTP）。在最优化采样器下，单次前向传播产出 token 数比自我推测最多高 76.5%。该系列包含 3B、8B、14B 参数的基础、指令和视觉语言模型，在准确率和速度上均超越现有开源 AR 和扩散 LM。例如 8B 模型单次前向解码 token 数是 Qwen3-8B 的 6 倍，在 GB200 GPU 上使用 SGLang 运行 SPEED-Bench 时吞吐量提升 4 倍。",
+   "published_at": "2026-07-07T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 1732,
    "title": "SGLang 集成 DSpark 推测解码：置信度驱动的可变长度验证",
    "summary": "SGLang 团队将 DSpark 推测解码算法集成到开源推理引擎中。该算法采用半自回归块起草器一次生成一组 token，并利用置信度头与顺序温度缩放（STS）为每个请求动态分配可变验证长度，从而在高负载下裁剪无效验证成本。SGLang 支持密集模型（如 Qwen3）和稀疏模型（如 DeepSeek-V4），通过全 CUDA 图处理不规则的每请求验证长度。提供三种验证模式：`static`（全长）、`compact`（生产路径）和 `cap-accept`（接受上限测量）。还引入了零开销调度、基于离线成本表的在线调度器、融合 Triton 核等优化。在 H200 上使用 DeepSeek-V4-Flash 的测试中，DSpark 在…",
@@ -9858,6 +9948,15 @@
   }
  ],
  "Qwen3-8": [
+  {
+   "id": 1901,
+   "title": "Nemotron-Labs-Diffusion：统一自回归、扩散与自我推测解码的三模式语言模型",
+   "summary": "Nemotron-Labs-Diffusion 是一种三模式语言模型，通过联合自回归（AR）和扩散损失训练，在单一架构中统一了 AR、扩散和自我推测解码。研究显示 AR 与扩散目标互补：扩散增强前瞻规划，AR 提供从左至右的语言先验。自我推测模式下，扩散充当草稿模型、AR 负责验证，其接受率和实际设备效率均优于多 token 预测（MTP）。在最优化采样器下，单次前向传播产出 token 数比自我推测最多高 76.5%。该系列包含 3B、8B、14B 参数的基础、指令和视觉语言模型，在准确率和速度上均超越现有开源 AR 和扩散 LM。例如 8B 模型单次前向解码 token 数是 Qwen3-8B 的 6 倍，在 GB200 GPU 上使用 SGLang 运行 SPEED-Bench 时吞吐量提升 4 倍。",
+   "published_at": "2026-07-07T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 1151,
    "title": "DFlash：块扩散草稿模型实现最高15倍吞吐量提升",
