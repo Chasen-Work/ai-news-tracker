@@ -10,8 +10,8 @@
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 120,
-  "last_seen": "2026-07-10"
+  "mentions": 123,
+  "last_seen": "2026-07-10T07:26:10.000Z"
  },
  {
   "id": 47,
@@ -24,8 +24,8 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 87,
-  "last_seen": "2026-07-10"
+  "mentions": 88,
+  "last_seen": "2026-07-10T01:45:26.000Z"
  },
  {
   "id": 10,
@@ -38,15 +38,15 @@
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 55,
-  "last_seen": "2026-07-10"
+  "mentions": 56,
+  "last_seen": "2026-07-10T07:14:39.000Z"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 47,
-  "last_seen": "2026-07-10"
+  "mentions": 48,
+  "last_seen": "2026-07-10T09:59:00.000Z"
  },
  {
   "id": 79,
@@ -77,15 +77,15 @@
   "last_seen": "2026-07-09"
  },
  {
-  "id": 4,
-  "name": "xAI",
-  "type": "company",
-  "mentions": 33,
-  "last_seen": "2026-07-10"
- },
- {
   "id": 43,
   "name": "Meta",
+  "type": "company",
+  "mentions": 34,
+  "last_seen": "2026-07-10T07:26:10.000Z"
+ },
+ {
+  "id": 4,
+  "name": "xAI",
   "type": "company",
   "mentions": 33,
   "last_seen": "2026-07-10"
@@ -94,7 +94,7 @@
   "id": 2,
   "name": "GPT-5.5",
   "type": "model",
-  "mentions": 27,
+  "mentions": 28,
   "last_seen": "2026-07-10"
  },
  {
@@ -203,6 +203,13 @@
   "last_seen": "2026-07-09"
  },
  {
+  "id": 304,
+  "name": "Qwen3.5",
+  "type": "model",
+  "mentions": 8,
+  "last_seen": "2026-07-10T09:59:00.000Z"
+ },
+ {
   "id": 338,
   "name": "GPT-5.4",
   "type": "model",
@@ -250,13 +257,6 @@
   "type": "model",
   "mentions": 7,
   "last_seen": "2026-06-25"
- },
- {
-  "id": 304,
-  "name": "Qwen3.5",
-  "type": "model",
-  "mentions": 7,
-  "last_seen": "2026-07-08"
  },
  {
   "id": 760,

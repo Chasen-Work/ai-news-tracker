@@ -1,5 +1,55 @@
 [
  {
+  "id": 2036,
+  "title": "小红书发布大模型新架构 PIPO",
+  "summary": "小红书提出 PIPO 架构，通过输入侧压缩器将两个 token 折叠为一个 latent，输出侧 MTP head 将隐藏状态展开为额外 token，实现输入长度减半、每步输出翻倍。基于 Qwen3.5-4B/9B backbone，在 AIME 2025 等基准上最高带来 +7.15 pass@4 提升。部署测评中，TTFT 加速约 1.23×，TPOT 加速约 1.86×。训练采用 SFT 和 On-Policy Distillation 两阶段，将 verifier 校验能力蒸馏进轻量 confidence head。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-07-10T09:59:00.000Z",
+  "fetched_at": "2026-07-10 13:00:48"
+ },
+ {
+  "id": 2037,
+  "title": "扎克伯格首度回应 Meta\"算力过剩\"：没人会嫌算力太多，但租出去更赚钱",
+  "summary": "Meta CEO 扎克伯格首次正面回应公司筹划云基础设施业务一事，否认\"算力过剩\"猜测，称内部算力需求依然旺盛、满负荷运转。但他同时表示，当前市场对算力出价极高，将部分 AI 基础设施对外出租在财务上更划算。Meta 正制定代号\"Meta Compute\"的云计算计划，包括开放模型访问权限和直接出租裸算力两条路线。扎克伯格还提及 SpaceX 以每月 12.5 亿美元将数据中心租给 Anthropic 的模式。Meta 2026 年资本支出指引达 1250 亿至 1450 亿美元，计划 2026 年 9 月量产自研 AI 芯片，目标 2027 年部署算力提升至 14 吉瓦。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-10T07:26:10.000Z",
+  "fetched_at": "2026-07-10 13:00:48"
+ },
+ {
+  "id": 2038,
+  "title": "马斯克承认Anthropic是当前AI领导者",
+  "summary": "马斯克在X上发文承认自己此前对Anthropic的判断有误，称其\"显然是当前AI领域的领导者\"。他表示，没有公司发布过像Mythos/Fable这样优秀的模型，并相信Anthropic很快会推出Mythos 2。他还强调，即使作为竞争对手，也不会以伤害对方的方式切断合作，并列举了特斯拉开源专利、开放超级充电网络等先例。该推文被Rohan Paul转发，称这是Anthropic\"最强有力的炫耀\"。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-10T07:20:46.000Z",
+  "fetched_at": "2026-07-10 13:00:48"
+ },
+ {
+  "id": 2039,
+  "title": "Elon Musk 转发用户称赞 Grok Build 的反馈",
+  "summary": "Elon Musk 转发用户 @0x0funky 对 Grok Build 的称赞。该用户称 Grok Build 是目前唯一集大成的 coding agentic workflow，内建图像生成和图片生视频功能，生图速度快且品质不输 Codex。Agent 可直接完成图像与视频生成，无需额外串接 MCP 或外部服务。用户结合 Agent Sprite Forge 工具，利用 Grok Build 的视频生成能力，先产出 6 秒角色动作视频再反编译为 game sprite，大幅减少对齐问题，制作 2D 横版游戏耗时不到 30 分钟，而此前用 Codex 需 1-2 小时且品质更优。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-10T07:14:39.000Z",
+  "fetched_at": "2026-07-10 13:00:48"
+ },
+ {
+  "id": 2040,
+  "title": "Claude Code v2.1.206 发布",
+  "summary": "Claude Code v2.1.206 发布，主要更新包括：为 `/cd` 命令添加目录路径建议；新增 `/doctor` 检查以建议修剪 CLAUDE.md 文件中模型可从代码库推导的内容；`/commit-push-pr` 现在自动允许 git push 到仓库配置的推送远程仓库；`/login` 支持 Anthropic 运营的公共网关端点；后台智能体在更新后自动升级。修复了过期登录导致所有模型报错、`claude --resume` 和 `--continue` 在启动时无键盘响应、MCP 服务器忽略 `request_timeout_ms` 配置、OAuth MCP 服务器需手动重新认证、`/model` 选择器价格显示错误、桌面会话卡在\"运行中\"状态、Windows 上键盘输入被忽略等多项问题。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-07-10T01:45:26.000Z",
+  "fetched_at": "2026-07-10 13:00:48"
+ },
+ {
   "id": 1999,
   "title": "Google Research 推出 SensorFM：面向可穿戴健康数据的通用基础模型",
   "summary": "Google Research 发布 SensorFM，一个在超过 100 万亿分钟多模态传感器数据上预训练的大规模基础模型，数据来自 500 万同意参与者，涵盖 100 多个国家及 20 余款 Fitbit 和 Pixel Watch 设备。SensorFM 学习通用的人体生理表征，可迁移至心血管、代谢、睡眠、心理健康及生活方式等 35 项健康预测任务，支持标签高效适配与数据填充，并可作为个人健康智能体的基础工具。该模型旨在解决传统可穿戴健康模型针对单一终点、难以泛化的问题。",
@@ -270,6 +320,16 @@
   "fetched_at": "2026-07-10 01:00:49"
  },
  {
+  "id": 2045,
+  "title": "Cognition 推出 SWE-1.7，接近 GPT 5.5 与 Opus 智能水平",
+  "summary": "Cognition 发布迄今最强模型 SWE-1.7，基于 Kimi K2.7 基座训练，通过强化学习管线改进（基础设施、训练稳定性、数据质量、长程任务技术）实现前沿智能水平并大幅降低成本。在 FrontierCode 1.1 Main 基准上达 42.3%（Kimi K2.7 Code 为 30.1%，GPT-5.5 为 43.0%，Opus 4.8 为 46.5%），Terminal-Bench 2.1 达 81.5%，SWE-Bench Multilingual 达 77.8%。模型针对长周期异步任务优化，现已在 Devin（Web、桌面、CLI）通过 Cerebras 以 1000 TPS 提供。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-09T21:46:17.901Z",
+  "fetched_at": "2026-07-10 13:00:48"
+ },
+ {
   "id": 2006,
   "title": "SWE-1.7 的覆盖范围接近 GPT 5.5 和 Opus Intelligence",
   "summary": null,
@@ -298,6 +358,16 @@
   "category": "industry",
   "published_at": "2026-07-09T13:01:09.000Z",
   "fetched_at": "2026-07-10 01:00:49"
+ },
+ {
+  "id": 2055,
+  "title": "美团 LongCat-2.0 正式开源，同步开放国产卡推理代码",
+  "summary": "美团万亿参数大模型 LongCat-2.0 正式开源，总参数 1.6T，平均激活约 48B，专为真实 Agentic Coding 任务设计。模型引入 LongCat 稀疏注意力机制与 N-gram Embedding，提升长上下文处理效率与 Token 级表示能力。LongCat-2.0 是业界首个在五万卡国产算力集群上完成推理的万亿参数模型，从模型架构、芯片适配到部署策略进行深度协同优化，支持百万上下文高效推理。开源同步提供 BF16、FP8、INT8 等多精度版本及针对国产算力极致优化的推理代码。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-09T11:58:00.000Z",
+  "fetched_at": "2026-07-10 13:00:48"
  },
  {
   "id": 1945,
