@@ -160,30 +160,39 @@
  ],
  "Anthropic": [
   {
+   "id": 2071,
+   "title": "Claude Code v2.1.206 发布",
+   "summary": "Claude Code v2.1.206 发布，主要更新包括：为 `/cd` 命令添加目录路径建议；新增 `/doctor` 检查以建议修剪 CLAUDE.md 文件中模型可从代码库推导的内容；`/commit-push-pr` 现在自动允许 git push 到仓库配置的推送远程仓库；`/login` 支持 Anthropic 运营的公共网关端点；后台智能体在更新后自动升级。修复了过期登录导致所有模型报错、`claude --resume` 和 `--continue` 在启动时无键盘响应、MCP 服务器忽略 `request_timeout_ms` 配置、OAuth MCP 服务器需手动重新认证、`/model` 选择器价格显示…",
+   "published_at": "2026-07-11",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 2074,
+   "title": "扎克伯格首度回应 Meta“算力过剩”：没人会嫌算力太多，但租出去更赚钱",
+   "summary": "Meta CEO 扎克伯格首次正面回应公司筹划云基础设施业务一事，否认“算力过剩”猜测，称内部算力需求依然旺盛、满负荷运转。但他同时表示，当前市场对算力出价极高，将部分 AI 基础设施对外出租在财务上更划算。Meta 正制定代号“Meta Compute”的云计算计划，包括开放模型访问权限和直接出租裸算力两条路线。扎克伯格还提及 SpaceX 以每月 12.5 亿美元将数据中心租给 Anthropic 的模式。Meta 2026 年资本支出指引达 1250 亿至 1450 亿美元，计划 2026 年 9 月量产自研 AI 芯片，目标 2027 年部署算力提升至 14 吉瓦。",
+   "published_at": "2026-07-11",
+   "url": "https://www.ithome.com/0/975/078.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 2080,
+   "title": "马斯克承认Anthropic是当前AI领导者",
+   "summary": "马斯克在X上发文承认自己此前对Anthropic的判断有误，称其“显然是当前AI领域的领导者”。他表示，没有公司发布过像Mythos/Fable这样优秀的模型，并相信Anthropic很快会推出Mythos 2。他还强调，即使作为竞争对手，也不会以伤害对方的方式切断合作，并列举了特斯拉开源专利、开放超级充电网络等先例。该推文被Rohan Paul转发，称这是Anthropic“最强有力的炫耀”。",
+   "published_at": "2026-07-11",
+   "url": "https://x.com/rohanpaul_ai/status/2075480331600417141",
+   "category": "tip",
+   "source": "X：Rohan Paul (@rohanpaul_ai)"
+  },
+  {
    "id": 2037,
    "title": "扎克伯格首度回应 Meta\"算力过剩\"：没人会嫌算力太多，但租出去更赚钱",
    "summary": "Meta CEO 扎克伯格首次正面回应公司筹划云基础设施业务一事，否认\"算力过剩\"猜测，称内部算力需求依然旺盛、满负荷运转。但他同时表示，当前市场对算力出价极高，将部分 AI 基础设施对外出租在财务上更划算。Meta 正制定代号\"Meta Compute\"的云计算计划，包括开放模型访问权限和直接出租裸算力两条路线。扎克伯格还提及 SpaceX 以每月 12.5 亿美元将数据中心租给 Anthropic 的模式。Meta 2026 年资本支出指引达 1250 亿至 1450 亿美元，计划 2026 年 9 月量产自研 AI 芯片，目标 2027 年部署算力提升至 14 吉瓦。",
    "published_at": "2026-07-10T07:26:10.000Z",
    "url": "",
    "category": "industry",
-   "source": ""
-  },
-  {
-   "id": 2038,
-   "title": "马斯克承认Anthropic是当前AI领导者",
-   "summary": "马斯克在X上发文承认自己此前对Anthropic的判断有误，称其\"显然是当前AI领域的领导者\"。他表示，没有公司发布过像Mythos/Fable这样优秀的模型，并相信Anthropic很快会推出Mythos 2。他还强调，即使作为竞争对手，也不会以伤害对方的方式切断合作，并列举了特斯拉开源专利、开放超级充电网络等先例。该推文被Rohan Paul转发，称这是Anthropic\"最强有力的炫耀\"。",
-   "published_at": "2026-07-10T07:20:46.000Z",
-   "url": "",
-   "category": "tip",
-   "source": ""
-  },
-  {
-   "id": 2040,
-   "title": "Claude Code v2.1.206 发布",
-   "summary": "Claude Code v2.1.206 发布，主要更新包括：为 `/cd` 命令添加目录路径建议；新增 `/doctor` 检查以建议修剪 CLAUDE.md 文件中模型可从代码库推导的内容；`/commit-push-pr` 现在自动允许 git push 到仓库配置的推送远程仓库；`/login` 支持 Anthropic 运营的公共网关端点；后台智能体在更新后自动升级。修复了过期登录导致所有模型报错、`claude --resume` 和 `--continue` 在启动时无键盘响应、MCP 服务器忽略 `request_timeout_ms` 配置、OAuth MCP 服务器需手动重新认证、`/model` 选择器价格显示错误、桌面会话卡在\"运行中\"状态、Windows 上键盘输入被忽略等多项问题。",
-   "published_at": "2026-07-10T01:45:26.000Z",
-   "url": "",
-   "category": "ai-products",
    "source": ""
   },
   {
@@ -1269,6 +1278,15 @@
  ],
  "Apple": [
   {
+   "id": 2073,
+   "title": "Apple 起诉 OpenAI 窃取商业机密",
+   "summary": "Apple 于周五向美国加州北区联邦法院提起诉讼，指控 OpenAI 窃取商业机密并违反合同。诉状称，OpenAI 高级领导层（包括首席硬件官 Tang Tan）指使前 Apple 员工在招聘过程中窃取机密，包括使用未发布产品的项目代号、要求应聘者携带硬件组件参加面试。Apple 还指控前高级系统电气工程师 Chang Liu 在 2026 年离职加入 OpenAI 后未归还公司笔记本电脑，并用其下载机密技术文档。Apple 称其机密信息已被 OpenAI 用于开发自有硬件产品，例如一项专有金属精加工技术。Apple 要求法院禁止 OpenAI 使用或披露其商业机密，并归还相关材料。",
+   "published_at": "2026-07-11",
+   "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
    "id": 1992,
    "title": "揭密在线策略蒸馏：何时有益、何时有害及原因",
    "summary": "Apple机器学习研究团队提出训练无关诊断框架，以每个token、每个问题、每个教师的分辨率分析on-policy蒸馏。通过可扩展targeted-rollout算法估计理想梯度，并计算蒸馏梯度与理想梯度的余弦相似度（梯度对齐分数）。实验发现，蒸馏指导在错误rollouts上的对齐程度显著高于正确rollouts；最优蒸馏上下文取决于学生模型容量和目标任务，无通用配置。这些发现推动每任务、每token的诊断分析。",
@@ -1444,13 +1462,22 @@
  ],
  "Claude Code": [
   {
-   "id": 2040,
-   "title": "Claude Code v2.1.206 发布",
-   "summary": "Claude Code v2.1.206 发布，主要更新包括：为 `/cd` 命令添加目录路径建议；新增 `/doctor` 检查以建议修剪 CLAUDE.md 文件中模型可从代码库推导的内容；`/commit-push-pr` 现在自动允许 git push 到仓库配置的推送远程仓库；`/login` 支持 Anthropic 运营的公共网关端点；后台智能体在更新后自动升级。修复了过期登录导致所有模型报错、`claude --resume` 和 `--continue` 在启动时无键盘响应、MCP 服务器忽略 `request_timeout_ms` 配置、OAuth MCP 服务器需手动重新认证、`/model` 选择器价格显示错误、桌面会话卡在\"运行中\"状态、Windows 上键盘输入被忽略等多项问题。",
-   "published_at": "2026-07-10T01:45:26.000Z",
-   "url": "",
+   "id": 2069,
+   "title": "Claude Code桌面版新增应用内浏览器",
+   "summary": "Claude Code 桌面版现在有了应用内浏览器。 Claude 可以调出文档、设计稿或任何其他网站。它可以像操作本地开发服务器一样，进行阅读、点击浏览和交互。 该浏览器采用沙盒机制且可配置：你可以自行选择会话是否持久保留。",
+   "published_at": "2026-07-11",
+   "url": "https://x.com/ClaudeDevs/status/2075635283211772279",
    "category": "ai-products",
-   "source": ""
+   "source": "X：Claude Devs (@ClaudeDevs)"
+  },
+  {
+   "id": 2071,
+   "title": "Claude Code v2.1.206 发布",
+   "summary": "Claude Code v2.1.206 发布，主要更新包括：为 `/cd` 命令添加目录路径建议；新增 `/doctor` 检查以建议修剪 CLAUDE.md 文件中模型可从代码库推导的内容；`/commit-push-pr` 现在自动允许 git push 到仓库配置的推送远程仓库；`/login` 支持 Anthropic 运营的公共网关端点；后台智能体在更新后自动升级。修复了过期登录导致所有模型报错、`claude --resume` 和 `--continue` 在启动时无键盘响应、MCP 服务器忽略 `request_timeout_ms` 配置、OAuth MCP 服务器需手动重新认证、`/model` 选择器价格显示…",
+   "published_at": "2026-07-11",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.206",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
   },
   {
    "id": 1997,
@@ -2640,13 +2667,13 @@
  ],
  "Codex": [
   {
-   "id": 2039,
+   "id": 2081,
    "title": "Elon Musk 转发用户称赞 Grok Build 的反馈",
    "summary": "Elon Musk 转发用户 @0x0funky 对 Grok Build 的称赞。该用户称 Grok Build 是目前唯一集大成的 coding agentic workflow，内建图像生成和图片生视频功能，生图速度快且品质不输 Codex。Agent 可直接完成图像与视频生成，无需额外串接 MCP 或外部服务。用户结合 Agent Sprite Forge 工具，利用 Grok Build 的视频生成能力，先产出 6 秒角色动作视频再反编译为 game sprite，大幅减少对齐问题，制作 2D 横版游戏耗时不到 30 分钟，而此前用 Codex 需 1-2 小时且品质更优。",
-   "published_at": "2026-07-10T07:14:39.000Z",
-   "url": "",
+   "published_at": "2026-07-11",
+   "url": "https://x.com/elonmusk/status/2075478792273842370",
    "category": "tip",
-   "source": ""
+   "source": "X：Elon Musk (@elonmusk, xAI)"
   },
   {
    "id": 1974,
@@ -3640,6 +3667,24 @@
  ],
  "DeepSeek": [
   {
+   "id": 2077,
+   "title": "博科圣地如何利用前沿AI技术",
+   "summary": "2025至2026年间对尼日利亚东北部27名前“博科圣地”成员的半结构化访谈揭示了该组织在2024年系统性地利用前沿AI技术。两大派系均使用ChatGPT、Claude、Gemini、Grok、Meta AI和DeepSeek辅助作战与日常运作，AI应用已通过专门小组和内部培训实现制度化。成员成功绕过部分安全限制，将AI用于袭击策划、武器故障排查及爆炸装置设计。相关技术通过跨国圣战网络传播，伊斯兰国特工提供了面对面培训。受访者对AI表现出强烈热情，部分人对大规模杀伤性武器持开放态度，但记录在案的使用仍限于常规手段。",
+   "published_at": "2026-07-11",
+   "url": "https://casp.ac/reports/ai-enabled-terrorism",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 2079,
+   "title": "DeepSeek-V4 Flash 强化学习训练登陆 AMD Instinct MI355X GPU，由 Miles 框架支持",
+   "summary": "DeepSeek-V4 Flash 的强化学习训练现已在 AMD Instinct MI355X GPU 上通过 Miles 框架获得支持，基于 ROCm 软件栈运行。该 2840 亿参数 MoE 模型（每 token 激活 130 亿参数）需 SGLang 进行 rollout 生成、Megatron 进行策略更新，Miles 负责异步循环与权重同步。团队解决了 SGLang 与 Megatron 间模型对齐、量化状态在线更新及多节点并行稳定性三大挑战，最终在四个八 GPU 节点上完成端到端验证：超过 100 个优化器步骤中训练-rollout 对数概率差可控，在线奖励持续提升，离线 AIME-2024 基准分数同步上涨。",
+   "published_at": "2026-07-11",
+   "url": "https://www.lmsys.org/blog/2026-07-10-rocm-miles-dsv4",
+   "category": "paper",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
    "id": 1823,
    "title": "微软为降成本在Copilot中用自研MAI模型替换OpenAI和Anthropic模型",
    "summary": "微软正用自研MAI模型替换Copilot产品中的OpenAI和Anthropic模型以降低支出。MAI模型已在Excel和Outlook中每周处理数万次请求，但占比仍小。Build大会上发布推理模型MAI-Thinking 1，声称编码媲美Sonnet 4.6和Opus 4.6，但基准测试大幅落后，仅与DeepSeek V3.2相当。AI负责人承认目标是削减并消除对Anthropic的支出。CEO暗示未来可能按用量计费，MAI为默认，第三方模型付费附加。微软称MAI使用干净商业许可数据，实际基于Common Crawl。",
@@ -4155,6 +4200,15 @@
   }
  ],
  "DeepSeek-V4": [
+  {
+   "id": 2079,
+   "title": "DeepSeek-V4 Flash 强化学习训练登陆 AMD Instinct MI355X GPU，由 Miles 框架支持",
+   "summary": "DeepSeek-V4 Flash 的强化学习训练现已在 AMD Instinct MI355X GPU 上通过 Miles 框架获得支持，基于 ROCm 软件栈运行。该 2840 亿参数 MoE 模型（每 token 激活 130 亿参数）需 SGLang 进行 rollout 生成、Megatron 进行策略更新，Miles 负责异步循环与权重同步。团队解决了 SGLang 与 Megatron 间模型对齐、量化状态在线更新及多节点并行稳定性三大挑战，最终在四个八 GPU 节点上完成端到端验证：超过 100 个优化器步骤中训练-rollout 对数概率差可控，在线奖励持续提升，离线 AIME-2024 基准分数同步上涨。",
+   "published_at": "2026-07-11",
+   "url": "https://www.lmsys.org/blog/2026-07-10-rocm-miles-dsv4",
+   "category": "paper",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
   {
    "id": 1732,
    "title": "SGLang 集成 DSpark 推测解码：置信度驱动的可变长度验证",
@@ -4714,6 +4768,15 @@
    "url": "https://openai.com/index/bio-bug-bounty",
    "category": "industry",
    "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 2106,
+   "title": "GPT-5.6 系列模型发布：Sol、Terra、Luna",
+   "summary": "OpenAI 推出 GPT-5.6 系列，包括旗舰 Sol、平衡型 Terra 和成本最优 Luna。在 Agents' Last Exam 上，Sol 以 53.6 分超越 Claude Fable 5（自适应推理）13.1 分；中等推理时以约四分之一成本领先 11.4 分。Terra 和 Luna 以约十六分之一成本超越 Fable 5。在 Artificial Analysis Coding Agent Index 上，Sol 以 80 分创 SOTA，高于 Fable 5 的 2.8 分，使用不到一半输出 token、一半时间，成本低约三分之一。引入 Programmatic Tool Calling 减少中间数据往返，ultra 模式协调多个智能体加速复杂任务。模型配备迄今最强安全防护，经人类红队和自动化测试验证。",
+   "published_at": "2026-07-09T10:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
   },
   {
    "id": 1928,
@@ -6482,6 +6545,24 @@
  ],
  "Meta": [
   {
+   "id": 2074,
+   "title": "扎克伯格首度回应 Meta“算力过剩”：没人会嫌算力太多，但租出去更赚钱",
+   "summary": "Meta CEO 扎克伯格首次正面回应公司筹划云基础设施业务一事，否认“算力过剩”猜测，称内部算力需求依然旺盛、满负荷运转。但他同时表示，当前市场对算力出价极高，将部分 AI 基础设施对外出租在财务上更划算。Meta 正制定代号“Meta Compute”的云计算计划，包括开放模型访问权限和直接出租裸算力两条路线。扎克伯格还提及 SpaceX 以每月 12.5 亿美元将数据中心租给 Anthropic 的模式。Meta 2026 年资本支出指引达 1250 亿至 1450 亿美元，计划 2026 年 9 月量产自研 AI 芯片，目标 2027 年部署算力提升至 14 吉瓦。",
+   "published_at": "2026-07-11",
+   "url": "https://www.ithome.com/0/975/078.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 2077,
+   "title": "博科圣地如何利用前沿AI技术",
+   "summary": "2025至2026年间对尼日利亚东北部27名前“博科圣地”成员的半结构化访谈揭示了该组织在2024年系统性地利用前沿AI技术。两大派系均使用ChatGPT、Claude、Gemini、Grok、Meta AI和DeepSeek辅助作战与日常运作，AI应用已通过专门小组和内部培训实现制度化。成员成功绕过部分安全限制，将AI用于袭击策划、武器故障排查及爆炸装置设计。相关技术通过跨国圣战网络传播，伊斯兰国特工提供了面对面培训。受访者对AI表现出强烈热情，部分人对大规模杀伤性武器持开放态度，但记录在案的使用仍限于常规手段。",
+   "published_at": "2026-07-11",
+   "url": "https://casp.ac/reports/ai-enabled-terrorism",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
    "id": 2037,
    "title": "扎克伯格首度回应 Meta\"算力过剩\"：没人会嫌算力太多，但租出去更赚钱",
    "summary": "Meta CEO 扎克伯格首次正面回应公司筹划云基础设施业务一事，否认\"算力过剩\"猜测，称内部算力需求依然旺盛、满负荷运转。但他同时表示，当前市场对算力出价极高，将部分 AI 基础设施对外出租在财务上更划算。Meta 正制定代号\"Meta Compute\"的云计算计划，包括开放模型访问权限和直接出租裸算力两条路线。扎克伯格还提及 SpaceX 以每月 12.5 亿美元将数据中心租给 Anthropic 的模式。Meta 2026 年资本支出指引达 1250 亿至 1450 亿美元，计划 2026 年 9 月量产自研 AI 芯片，目标 2027 年部署算力提升至 14 吉瓦。",
@@ -8050,6 +8131,15 @@
  ],
  "OpenAI": [
   {
+   "id": 2073,
+   "title": "Apple 起诉 OpenAI 窃取商业机密",
+   "summary": "Apple 于周五向美国加州北区联邦法院提起诉讼，指控 OpenAI 窃取商业机密并违反合同。诉状称，OpenAI 高级领导层（包括首席硬件官 Tang Tan）指使前 Apple 员工在招聘过程中窃取机密，包括使用未发布产品的项目代号、要求应聘者携带硬件组件参加面试。Apple 还指控前高级系统电气工程师 Chang Liu 在 2026 年离职加入 OpenAI 后未归还公司笔记本电脑，并用其下载机密技术文档。Apple 称其机密信息已被 OpenAI 用于开发自有硬件产品，例如一项专有金属精加工技术。Apple 要求法院禁止 OpenAI 使用或披露其商业机密，并归还相关材料。",
+   "published_at": "2026-07-11",
+   "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
    "id": 1974,
    "title": "OpenAI 推出 ChatGPT Work：可跨应用自主工作的 AI 智能体",
    "summary": "OpenAI 发布 ChatGPT Work，一个能跨应用和文件收集信息、将复杂项目分解为小步骤独立完成并持续工作数小时的 AI 智能体。它内置 Codex 技术，目前每周超 500 万用户使用 Codex，其中超 100 万用于非软件开发场景。ChatGPT Work 由今天同步推出的最新前沿模型 GPT‑5.6 驱动，具备多步骤推理和按模板生成材料的能力。该功能今天起面向 Pro、Enterprise 和 Edu 计划推出，未来几天扩展至 Plus 和 Business 计划。桌面版 ChatGPT 在所有计划（含免费版）中提供 Chat、Work 和 Codex 模式，且 Codex 应用已合并至新的桌面应用。",
@@ -8093,6 +8183,15 @@
    "url": "https://techcrunch.com/2026/07/09/can-ai-answer-the-3-trillion-question",
    "category": "tip",
    "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 2106,
+   "title": "GPT-5.6 系列模型发布：Sol、Terra、Luna",
+   "summary": "OpenAI 推出 GPT-5.6 系列，包括旗舰 Sol、平衡型 Terra 和成本最优 Luna。在 Agents' Last Exam 上，Sol 以 53.6 分超越 Claude Fable 5（自适应推理）13.1 分；中等推理时以约四分之一成本领先 11.4 分。Terra 和 Luna 以约十六分之一成本超越 Fable 5。在 Artificial Analysis Coding Agent Index 上，Sol 以 80 分创 SOTA，高于 Fable 5 的 2.8 分，使用不到一半输出 token、一半时间，成本低约三分之一。引入 Programmatic Tool Calling 减少中间数据往返，ultra 模式协调多个智能体加速复杂任务。模型配备迄今最强安全防护，经人类红队和自动化测试验证。",
+   "published_at": "2026-07-09T10:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
   },
   {
    "id": 1916,
@@ -9761,6 +9860,15 @@
  ],
  "Perplexity": [
   {
+   "id": 2070,
+   "title": "Perplexity 推出跨模型信用额度分析功能",
+   "summary": "推出 Computer Analytics：你现在可以跨模型跟踪信用额度支出。 该功能现已面向个人和企业用户开放，可在账户设置的 Analytics 下使用。",
+   "published_at": "2026-07-11",
+   "url": "https://x.com/perplexity_ai/status/2075599540640714863",
+   "category": "ai-products",
+   "source": "X：Perplexity (@perplexity_ai)"
+  },
+  {
    "id": 1146,
    "title": "Perplexity推出Computer for Counsel",
    "summary": "推出 Computer for Counsel。 Computer 现在连接了律师日常使用的研究数据库、文档工具和案件管理系统。可从中提取可引用来源：@midpageAI、@LegalZoom、@Docusign、@netdocuments 等。 所有 Pro 和 Max 订阅用户均可使用。",
@@ -9808,13 +9916,13 @@
  ],
  "Qwen": [
   {
-   "id": 2036,
+   "id": 2078,
    "title": "小红书发布大模型新架构 PIPO",
    "summary": "小红书提出 PIPO 架构，通过输入侧压缩器将两个 token 折叠为一个 latent，输出侧 MTP head 将隐藏状态展开为额外 token，实现输入长度减半、每步输出翻倍。基于 Qwen3.5-4B/9B backbone，在 AIME 2025 等基准上最高带来 +7.15 pass@4 提升。部署测评中，TTFT 加速约 1.23×，TPOT 加速约 1.86×。训练采用 SFT 和 On-Policy Distillation 两阶段，将 verifier 校验能力蒸馏进轻量 confidence head。",
-   "published_at": "2026-07-10T09:59:00.000Z",
-   "url": "",
+   "published_at": "2026-07-11",
+   "url": "https://mp.weixin.qq.com/s/1eo7rrCAH-OA0TnXwwqJEg",
    "category": "paper",
-   "source": ""
+   "source": "公众号：小红书技术（dots.llm）"
   },
   {
    "id": 1979,
@@ -10565,13 +10673,13 @@
  ],
  "Qwen3.5": [
   {
-   "id": 2036,
+   "id": 2078,
    "title": "小红书发布大模型新架构 PIPO",
    "summary": "小红书提出 PIPO 架构，通过输入侧压缩器将两个 token 折叠为一个 latent，输出侧 MTP head 将隐藏状态展开为额外 token，实现输入长度减半、每步输出翻倍。基于 Qwen3.5-4B/9B backbone，在 AIME 2025 等基准上最高带来 +7.15 pass@4 提升。部署测评中，TTFT 加速约 1.23×，TPOT 加速约 1.86×。训练采用 SFT 和 On-Policy Distillation 两阶段，将 verifier 校验能力蒸馏进轻量 confidence head。",
-   "published_at": "2026-07-10T09:59:00.000Z",
-   "url": "",
+   "published_at": "2026-07-11",
+   "url": "https://mp.weixin.qq.com/s/1eo7rrCAH-OA0TnXwwqJEg",
    "category": "paper",
-   "source": ""
+   "source": "公众号：小红书技术（dots.llm）"
   },
   {
    "id": 1831,
@@ -11883,6 +11991,15 @@
   }
  ],
  "百度": [
+  {
+   "id": 2068,
+   "title": "百度搭子在成都AI Day发布四项更新：个人版升级、自媒体套件、企业版及搭子联盟",
+   "summary": "百度搭子在成都百度AI Day上发布四项更新。个人版新增浏览器调用、智能路由（平均任务耗时降20%，Token利用率提升25%）、多端共享记忆及强化PPT生成，并上架“一镜”数字人制作、“灵医”报告解读等Skill。行业首个自媒体专业套件支持选题到复盘全链路。企业版支持团队协作与权限管理。搭子联盟启动，中国联通等已加入。上线三个月，日均提问量增长20倍。",
+   "published_at": "2026-07-11",
+   "url": "https://mp.weixin.qq.com/s/Haqbjim9YGmRu1XpxG_VvA",
+   "category": "ai-products",
+   "source": "公众号：百度智能云（文心）"
+  },
   {
    "id": 939,
    "title": "Kimi Work 新增目标模式与插件中心，6月推出额度消耗5折福利",
