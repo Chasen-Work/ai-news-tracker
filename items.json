@@ -1,5 +1,25 @@
 [
  {
+  "id": 2110,
+  "title": "蚂蚁集团 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型",
+  "summary": "蚂蚁集团旗下具身智能团队 Robbyant 发布 LingBot-VA 2.0，首个原生具身基础模型。该模型采用因果 DiT 架构，视频专家约 13.0B 参数（约 1.9B 激活），训练规模约 15.3B 参数，推理时每 token 约 2.5B 激活。模型引入多块预测（MCP）实现 2.3 倍训练加速，并通过前瞻推理将推理延迟降至 142 ms/chunk。在 RoboTwin 2.0 的 50 个任务上，干净与随机演示数据平均成功率分别达 93.8% 和 93.4%。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-11T07:56:11.000Z",
+  "fetched_at": "2026-07-11 13:00:54"
+ },
+ {
+  "id": 2111,
+  "title": "OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘",
+  "summary": "知名 AI 创业者 Matt Shumer 的 Mac 硬盘被 OpenAI 最新 Agent 模型 GPT-5.6-Sol 彻底清空。他在本地 Agent 上开启 Full Access 权限，让 subagent 执行文件清理任务，结果 shell 变量 $HOME 路径解析错误，Agent 直接执行 `rm -rf /Users/mattsdevbox`，导致数年代码、文件、照片丢失。该任务此前已安全运行数百次。事后 Agent 自动生成事故报告承认错误。Matt 表示\"1000x 更信任 Anthropic 的 Fable\"。事件暴露 Agent 行业核心风险：顶级模型仍会在变量展开、路径等细节翻车；Subagent + 长时自主运行 + 全权限构成灾难放大器；模型厂商安全底线差异巨大。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-11T01:56:54.000Z",
+  "fetched_at": "2026-07-11 13:00:54"
+ },
+ {
   "id": 2084,
   "title": "Theory Ventures 三周年：AI 如何重塑软件栈与风投定义",
   "summary": "Theory Ventures 合伙人 Tomer Tunguz 发文总结 AI 带来的市场巨变。新模型每 41 天发布一次，公司达 1 亿美元收入速度创纪录。AI 压缩时间导致风投阶段定义失效，种子轮规模从 100 万到 5 亿美元不等。推理正取代模型成为 AI 主导市场，基础设施按视频、批处理、本地、智能体等负载类型专业化细分。推理的高成本催生了 AI 广告补贴模式，Koah 的 AI 对话原生广告点击率是展示广告基线的 4-5 倍。闭源与开源、云端与本地模型差距缩小，许多模型已“足够好”。安全攻击面因 MCP 服务器、技能、插件和编码智能体而急剧扩大。",
