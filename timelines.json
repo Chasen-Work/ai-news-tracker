@@ -160,6 +160,15 @@
  ],
  "Anthropic": [
   {
+   "id": 2162,
+   "title": "OpenAI CEO Altman 改口称 AI 净创造就业，Anthropic CEO 也修正早期言论",
+   "summary": "OpenAI CEO Sam Altman 表示，他\"相当确信\"AI 迄今为止净创造了就业，并承认\"这并非我预期\"。此前他曾警告 AI 影响可能快得\"有点吓人\"。Anthropic CEO Dario Amodei 也修正了早期言论，将自动化描述为生产力倍增器而非岗位杀手。然而，多项研究未发现 AI 对整体生产力或劳动力市场产生显著影响。一项多校联合研究指出，程序员和文案的就业危机始于 2022 年初，早于 ChatGPT 发布。耶鲁预算实验室也未发现与 AI 相关的就业市场变化。",
+   "published_at": "2026-07-12T09:15:49.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 2139,
    "title": "OpenAI GPT-5.6-Sol 删光 AI 创业者 Matt Shumer 的 Mac 硬盘",
    "summary": "知名 AI 创业者 Matt Shumer 的 Mac 硬盘被 OpenAI 最新 Agent 模型 GPT-5.6-Sol 彻底清空。他在本地 Agent 上开启 Full Access 权限，让 subagent 执行文件清理任务，结果 shell 变量 $HOME 路径解析错误，Agent 直接执行 `rm -rf /Users/mattsdevbox`，导致数年代码、文件、照片丢失。该任务此前已安全运行数百次。事后 Agent 自动生成事故报告承认错误。Matt 表示“1000x 更信任 Anthropic 的 Fable”。事件暴露 Agent 行业核心风险：顶级模型仍会在变量展开、路径等细节翻车；Subagent + 长…",
@@ -1497,6 +1506,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 2166,
+   "title": "Tibo 分享通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法",
+   "summary": "用户 Tibo 分享了一种通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法。只需三步：安装 CLIProxyAPI、连接认证、设置环境变量别名 `claudex`。该别名配置了子智能体模型、始终启用 Effort、最大并发工具调用数等参数。引用推文作者 Theo 补充，若已配置好代理，仅需约 2 条提示词即可完成设置。Tibo 称整个过程约 5 分钟，若被封锁可重置。",
+   "published_at": "2026-07-12T01:40:04.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 2138,
    "title": "Claude Code v2.1.207 发布",
@@ -4833,6 +4851,24 @@
  ],
  "GPT-5.6": [
   {
+   "id": 2166,
+   "title": "Tibo 分享通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法",
+   "summary": "用户 Tibo 分享了一种通过 CLIProxyAPI 将 Claude Code 后端模型切换为 GPT-5.6 Sol 的方法。只需三步：安装 CLIProxyAPI、连接认证、设置环境变量别名 `claudex`。该别名配置了子智能体模型、始终启用 Effort、最大并发工具调用数等参数。引用推文作者 Theo 补充，若已配置好代理，仅需约 2 条提示词即可完成设置。Tibo 称整个过程约 5 分钟，若被封锁可重置。",
+   "published_at": "2026-07-12T01:40:04.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 2167,
+   "title": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想",
+   "summary": "OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题\"循环双覆盖猜想\"的完整证明。该猜想由数学家 George Szekeres 和 Paul Seymour 于 1970 年代提出，悬而未决超过 50 年。模型通过调用 64 个并行子智能体及对抗智能体，在预留的 8 小时计算时间内仅用约 1 小时完成证明。OpenAI 已将证明及提示词以 PDF 形式发布。该证明尚未经同行评审，也未使用 Lean 等形式化工具验证。若通过验证，这将是 LLM 首次独立解决维基百科\"未解决数学问题\"列表中的难题。",
+   "published_at": "2026-07-12T00:44:43.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 2137,
    "title": "OpenAI 发布 GPT-5.6 系列医疗评估结果",
    "summary": "OpenAI 发布 GPT-5.6 系列在医疗领域的评估结果。最小变体 GPT-5.6 Luna 在最低推理强度下即超越最高推理强度的 GPT-5.5，且成本低 25 倍；最大变体 GPT-5.6 Sol 树立新标杆。在涵盖患者端与临床端的多样化任务中，专科医生被要求以无限时间和网络访问权限撰写回答，随后由其他医生盲评。评估基于准确性、沟通、完整性、指令遵循及健康决策帮助性五个维度，共 20000 次评分。结果显示，所有 GPT-5.6 模型表现均显著优于医生，且医生发现 GPT-5.6 回答中的缺陷少于医生自己撰写的回答。",
@@ -5109,6 +5145,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 2163,
+   "title": "xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史",
+   "summary": "对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件--即使提示\"不要读取任何文件\"，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces 存储桶；三是该上传机制默认开启，且关闭\"改进模型\"设置不会禁用（/v1/settings 仍返回 trace_upload_enabled： true）。在 12 GB 仓库测试中，/v1/storage 传输了 5.10 GiB 数据，而模型对话通道仅传输 192 KB，比例约 27，800 倍。分析未证明 xAI 使用这些数据进行训练，但证实了数据被传输、接收并存储。",
+   "published_at": "2026-07-12T03:59:09.632Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 1999,
    "title": "Google Research 推出 SensorFM：面向可穿戴健康数据的通用基础模型",
@@ -8256,6 +8301,42 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 2162,
+   "title": "OpenAI CEO Altman 改口称 AI 净创造就业，Anthropic CEO 也修正早期言论",
+   "summary": "OpenAI CEO Sam Altman 表示，他\"相当确信\"AI 迄今为止净创造了就业，并承认\"这并非我预期\"。此前他曾警告 AI 影响可能快得\"有点吓人\"。Anthropic CEO Dario Amodei 也修正了早期言论，将自动化描述为生产力倍增器而非岗位杀手。然而，多项研究未发现 AI 对整体生产力或劳动力市场产生显著影响。一项多校联合研究指出，程序员和文案的就业危机始于 2022 年初，早于 ChatGPT 发布。耶鲁预算实验室也未发现与 AI 相关的就业市场变化。",
+   "published_at": "2026-07-12T09:15:49.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 2164,
+   "title": "苹果起诉OpenAI挖角窃密，分析师称即使指控未证实也可能重创其硬件计划",
+   "summary": "苹果在美国起诉OpenAI，指控其挖角400名员工、窃取工程机和机密文件。分析师Paolo Pescatore认为，即使指控最终无法证实，OpenAI的硬件计划仍可能受拖累，双方本就脆弱的合作关系将进一步削弱。斯坦福大学教授Mark Lemley指出，若前苹果员工确实带走机密文件并在OpenAI使用，问题将变得严重。该案涉及消费级硬件产品，预计未来将有更多信息曝光。",
+   "published_at": "2026-07-12T02:37:22.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 2165,
+   "title": "Mesh LLM：在 iroh 上进行分布式人工智能计算",
+   "summary": "Mesh LLM 是一个开源项目，能将用户多台机器上的 GPU 和内存池化，对外暴露兼容 OpenAI 的 API。它通过 iroh 网络库实现点对点连接，无需中央服务器。请求可在本地 GPU 运行、路由到已加载模型的节点，或将大模型按层分区（内部称\"Skippy\"）流水线式拆分到多台机器。系统内置 40 多个模型，从 5 亿参数到 235B MoE 巨模型均可支持。软件体积约 18 MB，启动后以 `localhost：9337/v1` 提供服务。",
+   "published_at": "2026-07-12T02:23:05.249Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 2167,
+   "title": "OpenAI GPT-5.6 Sol Ultra 一小时证明 50 年图论猜想",
+   "summary": "OpenAI 宣布其 GPT-5.6 Sol Ultra 模型在不到一小时内生成了图论难题\"循环双覆盖猜想\"的完整证明。该猜想由数学家 George Szekeres 和 Paul Seymour 于 1970 年代提出，悬而未决超过 50 年。模型通过调用 64 个并行子智能体及对抗智能体，在预留的 8 小时计算时间内仅用约 1 小时完成证明。OpenAI 已将证明及提示词以 PDF 形式发布。该证明尚未经同行评审，也未使用 Lean 等形式化工具验证。若通过验证，这将是 LLM 首次独立解决维基百科\"未解决数学问题\"列表中的难题。",
+   "published_at": "2026-07-12T00:44:43.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 2137,
    "title": "OpenAI 发布 GPT-5.6 系列医疗评估结果",
@@ -11555,6 +11636,15 @@
   }
  ],
  "xAI": [
+  {
+   "id": 2163,
+   "title": "xAI Grok Build CLI 网络流量分析：上传仓库全部文件及 git 历史",
+   "summary": "对 xAI 官方 Grok Build 编码 CLI（grok 0.2.93）的网络流量分析显示，该工具在消费者登录后会向 xAI 发送三类数据：一是它读取的文件内容（包括 .env 密钥文件）以明文形式通过 POST /v1/responses 传输，并同时打包成 session_state 存档通过 POST /v1/storage 上传并获 HTTP 200 确认；二是整个仓库的全部文件内容及 git 历史，独立于 AI 智能体实际读取的文件--即使提示\"不要读取任何文件\"，Grok 仍将整个仓库作为 git bundle 上传至 Google Cloud Storage 的 grok-code-session-traces 存储桶；三是该上传机制默认开启，且关闭\"改进模型\"设置不会禁用（/v1/settings 仍返回 trace_upload_enabled： true）。在 12 GB 仓库测试中，/v1/storage 传输了 5.10 GiB 数据，而模型对话通道仅传输 192 KB，比例约 27，800 倍。分析未证明 xAI 使用这些数据进行训练，但证实了数据被传输、接收并存储。",
+   "published_at": "2026-07-12T03:59:09.632Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 1986,
    "title": "Elon Musk称赞Anthropic并承诺不切断其算力",
