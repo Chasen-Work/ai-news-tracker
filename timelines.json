@@ -5310,6 +5310,24 @@
  ],
  "Google": [
   {
+   "id": 2243,
+   "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
+   "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
+   "published_at": "2026-07-14T09:10:16.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 2248,
+   "title": "马斯克承认 Grok Build 上传用户代码，SpaceXAI 承诺彻底删除数据",
+   "summary": "独立安全研究者 @cereblab 通过钓鱼仓库证实，SpaceXAI 旗下 AI 编程 agent Grok Build 在用户关闭\"帮助改进模型\"开关后仍将整个代码仓库上传至 Google Cloud 存储桶。一个 12GB 测试仓库被拆成 73 个数据包共传输 5.1GB，而正常对话仅用 192KB。另一研究者复现发现日志记录 339 次自动上传，其中一次涉及整个电脑主目录。事件曝光后，Elon Musk 亲自回应承认属实，承诺彻底删除所有此前上传的用户数据。Grok Build 已上线 `/privacy` 命令供用户一键关闭数据留存并追溯删除已上传数据。",
+   "published_at": "2026-07-14T05:43:25.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 2223,
    "title": "xAI 官方 Grok CLI 被曝静默上传整个代码库及用户密钥",
    "summary": "安全研究者发现，xAI 官方 Grok CLI（npm 包 `@xai-official/grok` 0.2.93 版）会在每轮任务前后，将当前工作目录打包为 `before_codebase.tar.gz` 和 `after_codebase.tar.gz`，通过独立旁路通道静默上传至 xAI 的 Google Cloud 仓库。验证显示，即使模型仅回复一个单词，上传依然发生。上传包还包含仓库外的 `~/.claude.json`、Claude Code 设置、全局 AGENTS 规则、30 多个 Skill 文件及一个 API 密钥。7 月 13 日凌晨，xAI 通过服务端远程开关新增 `disable_codebase_upl…",
@@ -6148,6 +6166,15 @@
   }
  ],
  "Google DeepMind": [
+  {
+   "id": 2243,
+   "title": "Demis Hassabis：AGI 数年可至，影响达工业革命10倍",
+   "summary": "Google DeepMind 联合创始人 Demis Hassabis 发文称，AGI 可能仅需数年即可实现，其影响将达工业革命的10倍且速度更快。他指出，前沿模型在网络安全、核与生物风险方面已构成挑战，未来需对日益智能体化、递归自我改进的系统建立稳健防护。Hassabis 呼吁美国率先建立类似 FINRA 的前沿AI标准机构，采用联邦监督下的公私合作或自律组织模式，由独立技术专家和开源代表组成董事会，资金主要来自行业以吸引顶尖人才和算力。他强调，当前商业与地缘竞赛导致技术进步快于理解，需以谨慎乐观态度推进公共政策，兼顾创新与安全。",
+   "published_at": "2026-07-14T09:10:16.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 1660,
    "title": "Google DeepMind 与 A24 宣布首次研究合作伙伴关系",
@@ -11555,6 +11582,28 @@
    "source": "X：商汤 SenseTime (@SenseTime_AI)"
   }
  ],
+ "SenseNova-Vision": [
+  {
+   "id": 2250,
+   "title": "商汤开源 SenseNova-Vision-7B-MoT 多任务视觉模型",
+   "summary": "商汤发布并完全开源 SenseNova-Vision-7B-MoT，一个统一处理检测、OCR、GUI、深度与法线估计、分割、多视图等主要视觉任务的模型。该模型支持通过自然语言定义新的视觉任务变体，跨传统任务边界重组视觉能力。开源内容包括模型权重及 SenseNova-Vision Corpus（含 5000 万示例子集及复现剩余公开数据的完整工具包）。",
+   "published_at": "2026-07-14T00:38:32.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  }
+ ],
+ "SenseNova-Vision-7B-MoT": [
+  {
+   "id": 2250,
+   "title": "商汤开源 SenseNova-Vision-7B-MoT 多任务视觉模型",
+   "summary": "商汤发布并完全开源 SenseNova-Vision-7B-MoT，一个统一处理检测、OCR、GUI、深度与法线估计、分割、多视图等主要视觉任务的模型。该模型支持通过自然语言定义新的视觉任务变体，跨传统任务边界重组视觉能力。开源内容包括模型权重及 SenseNova-Vision Corpus（含 5000 万示例子集及复现剩余公开数据的完整工具包）。",
+   "published_at": "2026-07-14T00:38:32.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  }
+ ],
  "SenseNova新模型解决AI图表生成难题": [
   {
    "id": 5,
@@ -11682,6 +11731,15 @@
   }
  ],
  "llama": [
+  {
+   "id": 2245,
+   "title": "腾讯混元 Hy3 量化版发布：1bit 版本单卡可部署，4bit 版本接近满血性能",
+   "summary": "腾讯混元团队为旗舰模型 Hy3（295B 参数）推出量化版本。1bit 版本（IQ1_M）将权重从 598 GB 压缩至 85.5 GiB，缩小 6.7 倍，单张 96GB 推理显卡即可部署；4bit 版本（Q4_K_M）体积 169.9 GiB，两张显卡可承载。量化版在 Agent、多语言代码、工具调用、长文理解等任务上表现接近满血模型。团队还提供 GPTQ Int4 版本，支持 vLLM 部署。配合 MTP 投机解码，1bit 版本解码速度提升约 50%，4bit 版本提升近 60%。所有版本已开源并打包为 GGUF 格式，适配 llama.cpp 生态。",
+   "published_at": "2026-07-14T08:56:07.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 1988,
    "title": "Ollama 开发者数达890万，B轮融资由Theory领投",
@@ -11845,6 +11903,15 @@
   }
  ],
  "xAI": [
+  {
+   "id": 2248,
+   "title": "马斯克承认 Grok Build 上传用户代码，SpaceXAI 承诺彻底删除数据",
+   "summary": "独立安全研究者 @cereblab 通过钓鱼仓库证实，SpaceXAI 旗下 AI 编程 agent Grok Build 在用户关闭\"帮助改进模型\"开关后仍将整个代码仓库上传至 Google Cloud 存储桶。一个 12GB 测试仓库被拆成 73 个数据包共传输 5.1GB，而正常对话仅用 192KB。另一研究者复现发现日志记录 339 次自动上传，其中一次涉及整个电脑主目录。事件曝光后，Elon Musk 亲自回应承认属实，承诺彻底删除所有此前上传的用户数据。Grok Build 已上线 `/privacy` 命令供用户一键关闭数据留存并追溯删除已上传数据。",
+   "published_at": "2026-07-14T05:43:25.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 2223,
    "title": "xAI 官方 Grok CLI 被曝静默上传整个代码库及用户密钥",
@@ -12163,6 +12230,15 @@
  ],
  "华为": [
   {
+   "id": 2249,
+   "title": "面壁智能CTO曾国洋专访：端侧模型是AI落地关键路径",
+   "summary": "面壁智能CTO曾国洋指出，端侧模型是AI落地的关键路径。其原创方法论\"模型风洞\"可在小规模实验中预测完整训练效果，并基于\"知识密度\"提出\"面壁定律\"：知识密度每3.5个月翻一番。2B参数的MiniCPM表现优于同期8B竞品。面壁已完成高通、联发科、英特尔、英伟达、AMD等芯片适配，新发布的BitCPM-CANN模型系列可在华为昇腾芯片上让同一内存多装约6倍模型。全双工全模态模型MiniCPM-o4.5支持实时打断与情绪调整。团队开发了全球首个完全由AI编写的生产级训练框架ForgeTrain，并引入行为模式库实现无需开口的\"默契系统\"。",
+   "published_at": "2026-07-14T02:29:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 1659,
    "title": "全球首例 AI Agent 勒索攻击曝光，从漏洞利用到数据库加密全程自主完成",
    "summary": "安全厂商 Sysdig 首次记录到 AI Agent“JADEPUFFER”自动完成的勒索攻击。攻击利用暴露的 Langflow 服务漏洞 CVE-2025-3248 远程执行 Python 代码，随后自主收集 OpenAI、Anthropic、DeepSeek、Gemini 等 API 密钥及阿里云、腾讯云、华为云、AWS、Google Cloud、Azure 等云平台凭证，通过 MinIO 默认密码访问对象存储并创建每 30 分钟连接的计划任务。横向移动到 MySQL 和 Nacos 服务器，利用数据库 Root 账号及 Nacos 漏洞 CVE-2021-29441 获取管理权限，加密全部 1342 条配置数据，留下包含比特币…",
@@ -12249,6 +12325,15 @@
   }
  ],
  "商汤": [
+  {
+   "id": 2250,
+   "title": "商汤开源 SenseNova-Vision-7B-MoT 多任务视觉模型",
+   "summary": "商汤发布并完全开源 SenseNova-Vision-7B-MoT，一个统一处理检测、OCR、GUI、深度与法线估计、分割、多视图等主要视觉任务的模型。该模型支持通过自然语言定义新的视觉任务变体，跨传统任务边界重组视觉能力。开源内容包括模型权重及 SenseNova-Vision Corpus（含 5000 万示例子集及复现剩余公开数据的完整工具包）。",
+   "published_at": "2026-07-14T00:38:32.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 150,
    "title": "商汤开源SenseNova-Skills AI办公技能套件",
@@ -12433,6 +12518,15 @@
  ],
  "混元": [
   {
+   "id": 2245,
+   "title": "腾讯混元 Hy3 量化版发布：1bit 版本单卡可部署，4bit 版本接近满血性能",
+   "summary": "腾讯混元团队为旗舰模型 Hy3（295B 参数）推出量化版本。1bit 版本（IQ1_M）将权重从 598 GB 压缩至 85.5 GiB，缩小 6.7 倍，单张 96GB 推理显卡即可部署；4bit 版本（Q4_K_M）体积 169.9 GiB，两张显卡可承载。量化版在 Agent、多语言代码、工具调用、长文理解等任务上表现接近满血模型。团队还提供 GPTQ Int4 版本，支持 vLLM 部署。配合 MTP 投机解码，1bit 版本解码速度提升约 50%，4bit 版本提升近 60%。所有版本已开源并打包为 GGUF 格式，适配 llama.cpp 生态。",
+   "published_at": "2026-07-14T08:56:07.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 2220,
    "title": "腾讯混元发布 HyOCR-1.5：端到端 OCR 大模型全栈开源，推理提速 6.37 倍",
    "summary": "腾讯混元发布 HyOCR-1.5，这是端到端 OCR 大模型领域首个将训练、推理、模型权重完整开源的专家模型。仅 1B 参数，覆盖 8 种以上 text-centric 任务。引入 DFlash 投机解码框架，在 Transformers 下实现 6.37× 加速，vLLM 下 2.14× 加速，端到端推理达每页 1.408s。支持 4K 分辨率与 128K 上下文窗口，通过 Agentic Data Flow 扩展低资源 OCR（331 种语言）、古文字识别与多图问答能力。在 OmniDocBench v1.6 上以 94.74 分居端到端第一。",
@@ -12602,6 +12696,15 @@
   }
  ],
  "腾讯": [
+  {
+   "id": 2245,
+   "title": "腾讯混元 Hy3 量化版发布：1bit 版本单卡可部署，4bit 版本接近满血性能",
+   "summary": "腾讯混元团队为旗舰模型 Hy3（295B 参数）推出量化版本。1bit 版本（IQ1_M）将权重从 598 GB 压缩至 85.5 GiB，缩小 6.7 倍，单张 96GB 推理显卡即可部署；4bit 版本（Q4_K_M）体积 169.9 GiB，两张显卡可承载。量化版在 Agent、多语言代码、工具调用、长文理解等任务上表现接近满血模型。团队还提供 GPTQ Int4 版本，支持 vLLM 部署。配合 MTP 投机解码，1bit 版本解码速度提升约 50%，4bit 版本提升近 60%。所有版本已开源并打包为 GGUF 格式，适配 llama.cpp 生态。",
+   "published_at": "2026-07-14T08:56:07.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2220,
    "title": "腾讯混元发布 HyOCR-1.5：端到端 OCR 大模型全栈开源，推理提速 6.37 倍",
@@ -12926,6 +13029,15 @@
  ],
  "阿里": [
   {
+   "id": 2246,
+   "title": "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试",
+   "summary": "阿里巴巴旗下高德发布通用世界模型工坊 ABot-WorldStudio，并开放测试。该产品将交互式视频生成与 3DGS 场景生成统一，用户输入文字或图片即可生成可实时交互、可分享的 AI 世界。工坊内置\"时空任意门\"，穿越后可跃迁至另一完整 3D 世界。官方实测单次连续推理稳定运行超1小时，无崩溃、无质量衰减。底层模型 ABot-World0 与 ABot-3DWorld0 均可在单张 5090 上本地部署，已全面开源。",
+   "published_at": "2026-07-14T07:46:46.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2232,
    "title": "视频生成创企 PixVerse 完成 4.39 亿美元 C 轮扩展融资，估值超 20 亿美元",
    "summary": "新加坡视频生成初创公司 PixVerse 完成 C 轮扩展融资，共筹集 4.39 亿美元，估值突破 20 亿美元。公司提供 V 系列（消费者及 API）、C 系列（专业影视）及今年初发布的 R 系列世界模型（游戏开发）。用户可生成最高 4k 分辨率并自带音频的视频，消费端注册用户超 1.5 亿，月活超 1500 万，图生视频每分钟 4.80 美元。本轮投资者包括阿里巴巴等。公司计划今年推出新 V 系列模型及新版世界模型，并全球拓展企业客户。",
@@ -13116,6 +13228,15 @@
   }
  ],
  "面壁智能": [
+  {
+   "id": 2249,
+   "title": "面壁智能CTO曾国洋专访：端侧模型是AI落地关键路径",
+   "summary": "面壁智能CTO曾国洋指出，端侧模型是AI落地的关键路径。其原创方法论\"模型风洞\"可在小规模实验中预测完整训练效果，并基于\"知识密度\"提出\"面壁定律\"：知识密度每3.5个月翻一番。2B参数的MiniCPM表现优于同期8B竞品。面壁已完成高通、联发科、英特尔、英伟达、AMD等芯片适配，新发布的BitCPM-CANN模型系列可在华为昇腾芯片上让同一内存多装约6倍模型。全双工全模态模型MiniCPM-o4.5支持实时打断与情绪调整。团队开发了全球首个完全由AI编写的生产级训练框架ForgeTrain，并引入行为模式库实现无需开口的\"默契系统\"。",
+   "published_at": "2026-07-14T02:29:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 1656,
    "title": "面壁智能发布AI全自动预训练框架ForgeTrain，8小时追平Megatron-LM",
