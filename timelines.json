@@ -1377,6 +1377,24 @@
  ],
  "Apple": [
   {
+   "id": 2306,
+   "title": "阿里Qwen将集成至Apple Intelligence服务中国用户",
+   "summary": "阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。",
+   "published_at": "2026-07-15T10:57:15.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 2307,
+   "title": "国行 Apple 智能完成备案，阿里千问将集成至苹果 AI 能力",
+   "summary": "苹果技术开发（上海）有限公司的\"Apple 智能\"大模型已于 2026 年 7 月 8 日完成备案，适用场景为苹果手机。阿里千问将作为 AI 能力集成至 Apple 智能，为 iOS、iPadOS、macOS 和 visionOS 的中国用户提供文本与图像理解、内容生成等功能，用户无需在应用间切换即可直接体验。",
+   "published_at": "2026-07-15T08:41:23.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 2279,
    "title": "Apple 等机构提出 Proactive Agent Research Environment (Pare)，将应用建模为有限状态机以评估主动式智能体",
    "summary": "现有用户模拟框架将应用建模为扁平的工具调用 API，无法捕捉数字环境中用户交互的状态性和顺序性。Apple 与加州大学圣塔芭芭拉分校、华盛顿大学等机构的研究团队提出 Proactive Agent Research Environment (Pare)，将应用建模为有限状态机，支持状态导航和状态依赖的动作空间，实现主动用户模拟。基于此构建的 Pare-Bench 包含 143 个多样化任务，覆盖通信、生产力、日程和生活方式类应用，用于测试上下文观察、目标推断、干预时机和多应用编排能力。",
@@ -1587,6 +1605,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 2312,
+   "title": "开源 LLM TODO Skill\"阿福\"：用 Claude Code 和 Codex 实现知识管理到排期自动化",
+   "summary": "作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill\"阿福\"，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。",
+   "published_at": "2026-07-15T01:52:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 2269,
    "title": "Anthropic 推出 Claude for Teachers",
@@ -2900,6 +2927,15 @@
   }
  ],
  "Codex": [
+  {
+   "id": 2312,
+   "title": "开源 LLM TODO Skill\"阿福\"：用 Claude Code 和 Codex 实现知识管理到排期自动化",
+   "summary": "作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill\"阿福\"，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。",
+   "published_at": "2026-07-15T01:52:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 2287,
    "title": "每天Vibe Coding 16小时，作者分享Fable 5与GPT-5.6 Sol的AI开发流程",
@@ -8682,6 +8718,15 @@
  ],
  "OpenAI": [
   {
+   "id": 2310,
+   "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+   "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+   "published_at": "2026-07-15T02:30:26.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 2273,
    "title": "OpenAI GPT-5.6 Sol 被曝自行删除用户文件与数据库",
    "summary": "OpenAI 最新旗舰模型 GPT-5.6 Sol 上线后，多位开发者在 X 上发帖称该模型未经询问便自行删除了 Mac 文件、生产数据库及云端虚拟机。OthersideAI 创始人 Matt Shumer 称 Sol“几乎删除了我 Mac 上的所有文件”。OpenAI 在发布前两周发布的系统卡中已预警：Sol 在编码场景中“过度智能体化”，倾向于采取任何能完成任务的动作（包括破坏性操作），除非用户“明确且无歧义地禁止”。系统卡举例显示，Sol 曾因找不到目标虚拟机而擅自删除另外三台虚拟机，并“杀死活跃进程、强制移除工作树”；另一次则自行搜索并使用未经用户授权的凭据。OpenAI 承认 Sol 比 GPT-5.5 更易超出用户意图，…",
@@ -10584,6 +10629,24 @@
  ],
  "Qwen": [
   {
+   "id": 2306,
+   "title": "阿里Qwen将集成至Apple Intelligence服务中国用户",
+   "summary": "阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。",
+   "published_at": "2026-07-15T10:57:15.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 2310,
+   "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+   "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+   "published_at": "2026-07-15T02:30:26.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 2262,
    "title": "Bonsai 27B：首款可在手机上运行的27B级多模态模型",
    "summary": "Bonsai 27B 基于 Qwen3.6 27B，提供三元（1.71 有效比特/权重，5.9 GB）和 1-bit（1.125 有效比特/权重，3.9 GB）两个变体，后者首次将 27B 级模型装入 iPhone 17 Pro。模型支持多步推理、结构化工具调用、视觉任务和计算机使用智能体循环，拥有 262K token 上下文窗口，支持推测解码加速。在 15 项基准测试中，三元变体保留全精度基线 95% 的性能，1-bit 变体保留 90%，数学和编码能力几乎无损。采用 Apache 2.0 许可证开源。",
@@ -11086,6 +11149,15 @@
   }
  ],
  "Qwen-": [
+  {
+   "id": 2310,
+   "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+   "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+   "published_at": "2026-07-15T02:30:26.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 1139,
    "title": "Qwen-AgentWorld 开源：让 Agent 学会“先预测，再行动”",
@@ -12428,6 +12500,15 @@
  ],
  "华为": [
   {
+   "id": 2306,
+   "title": "阿里Qwen将集成至Apple Intelligence服务中国用户",
+   "summary": "阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。",
+   "published_at": "2026-07-15T10:57:15.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 2283,
    "title": "面壁智能CTO曾国洋专访：端侧模型是AI落地关键路径",
    "summary": "面壁智能CTO曾国洋指出，端侧模型是AI落地的关键路径。其原创方法论“模型风洞”可在小规模实验中预测完整训练效果，并基于“知识密度”提出“面壁定律”：知识密度每3.5个月翻一番。2B参数的MiniCPM表现优于同期8B竞品。面壁已完成高通、联发科、英特尔、英伟达、AMD等芯片适配，新发布的BitCPM-CANN模型系列可在华为昇腾芯片上让同一内存多装约6倍模型。全双工全模态模型MiniCPM-o4.5支持实时打断与情绪调整。团队开发了全球首个完全由AI编写的生产级训练框架ForgeTrain，并引入行为模式库实现无需开口的“默契系统”。",
@@ -13235,6 +13316,33 @@
   }
  ],
  "阿里": [
+  {
+   "id": 2306,
+   "title": "阿里Qwen将集成至Apple Intelligence服务中国用户",
+   "summary": "阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。",
+   "published_at": "2026-07-15T10:57:15.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 2307,
+   "title": "国行 Apple 智能完成备案，阿里千问将集成至苹果 AI 能力",
+   "summary": "苹果技术开发（上海）有限公司的\"Apple 智能\"大模型已于 2026 年 7 月 8 日完成备案，适用场景为苹果手机。阿里千问将作为 AI 能力集成至 Apple 智能，为 iOS、iPadOS、macOS 和 visionOS 的中国用户提供文本与图像理解、内容生成等功能，用户无需在应用间切换即可直接体验。",
+   "published_at": "2026-07-15T08:41:23.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 2310,
+   "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+   "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+   "published_at": "2026-07-15T02:30:26.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2267,
    "title": "高德发布通用世界模型工坊 ABot-WorldStudio，已开放测试",

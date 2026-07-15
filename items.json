@@ -1,5 +1,75 @@
 [
  {
+  "id": 2306,
+  "title": "阿里Qwen将集成至Apple Intelligence服务中国用户",
+  "summary": "阿里巴巴的Qwen模型将被集成到Apple Intelligence中，为中国的iOS、iPadOS、macOS和visionOS用户提供文本与图像理解、内容生成等AI功能。中国网信办已公布包括Apple Intelligence、华为小艺大模型、OPPO AndesGPT在内的七项移动端生成式AI服务备案信息。阿里巴巴董事会主席蔡崇信表示，苹果在选定阿里前曾与多家中国公司洽谈。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-15T10:57:15.000Z",
+  "fetched_at": "2026-07-15 13:00:32"
+ },
+ {
+  "id": 2307,
+  "title": "国行 Apple 智能完成备案，阿里千问将集成至苹果 AI 能力",
+  "summary": "苹果技术开发（上海）有限公司的\"Apple 智能\"大模型已于 2026 年 7 月 8 日完成备案，适用场景为苹果手机。阿里千问将作为 AI 能力集成至 Apple 智能，为 iOS、iPadOS、macOS 和 visionOS 的中国用户提供文本与图像理解、内容生成等功能，用户无需在应用间切换即可直接体验。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-15T08:41:23.000Z",
+  "fetched_at": "2026-07-15 13:00:32"
+ },
+ {
+  "id": 2308,
+  "title": "金山办公推出 WPS Comate AI 办公客户端",
+  "summary": "金山办公在2026 AI生产力大会上推出面向员工的AI办公客户端WPS Comate，可连接组织数据与流程。该产品提供AI岗位专家、Skill技能生态、自动化任务等六大模块，并支持云端与本地双任务模式，个人用户可直接下载体验。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-07-15T08:39:58.000Z",
+  "fetched_at": "2026-07-15 13:00:32"
+ },
+ {
+  "id": 2309,
+  "title": "数据中心已使美国公众电费增加230亿美元，回收成本困难重重",
+  "summary": "数据中心对电力的需求已导致美国公众电费增加230亿美元，这一涨价将持续至2028年底。由于电价由州公用事业委员会根据复杂的成本分摊规则设定，数据中心可利用其用电灵活性（如避开系统峰值负荷）规避部分成本分摊，而普通居民难以效仿。监管机构正面临如何公平分配电网基础设施投资成本的挑战。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-15T03:51:16.524Z",
+  "fetched_at": "2026-07-15 13:00:32"
+ },
+ {
+  "id": 2310,
+  "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
+  "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-15T02:30:26.000Z",
+  "fetched_at": "2026-07-15 13:00:32"
+ },
+ {
+  "id": 2311,
+  "title": "Airtap iMessage 新功能：发条短信让 AI 替你操作手机",
+  "summary": "Airtap 推出 iMessage 新功能，用户只需给美国号码发一条 iMessage，其云手机上的 AI Agent 就能通过视觉模拟点击，替用户完成 TikTok 刷视频、星巴克点单等操作，无需安装对应 App。其架构分为三层：大脑（理解指令）、AutoPilot（视觉操控屏幕）、云手机（24小时在线）。但支付等敏感操作仍需用户手动完成，信任与授权仍是所有 Agent 厂商的难题。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-15T02:22:50.000Z",
+  "fetched_at": "2026-07-15 13:00:32"
+ },
+ {
+  "id": 2312,
+  "title": "开源 LLM TODO Skill\"阿福\"：用 Claude Code 和 Codex 实现知识管理到排期自动化",
+  "summary": "作者基于 API 版 Fable5 和 Codex 开发了开源 TODO Skill\"阿福\"，用于将收件箱中的待办资料自动转为 Markdown 任务卡，识别信息不完整项（如视频链接需通过 yt-dlp 和本地 Whisper 提取字幕），并支持批量排期、AI 分组合并、拖拽调整周视图及同步到 Mac 日历或飞书日历。项目已开源在 GitHub，安装仅需一条命令。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-15T01:52:00.000Z",
+  "fetched_at": "2026-07-15 13:00:32"
+ },
+ {
   "id": 2287,
   "title": "每天Vibe Coding 16小时，作者分享Fable 5与GPT-5.6 Sol的AI开发流程",
   "summary": "作者每天Vibe Coding约16小时，认为Claude Fable 5在大型方案初版设计上\"当世独一档\"，GPT-5.6 Sol能有效纠错并优化方案。核心流程为：Fable 5出方案初版 → GPT-5.6 Sol审查纠错 → 在Codex中开启\"目标模式\"全自动化执行，最长曾连续运行17小时。",
