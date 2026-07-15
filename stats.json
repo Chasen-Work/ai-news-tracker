@@ -1,13 +1,13 @@
 {
- "total_items": 1135,
+ "total_items": 1157,
  "total_entities": 126,
- "total_dailies": 43,
+ "total_dailies": 44,
  "categories": {
-  "ai-products": 317,
-  "tip": 307,
-  "industry": 271,
-  "paper": 124,
-  "ai-models": 116
+  "ai-products": 322,
+  "tip": 313,
+  "industry": 277,
+  "paper": 127,
+  "ai-models": 118
  },
  "entity_types": {
   "model": 72,
@@ -16,11 +16,11 @@
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 71
+   "count": 72
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 66
+   "count": 69
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
@@ -32,7 +32,7 @@
   },
   {
    "name": "TechCrunch：AI（RSS）",
-   "count": 26
+   "count": 29
   },
   {
    "name": "The Decoder：AI News（RSS）",
@@ -52,14 +52,10 @@
   },
   {
    "name": "Claude Code：GitHub Releases（RSS）",
-   "count": 17
+   "count": 18
   }
  ],
  "by_date": [
-  {
-   "date": "2026-06-15",
-   "count": 11
-  },
   {
    "date": "2026-06-16",
    "count": 27
@@ -170,12 +166,16 @@
   },
   {
    "date": "2026-07-13",
-   "count": 11
+   "count": 12
   },
   {
    "date": "2026-07-14",
-   "count": 21
+   "count": 16
+  },
+  {
+   "date": "2026-07-15",
+   "count": 26
   }
  ],
- "updated_at": "2026-07-14T13:00:58Z"
+ "updated_at": "2026-07-15T01:00:51Z"
 }
