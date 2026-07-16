@@ -5571,6 +5571,24 @@
  ],
  "Google": [
   {
+   "id": 2383,
+   "title": "欧盟裁定 Google 必须向竞争对手开放 Android 和 Search，影响 Gemini 等 AI 服务",
+   "summary": "欧盟依据《数字市场法案》（DMA）裁定 Google 必须向竞争对手开放 Android 和 Google Search 的关键部分，包括允许第三方 AI 助手和搜索引擎获得更大访问权限。这两项决定可能削弱 Google 对两大核心平台的控制，并为其 AI 工具 Gemini 的未来格局带来深远影响，同时为竞争对手创造新的发展机会。",
+   "published_at": "2026-07-16T12:06:51.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 2385,
+   "title": "Gemini Enterprise Agent Platform 新增 Parallel Web Search 网络接地提供商",
+   "summary": "Google Cloud 与 Parallel Web Systems 合作，将 Parallel 的搜索基础设施作为新的网络接地提供商原生集成到 Gemini Enterprise Agent Platform 中。该集成使开发者能将 AI 智能体锚定在可验证的实时网络结果上，以提升企业工作流的事实准确性。用户还可编程提取、永久缓存并与其他大语言模型一起处理网络数据。",
+   "published_at": "2026-07-16T09:58:51.914Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2265,
    "title": "Google 在 I/O Connect India 展示由 Tensor SoC 和 TPU 驱动的 Pixel 10 端侧 AI 未来",
    "summary": "在 Google I/O Connect India 上，Google 展示了由定制 Tensor SoC 和 TPU 驱动的 Pixel 10 系列所支持的 100% 私有端侧 AI 未来。活动首次推出轻量级 Gemma 4 E2B 模型，该模型原生运行于设备端，可实现完全离线的多模态功能，包括 AI 聊天、实时图像识别和个人智能体任务。开发者即日起可通过新发布的 Tensor SDK beta 及其配套开源资源，开始构建这些安全的边缘应用。",
@@ -7832,6 +7850,15 @@
   }
  ],
  "MiniMax": [
+  {
+   "id": 2390,
+   "title": "MiniMax Code 2.0 桌面端焕新：底层架构全面升级，金融模块即将上线",
+   "summary": "MiniMax Code 2.0 桌面端发布，基于 Pi Agent 框架重构底层架构，显著提升会话启动速度与长程复杂任务的执行稳定性。新版本优化了图表加载与文件预览框选编辑功能，并已与恒生金融数据库、企查查 MCP 打通，金融模块即将上线，支持多源数据实时检索与专业报告生成。桌面端现已开放下载，本月还将上线远程控制、浏览器操控等功能。",
+   "published_at": "2026-07-16T01:36:13.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 1300,
    "title": "Artifacts 22：Zyphra、Cohere 和 Poolside 正在扩展生态系统广度",
@@ -12700,6 +12727,15 @@
  ],
  "台积电": [
   {
+   "id": 2386,
+   "title": "台积电上调2026年资本支出预测至600~640亿美元，A14制程进展顺利",
+   "summary": "台积电在2026Q2财报说明会上将2026年资本支出预测上调至600~640亿美元，此前预测接近560亿美元。董事长魏哲家表示，预计2028年量产的A14制程（1.4nm）开发进展顺利，移动和HPC客户兴趣强烈，将成为比2nm更大、更持久的工艺。台积电预计2026Q3合并营收446~458亿美元，2026全年美元收入增幅将超过40%。",
+   "published_at": "2026-07-16T07:59:15.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 263,
    "title": "台积电难以跟上AI需求：“我们只能支持这么多”",
    "summary": "全球最大芯片制造商台积电表示，通过美国本土生产满足客户需求可能需要“非常长的时间”，凸显AI需求带来的产能压力。",
@@ -13032,6 +13068,15 @@
   }
  ],
  "百度": [
+  {
+   "id": 2382,
+   "title": "秒哒 3.5 全球首发 iOS App，无代码开发与多端共享后端能力升级",
+   "summary": "百度智能云在 WAIC2026 发布秒哒 3.5，新增 iOS 打包能力，用户无需 Mac 或 Xcode 即可将应用打包为 IPA 文件或上架 App Store。3.5 版本还内置 SEO Agent 实现搜索优化自动化，支持多应用共享同一后端数据库，并推出数据库多环境隔离与后端资源分级功能。秒哒累计服务超 3500 万用户，已创造 350 万个商业应用。",
+   "published_at": "2026-07-16T12:17:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 2068,
    "title": "百度搭子在成都AI Day发布四项更新：个人版升级、自媒体套件、企业版及搭子联盟",

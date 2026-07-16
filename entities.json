@@ -17,8 +17,8 @@
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 99,
-  "last_seen": "2026-07-15"
+  "mentions": 101,
+  "last_seen": "2026-07-16T12:06:51.000Z"
  },
  {
   "id": 48,
@@ -143,8 +143,8 @@
   "id": 3,
   "name": "MiniMax",
   "type": "company",
-  "mentions": 16,
-  "last_seen": "2026-06-29"
+  "mentions": 17,
+  "last_seen": "2026-07-16T01:36:13.000Z"
  },
  {
   "id": 70,
@@ -315,6 +315,13 @@
   "last_seen": "2026-07-08"
  },
  {
+  "id": 335,
+  "name": "百度",
+  "type": "company",
+  "mentions": 6,
+  "last_seen": "2026-07-16T12:17:11.000Z"
+ },
+ {
   "id": 651,
   "name": "华为",
   "type": "company",
@@ -341,13 +348,6 @@
   "type": "company",
   "mentions": 5,
   "last_seen": "2026-07-09T13:01:09.000Z"
- },
- {
-  "id": 335,
-  "name": "百度",
-  "type": "company",
-  "mentions": 5,
-  "last_seen": "2026-07-11"
  },
  {
   "id": 669,
@@ -390,6 +390,13 @@
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-06-02T17:12:18.000Z"
+ },
+ {
+  "id": 41,
+  "name": "台积电",
+  "type": "company",
+  "mentions": 4,
+  "last_seen": "2026-07-16T07:59:15.000Z"
  },
  {
   "id": 180,
@@ -446,13 +453,6 @@
   "type": "company",
   "mentions": 3,
   "last_seen": "2026-06-25"
- },
- {
-  "id": 41,
-  "name": "台积电",
-  "type": "company",
-  "mentions": 3,
-  "last_seen": "2026-06-05"
  },
  {
   "id": 78,
