@@ -1,13 +1,13 @@
 {
- "total_items": 1164,
+ "total_items": 1184,
  "total_entities": 126,
- "total_dailies": 44,
+ "total_dailies": 45,
  "categories": {
-  "ai-products": 323,
-  "tip": 316,
+  "ai-products": 329,
+  "tip": 323,
   "industry": 279,
-  "paper": 127,
-  "ai-models": 119
+  "paper": 132,
+  "ai-models": 121
  },
  "entity_types": {
   "model": 72,
@@ -16,15 +16,15 @@
  "top_sources": [
   {
    "name": "IT之家（RSS）",
-   "count": 72
+   "count": 74
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 69
+   "count": 72
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 35
+   "count": 37
   },
   {
    "name": "Hugging Face：Blog（RSS）",
@@ -36,7 +36,7 @@
   },
   {
    "name": "The Decoder：AI News（RSS）",
-   "count": 25
+   "count": 26
   },
   {
    "name": "MarkTechPost（RSS）",
@@ -44,22 +44,18 @@
   },
   {
    "name": "Claude：Blog（网页）",
-   "count": 22
+   "count": 23
+  },
+  {
+   "name": "Apple Machine Learning Research（RSS）",
+   "count": 19
   },
   {
    "name": "X：Rohan Paul (@rohanpaul_ai)",
    "count": 18
-  },
-  {
-   "name": "Claude Code：GitHub Releases（RSS）",
-   "count": 18
   }
  ],
  "by_date": [
-  {
-   "date": "2026-06-16",
-   "count": 27
-  },
   {
    "date": "2026-06-17",
    "count": 37
@@ -174,8 +170,12 @@
   },
   {
    "date": "2026-07-15",
-   "count": 33
+   "count": 28
+  },
+  {
+   "date": "2026-07-16",
+   "count": 25
   }
  ],
- "updated_at": "2026-07-15T13:00:32Z"
+ "updated_at": "2026-07-16T01:00:42Z"
 }
