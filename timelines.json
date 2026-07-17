@@ -2591,6 +2591,15 @@
  ],
  "Claude Opus": [
   {
+   "id": 2468,
+   "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
+   "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
+   "published_at": "2026-07-17T08:41:53.383Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 2227,
    "title": "Anthropic 研究：Claude 在不同模型与语言中的价值观表达",
    "summary": "Anthropic 发布研究，通过构建“价值观轴”量化 Claude 表达的价值倾向。研究将 3,000 余种价值观压缩为四个关键轴：顺从 vs 谨慎、温暖 vs 严谨、深度 vs 简洁、坦诚 vs 执行。分析显示，Claude Opus 4.6 更倾向顺从、严谨、简洁和执行，而 Opus 4.7 更倾向谨慎、严谨、深度和坦诚；Sonnet 4.6 被认为更温暖。跨语言对比中，Claude 在阿拉伯语和印地语中更倾向温暖，在英语和俄语中更倾向严谨。该方法可帮助理解训练决策与文化背景对模型价值观的影响。",
@@ -5257,6 +5266,24 @@
   }
  ],
  "GPT-5.6": [
+  {
+   "id": 2468,
+   "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
+   "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
+   "published_at": "2026-07-17T08:41:53.383Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 2471,
+   "title": "Kimi K3 登顶前端编码榜，开放权重挑战闭源双巨头",
+   "summary": "Kimi K3 在 Frontend Code Arena 以 1679 分登顶，力压 Claude Fable 5 与 GPT-5.6 Sol，7 个前端细分赛道拿下 6 个第一。该模型为 2.8 万亿参数 MoE 架构，百万上下文窗口，7 月 27 日开放权重。K3 的 API 定价为输入每百万 tokens 15 美元，对标前沿闭源模型，放弃低价路线，转向长上下文智能体编码场景的定价策略。",
+   "published_at": "2026-07-17T04:57:38.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2333,
    "title": "OpenAI 发布 GPT-Red：通过自动化红队测试提升模型鲁棒性",
@@ -8170,6 +8197,15 @@
  ],
  "NVIDIA": [
   {
+   "id": 2469,
+   "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
+   "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。",
+   "published_at": "2026-07-17T07:53:02.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 1978,
    "title": "NVIDIA 发布 Nemotron-Labs-3-Puzzle-75B-A9B：压缩混合 MoE 模型，服务器吞吐量提升 2.03 倍",
    "summary": "NVIDIA 发布 Nemotron-3-Super 的压缩变体 Nemotron-Labs-3-Puzzle-75B-A9B，总参数从 120.7B 降至 75.3B，活跃参数从 12.8B 降至 9.3B，保持 88 块混合布局（40 Mamba、40 MoE、8 注意力）。在 8×B200 节点上，8K/64K 场景匹配用户吞吐量≥100 tok/s 时，服务器吞吐量提升 2.03 倍。单 H100 上 1M-token 并发从 1 增至 8，权重占用从 70 GB 降至 44.5 GB。迭代式 Puzzle 方法平均得分比单步高 0.57。代价：Arena-Hard-V2 降 4.2 分、SWE-Bench 降 2.6 分。…",
@@ -8869,6 +8905,15 @@
  ],
  "Nemotron 3": [
   {
+   "id": 2469,
+   "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
+   "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。",
+   "published_at": "2026-07-17T07:53:02.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 1157,
    "title": "NVIDIA NeMo AutoModel：一行代码加速Transformer MoE模型微调",
    "summary": "NVIDIA NeMo AutoModel 是基于 Transformers v5 的开源库，添加 Expert Parallelism、DeepEP 融合 all-to-all 调度和 TransformerEngine 内核。在 MoE 模型微调中，相比原生 v5，训练吞吐量提升 3.4–3.7 倍，GPU 内存减少 29–32%，仅需改动一行 import。在 16 节点 128 张 H100 上全微调 Nemotron 3 Ultra 550B A55B 时，v5 因内存不足无法运行，而 AutoModel 凭借 EP=64 专家并行使训练可行。单节点 30B MoE 模型（如 Qwen3-30B-A3B）同样获得可量化的性…",
@@ -8933,6 +8978,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 2466,
+   "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
+   "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
+   "published_at": "2026-07-17T11:10:01.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 2440,
    "title": "OpenAI 强调青少年应获得安全 AI 访问权，推出 Study Mode 等保护措施",
@@ -10881,6 +10935,15 @@
  ],
  "Qwen": [
   {
+   "id": 2467,
+   "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
+   "summary": "首届\"小有可为\"大赛乡村教育赛道一等奖作品\"智绘科普\"采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
+   "published_at": "2026-07-17T09:41:25.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 2331,
    "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
    "summary": "阿里通义实验室发布实时语音交互模型 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 的 Speech Reasoning 子项中综合排名第一，超越 OpenAI GPT-Realtime-2。",
@@ -11673,6 +11736,15 @@
   }
  ],
  "Qwen3.5": [
+  {
+   "id": 2467,
+   "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
+   "summary": "首届\"小有可为\"大赛乡村教育赛道一等奖作品\"智绘科普\"采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
+   "published_at": "2026-07-17T09:41:25.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 2078,
    "title": "小红书发布大模型新架构 PIPO",
@@ -13082,6 +13154,15 @@
   }
  ],
  "月之暗面": [
+  {
+   "id": 2465,
+   "title": "Kimi K3 发布：2.8T 参数开源模型，具备原生视觉与百万 token 上下文窗口",
+   "summary": "月之暗面发布 Kimi K3，一个 2.8T 参数的开源模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，支持原生视觉能力与 100 万 token 上下文窗口。",
+   "published_at": "2026-07-17",
+   "url": "https://www.kimi.com/blog/kimi-k3",
+   "category": "ai-models",
+   "source": "Moonshot AI：Kimi Blog"
+  },
   {
    "id": 1495,
    "title": "Anthropic在Claude Code中植入隐写术代码识别中国用户",

@@ -1,5 +1,85 @@
 [
  {
+  "id": 2466,
+  "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
+  "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-17T11:10:01.000Z",
+  "fetched_at": "2026-07-17 13:00:46"
+ },
+ {
+  "id": 2467,
+  "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
+  "summary": "首届\"小有可为\"大赛乡村教育赛道一等奖作品\"智绘科普\"采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-17T09:41:25.000Z",
+  "fetched_at": "2026-07-17 13:00:46"
+ },
+ {
+  "id": 2468,
+  "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
+  "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-07-17T08:41:53.383Z",
+  "fetched_at": "2026-07-17 13:00:46"
+ },
+ {
+  "id": 2469,
+  "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
+  "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-17T07:53:02.000Z",
+  "fetched_at": "2026-07-17 13:00:46"
+ },
+ {
+  "id": 2470,
+  "title": "通义实验室发布 Wan-Streamer v0.2，端到端响应延迟仅 550ms",
+  "summary": "通义实验室发布 Wan-Streamer v0.2，这是一款将\"听、看、说、演\"统一进单个 Transformer 的端到端全模态模型。其端到端响应延迟仅 550ms，输出分辨率从 v0.1 的 192×336 提升至 640×368 @ 25FPS，并采用 Thinker-Performer 双通路架构在提升画质的同时维持了极低延迟。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-17T07:14:00.000Z",
+  "fetched_at": "2026-07-17 13:00:46"
+ },
+ {
+  "id": 2471,
+  "title": "Kimi K3 登顶前端编码榜，开放权重挑战闭源双巨头",
+  "summary": "Kimi K3 在 Frontend Code Arena 以 1679 分登顶，力压 Claude Fable 5 与 GPT-5.6 Sol，7 个前端细分赛道拿下 6 个第一。该模型为 2.8 万亿参数 MoE 架构，百万上下文窗口，7 月 27 日开放权重。K3 的 API 定价为输入每百万 tokens 15 美元，对标前沿闭源模型，放弃低价路线，转向长上下文智能体编码场景的定价策略。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-17T04:57:38.000Z",
+  "fetched_at": "2026-07-17 13:00:46"
+ },
+ {
+  "id": 2472,
+  "title": "生成式人工智能是一场工程灾难：AI公司抢购70%高端内存，推高电脑价格",
+  "summary": "AI公司为维持大语言模型（如ChatGPT、Claude）运行，可能已购买全球70%的高端计算机内存，导致内存与存储价格飙升：两年前350美元的硬盘现已涨至800美元且缺货，部分笔记本电脑涨价50%。科技公司计划未来几年将美国数据中心容量扩大8倍，部分站点甚至用喷气发动机供电。预测称，平价入门级电脑可能在2028年前消失，内存短缺预计持续数年。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-17T00:40:20.333Z",
+  "fetched_at": "2026-07-17 13:00:46"
+ },
+ {
+  "id": 2465,
+  "title": "Kimi K3 发布：2.8T 参数开源模型，具备原生视觉与百万 token 上下文窗口",
+  "summary": "月之暗面发布 Kimi K3，一个 2.8T 参数的开源模型，采用 Kimi Delta Attention 和 Attention Residuals 架构，支持原生视觉能力与 100 万 token 上下文窗口。",
+  "url": "https://www.kimi.com/blog/kimi-k3",
+  "source": "Moonshot AI：Kimi Blog",
+  "category": "ai-models",
+  "published_at": "2026-07-17",
+  "fetched_at": "2026-07-17 13:00:45"
+ },
+ {
   "id": 2440,
   "title": "OpenAI 强调青少年应获得安全 AI 访问权，推出 Study Mode 等保护措施",
   "summary": "OpenAI 发文主张青少年应获得安全的 AI 访问权，并分享了针对 teen 用户的保护措施。目前每周有近 9 成 teen 用户使用 ChatGPT 进行学习、信息获取或技能提升。OpenAI 已推出 Study Mode（默认开启引导式学习而非直接给答案）、年龄预测、家长控制（可设置静音时段、关闭语音模式等）、以及针对暴力、自残、色情角色扮演等内容的安全护栏。",
