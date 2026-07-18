@@ -160,6 +160,15 @@
  ],
  "Anthropic": [
   {
+   "id": 2514,
+   "title": "Anthropic 副首席信息安全官发布智能体 AI 风险评估框架：零风险不是目标",
+   "summary": "Anthropic 副首席信息安全官 Jason Clinton 分享了其团队在采用智能体 AI 过程中的经验教训，并提出了一套用于安全构建和部署智能体的风险评估框架。该框架通过四个核心问题（摄入的不可信内容、可执行的操作、失控时的爆炸半径、可观测性）来评估风险，并强调“最小代理权限”原则。Anthropic 的默认策略是管理员控制的分阶段推出，并指出与意图偏离的智能体在行为上无异于内部攻击。",
+   "published_at": "2026-07-18",
+   "url": "https://claude.com/blog/ciso-guide-to-agentic-ai",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
    "id": 2422,
    "title": "在 Claude Cowork 中使用 Claude Fable 5",
    "summary": "Anthropic 发布最强通用模型 Claude Fable 5，专为长时间、多步骤的复杂异步工作设计，可在 Claude Cowork 中自主执行深度研究、尽职调查等任务。该模型需手动选择，默认模型为 Claude Sonnet 5。",
@@ -1404,6 +1413,24 @@
  ],
  "Apple": [
   {
+   "id": 2503,
+   "title": "Apple 起诉 OpenAI：诉讼背后是竞争焦虑还是时机博弈？",
+   "summary": "Apple 对 OpenAI 提起诉讼，指控其存在多项不当行为，尽管许多专家认为部分指控属于行业惯例。此举正值 Apple 发布新版软件公测版（以新 Siri AI 为核心）之际，外界猜测 Apple 究竟是担忧 OpenAI 成为潜在竞争对手，还是想利用 OpenAI 的弱势期获利。",
+   "published_at": "2026-07-18",
+   "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
+   "category": "industry",
+   "source": "The Verge：AI（RSS）"
+  },
+  {
+   "id": 2508,
+   "title": "Apple 研究：Show Me Examples — 从图像集推断视觉概念",
+   "summary": "Apple 机器学习研究团队提出一种方法，让视觉语言模型（VLM）仅从图像集示例中推断视觉概念，无需文本指令。该方法通过对比示例图像与候选图像，使模型捕捉颜色、纹理等视觉规律，在多个概念推理基准上提升准确率。该研究目前为学术论文，未公布模型或 API 可用性。",
+   "published_at": "2026-07-18",
+   "url": "https://machinelearning.apple.com/research/visual-concept-inference",
+   "category": "paper",
+   "source": "Apple Machine Learning Research（RSS）"
+  },
+  {
    "id": 2431,
    "title": "Apple 研究：Embarrassingly Simple Self-Distillation 提升代码生成能力",
    "summary": "Apple 机器学习研究提出一种极简的自我知识蒸馏方法，让大语言模型仅使用自身原始输出即可提升代码生成能力，无需验证器、教师模型或额外数据。该方法在多个代码生成基准上取得显著改进，且计算成本极低。研究展示了自我蒸馏在代码任务中的有效性，为模型自我改进提供了新思路。",
@@ -1668,6 +1695,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 2502,
+   "title": "Claude Code v2.1.212 发布",
+   "summary": "Claude Code v2.1.212 新增 `/fork` 命令，可将当前对话复制到新后台会话中独立运行。新增会话级 WebSearch 调用上限（默认 200）和子智能体生成上限（默认 200），防止失控循环。MCP 工具调用超过 2 分钟自动移至后台，并修复了计划模式自动执行文件修改命令等多项问题。",
+   "published_at": "2026-07-18",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.212",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
   {
    "id": 2435,
    "title": "xAI 开源 Grok CLI 代码库中发现 Mermaid 转 Unicode 框图工具",
@@ -2591,13 +2627,22 @@
  ],
  "Claude Opus": [
   {
-   "id": 2468,
+   "id": 2506,
    "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
    "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
-   "published_at": "2026-07-17T08:41:53.383Z",
-   "url": "",
+   "published_at": "2026-07-18",
+   "url": "https://schema-harness.github.io/",
    "category": "paper",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 2512,
+   "title": "Cursor 评估负责人确认 Claude Fable 5 在 CursorBench 达 72.9% 新高",
+   "summary": "Cursor 的模型评估负责人 Nate Schmidt 发现，Claude Fable 5 在其内部基准 CursorBench 上以 Max effort 模式达到 72.9%，创下新高。该模型在模糊的真实编程任务中表现出全局推理能力，例如在航天模拟器中仅凭一句提示自主规划并成功登月，而此前 Claude Opus 运行 12 小时以上仍无结果。",
+   "published_at": "2026-07-18",
+   "url": "https://claude.com/blog/working-at-the-frontier-cursor",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
   },
   {
    "id": 2227,
@@ -3772,6 +3817,15 @@
   }
  ],
  "Cursor": [
+  {
+   "id": 2512,
+   "title": "Cursor 评估负责人确认 Claude Fable 5 在 CursorBench 达 72.9% 新高",
+   "summary": "Cursor 的模型评估负责人 Nate Schmidt 发现，Claude Fable 5 在其内部基准 CursorBench 上以 Max effort 模式达到 72.9%，创下新高。该模型在模糊的真实编程任务中表现出全局推理能力，例如在航天模拟器中仅凭一句提示自主规划并成功登月，而此前 Claude Opus 运行 12 小时以上仍无结果。",
+   "published_at": "2026-07-18",
+   "url": "https://claude.com/blog/working-at-the-frontier-cursor",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
   {
    "id": 2272,
    "title": "Cursor IDE 0day 漏洞：打开恶意仓库即可自动执行任意代码",
@@ -5267,22 +5321,31 @@
  ],
  "GPT-5.6": [
   {
-   "id": 2468,
-   "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
-   "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
-   "published_at": "2026-07-17T08:41:53.383Z",
-   "url": "",
-   "category": "paper",
-   "source": ""
-  },
-  {
-   "id": 2471,
+   "id": 2499,
    "title": "Kimi K3 登顶前端编码榜，开放权重挑战闭源双巨头",
    "summary": "Kimi K3 在 Frontend Code Arena 以 1679 分登顶，力压 Claude Fable 5 与 GPT-5.6 Sol，7 个前端细分赛道拿下 6 个第一。该模型为 2.8 万亿参数 MoE 架构，百万上下文窗口，7 月 27 日开放权重。K3 的 API 定价为输入每百万 tokens 15 美元，对标前沿闭源模型，放弃低价路线，转向长上下文智能体编码场景的定价策略。",
-   "published_at": "2026-07-17T04:57:38.000Z",
-   "url": "",
+   "published_at": "2026-07-18",
+   "url": "https://x.com/AYi_AInotes/status/2077981025905316253",
    "category": "ai-models",
-   "source": ""
+   "source": "X：阿易 AI Notes (@AYi_AInotes)"
+  },
+  {
+   "id": 2506,
+   "title": "Schema Harness 在 ARC-AGI-3 公开集上取得约 99% 成绩",
+   "summary": "Schema 框架在 ARC-AGI-3 公开集上，使用 Claude Opus 4.8 和 Fable 5 达到 99% RHAE 分数，使用 GPT-5.6 Sol 达到 95.35%。该框架不修改模型权重，而是将原始观测转化为可编辑程序，联合解决状态归因和机制发现问题。此前最强模型 GPT-5.6 Sol 在半私有集上仅得 7.78%。",
+   "published_at": "2026-07-18",
+   "url": "https://schema-harness.github.io/",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 2509,
+   "title": "八天四款前沿模型发布，Kimi K3 跻身第三",
+   "summary": "过去八天内，Grok 4.5、GPT-5.6、Muse Spark 1.1 与 Kimi K3 四款前沿模型相继发布，使 Artificial Analysis Intelligence Index 得分超 50 的实验室从 6 月初的 2 家增至 6 家。",
+   "published_at": "2026-07-18",
+   "url": "https://x.com/ArtificialAnlys/status/2078165665278730490",
+   "category": "tip",
+   "source": "X：Artificial Analysis (@ArtificialAnlys)"
   },
   {
    "id": 2333,
@@ -8197,13 +8260,13 @@
  ],
  "NVIDIA": [
   {
-   "id": 2469,
+   "id": 2500,
    "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
-   "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。",
-   "published_at": "2026-07-17T07:53:02.000Z",
-   "url": "",
+   "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32,768 tokens。",
+   "published_at": "2026-07-18",
+   "url": "https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb",
    "category": "ai-models",
-   "source": ""
+   "source": "MarkTechPost（RSS）"
   },
   {
    "id": 1978,
@@ -8905,13 +8968,13 @@
  ],
  "Nemotron 3": [
   {
-   "id": 2469,
+   "id": 2500,
    "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
-   "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32，768 tokens。",
-   "published_at": "2026-07-17T07:53:02.000Z",
-   "url": "",
+   "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32,768 tokens。",
+   "published_at": "2026-07-18",
+   "url": "https://www.marktechpost.com/2026/07/17/nvidia-ai-releases-nemotron-3-embed-an-open-embedding-collection-whose-8b-checkpoint-ranks-1-on-rteb",
    "category": "ai-models",
-   "source": ""
+   "source": "MarkTechPost（RSS）"
   },
   {
    "id": 1157,
@@ -8979,13 +9042,31 @@
  ],
  "OpenAI": [
   {
-   "id": 2466,
+   "id": 2503,
+   "title": "Apple 起诉 OpenAI：诉讼背后是竞争焦虑还是时机博弈？",
+   "summary": "Apple 对 OpenAI 提起诉讼，指控其存在多项不当行为，尽管许多专家认为部分指控属于行业惯例。此举正值 Apple 发布新版软件公测版（以新 Siri AI 为核心）之际，外界猜测 Apple 究竟是担忧 OpenAI 成为潜在竞争对手，还是想利用 OpenAI 的弱势期获利。",
+   "published_at": "2026-07-18",
+   "url": "https://www.theverge.com/podcast/967244/apple-openai-lawsuit-vergecast",
+   "category": "industry",
+   "source": "The Verge：AI（RSS）"
+  },
+  {
+   "id": 2504,
    "title": "苹果与 OpenAI 法律战升级：约 40 名前员工收到苹果律师函",
    "summary": "苹果已向约40名就职于OpenAI的前员工发出律师函，要求保存相关文件。此前苹果起诉OpenAI及两名前员工，指控其通过挖角获取商业机密以加速AI硬件研发。苹果称已有超400名前员工在OpenAI工作，正寻求法院禁令阻止OpenAI使用苹果信息并要求归还机密。",
-   "published_at": "2026-07-17T11:10:01.000Z",
-   "url": "",
+   "published_at": "2026-07-18",
+   "url": "https://www.ithome.com/0/978/277.htm",
    "category": "industry",
-   "source": ""
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 2513,
+   "title": "OpenAI 提出 AI 时代记分卡：“有用智能每美元”衡量实际工作价值",
+   "summary": "OpenAI 提出“Useful Intelligence per Dollar”（有用智能每美元）作为衡量 AI 投资回报的核心指标，从完成的有用工作量、成功任务的实际成本、结果可靠性三个维度评估。",
+   "published_at": "2026-07-18",
+   "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+   "category": "tip",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
   },
   {
    "id": 2440,
@@ -10935,6 +11016,15 @@
  ],
  "Qwen": [
   {
+   "id": 2510,
+   "title": "首届“小有可为”大赛乡村教育一等奖作品“智绘科普”技术拆解",
+   "summary": "首届“小有可为”大赛乡村教育赛道一等奖作品“智绘科普”采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
+   "published_at": "2026-07-18",
+   "url": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
+   "category": "tip",
+   "source": "公众号：通义实验室（千问）"
+  },
+  {
    "id": 2467,
    "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
    "summary": "首届\"小有可为\"大赛乡村教育赛道一等奖作品\"智绘科普\"采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
@@ -11736,6 +11826,15 @@
   }
  ],
  "Qwen3.5": [
+  {
+   "id": 2510,
+   "title": "首届“小有可为”大赛乡村教育一等奖作品“智绘科普”技术拆解",
+   "summary": "首届“小有可为”大赛乡村教育赛道一等奖作品“智绘科普”采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
+   "published_at": "2026-07-18",
+   "url": "https://mp.weixin.qq.com/s/a2YKWmyMoyIc3GKLbXffpQ",
+   "category": "tip",
+   "source": "公众号：通义实验室（千问）"
+  },
   {
    "id": 2467,
    "title": "首届\"小有可为\"大赛乡村教育一等奖作品\"智绘科普\"技术拆解",
@@ -13154,6 +13253,15 @@
   }
  ],
  "月之暗面": [
+  {
+   "id": 2505,
+   "title": "月之暗面在GTC 2026披露Kimi K2.5技术路线：用MuonClip、线性注意力与Agent Swarm重构三大基础组件",
+   "summary": "月之暗面CEO杨植麟在GTC 2026演讲中提出用MuonClip优化器替代Adam，可将数据利用效率提升近一倍。同时推出Kimi Linear线性注意力，在百万Token上下文下全面超越全注意力；Agent Swarm已支持300个Agent并行工作。",
+   "published_at": "2026-07-18",
+   "url": "https://x.com/dotey/status/2078172517085085951",
+   "category": "paper",
+   "source": "X：宝玉 (@dotey)"
+  },
   {
    "id": 2465,
    "title": "Kimi K3 发布：2.8T 参数开源模型，具备原生视觉与百万 token 上下文窗口",
