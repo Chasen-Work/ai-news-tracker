@@ -1,5 +1,15 @@
 [
  {
+  "id": 2516,
+  "title": "Index Ventures 联合创始人 Neil Rimer 认为 AI 财富将面临\"再分配\"",
+  "summary": "Index Ventures 联合创始人 Neil Rimer 表示，围绕 AI 积累的巨额财富将面临\"某种形式的再分配\"，无论是自愿还是强制。他呼吁科技领袖在推动自愿再分配中发挥主导作用。与此同时，美国慈善捐赠总额虽创新高，但捐赠人数持续下降，而加州正考虑对亿万富翁征收 5% 的一次性财富税。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-18T04:47:25.000Z",
+  "fetched_at": "2026-07-18 13:00:57"
+ },
+ {
   "id": 2515,
   "title": "AI 时代“小需求”的成本逻辑变了：GitHub 博客谈工程决策新范式",
   "summary": "工程师对小型功能请求的决策成本已超过代码实现成本。AI 智能体可在会议预热时间内生成首个补丁，将抽象的“是否在范围内”争论转化为可审查的具体产物。关键区分在于：代码生成便宜不等于维护便宜，只有人类能自信审查并承担长期责任的变更才算低成本。",
@@ -178,6 +188,26 @@
   "category": "ai-models",
   "published_at": "2026-07-18",
   "fetched_at": "2026-07-18 01:00:46"
+ },
+ {
+  "id": 2523,
+  "title": "LLM cliché highlighter：一款识别AI写作套话的检测工具",
+  "summary": "Simon Willison 用 Fable 5 开发了一款 LLM cliché highlighter 应用，用于高亮 LLM 生成文本中常见的十种套话模式，例如\"no fluff， no filler， no jargon\"这类陈词滥调。该工具旨在帮助读者快速识别并过滤掉充斥在文章中的 AI 写作风格化表达。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-17T12:11:11.000Z",
+  "fetched_at": "2026-07-18 13:00:57"
+ },
+ {
+  "id": 2525,
+  "title": "OpenAI 提出 AI 时代记分卡：\"有用智能每美元\"衡量实际工作价值",
+  "summary": "OpenAI 提出\"Useful Intelligence per Dollar\"（有用智能每美元）作为衡量 AI 投资回报的核心指标，从完成的有用工作量、成功任务的实际成本、结果可靠性三个维度评估。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-17T10:00:00.000Z",
+  "fetched_at": "2026-07-18 13:00:57"
  },
  {
   "id": 2467,
