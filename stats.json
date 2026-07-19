@@ -1,10 +1,10 @@
 {
- "total_items": 1235,
+ "total_items": 1237,
  "total_entities": 126,
- "total_dailies": 47,
+ "total_dailies": 48,
  "categories": {
-  "ai-products": 341,
-  "tip": 341,
+  "ai-products": 342,
+  "tip": 342,
   "industry": 287,
   "paper": 140,
   "ai-models": 126
@@ -32,7 +32,7 @@
   },
   {
    "name": "TechCrunch：AI（RSS）",
-   "count": 29
+   "count": 30
   },
   {
    "name": "Claude：Blog（网页）",
@@ -52,14 +52,10 @@
   },
   {
    "name": "Claude Code：GitHub Releases（RSS）",
-   "count": 19
+   "count": 20
   }
  ],
  "by_date": [
-  {
-   "date": "2026-06-19",
-   "count": 31
-  },
   {
    "date": "2026-06-20",
    "count": 16
@@ -175,7 +171,11 @@
   {
    "date": "2026-07-18",
    "count": 19
+  },
+  {
+   "date": "2026-07-19",
+   "count": 2
   }
  ],
- "updated_at": "2026-07-18T13:00:57Z"
+ "updated_at": "2026-07-19T01:00:59Z"
 }

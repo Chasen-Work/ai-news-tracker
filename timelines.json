@@ -1696,6 +1696,15 @@
  ],
  "Claude Code": [
   {
+   "id": 2538,
+   "title": "Claude Code v2.1.214 发布：修复权限绕过、添加 EndConversation 工具与多项 Bash 权限检查改进",
+   "summary": "Claude Code v2.1.214 修复了 Windows PowerShell 5.1 中的权限检查绕过漏洞，以及 Bash 权限检查对超长命令（超过 10,000 字符）和 zsh 变量下标比较的误判问题。",
+   "published_at": "2026-07-19",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.214",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
    "id": 2502,
    "title": "Claude Code v2.1.212 发布",
    "summary": "Claude Code v2.1.212 新增 `/fork` 命令，可将当前对话复制到新后台会话中独立运行。新增会话级 WebSearch 调用上限（默认 200）和子智能体生成上限（默认 200），防止失控循环。MCP 工具调用超过 2 分钟自动移至后台，并修复了计划模式自动执行文件修改命令等多项问题。",
