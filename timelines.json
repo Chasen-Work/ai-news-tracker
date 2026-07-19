@@ -7402,6 +7402,15 @@
  ],
  "Meta": [
   {
+   "id": 2552,
+   "title": "transcribe.cpp 发布：基于 ggml 的跨平台语音转录库，支持 16 个 ASR 模型族",
+   "summary": "transcribe.cpp v0.1.0 发布，一个基于 ggml 的语音转录库，支持 16 个 ASR 模型族（60+ 模型），并通过 Vulkan、Metal、CUDA 和 TinyBLAS 实现 GPU 加速。",
+   "published_at": "2026-07-19T02:49:15.657Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2346,
    "title": "Meta 探索分层兴趣表示以优化广告深度漏斗",
    "summary": "Meta 提出分层兴趣表示，一种基于 Transformer 图学习与自监督跨视图蒸馏的上游表示层，为广告实体学习统一嵌入。该系统在数十亿真实交互数据上端到端训练，输出通用嵌入和 Bag-of-Meaning 兴趣 token，旨在连接稀疏的深度漏斗信号与广告主供给。该技术可集成至 Meta 的生成式广告模型（GEM）、Andromeda 及自适应排序模型。",
@@ -11034,6 +11043,15 @@
  ],
  "Qwen": [
   {
+   "id": 2549,
+   "title": "Qwen3.8 开源发布，2.4T 参数模型上线",
+   "summary": "Qwen3.8 即将发布并很快开源权重！🌐\n\n该模型拥有 2.4T 海量参数，正在持续进化。我们相信它是目前最强大的模型之一，可与领先的前沿 AI 模型媲美，仅次于 Fable 5。\n\n你无需等待即可测试。就在刚才，Qwen3.8-Max-Preview 已在阿里巴巴的 Token Plan、Qoder 和 QoderWork 上首次亮相。快来抢先体验吧。\n\n期待你的作品。敬请关注！🚀",
+   "published_at": "2026-07-19T08:10:39.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 2510,
    "title": "首届“小有可为”大赛乡村教育一等奖作品“智绘科普”技术拆解",
    "summary": "首届“小有可为”大赛乡村教育赛道一等奖作品“智绘科普”采用 Qwen3.5-397B-A17B 大语言模型与 Manim 动画引擎，通过多Agent分阶段协作与自动修复机制，将知识主题转化为可控、可编辑的教学动画。系统包含规划、草稿、实现、审查、合成五个阶段，渲染失败时可自动提取日志并修复，该工程范式可迁移至其他赛道。",
@@ -12000,6 +12018,17 @@
    "url": "https://qwen.ai/blog?id=qwen3.7-plus",
    "category": "ai-models",
    "source": "Qwen：Blog Retrieval（API）"
+  }
+ ],
+ "Qwen3.8": [
+  {
+   "id": 2549,
+   "title": "Qwen3.8 开源发布，2.4T 参数模型上线",
+   "summary": "Qwen3.8 即将发布并很快开源权重！🌐\n\n该模型拥有 2.4T 海量参数，正在持续进化。我们相信它是目前最强大的模型之一，可与领先的前沿 AI 模型媲美，仅次于 Fable 5。\n\n你无需等待即可测试。就在刚才，Qwen3.8-Max-Preview 已在阿里巴巴的 Token Plan、Qoder 和 QoderWork 上首次亮相。快来抢先体验吧。\n\n期待你的作品。敬请关注！🚀",
+   "published_at": "2026-07-19T08:10:39.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
   }
  ],
  "Replit": [
@@ -13829,6 +13858,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 2549,
+   "title": "Qwen3.8 开源发布，2.4T 参数模型上线",
+   "summary": "Qwen3.8 即将发布并很快开源权重！🌐\n\n该模型拥有 2.4T 海量参数，正在持续进化。我们相信它是目前最强大的模型之一，可与领先的前沿 AI 模型媲美，仅次于 Fable 5。\n\n你无需等待即可测试。就在刚才，Qwen3.8-Max-Preview 已在阿里巴巴的 Token Plan、Qoder 和 QoderWork 上首次亮相。快来抢先体验吧。\n\n期待你的作品。敬请关注！🚀",
+   "published_at": "2026-07-19T08:10:39.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2331,
    "title": "阿里发布 Qwen-Audio-3.0-Realtime，在 Artificial Analysis 语音推理子项中综合排名第一",
