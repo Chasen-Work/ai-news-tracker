@@ -1,5 +1,75 @@
 [
  {
+  "id": 2570,
+  "title": "LoRA Speedrun 公开排行榜：6分05秒微调Qwen2.5-1.5B达GSM8K 61.1%准确率",
+  "summary": "LoRA Speedrun项目推出公开排行榜，在固定硬件（单张L40S）上比拼Qwen2.5-1.5B的微调运行时间。当前纪录由@Saivineeth147以6分05秒保持，采用序列打包与仅完成损失掩码技术，相比基线11分57秒提速约2倍且准确率更高（61.1%）。项目提供免费Modal沙箱验证，任何提交需经3次独立复现确认。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-07-20T12:21:09.021Z",
+  "fetched_at": "2026-07-20 13:00:58"
+ },
+ {
+  "id": 2571,
+  "title": "Hugging Face 遭自主AI智能体入侵，用AI工具完成数小时取证分析",
+  "summary": "Hugging Face 披露其部分生产基础设施遭一个自主AI智能体系统入侵，攻击者通过恶意数据集利用数据处理管道中的代码执行漏洞，窃取了内部数据集和多项服务凭证。该公司部署LLM驱动的分析智能体，在数小时内完成了对17000多条攻击行为的取证分析，而此类工作通常需要数天。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-20T12:12:47.000Z",
+  "fetched_at": "2026-07-20 13:00:58"
+ },
+ {
+  "id": 2572,
+  "title": "通义实验室发布 Qwen-Audio-3.0-TTS 实时语音合成模型",
+  "summary": "通义实验室发布 Qwen-Audio-3.0-TTS，含 Flash（首包延迟约300ms）和 Plus 两个版本。Plus 版本在 Artificial Analysis 榜单夺冠，支持16种语言和20种中文方言，平均 WER/CER 低至3.87（Flash），说话人相似度最高达82.75（Plus）。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-20T08:53:11.000Z",
+  "fetched_at": "2026-07-20 13:00:58"
+ },
+ {
+  "id": 2573,
+  "title": "小红书与北大开源 UltraEP：面向大规模 MoE 训推的实时负载均衡方案",
+  "summary": "小红书与北大提出 UltraEP，首次将基于精确路由信息的实时负载均衡引入生产系统，在每个 microbatch 和每一层动态复制热点专家。在 Qwen3-235B 等模型上，训练吞吐平均达到理想性能的 94.6%，相比 Megatron-LM 提升 42%；推理 prefill 吞吐相比 SGLang 提升 1.56 倍。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-07-20T08:00:45.000Z",
+  "fetched_at": "2026-07-20 13:00:58"
+ },
+ {
+  "id": 2574,
+  "title": "上海科学智能研究院开放科学多模态基础模型\"神珍\"",
+  "summary": "上海科学智能研究院开放科学多模态基础模型\"神珍\"，总参数约110亿，可处理DNA、RNA、蛋白质、小分子、地球系统和医学影像六类数据。在生物序列20项任务中，该模型9项取得最优结果；医学影像分割平均Dice得分91.20，在7种参评方法中最优。模型权重及代码已在星河启智、Hugging Face和GitHub开放。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-20T07:00:15.000Z",
+  "fetched_at": "2026-07-20 13:00:58"
+ },
+ {
+  "id": 2575,
+  "title": "面壁智能发布首个具身智能成果 MiniCPM-Robot 系列模型，含 1.5B VLA 与 0.9B 跟踪模型",
+  "summary": "面壁智能联合 OpenBMB 发布并开源 MiniCPM-Robot 系列，包括通用 VLA 模型 MiniCPM-RobotManip（1.5B 参数）与移动跟踪模型 MiniCPM-RobotTrack（0.9B 参数）。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-20T03:54:08.000Z",
+  "fetched_at": "2026-07-20 13:00:58"
+ },
+ {
+  "id": 2576,
+  "title": "Ollama 获 8800 万美元融资，加速开放模型生态发展",
+  "summary": "Ollama 宣布完成 8800 万美元融资，由 Benchmark、Theory Ventures 和 8VC 等领投。该平台已服务 890 万开发者，并被 85% 的财富 500 强企业使用，其云端 token 用量月均翻倍。资金将用于支持无缝混合推理、新模型发布当日集成，以及让开发者在不牺牲所有权和隐私的前提下使用最强开放模型。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-20T01:45:09.765Z",
+  "fetched_at": "2026-07-20 13:00:58"
+ },
+ {
   "id": 2565,
   "title": "不会代码也能做产品：一份从0开始的Vibe Coding保姆级教程",
   "summary": "本文面向零代码用户，提供一套使用国产大模型（Kimi、GLM、Qwen等）从零开发并上线产品的完整流程。核心步骤包括购买Coding Plan、下载官方Agent编程产品、注册域名与服务器并同步做ICP备案，然后通过Agent的Plan模式描述需求并让AI自动执行开发。上线后建议建立分支保护与测试流程，并强调即使不懂代码，也必须对系统架构了如指掌。",
@@ -88,6 +158,16 @@
   "category": "ai-models",
   "published_at": "2026-07-20",
   "fetched_at": "2026-07-20 01:00:24"
+ },
+ {
+  "id": 2578,
+  "title": "字节跳动发布 Seed Audio 1.0 音频创作模型，统一建模人声与音效实现端到端影视级音频生成",
+  "summary": "字节跳动 Seed 团队发布音频创作模型 Seed Audio 1.0，在统一框架下联合建模人声、音效和环境声，支持 100ms 间隔精度的时间控制、单次约 2 分钟音频的延展生成及 20+ 语种自然生成。该模型已在火山方舟体验中心上线，多数场景音频可用率达 90% 以上，多语言音频自然度 MOS 超 4 分。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-07-19T16:00:00.000Z",
+  "fetched_at": "2026-07-20 13:00:58"
  },
  {
   "id": 2569,

@@ -1,13 +1,13 @@
 {
- "total_items": 1247,
+ "total_items": 1255,
  "total_entities": 127,
  "total_dailies": 49,
  "categories": {
-  "ai-products": 344,
+  "ai-products": 347,
   "tip": 344,
-  "industry": 288,
+  "industry": 290,
   "paper": 140,
-  "ai-models": 131
+  "ai-models": 134
  },
  "entity_types": {
   "model": 73,
@@ -170,12 +170,12 @@
   },
   {
    "date": "2026-07-19",
-   "count": 3
+   "count": 4
   },
   {
    "date": "2026-07-20",
-   "count": 9
+   "count": 16
   }
  ],
- "updated_at": "2026-07-20T01:00:26Z"
+ "updated_at": "2026-07-20T13:00:58Z"
 }

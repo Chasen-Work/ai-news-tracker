@@ -45,8 +45,8 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 56,
-  "last_seen": "2026-07-20T00:08:00.000Z"
+  "mentions": 59,
+  "last_seen": "2026-07-20T12:21:09.021Z"
  },
  {
   "id": 36,
@@ -108,8 +108,8 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 27,
-  "last_seen": "2026-07-10"
+  "mentions": 29,
+  "last_seen": "2026-07-20T12:12:47.000Z"
  },
  {
   "id": 93,
@@ -189,18 +189,18 @@
   "last_seen": "2026-07-14"
  },
  {
+  "id": 183,
+  "name": "llama",
+  "type": "model",
+  "mentions": 12,
+  "last_seen": "2026-07-20T01:45:09.765Z"
+ },
+ {
   "id": 23,
   "name": "Replit",
   "type": "company",
   "mentions": 11,
   "last_seen": "2026-07-09"
- },
- {
-  "id": 183,
-  "name": "llama",
-  "type": "model",
-  "mentions": 11,
-  "last_seen": "2026-07-15"
  },
  {
   "id": 304,
@@ -224,6 +224,13 @@
   "last_seen": "2026-07-11"
  },
  {
+  "id": 760,
+  "name": "字节跳动",
+  "type": "company",
+  "mentions": 9,
+  "last_seen": "2026-07-19T16:00:00.000Z"
+ },
+ {
   "id": 5,
   "name": "Composer 2.5",
   "type": "model",
@@ -243,6 +250,13 @@
   "type": "model",
   "mentions": 8,
   "last_seen": "2026-06-29"
+ },
+ {
+  "id": 376,
+  "name": "面壁智能",
+  "type": "company",
+  "mentions": 8,
+  "last_seen": "2026-07-20T03:54:08.000Z"
  },
  {
   "id": 434,
@@ -266,13 +280,6 @@
   "last_seen": "2026-07-17"
  },
  {
-  "id": 760,
-  "name": "字节跳动",
-  "type": "company",
-  "mentions": 8,
-  "last_seen": "2026-07-14"
- },
- {
   "id": 1083,
   "name": "Amazon",
   "type": "company",
@@ -287,18 +294,25 @@
   "last_seen": "2026-06-29"
  },
  {
-  "id": 376,
-  "name": "面壁智能",
-  "type": "company",
-  "mentions": 7,
-  "last_seen": "2026-07-20"
- },
- {
   "id": 651,
   "name": "华为",
   "type": "company",
   "mentions": 7,
   "last_seen": "2026-07-20"
+ },
+ {
+  "id": 976,
+  "name": "Qwen-",
+  "type": "model",
+  "mentions": 7,
+  "last_seen": "2026-07-20T08:53:11.000Z"
+ },
+ {
+  "id": 19,
+  "name": "OpenBMB",
+  "type": "company",
+  "mentions": 6,
+  "last_seen": "2026-07-20T03:54:08.000Z"
  },
  {
   "id": 34,
@@ -334,20 +348,6 @@
   "type": "company",
   "mentions": 6,
   "last_seen": "2026-07-17"
- },
- {
-  "id": 976,
-  "name": "Qwen-",
-  "type": "model",
-  "mentions": 6,
-  "last_seen": "2026-07-16"
- },
- {
-  "id": 19,
-  "name": "OpenBMB",
-  "type": "company",
-  "mentions": 5,
-  "last_seen": "2026-07-20"
  },
  {
   "id": 134,
@@ -427,6 +427,13 @@
   "last_seen": "2026-07-09"
  },
  {
+  "id": 428,
+  "name": "Qwen2.5",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-07-20T12:21:09.021Z"
+ },
+ {
   "id": 602,
   "name": "cursor",
   "type": "model",
@@ -481,13 +488,6 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-07-07"
- },
- {
-  "id": 428,
-  "name": "Qwen2.5",
-  "type": "model",
-  "mentions": 3,
-  "last_seen": "2026-06-29"
  },
  {
   "id": 435,
@@ -663,6 +663,13 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-07-07"
+ },
+ {
+  "id": 2585,
+  "name": "Qwen3-235",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-07-20T08:00:45.000Z"
  },
  {
   "id": 11,
@@ -845,13 +852,6 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-07-07T00:00:00.000Z"
- },
- {
-  "id": 2585,
-  "name": "Qwen3-235",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-07-09"
  },
  {
   "id": 2653,
