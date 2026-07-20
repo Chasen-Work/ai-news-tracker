@@ -1,13 +1,13 @@
 {
- "total_items": 1241,
+ "total_items": 1247,
  "total_entities": 127,
- "total_dailies": 48,
+ "total_dailies": 49,
  "categories": {
   "ai-products": 344,
-  "tip": 343,
-  "industry": 287,
+  "tip": 344,
+  "industry": 288,
   "paper": 140,
-  "ai-models": 127
+  "ai-models": 131
  },
  "entity_types": {
   "model": 73,
@@ -20,7 +20,7 @@
   },
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 75
+   "count": 77
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
@@ -32,7 +32,7 @@
   },
   {
    "name": "TechCrunch：AI（RSS）",
-   "count": 30
+   "count": 31
   },
   {
    "name": "Claude：Blog（网页）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-06-20",
-   "count": 16
-  },
   {
    "date": "2026-06-21",
    "count": 2
@@ -174,8 +170,12 @@
   },
   {
    "date": "2026-07-19",
-   "count": 6
+   "count": 3
+  },
+  {
+   "date": "2026-07-20",
+   "count": 9
   }
  ],
- "updated_at": "2026-07-19T13:00:19Z"
+ "updated_at": "2026-07-20T01:00:26Z"
 }

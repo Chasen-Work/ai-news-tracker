@@ -38,15 +38,15 @@
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 60,
-  "last_seen": "2026-07-18"
+  "mentions": 61,
+  "last_seen": "2026-07-20"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 54,
-  "last_seen": "2026-07-19T08:10:39.000Z"
+  "mentions": 56,
+  "last_seen": "2026-07-20T00:08:00.000Z"
  },
  {
   "id": 36,
@@ -74,7 +74,7 @@
   "name": "Meta",
   "type": "company",
   "mentions": 41,
-  "last_seen": "2026-07-19T02:49:15.657Z"
+  "last_seen": "2026-07-20"
  },
  {
   "id": 4,
@@ -116,7 +116,7 @@
   "name": "阿里",
   "type": "company",
   "mentions": 26,
-  "last_seen": "2026-07-19T08:10:39.000Z"
+  "last_seen": "2026-07-20"
  },
  {
   "id": 52,
@@ -206,8 +206,8 @@
   "id": 304,
   "name": "Qwen3.5",
   "type": "model",
-  "mentions": 10,
-  "last_seen": "2026-07-18"
+  "mentions": 11,
+  "last_seen": "2026-07-20"
  },
  {
   "id": 26,
@@ -287,6 +287,20 @@
   "last_seen": "2026-06-29"
  },
  {
+  "id": 376,
+  "name": "面壁智能",
+  "type": "company",
+  "mentions": 7,
+  "last_seen": "2026-07-20"
+ },
+ {
+  "id": 651,
+  "name": "华为",
+  "type": "company",
+  "mentions": 7,
+  "last_seen": "2026-07-20"
+ },
+ {
   "id": 34,
   "name": "Perplexity",
   "type": "company",
@@ -322,18 +336,18 @@
   "last_seen": "2026-07-17"
  },
  {
-  "id": 651,
-  "name": "华为",
-  "type": "company",
-  "mentions": 6,
-  "last_seen": "2026-07-16"
- },
- {
   "id": 976,
   "name": "Qwen-",
   "type": "model",
   "mentions": 6,
   "last_seen": "2026-07-16"
+ },
+ {
+  "id": 19,
+  "name": "OpenBMB",
+  "type": "company",
+  "mentions": 5,
+  "last_seen": "2026-07-20"
  },
  {
   "id": 134,
@@ -348,13 +362,6 @@
   "type": "company",
   "mentions": 5,
   "last_seen": "2026-07-09T13:01:09.000Z"
- },
- {
-  "id": 376,
-  "name": "面壁智能",
-  "type": "company",
-  "mentions": 5,
-  "last_seen": "2026-07-17"
  },
  {
   "id": 669,
@@ -383,13 +390,6 @@
   "type": "company",
   "mentions": 4,
   "last_seen": "2026-07-03"
- },
- {
-  "id": 19,
-  "name": "OpenBMB",
-  "type": "company",
-  "mentions": 4,
-  "last_seen": "2026-06-09"
  },
  {
   "id": 30,
@@ -530,6 +530,13 @@
   "type": "company",
   "mentions": 3,
   "last_seen": "2026-06-25"
+ },
+ {
+  "id": 2120,
+  "name": "昆仑万维",
+  "type": "company",
+  "mentions": 3,
+  "last_seen": "2026-07-20"
  },
  {
   "id": 9,
@@ -833,13 +840,6 @@
   "last_seen": "2026-07-03"
  },
  {
-  "id": 2120,
-  "name": "昆仑万维",
-  "type": "company",
-  "mentions": 1,
-  "last_seen": "2026-07-03"
- },
- {
   "id": 2501,
   "name": "gpt-5.5",
   "type": "model",
@@ -886,6 +886,6 @@
   "name": "Qwen3.8",
   "type": "model",
   "mentions": 1,
-  "last_seen": "2026-07-19T08:10:39.000Z"
+  "last_seen": "2026-07-20"
  }
 ]
