@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 158,
-  "last_seen": "2026-07-18"
+  "mentions": 160,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 139,
-  "last_seen": "2026-07-18"
+  "mentions": 140,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 104,
-  "last_seen": "2026-07-17"
+  "mentions": 106,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 102,
-  "last_seen": "2026-07-19"
+  "mentions": 103,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 21,
@@ -38,15 +38,22 @@
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 61,
-  "last_seen": "2026-07-20"
+  "mentions": 62,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 59,
-  "last_seen": "2026-07-20T12:21:09.021Z"
+  "mentions": 60,
+  "last_seen": "2026-07-21"
+ },
+ {
+  "id": 79,
+  "name": "DeepSeek",
+  "type": "company",
+  "mentions": 44,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 36,
@@ -56,18 +63,18 @@
   "last_seen": "2026-07-18"
  },
  {
-  "id": 79,
-  "name": "DeepSeek",
-  "type": "company",
-  "mentions": 43,
-  "last_seen": "2026-07-12"
- },
- {
   "id": 149,
   "name": "Cursor",
   "type": "company",
-  "mentions": 42,
-  "last_seen": "2026-07-18"
+  "mentions": 43,
+  "last_seen": "2026-07-21"
+ },
+ {
+  "id": 4,
+  "name": "xAI",
+  "type": "company",
+  "mentions": 41,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 43,
@@ -77,13 +84,6 @@
   "last_seen": "2026-07-20"
  },
  {
-  "id": 4,
-  "name": "xAI",
-  "type": "company",
-  "mentions": 40,
-  "last_seen": "2026-07-17"
- },
- {
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
@@ -91,25 +91,25 @@
   "last_seen": "2026-07-09"
  },
  {
-  "id": 2,
-  "name": "GPT-5.5",
-  "type": "model",
-  "mentions": 30,
-  "last_seen": "2026-07-15"
- },
- {
   "id": 560,
   "name": "Apple",
   "type": "company",
-  "mentions": 30,
-  "last_seen": "2026-07-18"
+  "mentions": 32,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 29,
-  "last_seen": "2026-07-20T12:12:47.000Z"
+  "mentions": 31,
+  "last_seen": "2026-07-21"
+ },
+ {
+  "id": 2,
+  "name": "GPT-5.5",
+  "type": "model",
+  "mentions": 30,
+  "last_seen": "2026-07-15"
  },
  {
   "id": 93,
@@ -122,8 +122,8 @@
   "id": 52,
   "name": "Microsoft",
   "type": "company",
-  "mentions": 22,
-  "last_seen": "2026-07-07"
+  "mentions": 23,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 1502,
@@ -189,18 +189,18 @@
   "last_seen": "2026-07-14"
  },
  {
+  "id": 23,
+  "name": "Replit",
+  "type": "company",
+  "mentions": 12,
+  "last_seen": "2026-07-21"
+ },
+ {
   "id": 183,
   "name": "llama",
   "type": "model",
   "mentions": 12,
-  "last_seen": "2026-07-20T01:45:09.765Z"
- },
- {
-  "id": 23,
-  "name": "Replit",
-  "type": "company",
-  "mentions": 11,
-  "last_seen": "2026-07-09"
+  "last_seen": "2026-07-21"
  },
  {
   "id": 304,
@@ -215,6 +215,13 @@
   "type": "company",
   "mentions": 9,
   "last_seen": "2026-07-15"
+ },
+ {
+  "id": 434,
+  "name": "DeepSeek V4",
+  "type": "model",
+  "mentions": 9,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 701,
@@ -256,14 +263,7 @@
   "name": "面壁智能",
   "type": "company",
   "mentions": 8,
-  "last_seen": "2026-07-20T03:54:08.000Z"
- },
- {
-  "id": 434,
-  "name": "DeepSeek V4",
-  "type": "model",
-  "mentions": 8,
-  "last_seen": "2026-07-06T00:00:00.000Z"
+  "last_seen": "2026-07-21"
  },
  {
   "id": 713,
@@ -305,14 +305,14 @@
   "name": "Qwen-",
   "type": "model",
   "mentions": 7,
-  "last_seen": "2026-07-20T08:53:11.000Z"
+  "last_seen": "2026-07-21"
  },
  {
   "id": 19,
   "name": "OpenBMB",
   "type": "company",
   "mentions": 6,
-  "last_seen": "2026-07-20T03:54:08.000Z"
+  "last_seen": "2026-07-21"
  },
  {
   "id": 34,
@@ -378,6 +378,13 @@
   "last_seen": "2026-06-26"
  },
  {
+  "id": 1137,
+  "name": "月之暗面",
+  "type": "company",
+  "mentions": 5,
+  "last_seen": "2026-07-21"
+ },
+ {
   "id": 7,
   "name": "Qwen3.7",
   "type": "model",
@@ -431,7 +438,7 @@
   "name": "Qwen2.5",
   "type": "model",
   "mentions": 4,
-  "last_seen": "2026-07-20T12:21:09.021Z"
+  "last_seen": "2026-07-21"
  },
  {
   "id": 602,
@@ -441,18 +448,18 @@
   "last_seen": "2026-07-14"
  },
  {
-  "id": 1137,
-  "name": "月之暗面",
-  "type": "company",
-  "mentions": 4,
-  "last_seen": "2026-07-18"
- },
- {
   "id": 1146,
   "name": "Qwen3-32",
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-07-09"
+ },
+ {
+  "id": 9,
+  "name": "Cosmos 3",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-07-21"
  },
  {
   "id": 31,
@@ -532,18 +539,18 @@
   "last_seen": "2026-06-25"
  },
  {
+  "id": 1041,
+  "name": "GPT-5.2",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-07-21"
+ },
+ {
   "id": 2120,
   "name": "昆仑万维",
   "type": "company",
   "mentions": 3,
   "last_seen": "2026-07-20"
- },
- {
-  "id": 9,
-  "name": "Cosmos 3",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-24T00:00:00.000Z"
  },
  {
   "id": 29,
@@ -609,13 +616,6 @@
   "last_seen": "2026-06-17"
  },
  {
-  "id": 1041,
-  "name": "GPT-5.2",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-29"
- },
- {
   "id": 1051,
   "name": "DeepSeek R1",
   "type": "model",
@@ -669,7 +669,7 @@
   "name": "Qwen3-235",
   "type": "model",
   "mentions": 2,
-  "last_seen": "2026-07-20T08:00:45.000Z"
+  "last_seen": "2026-07-21"
  },
  {
   "id": 11,
@@ -887,5 +887,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-07-20"
+ },
+ {
+  "id": 3449,
+  "name": "Qwen 3.8",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-07-21"
  }
 ]
