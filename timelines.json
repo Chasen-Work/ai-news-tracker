@@ -160,6 +160,15 @@
  ],
  "Anthropic": [
   {
+   "id": 2679,
+   "title": "法官批准Anthropic就盗版书籍训练Claude一案达成15亿美元和解协议",
+   "summary": "美国联邦法官批准Anthropic支付15亿美元，和解其使用盗版书籍训练Claude聊天机器人的集体诉讼。约91%的48.2万本涉案书籍已被作者或出版商认领，每本书赔偿约3000美元。原告律师称这是\"历史上已知最大的版权追偿\"，Anthropic则强调法院此前已裁定AI训练书籍属于合理使用。",
+   "published_at": "2026-07-22T04:52:13.369Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 2662,
    "title": "美国威胁因知识产权盗窃对中国AI模型实施制裁",
    "summary": "美国财政部长Scott Bessent周二表示，美方将审查中国开源模型是否存在知识产权盗窃行为，若证实将对中国AI公司实施制裁。Bessent称政府支持开源模型但不支持IP盗窃，并称有能力对盗窃美国公司技术的外国模型进行制裁。此举正值中国模型（如Moonshot AI的Kimi K3）能力与受欢迎度持续提升，威胁OpenAI、Anthropic等美国头部AI企业的商业模式。",
@@ -8676,6 +8685,15 @@
    "source": "Tomer Tunguz 博客（VC 分析）"
   },
   {
+   "id": 2697,
+   "title": "ABot-World-0：单张桌面级GPU实现无限交互式世界生成",
+   "summary": "ABot-World-0是一个动作条件视频世界模型，能在单张NVIDIA RTX 5090 GPU上以720P分辨率、最高16 FPS、1.2秒动作到首帧延迟和约19 GiB峰值显存预算运行无限交互式世界生成。该模型采用统一的帧同步键盘动作接口，通过LongForcing分布匹配阶段解决长程自回归漂移问题，并集成轻量级VAE解码器、低比特DiT推理和局部上下文KV缓存等系统级优化。",
+   "published_at": "2026-07-21T15:26:50.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 2585,
    "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
    "summary": "NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。",
@@ -11192,6 +11210,15 @@
  ],
  "OpenRouter": [
   {
+   "id": 2681,
+   "title": "OpenRouter 新增音频转写 API，支持 Whisper 与 token 计价 STT 模型",
+   "summary": "OpenRouter 推出 POST /api/v1/audio/transcriptions 端点，用户可使用同一 API key 将 base64 编码音频发送至该端点，返回 JSON 格式文本与用量对象。",
+   "published_at": "2026-07-22T00:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 2651,
    "title": "OpenRouter 上线 Gemini 3.6 Flash 与 3.5 Flash-Lite",
    "summary": "今日在 OpenRouter 上线：Gemini 3.6 Flash 和 Gemini 3.5 Flash-Lite！ 两者均为其模型系列的重大更新，具备高吞吐量（150+ tok/s），适用于智能体场景，从高效 token 的编码与知识工作，到低延迟、高并发的子智能体。 详情如下 🧵",
@@ -11594,6 +11621,15 @@
  ],
  "Qwen": [
   {
+   "id": 2677,
+   "title": "通义千问发布Qwen-Image-3.0：主打\"真实\"的第三代图像生成模型",
+   "summary": "通义千问发布第三代图像生成模型Qwen-Image-3.0，核心关键词为\"真实\"。模型支持最长4.5k token的提示词，可一次性生成复杂布局（如报纸、试卷、3×3信息图），并能渲染10px级文字、完整LaTeX论文页面及逼真皮肤纹理。它还支持12种语言、100多种艺术风格，并具备实时网络检索能力，旨在成为设计、教育等领域的实用生产力工具。",
+   "published_at": "2026-07-22T12:28:08.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 2647,
    "title": "通义千问发布 Qwen-Image-3.0 图像生成模型，核心关键词为“实”",
    "summary": "通义千问发布第三代图像生成基座模型 Qwen-Image-3.0，核心关键词为“实”。该模型支持最长 4.5k token 指令输入，可单次生成包含 9 个复杂信息图的 3×3 网格布局；文本渲染精度达 10px，并支持 12 种语言原生渲染，旨在将图像转化为可部署的生产力工具。",
@@ -11618,6 +11654,15 @@
    "published_at": "2026-07-21T06:00:00.000Z",
    "url": "",
    "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 2707,
+   "title": "AgentDebugX：面向LLM智能体的开源故障调试框架",
+   "summary": "AgentDebugX是一个开源调试框架，将LLM智能体调试组织为\"检测-归因-恢复-重跑\"闭环。其核心DeepDebug在Who&When基准上对qwen3.5-9b达到精确的智能体与步骤归因准确率，在GAIA上单次重跑即可修复失败任务。该工具提供Python库、CLI、Web控制台和可安装的智能体技能。",
+   "published_at": "2026-07-21T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -12233,6 +12278,15 @@
   }
  ],
  "Qwen-": [
+  {
+   "id": 2677,
+   "title": "通义千问发布Qwen-Image-3.0：主打\"真实\"的第三代图像生成模型",
+   "summary": "通义千问发布第三代图像生成模型Qwen-Image-3.0，核心关键词为\"真实\"。模型支持最长4.5k token的提示词，可一次性生成复杂布局（如报纸、试卷、3×3信息图），并能渲染10px级文字、完整LaTeX论文页面及逼真皮肤纹理。它还支持12种语言、100多种艺术风格，并具备实时网络检索能力，旨在成为设计、教育等领域的实用生产力工具。",
+   "published_at": "2026-07-22T12:28:08.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2647,
    "title": "通义千问发布 Qwen-Image-3.0 图像生成模型，核心关键词为“实”",
@@ -13337,6 +13391,15 @@
  ],
  "qwen3.5": [
   {
+   "id": 2707,
+   "title": "AgentDebugX：面向LLM智能体的开源故障调试框架",
+   "summary": "AgentDebugX是一个开源调试框架，将LLM智能体调试组织为\"检测-归因-恢复-重跑\"闭环。其核心DeepDebug在Who&When基准上对qwen3.5-9b达到精确的智能体与步骤归因准确率，在GAIA上单次重跑即可修复失败任务。该工具提供Python库、CLI、Web控制台和可安装的智能体技能。",
+   "published_at": "2026-07-21T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1569,
    "title": "阿里巴巴发布 Page Agent：开源 JavaScript 库实现网页 DOM 自然语言操控",
    "summary": "阿里巴巴发布 Page Agent，一个开源的 JavaScript 客户端库，嵌入网页后可通过自然语言指令直接操作 DOM 元素。与 Playwright、Puppeteer 等外部浏览器自动化工具不同，Page Agent 不依赖截图或多模态模型，而是将实时 DOM 脱水压缩为 FlatDomTree 文本映射，让纯文本模型精准执行点击、表单填写等操作。它继承用户 cookies 和会话，无需独立后端，并支持任意 OpenAI 兼容端点的模型（示例使用 `qwen3.5-plus`）。项目采用 MIT 许可证，适合在自有应用内构建 AI 副驾、智能表单填充或无障碍控制等场景，但限于单页面范围，风险操作仍需服务端验证。",
@@ -14341,6 +14404,15 @@
  ],
  "腾讯": [
   {
+   "id": 2680,
+   "title": "腾讯设计Agent平台Miora全面开放",
+   "summary": "腾讯设计Agent平台Miora今日全面开放，无需邀请码即可使用。该平台由WorkBuddy团队打造，提供品牌设计、影视创意等五大场景模式，支持自定义多模态模型和Agent推理深度，并内置Skill市场与记忆系统。",
+   "published_at": "2026-07-22T04:21:03.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2653,
    "title": "腾讯混元推出Hyra-1.0递归自我改进研究智能体",
    "summary": "腾讯混元推出Hyra-1.0，一个能递归自我改进的研究智能体，在NanoChat等三项任务上均超越Recursive公开结果。Hyra在55个数学开放问题中刷新29个历史最好结果，并设计出仅含15个可训练参数即可完成10位数加法的Transformer。所有产物已在GitHub开源。",
@@ -14641,6 +14713,15 @@
   }
  ],
  "通义千问": [
+  {
+   "id": 2677,
+   "title": "通义千问发布Qwen-Image-3.0：主打\"真实\"的第三代图像生成模型",
+   "summary": "通义千问发布第三代图像生成模型Qwen-Image-3.0，核心关键词为\"真实\"。模型支持最长4.5k token的提示词，可一次性生成复杂布局（如报纸、试卷、3×3信息图），并能渲染10px级文字、完整LaTeX论文页面及逼真皮肤纹理。它还支持12种语言、100多种艺术风格，并具备实时网络检索能力，旨在成为设计、教育等领域的实用生产力工具。",
+   "published_at": "2026-07-22T12:28:08.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2647,
    "title": "通义千问发布 Qwen-Image-3.0 图像生成模型，核心关键词为“实”",
