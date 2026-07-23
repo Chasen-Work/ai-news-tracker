@@ -1,5 +1,75 @@
 [
  {
+  "id": 2769,
+  "title": "通义千问发布Qwen-Audio-3.0-TTS，登顶TTS排行榜",
+  "summary": "阿里通义千问推出最新文本转语音模型Qwen-Audio-3.0-TTS，提供Flash（实时交互）和Plus（高质量生成）两个版本。新功能包括细粒度内联标签控制（如【whisper】、【angry】）、自然语言风格控制、支持16种语言，以及一次生成长达3分钟的长文本。该模型目前在Artificial Analysis TTS排行榜上排名第一。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-23T12:33:27.000Z",
+  "fetched_at": "2026-07-23 13:00:46"
+ },
+ {
+  "id": 2770,
+  "title": "昆仑万维方汉：Token堆不出AI原生组织，模型才是长期立足之本",
+  "summary": "昆仑万维CEO方汉在WAIC圆桌上指出，单纯堆砌Token消耗量无法衡量AI价值，模型能力需依赖Claude Code等Coding Agent建立的工程框架才能转化为生产力。他透露昆仑万维仍在持续训练模型，并将发布音乐、具身世界和游戏世界模型，认为模型与算力是AI公司长期立足的基础。方汉同时警示，AI编程带来的技术债可能导致生产事故增幅达数倍，代码审查与责任机制必须同步加强。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-23T11:20:00.000Z",
+  "fetched_at": "2026-07-23 13:00:46"
+ },
+ {
+  "id": 2771,
+  "title": "Cactus 发布 Gemma 4 E2B Hybrid：可在设备端为每个回答输出置信度分数，低分时自动路由至更大模型",
+  "summary": "Cactus 推出基于 Gemma 4 的混合模型\"Cactus Hybrid\"，在模型检查点内嵌入置信度探针，为每个生成答案输出 0-1 之间的结构化置信度分数。高置信度时在设备端直接回答，低分时可自动路由至更大模型。该探针在零音频训练数据下，于四个音频基准上达到 0.79-0.88 AUROC，远超 token 熵基线（均值 0.549），且 MIT 协议开源。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-23T05:47:29.042Z",
+  "fetched_at": "2026-07-23 13:00:46"
+ },
+ {
+  "id": 2772,
+  "title": "北京发布智能体新政，首次将Harness Engineering、Token经济、OPC等写入政策",
+  "summary": "北京市发布《关于加快智能体引领发展的若干措施》，共十条，首次将Harness Engineering（驾驭层工程）、Token经济、OPC（一人公司）等前沿概念写入正式政策。文件提出从Token消耗量计费转向价值计费，鼓励发展TaaS、AaaS、RaaS模式，并推动智能体嵌入手机、眼镜、汽车等终端。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-23T05:13:37.000Z",
+  "fetched_at": "2026-07-23 13:00:46"
+ },
+ {
+  "id": 2773,
+  "title": "小红书HELMSMAN：全闪存服务器实现高性能向量检索，硬件成本节省超90%",
+  "summary": "小红书引擎架构团队在OSDI 2026提出HELMSMAN，一个面向全闪存服务器的高性能向量近似最近邻搜索系统。该系统通过聚类式索引、定制化存储栈和分层学习式搜索剪枝，用约40台全闪存服务器承载了过去约35，000 CPU Core和约350 TB DRAM的负载，硬件成本节省超过90%。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-07-23T04:00:00.000Z",
+  "fetched_at": "2026-07-23 13:00:46"
+ },
+ {
+  "id": 2774,
+  "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存\"作弊\"行为",
+  "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的\"作弊\"行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-07-23T02:51:59.000Z",
+  "fetched_at": "2026-07-23 13:00:46"
+ },
+ {
+  "id": 2768,
+  "title": "RECAP：通过可解码性监督训练可验证的激活解释",
+  "summary": "研究发现自然语言自编码器（NLA）的重建分数无法验证逐声明的忠实性，模型可能依赖“私密代码”而非真实依据。作者提出RECAP方法，在目标模型上联合训练线性头以保持指定内容可解码。在Pythia-160M上，独立探针能可靠区分真假声明（AUC 0.96），并在对抗编辑下仍能标记谎言（AUC 0.95）。",
+  "url": "https://arxiv.org/abs/2607.20379",
+  "source": "HuggingFace Daily Papers（社区热门论文）",
+  "category": "paper",
+  "published_at": "2026-07-23",
+  "fetched_at": "2026-07-23 13:00:46"
+ },
+ {
   "id": 2737,
   "title": "Outtake 在 Claude 上构建自主网络调查智能体 Recon Agent",
   "summary": "AI 网络安全平台 Outtake 基于 Claude，使用 Claude Code 和 Agent SDK 构建了自主网络调查智能体 Recon Agent。",
