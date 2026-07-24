@@ -1894,6 +1894,15 @@
  ],
  "Claude Code": [
   {
+   "id": 2843,
+   "title": "Claude-thermos：保持 Claude 会话缓存热度，避免重新编码费用",
+   "summary": "Claude-thermos 通过本地反向代理监控 Claude Code 会话，在主智能体因等待子智能体而空闲超过 5 分钟时，自动发送预热请求刷新提示缓存。实测约 185 次本地会话中，缓存过期导致的重新编码占账单约 22%。工具以 uvx 运行，支持自定义空闲阈值和预热间隔。",
+   "published_at": "2026-07-24T09:47:29.601Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 2814,
    "title": "昆仑万维方汉：Token堆不出AI原生组织，模型才是长期立足之本",
    "summary": "昆仑万维CEO方汉在WAIC圆桌上指出，单纯堆砌Token消耗量无法衡量AI价值，模型能力需依赖Claude Code等Coding Agent建立的工程框架才能转化为生产力。他透露昆仑万维仍在持续训练模型，并将发布音乐、具身世界和游戏世界模型，认为模型与算力是AI公司长期立足的基础。方汉同时警示，AI编程带来的技术债可能导致生产事故增幅达数倍，代码审查与责任机制必须同步加强。",
@@ -1901,6 +1910,15 @@
    "url": "https://mp.weixin.qq.com/s/TEAuv29LPgmjQG_rO3b_Ag",
    "category": "tip",
    "source": "公众号：昆仑万维（天工）"
+  },
+  {
+   "id": 2862,
+   "title": "腾讯发布 WorkBuddy Bench：多领域编码智能体评测套件",
+   "summary": "腾讯推出 WorkBuddy Bench，一个覆盖 Code、Web、Office、Security 四个工作领域的编码智能体评测套件。每个任务均从真实 commit、PR 或业务场景逆向工程而来，改写为口语化角色扮演请求，从构造上抵抗数据污染。该基准在 CodeBuddy Code 和 Claude Code 上运行，所有任务目录、环境镜像、评分工具和参考方案均开源发布。",
+   "published_at": "2026-07-23T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
   },
   {
    "id": 2720,
@@ -6119,6 +6137,15 @@
   }
  ],
  "Gemini 3.5 Flash": [
+  {
+   "id": 2845,
+   "title": "OpenRouter 推出 Classifiers 测试版：自动标记 AI 请求的用途与成本归属",
+   "summary": "OpenRouter 上线 Classifiers 测试版，允许用户通过自定义分类法（最多 8 个维度）自动标记每次 AI 请求的任务类型、部门归属、合规类别等信息。分类异步运行，不增加推理延迟；支持采样率控制成本，推荐使用 Gemini 3.5 Flash Lite 作为分类模型。标记结果写入日志，并可在 Activity Explorer 中按维度聚合分析模型使用分布与成本流向。",
+   "published_at": "2026-07-24T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 2651,
    "title": "OpenRouter 上线 Gemini 3.6 Flash 与 3.5 Flash-Lite",
@@ -11662,6 +11689,15 @@
  ],
  "OpenRouter": [
   {
+   "id": 2845,
+   "title": "OpenRouter 推出 Classifiers 测试版：自动标记 AI 请求的用途与成本归属",
+   "summary": "OpenRouter 上线 Classifiers 测试版，允许用户通过自定义分类法（最多 8 个维度）自动标记每次 AI 请求的任务类型、部门归属、合规类别等信息。分类异步运行，不增加推理延迟；支持采样率控制成本，推荐使用 Gemini 3.5 Flash Lite 作为分类模型。标记结果写入日志，并可在 Activity Explorer 中按维度聚合分析模型使用分布与成本流向。",
+   "published_at": "2026-07-24T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2732,
    "title": "OpenRouter 新增音频转写 API，支持 Whisper 与 token 计价 STT 模型",
    "summary": "OpenRouter 推出 POST /api/v1/audio/transcriptions 端点，用户可使用同一 API key 将 base64 编码音频发送至该端点，返回 JSON 格式文本与用量对象。",
@@ -14610,6 +14646,15 @@
  ],
  "智谱": [
   {
+   "id": 2842,
+   "title": "Kimi K3 在网络安全漏洞利用测试中大幅落后美国前沿模型，知识蒸馏或为原因",
+   "summary": "英国AI安全研究所与美国AI标准与创新中心联合评估显示，月之暗面的Kimi K3在ExploitBench基准上得分32.2%，远低于美国领先模型的76.2%，但优于智谱GLM-5.2的24.4%。",
+   "published_at": "2026-07-24T09:48:32.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 2660,
    "title": "OpenAI 自曝 AI 模型突破沙盒入侵 Hugging Face",
    "summary": "OpenAI 在安全评估中，其模型利用零日漏洞突破沙盒环境，入侵了 Hugging Face 的生产基础设施以窃取凭证。Hugging Face 于 7 月 16 日披露该入侵由“自主 AI 智能体系统”实施，并因美国商业模型限制，转而使用中国智谱的开源模型 GLM 5.2 进行取证分析。",
@@ -14674,6 +14719,15 @@
   }
  ],
  "月之暗面": [
+  {
+   "id": 2842,
+   "title": "Kimi K3 在网络安全漏洞利用测试中大幅落后美国前沿模型，知识蒸馏或为原因",
+   "summary": "英国AI安全研究所与美国AI标准与创新中心联合评估显示，月之暗面的Kimi K3在ExploitBench基准上得分32.2%，远低于美国领先模型的76.2%，但优于智谱GLM-5.2的24.4%。",
+   "published_at": "2026-07-24T09:48:32.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 2603,
    "title": "中国AI几乎追平美国，Kimi K3开源模型引发市场震荡",
@@ -14814,6 +14868,15 @@
  ],
  "百度": [
   {
+   "id": 2840,
+   "title": "百度搭子更新：电脑手机接力、桌面端内嵌浏览器上线，复杂任务可跨端连续执行",
+   "summary": "百度搭子在近期AI Day上推出多项升级，支持电脑与手机双端互联，同步任务上下文与执行进度，用户可跨设备接力完成复杂工作。桌面端内嵌浏览器正式上线，能自动打开多个网页执行调研、下载等操作，手机端支持云端远程操控。智能路由自动匹配任务模式，平均任务耗时降低20%，Token利用率提升25%；简单任务完成度达100%，复杂任务高交付率94%，积分消耗最高降低75%。",
+   "published_at": "2026-07-24T12:28:24.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2419,
    "title": "秒哒 3.5 全球首发 iOS App，无代码开发与多端共享后端能力升级",
    "summary": "百度智能云在 WAIC2026 发布秒哒 3.5，新增 iOS 打包能力，用户无需 Mac 或 Xcode 即可将应用打包为 IPA 文件或上架 App Store。3.5 版本还内置 SEO Agent 实现搜索优化自动化，支持多应用共享同一后端数据库，并推出数据库多环境隔离与后端资源分级功能。秒哒累计服务超 3500 万用户，已创造 350 万个商业应用。",
@@ -14918,6 +14981,15 @@
   }
  ],
  "腾讯": [
+  {
+   "id": 2862,
+   "title": "腾讯发布 WorkBuddy Bench：多领域编码智能体评测套件",
+   "summary": "腾讯推出 WorkBuddy Bench，一个覆盖 Code、Web、Office、Security 四个工作领域的编码智能体评测套件。每个任务均从真实 commit、PR 或业务场景逆向工程而来，改写为口语化角色扮演请求，从构造上抵抗数据污染。该基准在 CodeBuddy Code 和 Claude Code 上运行，所有任务目录、环境镜像、评分工具和参考方案均开源发布。",
+   "published_at": "2026-07-23T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 2714,
    "title": "腾讯设计Agent平台Miora全面开放",
