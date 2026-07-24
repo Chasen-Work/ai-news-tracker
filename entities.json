@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 175,
-  "last_seen": "2026-07-23T02:51:59.000Z"
+  "mentions": 182,
+  "last_seen": "2026-07-24"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 152,
-  "last_seen": "2026-07-23T02:51:59.000Z"
+  "mentions": 153,
+  "last_seen": "2026-07-24"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 111,
-  "last_seen": "2026-07-23"
+  "mentions": 112,
+  "last_seen": "2026-07-24"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
   "mentions": 108,
-  "last_seen": "2026-07-23T11:20:00.000Z"
+  "last_seen": "2026-07-24"
  },
  {
   "id": 6,
@@ -38,8 +38,8 @@
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 66,
-  "last_seen": "2026-07-23"
+  "mentions": 67,
+  "last_seen": "2026-07-24"
  },
  {
   "id": 10,
@@ -52,8 +52,8 @@
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 44,
-  "last_seen": "2026-07-23T02:51:59.000Z"
+  "mentions": 45,
+  "last_seen": "2026-07-24"
  },
  {
   "id": 79,
@@ -91,18 +91,18 @@
   "last_seen": "2026-07-23"
  },
  {
+  "id": 560,
+  "name": "Apple",
+  "type": "company",
+  "mentions": 37,
+  "last_seen": "2026-07-24"
+ },
+ {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
   "mentions": 36,
   "last_seen": "2026-07-23"
- },
- {
-  "id": 560,
-  "name": "Apple",
-  "type": "company",
-  "mentions": 34,
-  "last_seen": "2026-07-22"
  },
  {
   "id": 2,
@@ -122,15 +122,15 @@
   "id": 52,
   "name": "Microsoft",
   "type": "company",
-  "mentions": 25,
-  "last_seen": "2026-07-23"
+  "mentions": 26,
+  "last_seen": "2026-07-24"
  },
  {
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 24,
-  "last_seen": "2026-07-23T02:51:59.000Z"
+  "mentions": 25,
+  "last_seen": "2026-07-24"
  },
  {
   "id": 24,
@@ -157,7 +157,7 @@
   "id": 20,
   "name": "HuggingFace",
   "type": "company",
-  "mentions": 16,
+  "mentions": 17,
   "last_seen": "2026-07-23"
  },
  {
@@ -224,18 +224,18 @@
   "last_seen": "2026-07-22"
  },
  {
+  "id": 338,
+  "name": "GPT-5.4",
+  "type": "model",
+  "mentions": 10,
+  "last_seen": "2026-07-24"
+ },
+ {
   "id": 723,
   "name": "Claude Sonnet",
   "type": "model",
   "mentions": 10,
   "last_seen": "2026-07-22"
- },
- {
-  "id": 338,
-  "name": "GPT-5.4",
-  "type": "model",
-  "mentions": 9,
-  "last_seen": "2026-07-23T02:51:59.000Z"
  },
  {
   "id": 434,
@@ -315,6 +315,13 @@
   "last_seen": "2026-07-20"
  },
  {
+  "id": 669,
+  "name": "GPT-4",
+  "type": "model",
+  "mentions": 7,
+  "last_seen": "2026-07-24"
+ },
+ {
   "id": 977,
   "name": "通义千问",
   "type": "company",
@@ -357,13 +364,6 @@
   "last_seen": "2026-07-17"
  },
  {
-  "id": 669,
-  "name": "GPT-4",
-  "type": "model",
-  "mentions": 6,
-  "last_seen": "2026-07-22"
- },
- {
   "id": 134,
   "name": "IBM",
   "type": "company",
@@ -403,7 +403,7 @@
   "name": "昆仑万维",
   "type": "company",
   "mentions": 5,
-  "last_seen": "2026-07-23T11:20:00.000Z"
+  "last_seen": "2026-07-24"
  },
  {
   "id": 7,

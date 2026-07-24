@@ -236,6 +236,27 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
 .sp-item em{font-style:normal;background:rgba(0,112,243,0.12);color:var(--accent);padding:0 2px;border-radius:2px}
 /* 搜索面板在手机上全屏 */
 @media(max-width:768px){.search-panel{position:fixed;top:56px;left:0;right:0;max-height:calc(100vh - 60px);border-radius:0;box-shadow:0 4px 24px rgba(0,0,0,0.15)}}
+/* ── Project Cards ── */
+.proj-card{background:var(--surface);border:none;box-shadow:var(--elev-raised);border-radius:var(--radius-md);padding:var(--space-5);margin-bottom:var(--space-4);transition:box-shadow var(--motion-base) var(--ease-standard)}
+.proj-card:hover{box-shadow:0 0 0 1px rgba(0,0,0,0.12),0 2px 4px rgba(0,0,0,0.06),0 12px 12px -8px rgba(0,0,0,0.06),0 0 0 1px #fafafa}
+.proj-head{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--space-3);margin-bottom:var(--space-3)}
+.proj-name{font-size:var(--text-base);font-weight:600;color:var(--fg);letter-spacing:-0.03em}
+.proj-name a{color:var(--fg);text-decoration:none}
+.proj-name a:hover{color:var(--accent);text-decoration:underline}
+.proj-repo{font-size:var(--text-xs);color:var(--accent);margin-top:2px}
+.proj-repo a{color:var(--accent);text-decoration:none}
+.proj-repo a:hover{text-decoration:underline}
+.proj-tags{display:flex;gap:var(--space-1);flex-wrap:wrap;margin-bottom:var(--space-3)}
+.proj-tag{font-size:10px;font-weight:500;background:rgba(0,0,0,0.04);color:var(--fg-2);padding:2px 8px;border-radius:var(--radius-pill);letter-spacing:0.01em}
+.proj-intro .proj-oneliner{font-size:var(--text-sm);color:var(--fg-2);margin-bottom:var(--space-3);line-height:1.5}
+.proj-intro .proj-desc{font-size:var(--text-xs);color:var(--muted);line-height:1.6;margin-bottom:var(--space-3)}
+.proj-highlights{margin-bottom:var(--space-3)}
+.proj-highlights li{font-size:var(--text-xs);color:var(--fg-2);line-height:1.6;margin-left:var(--space-4);margin-bottom:2px}
+.proj-tech{display:flex;gap:var(--space-1);flex-wrap:wrap;margin-bottom:var(--space-3)}
+.proj-tech span{font-size:10px;font-weight:500;background:rgba(0,112,243,0.08);color:var(--accent);padding:2px 8px;border-radius:3px}
+.proj-status{font-size:var(--text-xs);color:var(--meta);padding:var(--space-2) var(--space-3);background:rgba(0,0,0,0.02);border-radius:var(--radius-sm);border:1px solid var(--border)}
+.proj-footer{display:flex;justify-content:space-between;align-items:center;margin-top:var(--space-3);padding-top:var(--space-3);border-top:1px solid var(--border);font-size:10px;color:var(--meta)}
+.sp-tag-project{background:rgba(234,88,12,0.10);color:#ea580c}
 </style>
 </head>
 <body>
@@ -244,7 +265,7 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
   <div class="header-inner">
     <div class="header-brand">
       <h1>AI<span>HOT</span></h1>
-      <div class="sub">机器人 · 模型 · 新闻 · 技能</div>
+      <div class="sub">机器人 · 模型 · 新闻 · 技能 · 项目</div>
     </div>
     <div class="header-center">
       <div class="search-bar">
@@ -262,7 +283,8 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
   <button class="tab-btn active" data-tab="robots">🤖 机器人对比 <span class="badge" id="robotsBadge">0</span></button>
   <button class="tab-btn" data-tab="models">🧠 模型选型 <span class="badge" id="modelsBadge">0</span></button>
   <button class="tab-btn" data-tab="news">📺 新闻 <span class="badge" id="newsBadge">0</span></button>
-  <button class="tab-btn" data-tab="skills">🛠 技能推荐 <span class="badge" id="skillsBadge">0</span></button>
+  <button class="tab-btn" data-tab="skills">🛠 技能 <span class="badge" id="skillsBadge">0</span></button>
+  <button class="tab-btn" data-tab="projects">📦 项目 <span class="badge" id="projectsBadge">0</span></button>
 </div>
 
 <div class="main">
@@ -360,6 +382,16 @@ h1,h2,h3,h4{font-weight:600;color:var(--fg)}h1{font-size:var(--text-xl);letter-s
   </div>
 </div>
 
+<!-- ══════════════ TAB 5: PROJECTS ══════════════ -->
+<div class="tab-content" id="tab-projects">
+  <div class="projects-intro" style="font-size:var(--text-sm);color:var(--muted);margin-bottom:var(--space-4);padding:var(--space-3) var(--space-4);background:var(--surface);box-shadow:var(--elev-ring);border-radius:var(--radius-md)">
+    我关注的开源项目收藏。点仓库链接可查看详情，介绍由我整理。
+  </div>
+  <div id="projectsContainer">
+    <div class="vc-card" style="text-align:center;padding:40px;color:var(--meta)">加载项目数据中...</div>
+  </div>
+</div>
+
 </div><!-- /main -->
 
 <!-- ══════════════ ECOSYSTEM OVERLAY ══════════════ -->
@@ -393,24 +425,36 @@ async function loadJSON(url) {
 }
 
 async function init() {
-  const [models, robots, news, skills, aihotItems] = await Promise.all([
+  const [models, robots, news, skills, aihotItems, projectsIdx] = await Promise.all([
     loadJSON('./models/manual_models.json'),
     loadJSON('./robots/manual_robots.json'),
     loadJSON('./xwlb.json'),
     loadJSON('./skills.json'),
     loadJSON('./items.json'),
+    loadJSON('./projects/index.json'),
   ]);
   state.models = models || [];
   state.robots = robots || [];
   state.news = news || { days: [] };
   state.skills = skills || [];
   state.aihotItems = aihotItems || [];
+  state.projects = [];
+
+  // Load each project detail
+  const projIdx = projectsIdx || [];
+  document.getElementById('projectsBadge').textContent = projIdx.length;
+  if (projIdx.length) {
+    const detailPromises = projIdx.map(p => loadJSON(`./projects/${p.id}.json`));
+    const details = await Promise.all(detailPromises);
+    state.projects = details.filter(d => d !== null);
+  }
 
   updateStats();
 
   renderModels();
   renderNews();
   renderSkills();
+  renderProjects();
 
   loadRobotCategory('humanoid').then(data => {
     state.robots = data;
@@ -428,12 +472,14 @@ async function init() {
 function updateStats() {
   const nd = (state.news.days||[]).length;
   const ai = (state.aihotItems||[]).length;
+  const p = (state.projects||[]).length;
   document.getElementById('updateStatus').textContent =
-    `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${nd+ai}条新闻 · ${state.skills.length}技能`;
+    `● ${state.models.length}模型 · ${state.robots.length}机器人 · ${nd+ai}条新闻 · ${state.skills.length}技能 · ${p}项目`;
   document.getElementById('modelsBadge').textContent = state.models.length;
   document.getElementById('robotsBadge').textContent = state.robots.length;
   document.getElementById('newsBadge').textContent = nd + ai;
   document.getElementById('skillsBadge').textContent = state.skills.length;
+  document.getElementById('projectsBadge').textContent = p;
 }
 
 // ── TAB SWITCHING ──────────────────────────────────────────────────
@@ -1255,6 +1301,46 @@ function renderSkills() {
 document.getElementById('sfScene')?.addEventListener('change', renderSkills);
 
 // ══════════════════════════════════════════════════════════════════
+// PROJECTS
+// ══════════════════════════════════════════════════════════════════
+function renderProjects() {
+  const list = state.projects || [];
+  const container = document.getElementById('projectsContainer');
+  if (!container) return;
+  if (!list.length) {
+    container.innerHTML = '<div class="vc-card" style="text-align:center;padding:40px;color:var(--meta)">暂无收藏项目</div>';
+    return;
+  }
+  container.innerHTML = list.map(p => {
+    const intro = p.intro || {};
+    const tags = (p.tags || []).map(t => `<span class="proj-tag">${t}</span>`).join('');
+    const highlights = (intro.highlights || []).map(h => `<li>${h}</li>`).join('');
+    const tech = (intro.tech_stack || []).map(t => `<span>${t}</span>`).join('');
+    const descs = (intro.description || []).map(d => `<div class="proj-desc">${d}</div>`).join('');
+    return `<div class="proj-card">
+      <div class="proj-head">
+        <div>
+          <div class="proj-name"><a href="${p.repo}" target="_blank">${p.name}</a></div>
+          <div class="proj-repo"><a href="${p.repo}" target="_blank">${p.repo}</a></div>
+        </div>
+        <span style="font-size:10px;font-weight:500;color:var(--meta);white-space:nowrap">${p.license || ''}</span>
+      </div>
+      ${tags ? `<div class="proj-tags">${tags}</div>` : ''}
+      <div class="proj-intro">
+        <div class="proj-oneliner">${intro.oneliner || ''}</div>
+        ${descs}
+      </div>
+      ${highlights ? `<ul class="proj-highlights">${highlights}</ul>` : ''}
+      ${tech ? `<div class="proj-tech">${tech}</div>` : ''}
+      ${intro.status ? `<div class="proj-status">📌 ${intro.status}</div>` : ''}
+      <div class="proj-footer">
+        <span>添加于 ${p.added || '-'}</span>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+// ══════════════════════════════════════════════════════════════════
 // FOLLOW - 关注话题管理
 // ══════════════════════════════════════════════════════════════════
 function getFollowed() {
@@ -1337,7 +1423,7 @@ function doSearch(query) {
     return;
   }
   const q = query.trim().toLowerCase();
-  const results = { robot: [], model: [], news: [], skill: [] };
+  const results = { robot: [], model: [], news: [], skill: [], project: [] };
 
   // Search robots: 厂商, 型号, 类型_一级, 类型_二级
   (state.robots || []).forEach(r => {
@@ -1411,7 +1497,20 @@ function doSearch(query) {
     }
   });
 
-  const total = results.robot.length + results.model.length + results.news.length + results.skill.length;
+  // Search projects: name, oneliner, tags
+  (state.projects || []).forEach(p => {
+    const intro = p.intro || {};
+    const searchText = (p.name + ' ' + (intro.oneliner || '') + ' ' + (p.tags || []).join(' ')).toLowerCase();
+    if (searchText.includes(q)) {
+      results.project.push({
+        title: p.name,
+        subtitle: intro.oneliner || '',
+        data: p
+      });
+    }
+  });
+
+  const total = results.robot.length + results.model.length + results.news.length + results.skill.length + results.project.length;
   if (total === 0) {
     panel.innerHTML = '<div class="sp-empty">没有找到 "<strong>' + query.trim() + '</strong>" 相关内容</div>';
     panel.classList.add('show');
@@ -1424,6 +1523,7 @@ function doSearch(query) {
     { key: 'model', label: '模型', tag: '模型', cls: 'sp-tag-model', tab: 'models', limit: 5 },
     { key: 'news', label: '新闻', tag: '新闻', cls: 'sp-tag-news', tab: 'news', limit: 5 },
     { key: 'skill', label: '技能', tag: '技能', cls: 'sp-tag-skill', tab: 'skills', limit: 5 },
+    { key: 'project', label: '项目', tag: '项目', cls: 'sp-tag-project', tab: 'projects', limit: 5 },
   ];
 
   let html = '';

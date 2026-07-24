@@ -1,0 +1,34 @@
+{
+  "id": "yccaost",
+  "name": "野草系统 (YecaoST)",
+  "repo": "https://github.com/jpevanchen-cmyk/yccaost",
+  "license": "AGPL-3.0",
+  "tags": [
+    "餐饮系统",
+    "Django",
+    "去中心化",
+    "微信支付"
+  ],
+  "added": "2026-07-17",
+  "intro": {
+    "title": "去中心化本地餐饮运营系统",
+    "oneliner": "面向小餐饮店的堂食+外卖一体化网页系统，店铺自管，不依赖平台抽成。",
+    "description": [
+      "野草系统是一个去中心化的本地餐饮/外卖网页系统。第一阶段聚焦单店场景：堂食优先、外卖为辅，店铺自主管理菜品、订单、服务员/后厨/骑手工作台与支付配置。",
+      "核心理念是让中小餐饮店摆脱美团/饿了么的高抽成依赖，自建私域流量。系统采用Django框架，支持微信Native支付，已在 yichbo.com 试跑验证。"
+    ],
+    "highlights": [
+      "单店闭环：堂食套件、工作台、通道分流、通用支付地基已落地",
+      "在线试跑：yichbo.com（HTTPS），微信Native真支付已实测",
+      "插件架构：饮食/履约能力可同仓分步迁入插件包",
+      "多文档体系：开发方案、用户手册、部署手册齐全"
+    ],
+    "tech_stack": [
+      "Python/Django",
+      "MySQL/SQLite",
+      "WeChat Pay",
+      "HTML/CSS"
+    ],
+    "status": "已上线试跑，退款/隐私加密/生产清查待完善"
+  }
+}
