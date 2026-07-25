@@ -3,15 +3,22 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 182,
-  "last_seen": "2026-07-24"
+  "mentions": 183,
+  "last_seen": "2026-07-25"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 153,
-  "last_seen": "2026-07-24"
+  "mentions": 159,
+  "last_seen": "2026-07-25"
+ },
+ {
+  "id": 48,
+  "name": "Claude Code",
+  "type": "model",
+  "mentions": 113,
+  "last_seen": "2026-07-25"
  },
  {
   "id": 47,
@@ -19,13 +26,6 @@
   "type": "company",
   "mentions": 112,
   "last_seen": "2026-07-24"
- },
- {
-  "id": 48,
-  "name": "Claude Code",
-  "type": "model",
-  "mentions": 110,
-  "last_seen": "2026-07-24T09:47:29.601Z"
  },
  {
   "id": 6,
@@ -52,8 +52,8 @@
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 45,
-  "last_seen": "2026-07-24"
+  "mentions": 48,
+  "last_seen": "2026-07-25"
  },
  {
   "id": 79,
@@ -70,15 +70,15 @@
   "last_seen": "2026-07-23"
  },
  {
-  "id": 4,
-  "name": "xAI",
-  "type": "company",
-  "mentions": 42,
-  "last_seen": "2026-07-22"
- },
- {
   "id": 43,
   "name": "Meta",
+  "type": "company",
+  "mentions": 43,
+  "last_seen": "2026-07-25"
+ },
+ {
+  "id": 4,
+  "name": "xAI",
   "type": "company",
   "mentions": 42,
   "last_seen": "2026-07-22"
@@ -88,14 +88,14 @@
   "name": "OpenRouter",
   "type": "company",
   "mentions": 39,
-  "last_seen": "2026-07-24T00:00:00.000Z"
+  "last_seen": "2026-07-25"
  },
  {
   "id": 560,
   "name": "Apple",
   "type": "company",
-  "mentions": 37,
-  "last_seen": "2026-07-24"
+  "mentions": 38,
+  "last_seen": "2026-07-25"
  },
  {
   "id": 13,
@@ -161,18 +161,18 @@
   "last_seen": "2026-07-23"
  },
  {
+  "id": 51,
+  "name": "Runway",
+  "type": "company",
+  "mentions": 16,
+  "last_seen": "2026-07-25"
+ },
+ {
   "id": 25,
   "name": "OpenClaw",
   "type": "model",
   "mentions": 15,
   "last_seen": "2026-07-07"
- },
- {
-  "id": 51,
-  "name": "Runway",
-  "type": "company",
-  "mentions": 15,
-  "last_seen": "2026-07-09"
  },
  {
   "id": 28,
@@ -277,7 +277,7 @@
   "name": "智谱",
   "type": "company",
   "mentions": 8,
-  "last_seen": "2026-07-24T09:48:32.000Z"
+  "last_seen": "2026-07-25"
  },
  {
   "id": 376,
@@ -312,7 +312,7 @@
   "name": "百度",
   "type": "company",
   "mentions": 7,
-  "last_seen": "2026-07-24T12:28:24.000Z"
+  "last_seen": "2026-07-25"
  },
  {
   "id": 651,
@@ -368,14 +368,21 @@
   "name": "Gemini 3.5 Flash",
   "type": "model",
   "mentions": 6,
-  "last_seen": "2026-07-24T00:00:00.000Z"
+  "last_seen": "2026-07-25"
+ },
+ {
+  "id": 785,
+  "name": "Midjourney",
+  "type": "company",
+  "mentions": 6,
+  "last_seen": "2026-07-25"
  },
  {
   "id": 1137,
   "name": "月之暗面",
   "type": "company",
   "mentions": 6,
-  "last_seen": "2026-07-24T09:48:32.000Z"
+  "last_seen": "2026-07-25"
  },
  {
   "id": 134,
@@ -390,13 +397,6 @@
   "type": "company",
   "mentions": 5,
   "last_seen": "2026-07-09T13:01:09.000Z"
- },
- {
-  "id": 785,
-  "name": "Midjourney",
-  "type": "company",
-  "mentions": 5,
-  "last_seen": "2026-06-26"
  },
  {
   "id": 2120,
@@ -476,6 +476,13 @@
   "last_seen": "2026-07-14"
  },
  {
+  "id": 786,
+  "name": "Midjourney V8",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-07-25"
+ },
+ {
   "id": 1146,
   "name": "Qwen3-32",
   "type": "model",
@@ -537,13 +544,6 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-07-15"
- },
- {
-  "id": 786,
-  "name": "Midjourney V8",
-  "type": "model",
-  "mentions": 3,
-  "last_seen": "2026-06-26"
  },
  {
   "id": 1041,

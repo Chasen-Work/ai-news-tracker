@@ -169,6 +169,60 @@
  ],
  "Anthropic": [
   {
+   "id": 2872,
+   "title": "Anthropic 发布 Claude Opus 5",
+   "summary": "Anthropic 发布 Claude Opus 5，其智能水平接近 Claude Fable 5，但价格减半。该模型在 Frontier-Bench v0.1 上性能超过 Opus 4.8 两倍以上，在 ARC-AGI 3 上得分是次优模型的三倍。Opus 5 即日起成为 Claude Max 的默认模型和 Claude Pro 的最强模型。",
+   "published_at": "2026-07-25",
+   "url": "https://www.anthropic.com/news/claude-opus-5",
+   "category": "ai-models",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 2881,
+   "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
+   "summary": "英伟达、微软和Meta联合签署公开信，警告对开放权重AI模型的过度监管将削弱美国在AI领域的竞争力。信中指出，开放权重模型能促进创新、降低准入门槛，并支持学术研究。OpenAI和Anthropic未签署该信函。",
+   "published_at": "2026-07-25",
+   "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+   "category": "industry",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 2884,
+   "title": "Anthropic 联合 Andon Labs 发布 Drone-Bench，评估 AI 模型自主操控无人机执行定位追踪任务的能力",
+   "summary": "Anthropic 与 Andon Labs 合作推出 Drone-Bench，用于测试 AI 模型自主操控四旋翼无人机在室内环境中定位并追踪指定人员的能力。该基准将任务分解为 3D 地图重建、定位、导航、目标检测与跟随五个子任务，并通过软件复现实现快速评估。实验表明，该任务链的难度足以区分不同智能水平的模型，并揭示 AI 在物理世界操控能力上的进步轨迹。",
+   "published_at": "2026-07-25",
+   "url": "https://www.anthropic.com/research/project-pilot",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
+   "id": 2887,
+   "title": "Claude 5 代模型上下文工程新规则：Claude Code 系统提示词精简超 80%",
+   "summary": "Anthropic 为 Claude Opus 5 和 Claude Fable 5 等新一代模型删除了 Claude Code 超过 80% 的系统提示词，且编码评测无显著损失。",
+   "published_at": "2026-07-25",
+   "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 2888,
+   "title": "Claude Design 产品设计师 Nate Parrott 分享如何用其探索视觉创意",
+   "summary": "Anthropic 产品设计师 Nate Parrott 分享了他在 Claude Design（beta 版）中利用 HTML 交互能力进行产品原型、幻灯片、动画等视觉创意探索与迭代的方法。他将 Anthropic 品牌规范提炼为提示词，使输出自动符合品牌指南。Claude Design 不包含图像模型，不适合 Logo 设计，但可与 Claude Code 协同工作，将早期创意与生产开发衔接。",
+   "published_at": "2026-07-25",
+   "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 2889,
+   "title": "Claude 模型家族详解：如何为工作负载选择最佳模型",
+   "summary": "Anthropic 发布 Claude 模型选择指南，将模型分为 Mythos/Fable（最强能力，用于前沿编码与智能体任务）、Opus（推理密集型企业任务）、Sonnet（日常通用任务）和 Haiku（最低成本与最快速度）四个类别。",
+   "published_at": "2026-07-25",
+   "url": "https://claude.com/blog/claude-models-explained-choosing-the-best-model-for-your-use-case",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
    "id": 2811,
    "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存“作弊”行为",
    "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的“作弊”行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。",
@@ -1548,6 +1602,15 @@
  ],
  "Apple": [
   {
+   "id": 2885,
+   "title": "Apple 提出 LEAD 方法，破解长程推理中的“不可恢复瓶颈”",
+   "summary": "Apple 研究发现，大语言模型在长程执行中即使有高层策略也不稳定，极端分解会导致“不可恢复瓶颈”——少数“困难”步骤上的持续错误变得不可逆转。为此提出 Lookahead-Enhanced Atomic Decomposition（LEAD），通过引入短程未来验证与聚合来打破这一瓶颈。该方法在受控算法谜题上验证了有效性。",
+   "published_at": "2026-07-25",
+   "url": "https://machinelearning.apple.com/research/lead-no-recovery-bottleneck",
+   "category": "paper",
+   "source": "Apple Machine Learning Research（RSS）"
+  },
+  {
    "id": 2805,
    "title": "OpenAI 在 ChatGPT 中推出 Health 功能，支持连接医疗记录与 Apple Health",
    "summary": "OpenAI 面向符合条件的美国用户推出 ChatGPT Health 功能，可安全连接医疗记录与 Apple Health 数据，提供更个性化的健康洞察。该功能旨在帮助用户更好地理解自身健康状况。",
@@ -1894,13 +1957,40 @@
  ],
  "Claude Code": [
   {
-   "id": 2843,
+   "id": 2880,
+   "title": "Claude Code v2.1.219 发布：新增 Claude Opus 5，支持 1M 上下文与嵌套子智能体",
+   "summary": "Claude Code v2.1.219 新增 Claude Opus 5 作为默认 Opus 模型，支持 1M 上下文窗口，快速模式定价为 $10/$50 每百万 token。",
+   "published_at": "2026-07-25",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 2886,
    "title": "Claude-thermos：保持 Claude 会话缓存热度，避免重新编码费用",
    "summary": "Claude-thermos 通过本地反向代理监控 Claude Code 会话，在主智能体因等待子智能体而空闲超过 5 分钟时，自动发送预热请求刷新提示缓存。实测约 185 次本地会话中，缓存过期导致的重新编码占账单约 22%。工具以 uvx 运行，支持自定义空闲阈值和预热间隔。",
-   "published_at": "2026-07-24T09:47:29.601Z",
-   "url": "",
+   "published_at": "2026-07-25",
+   "url": "https://github.com/izeigerman/claude-thermos",
    "category": "tip",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 2887,
+   "title": "Claude 5 代模型上下文工程新规则：Claude Code 系统提示词精简超 80%",
+   "summary": "Anthropic 为 Claude Opus 5 和 Claude Fable 5 等新一代模型删除了 Claude Code 超过 80% 的系统提示词，且编码评测无显著损失。",
+   "published_at": "2026-07-25",
+   "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 2888,
+   "title": "Claude Design 产品设计师 Nate Parrott 分享如何用其探索视觉创意",
+   "summary": "Anthropic 产品设计师 Nate Parrott 分享了他在 Claude Design（beta 版）中利用 HTML 交互能力进行产品原型、幻灯片、动画等视觉创意探索与迭代的方法。他将 Anthropic 品牌规范提炼为提示词，使输出自动符合品牌指南。Claude Design 不包含图像模型，不适合 Logo 设计，但可与 Claude Code 协同工作，将早期创意与生产开发衔接。",
+   "published_at": "2026-07-25",
+   "url": "https://claude.com/blog/how-the-product-designer-who-built-claude-design-uses-it-to-explore-ideas-before-building-them",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
   },
   {
    "id": 2814,
@@ -2905,6 +2995,33 @@
   }
  ],
  "Claude Opus": [
+  {
+   "id": 2872,
+   "title": "Anthropic 发布 Claude Opus 5",
+   "summary": "Anthropic 发布 Claude Opus 5，其智能水平接近 Claude Fable 5，但价格减半。该模型在 Frontier-Bench v0.1 上性能超过 Opus 4.8 两倍以上，在 ARC-AGI 3 上得分是次优模型的三倍。Opus 5 即日起成为 Claude Max 的默认模型和 Claude Pro 的最强模型。",
+   "published_at": "2026-07-25",
+   "url": "https://www.anthropic.com/news/claude-opus-5",
+   "category": "ai-models",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 2880,
+   "title": "Claude Code v2.1.219 发布：新增 Claude Opus 5，支持 1M 上下文与嵌套子智能体",
+   "summary": "Claude Code v2.1.219 新增 Claude Opus 5 作为默认 Opus 模型，支持 1M 上下文窗口，快速模式定价为 $10/$50 每百万 token。",
+   "published_at": "2026-07-25",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.219",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 2887,
+   "title": "Claude 5 代模型上下文工程新规则：Claude Code 系统提示词精简超 80%",
+   "summary": "Anthropic 为 Claude Opus 5 和 Claude Fable 5 等新一代模型删除了 Claude Code 超过 80% 的系统提示词，且编码评测无显著损失。",
+   "published_at": "2026-07-25",
+   "url": "https://claude.com/blog/the-new-rules-of-context-engineering-for-claude-5-generation-models",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
   {
    "id": 2811,
    "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存“作弊”行为",
@@ -6138,13 +6255,13 @@
  ],
  "Gemini 3.5 Flash": [
   {
-   "id": 2845,
+   "id": 2879,
    "title": "OpenRouter 推出 Classifiers 测试版：自动标记 AI 请求的用途与成本归属",
    "summary": "OpenRouter 上线 Classifiers 测试版，允许用户通过自定义分类法（最多 8 个维度）自动标记每次 AI 请求的任务类型、部门归属、合规类别等信息。分类异步运行，不增加推理延迟；支持采样率控制成本，推荐使用 Gemini 3.5 Flash Lite 作为分类模型。标记结果写入日志，并可在 Activity Explorer 中按维度聚合分析模型使用分布与成本流向。",
-   "published_at": "2026-07-24T00:00:00.000Z",
-   "url": "",
+   "published_at": "2026-07-25",
+   "url": "https://openrouter.ai/blog/announcements/classifiers",
    "category": "ai-products",
-   "source": ""
+   "source": "OpenRouter：Announcements（RSS）"
   },
   {
    "id": 2651,
@@ -8117,6 +8234,15 @@
  ],
  "Meta": [
   {
+   "id": 2881,
+   "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
+   "summary": "英伟达、微软和Meta联合签署公开信，警告对开放权重AI模型的过度监管将削弱美国在AI领域的竞争力。信中指出，开放权重模型能促进创新、降低准入门槛，并支持学术研究。OpenAI和Anthropic未签署该信函。",
+   "published_at": "2026-07-25",
+   "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+   "category": "industry",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
    "id": 2659,
    "title": "五家美国科技巨头因不透明AI融资隐性债务飙升至1.65万亿美元",
    "summary": "日经研究显示，Meta、Oracle等五家美国科技巨头的隐性债务在约四年内膨胀八倍，达到约1.65万亿美元，超过其实际债务。这些债务主要来自数据中心租赁和GPU供应合同，其中Meta的表外债务约4200亿美元，是其透明债务的近三倍。隐性债务的激增使投资者更难评估风险。",
@@ -8733,6 +8859,15 @@
  ],
  "Midjourney": [
   {
+   "id": 2875,
+   "title": "Midjourney V8.2 发布：专注美学提升与个性化理解",
+   "summary": "Midjourney 今日推出 V8.2 图像模型，重点提升美学质量、图像创意与个性化表现。低质量图像出现频率将显著降低，个性化功能能更精准理解用户审美偏好。V8.2 的个性化配置文件拥有更大、更优的图像选择池，建议用户尝试新旧配置文件体验最新版本。",
+   "published_at": "2026-07-25",
+   "url": "https://updates.midjourney.com/version-8-2",
+   "category": "ai-models",
+   "source": "Midjourney：Updates（RSS）"
+  },
+  {
    "id": 1180,
    "title": "Midjourney 预览 V8.2 并加速草稿模式",
    "summary": "Midjourney 带来两项更新。一是加入 `--preview` 参数可提前体验 V8.2 的美学与个性化效果；二是此前在 V8.1 推出的大批量草稿模式（生成 24 张低分辨率图，价格仅为标准 4 张的一半，点击 \"Vary\" 可升级为全分辨率）现在支持搭配 `--sref random` 使用，探索风格空间的速度比之前快 24 倍。",
@@ -8779,6 +8914,15 @@
   }
  ],
  "Midjourney V8": [
+  {
+   "id": 2875,
+   "title": "Midjourney V8.2 发布：专注美学提升与个性化理解",
+   "summary": "Midjourney 今日推出 V8.2 图像模型，重点提升美学质量、图像创意与个性化表现。低质量图像出现频率将显著降低，个性化功能能更精准理解用户审美偏好。V8.2 的个性化配置文件拥有更大、更优的图像选择池，建议用户尝试新旧配置文件体验最新版本。",
+   "published_at": "2026-07-25",
+   "url": "https://updates.midjourney.com/version-8-2",
+   "category": "ai-models",
+   "source": "Midjourney：Updates（RSS）"
+  },
   {
    "id": 1183,
    "title": "Midjourney V8.1 草稿模式新增随机风格功能",
@@ -9855,6 +9999,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 2881,
+   "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
+   "summary": "英伟达、微软和Meta联合签署公开信，警告对开放权重AI模型的过度监管将削弱美国在AI领域的竞争力。信中指出，开放权重模型能促进创新、降低准入门槛，并支持学术研究。OpenAI和Anthropic未签署该信函。",
+   "published_at": "2026-07-25",
+   "url": "https://www.cnbc.com/2026/07/24/nvidia-microsoft-meta-open-weight-ai-models.html",
+   "category": "industry",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
   {
    "id": 2805,
    "title": "OpenAI 在 ChatGPT 中推出 Health 功能，支持连接医疗记录与 Apple Health",
@@ -11689,13 +11842,13 @@
  ],
  "OpenRouter": [
   {
-   "id": 2845,
+   "id": 2879,
    "title": "OpenRouter 推出 Classifiers 测试版：自动标记 AI 请求的用途与成本归属",
    "summary": "OpenRouter 上线 Classifiers 测试版，允许用户通过自定义分类法（最多 8 个维度）自动标记每次 AI 请求的任务类型、部门归属、合规类别等信息。分类异步运行，不增加推理延迟；支持采样率控制成本，推荐使用 Gemini 3.5 Flash Lite 作为分类模型。标记结果写入日志，并可在 Activity Explorer 中按维度聚合分析模型使用分布与成本流向。",
-   "published_at": "2026-07-24T00:00:00.000Z",
-   "url": "",
+   "published_at": "2026-07-25",
+   "url": "https://openrouter.ai/blog/announcements/classifiers",
    "category": "ai-products",
-   "source": ""
+   "source": "OpenRouter：Announcements（RSS）"
   },
   {
    "id": 2732,
@@ -13445,6 +13598,15 @@
  ],
  "Runway": [
   {
+   "id": 2877,
+   "title": "Runway Agent 推出自然语言工作流功能",
+   "summary": "在 Runway Agent 中引入工作流。现在你可以通过自然语言构建、运行或编辑基于节点的工作流。工作流可大规模解锁高质量输出。 立即尝试，点击下方链接调用 / Workflow 技能。",
+   "published_at": "2026-07-25",
+   "url": "https://x.com/runwayml/status/2080649234672439389",
+   "category": "ai-products",
+   "source": "X：Runway (@runwayml)"
+  },
+  {
    "id": 1920,
    "title": "Seedream 5.0 Pro 登陆 Runway，支持14种语言",
    "summary": "Seedream 5.0 Pro 现已登陆 Runway。可通过提示词或参考图生成高细节图像，图像内文字清晰可读，支持多达14种语言。立即点击下方链接尝试。",
@@ -14646,13 +14808,13 @@
  ],
  "智谱": [
   {
-   "id": 2842,
+   "id": 2883,
    "title": "Kimi K3 在网络安全漏洞利用测试中大幅落后美国前沿模型，知识蒸馏或为原因",
    "summary": "英国AI安全研究所与美国AI标准与创新中心联合评估显示，月之暗面的Kimi K3在ExploitBench基准上得分32.2%，远低于美国领先模型的76.2%，但优于智谱GLM-5.2的24.4%。",
-   "published_at": "2026-07-24T09:48:32.000Z",
-   "url": "",
+   "published_at": "2026-07-25",
+   "url": "https://the-decoder.com/kimi-k3-trails-frontier-us-models-by-a-wide-margin-on-cyber-exploits-and-distillation-may-explain-why",
    "category": "industry",
-   "source": ""
+   "source": "The Decoder：AI News（RSS）"
   },
   {
    "id": 2660,
@@ -14720,13 +14882,13 @@
  ],
  "月之暗面": [
   {
-   "id": 2842,
+   "id": 2883,
    "title": "Kimi K3 在网络安全漏洞利用测试中大幅落后美国前沿模型，知识蒸馏或为原因",
    "summary": "英国AI安全研究所与美国AI标准与创新中心联合评估显示，月之暗面的Kimi K3在ExploitBench基准上得分32.2%，远低于美国领先模型的76.2%，但优于智谱GLM-5.2的24.4%。",
-   "published_at": "2026-07-24T09:48:32.000Z",
-   "url": "",
+   "published_at": "2026-07-25",
+   "url": "https://the-decoder.com/kimi-k3-trails-frontier-us-models-by-a-wide-margin-on-cyber-exploits-and-distillation-may-explain-why",
    "category": "industry",
-   "source": ""
+   "source": "The Decoder：AI News（RSS）"
   },
   {
    "id": 2603,
@@ -14868,13 +15030,13 @@
  ],
  "百度": [
   {
-   "id": 2840,
+   "id": 2878,
    "title": "百度搭子更新：电脑手机接力、桌面端内嵌浏览器上线，复杂任务可跨端连续执行",
    "summary": "百度搭子在近期AI Day上推出多项升级，支持电脑与手机双端互联，同步任务上下文与执行进度，用户可跨设备接力完成复杂工作。桌面端内嵌浏览器正式上线，能自动打开多个网页执行调研、下载等操作，手机端支持云端远程操控。智能路由自动匹配任务模式，平均任务耗时降低20%，Token利用率提升25%；简单任务完成度达100%，复杂任务高交付率94%，积分消耗最高降低75%。",
-   "published_at": "2026-07-24T12:28:24.000Z",
-   "url": "",
+   "published_at": "2026-07-25",
+   "url": "https://mp.weixin.qq.com/s/HRySK1LU53clPe2I_M-Fug",
    "category": "ai-products",
-   "source": ""
+   "source": "公众号：百度智能云（文心）"
   },
   {
    "id": 2419,
