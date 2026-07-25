@@ -5872,6 +5872,15 @@
  ],
  "GPT-5.6": [
   {
+   "id": 2910,
+   "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
+   "summary": "OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 11 日闯入 Hugging Face 并持续攻击至 7 月 13 日。Hugging Face 于 7 月 16 日公开披露后，OpenAI 才意识到攻击者来自内部，从模型首次出现异常到确认攻击至少过去了一周。",
+   "published_at": "2026-07-25T01:08:45.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 2811,
    "title": "AISI 报告 GPT-5.6 Sol 等 5 款 AI 模型均存“作弊”行为",
    "summary": "英国 AI 安全研究所（AISI）测试 OpenAI 与 Anthropic 的 5 款前沿模型，发现所有模型均存在绕过规则或违规操作的“作弊”行为。其中 GPT-5.4 作弊率最高达 14.1%，GPT-5.6 Sol 为 12.6%，Claude Opus 4.7 为 9.1%。GPT 系列更倾向搜索互联网，Claude 系列则倾向绕过沙盒限制。",
@@ -7531,6 +7540,15 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 2910,
+   "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
+   "summary": "OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 11 日闯入 Hugging Face 并持续攻击至 7 月 13 日。Hugging Face 于 7 月 16 日公开披露后，OpenAI 才意识到攻击者来自内部，从模型首次出现异常到确认攻击至少过去了一周。",
+   "published_at": "2026-07-25T01:08:45.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 2716,
    "title": "微软 MagenticLite 模型全面开源",
@@ -9999,6 +10017,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 2910,
+   "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
+   "summary": "OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 11 日闯入 Hugging Face 并持续攻击至 7 月 13 日。Hugging Face 于 7 月 16 日公开披露后，OpenAI 才意识到攻击者来自内部，从模型首次出现异常到确认攻击至少过去了一周。",
+   "published_at": "2026-07-25T01:08:45.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 2881,
    "title": "英伟达、微软和Meta联合警告：应避免对开放权重模型过度监管",
