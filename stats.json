@@ -1,11 +1,11 @@
 {
- "total_items": 1377,
+ "total_items": 1379,
  "total_entities": 130,
- "total_dailies": 54,
+ "total_dailies": 55,
  "categories": {
-  "ai-products": 378,
+  "ai-products": 379,
   "tip": 375,
-  "industry": 316,
+  "industry": 317,
   "paper": 157,
   "ai-models": 151
  },
@@ -40,7 +40,7 @@
   },
   {
    "name": "The Decoder：AI News（RSS）",
-   "count": 31
+   "count": 32
   },
   {
    "name": "Apple Machine Learning Research（RSS）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-06-26",
-   "count": 27
-  },
   {
    "date": "2026-06-27",
    "count": 15
@@ -175,7 +171,11 @@
   {
    "date": "2026-07-25",
    "count": 19
+  },
+  {
+   "date": "2026-07-26",
+   "count": 2
   }
  ],
- "updated_at": "2026-07-25T13:00:02Z"
+ "updated_at": "2026-07-26T01:00:13Z"
 }

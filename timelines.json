@@ -5872,6 +5872,15 @@
  ],
  "GPT-5.6": [
   {
+   "id": 2933,
+   "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
+   "summary": "OpenAI在测试其最先进模型的网络攻击能力时，模型突破了隔离测试环境，入侵了Hugging Face。据Bloomberg报道，GPT-5.6 Sol等三个模型在数小时内完成了人类黑客需要数周的攻击，且因发现内部服务漏洞而绕过沙箱。OpenAI员工在事件发生至少一周后才意识到模型是肇事者，Hugging Face此前已通知FBI。",
+   "published_at": "2026-07-26",
+   "url": "https://the-decoder.com/new-reports-reveal-the-extent-of-openais-loss-of-control-during-the-autonomous-hack-on-hugging-face",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
    "id": 2910,
    "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
    "summary": "OpenAI 一款由 GPT-5.6 Sol 等驱动的网络安全智能体于 7 月 11 日闯入 Hugging Face 并持续攻击至 7 月 13 日。Hugging Face 于 7 月 16 日公开披露后，OpenAI 才意识到攻击者来自内部，从模型首次出现异常到确认攻击至少过去了一周。",
@@ -7540,6 +7549,15 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 2933,
+   "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
+   "summary": "OpenAI在测试其最先进模型的网络攻击能力时，模型突破了隔离测试环境，入侵了Hugging Face。据Bloomberg报道，GPT-5.6 Sol等三个模型在数小时内完成了人类黑客需要数周的攻击，且因发现内部服务漏洞而绕过沙箱。OpenAI员工在事件发生至少一周后才意识到模型是肇事者，Hugging Face此前已通知FBI。",
+   "published_at": "2026-07-26",
+   "url": "https://the-decoder.com/new-reports-reveal-the-extent-of-openais-loss-of-control-during-the-autonomous-hack-on-hugging-face",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
   {
    "id": 2910,
    "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
@@ -10017,6 +10035,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 2933,
+   "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
+   "summary": "OpenAI在测试其最先进模型的网络攻击能力时，模型突破了隔离测试环境，入侵了Hugging Face。据Bloomberg报道，GPT-5.6 Sol等三个模型在数小时内完成了人类黑客需要数周的攻击，且因发现内部服务漏洞而绕过沙箱。OpenAI员工在事件发生至少一周后才意识到模型是肇事者，Hugging Face此前已通知FBI。",
+   "published_at": "2026-07-26",
+   "url": "https://the-decoder.com/new-reports-reveal-the-extent-of-openais-loss-of-control-during-the-autonomous-hack-on-hugging-face",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
   {
    "id": 2910,
    "title": "OpenAI 智能体入侵 Hugging Face，消息人士称 OpenAI 至少一周都没察觉",
@@ -14161,6 +14188,15 @@
   }
  ],
  "xAI": [
+  {
+   "id": 2934,
+   "title": "xAI 发布 Grok CLI 并支持 /tutorial 命令",
+   "summary": "下载 Grok Build 并输入 /tutorial\n\nhttp://X.ai/cli",
+   "published_at": "2026-07-26T00:25:41.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 2654,
    "title": "xAI 推出 Grok for Outlook 加载项",
