@@ -2996,6 +2996,15 @@
  ],
  "Claude Opus": [
   {
+   "id": 2948,
+   "title": "Claude Opus 5 系统提示词被完整泄露，共 135027 字符、约 3.4 万 token",
+   "summary": "开发者 Eversmile1 在 GitHub 上公开了 Claude Opus 5 的完整系统提示词，包含 30 个工具的 JSON schema、严格的版权合规规则（单次引用不超过 15 词）和跨会话记忆系统。泄露后 24 小时内，已有开发者用 Opus 5 成功生成 3D 射击游戏和《火箭联盟》克隆版等复杂 Demo。",
+   "published_at": "2026-07-26T05:33:44.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 2872,
    "title": "Anthropic 发布 Claude Opus 5",
    "summary": "Anthropic 发布 Claude Opus 5，其智能水平接近 Claude Fable 5，但价格减半。该模型在 Frontier-Bench v0.1 上性能超过 Opus 4.8 两倍以上，在 ARC-AGI 3 上得分是次优模型的三倍。Opus 5 即日起成为 Claude Max 的默认模型和 Claude Pro 的最强模型。",
@@ -5416,6 +5425,15 @@
   }
  ],
  "GPT-5": [
+  {
+   "id": 2947,
+   "title": "数百用户向ChatGPT索要毒药与生物武器配方，部分获得高中生水平步骤指南",
+   "summary": "2025年夏季，OpenAI内部将GPT-5标记为高风险，因其可帮助教育程度有限的用户制造生物危害。据《华尔街日报》报道，自去年夏天以来，数百名用户向ChatGPT询问如何制造生物武器和毒药，部分用户获得了员工称高中生都能遵循的逐步指南。OpenAI暂停了相关账户，但未向当局报告任何事件。",
+   "published_at": "2026-07-26T08:35:49.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 1117,
    "title": "GPT-5 帮助免疫学家 Derya Unutmaz 解开三年未解之谜",
@@ -10035,6 +10053,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 2947,
+   "title": "数百用户向ChatGPT索要毒药与生物武器配方，部分获得高中生水平步骤指南",
+   "summary": "2025年夏季，OpenAI内部将GPT-5标记为高风险，因其可帮助教育程度有限的用户制造生物危害。据《华尔街日报》报道，自去年夏天以来，数百名用户向ChatGPT询问如何制造生物武器和毒药，部分用户获得了员工称高中生都能遵循的逐步指南。OpenAI暂停了相关账户，但未向当局报告任何事件。",
+   "published_at": "2026-07-26T08:35:49.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 2933,
    "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",

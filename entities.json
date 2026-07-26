@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 185,
-  "last_seen": "2026-07-26"
+  "mentions": 186,
+  "last_seen": "2026-07-26T08:35:49.000Z"
  },
  {
   "id": 35,
@@ -52,8 +52,8 @@
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 48,
-  "last_seen": "2026-07-25"
+  "mentions": 49,
+  "last_seen": "2026-07-26T05:33:44.000Z"
  },
  {
   "id": 79,
@@ -553,6 +553,13 @@
   "last_seen": "2026-07-21"
  },
  {
+  "id": 1070,
+  "name": "GPT-5",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-07-26T08:35:49.000Z"
+ },
+ {
   "id": 1483,
   "name": "qwen3.5",
   "type": "model",
@@ -635,13 +642,6 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-07-06T00:00:00.000Z"
- },
- {
-  "id": 1070,
-  "name": "GPT-5",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-06-24"
  },
  {
   "id": 1407,
