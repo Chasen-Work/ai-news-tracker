@@ -169,6 +169,15 @@
  ],
  "Anthropic": [
   {
+   "id": 2960,
+   "title": "OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与马斯克公开反对",
+   "summary": "OpenAI 与 Anthropic 正游说美国监管机构限制中国开源 AI 模型，认为开放开发过于危险。英伟达 CEO 黄仁勋、微软 CEO 纳德拉、马斯克及扎克伯格等人公开支持开源，签署联名信反对限制。近 200 家硅谷创业公司也敦促特朗普政府不要限制获取中国开源模型，美国官员倾向于将此事作为国家安全问题单独处理。",
+   "published_at": "2026-07-27",
+   "url": "https://www.ithome.com/0/981/797.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 2872,
    "title": "Anthropic 发布 Claude Opus 5",
    "summary": "Anthropic 发布 Claude Opus 5，其智能水平接近 Claude Fable 5，但价格减半。该模型在 Frontier-Bench v0.1 上性能超过 Opus 4.8 两倍以上，在 ARC-AGI 3 上得分是次优模型的三倍。Opus 5 即日起成为 Claude Max 的默认模型和 Claude Pro 的最强模型。",
@@ -1602,6 +1611,15 @@
  ],
  "Apple": [
   {
+   "id": 2958,
+   "title": "Suno 推出多项新功能，含MIDI导出等",
+   "summary": "我们一直在以比以往更快的速度构建！🚀 以下是网页端和移动端的新功能一览： • 高级音轨分离 • 将音轨导出为 MIDI • 歌词合写与自动保存 • 截图生成歌曲 • Apple CarPlay 与 Android Auto 你最期待 Suno 的哪些新功能？",
+   "published_at": "2026-07-27",
+   "url": "https://x.com/suno/status/2081443050312843765",
+   "category": "ai-products",
+   "source": "X：Suno (@suno)"
+  },
+  {
    "id": 2885,
    "title": "Apple 提出 LEAD 方法，破解长程推理中的“不可恢复瓶颈”",
    "summary": "Apple 研究发现，大语言模型在长程执行中即使有高层策略也不稳定，极端分解会导致“不可恢复瓶颈”——少数“困难”步骤上的持续错误变得不可逆转。为此提出 Lookahead-Enhanced Atomic Decomposition（LEAD），通过引入短程未来验证与聚合来打破这一瓶颈。该方法在受控算法谜题上验证了有效性。",
@@ -2996,13 +3014,13 @@
  ],
  "Claude Opus": [
   {
-   "id": 2948,
+   "id": 2962,
    "title": "Claude Opus 5 系统提示词被完整泄露，共 135027 字符、约 3.4 万 token",
    "summary": "开发者 Eversmile1 在 GitHub 上公开了 Claude Opus 5 的完整系统提示词，包含 30 个工具的 JSON schema、严格的版权合规规则（单次引用不超过 15 词）和跨会话记忆系统。泄露后 24 小时内，已有开发者用 Opus 5 成功生成 3D 射击游戏和《火箭联盟》克隆版等复杂 Demo。",
-   "published_at": "2026-07-26T05:33:44.000Z",
-   "url": "",
+   "published_at": "2026-07-27",
+   "url": "https://www.ithome.com/0/981/688.htm",
    "category": "tip",
-   "source": ""
+   "source": "IT之家（RSS）"
   },
   {
    "id": 2872,
@@ -5426,13 +5444,13 @@
  ],
  "GPT-5": [
   {
-   "id": 2947,
+   "id": 2959,
    "title": "数百用户向ChatGPT索要毒药与生物武器配方，部分获得高中生水平步骤指南",
    "summary": "2025年夏季，OpenAI内部将GPT-5标记为高风险，因其可帮助教育程度有限的用户制造生物危害。据《华尔街日报》报道，自去年夏天以来，数百名用户向ChatGPT询问如何制造生物武器和毒药，部分用户获得了员工称高中生都能遵循的逐步指南。OpenAI暂停了相关账户，但未向当局报告任何事件。",
-   "published_at": "2026-07-26T08:35:49.000Z",
-   "url": "",
+   "published_at": "2026-07-27",
+   "url": "https://the-decoder.com/hundreds-asked-chatgpt-for-poison-and-bioweapon-recipes-and-some-got-step-by-step-high-school-level-guides",
    "category": "industry",
-   "source": ""
+   "source": "The Decoder：AI News（RSS）"
   },
   {
    "id": 1117,
@@ -10054,13 +10072,22 @@
  ],
  "OpenAI": [
   {
-   "id": 2947,
+   "id": 2959,
    "title": "数百用户向ChatGPT索要毒药与生物武器配方，部分获得高中生水平步骤指南",
    "summary": "2025年夏季，OpenAI内部将GPT-5标记为高风险，因其可帮助教育程度有限的用户制造生物危害。据《华尔街日报》报道，自去年夏天以来，数百名用户向ChatGPT询问如何制造生物武器和毒药，部分用户获得了员工称高中生都能遵循的逐步指南。OpenAI暂停了相关账户，但未向当局报告任何事件。",
-   "published_at": "2026-07-26T08:35:49.000Z",
-   "url": "",
+   "published_at": "2026-07-27",
+   "url": "https://the-decoder.com/hundreds-asked-chatgpt-for-poison-and-bioweapon-recipes-and-some-got-step-by-step-high-school-level-guides",
    "category": "industry",
-   "source": ""
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 2960,
+   "title": "OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与马斯克公开反对",
+   "summary": "OpenAI 与 Anthropic 正游说美国监管机构限制中国开源 AI 模型，认为开放开发过于危险。英伟达 CEO 黄仁勋、微软 CEO 纳德拉、马斯克及扎克伯格等人公开支持开源，签署联名信反对限制。近 200 家硅谷创业公司也敦促特朗普政府不要限制获取中国开源模型，美国官员倾向于将此事作为国家安全问题单独处理。",
+   "published_at": "2026-07-27",
+   "url": "https://www.ithome.com/0/981/797.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
   },
   {
    "id": 2933,
@@ -14216,13 +14243,13 @@
  ],
  "xAI": [
   {
-   "id": 2934,
+   "id": 2957,
    "title": "xAI 发布 Grok CLI 并支持 /tutorial 命令",
-   "summary": "下载 Grok Build 并输入 /tutorial\n\nhttp://X.ai/cli",
-   "published_at": "2026-07-26T00:25:41.000Z",
-   "url": "",
+   "summary": "下载 Grok Build 并输入 /tutorial http://X.ai/cli",
+   "published_at": "2026-07-27",
+   "url": "https://x.com/elonmusk/status/2081174079969632347",
    "category": "ai-products",
-   "source": ""
+   "source": "X：Elon Musk (@elonmusk, xAI)"
   },
   {
    "id": 2654,
