@@ -1,5 +1,35 @@
 [
  {
+  "id": 2966,
+  "title": "当编码不再是瓶颈：Berkeley RDI 提出软件自主开发三级框架",
+  "summary": "Berkeley RDI等机构提出三级软件自主开发框架：代码自主（AI完成设计与实现，人类决定构建内容并审核PR）、流水线自主（AI运行从设计到部署的全流程，人类仅评估结果）、需求自主（AI自主决定构建内容）。该框架旨在为能力声明、部署选择与问责提供清晰分类。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-27T07:51:26.272Z",
+  "fetched_at": "2026-07-27 13:00:10"
+ },
+ {
+  "id": 2967,
+  "title": "用AI Skill自动生成可协作HTML PPT",
+  "summary": "Vista 基于 bento PPT 改造了一个 Skill，输入内容或主题即可自动生成可编辑、在线演示并支持协作的 HTML PPT。安装指令为 `npx skills add joeseesun/qiaomu-bento-ppt`，推荐使用 Kimi K3 或 Opus 4.8+ 等前端审美好的模型。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-27T02:34:34.000Z",
+  "fetched_at": "2026-07-27 13:00:10"
+ },
+ {
+  "id": 2968,
+  "title": "浪费20亿Token后，我开源了帮Agent定义目标的Leader.skill",
+  "summary": "作者开源了Leader.skill，用于将模糊的人类需求转化为Agent可独立执行数小时的目标任务书。该Skill基于\"目标七问\"方法论，涵盖目的、完成态、反作弊、边界等维度，并推荐用Claude Fable 5或Kimi K3规划目标，再交由GPT-5.6 Sol或GLM-5.2等模型长程执行。项目已开源。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-07-27T00:12:00.000Z",
+  "fetched_at": "2026-07-27 13:00:10"
+ },
+ {
   "id": 2962,
   "title": "Claude Opus 5 系统提示词被完整泄露，共 135027 字符、约 3.4 万 token",
   "summary": "开发者 Eversmile1 在 GitHub 上公开了 Claude Opus 5 的完整系统提示词，包含 30 个工具的 JSON schema、严格的版权合规规则（单次引用不超过 15 词）和跨会话记忆系统。泄露后 24 小时内，已有开发者用 Opus 5 成功生成 3D 射击游戏和《火箭联盟》克隆版等复杂 Demo。",
