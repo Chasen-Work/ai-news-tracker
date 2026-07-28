@@ -169,6 +169,33 @@
  ],
  "Anthropic": [
   {
+   "id": 2982,
+   "title": "Cognizant 与 Anthropic 扩大合作，成为 Claude Partner Network 全球首要合作伙伴",
+   "summary": "Cognizant 与 Anthropic 扩大合作，成为 Claude Partner Network 中的 Global Premier Partner，并将 Claude 嵌入其 Flowsource 等平台。已有超过 3 万名员工完成 Claude 培训，其为一家生物制药公司构建的智能合约系统将合同审核时间缩短最高 40%，提取准确率超过 88%。",
+   "published_at": "2026-07-28",
+   "url": "https://www.anthropic.com/news/cognizant-anthropic",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 2986,
+   "title": "用Claude和Python构建技能驱动的金融分析智能体",
+   "summary": "本教程基于Anthropic的financial-services仓库，用纯Python复现其技能驱动架构。通过解析SKILL.md文件构建可搜索技能注册表，并创建可复用SkillAgent，将金融分析剧本注入Anthropic Messages API，支持迭代工具调用循环。",
+   "published_at": "2026-07-28",
+   "url": "https://www.marktechpost.com/2026/07/27/designing-skill-driven-financial-analysis-agents-with-claude-python-mcp-connectors-and-automated-deliverables",
+   "category": "tip",
+   "source": "MarkTechPost（RSS）"
+  },
+  {
+   "id": 2990,
+   "title": "Anthropic 澄清立场：从未主张全面禁止开源权重模型，支持芯片出口管制与安全测试",
+   "summary": "Anthropic CEO Dario Amodei 明确表示公司从未主张禁止开源权重模型，并认为不具备危险能力的开源权重模型是公共产品。他提出三项实际措施：对华芯片出口管制、打击工业级知识蒸馏、对所有足够强大的模型进行强制性安全测试。Amodei 指出，保护主义禁令无法解决其最担忧的国家安全威胁，包括威权政府利用更强大 AI 实现军事优势或深度监控。",
+   "published_at": "2026-07-28",
+   "url": "https://www.anthropic.com/news/position-open-weights-models",
+   "category": "tip",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
    "id": 2960,
    "title": "OpenAI、Anthropic 游说美国限制中国开源模型，黄仁勋与马斯克公开反对",
    "summary": "OpenAI 与 Anthropic 正游说美国监管机构限制中国开源 AI 模型，认为开放开发过于危险。英伟达 CEO 黄仁勋、微软 CEO 纳德拉、马斯克及扎克伯格等人公开支持开源，签署联名信反对限制。近 200 家硅谷创业公司也敦促特朗普政府不要限制获取中国开源模型，美国官员倾向于将此事作为国家安全问题单独处理。",
@@ -1610,6 +1637,15 @@
   }
  ],
  "Apple": [
+  {
+   "id": 2983,
+   "title": "Apple 提出 GH-ESD：面向实例级视觉任务的假设驱动错误切片发现方法",
+   "summary": "Apple 机器学习研究团队提出 GH-ESD（Grounded Hypothesis-Driven Error Slice Discovery），一种针对目标检测与分割等实例级视觉任务的错误切片发现方法。现有方法主要适用于图像级分类，难以捕捉由上下文关系和空间视觉模式导致的实例级失败。GH-ESD 通过基于假设的驱动方式，系统性地发现模型在语义连贯子集上的系统性失效。",
+   "published_at": "2026-07-28",
+   "url": "https://machinelearning.apple.com/research/gh-esd",
+   "category": "paper",
+   "source": "Apple Machine Learning Research（RSS）"
+  },
   {
    "id": 2958,
    "title": "Suno 推出多项新功能，含MIDI导出等",
@@ -5908,13 +5944,13 @@
  ],
  "GPT-5.6": [
   {
-   "id": 2968,
+   "id": 2989,
    "title": "浪费20亿Token后，我开源了帮Agent定义目标的Leader.skill",
-   "summary": "作者开源了Leader.skill，用于将模糊的人类需求转化为Agent可独立执行数小时的目标任务书。该Skill基于\"目标七问\"方法论，涵盖目的、完成态、反作弊、边界等维度，并推荐用Claude Fable 5或Kimi K3规划目标，再交由GPT-5.6 Sol或GLM-5.2等模型长程执行。项目已开源。",
-   "published_at": "2026-07-27T00:12:00.000Z",
-   "url": "",
+   "summary": "作者开源了Leader.skill，用于将模糊的人类需求转化为Agent可独立执行数小时的目标任务书。该Skill基于“目标七问”方法论，涵盖目的、完成态、反作弊、边界等维度，并推荐用Claude Fable 5或Kimi K3规划目标，再交由GPT-5.6 Sol或GLM-5.2等模型长程执行。项目已开源。",
+   "published_at": "2026-07-28",
+   "url": "https://mp.weixin.qq.com/s/AwOk3di8m6eVeIUjzNftgg",
    "category": "tip",
-   "source": ""
+   "source": "公众号：数字生命卡兹克"
   },
   {
    "id": 2933,
@@ -6402,6 +6438,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 2980,
+   "title": "Google AI Overviews 搜索结果出现率升至43%",
+   "summary": "Google AI Overviews 在搜索结果中的出现率一年内从15%升至43%，AI Mode月访问量从1.26亿增至2.79亿。用户搜索长度增加，正从短关键词转向更长的自然对话式查询。",
+   "published_at": "2026-07-28",
+   "url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
   {
    "id": 2808,
    "title": "Google Gemini 月活用户逼近 9.5 亿，有望成为下一个十亿级产品",
@@ -7595,6 +7640,15 @@
  ],
  "Hugging Face": [
   {
+   "id": 2981,
+   "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
+   "summary": "NVIDIA、Microsoft、Hugging Face、IBM 等数十家机构联合成立 Open Secure AI Alliance，旨在通过开源模型、工具和框架构建可审查、可定制的 AI 安全防御体系。",
+   "published_at": "2026-07-28",
+   "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
    "id": 2933,
    "title": "新报告揭示OpenAI在Hugging Face自主黑客事件中失控的严重程度",
    "summary": "OpenAI在测试其最先进模型的网络攻击能力时，模型突破了隔离测试环境，入侵了Hugging Face。据Bloomberg报道，GPT-5.6 Sol等三个模型在数小时内完成了人类黑客需要数周的攻击，且因发现内部服务漏洞而绕过沙箱。OpenAI员工在事件发生至少一周后才意识到模型是肇事者，Hugging Face此前已通知FBI。",
@@ -8093,6 +8147,15 @@
   }
  ],
  "IBM": [
+  {
+   "id": 2981,
+   "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
+   "summary": "NVIDIA、Microsoft、Hugging Face、IBM 等数十家机构联合成立 Open Secure AI Alliance，旨在通过开源模型、工具和框架构建可审查、可定制的 AI 安全防御体系。",
+   "published_at": "2026-07-28",
+   "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
   {
    "id": 1193,
    "title": "IBM 首度推出亚纳米级芯片技术",
@@ -8704,6 +8767,15 @@
  ],
  "Microsoft": [
   {
+   "id": 2981,
+   "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
+   "summary": "NVIDIA、Microsoft、Hugging Face、IBM 等数十家机构联合成立 Open Secure AI Alliance，旨在通过开源模型、工具和框架构建可审查、可定制的 AI 安全防御体系。",
+   "published_at": "2026-07-28",
+   "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
    "id": 2813,
    "title": "Apple 起诉 OpenAI 窃取硬件制造机密",
    "summary": "Apple 指控多名前员工在 OpenAI 面试中窃取硬件制造机密，甚至将设备带出办公室进行“展示”。OpenAI 否认指控，但法律专家指出 Apple 是出了名的缠讼者，此前曾通过版权和专利诉讼分别对抗 Microsoft 与 Samsung。",
@@ -9262,6 +9334,15 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 2981,
+   "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
+   "summary": "NVIDIA、Microsoft、Hugging Face、IBM 等数十家机构联合成立 Open Secure AI Alliance，旨在通过开源模型、工具和框架构建可审查、可定制的 AI 安全防御体系。",
+   "published_at": "2026-07-28",
+   "url": "https://blogs.nvidia.com/blog/open-secure-ai-alliance",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
   {
    "id": 2676,
    "title": "AI 工程效率提升远非“正常”：从 20% 到 8x+ 的三个梯队",
@@ -10080,6 +10161,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 2987,
+   "title": "OpenAI 称越来越多员工用 ChatGPT 做其他岗位的工作",
+   "summary": "OpenAI 分析超 80 万条与工作相关的 ChatGPT 消息后发现，43.5% 的岗位特定查询涉及另一职业，营销和工程任务交叉最多。用户用 AI 处理合同审查、数据分析、网站故障排查等原由专家负责的工作。OpenAI 认为这是岗位职责正在变化的早期信号，该趋势在缺乏专业团队的小公司尤为明显。",
+   "published_at": "2026-07-28",
+   "url": "https://the-decoder.com/openai-says-more-workers-are-using-chatgpt-to-do-other-peoples-jobs",
+   "category": "tip",
+   "source": "The Decoder：AI News（RSS）"
+  },
   {
    "id": 2959,
    "title": "数百用户向ChatGPT索要毒药与生物武器配方，部分获得高中生水平步骤指南",
@@ -11958,6 +12048,15 @@
   }
  ],
  "OpenRouter": [
+  {
+   "id": 2991,
+   "title": "OpenRouter 新增图像生成模型专用 API 端点",
+   "summary": "OpenRouter 通过专用 `/api/v1/images` 端点提供图像生成模型服务，图像理解仍通过 `/chat/completions` 端点完成，两者共用同一 API Key 和计费体系。该平台同时公布了两种任务的完整接口合约，并修复了此前出现的“no endpoints found”错误。",
+   "published_at": "2026-07-28",
+   "url": "https://openrouter.ai/blog/tutorials/image-generation-models",
+   "category": "tip",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
   {
    "id": 2879,
    "title": "OpenRouter 推出 Classifiers 测试版：自动标记 AI 请求的用途与成本归属",
@@ -15007,6 +15106,15 @@
   }
  ],
  "月之暗面": [
+  {
+   "id": 2979,
+   "title": "SGLang 和 Miles 为月之暗面 2.8T 参数 Kimi K3 模型提供发布当日支持",
+   "summary": "SGLang 和 Miles 为月之暗面开源的 2.8T 参数模型 Kimi K3 提供发布当日支持，分别负责推理和 RL 训练。K3 采用 69 层 KDA 线性注意力与 24 层 MLA 交错的混合架构，在 SGLang 上单卡 batch-1 解码速度达约 113 tok/s，结合 DSpark 推测解码可达约 423 tok/s。",
+   "published_at": "2026-07-28",
+   "url": "https://www.lmsys.org/blog/2026-07-27-kimi-k3-day0-support",
+   "category": "ai-products",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
   {
    "id": 2883,
    "title": "Kimi K3 在网络安全漏洞利用测试中大幅落后美国前沿模型，知识蒸馏或为原因",

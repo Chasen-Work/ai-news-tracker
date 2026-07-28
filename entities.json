@@ -3,15 +3,22 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 187,
-  "last_seen": "2026-07-27"
+  "mentions": 188,
+  "last_seen": "2026-07-28"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 160,
-  "last_seen": "2026-07-27"
+  "mentions": 163,
+  "last_seen": "2026-07-28"
+ },
+ {
+  "id": 47,
+  "name": "Google",
+  "type": "company",
+  "mentions": 113,
+  "last_seen": "2026-07-28"
  },
  {
   "id": 48,
@@ -19,13 +26,6 @@
   "type": "model",
   "mentions": 113,
   "last_seen": "2026-07-25"
- },
- {
-  "id": 47,
-  "name": "Google",
-  "type": "company",
-  "mentions": 112,
-  "last_seen": "2026-07-24"
  },
  {
   "id": 6,
@@ -45,8 +45,8 @@
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 64,
-  "last_seen": "2026-07-22"
+  "mentions": 65,
+  "last_seen": "2026-07-28"
  },
  {
   "id": 36,
@@ -87,22 +87,22 @@
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 39,
-  "last_seen": "2026-07-25"
+  "mentions": 40,
+  "last_seen": "2026-07-28"
  },
  {
   "id": 560,
   "name": "Apple",
   "type": "company",
-  "mentions": 39,
-  "last_seen": "2026-07-27"
+  "mentions": 40,
+  "last_seen": "2026-07-28"
  },
  {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 38,
-  "last_seen": "2026-07-26"
+  "mentions": 39,
+  "last_seen": "2026-07-28"
  },
  {
   "id": 2,
@@ -116,7 +116,14 @@
   "name": "GPT-5.6",
   "type": "model",
   "mentions": 28,
-  "last_seen": "2026-07-27T00:12:00.000Z"
+  "last_seen": "2026-07-28"
+ },
+ {
+  "id": 52,
+  "name": "Microsoft",
+  "type": "company",
+  "mentions": 27,
+  "last_seen": "2026-07-28"
  },
  {
   "id": 93,
@@ -124,13 +131,6 @@
   "type": "company",
   "mentions": 27,
   "last_seen": "2026-07-23T12:33:27.000Z"
- },
- {
-  "id": 52,
-  "name": "Microsoft",
-  "type": "company",
-  "mentions": 26,
-  "last_seen": "2026-07-24"
  },
  {
   "id": 24,
@@ -336,6 +336,13 @@
   "last_seen": "2026-07-23T12:33:27.000Z"
  },
  {
+  "id": 1137,
+  "name": "月之暗面",
+  "type": "company",
+  "mentions": 7,
+  "last_seen": "2026-07-28"
+ },
+ {
   "id": 19,
   "name": "OpenBMB",
   "type": "company",
@@ -364,6 +371,13 @@
   "last_seen": "2026-07-08"
  },
  {
+  "id": 134,
+  "name": "IBM",
+  "type": "company",
+  "mentions": 6,
+  "last_seen": "2026-07-28"
+ },
+ {
   "id": 193,
   "name": "Gemini 3.5 Flash",
   "type": "model",
@@ -376,20 +390,6 @@
   "type": "company",
   "mentions": 6,
   "last_seen": "2026-07-25"
- },
- {
-  "id": 1137,
-  "name": "月之暗面",
-  "type": "company",
-  "mentions": 6,
-  "last_seen": "2026-07-25"
- },
- {
-  "id": 134,
-  "name": "IBM",
-  "type": "company",
-  "mentions": 5,
-  "last_seen": "2026-06-26"
  },
  {
   "id": 154,
