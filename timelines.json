@@ -7640,6 +7640,15 @@
  ],
  "Hugging Face": [
   {
+   "id": 3015,
+   "title": "FeyNoBg 发布：开源自动背景去除模型，在四项基准上达到 SOTA",
+   "summary": "Feyn Labs 推出 FeyNoBg，一个用于自动背景去除的 SOTA 模型。它在八个基准测试中的四项上取得最佳 S-measure 分数，其余四项与领先者差距在 2% 以内。该模型基于 BiRefNet 架构，参数量从 222M 扩展至 263M，同时开源了训练库 NoBg，模型和代码分别可在 Hugging Face 和 GitHub 获取。",
+   "published_at": "2026-07-28T04:57:13.190Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 2981,
    "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
    "summary": "NVIDIA、Microsoft、Hugging Face、IBM 等数十家机构联合成立 Open Secure AI Alliance，旨在通过开源模型、工具和框架构建可审查、可定制的 AI 安全防御体系。",
@@ -8766,6 +8775,15 @@
   }
  ],
  "Microsoft": [
+  {
+   "id": 3012,
+   "title": "Microsoft 发布 MAI-Cyber-1-Flash：5B 活跃参数的网络安全模型，驱动 MDASH 在 CyberGym 上达到 95.95%",
+   "summary": "Microsoft 发布 MAI-Cyber-1-Flash，一款 137B 总参数（5B 活跃参数）、256k 上下文窗口的稀疏 MoE 网络安全模型，是 MAI-Code-1-Flash 的微调版本。",
+   "published_at": "2026-07-28T08:33:30.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2981,
    "title": "NVIDIA 等多家行业领袖联合成立 Open Secure AI Alliance，推动 AI 安全与防御开源化",
@@ -10162,6 +10180,15 @@
  ],
  "OpenAI": [
   {
+   "id": 3014,
+   "title": "德里高等法院裁定 OpenAI 利用 ANI 内容训练 AI 未侵犯版权",
+   "summary": "德里高等法院认定 OpenAI 利用亚洲国际新闻（ANI）社的内容训练人工智能不构成侵犯版权。法官 Amit Bansal 认为该行为符合印度《版权法》中研究类\"合理使用\"例外情形，且 ANI 未能证明 ChatGPT 直接复制其受版权保护内容。法院同时指出，现阶段颁布临时禁令将不利于印度正在开发的 LLM 及大量免费使用 ChatGPT 的用户。",
+   "published_at": "2026-07-28T06:21:07.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 2987,
    "title": "OpenAI 称越来越多员工用 ChatGPT 做其他岗位的工作",
    "summary": "OpenAI 分析超 80 万条与工作相关的 ChatGPT 消息后发现，43.5% 的岗位特定查询涉及另一职业，营销和工程任务交叉最多。用户用 AI 处理合同审查、数据分析、网站故障排查等原由专家负责的工作。OpenAI 认为这是岗位职责正在变化的早期信号，该趋势在缺乏专业团队的小公司尤为明显。",
@@ -10169,6 +10196,15 @@
    "url": "https://the-decoder.com/openai-says-more-workers-are-using-chatgpt-to-do-other-peoples-jobs",
    "category": "tip",
    "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 3011,
+   "title": "甲骨文与OpenAI的3000亿美元交易后股价暴跌，市场对循环融资模式失去信心",
+   "summary": "2025年9月10日甲骨文宣布与OpenAI达成3000亿美元交易后股价一度飙升43%，但如今已从307美元跌至约120美元。市场对循环融资模式日益警惕，昨日英伟达考虑为OpenAI主导的数据中心提供2500亿美元支持的消息传出后，其股价开盘下跌超4.5%。苹果因未过度投资AI反而市值超越英伟达，SpaceX则从6月高点225美元下跌超50%。",
+   "published_at": "2026-07-28",
+   "url": "https://garymarcus.substack.com/p/circular-financing-aint-what-it-used",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
   },
   {
    "id": 2959,
@@ -14883,6 +14919,15 @@
  ],
  "字节跳动": [
   {
+   "id": 3013,
+   "title": "火山引擎上线豆包搜索服务，为AI Agent提供实时可信搜索能力",
+   "summary": "火山引擎正式上线豆包搜索服务，为AI Agent提供跨语言、多模态、多垂类联网信息查询，融合全域互联网信息、行业知识与字节跳动独家内容资源。该服务从网站站点和创作者维度建立权威分级体系，过滤低质信息，在SimpleQA、FreshQA、BrowseComp-ZH等评测中表现优异。豆包搜索支持API、Skill、MCP等多种接入形态，面向企业和开发者提供每月500次免费搜索额度。",
+   "published_at": "2026-07-28T07:51:54.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2578,
    "title": "字节跳动发布 Seed Audio 1.0 音频创作模型，统一建模人声与音效实现端到端影视级音频生成",
    "summary": "字节跳动 Seed 团队发布音频创作模型 Seed Audio 1.0，在统一框架下联合建模人声、音效和环境声，支持 100ms 间隔精度的时间控制、单次约 2 分钟音频的延展生成及 20+ 语种自然生成。该模型已在火山方舟体验中心上线，多数场景音频可用率达 90% 以上，多语言音频自然度 MOS 超 4 分。",
@@ -15114,6 +15159,15 @@
    "url": "https://www.lmsys.org/blog/2026-07-27-kimi-k3-day0-support",
    "category": "ai-products",
    "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
+   "id": 3010,
+   "title": "Kimi K3 开放日：模型权重、技术报告和关键 Infra 技术同步开放",
+   "summary": "月之暗面发布 2.8 万亿参数的混合专家模型 Kimi K3，支持原生视觉理解和 100 万 token 上下文窗口。其规模化效率较 Kimi K2.5 提升 2.5 倍，并同步开源模型权重、技术报告及 MoonEP、FlashKDA、AgentEnv 三项 Infra 技术。",
+   "published_at": "2026-07-28",
+   "url": "https://mp.weixin.qq.com/s/IW9BdyA3hLvuuiX_aMCJEQ",
+   "category": "ai-models",
+   "source": "公众号：月之暗面（Kimi）"
   },
   {
    "id": 2883,
@@ -15577,6 +15631,15 @@
   }
  ],
  "豆包": [
+  {
+   "id": 3013,
+   "title": "火山引擎上线豆包搜索服务，为AI Agent提供实时可信搜索能力",
+   "summary": "火山引擎正式上线豆包搜索服务，为AI Agent提供跨语言、多模态、多垂类联网信息查询，融合全域互联网信息、行业知识与字节跳动独家内容资源。该服务从网站站点和创作者维度建立权威分级体系，过滤低质信息，在SimpleQA、FreshQA、BrowseComp-ZH等评测中表现优异。豆包搜索支持API、Skill、MCP等多种接入形态，面向企业和开发者提供每月500次免费搜索额度。",
+   "published_at": "2026-07-28T07:51:54.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 2230,
    "title": "Seedream 5.0 Pro 测评：图像编辑门槛爆降",
