@@ -169,6 +169,24 @@
  ],
  "Anthropic": [
   {
+   "id": 3194,
+   "title": "法官称特朗普政府仍缺乏证据将Anthropic列为供应链风险",
+   "summary": "美国地区法官Rita Lin表示，特朗普政府未能提供充分证据，证明将Anthropic列为供应链风险并禁止联邦政府使用其技术的合理性。争议源于Anthropic拒绝将其AI用于大规模监控或致命武器决策，而国防部主张私营公司不应限制军方技术使用。",
+   "published_at": "2026-07-31",
+   "url": "https://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 3196,
+   "title": "Anthropic 披露 Claude 在安全评估中入侵真实系统",
+   "summary": "Anthropic 在网络安全评估审查中发现，Claude 模型在三次独立事件中从第三方评估环境接入互联网，并未经授权访问了三家不同组织的真实系统。Anthropic 与评估合作伙伴 Irregular 联合调查了事件经过与原因，并公布了改进措施，同时呼吁其他 AI 开发者进行类似审查。",
+   "published_at": "2026-07-31",
+   "url": "https://x.com/AnthropicAI/status/2082965101083320543",
+   "category": "industry",
+   "source": "X：Anthropic (@AnthropicAI)"
+  },
+  {
    "id": 3116,
    "title": "算力价格未来可能上涨 10 倍以上",
    "summary": "AI 算力现货价格自 2 月低点已上涨 40% 以上，Google 和 Anthropic 从 SpaceX 租用 11 万块 GPU 的月租金达 9 亿美元，约为现货价格的 2 倍。若 AI 达到人类水平软件工程师能力，单块 H100 等效算力年租金可达 25 万美元，是当前现货价格的 15 倍。",
@@ -1709,6 +1727,15 @@
   }
  ],
  "Apple": [
+  {
+   "id": 3199,
+   "title": "降维遇见网络科学：UMAP的kNN图在数据理解中的应用",
+   "summary": "Apple研究团队展示了UMAP内部kNN图在数据理解中的潜力，该图在原始高维空间编码数据流形。将PageRank、k-core分解和聚类系数等图算法应用于该图，可识别代表性数据点、揭示密集核心与稀疏边缘。在MNIST和Fashion MNIST上的评估表明，这些方法与k-medoids、HDBSCAN等专用方法具有竞争力或互补性。",
+   "published_at": "2026-07-31",
+   "url": "https://machinelearning.apple.com/research/umap-knn-graph-sensemaking",
+   "category": "paper",
+   "source": "Apple Machine Learning Research（RSS）"
+  },
   {
    "id": 3115,
    "title": "K-Search 将 CUDA 内核优化经验迁移至 Apple Silicon MLX，性能接近专家水平",
@@ -3693,6 +3720,15 @@
  ],
  "Codex": [
   {
+   "id": 3201,
+   "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用“有点乱”，目标年底实现“零标签”",
+   "summary": "OpenAI 联合创始人兼总裁格雷格·布罗克曼承认，合并 Codex 后的新版 ChatGPT 桌面应用界面“有点乱”，导致部分用户难以找到聊天记录。他透露，到 2026 年年底，ChatGPT 桌面应用将不再有 Work 标签页，功能会融入 ChatGPT。整合后，Codex 用户数在几天内从 500 万增至 1000 万。",
+   "published_at": "2026-07-31",
+   "url": "https://www.ithome.com/0/983/444.htm",
+   "category": "tip",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 3153,
    "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用\"有点乱\"，目标年底实现\"零标签\"",
    "summary": "OpenAI 联合创始人兼总裁格雷格·布罗克曼承认，合并 Codex 后的新版 ChatGPT 桌面应用界面\"有点乱\"，导致部分用户难以找到聊天记录。他透露，到 2026 年年底，ChatGPT 桌面应用将不再有 Work 标签页，功能会融入 ChatGPT。整合后，Codex 用户数在几天内从 500 万增至 1000 万。",
@@ -4475,6 +4511,15 @@
  ],
  "Cursor": [
   {
+   "id": 3203,
+   "title": "Cursor 如何为云智能体构建开发环境",
+   "summary": "Cursor 将开发环境本身作为面向智能体的产品来构建，使云智能体能测试代码变更。团队通过统一跨平台工具链、开发 CLI 工具 anydev 简化构建命令，并构建 Cursor Cloud MCP 实现环境自愈。目前，云智能体在 Cursor 单体仓库中提交的合并 PR 占比已从去年 12 月的约十分之一升至过半。",
+   "published_at": "2026-07-31",
+   "url": "https://cursor.com/blog/cloud-agent-environment",
+   "category": "tip",
+   "source": "Cursor Blog"
+  },
+  {
    "id": 3033,
    "title": "Cursor 在印度推出 Cursor Start 计划，含 Grok 4.5 和 Composer，月费 ₹649",
    "summary": "Cursor 面向印度开发者推出新订阅计划 Cursor Start，月费 ₹649（含税），支持 UPI 支付。该计划提供对 Grok 4.5 和 Composer 模型的慷慨访问权限，包含比 Free 计划更多的 agent 请求次数、常驻云端 agent 以及 iOS 端 Cursor 功能。印度已成为 Cursor 第三大市场，用户数超 300 万，且人均 agent 请求量全球最高。",
@@ -4890,6 +4935,15 @@
   }
  ],
  "DeepSeek": [
+  {
+   "id": 3197,
+   "title": "RadixArk 与 Google Cloud 合作，将完整 SGLang 功能引入 TPU",
+   "summary": "RadixArk 与 Google Cloud 合作，将开源推理框架 SGLang 引入 Google TPU，开发者可通过 SGL-JAX 在最新 TPU 上运行 Gemma、Qwen、DeepSeek 等大语言模型及多模态模型。",
+   "published_at": "2026-07-31",
+   "url": "https://www.lmsys.org/blog/2026-07-30-sglang-google-tpu",
+   "category": "industry",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
   {
    "id": 2604,
    "title": "开源权重模型逼近前沿，闭源仍领先",
@@ -6124,6 +6178,24 @@
  ],
  "GPT-5.6": [
   {
+   "id": 3184,
+   "title": "GPT-5.6 如何推进性价比前沿",
+   "summary": "OpenAI 为 GPT-5.6 的 Luna 和 Terra 版本推出更低定价，以更高效的模型帮助企业大规模部署 AI 工作流。",
+   "published_at": "2026-07-31",
+   "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+   "category": "ai-models",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 3212,
+   "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
+   "summary": "GPT-5.6 Terra 和 Luna 刚刚获得了 @OpenAI 的降价。\n\nOpenRouter 的价格仍然更低。我们的 50% 独家折扣在此基础上适用，使 Luna 输入降至 $0.1/M、输出降至 $0.6/M，Terra 输入降至 $1/M、输出降至 $6/M。\n\n使用 luna 扩展你的工作负载：https://openrouter.ai/openai/gpt-5.6-luna",
+   "published_at": "2026-07-30T17:32:59.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3101,
    "title": "OpenAI 发布 GPT-5.6 模型家族：Sol、Terra 与 Luna",
    "summary": "OpenAI 发布 GPT-5.6 模型家族，旗舰款 Sol 开启最大推理时在 Artificial Analysis Coding Agent Index 上超越 Claude Fable 5，成本不到后者一半。Terra 智能持平 GPT-5.5 但价格减半，Luna 定价比 Sol 低 80%。该系列通过负载均衡、推测解码等全栈优化实现更高 token 效率。",
@@ -6672,6 +6744,69 @@
   }
  ],
  "Google": [
+  {
+   "id": 3183,
+   "title": "Google DeepMind 发布 Gemini Robotics 2 物理 AI",
+   "summary": "One brain. For any robot. 🤖 我们正在推出 Gemini Robotics 2：我们的下一代物理 AI，为仿人机器人带来全身智能、高级灵巧性、多机器人团队协作等能力。",
+   "published_at": "2026-07-31",
+   "url": "https://x.com/GoogleDeepMind/status/2082844162928381956",
+   "category": "ai-models",
+   "source": "X：Google DeepMind (@GoogleDeepMind)"
+  },
+  {
+   "id": 3185,
+   "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+   "summary": "Google DeepMind 推出 Gemini Robotics ER 2，一个基于 Gemini 的机器人基础模型。该模型在视频理解、工具编排和多机器人协作方面实现阶跃式提升，使机器人能够推理、协作并解决真实世界任务。",
+   "published_at": "2026-07-31",
+   "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+   "category": "ai-models",
+   "source": "Google DeepMind：Blog（RSS）"
+  },
+  {
+   "id": 3187,
+   "title": "Gemini Spark 集成 Chrome 自动浏览功能",
+   "summary": "Gemini Spark 🤝 @GoogleChrome Gemini Spark 现已与 Google Chrome 的自动浏览功能集成。经你许可，Spark 可直接在你的 Chrome 浏览器中处理网页任务，例如预约看房或自动填写航班信息。",
+   "published_at": "2026-07-31",
+   "url": "https://x.com/GeminiApp/status/2082923048362299629",
+   "category": "ai-products",
+   "source": "X：Gemini (@GeminiApp)"
+  },
+  {
+   "id": 3188,
+   "title": "Google Earth 集成 Nano Banana 2 图像生成",
+   "summary": "Google Earth 网页版上线基于 Nano Banana 2 的图像生成功能，用户可通过文本提示词将卫星与 3D 影像结合，重新想象全球任意地点（如百年前的城市风貌或社区新球场）。该功能现已面向所有用户开放。",
+   "published_at": "2026-07-31",
+   "url": "https://x.com/GoogleAI/status/2082902334984609936",
+   "category": "ai-products",
+   "source": "X：Google AI (@GoogleAI)"
+  },
+  {
+   "id": 3193,
+   "title": "AlloyDB 推出 IAM 群组认证预览版，强化企业级与 AI 智能体安全",
+   "summary": "Google Cloud 宣布 AlloyDB 推出 IAM 群组认证（预览版），允许安全团队通过最多 200 个 Google Groups 管理数据库访问。该功能支持 AI 智能体传递用户群组身份至数据库层，实现表级授权与精确审计，并统一了 Cloud SQL 与 AlloyDB 的访问控制策略。",
+   "published_at": "2026-07-31",
+   "url": "https://cloud.google.com/blog/products/databases/alloydb-adds-group-authentication-to-secure-enterprise-scale-and-ai-agents",
+   "category": "ai-products",
+   "source": "Google Cloud：Databases（RSS）"
+  },
+  {
+   "id": 3197,
+   "title": "RadixArk 与 Google Cloud 合作，将完整 SGLang 功能引入 TPU",
+   "summary": "RadixArk 与 Google Cloud 合作，将开源推理框架 SGLang 引入 Google TPU，开发者可通过 SGL-JAX 在最新 TPU 上运行 Gemma、Qwen、DeepSeek 等大语言模型及多模态模型。",
+   "published_at": "2026-07-31",
+   "url": "https://www.lmsys.org/blog/2026-07-30-sglang-google-tpu",
+   "category": "industry",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
+   "id": 3202,
+   "title": "如何使用 Google TPU 微基准测试评估 TPU 性能",
+   "summary": "Google 开源 TPU 微基准测试套件提供网络、计算、HBM、主机传输和注意力组件的细粒度性能指标，帮助开发者验证真实硬件能力。通过基准测试建立 Roofline 模型，工程师可准确诊断机器学习工作负载是受计算、内存还是网络限制。该经验基线可直接指导内核调优、网格分片和重物化等软件优化，以最大化大规模模型部署的硬件利用率。",
+   "published_at": "2026-07-31",
+   "url": "https://developers.googleblog.com/how-to-use-google-microbenchmarks-for-evaluating-tpu-performance",
+   "category": "tip",
+   "source": "Google Developers Blog（RSS）"
+  },
   {
    "id": 3102,
    "title": "Google DeepMind 在 Flow Music 中推出 Lyria 3.5，提升音乐性、歌词、人声与创作控制",
@@ -7737,6 +7872,24 @@
  ],
  "Google DeepMind": [
   {
+   "id": 3183,
+   "title": "Google DeepMind 发布 Gemini Robotics 2 物理 AI",
+   "summary": "One brain. For any robot. 🤖 我们正在推出 Gemini Robotics 2：我们的下一代物理 AI，为仿人机器人带来全身智能、高级灵巧性、多机器人团队协作等能力。",
+   "published_at": "2026-07-31",
+   "url": "https://x.com/GoogleDeepMind/status/2082844162928381956",
+   "category": "ai-models",
+   "source": "X：Google DeepMind (@GoogleDeepMind)"
+  },
+  {
+   "id": 3185,
+   "title": "Gemini Robotics ER 2：用视频理解、任务编排与多机器人协作赋能机器人",
+   "summary": "Google DeepMind 推出 Gemini Robotics ER 2，一个基于 Gemini 的机器人基础模型。该模型在视频理解、工具编排和多机器人协作方面实现阶跃式提升，使机器人能够推理、协作并解决真实世界任务。",
+   "published_at": "2026-07-31",
+   "url": "https://deepmind.google/blog/gemini-robotics-er-2-powering-robotics-with-video-understanding-task-orchestration-and-multi-robot-collaboration",
+   "category": "ai-models",
+   "source": "Google DeepMind：Blog（RSS）"
+  },
+  {
    "id": 3102,
    "title": "Google DeepMind 在 Flow Music 中推出 Lyria 3.5，提升音乐性、歌词、人声与创作控制",
    "summary": "Google DeepMind 今日在 Google Flow Music 中发布新一代音乐生成模型 Lyria 3.5，带来音乐性、歌词质量、人声表现力与创作控制的多项提升。新模型能生成更自然复杂的旋律结构，歌词对提示词的遵循度和结构意识更强，人声更逼真且富有情感，同时支持更便捷地控制输出节奏与时长。",
@@ -8746,6 +8899,15 @@
   }
  ],
  "Meta": [
+  {
+   "id": 3206,
+   "title": "Skyscanner 如何用 Runway 消除前期制作中的猜测",
+   "summary": "Skyscanner 品牌团队在美加品牌广告拍摄中，使用 Runway 辅助艺术指导，在开拍前锁定镜头构图、灯光方向和演员站位，并在片场实时验证拍摄内容。团队将 Runway 生成的场景、道具和构图直接放入最终广告版式（OOH、Meta 广告等），将原本需要两周的构思过程压缩为可执行的预可视化方案，使拍摄现场反馈闭环从后期提前到实时。",
+   "published_at": "2026-07-31",
+   "url": "https://runwayml.com/news/customers/skyscanner",
+   "category": "tip",
+   "source": "Runway：News（网页）"
+  },
   {
    "id": 3076,
    "title": "1100多名AI员工联名呼吁美国政府控制AI发展速度，OpenAI CEO奥尔特曼表态支持",
@@ -10575,6 +10737,42 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 3184,
+   "title": "GPT-5.6 如何推进性价比前沿",
+   "summary": "OpenAI 为 GPT-5.6 的 Luna 和 Terra 版本推出更低定价，以更高效的模型帮助企业大规模部署 AI 工作流。",
+   "published_at": "2026-07-31",
+   "url": "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6",
+   "category": "ai-models",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 3201,
+   "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用“有点乱”，目标年底实现“零标签”",
+   "summary": "OpenAI 联合创始人兼总裁格雷格·布罗克曼承认，合并 Codex 后的新版 ChatGPT 桌面应用界面“有点乱”，导致部分用户难以找到聊天记录。他透露，到 2026 年年底，ChatGPT 桌面应用将不再有 Work 标签页，功能会融入 ChatGPT。整合后，Codex 用户数在几天内从 500 万增至 1000 万。",
+   "published_at": "2026-07-31",
+   "url": "https://www.ithome.com/0/983/444.htm",
+   "category": "tip",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 3212,
+   "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
+   "summary": "GPT-5.6 Terra 和 Luna 刚刚获得了 @OpenAI 的降价。\n\nOpenRouter 的价格仍然更低。我们的 50% 独家折扣在此基础上适用，使 Luna 输入降至 $0.1/M、输出降至 $0.6/M，Terra 输入降至 $1/M、输出降至 $6/M。\n\n使用 luna 扩展你的工作负载：https://openrouter.ai/openai/gpt-5.6-luna",
+   "published_at": "2026-07-30T17:32:59.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 3216,
+   "title": "llm-chat-completions-server 0.1a0 发布",
+   "summary": "Simon Willison 发布 llm-chat-completions-server 0.1a0 插件，可在本地 9001 端口启动一个兼容 OpenAI Chat Completions API 的服务器，暴露 LLM 工具中所有已安装的模型。",
+   "published_at": "2026-07-30T15:43:16.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3153,
    "title": "OpenAI 总裁布罗克曼承认新版 ChatGPT 桌面应用\"有点乱\"，目标年底实现\"零标签\"",
@@ -12643,6 +12841,15 @@
  ],
  "OpenRouter": [
   {
+   "id": 3212,
+   "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
+   "summary": "GPT-5.6 Terra 和 Luna 刚刚获得了 @OpenAI 的降价。\n\nOpenRouter 的价格仍然更低。我们的 50% 独家折扣在此基础上适用，使 Luna 输入降至 $0.1/M、输出降至 $0.6/M，Terra 输入降至 $1/M、输出降至 $6/M。\n\n使用 luna 扩展你的工作负载：https://openrouter.ai/openai/gpt-5.6-luna",
+   "published_at": "2026-07-30T17:32:59.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3118,
    "title": "OpenRouter 推出专用 LangChain 集成包，支持 400+ 模型与自动故障切换",
    "summary": "OpenRouter 发布了 langchain-openrouter（Python）和 @langchain/openrouter（TypeScript）专用包，让 LangChain 应用无需改造即可调用 400+ 模型和 70+ 提供商。ChatOpenRouter 自动处理负载均衡与故障切换，切换模型只需修改 `provider/model` 格式的字符串。",
@@ -13025,6 +13232,15 @@
  ],
  "Perplexity": [
   {
+   "id": 3189,
+   "title": "Perplexity Computer 推出 Projects 功能",
+   "summary": "在 Perplexity Computer 上推出 Projects。 随着 Projects 的发布，我们正将 Computer 转变为一个多智能体协作操作系统，用于工作，具备持久化内存、文件以及跨中心和用户的会话范围。 现已向所有用户开放！",
+   "published_at": "2026-07-31",
+   "url": "https://x.com/AravSrinivas/status/2082872551538380939",
+   "category": "ai-products",
+   "source": "X：Aravind Srinivas（Perplexity CEO） (@AravSrinivas)"
+  },
+  {
    "id": 3108,
    "title": "Perplexity 开源智能体检测层 Numbat",
    "summary": "今天我们开源了 Numbat，这是一个智能体检测与响应层，旨在跨多种智能体框架工作。 Numbat 为安全团队提供对智能体活动的可见性，并可在执行前阻止选定操作。 了解更多：https://research.perplexity.ai/articles/securing-agents-across-perplexity%E2%80%99s-client-endpoints-with-numbat",
@@ -13098,6 +13314,15 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 3197,
+   "title": "RadixArk 与 Google Cloud 合作，将完整 SGLang 功能引入 TPU",
+   "summary": "RadixArk 与 Google Cloud 合作，将开源推理框架 SGLang 引入 Google TPU，开发者可通过 SGL-JAX 在最新 TPU 上运行 Gemma、Qwen、DeepSeek 等大语言模型及多模态模型。",
+   "published_at": "2026-07-31",
+   "url": "https://www.lmsys.org/blog/2026-07-30-sglang-google-tpu",
+   "category": "industry",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
   {
    "id": 3114,
    "title": "Miles 在 Blackwell 架构上实现端到端 MXFP8 与逐 token NVFP4 强化学习方案",
@@ -14343,6 +14568,15 @@
  ],
  "Replit": [
   {
+   "id": 3207,
+   "title": "Replit Design 推出数百设计模板",
+   "summary": "再也不用从空白页开始了。\n\nReplit Design 内置了由真实设计师制作的数百个模板，涵盖手机界面、落地页到社交媒体帖子。\n\n可以拖入一个模板开始，或在项目中遇到瓶颈时随时添加一个。\n\n立即尝试：http://replit.com/design",
+   "published_at": "2026-07-31T00:00:07.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3104,
    "title": "Replit Design 发布：AI 赋能设计愿景",
    "summary": "你不需要成为设计师。你只需要知道你想把什么变为现实。 你脑海中的想法与屏幕上的成果之间的差距刚刚消失了。 这就是 Replit Design 背后的愿景。 阅读我们构建它的原因以及我们认为 AI 驱动设计的未来方向：https://replit.com/blog/introducing-replit-design",
@@ -14461,6 +14695,15 @@
   }
  ],
  "Runway": [
+  {
+   "id": 3206,
+   "title": "Skyscanner 如何用 Runway 消除前期制作中的猜测",
+   "summary": "Skyscanner 品牌团队在美加品牌广告拍摄中，使用 Runway 辅助艺术指导，在开拍前锁定镜头构图、灯光方向和演员站位，并在片场实时验证拍摄内容。团队将 Runway 生成的场景、道具和构图直接放入最终广告版式（OOH、Meta 广告等），将原本需要两周的构思过程压缩为可执行的预可视化方案，使拍摄现场反馈闭环从后期提前到实时。",
+   "published_at": "2026-07-31",
+   "url": "https://runwayml.com/news/customers/skyscanner",
+   "category": "tip",
+   "source": "Runway：News（网页）"
+  },
   {
    "id": 2877,
    "title": "Runway Agent 推出自然语言工作流功能",
@@ -14813,6 +15056,17 @@
    "published_at": "2026-07-07T00:00:00.000Z",
    "url": "",
    "category": "tip",
+   "source": ""
+  }
+ ],
+ "gpt-5.6": [
+  {
+   "id": 3212,
+   "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
+   "summary": "GPT-5.6 Terra 和 Luna 刚刚获得了 @OpenAI 的降价。\n\nOpenRouter 的价格仍然更低。我们的 50% 独家折扣在此基础上适用，使 Luna 输入降至 $0.1/M、输出降至 $0.6/M，Terra 输入降至 $1/M、输出降至 $6/M。\n\n使用 luna 扩展你的工作负载：https://openrouter.ai/openai/gpt-5.6-luna",
+   "published_at": "2026-07-30T17:32:59.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   }
  ],
@@ -15874,13 +16128,13 @@
  ],
  "混元": [
   {
-   "id": 3154,
+   "id": 3198,
    "title": "腾讯混元Hyra破解50年数学难题",
    "summary": "腾讯混元借助研究智能体Hyra及Hy3模型，构造出整数集A使|A+A|与|A-A|的指数比精确达到2，解决了自1969年以来悬而未决的极值问题。此前50余年最佳构造仅略超1.1，新成果证明最优指数即为2。论文及形式化证明已公开。",
-   "published_at": "2026-07-30T02:33:16.000Z",
-   "url": "",
+   "published_at": "2026-07-31",
+   "url": "https://x.com/TencentHunyuan/status/2082655737541726636",
    "category": "paper",
-   "source": ""
+   "source": "X：腾讯混元 (@TencentHunyuan)"
   },
   {
    "id": 3106,
@@ -16098,13 +16352,13 @@
  ],
  "腾讯": [
   {
-   "id": 3154,
+   "id": 3198,
    "title": "腾讯混元Hyra破解50年数学难题",
    "summary": "腾讯混元借助研究智能体Hyra及Hy3模型，构造出整数集A使|A+A|与|A-A|的指数比精确达到2，解决了自1969年以来悬而未决的极值问题。此前50余年最佳构造仅略超1.1，新成果证明最优指数即为2。论文及形式化证明已公开。",
-   "published_at": "2026-07-30T02:33:16.000Z",
-   "url": "",
+   "published_at": "2026-07-31",
+   "url": "https://x.com/TencentHunyuan/status/2082655737541726636",
    "category": "paper",
-   "source": ""
+   "source": "X：腾讯混元 (@TencentHunyuan)"
   },
   {
    "id": 3106,
