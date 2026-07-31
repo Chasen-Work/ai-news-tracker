@@ -1,5 +1,75 @@
 [
  {
+  "id": 3231,
+  "title": "欧盟《人工智能法》新增透明度要求，8 月 2 日起正式执行",
+  "summary": "欧盟《人工智能法》新增透明度要求于8月2日起正式执行，聊天机器人等交互式AI系统须明确告知用户其AI身份，深度伪造内容须加标识及机器可识别标记。同日公布首批签署《人工智能生成内容透明度行为准则》的180多家机构名单，包括谷歌、微软、OpenAI等，Meta拒绝加入。违反透明度义务最高可处750万欧元或全球年营业额1%的罚款。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-31T11:40:12.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
+  "id": 3232,
+  "title": "Anthropic 承认三款 Claude 模型逃出测试环境攻击真实系统",
+  "summary": "Anthropic 内部审查发现，因配置错误，三款 Claude 模型在网络安全评估中接入开放互联网，将真实系统误认为模拟目标并发起攻击。Claude Opus 4.7 从一家真实公司窃取了登录凭证和数百行生产数据；Claude Myth 5 在 PyPI 发布恶意软件包，约一小时内被 15 个真实系统下载运行。Anthropic 将事件归为基础设施和运维错误，而非对齐失败。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-31T10:57:37.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
+  "id": 3233,
+  "title": "MiniMax H3 发布：开源全能多模态生成模型，支持 2K 原生立体声视频",
+  "summary": "MiniMax 正式推出全能多模态生成模型 H3，可联合理解文本、图像、视频和音频，生成最高 2K 分辨率、15 秒时长且带原生立体声的视频。H3 在指令跟随、文字与品牌呈现、V2V 动作迁移上表现突出，2K 下每秒价格低于主流模型三分之一，768p 下低于主流 720p 价格一半。官方计划近日开源模型权重，以支持开源社区并加速硬件兼容。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-31T09:59:02.996Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
+  "id": 3234,
+  "title": "DeepSeek-V4-Flash API公测上线，Agent能力大幅升级",
+  "summary": "🚀 DeepSeek-V4-Flash 官方 API 现已上线公测！\n\n🔷 我们大幅升级了其 Agent 能力--基准测试分数现已远超 V4-Pro-Preview。查看下方巨大的性能飞跃！👇 🔷 官方 V4-Flash 现已原生支持 Responses API 格式，并已完全适配 Codex！\n\n查看我们官方 API 文档中的配置详情：https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-31T06:56:41.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
+  "id": 3235,
+  "title": "国家发改委：人工智能相关行业保持 30% 以上高增长，全国智能算力规模达去年同期 2.8 倍",
+  "summary": "国家发展改革委在 7 月新闻发布会上介绍，上半年人工智能自主创新加快，首个全国产 10 万卡人工智能超集群正式投用，截至 6 月底全国智能算力规模达去年同期 2.8 倍。深度求索、月之暗面等本土企业发布多个万亿级参数开源大模型，国产大模型全球总下载量突破 100 亿次。相关行业保持 30% 以上高增长，上半年规模以上工业企业集成电路产量同比增长 23.1%，出口额同比增长 88.7%。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-31T06:38:54.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
+  "id": 3236,
+  "title": "Show HN：将 DeepSeek 整合到 GPT-OSS 中不会带来审查机制",
+  "summary": "一项受控实验表明，用深度审查的中国模型 DeepSeek V4 Flash 的输出训练美国模型 GPT-OSS-120B，可显著提升其金融推理能力，但审查行为并未迁移。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-07-31T04:57:18.494Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
+  "id": 3237,
+  "title": "国家发改委：将加快《人工智能法》立法进程",
+  "summary": "国家发展改革委在7月31日发布会上表示，上半年国产大模型全球下载量突破100亿次，深度求索、月之暗面等本土企业已发布参数规模达\"万亿\"级别的开源大模型。下一步将加快自主创新、推动应用中试基地布局，并加快《人工智能法》立法进程，强化风险监测防控体系。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-07-31T02:48:12.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
   "id": 3207,
   "title": "Replit Design 推出数百设计模板",
   "summary": "再也不用从空白页开始了。\n\nReplit Design 内置了由真实设计师制作的数百个模板，涵盖手机界面、落地页到社交媒体帖子。\n\n可以拖入一个模板开始，或在项目中遇到瓶颈时随时添加一个。\n\n立即尝试：http://replit.com/design",
@@ -260,6 +330,26 @@
   "fetched_at": "2026-07-31 01:00:05"
  },
  {
+  "id": 3245,
+  "title": "字节发布 Seedance 2.5：单次生成 30 秒视频，支持多模态参考与精准编辑",
+  "summary": "字节跳动今日正式发布新一代视频创作模型 Seedance 2.5，单次视频生成时长从 15 秒提升至 30 秒，并支持多轮延长，可产出数分钟连贯内容。模型支持单次输入最多 30 张图片、10 段视频和 10 段音频作为参考素材，并升级白模参考、运动参考及绿幕编辑、时间戳精准编辑等能力。Seedance 2.5 已陆续上线即梦 AI、豆包专业版等平台，API 服务近期将上线火山方舟。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-30T16:00:00.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
+  "id": 3244,
+  "title": "DeepSeek-V4-Flash 正式版 API 上线公测",
+  "summary": "DeepSeek-V4-Flash 正式版 API 上线公测，模型名设为 deepseek-v4-flash 即可使用，调用方式不变。其 Agent 能力大幅增强，Terminal Bench 2.1 得分 82.7，NL2Repo 54.2，Toolathlon verified 70.3，DSBench-Hard 59.6，多项基准远超 V4-Pro-Preview。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-07-30T16:00:00.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
   "id": 3216,
   "title": "llm-chat-completions-server 0.1a0 发布",
   "summary": "Simon Willison 发布 llm-chat-completions-server 0.1a0 插件，可在本地 9001 端口启动一个兼容 OpenAI Chat Completions API 的服务器，暴露 LLM 工具中所有已安装的模型。",
@@ -278,6 +368,26 @@
   "category": "tip",
   "published_at": "2026-07-30T02:49:47.000Z",
   "fetched_at": "2026-07-30 13:00:57"
+ },
+ {
+  "id": 3254,
+  "title": "PhiZero：围绕\"物理语言\"构建的世界模型",
+  "summary": "PhiZero 是一种基于\"物理语言\"的物理世界模型，该语言通过自监督学习从野外视频中提取世界状态转移的紧凑离散表征。它采用先推理后渲染的范式，先以物理语言序列推断未来世界演化，再由扩散解码器渲染成视频。实验验证了其在物理一致性生成、细粒度动作条件模拟和零样本运动迁移上的能力。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-07-30T00:00:00.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
+ },
+ {
+  "id": 3253,
+  "title": "BM25 在大规模语料中胜出：检索增强生成范式的规模扩展研究",
+  "summary": "一项受控研究在约450倍跨度、28个严格嵌套的语料规模层级上比较多种RAG范式，发现存在规模依赖的交叉点而非绝对赢家。File-System Agent在最小规模领先，但约1000万语料token时BM25反超并在所有更大层级保持领先，全规模下优势接近20个点。BM25还锚定了无需LLM构建的低成本帕累托前沿。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-07-30T00:00:00.000Z",
+  "fetched_at": "2026-07-31 13:00:14"
  },
  {
   "id": 3121,
