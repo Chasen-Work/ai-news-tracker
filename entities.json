@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 215,
-  "last_seen": "2026-08-01"
+  "mentions": 217,
+  "last_seen": "2026-08-01T07:39:02.000Z"
  },
  {
   "id": 35,
@@ -70,6 +70,13 @@
   "last_seen": "2026-07-31"
  },
  {
+  "id": 13,
+  "name": "Hugging Face",
+  "type": "company",
+  "mentions": 46,
+  "last_seen": "2026-08-01T03:57:07.000Z"
+ },
+ {
   "id": 43,
   "name": "Meta",
   "type": "company",
@@ -82,13 +89,6 @@
   "type": "company",
   "mentions": 45,
   "last_seen": "2026-07-30"
- },
- {
-  "id": 13,
-  "name": "Hugging Face",
-  "type": "company",
-  "mentions": 45,
-  "last_seen": "2026-07-31T20:25:20.686Z"
  },
  {
   "id": 560,

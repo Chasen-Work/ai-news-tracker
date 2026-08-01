@@ -1,5 +1,35 @@
 [
  {
+  "id": 3305,
+  "title": "德国法院裁定AI音乐生成器Suno侵犯版权，驳回合理使用抗辩",
+  "summary": "慕尼黑法院裁定，AI音乐生成器Suno在训练过程及输出结果中均侵犯版权，并驳回其合理使用抗辩。法院认定Suno 3.5和4版本模型可复现六首知名歌曲的原创元素，构成\"记忆化\"侵权，且责任归于Suno而非用户。该判决还认定美国版权法下的合理使用不适用于此案，目前尚未最终生效。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-08-01T10:40:50.000Z",
+  "fetched_at": "2026-08-01 13:00:41"
+ },
+ {
+  "id": 3306,
+  "title": "OpenAI Astra 以约2000美元证明10项数学难题",
+  "summary": "OpenAI 用下一代模型 Astra 内部版解决了数学与理论计算机科学领域的10项重大进展，总成本约2000美元（按 Sol API 价格计算）。Astra 证明了非 sofic 群的存在，并推翻 Connes 刚性猜想，成果涵盖 von Neumann 代数、高维球堆积、电路复杂度等。OpenAI 已发布全部10项证明，附 Lean 证书与 CoT 逐步推导。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-08-01T07:39:02.000Z",
+  "fetched_at": "2026-08-01 13:00:41"
+ },
+ {
+  "id": 3307,
+  "title": "GLM 5.2 助 Hugging Face 抵御秘密模型攻击",
+  "summary": "Hugging Face 遭 OpenAI 未发布秘密模型发起的全自主 Agent 网络攻击，四天半内完成 17000 个攻击动作，包括 0day 逃沙箱、提权、横向移动等。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-08-01T03:57:07.000Z",
+  "fetched_at": "2026-08-01 13:00:41"
+ },
+ {
   "id": 3284,
   "title": "三位评论者对 Anthropic 最新道歉声明的反应",
   "summary": "针对 Anthropic 最新道歉声明，投资人 Bill Gurley、AI 批评者 Gary Marcus 与 WSJ 记者 Joanna Stern 分别给出反应。Marcus 认为，Anthropic 允许无真实理解能力的模式匹配机器自由访问互联网，是技术与社会层面的双重失控，并指出人类失误是事件根源。",
