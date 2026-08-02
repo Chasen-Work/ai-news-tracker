@@ -31,8 +31,8 @@
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 73,
-  "last_seen": "2026-08-01"
+  "mentions": 74,
+  "last_seen": "2026-08-02T10:47:27.000Z"
  },
  {
   "id": 6,
@@ -448,6 +448,13 @@
   "last_seen": "2026-07-17"
  },
  {
+  "id": 72,
+  "name": "codex",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-08-02T10:47:27.000Z"
+ },
+ {
   "id": 180,
   "name": "Qwen 3.6",
   "type": "model",
@@ -509,13 +516,6 @@
   "type": "company",
   "mentions": 3,
   "last_seen": "2026-06-02"
- },
- {
-  "id": 72,
-  "name": "codex",
-  "type": "model",
-  "mentions": 3,
-  "last_seen": "2026-08-01"
  },
  {
   "id": 78,
@@ -705,6 +705,13 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-07-23"
+ },
+ {
+  "id": 4249,
+  "name": "gpt-5.6",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-08-02T10:47:27.000Z"
  },
  {
   "id": 4287,
@@ -915,13 +922,6 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-07-23"
- },
- {
-  "id": 4249,
-  "name": "gpt-5.6",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-07-30T17:32:59.000Z"
  },
  {
   "id": 4297,

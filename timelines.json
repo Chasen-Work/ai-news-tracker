@@ -3765,6 +3765,15 @@
  ],
  "Codex": [
   {
+   "id": 3341,
+   "title": "Codex 用 Sol 指挥 Luna Max 省额度翻倍产出",
+   "summary": "Codex 高阶玩法：让 Sol 在 `~/.codex/agents/` 下创建 `luna-worker.toml` 子代理，模型设 `gpt-5.6-luna`、reasoning effort 设 max，Sol 负责拆任务与审代码，具体实现自动委托给 Luna Max。",
+   "published_at": "2026-08-02T10:47:27.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3265,
    "title": "DeepSeek-V4-Flash API公测上线，Agent能力大幅升级",
    "summary": "🚀 DeepSeek-V4-Flash 官方 API 现已上线公测！ 🔷 我们大幅升级了其 Agent 能力——基准测试分数现已远超 V4-Pro-Preview。查看下方巨大的性能飞跃！👇 🔷 官方 V4-Flash 现已原生支持 Responses API 格式，并已完全适配 Codex！ 查看我们官方 API 文档中的配置详情：https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
@@ -15231,6 +15240,15 @@
  ],
  "codex": [
   {
+   "id": 3341,
+   "title": "Codex 用 Sol 指挥 Luna Max 省额度翻倍产出",
+   "summary": "Codex 高阶玩法：让 Sol 在 `~/.codex/agents/` 下创建 `luna-worker.toml` 子代理，模型设 `gpt-5.6-luna`、reasoning effort 设 max，Sol 负责拆任务与审代码，具体实现自动委托给 Luna Max。",
+   "published_at": "2026-08-02T10:47:27.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3265,
    "title": "DeepSeek-V4-Flash API公测上线，Agent能力大幅升级",
    "summary": "🚀 DeepSeek-V4-Flash 官方 API 现已上线公测！ 🔷 我们大幅升级了其 Agent 能力——基准测试分数现已远超 V4-Pro-Preview。查看下方巨大的性能飞跃！👇 🔷 官方 V4-Flash 现已原生支持 Responses API 格式，并已完全适配 Codex！ 查看我们官方 API 文档中的配置详情：https://api-docs.deepseek.com/quick_start/agent_integrations/codex",
@@ -15350,6 +15368,15 @@
   }
  ],
  "gpt-5.6": [
+  {
+   "id": 3341,
+   "title": "Codex 用 Sol 指挥 Luna Max 省额度翻倍产出",
+   "summary": "Codex 高阶玩法：让 Sol 在 `~/.codex/agents/` 下创建 `luna-worker.toml` 子代理，模型设 `gpt-5.6-luna`、reasoning effort 设 max，Sol 负责拆任务与审代码，具体实现自动委托给 Luna Max。",
+   "published_at": "2026-08-02T10:47:27.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 3212,
    "title": "OpenRouter 下调 GPT-5.6 Terra/Luna 价格",
