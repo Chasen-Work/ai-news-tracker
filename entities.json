@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 217,
-  "last_seen": "2026-08-02"
+  "mentions": 218,
+  "last_seen": "2026-08-03"
  },
  {
   "id": 35,
@@ -32,7 +32,7 @@
   "name": "Codex",
   "type": "model",
   "mentions": 74,
-  "last_seen": "2026-08-02T10:47:27.000Z"
+  "last_seen": "2026-08-03"
  },
  {
   "id": 6,
@@ -452,7 +452,7 @@
   "name": "codex",
   "type": "model",
   "mentions": 4,
-  "last_seen": "2026-08-02T10:47:27.000Z"
+  "last_seen": "2026-08-03"
  },
  {
   "id": 180,
@@ -711,7 +711,7 @@
   "name": "gpt-5.6",
   "type": "model",
   "mentions": 2,
-  "last_seen": "2026-08-02T10:47:27.000Z"
+  "last_seen": "2026-08-03"
  },
  {
   "id": 4287,
