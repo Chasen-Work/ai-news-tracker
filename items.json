@@ -1,5 +1,25 @@
 [
  {
+  "id": 3356,
+  "title": "Kimi Work 幻灯片制作教程发布",
+  "summary": "使用 Kimi Work 制作幻灯片 - 教程 #1。\n\nKimi Slides 处理整个幻灯片制作流程：\n- 清晰的结构与研究，由 Kimi K3 驱动\n- 连贯的设计，包括精美的图表和 SmartArts\n- 可编辑并可直接下载\n\n欢迎在评论区告诉我们你还想看什么内容！",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-03T11:51:51.000Z",
+  "fetched_at": "2026-08-03 13:00:44"
+ },
+ {
+  "id": 3357,
+  "title": "Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T 参数",
+  "summary": "Qwen 正式发布 Qwen3.8-Max，这是 Qwen 家族迄今最强的模型，拥有 2.4T 参数（95B 激活），并首次开源 Qwen-Max 级权重，开放权重将于下周发布。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-03T02:00:00.000Z",
+  "fetched_at": "2026-08-03 13:00:44"
+ },
+ {
   "id": 3352,
   "title": "最新开源模型盘点（#23）：Laguna S2.1、Inkling 与 Kimi K3 展现开源模型在帕累托前沿的价值",
   "summary": "Thinking Machines 发布首个模型 Inkling，为 975B-A41B 多模态 MoE，支持文本、图像和音频输入，并推出 276B-A12B 小版本。",

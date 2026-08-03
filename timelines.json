@@ -13567,6 +13567,15 @@
  ],
  "Qwen": [
   {
+   "id": 3357,
+   "title": "Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T 参数",
+   "summary": "Qwen 正式发布 Qwen3.8-Max，这是 Qwen 家族迄今最强的模型，拥有 2.4T 参数（95B 激活），并首次开源 Qwen-Max 级权重，开放权重将于下周发布。",
+   "published_at": "2026-08-03T02:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 3277,
    "title": "面壁智能ALIGN：自动对齐智能体与环境接口",
    "summary": "面壁智能与清华NLP团队提出ALIGN，自动生成对齐接口解决智能体与环境间的失配问题。仅改写反馈措辞即可将Qwen2.5-7B智能体在ALFWorld上的成功率从13.4%提升至31.3%。该方法在四个基准上最高提升45.67%成功率，并减少65%连续无效动作，且接口可跨智能体架构和LLM骨干迁移。",
@@ -14288,6 +14297,15 @@
  ],
  "Qwen-": [
   {
+   "id": 3357,
+   "title": "Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T 参数",
+   "summary": "Qwen 正式发布 Qwen3.8-Max，这是 Qwen 家族迄今最强的模型，拥有 2.4T 参数（95B 激活），并首次开源 Qwen-Max 级权重，开放权重将于下周发布。",
+   "published_at": "2026-08-03T02:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 2769,
    "title": "通义千问发布Qwen-Audio-3.0-TTS，登顶TTS排行榜",
    "summary": "阿里通义千问推出最新文本转语音模型Qwen-Audio-3.0-TTS，提供Flash（实时交互）和Plus（高质量生成）两个版本。新功能包括细粒度内联标签控制（如【whisper】、【angry】）、自然语言风格控制、支持16种语言，以及一次生成长达3分钟的长文本。该模型目前在Artificial Analysis TTS排行榜上排名第一。",
@@ -14826,6 +14844,15 @@
   }
  ],
  "Qwen3.8": [
+  {
+   "id": 3357,
+   "title": "Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T 参数",
+   "summary": "Qwen 正式发布 Qwen3.8-Max，这是 Qwen 家族迄今最强的模型，拥有 2.4T 参数（95B 激活），并首次开源 Qwen-Max 级权重，开放权重将于下周发布。",
+   "published_at": "2026-08-03T02:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2557,
    "title": "Qwen3.8 开源发布，2.4T 参数模型上线",
