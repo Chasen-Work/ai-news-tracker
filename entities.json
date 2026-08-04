@@ -3,43 +3,43 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 218,
-  "last_seen": "2026-08-03"
+  "mentions": 220,
+  "last_seen": "2026-08-04T00:06:00.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 175,
-  "last_seen": "2026-08-01"
+  "mentions": 176,
+  "last_seen": "2026-08-04"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 127,
-  "last_seen": "2026-08-01"
+  "mentions": 129,
+  "last_seen": "2026-08-04"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 115,
-  "last_seen": "2026-08-01"
+  "mentions": 116,
+  "last_seen": "2026-08-04"
  },
  {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 74,
-  "last_seen": "2026-08-03"
+  "mentions": 75,
+  "last_seen": "2026-08-04T00:06:00.000Z"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
   "mentions": 72,
-  "last_seen": "2026-08-03T02:00:00.000Z"
+  "last_seen": "2026-08-04"
  },
  {
   "id": 10,
@@ -94,15 +94,15 @@
   "id": 560,
   "name": "Apple",
   "type": "company",
-  "mentions": 44,
-  "last_seen": "2026-08-01"
+  "mentions": 45,
+  "last_seen": "2026-08-04"
  },
  {
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 42,
-  "last_seen": "2026-07-30T17:32:59.000Z"
+  "mentions": 43,
+  "last_seen": "2026-08-04"
  },
  {
   "id": 1502,
@@ -147,6 +147,13 @@
   "last_seen": "2026-07-31"
  },
  {
+  "id": 3,
+  "name": "MiniMax",
+  "type": "company",
+  "mentions": 20,
+  "last_seen": "2026-08-03T02:44:09.000Z"
+ },
+ {
   "id": 20,
   "name": "HuggingFace",
   "type": "company",
@@ -154,18 +161,11 @@
   "last_seen": "2026-07-29"
  },
  {
-  "id": 3,
-  "name": "MiniMax",
-  "type": "company",
-  "mentions": 18,
-  "last_seen": "2026-08-01"
- },
- {
   "id": 51,
   "name": "Runway",
   "type": "company",
-  "mentions": 18,
-  "last_seen": "2026-08-01"
+  "mentions": 19,
+  "last_seen": "2026-08-04"
  },
  {
   "id": 25,
@@ -200,7 +200,7 @@
   "name": "Qwen-",
   "type": "model",
   "mentions": 13,
-  "last_seen": "2026-08-03T02:00:00.000Z"
+  "last_seen": "2026-08-04"
  },
  {
   "id": 26,
@@ -525,6 +525,13 @@
   "last_seen": "2026-07-08"
  },
  {
+  "id": 82,
+  "name": "商汤",
+  "type": "company",
+  "mentions": 3,
+  "last_seen": "2026-08-04"
+ },
+ {
   "id": 132,
   "name": "Luma",
   "type": "company",
@@ -600,13 +607,6 @@
   "type": "company",
   "mentions": 2,
   "last_seen": "2026-06-02"
- },
- {
-  "id": 82,
-  "name": "商汤",
-  "type": "company",
-  "mentions": 2,
-  "last_seen": "2026-07-15"
  },
  {
   "id": 97,
@@ -704,7 +704,7 @@
   "name": "Qwen3.8",
   "type": "model",
   "mentions": 2,
-  "last_seen": "2026-08-03T02:00:00.000Z"
+  "last_seen": "2026-08-04"
  },
  {
   "id": 3449,
@@ -929,5 +929,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-07-30T16:00:00.000Z"
+ },
+ {
+  "id": 4465,
+  "name": "SenseNova",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-08-04"
  }
 ]

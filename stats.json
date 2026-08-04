@@ -1,22 +1,22 @@
 {
- "total_items": 1525,
- "total_entities": 133,
- "total_dailies": 63,
+ "total_items": 1548,
+ "total_entities": 134,
+ "total_dailies": 64,
  "categories": {
-  "tip": 424,
-  "ai-products": 412,
-  "industry": 346,
-  "paper": 173,
-  "ai-models": 170
+  "tip": 434,
+  "ai-products": 420,
+  "industry": 348,
+  "paper": 174,
+  "ai-models": 172
  },
  "entity_types": {
-  "model": 78,
+  "model": 79,
   "company": 55
  },
  "top_sources": [
   {
    "name": "Hacker News 热门（buzzing.cc 中文翻译）",
-   "count": 96
+   "count": 97
   },
   {
    "name": "IT之家（RSS）",
@@ -28,7 +28,7 @@
   },
   {
    "name": "TechCrunch：AI（RSS）",
-   "count": 39
+   "count": 40
   },
   {
    "name": "The Decoder：AI News（RSS）",
@@ -44,7 +44,7 @@
   },
   {
    "name": "Apple Machine Learning Research（RSS）",
-   "count": 31
+   "count": 32
   },
   {
    "name": "MarkTechPost（RSS）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-07-05",
-   "count": 4
-  },
   {
    "date": "2026-07-06",
    "count": 13
@@ -170,12 +166,16 @@
   },
   {
    "date": "2026-08-02",
-   "count": 2
+   "count": 3
   },
   {
    "date": "2026-08-03",
    "count": 7
+  },
+  {
+   "date": "2026-08-04",
+   "count": 22
   }
  ],
- "updated_at": "2026-08-03T13:00:44Z"
+ "updated_at": "2026-08-04T01:00:56Z"
 }
