@@ -1755,6 +1755,15 @@
  ],
  "Apple": [
   {
+   "id": 3406,
+   "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
+   "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
+   "published_at": "2026-08-04T06:32:44.149Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3373,
    "title": "多模态大语言模型对齐的全面研究：Apple 团队独立拆解偏好对齐各环节",
    "summary": "Apple 研究团队系统梳理了多模态大语言模型（MLLM）中的偏好对齐方法，将算法分为离线（如 DPO）与在线（如 online-DPO）两类，并发现两者结合可在特定场景下提升模型性能。团队还提出无需额外标注或外部模型的新型多模态偏好数据构建方法 Bias-Driven Hallucination Sampling（BDHS），在多项基准上取得与既有对齐工作相当的竞争力。",
@@ -5044,6 +5053,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 3401,
+   "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
+   "summary": "一个开源仓库提供了在单颗 AMD MI300X 上生产运行 DeepSeek-V4-Flash-0731 的完整配置与补丁，无需额外量化或权重卸载。该 304B 参数模型在 192 GB HBM 上实现单流 168.6 tok/s 解码、8 并发流 542 tok/s 聚合吞吐，并验证了 256K 上下文。",
+   "published_at": "2026-08-04T12:56:45.712Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3263,
    "title": "DeepSeek V4 Flash 0731 开源，登顶开源模型前三",
    "summary": "DeepSeek 发布开源模型 DeepSeek V4 Flash 0731，在 Artificial Analysis 智能指数上得分 50，位列开源模型前三。该模型采用 MIT 许可，总参数 284B（激活 13B），FP4/FP8 混合精度约 167GB，与 V4 Flash 架构和定价一致，并已上线官方 API。",
@@ -5536,6 +5554,15 @@
  ],
  "DeepSeek V4": [
   {
+   "id": 3401,
+   "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
+   "summary": "一个开源仓库提供了在单颗 AMD MI300X 上生产运行 DeepSeek-V4-Flash-0731 的完整配置与补丁，无需额外量化或权重卸载。该 304B 参数模型在 192 GB HBM 上实现单流 168.6 tok/s 解码、8 并发流 542 tok/s 聚合吞吐，并验证了 256K 上下文。",
+   "published_at": "2026-08-04T12:56:45.712Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3263,
    "title": "DeepSeek V4 Flash 0731 开源，登顶开源模型前三",
    "summary": "DeepSeek 发布开源模型 DeepSeek V4 Flash 0731，在 Artificial Analysis 智能指数上得分 50，位列开源模型前三。该模型采用 MIT 许可，总参数 284B（激活 13B），FP4/FP8 混合精度约 167GB，与 V4 Flash 架构和定价一致，并已上线官方 API。",
@@ -5667,6 +5694,15 @@
   }
  ],
  "DeepSeek-V4": [
+  {
+   "id": 3401,
+   "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
+   "summary": "一个开源仓库提供了在单颗 AMD MI300X 上生产运行 DeepSeek-V4-Flash-0731 的完整配置与补丁，无需额外量化或权重卸载。该 304B 参数模型在 192 GB HBM 上实现单流 168.6 tok/s 解码、8 并发流 542 tok/s 聚合吞吐，并验证了 256K 上下文。",
+   "published_at": "2026-08-04T12:56:45.712Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 3265,
    "title": "DeepSeek-V4-Flash API公测上线，Agent能力大幅升级",
@@ -6357,6 +6393,15 @@
   }
  ],
  "GPT-5.6": [
+  {
+   "id": 3407,
+   "title": "GPT-5.6 Luna降价80%永久生效",
+   "summary": "有些人显然误解了，但 GPT-5.6 Luna 降价 80% 不是临时噱头，而是永久的。效率提升不会消失。幸运的是。",
+   "published_at": "2026-08-04T05:07:32.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 3184,
    "title": "GPT-5.6 如何推进性价比前沿",
@@ -9134,6 +9179,15 @@
  ],
  "Meta": [
   {
+   "id": 3406,
+   "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
+   "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
+   "published_at": "2026-08-04T06:32:44.149Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3272,
    "title": "欧盟《人工智能法》新增透明度要求，8 月 2 日起正式执行",
    "summary": "欧盟《人工智能法》新增透明度要求于8月2日起正式执行，聊天机器人等交互式AI系统须明确告知用户其AI身份，深度伪造内容须加标识及机器可识别标记。同日公布首批签署《人工智能生成内容透明度行为准则》的180多家机构名单，包括谷歌、微软、OpenAI等，Meta拒绝加入。违反透明度义务最高可处750万欧元或全球年营业额1%的罚款。",
@@ -10162,6 +10216,15 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 3404,
+   "title": "用 NVIDIA SkillSpector、LangGraph、YARA 规则、SARIF 与 CI 策略门构建高级 AI 技能安全审计流水线",
+   "summary": "本教程演示如何用 NVIDIA SkillSpector 评估 AI 技能的安全态势，构建包含干净、风险、恶意及 MCP 示例的合成技能市场，并通过 LangGraph 检查流水线扫描每个技能。",
+   "published_at": "2026-08-04T08:12:36.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 3115,
    "title": "K-Search 将 CUDA 内核优化经验迁移至 Apple Silicon MLX，性能接近专家水平",
@@ -12990,6 +13053,15 @@
  ],
  "OpenBMB": [
   {
+   "id": 3408,
+   "title": "面壁智能开源 ForgeStencil：一周自动优化 100+ 工业与科学软件，全程零人工介入",
+   "summary": "面壁智能联合 OpenBMB 开源全球首个支持 Stencil 自动研究、自动部署的 AI 优化系统 ForgeStencil，由 Kernel Agent 与 App Agent 闭环协作，实现从算子优化到应用集成的全自动流程。",
+   "published_at": "2026-08-04T04:20:28.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2584,
    "title": "面壁智能发布首个具身智能成果 MiniCPM-Robot 系列模型，含 1.5B VLA 与 0.9B 跟踪模型",
    "summary": "面壁智能联合 OpenBMB 发布并开源 MiniCPM-Robot 系列，包括通用 VLA 模型 MiniCPM-RobotManip（1.5B 参数）与移动跟踪模型 MiniCPM-RobotTrack（0.9B 参数）。",
@@ -13665,6 +13737,15 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 3406,
+   "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
+   "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
+   "published_at": "2026-08-04T06:32:44.149Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3361,
    "title": "Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T 参数",
@@ -14593,6 +14674,15 @@
  ],
  "Qwen3-": [
   {
+   "id": 3406,
+   "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
+   "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
+   "published_at": "2026-08-04T06:32:44.149Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 2675,
    "title": "一个随机数就能识别AI模型身份：行为指纹技术可检测API中转站偷换模型",
    "summary": "布拉格经济大学研究员托马什·布鲁克纳发现，通过让模型反复输出1到100的随机数，可生成独一无二的“行为指纹”。对165个模型各问30次后发现，GPT-4o偏爱42和37，Claude Sonnet 5疯狂输出47，Qwen3-Max则30次全部回答42。该方法仅需约120条请求即可识别模型身份，错误率约10.6%，为验证API是否被偷换模型提供了轻量级方案。",
@@ -14775,6 +14865,15 @@
   }
  ],
  "Qwen3.5": [
+  {
+   "id": 3406,
+   "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
+   "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
+   "published_at": "2026-08-04T06:32:44.149Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 2560,
    "title": "MiniCPM5-2B发布：4B以下全球性能第一，适配9款芯片",
@@ -16656,6 +16755,15 @@
  ],
  "混元": [
   {
+   "id": 3405,
+   "title": "腾讯混元发布 Hy ASR 3.0 preview：真正懂上下文的语音识别",
+   "summary": "腾讯混元发布新一代语音识别模型 Hy ASR 3.0 preview，基于大语言模型 Hy3 与 MoE 架构，融合高精度识别与语义理解。其在开源评测集中中文普通话 WER 3.34%、英语 WER 2.62%、粤语 WER 3.12%，并支持上下文纠错、热词注入及高噪耳语等场景。该模型已上线腾讯云 API，元宝 App 首发并免费开放。",
+   "published_at": "2026-08-04T08:12:36.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 3198,
    "title": "腾讯混元Hyra破解50年数学难题",
    "summary": "腾讯混元借助研究智能体Hyra及Hy3模型，构造出整数集A使|A+A|与|A-A|的指数比精确达到2，解决了自1969年以来悬而未决的极值问题。此前50余年最佳构造仅略超1.1，新成果证明最优指数即为2。论文及形式化证明已公开。",
@@ -16879,6 +16987,15 @@
   }
  ],
  "腾讯": [
+  {
+   "id": 3405,
+   "title": "腾讯混元发布 Hy ASR 3.0 preview：真正懂上下文的语音识别",
+   "summary": "腾讯混元发布新一代语音识别模型 Hy ASR 3.0 preview，基于大语言模型 Hy3 与 MoE 架构，融合高精度识别与语义理解。其在开源评测集中中文普通话 WER 3.34%、英语 WER 2.62%、粤语 WER 3.12%，并支持上下文纠错、热词注入及高噪耳语等场景。该模型已上线腾讯云 API，元宝 App 首发并免费开放。",
+   "published_at": "2026-08-04T08:12:36.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 3198,
    "title": "腾讯混元Hyra破解50年数学难题",
@@ -17555,6 +17672,15 @@
   }
  ],
  "面壁智能": [
+  {
+   "id": 3408,
+   "title": "面壁智能开源 ForgeStencil：一周自动优化 100+ 工业与科学软件，全程零人工介入",
+   "summary": "面壁智能联合 OpenBMB 开源全球首个支持 Stencil 自动研究、自动部署的 AI 优化系统 ForgeStencil，由 Kernel Agent 与 App Agent 闭环协作，实现从算子优化到应用集成的全自动流程。",
+   "published_at": "2026-08-04T04:20:28.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3277,
    "title": "面壁智能ALIGN：自动对齐智能体与环境接口",
