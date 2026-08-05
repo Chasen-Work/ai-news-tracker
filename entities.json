@@ -3,50 +3,50 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 220,
-  "last_seen": "2026-08-04T00:06:00.000Z"
+  "mentions": 224,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 176,
-  "last_seen": "2026-08-04"
+  "mentions": 179,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 129,
-  "last_seen": "2026-08-04"
+  "mentions": 132,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 116,
-  "last_seen": "2026-08-04"
+  "mentions": 117,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 75,
-  "last_seen": "2026-08-04T00:06:00.000Z"
+  "mentions": 76,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
   "mentions": 73,
-  "last_seen": "2026-08-04T06:32:44.149Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 68,
-  "last_seen": "2026-08-04T08:12:36.000Z"
+  "mentions": 71,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 36,
@@ -60,14 +60,14 @@
   "name": "DeepSeek",
   "type": "company",
   "mentions": 50,
-  "last_seen": "2026-08-04T12:56:45.712Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 43,
   "name": "Meta",
   "type": "company",
   "mentions": 47,
-  "last_seen": "2026-08-04T06:32:44.149Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 149,
@@ -77,18 +77,18 @@
   "last_seen": "2026-07-31"
  },
  {
+  "id": 560,
+  "name": "Apple",
+  "type": "company",
+  "mentions": 47,
+  "last_seen": "2026-08-05"
+ },
+ {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
   "mentions": 46,
   "last_seen": "2026-08-01T03:57:07.000Z"
- },
- {
-  "id": 560,
-  "name": "Apple",
-  "type": "company",
-  "mentions": 46,
-  "last_seen": "2026-08-04T06:32:44.149Z"
  },
  {
   "id": 4,
@@ -101,15 +101,15 @@
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 43,
-  "last_seen": "2026-08-04"
+  "mentions": 45,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 36,
-  "last_seen": "2026-08-04T05:07:32.000Z"
+  "mentions": 38,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 2,
@@ -137,7 +137,7 @@
   "name": "腾讯",
   "type": "company",
   "mentions": 25,
-  "last_seen": "2026-08-04T08:12:36.000Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 70,
@@ -150,15 +150,15 @@
   "id": 3,
   "name": "MiniMax",
   "type": "company",
-  "mentions": 20,
-  "last_seen": "2026-08-03T02:44:09.000Z"
+  "mentions": 21,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 20,
   "name": "HuggingFace",
   "type": "company",
-  "mentions": 20,
-  "last_seen": "2026-07-29"
+  "mentions": 21,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 51,
@@ -166,6 +166,13 @@
   "type": "company",
   "mentions": 19,
   "last_seen": "2026-08-04"
+ },
+ {
+  "id": 23,
+  "name": "Replit",
+  "type": "company",
+  "mentions": 15,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 25,
@@ -182,13 +189,6 @@
   "last_seen": "2026-07-30T16:00:00.000Z"
  },
  {
-  "id": 23,
-  "name": "Replit",
-  "type": "company",
-  "mentions": 14,
-  "last_seen": "2026-08-01"
- },
- {
   "id": 28,
   "name": "Nemotron",
   "type": "model",
@@ -200,7 +200,7 @@
   "name": "混元",
   "type": "company",
   "mentions": 13,
-  "last_seen": "2026-08-04T08:12:36.000Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 976,
@@ -221,21 +221,21 @@
   "name": "Qwen3.5",
   "type": "model",
   "mentions": 12,
-  "last_seen": "2026-08-04T06:32:44.149Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 434,
   "name": "DeepSeek V4",
   "type": "model",
   "mentions": 12,
-  "last_seen": "2026-08-04T12:56:45.712Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 701,
   "name": "DeepSeek-V4",
   "type": "model",
   "mentions": 12,
-  "last_seen": "2026-08-04T12:56:45.712Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 760,
@@ -263,7 +263,7 @@
   "name": "面壁智能",
   "type": "company",
   "mentions": 10,
-  "last_seen": "2026-08-04T04:20:28.000Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 723,
@@ -326,7 +326,7 @@
   "name": "OpenBMB",
   "type": "company",
   "mentions": 7,
-  "last_seen": "2026-08-04T04:20:28.000Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 335,
@@ -410,7 +410,7 @@
   "name": "Qwen3-",
   "type": "model",
   "mentions": 5,
-  "last_seen": "2026-08-04T06:32:44.149Z"
+  "last_seen": "2026-08-05"
  },
  {
   "id": 2120,
@@ -420,11 +420,25 @@
   "last_seen": "2026-07-24"
  },
  {
+  "id": 3521,
+  "name": "Gemini 3.6 Flash",
+  "type": "model",
+  "mentions": 5,
+  "last_seen": "2026-08-05"
+ },
+ {
   "id": 7,
   "name": "Qwen3.7",
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-06-17"
+ },
+ {
+  "id": 9,
+  "name": "Cosmos 3",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 16,
@@ -462,6 +476,13 @@
   "last_seen": "2026-08-03"
  },
  {
+  "id": 82,
+  "name": "商汤",
+  "type": "company",
+  "mentions": 4,
+  "last_seen": "2026-08-05"
+ },
+ {
   "id": 180,
   "name": "Qwen 3.6",
   "type": "model",
@@ -497,20 +518,6 @@
   "last_seen": "2026-07-09"
  },
  {
-  "id": 3521,
-  "name": "Gemini 3.6 Flash",
-  "type": "model",
-  "mentions": 4,
-  "last_seen": "2026-07-29"
- },
- {
-  "id": 9,
-  "name": "Cosmos 3",
-  "type": "model",
-  "mentions": 3,
-  "last_seen": "2026-07-21"
- },
- {
   "id": 31,
   "name": "纬创",
   "type": "company",
@@ -523,13 +530,6 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-07-08"
- },
- {
-  "id": 82,
-  "name": "商汤",
-  "type": "company",
-  "mentions": 3,
-  "last_seen": "2026-08-04"
  },
  {
   "id": 132,
@@ -726,6 +726,13 @@
   "type": "company",
   "mentions": 2,
   "last_seen": "2026-08-01"
+ },
+ {
+  "id": 4465,
+  "name": "SenseNova",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-08-05"
  },
  {
   "id": 11,
@@ -929,12 +936,5 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-07-30T16:00:00.000Z"
- },
- {
-  "id": 4465,
-  "name": "SenseNova",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-08-04"
  }
 ]

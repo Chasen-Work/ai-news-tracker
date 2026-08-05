@@ -169,6 +169,33 @@
  ],
  "Anthropic": [
   {
+   "id": 3440,
+   "title": "Anthropic 与成立仅数月的云初创公司 Volta 签署 100 亿美元算力协议",
+   "summary": "Anthropic 与成立仅数月的云初创公司 Volta 签署 100 亿美元算力协议，约合每年 17 亿美元。Volta 估值 24 亿美元，硬件几乎全为租用：算力来自比特币矿商 Bitdeer 挪威 121MW 站点，芯片由 Nvidia 供应、Dell 组装。Anthropic 买的是交付速度，代价是承担超大规模云厂商合同从未有过的交易对手风险。",
+   "published_at": "2026-08-05",
+   "url": "https://x.com/rohanpaul_ai/status/2084655258102546579",
+   "category": "industry",
+   "source": "X：Rohan Paul (@rohanpaul_ai)"
+  },
+  {
+   "id": 3443,
+   "title": "Mariano-Florentino (Tino) Cuéllar 加入 Anthropic 出任首席全球事务官",
+   "summary": "Anthropic 任命 Mariano-Florentino (Tino) Cuéllar 为首任首席全球事务官，负责全球政策、国际战略参与及政府关系事务。Cuéllar 曾任卡内基国际和平基金会主席、加州最高法院法官，并自 2026 年 1 月起担任 Anthropic 长期利益信托受托人，现已卸任该职务加入公司。",
+   "published_at": "2026-08-05",
+   "url": "https://www.anthropic.com/news/tino-cuellar",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
+   "id": 3454,
+   "title": "杰文斯悖论还能持续吗：AI 定价分层如何支撑算力需求增长",
+   "summary": "科技巨头高管普遍表示算力供应仍无法满足需求，但 AI 定价却在上涨：Anthropic 7 月 24 日发布的 Fable 5 定价每百万输出 token 50 美元，较 Opus 5 翻倍；OpenAI 则在 Fable 5 发布五天后将 GPT-5.6 Luna 价格下调 80%。",
+   "published_at": "2026-08-05",
+   "url": "https://www.tomtunguz.com/what-if-gpu-prices-double",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
    "id": 3380,
    "title": "关于 Astra 与数学的两则重要更新：Anthropic 数学家 24 小时复现 OpenAI 半数结果",
    "summary": "Gary Marcus 称 OpenAI 的 Astra 可能并非其宣传的突破，Anthropic 数学家 Levent Alpöge 用已公开的 Fable 模型在 24 小时内复现了 OpenAI 半数结果，质疑其真实进展。",
@@ -1755,13 +1782,22 @@
  ],
  "Apple": [
   {
-   "id": 3406,
+   "id": 3432,
    "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
    "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
-   "published_at": "2026-08-04T06:32:44.149Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://github.com/leonickson1/Swiftlet",
    "category": "ai-products",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 3448,
+   "title": "MiniMax-H3 通过 MLX 移植可在 Apple Silicon 上运行",
+   "summary": "MiniMax 发布 MiniMax-H3，一个可接受文本、图像、音频和视频并生成最长 15 秒带音频视频片段的通用全模态生成系统。Python 包 PipeNetwork/minimax-h3-mlx 将其移植到 MLX，支持 Apple Silicon 运行。作者在 M5 Max MacBook Pro 上实测，下载约 115 GB 模型文件，视频生成耗时不到 45 分钟。",
+   "published_at": "2026-08-05",
+   "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx",
+   "category": "tip",
+   "source": "Simon Willison 博客"
   },
   {
    "id": 3373,
@@ -2181,6 +2217,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 3436,
+   "title": "OpenRouter 推出 ori CLI：为 Claude Code 等 Harness 提供开箱即用的优化配置",
+   "summary": "OpenRouter 发布 ori CLI，用户安装并登录后即可获得针对 Claude Code、Codex、OpenCode、Hermes 等 harness 的优化配置，省去手动设置大量环境变量的麻烦。",
+   "published_at": "2026-08-05",
+   "url": "https://openrouter.ai/blog/announcements/ori-harness",
+   "category": "ai-products",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
   {
    "id": 3377,
    "title": "Claude Code 连接器可复用至 Artifacts",
@@ -3801,13 +3846,22 @@
  ],
  "Codex": [
   {
-   "id": 3382,
+   "id": 3436,
+   "title": "OpenRouter 推出 ori CLI：为 Claude Code 等 Harness 提供开箱即用的优化配置",
+   "summary": "OpenRouter 发布 ori CLI，用户安装并登录后即可获得针对 Claude Code、Codex、OpenCode、Hermes 等 harness 的优化配置，省去手动设置大量环境变量的麻烦。",
+   "published_at": "2026-08-05",
+   "url": "https://openrouter.ai/blog/announcements/ori-harness",
+   "category": "ai-products",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
+  {
+   "id": 3453,
    "title": "从零开始，教你用Codex搓出属于你自己的第一个硬件",
-   "summary": "作者以零基础身份，全程通过与Codex对话，从需求讨论、电路搭建、代码烧录到3D打印组装，5天内做出一个能提醒久坐的猫爪硬件。文中还介绍了用Agent调试宏键盘、以及OpenAI与Work Louder联名发布的Codex Micro键盘（13个机械按键，售价230美元）等案例，强调\"干中学\"的AI开发方式。",
-   "published_at": "2026-08-04T00:06:00.000Z",
-   "url": "",
+   "summary": "作者以零基础身份，全程通过与Codex对话，从需求讨论、电路搭建、代码烧录到3D打印组装，5天内做出一个能提醒久坐的猫爪硬件。文中还介绍了用Agent调试宏键盘、以及OpenAI与Work Louder联名发布的Codex Micro键盘（13个机械按键，售价230美元）等案例，强调“干中学”的AI开发方式。",
+   "published_at": "2026-08-05",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684924&idx=1&sn=f9ecf13ac374f13dfa75f98f685a231d",
    "category": "tip",
-   "source": ""
+   "source": "公众号：数字生命卡兹克"
   },
   {
    "id": 3350,
@@ -4599,6 +4653,15 @@
  ],
  "Cosmos 3": [
   {
+   "id": 3426,
+   "title": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿开源模型",
+   "summary": "NVIDIA Alpamayo 2 Super 现已开放商用，基于 Cosmos 3 Super Reasoner 构建，采用强化学习后训练，支持轨迹预测、因果链推理、元动作、自动标注及视觉问答等多任务输出。",
+   "published_at": "2026-08-05",
+   "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+   "category": "ai-models",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
    "id": 2585,
    "title": "NVIDIA 发布 Cosmos 3 Edge：4B 参数开源世界模型，为机器人及边缘 AI 提供实时推理与动作生成",
    "summary": "NVIDIA 在 Hugging Face 上开源了 Cosmos 3 Edge，一个 40 亿参数的世界模型，旨在帮助机器人和视觉 AI 智能体在边缘设备上理解环境、实时推理并生成动作。",
@@ -5053,13 +5116,13 @@
  ],
  "DeepSeek": [
   {
-   "id": 3401,
+   "id": 3447,
    "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
    "summary": "一个开源仓库提供了在单颗 AMD MI300X 上生产运行 DeepSeek-V4-Flash-0731 的完整配置与补丁，无需额外量化或权重卸载。该 304B 参数模型在 192 GB HBM 上实现单流 168.6 tok/s 解码、8 并发流 542 tok/s 聚合吞吐，并验证了 256K 上下文。",
-   "published_at": "2026-08-04T12:56:45.712Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
    "category": "tip",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
   },
   {
    "id": 3263,
@@ -5554,13 +5617,13 @@
  ],
  "DeepSeek V4": [
   {
-   "id": 3401,
+   "id": 3447,
    "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
    "summary": "一个开源仓库提供了在单颗 AMD MI300X 上生产运行 DeepSeek-V4-Flash-0731 的完整配置与补丁，无需额外量化或权重卸载。该 304B 参数模型在 192 GB HBM 上实现单流 168.6 tok/s 解码、8 并发流 542 tok/s 聚合吞吐，并验证了 256K 上下文。",
-   "published_at": "2026-08-04T12:56:45.712Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
    "category": "tip",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
   },
   {
    "id": 3263,
@@ -5695,13 +5758,13 @@
  ],
  "DeepSeek-V4": [
   {
-   "id": 3401,
+   "id": 3447,
    "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
    "summary": "一个开源仓库提供了在单颗 AMD MI300X 上生产运行 DeepSeek-V4-Flash-0731 的完整配置与补丁，无需额外量化或权重卸载。该 304B 参数模型在 192 GB HBM 上实现单流 168.6 tok/s 解码、8 并发流 542 tok/s 聚合吞吐，并验证了 256K 上下文。",
-   "published_at": "2026-08-04T12:56:45.712Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://github.com/ryanzhou/deepseek-v4-flash-mi300x",
    "category": "tip",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
   },
   {
    "id": 3265,
@@ -6394,12 +6457,30 @@
  ],
  "GPT-5.6": [
   {
-   "id": 3407,
+   "id": 3442,
    "title": "GPT-5.6 Luna降价80%永久生效",
    "summary": "有些人显然误解了，但 GPT-5.6 Luna 降价 80% 不是临时噱头，而是永久的。效率提升不会消失。幸运的是。",
-   "published_at": "2026-08-04T05:07:32.000Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://x.com/thsottiaux/status/2084506501834829833",
    "category": "industry",
+   "source": "X：Tibo (@thsottiaux)"
+  },
+  {
+   "id": 3454,
+   "title": "杰文斯悖论还能持续吗：AI 定价分层如何支撑算力需求增长",
+   "summary": "科技巨头高管普遍表示算力供应仍无法满足需求，但 AI 定价却在上涨：Anthropic 7 月 24 日发布的 Fable 5 定价每百万输出 token 50 美元，较 Opus 5 翻倍；OpenAI 则在 Fable 5 发布五天后将 GPT-5.6 Luna 价格下调 80%。",
+   "published_at": "2026-08-05",
+   "url": "https://www.tomtunguz.com/what-if-gpu-prices-double",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
+   "id": 3455,
+   "title": "LLM 0.32 发布：新增推理轨迹、OpenAI Responses、服务端工具与更智能的日志",
+   "summary": "Simon Willison 发布 LLM 0.32，这是该项目自启动以来最重要的新版本。新版本支持显示推理轨迹、服务端工具、OpenAI Responses API，并默认使用 GPT-5.6 Luna 模型。",
+   "published_at": "2026-08-04T23:58:24.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -6932,6 +7013,15 @@
  ],
  "Gemini 3.6 Flash": [
   {
+   "id": 3446,
+   "title": "Google 发布 Gemini 3.6 Flash 等三款新模型及 Gemini Robotics ER 2",
+   "summary": "Google 在 7 月推出三款新 Gemini 模型——Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber，面向生产级 AI 智能体，主打更高 token 效率、更低延迟和更可靠性能。",
+   "published_at": "2026-08-05",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026",
+   "category": "industry",
+   "source": "Google Blog：AI（RSS）"
+  },
+  {
    "id": 3030,
    "title": "Gemini API Managed Agents 默认升级为 3.6 Flash，新增环境钩子与免费套餐",
    "summary": "Google DeepMind 将 Gemini API Managed Agents 的默认模型升级为 Gemini 3.6 Flash，并支持显式选择 3.5 Flash 或 3.5 Flash-Lite。新增环境钩子允许在沙箱内工具调用前后执行自定义脚本，用于安全审查或代码格式化。此外，还推出了免费套餐、预算控制和基于 cron 的定时触发功能。",
@@ -6969,6 +7059,33 @@
   }
  ],
  "Google": [
+  {
+   "id": 3446,
+   "title": "Google 发布 Gemini 3.6 Flash 等三款新模型及 Gemini Robotics ER 2",
+   "summary": "Google 在 7 月推出三款新 Gemini 模型——Gemini 3.6 Flash、3.5 Flash-Lite 和 3.5 Flash Cyber，面向生产级 AI 智能体，主打更高 token 效率、更低延迟和更可靠性能。",
+   "published_at": "2026-08-05",
+   "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-july-2026",
+   "category": "industry",
+   "source": "Google Blog：AI（RSS）"
+  },
+  {
+   "id": 3462,
+   "title": "Google Cloud API Gateway 推出统一模型路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+   "summary": "Google Cloud API Gateway 新增模型路由功能（Public Preview），开发者可在 OpenAPI 3.x 规范中配置虚拟模型名到后端目标的映射，无需硬编码端点或管理开源代理。网关作为无服务器入口层，接受标准 OpenAI 兼容请求，自动将负载转码为目标模型的原生格式并动态路由流量。",
+   "published_at": "2026-08-04T16:45:02.138Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 3463,
+   "title": "Google Cloud 推出 Database Operations Agents，实现自主数据库管理",
+   "summary": "Google Cloud 在 Agentic Data Cloud 发布中推出两款 AI 数据库智能体：Database Onboarding Agent 负责 Day 0 的配置与部署，Database Observability Agent 负责 Day 1/2 的监控、故障排查与维护。",
+   "published_at": "2026-08-04T16:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3369,
    "title": "Data Commons on Spanner Graph 正式可用：统一公共与私有数据构建知识图谱",
@@ -8767,6 +8884,15 @@
  ],
  "HuggingFace": [
   {
+   "id": 3427,
+   "title": "商汤 SenseNova U1 开源：统一推理与图像生成",
+   "summary": "商汤发布开源模型 SenseNova U1，可在统一流程中同时进行推理与图像生成。其信息图模式可将单条提示词转为结构化幻灯片，交错模式则逐步生成图文内容，如演示六步画龙教程。模型已上线 SenseNova Studio、HuggingFace 及 GitHub。",
+   "published_at": "2026-08-05",
+   "url": "https://x.com/SenseTime_AI/status/2084667189479837741",
+   "category": "ai-models",
+   "source": "X：商汤 SenseTime (@SenseTime_AI)"
+  },
+  {
    "id": 3034,
    "title": "Hugging Face 公开自主智能体网络攻击详情",
    "summary": "首次自主智能体网络攻击是一次前所未有的事件，理应获得前所未有的透明度。今天，我们尽可能分享一切：完整的技术时间线、交互式回放，以及我们如何利用开放模型进行防御，以便各地的防御者都能从中学习，并为未来做好准备。 https://huggingface.co/blog/agent-intrusion-technical-timeline",
@@ -9179,13 +9305,13 @@
  ],
  "Meta": [
   {
-   "id": 3406,
+   "id": 3432,
    "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
    "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
-   "published_at": "2026-08-04T06:32:44.149Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://github.com/leonickson1/Swiftlet",
    "category": "ai-products",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
   },
   {
    "id": 3272,
@@ -9952,6 +10078,15 @@
  ],
  "MiniMax": [
   {
+   "id": 3448,
+   "title": "MiniMax-H3 通过 MLX 移植可在 Apple Silicon 上运行",
+   "summary": "MiniMax 发布 MiniMax-H3，一个可接受文本、图像、音频和视频并生成最长 15 秒带音频视频片段的通用全模态生成系统。Python 包 PipeNetwork/minimax-h3-mlx 将其移植到 MLX，支持 Apple Silicon 运行。作者在 M5 Max MacBook Pro 上实测，下载约 115 GB 模型文件，视频生成耗时不到 45 分钟。",
+   "published_at": "2026-08-05",
+   "url": "https://simonwillison.net/2026/Aug/4/minimax-h3-mlx",
+   "category": "tip",
+   "source": "Simon Willison 博客"
+  },
+  {
    "id": 3396,
    "title": "MiniMax H3 正式开源：通用全模态生成系统支持 2K 视频与原生立体声",
    "summary": "MiniMax 正式开源新一代通用视频模型 H3，可统一理解文本、图像、视频和音频，生成最高 2K 分辨率、最长 15 秒、带 32 kHz 原生立体声音频的视频。",
@@ -10217,12 +10352,39 @@
  ],
  "NVIDIA": [
   {
-   "id": 3404,
+   "id": 3426,
+   "title": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿开源模型",
+   "summary": "NVIDIA Alpamayo 2 Super 现已开放商用，基于 Cosmos 3 Super Reasoner 构建，采用强化学习后训练，支持轨迹预测、因果链推理、元动作、自动标注及视觉问答等多任务输出。",
+   "published_at": "2026-08-05",
+   "url": "https://blogs.nvidia.com/blog/alpamayo-2-super-open-model-now-available",
+   "category": "ai-models",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 3440,
+   "title": "Anthropic 与成立仅数月的云初创公司 Volta 签署 100 亿美元算力协议",
+   "summary": "Anthropic 与成立仅数月的云初创公司 Volta 签署 100 亿美元算力协议，约合每年 17 亿美元。Volta 估值 24 亿美元，硬件几乎全为租用：算力来自比特币矿商 Bitdeer 挪威 121MW 站点，芯片由 Nvidia 供应、Dell 组装。Anthropic 买的是交付速度，代价是承担超大规模云厂商合同从未有过的交易对手风险。",
+   "published_at": "2026-08-05",
+   "url": "https://x.com/rohanpaul_ai/status/2084655258102546579",
+   "category": "industry",
+   "source": "X：Rohan Paul (@rohanpaul_ai)"
+  },
+  {
+   "id": 3449,
    "title": "用 NVIDIA SkillSpector、LangGraph、YARA 规则、SARIF 与 CI 策略门构建高级 AI 技能安全审计流水线",
    "summary": "本教程演示如何用 NVIDIA SkillSpector 评估 AI 技能的安全态势，构建包含干净、风险、恶意及 MCP 示例的合成技能市场，并通过 LangGraph 检查流水线扫描每个技能。",
-   "published_at": "2026-08-04T08:12:36.000Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://www.marktechpost.com/2026/08/04/building-an-advanced-ai-skill-security-auditing-pipeline-with-nvidia-skillspector-langgraph-yara-rules-sarif-and-ci-policy-gates",
    "category": "tip",
+   "source": "MarkTechPost（RSS）"
+  },
+  {
+   "id": 3467,
+   "title": "NVIDIA 开源 cuFile API，推动 GPU 直连存储",
+   "summary": "NVIDIA 在 FMS 大会上宣布开源 cuFile API 及底层存储软件栈，让 GPU 可直接读写存储，访问延迟降至微秒级。其 Vera CPU 在两级压缩与加密流水线中吞吐量比 x86 CPU 最高提升 3.21 倍，并联合 40 多家厂商推出 Storage-Next 计划。",
+   "published_at": "2026-08-04T15:00:47.000Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -11071,12 +11233,48 @@
  ],
  "OpenAI": [
   {
-   "id": 3382,
+   "id": 3444,
+   "title": "OpenAI 说明第三方网络安全评估事件并公布新保障措施",
+   "summary": "OpenAI 就近期第三方网络安全评估事件作出说明，并公布新的保障措施以强化 AI 模型测试与评估流程。相关措施旨在提升模型评估的安全性与可靠性，确保第三方测试在受控环境下进行。",
+   "published_at": "2026-08-05",
+   "url": "https://openai.com/index/third-party-cyber-evaluations-involving-openai-models",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 3453,
    "title": "从零开始，教你用Codex搓出属于你自己的第一个硬件",
-   "summary": "作者以零基础身份，全程通过与Codex对话，从需求讨论、电路搭建、代码烧录到3D打印组装，5天内做出一个能提醒久坐的猫爪硬件。文中还介绍了用Agent调试宏键盘、以及OpenAI与Work Louder联名发布的Codex Micro键盘（13个机械按键，售价230美元）等案例，强调\"干中学\"的AI开发方式。",
-   "published_at": "2026-08-04T00:06:00.000Z",
-   "url": "",
+   "summary": "作者以零基础身份，全程通过与Codex对话，从需求讨论、电路搭建、代码烧录到3D打印组装，5天内做出一个能提醒久坐的猫爪硬件。文中还介绍了用Agent调试宏键盘、以及OpenAI与Work Louder联名发布的Codex Micro键盘（13个机械按键，售价230美元）等案例，强调“干中学”的AI开发方式。",
+   "published_at": "2026-08-05",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647684924&idx=1&sn=f9ecf13ac374f13dfa75f98f685a231d",
    "category": "tip",
+   "source": "公众号：数字生命卡兹克"
+  },
+  {
+   "id": 3454,
+   "title": "杰文斯悖论还能持续吗：AI 定价分层如何支撑算力需求增长",
+   "summary": "科技巨头高管普遍表示算力供应仍无法满足需求，但 AI 定价却在上涨：Anthropic 7 月 24 日发布的 Fable 5 定价每百万输出 token 50 美元，较 Opus 5 翻倍；OpenAI 则在 Fable 5 发布五天后将 GPT-5.6 Luna 价格下调 80%。",
+   "published_at": "2026-08-05",
+   "url": "https://www.tomtunguz.com/what-if-gpu-prices-double",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
+   "id": 3455,
+   "title": "LLM 0.32 发布：新增推理轨迹、OpenAI Responses、服务端工具与更智能的日志",
+   "summary": "Simon Willison 发布 LLM 0.32，这是该项目自启动以来最重要的新版本。新版本支持显示推理轨迹、服务端工具、OpenAI Responses API，并默认使用 GPT-5.6 Luna 模型。",
+   "published_at": "2026-08-04T23:58:24.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 3462,
+   "title": "Google Cloud API Gateway 推出统一模型路由功能，支持 Gemini、Claude 与 OpenAI OSS-GPT",
+   "summary": "Google Cloud API Gateway 新增模型路由功能（Public Preview），开发者可在 OpenAPI 3.x 规范中配置虚拟模型名到后端目标的映射，无需硬编码端点或管理开源代理。网关作为无服务器入口层，接受标准 OpenAI 兼容请求，自动将负载转码为目标模型的原生格式并动态路由流量。",
+   "published_at": "2026-08-04T16:45:02.138Z",
+   "url": "",
+   "category": "ai-products",
    "source": ""
   },
   {
@@ -13053,13 +13251,13 @@
  ],
  "OpenBMB": [
   {
-   "id": 3408,
+   "id": 3434,
    "title": "面壁智能开源 ForgeStencil：一周自动优化 100+ 工业与科学软件，全程零人工介入",
    "summary": "面壁智能联合 OpenBMB 开源全球首个支持 Stencil 自动研究、自动部署的 AI 优化系统 ForgeStencil，由 Kernel Agent 与 App Agent 闭环协作，实现从算子优化到应用集成的全自动流程。",
-   "published_at": "2026-08-04T04:20:28.000Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247498861&idx=1&sn=d2d16692dd7eb27f9d466803f25c2b78",
    "category": "ai-products",
-   "source": ""
+   "source": "公众号：面壁智能（MiniCPM）"
   },
   {
    "id": 2584,
@@ -13254,6 +13452,24 @@
   }
  ],
  "OpenRouter": [
+  {
+   "id": 3428,
+   "title": "OpenRouter 上线 FLUX 3 Video 统一多模态模型",
+   "summary": "@bfl_ai 的 FLUX 3 Video 现已在 OpenRouter 上向所有人开放。 一个统一的视频、音频、图像和动作预测多模态模型家族。严肃、有趣、创意、真实、电影感，随你所需。基于统一架构联合训练。",
+   "published_at": "2026-08-05",
+   "url": "https://x.com/OpenRouter/status/2084699413898027064",
+   "category": "ai-models",
+   "source": "X：OpenRouter (@OpenRouter)"
+  },
+  {
+   "id": 3436,
+   "title": "OpenRouter 推出 ori CLI：为 Claude Code 等 Harness 提供开箱即用的优化配置",
+   "summary": "OpenRouter 发布 ori CLI，用户安装并登录后即可获得针对 Claude Code、Codex、OpenCode、Hermes 等 harness 的优化配置，省去手动设置大量环境变量的麻烦。",
+   "published_at": "2026-08-05",
+   "url": "https://openrouter.ai/blog/announcements/ori-harness",
+   "category": "ai-products",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
   {
    "id": 3364,
    "title": "OpenRouter 推出 Ori Eval 简化评估流程",
@@ -13738,13 +13954,13 @@
  ],
  "Qwen": [
   {
-   "id": 3406,
+   "id": 3432,
    "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
    "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
-   "published_at": "2026-08-04T06:32:44.149Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://github.com/leonickson1/Swiftlet",
    "category": "ai-products",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
   },
   {
    "id": 3361,
@@ -14674,13 +14890,13 @@
  ],
  "Qwen3-": [
   {
-   "id": 3406,
+   "id": 3432,
    "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
    "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
-   "published_at": "2026-08-04T06:32:44.149Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://github.com/leonickson1/Swiftlet",
    "category": "ai-products",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
   },
   {
    "id": 2675,
@@ -14866,13 +15082,13 @@
  ],
  "Qwen3.5": [
   {
-   "id": 3406,
+   "id": 3432,
    "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
    "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
-   "published_at": "2026-08-04T06:32:44.149Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://github.com/leonickson1/Swiftlet",
    "category": "ai-products",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
   },
   {
    "id": 2560,
@@ -15062,6 +15278,15 @@
   }
  ],
  "Replit": [
+  {
+   "id": 3438,
+   "title": "Replit 环境智能：免提示词自动生成设计",
+   "summary": "你无需提示词，也无需设计语言。 环境智能（Ambient Intelligence）会在每个画面旁显示建议卡片，每张卡片都指向你的设计的一个不同方向。点击你喜欢的那张，即可看到它生成一个新的画面。 你再也不必纠结下一步该做什么。 立即在 http://replit.com/design 体验。",
+   "published_at": "2026-08-05",
+   "url": "https://x.com/Replit/status/2084761337570144424",
+   "category": "ai-products",
+   "source": "X：Replit (@Replit)"
+  },
   {
    "id": 3266,
    "title": "Replit Design 推出数百设计模板",
@@ -15383,6 +15608,15 @@
   }
  ],
  "SenseNova": [
+  {
+   "id": 3427,
+   "title": "商汤 SenseNova U1 开源：统一推理与图像生成",
+   "summary": "商汤发布开源模型 SenseNova U1，可在统一流程中同时进行推理与图像生成。其信息图模式可将单条提示词转为结构化幻灯片，交错模式则逐步生成图文内容，如演示六步画龙教程。模型已上线 SenseNova Studio、HuggingFace 及 GitHub。",
+   "published_at": "2026-08-05",
+   "url": "https://x.com/SenseTime_AI/status/2084667189479837741",
+   "category": "ai-models",
+   "source": "X：商汤 SenseTime (@SenseTime_AI)"
+  },
   {
    "id": 3362,
    "title": "商汤发布 SenseNova U1.5-Lite-Preview 开源模型",
@@ -16363,6 +16597,15 @@
  ],
  "商汤": [
   {
+   "id": 3427,
+   "title": "商汤 SenseNova U1 开源：统一推理与图像生成",
+   "summary": "商汤发布开源模型 SenseNova U1，可在统一流程中同时进行推理与图像生成。其信息图模式可将单条提示词转为结构化幻灯片，交错模式则逐步生成图文内容，如演示六步画龙教程。模型已上线 SenseNova Studio、HuggingFace 及 GitHub。",
+   "published_at": "2026-08-05",
+   "url": "https://x.com/SenseTime_AI/status/2084667189479837741",
+   "category": "ai-models",
+   "source": "X：商汤 SenseTime (@SenseTime_AI)"
+  },
+  {
    "id": 3362,
    "title": "商汤发布 SenseNova U1.5-Lite-Preview 开源模型",
    "summary": "商汤推出 SenseNova U1.5-Lite-Preview，一个基于 NEO-Unify 架构的轻量级原生统一多模态模型，仅 8B-MoT 参数即可达到商业闭源模型的生成与编辑质量。",
@@ -16755,13 +16998,13 @@
  ],
  "混元": [
   {
-   "id": 3405,
+   "id": 3430,
    "title": "腾讯混元发布 Hy ASR 3.0 preview：真正懂上下文的语音识别",
    "summary": "腾讯混元发布新一代语音识别模型 Hy ASR 3.0 preview，基于大语言模型 Hy3 与 MoE 架构，融合高精度识别与语义理解。其在开源评测集中中文普通话 WER 3.34%、英语 WER 2.62%、粤语 WER 3.12%，并支持上下文纠错、热词注入及高噪耳语等场景。该模型已上线腾讯云 API，元宝 App 首发并免费开放。",
-   "published_at": "2026-08-04T08:12:36.000Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498223&idx=1&sn=ae271ec2c72723393d3e1d8074a33205",
    "category": "ai-models",
-   "source": ""
+   "source": "公众号：腾讯混元"
   },
   {
    "id": 3198,
@@ -16988,13 +17231,13 @@
  ],
  "腾讯": [
   {
-   "id": 3405,
+   "id": 3430,
    "title": "腾讯混元发布 Hy ASR 3.0 preview：真正懂上下文的语音识别",
    "summary": "腾讯混元发布新一代语音识别模型 Hy ASR 3.0 preview，基于大语言模型 Hy3 与 MoE 架构，融合高精度识别与语义理解。其在开源评测集中中文普通话 WER 3.34%、英语 WER 2.62%、粤语 WER 3.12%，并支持上下文纠错、热词注入及高噪耳语等场景。该模型已上线腾讯云 API，元宝 App 首发并免费开放。",
-   "published_at": "2026-08-04T08:12:36.000Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498223&idx=1&sn=ae271ec2c72723393d3e1d8074a33205",
    "category": "ai-models",
-   "source": ""
+   "source": "公众号：腾讯混元"
   },
   {
    "id": 3198,
@@ -17673,13 +17916,13 @@
  ],
  "面壁智能": [
   {
-   "id": 3408,
+   "id": 3434,
    "title": "面壁智能开源 ForgeStencil：一周自动优化 100+ 工业与科学软件，全程零人工介入",
    "summary": "面壁智能联合 OpenBMB 开源全球首个支持 Stencil 自动研究、自动部署的 AI 优化系统 ForgeStencil，由 Kernel Agent 与 App Agent 闭环协作，实现从算子优化到应用集成的全自动流程。",
-   "published_at": "2026-08-04T04:20:28.000Z",
-   "url": "",
+   "published_at": "2026-08-05",
+   "url": "https://mp.weixin.qq.com/s?__biz=Mzg3Mzg2MTg2NQ%3D%3D&mid=2247498861&idx=1&sn=d2d16692dd7eb27f9d466803f25c2b78",
    "category": "ai-products",
-   "source": ""
+   "source": "公众号：面壁智能（MiniCPM）"
   },
   {
    "id": 3277,
