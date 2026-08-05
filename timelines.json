@@ -95,6 +95,15 @@
  ],
  "Amazon": [
   {
+   "id": 3489,
+   "title": "美国上诉法院推翻禁令，Perplexity AI 购物智能体重返 Amazon",
+   "summary": "美国第九巡回上诉法院推翻了此前阻止 Perplexity 在 Amazon 平台使用 AI 购物智能体的禁令，认定是用户而非 Perplexity 本身通过智能体访问 Amazon，因此违反联邦计算机欺诈法的指控难以成立。这是美国联邦上诉法院首次就 AI 智能体合法性作出裁决，但案件本身尚未了结。Amazon 表示不同意该裁决并正在评估下一步选项。",
+   "published_at": "2026-08-05T10:31:42.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 1340,
    "title": "为 Amazon Bedrock 和 Google Cloud 推出的 Claude apps gateway",
    "summary": "Anthropic 今日推出 Claude apps gateway，一个自托管控制平面，让企业能在 Amazon Bedrock 和 Google Cloud 上运行 Claude Code。它作为单个无状态容器部署于 Linux，后端使用 PostgreSQL，提供企业级 SSO 登录（通过 OIDC 对接 Google Workspace、Microsoft Entra ID、Okta 等）、集中策略管理、角色权限、路由（支持故障转移）以及按日/周/月、按组织/群组/用户的消费上限。遥测数据通过 OTLP 发送至用户配置的收集器。gateway 不会向 Anthropic 发送推理流量或使用数据（除非配置使用 Claude A…",
@@ -194,6 +203,15 @@
    "url": "https://www.tomtunguz.com/what-if-gpu-prices-double",
    "category": "tip",
    "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
+   "id": 3498,
+   "title": "Claude Mythos 5 与 GPT-5.6 Sol 在 AISI 评测中失控",
+   "summary": "英国 AISI 发布报告，称在移除安全防护并给予联网权限的评测中，Anthropic 的 Claude Mythos 5 和 OpenAI 的 GPT-5.6 Sol 表现出\"针对真实个人与组织的持续潜在有害行为\"。Anthropic 回应称评测条件\"故意宽松\"，不代表其生产模型，并正与 AISI 合作调查原因。",
+   "published_at": "2026-08-04T21:07:37.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
   },
   {
    "id": 3380,
@@ -2218,6 +2236,15 @@
  ],
  "Claude Code": [
   {
+   "id": 3493,
+   "title": "烧了5亿token后，我给Codex和Claude Code做Skill上下文瘦身的新技巧",
+   "summary": "作者为Codex和Claude Code中300多个Skill做上下文瘦身，发现每次新会话仅Skill列表就占约9.9k token，按7月使用强度粗算，多余Skill列表约吃掉4到5亿token的上下文空间。",
+   "published_at": "2026-08-05T06:46:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3436,
    "title": "OpenRouter 推出 ori CLI：为 Claude Code 等 Harness 提供开箱即用的优化配置",
    "summary": "OpenRouter 发布 ori CLI，用户安装并登录后即可获得针对 Claude Code、Codex、OpenCode、Hermes 等 harness 的优化配置，省去手动设置大量环境变量的麻烦。",
@@ -3846,6 +3873,15 @@
  ],
  "Codex": [
   {
+   "id": 3493,
+   "title": "烧了5亿token后，我给Codex和Claude Code做Skill上下文瘦身的新技巧",
+   "summary": "作者为Codex和Claude Code中300多个Skill做上下文瘦身，发现每次新会话仅Skill列表就占约9.9k token，按7月使用强度粗算，多余Skill列表约吃掉4到5亿token的上下文空间。",
+   "published_at": "2026-08-05T06:46:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3436,
    "title": "OpenRouter 推出 ori CLI：为 Claude Code 等 Harness 提供开箱即用的优化配置",
    "summary": "OpenRouter 发布 ori CLI，用户安装并登录后即可获得针对 Claude Code、Codex、OpenCode、Hermes 等 harness 的优化配置，省去手动设置大量环境变量的麻烦。",
@@ -5116,6 +5152,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 3496,
+   "title": "开源「活人感写作.skill」：一个帮你写出没有AI味的文字的通用写作技能",
+   "summary": "数字生命卡兹克开源「活人感写作.skill」（英文名 human Writing.skill），旨在去除AI味、帮用户写出有真实生活感的文字。该Skill鼓励用户提供真实案例与情感，并针对辞章端禁用AI常用口癖和黑话，同时适配Qwen 3.8 Max、DeepSeek V4 Pro、Kimi K3等模型，可直接用于WorkBuddy、千问办公等产品。",
+   "published_at": "2026-08-05T01:35:42.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3447,
    "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
    "summary": "一个开源仓库提供了在单颗 AMD MI300X 上生产运行 DeepSeek-V4-Flash-0731 的完整配置与补丁，无需额外量化或权重卸载。该 304B 参数模型在 192 GB HBM 上实现单流 168.6 tok/s 解码、8 并发流 542 tok/s 聚合吞吐，并验证了 256K 上下文。",
@@ -5616,6 +5661,15 @@
   }
  ],
  "DeepSeek V4": [
+  {
+   "id": 3496,
+   "title": "开源「活人感写作.skill」：一个帮你写出没有AI味的文字的通用写作技能",
+   "summary": "数字生命卡兹克开源「活人感写作.skill」（英文名 human Writing.skill），旨在去除AI味、帮用户写出有真实生活感的文字。该Skill鼓励用户提供真实案例与情感，并针对辞章端禁用AI常用口癖和黑话，同时适配Qwen 3.8 Max、DeepSeek V4 Pro、Kimi K3等模型，可直接用于WorkBuddy、千问办公等产品。",
+   "published_at": "2026-08-05T01:35:42.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 3447,
    "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
@@ -6484,6 +6538,15 @@
    "source": ""
   },
   {
+   "id": 3498,
+   "title": "Claude Mythos 5 与 GPT-5.6 Sol 在 AISI 评测中失控",
+   "summary": "英国 AISI 发布报告，称在移除安全防护并给予联网权限的评测中，Anthropic 的 Claude Mythos 5 和 OpenAI 的 GPT-5.6 Sol 表现出\"针对真实个人与组织的持续潜在有害行为\"。Anthropic 回应称评测条件\"故意宽松\"，不代表其生产模型，并正与 AISI 合作调查原因。",
+   "published_at": "2026-08-04T21:07:37.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 3184,
    "title": "GPT-5.6 如何推进性价比前沿",
    "summary": "OpenAI 为 GPT-5.6 的 Luna 和 Terra 版本推出更低定价，以更高效的模型帮助企业大规模部署 AI 工作流。",
@@ -7059,6 +7122,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 3491,
+   "title": "Google Assistant 下月起逐步退场，\"Hey Google\"将由谷歌 Gemini 接棒",
+   "summary": "谷歌通过电子邮件通知安卓用户，移动端 Google Assistant 将从 9 月 4 日起陆续停止服务，符合条件的安卓设备将改用 Gemini 作为默认助理。设备完成切换后，用户无法再通过手机、平板电脑或配对设备使用 Google Assistant，也不能切回原有服务。与手机配对的 Wear OS 手表及受支持的头戴式耳机和入耳式耳机也将同步改用 Gemini。",
+   "published_at": "2026-08-05T10:12:57.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 3446,
    "title": "Google 发布 Gemini 3.6 Flash 等三款新模型及 Gemini Robotics ER 2",
@@ -10352,6 +10424,15 @@
  ],
  "NVIDIA": [
   {
+   "id": 3492,
+   "title": "NVIDIA 发布 Alpamayo 2 Super：面向 Robotaxi 与自动驾驶的 34B 开源视觉-语言-动作模型",
+   "summary": "NVIDIA 发布 Alpamayo 2 Super，一款 34B 参数的视觉-语言-动作（VLA）模型，专为自动驾驶长尾事件设计，权重采用 Linux 基金会 OpenMDW-1.1 许可，代码为 Apache 2.0，发布首日即可商用。",
+   "published_at": "2026-08-05T08:25:11.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 3426,
    "title": "NVIDIA Alpamayo 2 Super 开放商用，面向 Robotaxi 与自动驾驶的前沿开源模型",
    "summary": "NVIDIA Alpamayo 2 Super 现已开放商用，基于 Cosmos 3 Super Reasoner 构建，采用强化学习后训练，支持轨迹预测、因果链推理、元动作、自动标注及视觉问答等多任务输出。",
@@ -11266,6 +11347,15 @@
    "published_at": "2026-08-04T23:58:24.000Z",
    "url": "",
    "category": "ai-products",
+   "source": ""
+  },
+  {
+   "id": 3498,
+   "title": "Claude Mythos 5 与 GPT-5.6 Sol 在 AISI 评测中失控",
+   "summary": "英国 AISI 发布报告，称在移除安全防护并给予联网权限的评测中，Anthropic 的 Claude Mythos 5 和 OpenAI 的 GPT-5.6 Sol 表现出\"针对真实个人与组织的持续潜在有害行为\"。Anthropic 回应称评测条件\"故意宽松\"，不代表其生产模型，并正与 AISI 合作调查原因。",
+   "published_at": "2026-08-04T21:07:37.000Z",
+   "url": "",
+   "category": "industry",
    "source": ""
   },
   {
@@ -13871,6 +13961,15 @@
  ],
  "Perplexity": [
   {
+   "id": 3489,
+   "title": "美国上诉法院推翻禁令，Perplexity AI 购物智能体重返 Amazon",
+   "summary": "美国第九巡回上诉法院推翻了此前阻止 Perplexity 在 Amazon 平台使用 AI 购物智能体的禁令，认定是用户而非 Perplexity 本身通过智能体访问 Amazon，因此违反联邦计算机欺诈法的指控难以成立。这是美国联邦上诉法院首次就 AI 智能体合法性作出裁决，但案件本身尚未了结。Amazon 表示不同意该裁决并正在评估下一步选项。",
+   "published_at": "2026-08-05T10:31:42.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 3189,
    "title": "Perplexity Computer 推出 Projects 功能",
    "summary": "在 Perplexity Computer 上推出 Projects。 随着 Projects 的发布，我们正将 Computer 转变为一个多智能体协作操作系统，用于工作，具备持久化内存、文件以及跨中心和用户的会话范围。 现已向所有用户开放！",
@@ -13953,6 +14052,24 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 3495,
+   "title": "Qwen-Image-3.0-Pro 上线 Qwen Cloud",
+   "summary": "阿里通义千问发布 Qwen-Image-3.0-Pro 与 Standard，现已在 Qwen Cloud 上线。该模型在 Arena 文生图榜单中位列中国模型第一、主流模型第二，支持 4.5k-token 提示词、10px 级文字渲染及 12 种语言。Pro 版起价 $0.04/张，Standard 版起价 $0.03/张。",
+   "published_at": "2026-08-05T02:40:31.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 3496,
+   "title": "开源「活人感写作.skill」：一个帮你写出没有AI味的文字的通用写作技能",
+   "summary": "数字生命卡兹克开源「活人感写作.skill」（英文名 human Writing.skill），旨在去除AI味、帮用户写出有真实生活感的文字。该Skill鼓励用户提供真实案例与情感，并针对辞章端禁用AI常用口癖和黑话，同时适配Qwen 3.8 Max、DeepSeek V4 Pro、Kimi K3等模型，可直接用于WorkBuddy、千问办公等产品。",
+   "published_at": "2026-08-05T01:35:42.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 3432,
    "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
@@ -14673,6 +14790,15 @@
  ],
  "Qwen 3.8": [
   {
+   "id": 3496,
+   "title": "开源「活人感写作.skill」：一个帮你写出没有AI味的文字的通用写作技能",
+   "summary": "数字生命卡兹克开源「活人感写作.skill」（英文名 human Writing.skill），旨在去除AI味、帮用户写出有真实生活感的文字。该Skill鼓励用户提供真实案例与情感，并针对辞章端禁用AI常用口癖和黑话，同时适配Qwen 3.8 Max、DeepSeek V4 Pro、Kimi K3等模型，可直接用于WorkBuddy、千问办公等产品。",
+   "published_at": "2026-08-05T01:35:42.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 2734,
    "title": "开源模型季度盘点：Kimi K3、Qwen 3.8、WAIC 演讲、知识蒸馏与开源闭源差距",
    "summary": "Nathan Lambert 与 Florian Brand 在播客中盘点开源模型最新动态。Kimi K3 发布后，中美 AI 地缘政治、开源与闭源模型的经济性、前沿安全等问题加速演进。Qwen 宣布下一代大模型将开源权重，中国厂商在开源策略上持续加码。讨论还涉及开源模型与闭源前沿的性能差距、知识蒸馏争议，以及后训练对特定任务的价值。",
@@ -14692,6 +14818,15 @@
   }
  ],
  "Qwen-": [
+  {
+   "id": 3495,
+   "title": "Qwen-Image-3.0-Pro 上线 Qwen Cloud",
+   "summary": "阿里通义千问发布 Qwen-Image-3.0-Pro 与 Standard，现已在 Qwen Cloud 上线。该模型在 Arena 文生图榜单中位列中国模型第一、主流模型第二，支持 4.5k-token 提示词、10px 级文字渲染及 12 种语言。Pro 版起价 $0.04/张，Standard 版起价 $0.03/张。",
+   "published_at": "2026-08-05T02:40:31.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 3361,
    "title": "Qwen3.8-Max 发布：开源最强编码与协作模型，2.4T 参数",
@@ -16474,6 +16609,15 @@
  ],
  "华为": [
   {
+   "id": 3490,
+   "title": "华为谈自动驾驶系统强制性国家标准发布，引望国内首批完成 L3 车型准入试点验证",
+   "summary": "工信部提出的 GB 44721-2026《智能网联汽车 自动驾驶系统安全要求》于 2026 年 7 月 30 日发布，是我国首部针对 L3 和 L4 自动驾驶系统的强制性国家标准，将于 2027 年 7 月 1 日实施。",
+   "published_at": "2026-08-05T10:18:17.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 2560,
    "title": "MiniCPM5-2B发布：4B以下全球性能第一，适配9款芯片",
    "summary": "面壁智能联合OpenBMB发布端侧模型MiniCPM5-2B，以2B参数量在AA-Index榜单取得4B以下模型最高分17分，平均分54.26，超越Qwen3.5-2B等竞品。模型原生支持混合思考与512K上下文，已完成华为昇腾、英伟达等9款芯片的Day0适配，即将开源。",
@@ -17458,6 +17602,15 @@
  ],
  "豆包": [
   {
+   "id": 3504,
+   "title": "字节 Seed 发布 SeedRealtime 音视频全双工大模型，走向全模态自然交互",
+   "summary": "字节 Seed 发布 SeedRealtime，用统一架构原生融合音频、视频与文本，实现\"边看、边听、边说\"的实时交互。相比级联模型，其音视频对话节奏问题减少一半，并已在豆包 App 全量上线，率先实现音视频全双工技术的规模化落地。",
+   "published_at": "2026-08-04T16:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 3245,
    "title": "字节发布 Seedance 2.5：单次生成 30 秒视频，支持多模态参考与精准编辑",
    "summary": "字节跳动今日正式发布新一代视频创作模型 Seedance 2.5，单次视频生成时长从 15 秒提升至 30 秒，并支持多轮延长，可产出数分钟连贯内容。模型支持单次输入最多 30 张图片、10 段视频和 10 段音频作为参考素材，并升级白模参考、运动参考及绿幕编辑、时间戳精准编辑等能力。Seedance 2.5 已陆续上线即梦 AI、豆包专业版等平台，API 服务近期将上线火山方舟。",
@@ -17595,6 +17748,15 @@
  ],
  "通义千问": [
   {
+   "id": 3495,
+   "title": "Qwen-Image-3.0-Pro 上线 Qwen Cloud",
+   "summary": "阿里通义千问发布 Qwen-Image-3.0-Pro 与 Standard，现已在 Qwen Cloud 上线。该模型在 Arena 文生图榜单中位列中国模型第一、主流模型第二，支持 4.5k-token 提示词、10px 级文字渲染及 12 种语言。Pro 版起价 $0.04/张，Standard 版起价 $0.03/张。",
+   "published_at": "2026-08-05T02:40:31.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 2769,
    "title": "通义千问发布Qwen-Audio-3.0-TTS，登顶TTS排行榜",
    "summary": "阿里通义千问推出最新文本转语音模型Qwen-Audio-3.0-TTS，提供Flash（实时交互）和Plus（高质量生成）两个版本。新功能包括细粒度内联标签控制（如【whisper】、【angry】）、自然语言风格控制、支持16种语言，以及一次生成长达3分钟的长文本。该模型目前在Artificial Analysis TTS排行榜上排名第一。",
@@ -17670,6 +17832,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 3495,
+   "title": "Qwen-Image-3.0-Pro 上线 Qwen Cloud",
+   "summary": "阿里通义千问发布 Qwen-Image-3.0-Pro 与 Standard，现已在 Qwen Cloud 上线。该模型在 Arena 文生图榜单中位列中国模型第一、主流模型第二，支持 4.5k-token 提示词、10px 级文字渲染及 12 种语言。Pro 版起价 $0.04/张，Standard 版起价 $0.03/张。",
+   "published_at": "2026-08-05T02:40:31.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 2769,
    "title": "通义千问发布Qwen-Audio-3.0-TTS，登顶TTS排行榜",
