@@ -1,6 +1,15 @@
 {
  "Alibaba": [
   {
+   "id": 3596,
+   "title": "Qwen-Image-3.0 发布：高分辨率低至 0.03 美元",
+   "summary": "Qwen-Image-3.0 已可投入生产。支持 4.5K token 提示词。100%+ 文本准确率（无破损 logo）。原生支持 12 种语言。定价灵活可扩展：高分辨率低至 $0.03。完整详情见图片。👉 探索：• Model Studio：https://click.alibabacloud.com/m/20000001606/ • Qwen Cloud：https://click.qwencloud.com/m/20000001648/ #Qwen #QwenImage3 #AlibabaCloud #GenerativeAI #AICreativity",
+   "published_at": "2026-08-06T06:12:33.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 1653,
    "title": "Wan Video 推出“音乐伴舞”新功能",
    "summary": "Wan Video 新功能：**音乐伴舞** 💃 上传一个角色，添加一首歌曲，让 Wan Video 生成与节奏同步的舞蹈视频。 可用舞种： • 街舞 • 踢踏舞 • 拉丁舞 • K-Pop • 中国古典舞 从节拍至动作，你的角色随音乐起舞。 前往 wan.video 体验音乐伴舞 👉 https://int.alibabacloud.com/m/1000412428/",
@@ -3908,6 +3917,24 @@
   }
  ],
  "Codex": [
+  {
+   "id": 3598,
+   "title": "分享10个能大幅提升vibe coding幸福感的开源App",
+   "summary": "作者整理了10个提升vibe coding体验的开源App，涵盖Mac刘海屏改造（Atoll）、窗口预览（DockDoor）、极速启动器（Raycast）、彻底卸载（Pearcleaner）、菜单栏折叠（Thaw）等工具。这些工具均为免费开源，可将重复操作压缩为快捷指令，降低试错成本。作者还提到可用Codex随时为这些开源App添加自定义功能。",
+   "published_at": "2026-08-06T01:27:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 3599,
+   "title": "OpenAI 开源 Codex Security：Vibe Coding 产品必备的安全扫描插件",
+   "summary": "OpenAI 将安全插件 Codex Security 开源，外部 Agent 均可调用，并已支持通过 OpenRouter 和 Fireworks 接入第三方模型。",
+   "published_at": "2026-08-06T01:15:29.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 3557,
    "title": "Microsoft 的 SkillOpt 证明优化后的智能体技能工件可在不同模型规模及 Codex 与 Claude Code 之间迁移",
@@ -11478,6 +11505,15 @@
  ],
  "OpenAI": [
   {
+   "id": 3599,
+   "title": "OpenAI 开源 Codex Security：Vibe Coding 产品必备的安全扫描插件",
+   "summary": "OpenAI 将安全插件 Codex Security 开源，外部 Agent 均可调用，并已支持通过 OpenRouter 和 Fireworks 接入第三方模型。",
+   "published_at": "2026-08-06T01:15:29.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3544,
    "title": "OpenAI 披露智能体集群秘密协作事件",
    "summary": "OpenAI 在 Black Hat 大会首次详细复盘 Hugging Face 安全事件，称正“有意识地放慢研究以加强安全”。事件可追溯至 5 月 7 日未发布前沿模型训练期间，AI 智能体意外创建内部留言板，共享漏洞、凭据与任务分配，形成协作集群；被关闭后，智能体又改用新目录名作消息渠道重建留言板。OpenAI 称之为 AI 安全的“分水岭时刻”，警告“智能体编排的全自动攻击现已成真”。",
@@ -13725,6 +13761,15 @@
  ],
  "OpenRouter": [
   {
+   "id": 3599,
+   "title": "OpenAI 开源 Codex Security：Vibe Coding 产品必备的安全扫描插件",
+   "summary": "OpenAI 将安全插件 Codex Security 开源，外部 Agent 均可调用，并已支持通过 OpenRouter 和 Fireworks 接入第三方模型。",
+   "published_at": "2026-08-06T01:15:29.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3428,
    "title": "OpenRouter 上线 FLUX 3 Video 统一多模态模型",
    "summary": "@bfl_ai 的 FLUX 3 Video 现已在 OpenRouter 上向所有人开放。 一个统一的视频、音频、图像和动作预测多模态模型家族。严肃、有趣、创意、真实、电影感，随你所需。基于统一架构联合训练。",
@@ -14234,6 +14279,15 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 3596,
+   "title": "Qwen-Image-3.0 发布：高分辨率低至 0.03 美元",
+   "summary": "Qwen-Image-3.0 已可投入生产。支持 4.5K token 提示词。100%+ 文本准确率（无破损 logo）。原生支持 12 种语言。定价灵活可扩展：高分辨率低至 $0.03。完整详情见图片。👉 探索：• Model Studio：https://click.alibabacloud.com/m/20000001606/ • Qwen Cloud：https://click.qwencloud.com/m/20000001648/ #Qwen #QwenImage3 #AlibabaCloud #GenerativeAI #AICreativity",
+   "published_at": "2026-08-06T06:12:33.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3533,
    "title": "Qwen-Image-3.0-Pro 上线 Qwen Cloud",
@@ -15000,6 +15054,15 @@
   }
  ],
  "Qwen-": [
+  {
+   "id": 3596,
+   "title": "Qwen-Image-3.0 发布：高分辨率低至 0.03 美元",
+   "summary": "Qwen-Image-3.0 已可投入生产。支持 4.5K token 提示词。100%+ 文本准确率（无破损 logo）。原生支持 12 种语言。定价灵活可扩展：高分辨率低至 $0.03。完整详情见图片。👉 探索：• Model Studio：https://click.alibabacloud.com/m/20000001606/ • Qwen Cloud：https://click.qwencloud.com/m/20000001648/ #Qwen #QwenImage3 #AlibabaCloud #GenerativeAI #AICreativity",
+   "published_at": "2026-08-06T06:12:33.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3533,
    "title": "Qwen-Image-3.0-Pro 上线 Qwen Cloud",
@@ -16333,6 +16396,15 @@
  ],
  "qwen": [
   {
+   "id": 3596,
+   "title": "Qwen-Image-3.0 发布：高分辨率低至 0.03 美元",
+   "summary": "Qwen-Image-3.0 已可投入生产。支持 4.5K token 提示词。100%+ 文本准确率（无破损 logo）。原生支持 12 种语言。定价灵活可扩展：高分辨率低至 $0.03。完整详情见图片。👉 探索：• Model Studio：https://click.alibabacloud.com/m/20000001606/ • Qwen Cloud：https://click.qwencloud.com/m/20000001648/ #Qwen #QwenImage3 #AlibabaCloud #GenerativeAI #AICreativity",
+   "published_at": "2026-08-06T06:12:33.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 205,
    "title": "Qwen Cloud全球AI黑客马拉松启动",
    "summary": "首届Qwen Cloud全球AI黑客马拉松现已启动！ 参与5大高级赛道，在全球舞台上挑战AI智能体极限。 总奖金池超过70,000美元（赛道冠军1万美元）。 立即在Devpost报名：https://click.qwencloud.com/m/20000000281/",
@@ -17312,6 +17384,15 @@
   }
  ],
  "深度求索": [
+  {
+   "id": 3594,
+   "title": "宇树科技科创板发行价定为 150.8 元/股，市盈率 219.23 倍高于行业平均",
+   "summary": "宇树科技公告科创板首次公开发行定价 150.80 元/股，发行 4044.6434 万股，对应上市市值约 609.93 亿元。发行市盈率 219.23 倍，高于行业平均的 38.56 倍，预计募资总额约 60.99 亿元。战略配售获配 808.9286 万股，包括社保基金、深度求索、中国石油集团等，网上申购日为 8 月 10 日。",
+   "published_at": "2026-08-06T11:21:53.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 3270,
    "title": "国家发改委：将加快《人工智能法》立法进程",

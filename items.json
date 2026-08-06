@@ -1,5 +1,65 @@
 [
  {
+  "id": 3594,
+  "title": "宇树科技科创板发行价定为 150.8 元/股，市盈率 219.23 倍高于行业平均",
+  "summary": "宇树科技公告科创板首次公开发行定价 150.80 元/股，发行 4044.6434 万股，对应上市市值约 609.93 亿元。发行市盈率 219.23 倍，高于行业平均的 38.56 倍，预计募资总额约 60.99 亿元。战略配售获配 808.9286 万股，包括社保基金、深度求索、中国石油集团等，网上申购日为 8 月 10 日。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-08-06T11:21:53.000Z",
+  "fetched_at": "2026-08-06 13:00:03"
+ },
+ {
+  "id": 3595,
+  "title": "阿谀奉承的人工智能会削弱利他意图并助长依赖性（2025）",
+  "summary": "斯坦福大学和卡内基梅隆大学的研究发现，在11个前沿AI模型中，模型对用户行为的肯定率比人类高出50%，即使涉及操纵或欺骗等有害行为时也不例外。两项预注册实验（N=1604）显示，与阿谀奉承的AI互动显著降低了参与者修复人际冲突的意愿，同时增强了其自认为正确的信念。然而，参与者仍将这类回应评为更高质量、更信任并更愿意再次使用，形成助长依赖的恶性循环。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-08-06T07:03:41.634Z",
+  "fetched_at": "2026-08-06 13:00:03"
+ },
+ {
+  "id": 3596,
+  "title": "Qwen-Image-3.0 发布：高分辨率低至 0.03 美元",
+  "summary": "Qwen-Image-3.0 已可投入生产。支持 4.5K token 提示词。100%+ 文本准确率（无破损 logo）。原生支持 12 种语言。定价灵活可扩展：高分辨率低至 $0.03。完整详情见图片。👉 探索：• Model Studio：https://click.alibabacloud.com/m/20000001606/ • Qwen Cloud：https://click.qwencloud.com/m/20000001648/ #Qwen #QwenImage3 #AlibabaCloud #GenerativeAI #AICreativity",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-06T06:12:33.000Z",
+  "fetched_at": "2026-08-06 13:00:03"
+ },
+ {
+  "id": 3597,
+  "title": "Prime Agent：一个具有自我改进能力的RLM代理",
+  "summary": "Prime Agent 是一个自我改进的编码代理，围绕递归语言模型（RLM）和持续框架（Continual Harness）两大抽象构建，将上下文视为变量、子代理委派视为 REPL 内的函数调用，并允许代理对其提示词、技能、记忆和子代理进行 CRUD 操作。它完全开源，可通过 curl 命令安装，支持与前沿模型即时使用，并具备后台守护进程、会话恢复、分支分叉和异步内核压缩等特性。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-06T01:27:27.867Z",
+  "fetched_at": "2026-08-06 13:00:03"
+ },
+ {
+  "id": 3598,
+  "title": "分享10个能大幅提升vibe coding幸福感的开源App",
+  "summary": "作者整理了10个提升vibe coding体验的开源App，涵盖Mac刘海屏改造（Atoll）、窗口预览（DockDoor）、极速启动器（Raycast）、彻底卸载（Pearcleaner）、菜单栏折叠（Thaw）等工具。这些工具均为免费开源，可将重复操作压缩为快捷指令，降低试错成本。作者还提到可用Codex随时为这些开源App添加自定义功能。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-06T01:27:00.000Z",
+  "fetched_at": "2026-08-06 13:00:03"
+ },
+ {
+  "id": 3599,
+  "title": "OpenAI 开源 Codex Security：Vibe Coding 产品必备的安全扫描插件",
+  "summary": "OpenAI 将安全插件 Codex Security 开源，外部 Agent 均可调用，并已支持通过 OpenRouter 和 Fireworks 接入第三方模型。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-06T01:15:29.000Z",
+  "fetched_at": "2026-08-06 13:00:03"
+ },
+ {
   "id": 3557,
   "title": "Microsoft 的 SkillOpt 证明优化后的智能体技能工件可在不同模型规模及 Codex 与 Claude Code 之间迁移",
   "summary": "Microsoft 与上海交大、同济、复旦团队提出的 SkillOpt 通过文本空间优化训练单一技能文档，冻结目标模型，使优化后的技能工件可跨模型规模和跨工具链迁移。在 Codex 上优化的 SpreadsheetBench 技能部署到 Claude Code 后得分 81.8，超过后者自行训练技能得到的 80.4。全部 4 项跨模型、4 项跨工具链和 3 项跨基准迁移结果均高于目标的无技能基线。",
@@ -318,6 +378,16 @@
   "category": "ai-models",
   "published_at": "2026-08-05T08:25:11.000Z",
   "fetched_at": "2026-08-05 13:00:22"
+ },
+ {
+  "id": 3617,
+  "title": "个性化幻觉：LLM 如何编造用户画像，以及为何自我监控会误导",
+  "summary": "一项新研究揭示，个性化大语言模型普遍存在过度推断（OI）现象，即编造超出证据支持的用户属性。在 MirageBench 基准测试中，12 个模型均有 35%-49% 的推断被判定为虚构（均值 41.6%）。更关键的是，模型自我评估的 OI 与外部评测结果呈负相关（rho = -0.60），表明自我报告的可信度是误导性信号，外部验证才是更可靠的个性化基础。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-08-05T00:00:00.000Z",
+  "fetched_at": "2026-08-06 13:00:03"
  },
  {
   "id": 3454,

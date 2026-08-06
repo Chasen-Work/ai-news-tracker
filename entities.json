@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 227,
-  "last_seen": "2026-08-06"
+  "mentions": 228,
+  "last_seen": "2026-08-06T01:15:29.000Z"
  },
  {
   "id": 35,
@@ -31,15 +31,15 @@
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 78,
-  "last_seen": "2026-08-06T00:37:42.000Z"
+  "mentions": 80,
+  "last_seen": "2026-08-06T01:27:00.000Z"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 75,
-  "last_seen": "2026-08-06"
+  "mentions": 76,
+  "last_seen": "2026-08-06T06:12:33.000Z"
  },
  {
   "id": 10,
@@ -101,8 +101,8 @@
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 45,
-  "last_seen": "2026-08-05"
+  "mentions": 46,
+  "last_seen": "2026-08-06T01:15:29.000Z"
  },
  {
   "id": 1502,
@@ -189,18 +189,18 @@
   "last_seen": "2026-07-07"
  },
  {
+  "id": 976,
+  "name": "Qwen-",
+  "type": "model",
+  "mentions": 15,
+  "last_seen": "2026-08-06T06:12:33.000Z"
+ },
+ {
   "id": 28,
   "name": "Nemotron",
   "type": "model",
   "mentions": 14,
   "last_seen": "2026-07-10"
- },
- {
-  "id": 976,
-  "name": "Qwen-",
-  "type": "model",
-  "mentions": 14,
-  "last_seen": "2026-08-06"
  },
  {
   "id": 26,
@@ -343,6 +343,13 @@
   "last_seen": "2026-08-05"
  },
  {
+  "id": 94,
+  "name": "Alibaba",
+  "type": "company",
+  "mentions": 7,
+  "last_seen": "2026-08-06T06:12:33.000Z"
+ },
+ {
   "id": 335,
   "name": "百度",
   "type": "company",
@@ -355,13 +362,6 @@
   "type": "model",
   "mentions": 7,
   "last_seen": "2026-07-24"
- },
- {
-  "id": 94,
-  "name": "Alibaba",
-  "type": "company",
-  "mentions": 6,
-  "last_seen": "2026-07-04"
  },
  {
   "id": 116,
@@ -595,6 +595,13 @@
   "last_seen": "2026-08-06"
  },
  {
+  "id": 4287,
+  "name": "深度求索",
+  "type": "company",
+  "mentions": 3,
+  "last_seen": "2026-08-06T11:21:53.000Z"
+ },
+ {
   "id": 29,
   "name": "研华",
   "type": "company",
@@ -621,6 +628,13 @@
   "type": "company",
   "mentions": 2,
   "last_seen": "2026-06-30"
+ },
+ {
+  "id": 256,
+  "name": "qwen",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-08-06T06:12:33.000Z"
  },
  {
   "id": 268,
@@ -721,13 +735,6 @@
   "last_seen": "2026-08-03"
  },
  {
-  "id": 4287,
-  "name": "深度求索",
-  "type": "company",
-  "mentions": 2,
-  "last_seen": "2026-08-01"
- },
- {
   "id": 4465,
   "name": "SenseNova",
   "type": "model",
@@ -803,13 +810,6 @@
   "type": "company",
   "mentions": 1,
   "last_seen": "2026-06-01T05:00:41.000Z"
- },
- {
-  "id": 256,
-  "name": "qwen",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-06-04"
  },
  {
   "id": 378,
