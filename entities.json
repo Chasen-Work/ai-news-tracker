@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 225,
-  "last_seen": "2026-08-05"
+  "mentions": 227,
+  "last_seen": "2026-08-06"
  },
  {
   "id": 35,
@@ -17,36 +17,36 @@
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 133,
-  "last_seen": "2026-08-05T10:12:57.000Z"
+  "mentions": 137,
+  "last_seen": "2026-08-06"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 118,
-  "last_seen": "2026-08-05T06:46:00.000Z"
+  "mentions": 121,
+  "last_seen": "2026-08-06T00:37:42.000Z"
  },
  {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 77,
-  "last_seen": "2026-08-05T06:46:00.000Z"
+  "mentions": 78,
+  "last_seen": "2026-08-06T00:37:42.000Z"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
   "mentions": 75,
-  "last_seen": "2026-08-05T02:40:31.000Z"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 72,
-  "last_seen": "2026-08-05T08:25:11.000Z"
+  "mentions": 73,
+  "last_seen": "2026-08-06"
  },
  {
   "id": 36,
@@ -60,14 +60,21 @@
   "name": "DeepSeek",
   "type": "company",
   "mentions": 51,
-  "last_seen": "2026-08-05T01:35:42.000Z"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 43,
   "name": "Meta",
   "type": "company",
+  "mentions": 49,
+  "last_seen": "2026-08-06"
+ },
+ {
+  "id": 13,
+  "name": "Hugging Face",
+  "type": "company",
   "mentions": 47,
-  "last_seen": "2026-08-05"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 149,
@@ -84,18 +91,11 @@
   "last_seen": "2026-08-05"
  },
  {
-  "id": 13,
-  "name": "Hugging Face",
-  "type": "company",
-  "mentions": 46,
-  "last_seen": "2026-08-01T03:57:07.000Z"
- },
- {
   "id": 4,
   "name": "xAI",
   "type": "company",
-  "mentions": 45,
-  "last_seen": "2026-07-30"
+  "mentions": 46,
+  "last_seen": "2026-08-06"
  },
  {
   "id": 46,
@@ -108,8 +108,8 @@
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 39,
-  "last_seen": "2026-08-05"
+  "mentions": 40,
+  "last_seen": "2026-08-06"
  },
  {
   "id": 2,
@@ -122,15 +122,22 @@
   "id": 52,
   "name": "Microsoft",
   "type": "company",
-  "mentions": 28,
-  "last_seen": "2026-07-29"
+  "mentions": 29,
+  "last_seen": "2026-08-06T00:37:42.000Z"
  },
  {
   "id": 93,
   "name": "阿里",
   "type": "company",
   "mentions": 28,
-  "last_seen": "2026-08-05T02:40:31.000Z"
+  "last_seen": "2026-08-06"
+ },
+ {
+  "id": 70,
+  "name": "Google DeepMind",
+  "type": "company",
+  "mentions": 26,
+  "last_seen": "2026-08-06"
  },
  {
   "id": 24,
@@ -138,13 +145,6 @@
   "type": "company",
   "mentions": 25,
   "last_seen": "2026-08-05"
- },
- {
-  "id": 70,
-  "name": "Google DeepMind",
-  "type": "company",
-  "mentions": 24,
-  "last_seen": "2026-07-31"
  },
  {
   "id": 3,
@@ -200,7 +200,7 @@
   "name": "Qwen-",
   "type": "model",
   "mentions": 14,
-  "last_seen": "2026-08-05T02:40:31.000Z"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 26,
@@ -214,7 +214,7 @@
   "name": "DeepSeek V4",
   "type": "model",
   "mentions": 13,
-  "last_seen": "2026-08-05T01:35:42.000Z"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 183,
@@ -256,7 +256,7 @@
   "name": "Perplexity",
   "type": "company",
   "mentions": 10,
-  "last_seen": "2026-08-05T10:31:42.000Z"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 338,
@@ -291,7 +291,7 @@
   "name": "Amazon",
   "type": "company",
   "mentions": 9,
-  "last_seen": "2026-08-05T10:31:42.000Z"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 5,
@@ -326,7 +326,7 @@
   "name": "通义千问",
   "type": "company",
   "mentions": 8,
-  "last_seen": "2026-08-05T02:40:31.000Z"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 1,
@@ -392,6 +392,13 @@
   "last_seen": "2026-07-25"
  },
  {
+  "id": 38,
+  "name": "Alphabet",
+  "type": "company",
+  "mentions": 5,
+  "last_seen": "2026-08-06"
+ },
+ {
   "id": 154,
   "name": "CoreWeave",
   "type": "company",
@@ -453,13 +460,6 @@
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-06-02T17:12:18.000Z"
- },
- {
-  "id": 38,
-  "name": "Alphabet",
-  "type": "company",
-  "mentions": 4,
-  "last_seen": "2026-07-23"
  },
  {
   "id": 41,
@@ -592,7 +592,7 @@
   "name": "Qwen 3.8",
   "type": "model",
   "mentions": 3,
-  "last_seen": "2026-08-05T01:35:42.000Z"
+  "last_seen": "2026-08-06"
  },
  {
   "id": 29,
@@ -936,5 +936,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-07-30T16:00:00.000Z"
+ },
+ {
+  "id": 4666,
+  "name": "GPT-3",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-08-06"
  }
 ]
