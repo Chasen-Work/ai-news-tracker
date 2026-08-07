@@ -3,15 +3,15 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 232,
-  "last_seen": "2026-08-07"
+  "mentions": 233,
+  "last_seen": "2026-08-07T06:28:51.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 181,
-  "last_seen": "2026-08-07"
+  "mentions": 182,
+  "last_seen": "2026-08-07T02:41:46.636Z"
  },
  {
   "id": 47,
@@ -38,8 +38,8 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 76,
-  "last_seen": "2026-08-06T06:12:33.000Z"
+  "mentions": 77,
+  "last_seen": "2026-08-07T02:04:51.000Z"
  },
  {
   "id": 10,
@@ -164,8 +164,8 @@
   "id": 51,
   "name": "Runway",
   "type": "company",
-  "mentions": 19,
-  "last_seen": "2026-08-04"
+  "mentions": 20,
+  "last_seen": "2026-08-07T11:08:25.000Z"
  },
  {
   "id": 614,
@@ -231,18 +231,18 @@
   "last_seen": "2026-08-05"
  },
  {
+  "id": 376,
+  "name": "面壁智能",
+  "type": "company",
+  "mentions": 12,
+  "last_seen": "2026-08-07T06:41:21.000Z"
+ },
+ {
   "id": 701,
   "name": "DeepSeek-V4",
   "type": "model",
   "mentions": 12,
   "last_seen": "2026-08-05"
- },
- {
-  "id": 376,
-  "name": "面壁智能",
-  "type": "company",
-  "mentions": 11,
-  "last_seen": "2026-08-07"
  },
  {
   "id": 760,
@@ -350,6 +350,13 @@
   "last_seen": "2026-08-06T06:12:33.000Z"
  },
  {
+  "id": 116,
+  "name": "Krea",
+  "type": "company",
+  "mentions": 7,
+  "last_seen": "2026-08-07T07:30:06.000Z"
+ },
+ {
   "id": 335,
   "name": "百度",
   "type": "company",
@@ -362,13 +369,6 @@
   "type": "model",
   "mentions": 7,
   "last_seen": "2026-07-24"
- },
- {
-  "id": 116,
-  "name": "Krea",
-  "type": "company",
-  "mentions": 6,
-  "last_seen": "2026-07-08"
  },
  {
   "id": 134,
@@ -588,6 +588,13 @@
   "last_seen": "2026-07-21T00:00:00.000Z"
  },
  {
+  "id": 3364,
+  "name": "Qwen3.8",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-08-07T02:04:51.000Z"
+ },
+ {
   "id": 3449,
   "name": "Qwen 3.8",
   "type": "model",
@@ -719,13 +726,6 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-07-21"
- },
- {
-  "id": 3364,
-  "name": "Qwen3.8",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-08-04"
  },
  {
   "id": 4249,
