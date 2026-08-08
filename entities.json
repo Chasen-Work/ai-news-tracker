@@ -17,8 +17,8 @@
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 139,
-  "last_seen": "2026-08-07"
+  "mentions": 140,
+  "last_seen": "2026-08-08T11:05:50.000Z"
  },
  {
   "id": 48,
@@ -87,8 +87,8 @@
   "id": 560,
   "name": "Apple",
   "type": "company",
-  "mentions": 47,
-  "last_seen": "2026-08-05"
+  "mentions": 48,
+  "last_seen": "2026-08-08T08:25:11.000Z"
  },
  {
   "id": 4,
@@ -119,6 +119,13 @@
   "last_seen": "2026-07-30"
  },
  {
+  "id": 93,
+  "name": "阿里",
+  "type": "company",
+  "mentions": 30,
+  "last_seen": "2026-08-08T08:25:11.000Z"
+ },
+ {
   "id": 52,
   "name": "Microsoft",
   "type": "company",
@@ -126,11 +133,11 @@
   "last_seen": "2026-08-07"
  },
  {
-  "id": 93,
-  "name": "阿里",
+  "id": 70,
+  "name": "Google DeepMind",
   "type": "company",
-  "mentions": 29,
-  "last_seen": "2026-08-07"
+  "mentions": 27,
+  "last_seen": "2026-08-08T11:05:50.000Z"
  },
  {
   "id": 24,
@@ -138,13 +145,6 @@
   "type": "company",
   "mentions": 26,
   "last_seen": "2026-08-08"
- },
- {
-  "id": 70,
-  "name": "Google DeepMind",
-  "type": "company",
-  "mentions": 26,
-  "last_seen": "2026-08-06"
  },
  {
   "id": 20,

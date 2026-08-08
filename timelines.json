@@ -1836,6 +1836,15 @@
  ],
  "Apple": [
   {
+   "id": 3768,
+   "title": "苹果 Mac 简体中文支持文档更新，\"Apple 智能\"阿里千问扩展现身",
+   "summary": "苹果官网 Mac 简体中文使用手册新增《在 Mac 上配合 Apple 智能使用千问》支持文档，明确 Apple 智能可配合阿里巴巴千问模型工作。千问扩展适用于 macOS 26.6 或更高版本，需中国大陆 Apple 账户及机型，支持写作工具与 Siri，用户需登录千问账户使用。",
+   "published_at": "2026-08-08T08:25:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3432,
    "title": "Swiftlet：在 Mac 上运行 80B 版 Qwen（内存 4.3 GB），在 iPhone 上运行 35B 版",
    "summary": "Swiftlet 是一个 Swift + Metal 运行时，可在普通 Apple 设备上运行 Qwen3-Next 和 Qwen3.5/3.6 MoE 混合模型，仅将小型稠密核心驻留内存，按需从存储流式加载路由专家权重。",
@@ -7287,6 +7296,15 @@
  ],
  "Google": [
   {
+   "id": 3767,
+   "title": "DeepMind 的 WeatherNext 飓风模型为预报员争取到额外一天预警时间",
+   "summary": "Google DeepMind 与 Google Research 开发的 AI 模型 WeatherNext，在 2025 年 10 月飓风 Melissa 登陆前 5 天，以 80% 的置信度预测其将以 5 级飓风强度袭击牙买加。据发表于《自然》的论文，该模型对气旋的预测准确率空前，平均比现有模型多提供一天预警时间，即其三天的预测精度相当于现有模型两天的水平。",
+   "published_at": "2026-08-08T11:05:50.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 3639,
    "title": "Google 大规模 AI 组织调整背后的混乱政治",
    "summary": "Google 宣布迄今最大规模 AI 组织调整：Demis Hassabis 卸任 DeepMind 日常管理以专注 AGI 研究，CTO Koray Kavukcuoglu 接任；27 年老将 Jeff Dean 与三位顶级研究员离职创办 AI 初创公司。内部员工认为调整源于产品提速压力、Hassabis 影响力下降及与美国国防部合作引发的伦理冲突。",
@@ -8539,6 +8557,15 @@
   }
  ],
  "Google DeepMind": [
+  {
+   "id": 3767,
+   "title": "DeepMind 的 WeatherNext 飓风模型为预报员争取到额外一天预警时间",
+   "summary": "Google DeepMind 与 Google Research 开发的 AI 模型 WeatherNext，在 2025 年 10 月飓风 Melissa 登陆前 5 天，以 80% 的置信度预测其将以 5 级飓风强度袭击牙买加。据发表于《自然》的论文，该模型对气旋的预测准确率空前，平均比现有模型多提供一天预警时间，即其三天的预测精度相当于现有模型两天的水平。",
+   "published_at": "2026-08-08T11:05:50.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 3543,
    "title": "Demis Hassabis 转任 Google DeepMind 主席与 Alphabet 首席科学家",
@@ -18383,6 +18410,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 3768,
+   "title": "苹果 Mac 简体中文支持文档更新，\"Apple 智能\"阿里千问扩展现身",
+   "summary": "苹果官网 Mac 简体中文使用手册新增《在 Mac 上配合 Apple 智能使用千问》支持文档，明确 Apple 智能可配合阿里巴巴千问模型工作。千问扩展适用于 macOS 26.6 或更高版本，需中国大陆 Apple 账户及机型，支持写作工具与 Siri，用户需登录千问账户使用。",
+   "published_at": "2026-08-08T08:25:11.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3633,
    "title": "千问全网首发公测，全新 Wan3.0 来了！",

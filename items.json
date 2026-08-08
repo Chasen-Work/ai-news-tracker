@@ -1,5 +1,25 @@
 [
  {
+  "id": 3767,
+  "title": "DeepMind 的 WeatherNext 飓风模型为预报员争取到额外一天预警时间",
+  "summary": "Google DeepMind 与 Google Research 开发的 AI 模型 WeatherNext，在 2025 年 10 月飓风 Melissa 登陆前 5 天，以 80% 的置信度预测其将以 5 级飓风强度袭击牙买加。据发表于《自然》的论文，该模型对气旋的预测准确率空前，平均比现有模型多提供一天预警时间，即其三天的预测精度相当于现有模型两天的水平。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-08-08T11:05:50.000Z",
+  "fetched_at": "2026-08-08 13:00:10"
+ },
+ {
+  "id": 3768,
+  "title": "苹果 Mac 简体中文支持文档更新，\"Apple 智能\"阿里千问扩展现身",
+  "summary": "苹果官网 Mac 简体中文使用手册新增《在 Mac 上配合 Apple 智能使用千问》支持文档，明确 Apple 智能可配合阿里巴巴千问模型工作。千问扩展适用于 macOS 26.6 或更高版本，需中国大陆 Apple 账户及机型，支持写作工具与 Siri，用户需登录千问账户使用。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-08T08:25:11.000Z",
+  "fetched_at": "2026-08-08 13:00:10"
+ },
+ {
   "id": 3738,
   "title": "什么是 AI 助手？Databricks 详解其工作原理与类型",
   "summary": "AI 助手通过语言模型、数据检索和推理来理解请求并生成响应。Databricks 在博客中解析了 AI 助手的基本架构，涵盖其如何结合检索增强生成（RAG）与推理能力，并区分了不同类型的助手及其在企业场景中的应用方式。",
