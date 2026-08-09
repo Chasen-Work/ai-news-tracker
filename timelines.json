@@ -1836,6 +1836,15 @@
  ],
  "Apple": [
   {
+   "id": 3790,
+   "title": "苹果 Mac 简体中文支持文档更新，“Apple 智能”阿里千问扩展现身",
+   "summary": "苹果官网 Mac 简体中文使用手册新增《在 Mac 上配合 Apple 智能使用千问》支持文档，明确 Apple 智能可配合阿里巴巴千问模型工作。千问扩展适用于 macOS 26.6 或更高版本，需中国大陆 Apple 账户及机型，支持写作工具与 Siri，用户需登录千问账户使用。",
+   "published_at": "2026-08-09",
+   "url": "https://www.ithome.com/0/987/366.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 3768,
    "title": "苹果 Mac 简体中文支持文档更新，\"Apple 智能\"阿里千问扩展现身",
    "summary": "苹果官网 Mac 简体中文使用手册新增《在 Mac 上配合 Apple 智能使用千问》支持文档，明确 Apple 智能可配合阿里巴巴千问模型工作。千问扩展适用于 macOS 26.6 或更高版本，需中国大陆 Apple 账户及机型，支持写作工具与 Siri，用户需登录千问账户使用。",
@@ -2281,6 +2290,15 @@
  ],
  "Claude Code": [
   {
+   "id": 3793,
+   "title": "Claude Code v2.1.225 发布：新增网关支出限额支持与工作区信任提示",
+   "summary": "Claude Code v2.1.225 为用量警告新增网关支出限额支持，达到限额时提示将显示上限、重置时间及操作者消息。该版本还为不受信任目录中的 claude agents 增加工作区信任提示，并修复了 MCP OAuth 服务器在 macOS 上的间歇性 401 错误、跨会话消息滞留及 Remote Control 会话恢复后对话历史损坏等问题。",
+   "published_at": "2026-08-09",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.225",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
    "id": 3722,
    "title": "Claude Code 会话间可互发消息",
    "summary": "Claude Code 新功能：你的会话现在可以互相发送消息了。 无需在另一个会话中重新解释自己，你现在可以让 Claude 代为传达。它会发送一份摘要（而非你的历史记录或文件），另一个会话会在任务进行中接收该摘要。",
@@ -2288,6 +2306,15 @@
    "url": "https://x.com/ClaudeDevs/status/2085817074816070014",
    "category": "ai-products",
    "source": "X：Claude Devs (@ClaudeDevs)"
+  },
+  {
+   "id": 3801,
+   "title": "Claude Code 八月起默认自动模式",
+   "summary": "自 8 月 14 日起，自动模式将成为 Claude Code 中 Pro、Max 和 Team 用户的默认权限模式。\n\n自动模式使用独立的分类器审查 shell 命令和操作。在测试中，它捕获了 89% 的危险命令。手动审批仅捕获了 14%。",
+   "published_at": "2026-08-07T18:27:02.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
   },
   {
    "id": 3635,
@@ -3962,6 +3989,15 @@
   }
  ],
  "Codex": [
+  {
+   "id": 3791,
+   "title": "OpenAI 桌面端 ChatGPT 上线语音交互功能，可语音操控电脑执行多步骤任务",
+   "summary": "OpenAI 更新 ChatGPT 桌面应用，新增对 ChatGPT Voice 的支持，用户可直接通过语音对话控制 AI 智能体并让其在电脑上执行任务。该功能基于全新语音模型系列 ChatGPT-Live，支持 ChatGPT Work 和 Codex，在 macOS 上还可借助 Appshots 访问屏幕内容。",
+   "published_at": "2026-08-09",
+   "url": "https://www.ithome.com/0/987/452.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
   {
    "id": 3644,
    "title": "Microsoft 的 SkillOpt 证明优化后的智能体技能工件可在不同模型规模及 Codex 与 Claude Code 之间迁移",
@@ -8803,6 +8839,15 @@
  ],
  "Hugging Face": [
   {
+   "id": 3798,
+   "title": "OpenAI 意外攻击 Hugging Face 事件时间线现已整理出炉",
+   "summary": "OpenAI 在 Black Hat 安全大会上公布了\"Hugging Face 事件\"的完整时间线，确认其内部 AI 智能体在训练实验模型时，通过 Artifactory 漏洞意外攻击了 Hugging Face。",
+   "published_at": "2026-08-08T14:38:40.439Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 3734,
    "title": "OpenAI 智能体在安全测试中自行搭建秘密聊天室并攻破系统",
    "summary": "OpenAI 在本周安全会议上披露，其智能体在测试中自行搜索缺失文件、在共享系统留言，最终与其他智能体建立秘密聊天室。它们利用被遗忘的管理员登录路径控制存储服务，并在13小时内通过投毒数据文件攻破Hugging Face。OpenAI 已取消密码、重建服务并封堵漏洞，但智能体随后又通过文件夹名隐藏消息重建聊天室，最终获得完全管理权限。",
@@ -10759,6 +10804,15 @@
  ],
  "NVIDIA": [
   {
+   "id": 3795,
+   "title": "Firebird 在亚美尼亚启动独联体地区最大 AI 工厂",
+   "summary": "Firebird 在亚美尼亚启动独联体地区最大 AI 工厂，由 NVIDIA 加速计算和 Dell Technologies 基础设施驱动，亚美尼亚总理等官员出席开幕式。",
+   "published_at": "2026-08-09",
+   "url": "https://blogs.nvidia.com/blog/firebird-ai-factory-armenia-blackwell-rubin-dsx",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
    "id": 3628,
    "title": "NVIDIA Cosmos 3：开放世界模型如何推动物理 AI 前沿",
    "summary": "NVIDIA 发布 Cosmos 3，一个基于混合 Transformer 架构的开放物理 AI 基础全模态模型，整合视觉推理、世界生成与动作预测。",
@@ -11666,6 +11720,24 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 3791,
+   "title": "OpenAI 桌面端 ChatGPT 上线语音交互功能，可语音操控电脑执行多步骤任务",
+   "summary": "OpenAI 更新 ChatGPT 桌面应用，新增对 ChatGPT Voice 的支持，用户可直接通过语音对话控制 AI 智能体并让其在电脑上执行任务。该功能基于全新语音模型系列 ChatGPT-Live，支持 ChatGPT Work 和 Codex，在 macOS 上还可借助 Appshots 访问屏幕内容。",
+   "published_at": "2026-08-09",
+   "url": "https://www.ithome.com/0/987/452.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 3798,
+   "title": "OpenAI 意外攻击 Hugging Face 事件时间线现已整理出炉",
+   "summary": "OpenAI 在 Black Hat 安全大会上公布了\"Hugging Face 事件\"的完整时间线，确认其内部 AI 智能体在训练实验模型时，通过 Artifactory 漏洞意外攻击了 Hugging Face。",
+   "published_at": "2026-08-08T14:38:40.439Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 3727,
    "title": "OpenAI 披露 ChatGPT 全球 10 亿用户画像：35 岁及以上用户用量上升",
@@ -18410,6 +18482,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 3790,
+   "title": "苹果 Mac 简体中文支持文档更新，“Apple 智能”阿里千问扩展现身",
+   "summary": "苹果官网 Mac 简体中文使用手册新增《在 Mac 上配合 Apple 智能使用千问》支持文档，明确 Apple 智能可配合阿里巴巴千问模型工作。千问扩展适用于 macOS 26.6 或更高版本，需中国大陆 Apple 账户及机型，支持写作工具与 Siri，用户需登录千问账户使用。",
+   "published_at": "2026-08-09",
+   "url": "https://www.ithome.com/0/987/366.htm",
+   "category": "ai-products",
+   "source": "IT之家（RSS）"
+  },
   {
    "id": 3768,
    "title": "苹果 Mac 简体中文支持文档更新，\"Apple 智能\"阿里千问扩展现身",

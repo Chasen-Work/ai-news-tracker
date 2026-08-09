@@ -1,11 +1,11 @@
 {
- "total_items": 1680,
+ "total_items": 1689,
  "total_entities": 135,
- "total_dailies": 68,
+ "total_dailies": 69,
  "categories": {
+  "ai-products": 467,
   "tip": 466,
-  "ai-products": 462,
-  "industry": 378,
+  "industry": 382,
   "paper": 188,
   "ai-models": 186
  },
@@ -20,7 +20,7 @@
   },
   {
    "name": "IT之家（RSS）",
-   "count": 97
+   "count": 100
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
@@ -52,14 +52,10 @@
   },
   {
    "name": "Claude Code：GitHub Releases（RSS）",
-   "count": 24
+   "count": 25
   }
  ],
  "by_date": [
-  {
-   "date": "2026-07-10",
-   "count": 30
-  },
   {
    "date": "2026-07-11",
    "count": 18
@@ -170,12 +166,16 @@
   },
   {
    "date": "2026-08-07",
-   "count": 33
+   "count": 34
   },
   {
    "date": "2026-08-08",
-   "count": 23
+   "count": 25
+  },
+  {
+   "date": "2026-08-09",
+   "count": 6
   }
  ],
- "updated_at": "2026-08-08T13:00:11Z"
+ "updated_at": "2026-08-09T01:00:20Z"
 }
