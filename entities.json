@@ -38,8 +38,8 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 77,
-  "last_seen": "2026-08-08"
+  "mentions": 78,
+  "last_seen": "2026-08-10T04:04:12.000Z"
  },
  {
   "id": 10,
@@ -47,6 +47,13 @@
   "type": "company",
   "mentions": 76,
   "last_seen": "2026-08-09T23:58:34.000Z"
+ },
+ {
+  "id": 43,
+  "name": "Meta",
+  "type": "company",
+  "mentions": 53,
+  "last_seen": "2026-08-10T11:51:38.747Z"
  },
  {
   "id": 13,
@@ -68,13 +75,6 @@
   "type": "company",
   "mentions": 51,
   "last_seen": "2026-08-06"
- },
- {
-  "id": 43,
-  "name": "Meta",
-  "type": "company",
-  "mentions": 50,
-  "last_seen": "2026-08-09T14:30:00.000Z"
  },
  {
   "id": 560,
@@ -175,6 +175,13 @@
   "last_seen": "2026-08-04T16:00:00.000Z"
  },
  {
+  "id": 976,
+  "name": "Qwen-",
+  "type": "model",
+  "mentions": 16,
+  "last_seen": "2026-08-10T04:04:12.000Z"
+ },
+ {
   "id": 23,
   "name": "Replit",
   "type": "company",
@@ -194,13 +201,6 @@
   "type": "model",
   "mentions": 15,
   "last_seen": "2026-08-09T23:58:34.000Z"
- },
- {
-  "id": 976,
-  "name": "Qwen-",
-  "type": "model",
-  "mentions": 15,
-  "last_seen": "2026-08-06T06:12:33.000Z"
  },
  {
   "id": 26,

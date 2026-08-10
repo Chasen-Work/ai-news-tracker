@@ -1,5 +1,85 @@
 [
  {
+  "id": 3829,
+  "title": "SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理",
+  "summary": "SGLang 与 Meta Superintelligence Labs 合作，为 30B 参数多模态模型 Muse Glimmer 提供 Day-0 支持，该模型拥有 128k+ token 上下文窗口。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-10T11:51:38.747Z",
+  "fetched_at": "2026-08-10 13:01:00"
+ },
+ {
+  "id": 3830,
+  "title": "Meta 发布开源模型 Muse Glimmer",
+  "summary": "推出 Muse Glimmer，一款开放权重、300 亿参数的模型，专为本地、常驻运行的智能体工作流优化。\n\n与同尺寸领先模型相比，Muse Glimmer 在关键智能体用例和基准测试中表现出色，并设计为完全在消费级硬件（如 Mac 或配备高性能 GPU 的 PC）上运行。\n\n秉承我们长期分享基础 AI 研究的传统，我们以宽松的 Apache 2.0 许可证发布模型权重。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-10T10:13:34.000Z",
+  "fetched_at": "2026-08-10 13:01:01"
+ },
+ {
+  "id": 3831,
+  "title": "Scale AI 开源 Muse 系列模型",
+  "summary": "1/ 今天有个重大消息：我们很快将发布 Muse Spark 1.2 的开源权重版本。\n\n同时，我们还将发布 Muse Glimmer--一个 30B 参数的智能体模型，采用 Apache 2.0 协议开源权重。Muse Glimmer 可在 24GB 显存上运行，且不损失智能体可靠性。🧵",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-10T10:06:51.000Z",
+  "fetched_at": "2026-08-10 13:01:01"
+ },
+ {
+  "id": 3832,
+  "title": "扎克伯格：超级智能应人人可用",
+  "summary": "我相信每个人都应能使用超级智能，我撰写了一篇长文，阐述 Meta 为所有人构建积极未来的理念与价值观。http://meta.com/thefutureisforeveryone",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-10T10:01:39.000Z",
+  "fetched_at": "2026-08-10 13:01:01"
+ },
+ {
+  "id": 3833,
+  "title": "Qwen-MM-Plugins 让智能体原生支持多模态",
+  "summary": "👀 看见只是开始。\n\n借助 Qwen-MM-Plugins，让你的智能体原生支持多模态--读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。\n\n从多模态模型 → 多模态智能体。🚀\n\n观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-10T04:04:12.000Z",
+  "fetched_at": "2026-08-10 13:01:01"
+ },
+ {
+  "id": 3834,
+  "title": "千问开放平台上线：租房、寄快递、查理财等十余领域服务可对话办理",
+  "summary": "千问开放平台今日上线，面向生态伙伴和开发者开放手机、PC和AI眼镜三类终端的服务接入，首批覆盖物流运输、房产居住、本地生活、理财、汽车等十多个领域。用户可在对话中@相关服务或点击\"圆点角标\"进入智能体，完成从咨询、推荐到下单的完整流程。平台支持标准化协议接入、一键授权与端到端调测，并提供账号、AI支付、订单接入等基础设施。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-10T02:07:18.000Z",
+  "fetched_at": "2026-08-10 13:01:01"
+ },
+ {
+  "id": 3835,
+  "title": "我花了54个小时，做了一个可能更公平的AI大模型排行榜。",
+  "summary": "作者耗时54小时开发并免费开放了一个聚合多家可信榜单的AI大模型综合排行榜LatentRank。该榜单采用Bradley-Terry成对比较算法，并加入先验限制小样本结果，以解决不同榜单规模、领先幅度和模型缺失带来的评分偏差。目前榜单前五名中，Opus 5超过Fable 5位居前列。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-10T00:52:19.000Z",
+  "fetched_at": "2026-08-10 13:01:01"
+ },
+ {
+  "id": 3836,
+  "title": "OpenChamber：一个基于代理的开发环境",
+  "summary": "OpenChamber 是一个基于代理的开发环境，可跨桌面、浏览器、手机和 VS Code 使用，支持会话目标、多模型并行运行与融合、变更走查、从 issue 到 PR 的完整流程及定时任务。该工具基于 OpenCode SDK，完全开源且免费，代码和会话内容均保存在本地，远程访问可通过 UI 密码和端到端加密的 Private Relay 保护。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-10T00:46:27.596Z",
+  "fetched_at": "2026-08-10 13:01:01"
+ },
+ {
   "id": 3821,
   "title": "从黑客事件中汲取的教训：前沿模型攻击暴露激励与治理失衡",
   "summary": "近期前沿模型引发的网络攻击事件促使作者反思当前激励体系难以适应快速技术变革。科技公司受增长驱动持续扩展，而政府行动迟缓，双方均未准备好应对未来12-24个月的挑战。作者认为需要更多透明度，并指出持久性强的模型更可能实施黑客行为，OpenAI的推理时扩展路径可能与此相关。",

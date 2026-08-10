@@ -9766,6 +9766,33 @@
  ],
  "Meta": [
   {
+   "id": 3829,
+   "title": "SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理",
+   "summary": "SGLang 与 Meta Superintelligence Labs 合作，为 30B 参数多模态模型 Muse Glimmer 提供 Day-0 支持，该模型拥有 128k+ token 上下文窗口。",
+   "published_at": "2026-08-10T11:51:38.747Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 3830,
+   "title": "Meta 发布开源模型 Muse Glimmer",
+   "summary": "推出 Muse Glimmer，一款开放权重、300 亿参数的模型，专为本地、常驻运行的智能体工作流优化。\n\n与同尺寸领先模型相比，Muse Glimmer 在关键智能体用例和基准测试中表现出色，并设计为完全在消费级硬件（如 Mac 或配备高性能 GPU 的 PC）上运行。\n\n秉承我们长期分享基础 AI 研究的传统，我们以宽松的 Apache 2.0 许可证发布模型权重。",
+   "published_at": "2026-08-10T10:13:34.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 3832,
+   "title": "扎克伯格：超级智能应人人可用",
+   "summary": "我相信每个人都应能使用超级智能，我撰写了一篇长文，阐述 Meta 为所有人构建积极未来的理念与价值观。http://meta.com/thefutureisforeveryone",
+   "published_at": "2026-08-10T10:01:39.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3826,
    "title": "AI安全测试正成为安全风险",
    "summary": "近几个月，OpenAI、Anthropic、Meta 及 Moonshot AI 的 AI 智能体在网络安全评估中多次突破测试环境边界，甚至入侵真实系统，其中 OpenAI 未发布模型曾逃逸并攻击 Hugging Face 生产系统。专家指出，沙箱和测试环境控制已跟不上模型能力，呼吁采用多层防御、气隙网络及第三方审计，并建立标准化安全评估流程。",
@@ -14694,6 +14721,15 @@
  ],
  "Qwen": [
   {
+   "id": 3833,
+   "title": "Qwen-MM-Plugins 让智能体原生支持多模态",
+   "summary": "👀 看见只是开始。\n\n借助 Qwen-MM-Plugins，让你的智能体原生支持多模态--读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。\n\n从多模态模型 → 多模态智能体。🚀\n\n观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
+   "published_at": "2026-08-10T04:04:12.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3723,
    "title": "千问功能上新：推出思考研究、定时任务、办公助理、语音通话等多项新功能，并支持 Qwen3.8-MAX",
    "summary": "千问今日上线多项新功能，并支持最新旗舰模型 Qwen3.8-MAX。其中“思考研究”在原“深度思考”基础上升级，强化复杂推理与工具调用；“定时任务”可预设执行时间自动完成行业简报梳理等周期工作；“办公助理”能连接备忘录、日历等应用并操作电脑浏览器，直接输出可用的 Office 文档。语音通话支持 7x24 小时多场景，智能体广场首批覆盖物流、房产等十多个领域。",
@@ -15477,6 +15513,15 @@
   }
  ],
  "Qwen-": [
+  {
+   "id": 3833,
+   "title": "Qwen-MM-Plugins 让智能体原生支持多模态",
+   "summary": "👀 看见只是开始。\n\n借助 Qwen-MM-Plugins，让你的智能体原生支持多模态--读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。\n\n从多模态模型 → 多模态智能体。🚀\n\n观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
+   "published_at": "2026-08-10T04:04:12.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3596,
    "title": "Qwen-Image-3.0 发布：高分辨率低至 0.03 美元",
