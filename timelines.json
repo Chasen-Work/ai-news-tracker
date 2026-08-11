@@ -196,6 +196,15 @@
  ],
  "Anthropic": [
   {
+   "id": 3856,
+   "title": "Claude 未发布研究版将黎曼 zeta 函数零点下界从 41.6% 提升至 67.2%",
+   "summary": "Anthropic 员工让 Claude 尝试攻克黎曼猜想，虽未成功，但一个未发布的研究版 Claude 在相关问题上取得突破：将满足黎曼猜想的 zeta 函数零点比例下界从 41.6% 提升至 67.2%。",
+   "published_at": "2026-08-11",
+   "url": "https://www.anthropic.com/research/riemann-zeta",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
    "id": 3819,
    "title": "Anthropic 称已基本解决提示注入攻击",
    "summary": "Anthropic 的 Boris Cherny 表示，通过模型训练已基本解决 Claude 模型在实际使用中的提示注入威胁。独立研究者的基准测试显示，叠加模型训练、输入探测和意图分类器等多层防御后，未见过的间接提示注入攻击成功率可降至约 0。Claude Code 的 auto 模式将于下周默认开启。",
@@ -2307,6 +2316,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 3850,
+   "title": "Claude Code 自动模式默认开启原理",
+   "summary": "我们最近将自动模式设为 Claude Code 的默认选项，这意味着你不再需要批准每一个操作。 但什么决定某个操作是否可以安全运行？看看它是如何工作的：",
+   "published_at": "2026-08-11",
+   "url": "https://x.com/ClaudeDevs/status/2086844755770757531",
+   "category": "ai-products",
+   "source": "X：Claude Devs (@ClaudeDevs)"
+  },
   {
    "id": 3819,
    "title": "Anthropic 称已基本解决提示注入攻击",
@@ -6720,6 +6738,15 @@
  ],
  "GPT-5.6": [
   {
+   "id": 3845,
+   "title": "OpenAI 推出 GPT-5.6-Cyber，面向授权漏洞研究的网络安全专用模型",
+   "summary": "OpenAI 发布网络安全专用模型 GPT-5.6-Cyber，可通过 Daybreak Red 获取，用于授权的漏洞研究、漏洞验证和安全测试。该模型旨在应对网络防御窗口不断收窄的挑战，为安全研究人员提供专门工具。",
+   "published_at": "2026-08-11",
+   "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+   "category": "ai-models",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
    "id": 3629,
    "title": "ChatGPT 推出改进版 GPT-5.6 Sol，并扩大免费用户访问权限",
    "summary": "ChatGPT 推出改进版 GPT-5.6 Sol，提升准确性与一致性，同时扩大免费用户访问权限。免费用户还可无限次使用 GPT-5.6 Luna 进行日常对话。",
@@ -7358,6 +7385,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 3853,
+   "title": "Google 为 Google Ads 和 Google Analytics 推出新 AI 与智能体功能",
+   "summary": "Google 宣布在 Google Ads 和 Google Analytics 中新增 AI 与智能体体验，包括 Google Analytics 首页的 AI Overviews 智能摘要、Google Ads 首页的 AI 洞察卡片，以及 Ask Advisor 新增的基准对比功能，可将广告效果与同类商家匿名平均值比较。这些功能基于 Gemini 构建，目前面向英文账户开放 beta 测试。",
+   "published_at": "2026-08-11",
+   "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates",
+   "category": "ai-products",
+   "source": "Google Blog：AI（RSS）"
+  },
   {
    "id": 3767,
    "title": "DeepMind 的 WeatherNext 飓风模型为预报员争取到额外一天预警时间",
@@ -9766,30 +9802,48 @@
  ],
  "Meta": [
   {
-   "id": 3829,
+   "id": 3843,
    "title": "SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理",
    "summary": "SGLang 与 Meta Superintelligence Labs 合作，为 30B 参数多模态模型 Muse Glimmer 提供 Day-0 支持，该模型拥有 128k+ token 上下文窗口。",
-   "published_at": "2026-08-10T11:51:38.747Z",
-   "url": "",
+   "published_at": "2026-08-11",
+   "url": "https://www.lmsys.org/blog/2026-08-10-meta-muse-glimmer",
    "category": "ai-models",
-   "source": ""
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
   },
   {
-   "id": 3830,
+   "id": 3844,
    "title": "Meta 发布开源模型 Muse Glimmer",
-   "summary": "推出 Muse Glimmer，一款开放权重、300 亿参数的模型，专为本地、常驻运行的智能体工作流优化。\n\n与同尺寸领先模型相比，Muse Glimmer 在关键智能体用例和基准测试中表现出色，并设计为完全在消费级硬件（如 Mac 或配备高性能 GPU 的 PC）上运行。\n\n秉承我们长期分享基础 AI 研究的传统，我们以宽松的 Apache 2.0 许可证发布模型权重。",
-   "published_at": "2026-08-10T10:13:34.000Z",
-   "url": "",
+   "summary": "推出 Muse Glimmer，一款开放权重、300 亿参数的模型，专为本地、常驻运行的智能体工作流优化。 与同尺寸领先模型相比，Muse Glimmer 在关键智能体用例和基准测试中表现出色，并设计为完全在消费级硬件（如 Mac 或配备高性能 GPU 的 PC）上运行。 秉承我们长期分享基础 AI 研究的传统，我们以宽松的 Apache 2.0 许可证发布模型权重。",
+   "published_at": "2026-08-11",
+   "url": "https://x.com/AIatMeta/status/2086757844544811485",
    "category": "ai-models",
-   "source": ""
+   "source": "X：AI at Meta (@AIatMeta)"
   },
   {
-   "id": 3832,
+   "id": 3859,
    "title": "扎克伯格：超级智能应人人可用",
    "summary": "我相信每个人都应能使用超级智能，我撰写了一篇长文，阐述 Meta 为所有人构建积极未来的理念与价值观。http://meta.com/thefutureisforeveryone",
-   "published_at": "2026-08-10T10:01:39.000Z",
-   "url": "",
+   "published_at": "2026-08-11",
+   "url": "https://x.com/finkd/status/2086754845218726027",
    "category": "tip",
+   "source": "X：Mark Zuckerberg (@finkd)"
+  },
+  {
+   "id": 3862,
+   "title": "开源不等于开放权重：Gary Marcus 剖析两者本质差异",
+   "summary": "开放权重模型并非真正的开源，二者在透明度和可定制性上存在根本区别。开源软件公开完整源代码，允许任何人查看、修改和分支；而开放权重模型仅发布训练后的神经网络权重，用户无法访问原始训练数据、预处理方法或训练算法，也不能自由修改或深入调查。这导致开发者、监管者和科学家在使用开放权重模型时面临诸多限制，Meta 最新发布的开放权重模型即为例证。",
+   "published_at": "2026-08-11",
+   "url": "https://garymarcus.substack.com/p/open-source-is-not-the-same-as-open",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
+   "id": 3864,
+   "title": "Meta 发布开源模型 Muse Glimmer：30B 参数、Apache 2.0 许可",
+   "summary": "Meta 推出全新 30B 参数开源模型 Muse Glimmer，采用 Apache 2.0 许可。该模型主打端到端智能体任务完成、可靠工具调用与多步推理，在 DeepSearch QA、MCP-Atlas、τ-Bench 和 SWE-Bench 等基准上表现强劲。Muse Glimmer 同时具备视觉能力，LM Studio 版本体积为 18.16 GB。",
+   "published_at": "2026-08-10T23:56:03.000Z",
+   "url": "",
+   "category": "ai-models",
    "source": ""
   },
   {
@@ -11810,6 +11864,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 3845,
+   "title": "OpenAI 推出 GPT-5.6-Cyber，面向授权漏洞研究的网络安全专用模型",
+   "summary": "OpenAI 发布网络安全专用模型 GPT-5.6-Cyber，可通过 Daybreak Red 获取，用于授权的漏洞研究、漏洞验证和安全测试。该模型旨在应对网络防御窗口不断收窄的挑战，为安全研究人员提供专门工具。",
+   "published_at": "2026-08-11",
+   "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+   "category": "ai-models",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
   {
    "id": 3821,
    "title": "从黑客事件中汲取的教训：前沿模型攻击暴露激励与治理失衡",
@@ -14202,6 +14265,15 @@
  ],
  "OpenRouter": [
   {
+   "id": 3846,
+   "title": "OpenRouter 推出由市场智慧驱动的新版 Auto 路由器",
+   "summary": "OpenRouter 基于每周超 55T token 的社区消费数据，推出新版 Auto 路由器（openrouter/auto），其模型选择在多数任务和成本档位上优于旧版。新路由器按约 30 种任务类型匹配近 7 天社区实际消费的模型，支持 cost_tier 参数（low 至 max）并遵循账户隐私设置。在 MMLU Pro 等基准上，新默认档位在多数领域以更低成本达到旧版同等性能。",
+   "published_at": "2026-08-11",
+   "url": "https://openrouter.ai/blog/announcements/introducing-the-new-auto-router",
+   "category": "ai-products",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
+  {
    "id": 3645,
    "title": "OpenAI 开源 Codex Security：Vibe Coding 产品必备的安全扫描插件",
    "summary": "OpenAI 将安全插件 Codex Security 开源，外部 Agent 均可调用，并已支持通过 OpenRouter 和 Fireworks 接入第三方模型。",
@@ -14721,13 +14793,13 @@
  ],
  "Qwen": [
   {
-   "id": 3833,
+   "id": 3848,
    "title": "Qwen-MM-Plugins 让智能体原生支持多模态",
-   "summary": "👀 看见只是开始。\n\n借助 Qwen-MM-Plugins，让你的智能体原生支持多模态--读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。\n\n从多模态模型 → 多模态智能体。🚀\n\n观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
-   "published_at": "2026-08-10T04:04:12.000Z",
-   "url": "",
+   "summary": "👀 看见只是开始。 借助 Qwen-MM-Plugins，让你的智能体原生支持多模态——读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。 从多模态模型 → 多模态智能体。🚀 观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
+   "published_at": "2026-08-11",
+   "url": "https://x.com/Alibaba_Qwen/status/2086664887560970531",
    "category": "ai-products",
-   "source": ""
+   "source": "X：通义千问 / Qwen (@Alibaba_Qwen)"
   },
   {
    "id": 3723,
@@ -15514,13 +15586,13 @@
  ],
  "Qwen-": [
   {
-   "id": 3833,
+   "id": 3848,
    "title": "Qwen-MM-Plugins 让智能体原生支持多模态",
-   "summary": "👀 看见只是开始。\n\n借助 Qwen-MM-Plugins，让你的智能体原生支持多模态--读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。\n\n从多模态模型 → 多模态智能体。🚀\n\n观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
-   "published_at": "2026-08-10T04:04:12.000Z",
-   "url": "",
+   "summary": "👀 看见只是开始。 借助 Qwen-MM-Plugins，让你的智能体原生支持多模态——读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。 从多模态模型 → 多模态智能体。🚀 观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
+   "published_at": "2026-08-11",
+   "url": "https://x.com/Alibaba_Qwen/status/2086664887560970531",
    "category": "ai-products",
-   "source": ""
+   "source": "X：通义千问 / Qwen (@Alibaba_Qwen)"
   },
   {
    "id": 3596,
