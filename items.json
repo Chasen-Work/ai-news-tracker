@@ -1,5 +1,65 @@
 [
  {
+  "id": 3877,
+  "title": "OpenAI 用 Astra 模型攻克 10 道数学难题，数学家既兴奋又担忧",
+  "summary": "OpenAI 宣布其未发布的 Astra 模型解决了 10 道长期悬而未决的数学难题，涵盖球体堆积、纠错码、非 sofic 群存在性等领域，并发布超 250 页论文及 Lean 验证结果。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-11T11:00:00.000Z",
+  "fetched_at": "2026-08-11 13:00:12"
+ },
+ {
+  "id": 3878,
+  "title": "Ling-3.0-tiny 正式开源：1.3B 激活参数如何进入真实任务",
+  "summary": "蚂蚁百灵开源 Ling-3.0-tiny，一款总参数 7.9B、推理时仅激活 1.3B 参数的原生混合推理模型，同步提供 BF16、FP8 和 INT4 三个版本。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-11T09:20:00.000Z",
+  "fetched_at": "2026-08-11 13:00:12"
+ },
+ {
+  "id": 3879,
+  "title": "ZCode全面升级：Goal、Subagents、Remote Control与闲时任务四大功能上线",
+  "summary": "ZCode针对GLM深度优化，今日上线Goal、Subagents、Remote Control与闲时任务四大功能。在Z.ai Code Bench测试中，GLM-5.2搭配ZCode较搭配Claude Code任务整体通过率高2.39%；ZCode缓存命中率超98%，叠加1.5倍限时额度加成后，GLM Coding Plan整体使用量接近常规额度的1.8倍。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-11T05:52:25.000Z",
+  "fetched_at": "2026-08-11 13:00:12"
+ },
+ {
+  "id": 3880,
+  "title": "用 ComfyUI API 实现 MiniMax-H3 多模态视频与音频生成流水线",
+  "summary": "本教程演示如何以 ComfyUI 为无头推理后端，构建端到端的 MiniMax-H3 视频生成工作流。通过 Python 直接构建执行图，支持文生视频、首尾帧条件生成和参考图像条件生成，并自动根据 GPU 显存选择 quality、balanced、squeeze 三种权重配置。流水线涵盖模型自动下载、节点模式校验、音视频联合解码与进度监控，无需图形界面即可复现实验。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-11T05:44:38.000Z",
+  "fetched_at": "2026-08-11 13:00:12"
+ },
+ {
+  "id": 3881,
+  "title": "编写智能体时，哪种编程语言最合适？",
+  "summary": "针对\"动态语言比静态语言更省 LLM token\"的流行说法，作者用 GPT-5.6 Sol 让智能体实现 zstd 解码器进行实测。结果显示，medium 努力度下动态语言表现更好，ultra 下静态语言反而更优，且此前评测存在测试路径错误等缺陷。作者认为，琐碎任务上的性能无法推广到更大问题。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-11T04:58:14.908Z",
+  "fetched_at": "2026-08-11 13:00:12"
+ },
+ {
+  "id": 3882,
+  "title": "消息称 Anthropic 最快今年 9 月上市，向投资者淡化 AI 模型竞争等挑战",
+  "summary": "Anthropic 正与潜在投资者接触，为可能成为史上规模最大的 IPO 做准备，计划今年 9 月或 10 月初正式上市。公司估值高达 9，650 亿美元，年化收入已超 470 亿美元，并淡化来自中国 AI 企业的竞争影响。Anthropic 还计划拓展 AI 在医疗和生物学领域的应用，但尚未公布具体 IPO 定价方案。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-08-11T03:57:53.000Z",
+  "fetched_at": "2026-08-11 13:00:12"
+ },
+ {
   "id": 3863,
   "title": "微信小微AI帮写与AI点评内测：朋友圈最后一点人味正在消失",
   "summary": "微信基于小微推出朋友圈AI帮写与AI点评内测功能，前者可根据图片和已写文字生成3条朋友圈文案，后者可长按文字生成评价或快捷评论。作者认为这两个功能将AI置于社交核心位置，可能鼓励AI内容、破坏朋友圈自2012年确立的\"记录美好生活\"基调。公众号端小微还常驻首位，自动总结常看公众号文章，作者担忧这会反向影响创作者内容生产。",
@@ -248,6 +308,26 @@
   "category": "ai-models",
   "published_at": "2026-08-10T10:06:51.000Z",
   "fetched_at": "2026-08-10 13:01:01"
+ },
+ {
+  "id": 3896,
+  "title": "RynnValue：用时间距离扩展机器人价值基础模型",
+  "summary": "RynnValue 是一款开源的机器人操作价值基础模型，用时间距离替代偏好或进度等任务内锚点作为监督信号，可直接从时间戳生成标签，扩展至超 7，000 小时、约 300 万条指令条件片段。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-08-10T00:00:00.000Z",
+  "fetched_at": "2026-08-11 13:00:12"
+ },
+ {
+  "id": 3895,
+  "title": "窃取专有 LLM API 的推理轨迹：加密块可跨会话互换引发解密越狱",
+  "summary": "研究发现，Anthropic、OpenAI 和 Google 等专有 LLM 的加密推理轨迹块可跨会话、用户和模型互换，攻击者将其注入同提供商防护较弱的模型，即可强制其以明文输出推理内容。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-08-10T00:00:00.000Z",
+  "fetched_at": "2026-08-11 13:00:12"
  },
  {
   "id": 3821,

@@ -196,6 +196,15 @@
  ],
  "Anthropic": [
   {
+   "id": 3882,
+   "title": "消息称 Anthropic 最快今年 9 月上市，向投资者淡化 AI 模型竞争等挑战",
+   "summary": "Anthropic 正与潜在投资者接触，为可能成为史上规模最大的 IPO 做准备，计划今年 9 月或 10 月初正式上市。公司估值高达 9，650 亿美元，年化收入已超 470 亿美元，并淡化来自中国 AI 企业的竞争影响。Anthropic 还计划拓展 AI 在医疗和生物学领域的应用，但尚未公布具体 IPO 定价方案。",
+   "published_at": "2026-08-11T03:57:53.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 3856,
    "title": "Claude 未发布研究版将黎曼 zeta 函数零点下界从 41.6% 提升至 67.2%",
    "summary": "Anthropic 员工让 Claude 尝试攻克黎曼猜想，虽未成功，但一个未发布的研究版 Claude 在相关问题上取得突破：将满足黎曼猜想的 zeta 函数零点比例下界从 41.6% 提升至 67.2%。",
@@ -203,6 +212,15 @@
    "url": "https://www.anthropic.com/research/riemann-zeta",
    "category": "paper",
    "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
+   "id": 3895,
+   "title": "窃取专有 LLM API 的推理轨迹：加密块可跨会话互换引发解密越狱",
+   "summary": "研究发现，Anthropic、OpenAI 和 Google 等专有 LLM 的加密推理轨迹块可跨会话、用户和模型互换，攻击者将其注入同提供商防护较弱的模型，即可强制其以明文输出推理内容。",
+   "published_at": "2026-08-10T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
   },
   {
    "id": 3819,
@@ -2316,6 +2334,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 3879,
+   "title": "ZCode全面升级：Goal、Subagents、Remote Control与闲时任务四大功能上线",
+   "summary": "ZCode针对GLM深度优化，今日上线Goal、Subagents、Remote Control与闲时任务四大功能。在Z.ai Code Bench测试中，GLM-5.2搭配ZCode较搭配Claude Code任务整体通过率高2.39%；ZCode缓存命中率超98%，叠加1.5倍限时额度加成后，GLM Coding Plan整体使用量接近常规额度的1.8倍。",
+   "published_at": "2026-08-11T05:52:25.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3850,
    "title": "Claude Code 自动模式默认开启原理",
@@ -6738,6 +6765,15 @@
  ],
  "GPT-5.6": [
   {
+   "id": 3881,
+   "title": "编写智能体时，哪种编程语言最合适？",
+   "summary": "针对\"动态语言比静态语言更省 LLM token\"的流行说法，作者用 GPT-5.6 Sol 让智能体实现 zstd 解码器进行实测。结果显示，medium 努力度下动态语言表现更好，ultra 下静态语言反而更优，且此前评测存在测试路径错误等缺陷。作者认为，琐碎任务上的性能无法推广到更大问题。",
+   "published_at": "2026-08-11T04:58:14.908Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3845,
    "title": "OpenAI 推出 GPT-5.6-Cyber，面向授权漏洞研究的网络安全专用模型",
    "summary": "OpenAI 发布网络安全专用模型 GPT-5.6-Cyber，可通过 Daybreak Red 获取，用于授权的漏洞研究、漏洞验证和安全测试。该模型旨在应对网络防御窗口不断收窄的挑战，为安全研究人员提供专门工具。",
@@ -7393,6 +7429,15 @@
    "url": "https://blog.google/products/ads-commerce/google-ads-analytics-ai-updates",
    "category": "ai-products",
    "source": "Google Blog：AI（RSS）"
+  },
+  {
+   "id": 3895,
+   "title": "窃取专有 LLM API 的推理轨迹：加密块可跨会话互换引发解密越狱",
+   "summary": "研究发现，Anthropic、OpenAI 和 Google 等专有 LLM 的加密推理轨迹块可跨会话、用户和模型互换，攻击者将其注入同提供商防护较弱的模型，即可强制其以明文输出推理内容。",
+   "published_at": "2026-08-10T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
   },
   {
    "id": 3767,
@@ -10656,6 +10701,15 @@
  ],
  "MiniMax": [
   {
+   "id": 3880,
+   "title": "用 ComfyUI API 实现 MiniMax-H3 多模态视频与音频生成流水线",
+   "summary": "本教程演示如何以 ComfyUI 为无头推理后端，构建端到端的 MiniMax-H3 视频生成工作流。通过 Python 直接构建执行图，支持文生视频、首尾帧条件生成和参考图像条件生成，并自动根据 GPU 显存选择 quality、balanced、squeeze 三种权重配置。流水线涵盖模型自动下载、节点模式校验、音视频联合解码与进度监控，无需图形界面即可复现实验。",
+   "published_at": "2026-08-11T05:44:38.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3448,
    "title": "MiniMax-H3 通过 MLX 移植可在 Apple Silicon 上运行",
    "summary": "MiniMax 发布 MiniMax-H3，一个可接受文本、图像、音频和视频并生成最长 15 秒带音频视频片段的通用全模态生成系统。Python 包 PipeNetwork/minimax-h3-mlx 将其移植到 MLX，支持 Apple Silicon 运行。作者在 M5 Max MacBook Pro 上实测，下载约 115 GB 模型文件，视频生成耗时不到 45 分钟。",
@@ -11865,6 +11919,15 @@
  ],
  "OpenAI": [
   {
+   "id": 3877,
+   "title": "OpenAI 用 Astra 模型攻克 10 道数学难题，数学家既兴奋又担忧",
+   "summary": "OpenAI 宣布其未发布的 Astra 模型解决了 10 道长期悬而未决的数学难题，涵盖球体堆积、纠错码、非 sofic 群存在性等领域，并发布超 250 页论文及 Lean 验证结果。",
+   "published_at": "2026-08-11T11:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3845,
    "title": "OpenAI 推出 GPT-5.6-Cyber，面向授权漏洞研究的网络安全专用模型",
    "summary": "OpenAI 发布网络安全专用模型 GPT-5.6-Cyber，可通过 Daybreak Red 获取，用于授权的漏洞研究、漏洞验证和安全测试。该模型旨在应对网络防御窗口不断收窄的挑战，为安全研究人员提供专门工具。",
@@ -11872,6 +11935,15 @@
    "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
    "category": "ai-models",
    "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 3895,
+   "title": "窃取专有 LLM API 的推理轨迹：加密块可跨会话互换引发解密越狱",
+   "summary": "研究发现，Anthropic、OpenAI 和 Google 等专有 LLM 的加密推理轨迹块可跨会话、用户和模型互换，攻击者将其注入同提供商防护较弱的模型，即可强制其以明文输出推理内容。",
+   "published_at": "2026-08-10T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
   },
   {
    "id": 3821,

@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 243,
-  "last_seen": "2026-08-11"
+  "mentions": 245,
+  "last_seen": "2026-08-11T11:00:00.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 185,
-  "last_seen": "2026-08-11"
+  "mentions": 187,
+  "last_seen": "2026-08-11T03:57:53.000Z"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 141,
+  "mentions": 142,
   "last_seen": "2026-08-11"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 127,
-  "last_seen": "2026-08-11"
+  "mentions": 128,
+  "last_seen": "2026-08-11T05:52:25.000Z"
  },
  {
   "id": 21,
@@ -108,8 +108,8 @@
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 43,
-  "last_seen": "2026-08-11"
+  "mentions": 44,
+  "last_seen": "2026-08-11T04:58:14.908Z"
  },
  {
   "id": 2,
@@ -147,18 +147,18 @@
   "last_seen": "2026-08-08"
  },
  {
+  "id": 3,
+  "name": "MiniMax",
+  "type": "company",
+  "mentions": 22,
+  "last_seen": "2026-08-11T05:44:38.000Z"
+ },
+ {
   "id": 20,
   "name": "HuggingFace",
   "type": "company",
   "mentions": 22,
   "last_seen": "2026-08-07"
- },
- {
-  "id": 3,
-  "name": "MiniMax",
-  "type": "company",
-  "mentions": 21,
-  "last_seen": "2026-08-05"
  },
  {
   "id": 51,
