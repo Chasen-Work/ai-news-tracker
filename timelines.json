@@ -2380,6 +2380,15 @@
    "source": "公众号：智谱（GLM）"
   },
   {
+   "id": 3964,
+   "title": "跨会话传消息后，Codex 和 Claude 如何重构 vibe coding 工作流",
+   "summary": "Codex 和 Claude 新增跨 Session 传消息功能后，新对话可从之前所有对话中选择可用消息，省去交接文档和 git 备份。作者据此重构工作流：主对话守住目标与决策，分支对话独立探索新想法，完成后由主对话读取完整记录。Codex 通过复制会话 ID 精确寻址，Claude Code 则用内置 session management 搜索对话历史，但桌面端只能搜索当前可访问的会话记录。",
+   "published_at": "2026-08-11T14:15:07.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 3850,
    "title": "Claude Code 自动模式默认开启原理",
    "summary": "我们最近将自动模式设为 Claude Code 的默认选项，这意味着你不再需要批准每一个操作。 但什么决定某个操作是否可以安全运行？看看它是如何工作的：",
@@ -4114,6 +4123,15 @@
    "url": "https://x.com/OpenAIDevs/status/2087242829076791392",
    "category": "ai-products",
    "source": "X：OpenAI Developers (@OpenAIDevs)"
+  },
+  {
+   "id": 3964,
+   "title": "跨会话传消息后，Codex 和 Claude 如何重构 vibe coding 工作流",
+   "summary": "Codex 和 Claude 新增跨 Session 传消息功能后，新对话可从之前所有对话中选择可用消息，省去交接文档和 git 备份。作者据此重构工作流：主对话守住目标与决策，分支对话独立探索新想法，完成后由主对话读取完整记录。Codex 通过复制会话 ID 精确寻址，Claude Code 则用内置 session management 搜索对话历史，但桌面端只能搜索当前可访问的会话记录。",
+   "published_at": "2026-08-11T14:15:07.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
   },
   {
    "id": 3791,
@@ -10011,6 +10029,15 @@
  ],
  "Meta": [
   {
+   "id": 3951,
+   "title": "Meta 开源 Muse Glimmer 登陆 OpenRouter",
+   "summary": "Meta AI 超级智能实验室的首个开放权重模型 Muse Glimmer 已在 OpenRouter 上线！\n\n这是一款 30B 密集文本+图像模型，采用 Apache 2.0 许可证，旨在成为可靠的本地智能体，MCP Atlas 得分 75.5，SWE-Bench Pro 得分 51.2。\n\nhttps://openrouter.ai/meta/muse-glimmer-30b",
+   "published_at": "2026-08-12T12:00:18.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3907,
    "title": "Databricks 开源 Metals v2：面向数百万行代码库的 Java 和 Scala 语言服务器",
    "summary": "Databricks 开源 Metals v2，这是其面向数百万行代码库的 Java 和 Scala 语言服务器。Metals v2 专为智能体驱动的开发场景设计，旨在提升大规模代码库中的编辑与导航性能。目前 Databricks 的大部分代码已由智能体编写，该工具服务于工程师仍需要手动介入的环节。",
@@ -14637,6 +14664,15 @@
   }
  ],
  "OpenRouter": [
+  {
+   "id": 3951,
+   "title": "Meta 开源 Muse Glimmer 登陆 OpenRouter",
+   "summary": "Meta AI 超级智能实验室的首个开放权重模型 Muse Glimmer 已在 OpenRouter 上线！\n\n这是一款 30B 密集文本+图像模型，采用 Apache 2.0 许可证，旨在成为可靠的本地智能体，MCP Atlas 得分 75.5，SWE-Bench Pro 得分 51.2。\n\nhttps://openrouter.ai/meta/muse-glimmer-30b",
+   "published_at": "2026-08-12T12:00:18.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 3846,
    "title": "OpenRouter 推出由市场智慧驱动的新版 Auto 路由器",

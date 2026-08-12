@@ -24,14 +24,14 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 128,
+  "mentions": 129,
   "last_seen": "2026-08-12"
  },
  {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 83,
+  "mentions": 84,
   "last_seen": "2026-08-12T00:08:00.000Z"
  },
  {
@@ -52,8 +52,8 @@
   "id": 43,
   "name": "Meta",
   "type": "company",
-  "mentions": 58,
-  "last_seen": "2026-08-12"
+  "mentions": 59,
+  "last_seen": "2026-08-12T12:00:18.000Z"
  },
  {
   "id": 13,
@@ -84,18 +84,18 @@
   "last_seen": "2026-08-12"
  },
  {
+  "id": 46,
+  "name": "OpenRouter",
+  "type": "company",
+  "mentions": 48,
+  "last_seen": "2026-08-12T12:00:18.000Z"
+ },
+ {
   "id": 149,
   "name": "Cursor",
   "type": "company",
   "mentions": 48,
   "last_seen": "2026-08-07"
- },
- {
-  "id": 46,
-  "name": "OpenRouter",
-  "type": "company",
-  "mentions": 47,
-  "last_seen": "2026-08-11"
  },
  {
   "id": 4,
