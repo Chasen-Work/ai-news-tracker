@@ -196,13 +196,31 @@
  ],
  "Anthropic": [
   {
-   "id": 3882,
-   "title": "消息称 Anthropic 最快今年 9 月上市，向投资者淡化 AI 模型竞争等挑战",
-   "summary": "Anthropic 正与潜在投资者接触，为可能成为史上规模最大的 IPO 做准备，计划今年 9 月或 10 月初正式上市。公司估值高达 9，650 亿美元，年化收入已超 470 亿美元，并淡化来自中国 AI 企业的竞争影响。Anthropic 还计划拓展 AI 在医疗和生物学领域的应用，但尚未公布具体 IPO 定价方案。",
-   "published_at": "2026-08-11T03:57:53.000Z",
-   "url": "",
+   "id": 3908,
+   "title": "研究人员发现可读取ChatGPT等模型加密推理过程的API漏洞",
+   "summary": "Alexander Panfilov团队发现OpenAI、Anthropic、Google等主要AI提供商API存在漏洞，可读取推理模型的加密思考过程。扫描约7000条公开会话发现62个API密钥、33个邮箱和33个密码。通过越狱，Anthropic的Haiku 4.5可逐字转写Opus 4.8的原始推理；解码10000条推理轨迹的API成本约720美元。",
+   "published_at": "2026-08-12",
+   "url": "https://the-decoder.com/but-marinade-and-leaked-passwords-are-what-researchers-found-in-chatgpts-hidden-reasoning",
    "category": "industry",
-   "source": ""
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 3909,
+   "title": "消息称 Anthropic 最快今年 9 月上市，向投资者淡化 AI 模型竞争等挑战",
+   "summary": "Anthropic 正与潜在投资者接触，为可能成为史上规模最大的 IPO 做准备，计划今年 9 月或 10 月初正式上市。公司估值高达 9,650 亿美元，年化收入已超 470 亿美元，并淡化来自中国 AI 企业的竞争影响。Anthropic 还计划拓展 AI 在医疗和生物学领域的应用，但尚未公布具体 IPO 定价方案。",
+   "published_at": "2026-08-12",
+   "url": "https://www.ithome.com/0/988/239.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 3913,
+   "title": "英伟达循环融资达到新高度，黄仁勋是否过度出牌？",
+   "summary": "英伟达股价在相关消息公布后小幅下滑，收盘报217.55美元，盘前略有回升。金融记者Holger Zschaepitz和曾预测安然倒闭的Jim Chanos均对英伟达的循环融资做法表示担忧。此外，英伟达将发布真正开源（非仅开放权重）的Nemotron模型新版本，这可能最终削弱其合作伙伴OpenAI和Anthropic的地位。",
+   "published_at": "2026-08-12",
+   "url": "https://garymarcus.substack.com/p/breaking-circular-financing-reaches",
+   "category": "industry",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
   },
   {
    "id": 3856,
@@ -1881,6 +1899,24 @@
  ],
  "Apple": [
   {
+   "id": 3915,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11–16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-12",
+   "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 3934,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11-16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-11T16:41:17.281Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 3790,
    "title": "苹果 Mac 简体中文支持文档更新，“Apple 智能”阿里千问扩展现身",
    "summary": "苹果官网 Mac 简体中文使用手册新增《在 Mac 上配合 Apple 智能使用千问》支持文档，明确 Apple 智能可配合阿里巴巴千问模型工作。千问扩展适用于 macOS 26.6 或更高版本，需中国大陆 Apple 账户及机型，支持写作工具与 Siri，用户需登录千问账户使用。",
@@ -2335,13 +2371,13 @@
  ],
  "Claude Code": [
   {
-   "id": 3879,
+   "id": 3905,
    "title": "ZCode全面升级：Goal、Subagents、Remote Control与闲时任务四大功能上线",
    "summary": "ZCode针对GLM深度优化，今日上线Goal、Subagents、Remote Control与闲时任务四大功能。在Z.ai Code Bench测试中，GLM-5.2搭配ZCode较搭配Claude Code任务整体通过率高2.39%；ZCode缓存命中率超98%，叠加1.5倍限时额度加成后，GLM Coding Plan整体使用量接近常规额度的1.8倍。",
-   "published_at": "2026-08-11T05:52:25.000Z",
-   "url": "",
+   "published_at": "2026-08-12",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494052&idx=1&sn=ee3ab3d0f4550e9120927c53a27522c9",
    "category": "ai-products",
-   "source": ""
+   "source": "公众号：智谱（GLM）"
   },
   {
    "id": 3850,
@@ -4061,6 +4097,24 @@
   }
  ],
  "Codex": [
+  {
+   "id": 3926,
+   "title": "零基础用户半天上手AI的12步实操流程",
+   "summary": "文章给出一套零基础用户半天上手AI的12步实操流程：准备内存不低于16G的电脑，订阅ChatGPT并安装Codex或使用WorkBuddy，用语音输入法以【背景、痛点、需求】框架向AI交代任务，经苏格拉底提问澄清需求后投喂文件让AI直接完成，最后沉淀为可复用Skill。文中建议Codex选GPT-5.6 Sol最高模型，WorkBuddy选Kimi K3。",
+   "published_at": "2026-08-12T00:08:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 3906,
+   "title": "ChatGPT 桌面端支持导入其他智能体工作数据",
+   "summary": "你现在可以将其他智能体的工作内容与 ChatGPT Work 和 Codex 保持同步。 可导入项目、聊天记录、技能和插件，查看导入历史，并可在设置中选择开启自动更新。 现已在 ChatGPT 桌面应用中提供。",
+   "published_at": "2026-08-12",
+   "url": "https://x.com/OpenAIDevs/status/2087242829076791392",
+   "category": "ai-products",
+   "source": "X：OpenAI Developers (@OpenAIDevs)"
+  },
   {
    "id": 3791,
    "title": "OpenAI 桌面端 ChatGPT 上线语音交互功能，可语音操控电脑执行多步骤任务",
@@ -6765,13 +6819,22 @@
  ],
  "GPT-5.6": [
   {
-   "id": 3881,
-   "title": "编写智能体时，哪种编程语言最合适？",
-   "summary": "针对\"动态语言比静态语言更省 LLM token\"的流行说法，作者用 GPT-5.6 Sol 让智能体实现 zstd 解码器进行实测。结果显示，medium 努力度下动态语言表现更好，ultra 下静态语言反而更优，且此前评测存在测试路径错误等缺陷。作者认为，琐碎任务上的性能无法推广到更大问题。",
-   "published_at": "2026-08-11T04:58:14.908Z",
+   "id": 3926,
+   "title": "零基础用户半天上手AI的12步实操流程",
+   "summary": "文章给出一套零基础用户半天上手AI的12步实操流程：准备内存不低于16G的电脑，订阅ChatGPT并安装Codex或使用WorkBuddy，用语音输入法以【背景、痛点、需求】框架向AI交代任务，经苏格拉底提问澄清需求后投喂文件让AI直接完成，最后沉淀为可复用Skill。文中建议Codex选GPT-5.6 Sol最高模型，WorkBuddy选Kimi K3。",
+   "published_at": "2026-08-12T00:08:00.000Z",
    "url": "",
    "category": "tip",
    "source": ""
+  },
+  {
+   "id": 3921,
+   "title": "编写智能体时，哪种编程语言最合适？",
+   "summary": "针对“动态语言比静态语言更省 LLM token”的流行说法，作者用 GPT-5.6 Sol 让智能体实现 zstd 解码器进行实测。结果显示，medium 努力度下动态语言表现更好，ultra 下静态语言反而更优，且此前评测存在测试路径错误等缺陷。作者认为，琐碎任务上的性能无法推广到更大问题。",
+   "published_at": "2026-08-12",
+   "url": "http://danluu.com/pl-tokens",
+   "category": "tip",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
   },
   {
    "id": 3845,
@@ -7421,6 +7484,51 @@
   }
  ],
  "Google": [
+  {
+   "id": 3904,
+   "title": "Gemini 助力 Database Migration Service 加速 PostgreSQL 迁移",
+   "summary": "Google Cloud 在 Database Migration Service（DMS）中推出由 Gemini 驱动的 AI 辅助代码转换，可将 Oracle 或 SQL Server 的存储过程、触发器和自定义函数转换为 PostgreSQL PL/pgSQL 代码。",
+   "published_at": "2026-08-12",
+   "url": "https://cloud.google.com/blog/products/databases/accelerate-postgresql-migrations-with-gemini-in-dms",
+   "category": "ai-products",
+   "source": "Google Cloud：Databases（RSS）"
+  },
+  {
+   "id": 3908,
+   "title": "研究人员发现可读取ChatGPT等模型加密推理过程的API漏洞",
+   "summary": "Alexander Panfilov团队发现OpenAI、Anthropic、Google等主要AI提供商API存在漏洞，可读取推理模型的加密思考过程。扫描约7000条公开会话发现62个API密钥、33个邮箱和33个密码。通过越狱，Anthropic的Haiku 4.5可逐字转写Opus 4.8的原始推理；解码10000条推理轨迹的API成本约720美元。",
+   "published_at": "2026-08-12",
+   "url": "https://the-decoder.com/but-marinade-and-leaked-passwords-are-what-researchers-found-in-chatgpts-hidden-reasoning",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 3912,
+   "title": "NVIDIA 为何需要新供电架构以扩展 AI 算力性能",
+   "summary": "NVIDIA 主张以 800 VDC 直流配电替代传统交流多次转换，以降低损耗、支撑 AI 算力扩展。NVIDIA 与 Google、Microsoft 通过 OCP 联合制定该架构，已发布白皮书及 LVDC 固态变压器规范 v0.3，超 80 家设备商正据此开发产品。",
+   "published_at": "2026-08-12",
+   "url": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 3917,
+   "title": "AMIE 研究医疗 AI 系统首次展示实时临床视频问诊能力",
+   "summary": "Google Research 与 Google DeepMind 推进医疗 AI 系统 AMIE，实现实时临床视频问诊，首次在此场景展示专家级 AI 能力。该系统基于 Gemini 和 Project Astra 构建，可解读视觉与听觉线索、引导虚拟体格检查并实时诊断推理。随机研究中，临床评估者对 AMIE 的病史采集、诊断准确性等核心能力给予好评，患者演员也更偏好视频体验。",
+   "published_at": "2026-08-12",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
+   "category": "paper",
+   "source": "Google Blog：AI（RSS）"
+  },
+  {
+   "id": 3927,
+   "title": "ChatGPT 与 Gemini 双双突破 10 亿用户",
+   "summary": "OpenAI 与 Google 的聊天机器人均跨过 10 亿用户门槛。OpenAI 在 8 月 6 日的博文中披露 ChatGPT 月活用户超 10 亿，Google CEO 皮查伊则宣布 Gemini 月活达 10 亿，成为其史上增长最快的产品。OpenAI 称 ChatGPT 在 7 月周活用户已达 10 亿，而 Gemini 在 2 月月活为 7.5 亿，增长势头更猛。",
+   "published_at": "2026-08-11T19:41:42.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 3853,
    "title": "Google 为 Google Ads 和 Google Analytics 推出新 AI 与智能体功能",
@@ -8702,6 +8810,15 @@
  ],
  "Google DeepMind": [
   {
+   "id": 3917,
+   "title": "AMIE 研究医疗 AI 系统首次展示实时临床视频问诊能力",
+   "summary": "Google Research 与 Google DeepMind 推进医疗 AI 系统 AMIE，实现实时临床视频问诊，首次在此场景展示专家级 AI 能力。该系统基于 Gemini 和 Project Astra 构建，可解读视觉与听觉线索、引导虚拟体格检查并实时诊断推理。随机研究中，临床评估者对 AMIE 的病史采集、诊断准确性等核心能力给予好评，患者演员也更偏好视频体验。",
+   "published_at": "2026-08-12",
+   "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/amie-video-consultations",
+   "category": "paper",
+   "source": "Google Blog：AI（RSS）"
+  },
+  {
    "id": 3767,
    "title": "DeepMind 的 WeatherNext 飓风模型为预报员争取到额外一天预警时间",
    "summary": "Google DeepMind 与 Google Research 开发的 AI 模型 WeatherNext，在 2025 年 10 月飓风 Melissa 登陆前 5 天，以 80% 的置信度预测其将以 5 级飓风强度袭击牙买加。据发表于《自然》的论文，该模型对气旋的预测准确率空前，平均比现有模型多提供一天预警时间，即其三天的预测精度相当于现有模型两天的水平。",
@@ -8946,6 +9063,15 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 3901,
+   "title": "SGLang 宣布 Day-0 支持 NVIDIA Nemotron 3.5 Lightning",
+   "summary": "SGLang 宣布对 NVIDIA Nemotron 3.5 Lightning 提供 Day-0 支持，该开源模型为 30B 总参数、3B 激活参数的混合专家架构，支持最长 1M token 上下文，可从 Hugging Face 下载 BF16 和 NVFP4 权重。模型支持 MTP、DFlash、DSpark 三种投机解码技术，并可通过 OpenAI 兼容 API 接入智能体工作流。",
+   "published_at": "2026-08-12",
+   "url": "https://www.lmsys.org/blog/2026-08-11-nemotron-3-5-lightning",
+   "category": "ai-models",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
   {
    "id": 3826,
    "title": "AI安全测试正成为安全风险",
@@ -9767,6 +9893,24 @@
  ],
  "Llama": [
   {
+   "id": 3915,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11–16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-12",
+   "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 3934,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11-16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-11T16:41:17.281Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 1715,
    "title": "LlamaIndex 发布 legal-kb：基于 Index v2 的智能体检索参考应用",
    "summary": "LlamaIndex 发布 legal-kb，一个基于 Index v2（LlamaParse Platform）的法律文档知识库参考应用。采用 Retrieval Harness 模式，赋予 Agent 四个文件系统风格工具：retrieve（混合语义检索，支持 rerank 和引用）、findFiles（精确/模糊文件名搜索）、readFile（带偏移量的原始内容读取）和 grepFile（正则匹配并返回字符位置）。Agent 需先调用 findFiles 确定文件清单，再依次使用其他工具定位内容。底层基于 Vercel AI SDK 6 的 ToolLoopAgent，可选用 OpenAI 或 Anthropic 模型，支持用…",
@@ -9782,6 +9926,26 @@
    "published_at": "2026-06-26T16:40:11.000Z",
    "url": "",
    "category": "ai-products",
+   "source": ""
+  }
+ ],
+ "Llama 1": [
+  {
+   "id": 3915,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11–16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-12",
+   "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 3934,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11-16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-11T16:41:17.281Z",
+   "url": "",
+   "category": "paper",
    "source": ""
   }
  ],
@@ -9846,6 +10010,33 @@
   }
  ],
  "Meta": [
+  {
+   "id": 3907,
+   "title": "Databricks 开源 Metals v2：面向数百万行代码库的 Java 和 Scala 语言服务器",
+   "summary": "Databricks 开源 Metals v2，这是其面向数百万行代码库的 Java 和 Scala 语言服务器。Metals v2 专为智能体驱动的开发场景设计，旨在提升大规模代码库中的编辑与导航性能。目前 Databricks 的大部分代码已由智能体编写，该工具服务于工程师仍需要手动介入的环节。",
+   "published_at": "2026-08-12",
+   "url": "https://www.databricks.com/blog/open-sourcing-metals-v2-databricks-java-and-scala-language-server-multi-million-line-codebases",
+   "category": "ai-products",
+   "source": "Databricks：Blog（RSS）"
+  },
+  {
+   "id": 3915,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11–16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-12",
+   "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 3934,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11-16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-11T16:41:17.281Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 3843,
    "title": "SGLang 为 Muse Glimmer 提供 Day-0 支持，针对本地智能体工作流优化推理",
@@ -10344,6 +10535,15 @@
  ],
  "Microsoft": [
   {
+   "id": 3912,
+   "title": "NVIDIA 为何需要新供电架构以扩展 AI 算力性能",
+   "summary": "NVIDIA 主张以 800 VDC 直流配电替代传统交流多次转换，以降低损耗、支撑 AI 算力扩展。NVIDIA 与 Google、Microsoft 通过 OCP 联合制定该架构，已发布白皮书及 LVDC 固态变压器规范 v0.3，超 80 家设备商正据此开发产品。",
+   "published_at": "2026-08-12",
+   "url": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
    "id": 3644,
    "title": "Microsoft 的 SkillOpt 证明优化后的智能体技能工件可在不同模型规模及 Codex 与 Claude Code 之间迁移",
    "summary": "Microsoft 与上海交大、同济、复旦团队提出的 SkillOpt 通过文本空间优化训练单一技能文档，冻结目标模型，使优化后的技能工件可跨模型规模和跨工具链迁移。在 Codex 上优化的 SpreadsheetBench 技能部署到 Claude Code 后得分 81.8，超过后者自行训练技能得到的 80.4。全部 4 项跨模型、4 项跨工具链和 3 项跨基准迁移结果均高于目标的无技能基线。",
@@ -10701,13 +10901,13 @@
  ],
  "MiniMax": [
   {
-   "id": 3880,
+   "id": 3919,
    "title": "用 ComfyUI API 实现 MiniMax-H3 多模态视频与音频生成流水线",
    "summary": "本教程演示如何以 ComfyUI 为无头推理后端，构建端到端的 MiniMax-H3 视频生成工作流。通过 Python 直接构建执行图，支持文生视频、首尾帧条件生成和参考图像条件生成，并自动根据 GPU 显存选择 quality、balanced、squeeze 三种权重配置。流水线涵盖模型自动下载、节点模式校验、音视频联合解码与进度监控，无需图形界面即可复现实验。",
-   "published_at": "2026-08-11T05:44:38.000Z",
-   "url": "",
+   "published_at": "2026-08-12",
+   "url": "https://www.marktechpost.com/2026/08/10/implementing-a-minimax-h3-multimodal-video-and-audio-generation-pipeline-with-comfyui-apis",
    "category": "tip",
-   "source": ""
+   "source": "MarkTechPost（RSS）"
   },
   {
    "id": 3448,
@@ -10983,6 +11183,33 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 3900,
+   "title": "NVIDIA 推出 Nemotron 3.5 Lightning，加速本地智能体任务",
+   "summary": "NVIDIA 发布 Nemotron 3.5 Lightning，一款可定制的开源 30B 混合专家（MoE）模型，专为常驻智能体设计。相比同类开源模型，其 token 生成速度最高提升 4 倍，任务完成时间缩短 30%。该模型采用开放权重，支持用户微调以匹配特定任务，并可在 RTX PC、DGX Spark 及 Jetson 等设备上运行。",
+   "published_at": "2026-08-12",
+   "url": "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron",
+   "category": "ai-models",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 3901,
+   "title": "SGLang 宣布 Day-0 支持 NVIDIA Nemotron 3.5 Lightning",
+   "summary": "SGLang 宣布对 NVIDIA Nemotron 3.5 Lightning 提供 Day-0 支持，该开源模型为 30B 总参数、3B 激活参数的混合专家架构，支持最长 1M token 上下文，可从 Hugging Face 下载 BF16 和 NVFP4 权重。模型支持 MTP、DFlash、DSpark 三种投机解码技术，并可通过 OpenAI 兼容 API 接入智能体工作流。",
+   "published_at": "2026-08-12",
+   "url": "https://www.lmsys.org/blog/2026-08-11-nemotron-3-5-lightning",
+   "category": "ai-models",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
+   "id": 3912,
+   "title": "NVIDIA 为何需要新供电架构以扩展 AI 算力性能",
+   "summary": "NVIDIA 主张以 800 VDC 直流配电替代传统交流多次转换，以降低损耗、支撑 AI 算力扩展。NVIDIA 与 Google、Microsoft 通过 OCP 联合制定该架构，已发布白皮书及 LVDC 固态变压器规范 v0.3，超 80 家设备商正据此开发产品。",
+   "published_at": "2026-08-12",
+   "url": "https://blogs.nvidia.com/blog/800-vdc-power-architecture-ai-factory",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
   {
    "id": 3822,
    "title": "NVIDIA 发布 NemotronLabs VoiceChat 11B：开源全双工语音模型，支持约 450 毫秒轮换与实时工具调用",
@@ -11708,6 +11935,15 @@
  ],
  "Nemotron": [
   {
+   "id": 3913,
+   "title": "英伟达循环融资达到新高度，黄仁勋是否过度出牌？",
+   "summary": "英伟达股价在相关消息公布后小幅下滑，收盘报217.55美元，盘前略有回升。金融记者Holger Zschaepitz和曾预测安然倒闭的Jim Chanos均对英伟达的循环融资做法表示担忧。此外，英伟达将发布真正开源（非仅开放权重）的Nemotron模型新版本，这可能最终削弱其合作伙伴OpenAI和Anthropic的地位。",
+   "published_at": "2026-08-12",
+   "url": "https://garymarcus.substack.com/p/breaking-circular-financing-reaches",
+   "category": "industry",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
    "id": 3822,
    "title": "NVIDIA 发布 NemotronLabs VoiceChat 11B：开源全双工语音模型，支持约 450 毫秒轮换与实时工具调用",
    "summary": "NVIDIA 发布开源端到端全双工语音对话模型 NemotronLabs VoiceChat 11B，在统一网络中完成流式语音理解与生成，实测轮换延迟 448 毫秒。该模型为首个支持对话中工具调用的开源全双工模型，通过独立输出通道及预置\"保持\"话术避免 API 执行期间冷场。权重与容器已公开，但仅限研究用途，需单张 80 GB 显存 GPU，目前无托管 API。",
@@ -11845,6 +12081,24 @@
  ],
  "Nemotron 3": [
   {
+   "id": 3900,
+   "title": "NVIDIA 推出 Nemotron 3.5 Lightning，加速本地智能体任务",
+   "summary": "NVIDIA 发布 Nemotron 3.5 Lightning，一款可定制的开源 30B 混合专家（MoE）模型，专为常驻智能体设计。相比同类开源模型，其 token 生成速度最高提升 4 倍，任务完成时间缩短 30%。该模型采用开放权重，支持用户微调以匹配特定任务，并可在 RTX PC、DGX Spark 及 Jetson 等设备上运行。",
+   "published_at": "2026-08-12",
+   "url": "https://blogs.nvidia.com/blog/local-ai-open-source-models-agents-nemotron",
+   "category": "ai-models",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 3901,
+   "title": "SGLang 宣布 Day-0 支持 NVIDIA Nemotron 3.5 Lightning",
+   "summary": "SGLang 宣布对 NVIDIA Nemotron 3.5 Lightning 提供 Day-0 支持，该开源模型为 30B 总参数、3B 激活参数的混合专家架构，支持最长 1M token 上下文，可从 Hugging Face 下载 BF16 和 NVFP4 权重。模型支持 MTP、DFlash、DSpark 三种投机解码技术，并可通过 OpenAI 兼容 API 接入智能体工作流。",
+   "published_at": "2026-08-12",
+   "url": "https://www.lmsys.org/blog/2026-08-11-nemotron-3-5-lightning",
+   "category": "ai-models",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
    "id": 2500,
    "title": "NVIDIA 发布 Nemotron 3 Embed 系列，8B 版本在 RTEB 基准上排名第一",
    "summary": "NVIDIA 发布 Nemotron 3 Embed 系列，包含三个开源 checkpoint，其中 8B-BF16 版本在 RTEB 基准上以 78.46 的平均 NDCG@10 排名第一。1B-NVFP4 版本在 Blackwell 上吞吐量比 BF16 高 2 倍，精度保留 99.5%，所有模型最大序列长度 32,768 tokens。",
@@ -11917,14 +12171,61 @@
    "source": "X：NVIDIA AI (@NVIDIAAI)"
   }
  ],
+ "Nemotron 4": [
+  {
+   "id": 3911,
+   "title": "消息称英伟达开发万亿参数开源 AI 模型 Nemotron 4，目标挑战全球顶级",
+   "summary": "英伟达正在研发新一代开源 AI 模型系列 Nemotron 4，规模最大的模型预计至少拥有 1 万亿个参数，旨在与全球最先进的开源模型竞争。英伟达尚未确定发布日期，最终训练也未完成，员工认为该模型最早可能在今年秋末准备就绪。此举意在通过开放模型生态扩大 AI 应用范围，并推动市场对其 GPU 算力的需求。",
+   "published_at": "2026-08-12",
+   "url": "https://www.ithome.com/0/988/524.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  }
+ ],
  "OpenAI": [
   {
-   "id": 3877,
+   "id": 3901,
+   "title": "SGLang 宣布 Day-0 支持 NVIDIA Nemotron 3.5 Lightning",
+   "summary": "SGLang 宣布对 NVIDIA Nemotron 3.5 Lightning 提供 Day-0 支持，该开源模型为 30B 总参数、3B 激活参数的混合专家架构，支持最长 1M token 上下文，可从 Hugging Face 下载 BF16 和 NVFP4 权重。模型支持 MTP、DFlash、DSpark 三种投机解码技术，并可通过 OpenAI 兼容 API 接入智能体工作流。",
+   "published_at": "2026-08-12",
+   "url": "https://www.lmsys.org/blog/2026-08-11-nemotron-3-5-lightning",
+   "category": "ai-models",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
+   "id": 3908,
+   "title": "研究人员发现可读取ChatGPT等模型加密推理过程的API漏洞",
+   "summary": "Alexander Panfilov团队发现OpenAI、Anthropic、Google等主要AI提供商API存在漏洞，可读取推理模型的加密思考过程。扫描约7000条公开会话发现62个API密钥、33个邮箱和33个密码。通过越狱，Anthropic的Haiku 4.5可逐字转写Opus 4.8的原始推理；解码10000条推理轨迹的API成本约720美元。",
+   "published_at": "2026-08-12",
+   "url": "https://the-decoder.com/but-marinade-and-leaked-passwords-are-what-researchers-found-in-chatgpts-hidden-reasoning",
+   "category": "industry",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 3913,
+   "title": "英伟达循环融资达到新高度，黄仁勋是否过度出牌？",
+   "summary": "英伟达股价在相关消息公布后小幅下滑，收盘报217.55美元，盘前略有回升。金融记者Holger Zschaepitz和曾预测安然倒闭的Jim Chanos均对英伟达的循环融资做法表示担忧。此外，英伟达将发布真正开源（非仅开放权重）的Nemotron模型新版本，这可能最终削弱其合作伙伴OpenAI和Anthropic的地位。",
+   "published_at": "2026-08-12",
+   "url": "https://garymarcus.substack.com/p/breaking-circular-financing-reaches",
+   "category": "industry",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
+   "id": 3918,
    "title": "OpenAI 用 Astra 模型攻克 10 道数学难题，数学家既兴奋又担忧",
    "summary": "OpenAI 宣布其未发布的 Astra 模型解决了 10 道长期悬而未决的数学难题，涵盖球体堆积、纠错码、非 sofic 群存在性等领域，并发布超 250 页论文及 Lean 验证结果。",
-   "published_at": "2026-08-11T11:00:00.000Z",
-   "url": "",
+   "published_at": "2026-08-12",
+   "url": "https://www.theverge.com/ai-artificial-intelligence/977273/the-ai-takeover-of-mathematics-has-begun",
    "category": "tip",
+   "source": "The Verge：AI（RSS）"
+  },
+  {
+   "id": 3927,
+   "title": "ChatGPT 与 Gemini 双双突破 10 亿用户",
+   "summary": "OpenAI 与 Google 的聊天机器人均跨过 10 亿用户门槛。OpenAI 在 8 月 6 日的博文中披露 ChatGPT 月活用户超 10 亿，Google CEO 皮查伊则宣布 Gemini 月活达 10 亿，成为其史上增长最快的产品。OpenAI 称 ChatGPT 在 7 月周活用户已达 10 亿，而 Gemini 在 2 月月活为 7.5 亿，增长势头更猛。",
+   "published_at": "2026-08-11T19:41:42.000Z",
+   "url": "",
+   "category": "industry",
    "source": ""
   },
   {
@@ -16417,6 +16718,15 @@
  ],
  "Runway": [
   {
+   "id": 3903,
+   "title": "Runway Seedance 2.5 上线，支持50角色参考",
+   "summary": "完整阵容，完整曲目，一次生成一个。 Seedance 2.5 已在 Runway 上线，支持 50 个独特角色参考，以及最长 30 秒、与音乐同步的片段。点击下方链接即可开始使用。",
+   "published_at": "2026-08-12",
+   "url": "https://x.com/runwayml/status/2087251184658657346",
+   "category": "ai-products",
+   "source": "X：Runway (@runwayml)"
+  },
+  {
    "id": 3682,
    "title": "Runway 上线 Seedance 2.5，支持 50 个角色参考",
    "summary": "Seedance 2.5 现已登陆 Runway。每次生成最多可引用 50 个角色参考，构建充满角色的完整世界；可创作最长 30 秒、带完整音效与对白的片段，再按你的故事需求随意剪辑与延展。\n\n点击下方链接立即开始。",
@@ -16886,6 +17196,24 @@
   }
  ],
  "llama": [
+  {
+   "id": 3915,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11–16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-12",
+   "url": "https://github.com/trycua/cua/blob/main/blog/gpu-passthrough-macos-vms.md",
+   "category": "paper",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 3934,
+   "title": "Apple Silicon 与 macOS 虚拟机：借助 Llama.cpp 实现 11-16 倍的 LLM 推理加速",
+   "summary": "研究团队为 macOS 虚拟机中的 Metal 能力查询构建进程级兼容层，使 llama.cpp 能选用更新的 Metal 内核。在 M1 Ultra 上，TinyLlama 1.1B 的提示处理速度提升 11.08 倍、token 生成提升 16.36 倍，接近裸机性能的 98%；Gemma 4 12B 的提示处理与生成速度分别提升 7.20 倍和 14.54 倍。",
+   "published_at": "2026-08-11T16:41:17.281Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 2597,
    "title": "Ollama 获 8800 万美元融资，加速开放模型生态发展",
