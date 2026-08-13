@@ -196,6 +196,15 @@
  ],
  "Anthropic": [
   {
+   "id": 3991,
+   "title": "Anthropic 联合独立研究者发布工人再培训项目证据综述",
+   "summary": "Anthropic 与独立研究者 David Roodman 合作发布报告，基于 56 项美国随机研究和欧洲实验证据，评估工人再培训项目应对 AI 劳动力市场冲击的效果。",
+   "published_at": "2026-08-13",
+   "url": "https://www.anthropic.com/research/reviewing-the-evidence-on-worker-retraining-programs",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
    "id": 3908,
    "title": "研究人员发现可读取ChatGPT等模型加密推理过程的API漏洞",
    "summary": "Alexander Panfilov团队发现OpenAI、Anthropic、Google等主要AI提供商API存在漏洞，可读取推理模型的加密思考过程。扫描约7000条公开会话发现62个API密钥、33个邮箱和33个密码。通过越狱，Anthropic的Haiku 4.5可逐字转写Opus 4.8的原始推理；解码10000条推理轨迹的API成本约720美元。",
@@ -2371,6 +2380,15 @@
  ],
  "Claude Code": [
   {
+   "id": 3987,
+   "title": "Claude Code v2.1.229 发布：新增远程会话恢复、插件市场命令源及多项修复",
+   "summary": "Claude Code v2.1.229 发布，新增远程控制会话恢复、自托管 runner 的服务器端 hook 支持，以及插件市场命令源。修复了长响应流式输出丢失、窄终端渲染崩溃、Windows 扩展路径崩溃等问题。改进工作流扇出以复用缓存提示前缀，并调整 /commit-push-pr 对危险 git/gh 命令不再自动批准。",
+   "published_at": "2026-08-13",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.229",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
    "id": 3905,
    "title": "ZCode全面升级：Goal、Subagents、Remote Control与闲时任务四大功能上线",
    "summary": "ZCode针对GLM深度优化，今日上线Goal、Subagents、Remote Control与闲时任务四大功能。在Z.ai Code Bench测试中，GLM-5.2搭配ZCode较搭配Claude Code任务整体通过率高2.39%；ZCode缓存命中率超98%，叠加1.5倍限时额度加成后，GLM Coding Plan整体使用量接近常规额度的1.8倍。",
@@ -4107,13 +4125,31 @@
  ],
  "Codex": [
   {
-   "id": 3926,
+   "id": 3989,
+   "title": "RingCentral 如何用 ChatGPT Work 和 Codex 构建 AI 原生工作流",
+   "summary": "RingCentral 通过全员发放 ChatGPT Work 和 Codex，推动从工程到运营的 AI 原生开发，其 AI-Native Challenge 让数千名员工（含非技术人员）交付了可运行项目。",
+   "published_at": "2026-08-13",
+   "url": "https://openai.com/index/ringcentral",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 3992,
    "title": "零基础用户半天上手AI的12步实操流程",
    "summary": "文章给出一套零基础用户半天上手AI的12步实操流程：准备内存不低于16G的电脑，订阅ChatGPT并安装Codex或使用WorkBuddy，用语音输入法以【背景、痛点、需求】框架向AI交代任务，经苏格拉底提问澄清需求后投喂文件让AI直接完成，最后沉淀为可复用Skill。文中建议Codex选GPT-5.6 Sol最高模型，WorkBuddy选Kimi K3。",
-   "published_at": "2026-08-12T00:08:00.000Z",
-   "url": "",
+   "published_at": "2026-08-13",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685084&idx=1&sn=0899296dbc140eeb745f7a99f9d5ed9c",
    "category": "tip",
-   "source": ""
+   "source": "公众号：数字生命卡兹克"
+  },
+  {
+   "id": 3998,
+   "title": "OpenAI 研究：企业如何用 ChatGPT 和 Codex 落地智能体 AI",
+   "summary": "OpenAI 研究揭示企业采用智能体 AI 的方式，以及前沿企业如何在 AI 应用上拉开差距。企业正通过 ChatGPT 和 Codex 将 AI 从辅助转向执行，头部公司已率先将智能体投入实际业务流程。",
+   "published_at": "2026-08-13",
+   "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+   "category": "tip",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
   },
   {
    "id": 3906,
@@ -5033,6 +5069,15 @@
  ],
  "Cursor": [
   {
+   "id": 4006,
+   "title": "Cursor 与 SpaceXAI 联合发布 Grok 4.6",
+   "summary": "Cursor 与 SpaceXAI 今日发布 Grok 4.6，重点强化长时运行智能体与交互式视觉任务，在多项智能体编程与知识工作基准上达到前沿水平，并在 Artificial Analysis Intelligence Index 上追平 GPT-5.6 Sol。",
+   "published_at": "2026-08-12T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 3634,
    "title": "Cursor Router 如何为任务选择合适模型",
    "summary": "Cursor Router 通过 Compass 复杂度预测器和基于真实开发者流量的任务分类法，为每个对话轮次匹配最合适的模型。Auto Intelligence 模式在用户满意度超过 Fable 的同时成本降低 68%，Auto Balance 模式以低于 Opus 4.8 成本 41% 实现更优表现。系统从实时流量中学习模型在不同任务类别上的表现差异，以数据驱动方式替代基准分数推断。",
@@ -5466,6 +5511,15 @@
   }
  ],
  "DeepSeek": [
+  {
+   "id": 3993,
+   "title": "DeepSeek V4 Pro与Grok 4.6同日发布，双双逼近Claude Fable 5体验",
+   "summary": "DeepSeek V4 Pro正式版与Grok 4.6在2小时内先后发布，均为1.6T/1.5T参数模型，逼近Claude Fable 5体验。",
+   "published_at": "2026-08-13",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685175&idx=1&sn=64c383b5b757945397894270c5f38301",
+   "category": "tip",
+   "source": "公众号：数字生命卡兹克"
+  },
   {
    "id": 3549,
    "title": "开源「活人感写作.skill」：一个帮你写出没有AI味的文字的通用写作技能",
@@ -5977,6 +6031,15 @@
  ],
  "DeepSeek V4": [
   {
+   "id": 3993,
+   "title": "DeepSeek V4 Pro与Grok 4.6同日发布，双双逼近Claude Fable 5体验",
+   "summary": "DeepSeek V4 Pro正式版与Grok 4.6在2小时内先后发布，均为1.6T/1.5T参数模型，逼近Claude Fable 5体验。",
+   "published_at": "2026-08-13",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685175&idx=1&sn=64c383b5b757945397894270c5f38301",
+   "category": "tip",
+   "source": "公众号：数字生命卡兹克"
+  },
+  {
    "id": 3549,
    "title": "开源「活人感写作.skill」：一个帮你写出没有AI味的文字的通用写作技能",
    "summary": "数字生命卡兹克开源「活人感写作.skill」（英文名 human Writing.skill），旨在去除AI味、帮用户写出有真实生活感的文字。该Skill鼓励用户提供真实案例与情感，并针对辞章端禁用AI常用口癖和黑话，同时适配Qwen 3.8 Max、DeepSeek V4 Pro、Kimi K3等模型，可直接用于WorkBuddy、千问办公等产品。",
@@ -6345,6 +6408,15 @@
   }
  ],
  "GPT-5": [
+  {
+   "id": 3990,
+   "title": "空货架还是丢钥匙？Google 研究：Recall 是参数化事实性的瓶颈",
+   "summary": "Google Research 提出知识画像框架，发现前沿 LLM（如 Gemini3、GPT-5）的事实编码接近饱和，但回忆（recall）能力不足，多数事实错误源于“丢钥匙”而非“空货架”。该框架将事实分为编码失败、回忆失败等五类画像，并配套推出 WikiProfile 基准，含 2,150 条维基百科事实，每条配 10 个问题，用于分别探测编码、回忆与识别能力。",
+   "published_at": "2026-08-13",
+   "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality",
+   "category": "paper",
+   "source": "Google Research：Blog（网页）"
+  },
   {
    "id": 2959,
    "title": "数百用户向ChatGPT索要毒药与生物武器配方，部分获得高中生水平步骤指南",
@@ -6837,12 +6909,30 @@
  ],
  "GPT-5.6": [
   {
-   "id": 3926,
+   "id": 3979,
+   "title": "xAI 发布 Grok 4.6，强化长时运行智能体能力",
+   "summary": "xAI 今日发布 Grok 4.6，在 Grok 4.5 基础上重点强化长时运行智能体及更复杂的交互式与视觉工作能力。该模型在多项智能体编码与知识工作基准上达到前沿水平，在 Artificial Analysis Intelligence Index（九项基准综合分）上追平 GPT-5.6 Sol。",
+   "published_at": "2026-08-13",
+   "url": "https://x.ai/news/grok-4-6",
+   "category": "ai-models",
+   "source": "xAI：News（网页）"
+  },
+  {
+   "id": 3992,
    "title": "零基础用户半天上手AI的12步实操流程",
    "summary": "文章给出一套零基础用户半天上手AI的12步实操流程：准备内存不低于16G的电脑，订阅ChatGPT并安装Codex或使用WorkBuddy，用语音输入法以【背景、痛点、需求】框架向AI交代任务，经苏格拉底提问澄清需求后投喂文件让AI直接完成，最后沉淀为可复用Skill。文中建议Codex选GPT-5.6 Sol最高模型，WorkBuddy选Kimi K3。",
-   "published_at": "2026-08-12T00:08:00.000Z",
-   "url": "",
+   "published_at": "2026-08-13",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647685084&idx=1&sn=0899296dbc140eeb745f7a99f9d5ed9c",
    "category": "tip",
+   "source": "公众号：数字生命卡兹克"
+  },
+  {
+   "id": 4006,
+   "title": "Cursor 与 SpaceXAI 联合发布 Grok 4.6",
+   "summary": "Cursor 与 SpaceXAI 今日发布 Grok 4.6，重点强化长时运行智能体与交互式视觉任务，在多项智能体编程与知识工作基准上达到前沿水平，并在 Artificial Analysis Intelligence Index 上追平 GPT-5.6 Sol。",
+   "published_at": "2026-08-12T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
    "source": ""
   },
   {
@@ -7502,6 +7592,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 3990,
+   "title": "空货架还是丢钥匙？Google 研究：Recall 是参数化事实性的瓶颈",
+   "summary": "Google Research 提出知识画像框架，发现前沿 LLM（如 Gemini3、GPT-5）的事实编码接近饱和，但回忆（recall）能力不足，多数事实错误源于“丢钥匙”而非“空货架”。该框架将事实分为编码失败、回忆失败等五类画像，并配套推出 WikiProfile 基准，含 2,150 条维基百科事实，每条配 10 个问题，用于分别探测编码、回忆与识别能力。",
+   "published_at": "2026-08-13",
+   "url": "https://research.google/blog/empty-shelves-or-lost-keys-recall-is-the-bottleneck-for-parametric-factuality",
+   "category": "paper",
+   "source": "Google Research：Blog（网页）"
+  },
   {
    "id": 3904,
    "title": "Gemini 助力 Database Migration Service 加速 PostgreSQL 迁移",
@@ -10562,6 +10661,15 @@
  ],
  "Microsoft": [
   {
+   "id": 3982,
+   "title": "微软首发自研推理模型MAI-Thinking-1",
+   "summary": "我们的首个推理模型 MAI-Thinking-1 从零开始构建，现已在 Microsoft Foundry 上线。为团队点赞！更多详情如下。",
+   "published_at": "2026-08-13",
+   "url": "https://x.com/mustafasuleyman/status/2087570047967408396",
+   "category": "ai-models",
+   "source": "X：Mustafa Suleyman（Microsoft AI CEO） (@mustafasuleyman)"
+  },
+  {
    "id": 3912,
    "title": "NVIDIA 为何需要新供电架构以扩展 AI 算力性能",
    "summary": "NVIDIA 主张以 800 VDC 直流配电替代传统交流多次转换，以降低损耗、支撑 AI 算力扩展。NVIDIA 与 Google、Microsoft 通过 OCP 联合制定该架构，已发布白皮书及 LVDC 固态变压器规范 v0.3，超 80 家设备商正据此开发产品。",
@@ -12210,6 +12318,24 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 3996,
+   "title": "OpenRouter 工具调用指南：一次编写循环，切换模型字符串即可跨模型运行",
+   "summary": "OpenRouter 发布工具调用指南，展示如何用同一套代码在 Claude、GPT 和开源权重模型间切换，仅需更改模型字符串。指南涵盖定义工具、发送请求、读取 tool_calls 响应、执行函数并返回结果的完整循环，支持 OpenAI 兼容的 JSON schema，并提供 cURL、Python 和 JavaScript/TypeScript 示例。",
+   "published_at": "2026-08-13",
+   "url": "https://openrouter.ai/blog/tutorials/tool-calling",
+   "category": "tip",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
+  {
+   "id": 3998,
+   "title": "OpenAI 研究：企业如何用 ChatGPT 和 Codex 落地智能体 AI",
+   "summary": "OpenAI 研究揭示企业采用智能体 AI 的方式，以及前沿企业如何在 AI 应用上拉开差距。企业正通过 ChatGPT 和 Codex 将 AI 从辅助转向执行，头部公司已率先将智能体投入实际业务流程。",
+   "published_at": "2026-08-13",
+   "url": "https://openai.com/index/how-enterprises-put-ai-to-work",
+   "category": "tip",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
   {
    "id": 3901,
    "title": "SGLang 宣布 Day-0 支持 NVIDIA Nemotron 3.5 Lightning",
@@ -14665,6 +14791,24 @@
  ],
  "OpenRouter": [
   {
+   "id": 3983,
+   "title": "OpenRouter 推出实时网页搜索基准测试：如何为智能体选择引擎、深度与模型",
+   "summary": "OpenRouter 发布实时排行榜，系统评测模型、搜索引擎、搜索方法与预算四类配置组合。数据显示，将搜索预算从 1 轮增至 25 轮可使 BrowseComp 得分近乎翻倍，成本仅增 2.5-7 倍；模型选择比引擎更重要，平均分差 15 分 vs 10 分。失败率高的任务应降低搜索深度以控制成本。",
+   "published_at": "2026-08-13",
+   "url": "https://openrouter.ai/blog/announcements/web-search-benchmark",
+   "category": "ai-products",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
+  {
+   "id": 3996,
+   "title": "OpenRouter 工具调用指南：一次编写循环，切换模型字符串即可跨模型运行",
+   "summary": "OpenRouter 发布工具调用指南，展示如何用同一套代码在 Claude、GPT 和开源权重模型间切换，仅需更改模型字符串。指南涵盖定义工具、发送请求、读取 tool_calls 响应、执行函数并返回结果的完整循环，支持 OpenAI 兼容的 JSON schema，并提供 cURL、Python 和 JavaScript/TypeScript 示例。",
+   "published_at": "2026-08-13",
+   "url": "https://openrouter.ai/blog/tutorials/tool-calling",
+   "category": "tip",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
+  {
    "id": 3951,
    "title": "Meta 开源 Muse Glimmer 登陆 OpenRouter",
    "summary": "Meta AI 超级智能实验室的首个开放权重模型 Muse Glimmer 已在 OpenRouter 上线！\n\n这是一款 30B 密集文本+图像模型，采用 Apache 2.0 许可证，旨在成为可靠的本地智能体，MCP Atlas 得分 75.5，SWE-Bench Pro 得分 51.2。\n\nhttps://openrouter.ai/meta/muse-glimmer-30b",
@@ -15201,6 +15345,24 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 3980,
+   "title": "阿里开放 Qwen3.8-2.4T-A95B 模型权重：2.4T MoE、激活 95B、原生 256K 上下文",
+   "summary": "阿里 Qwen 团队正式开放 Qwen3.8-2.4T-A95B 模型权重，这是 Qwen-Max 级别模型首次开源。模型总参数 2.4T，每个 Token 激活 95B，原生支持 262,144 Token 上下文并可扩展至 1,010,000 Token。",
+   "published_at": "2026-08-13",
+   "url": "https://www.ithome.com/0/989/001.htm",
+   "category": "ai-models",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 3985,
+   "title": "SGLang 与 Miles 为 Qwen3.8-2.4T-A95B 提供 Day-0 支持",
+   "summary": "SGLang 与 Miles 在发布首日即支持 Qwen3.8-2.4T-A95B，这是 Qwen 最大的开源模型，总参数 2.4T，每 token 激活 95B，采用混合注意力架构。",
+   "published_at": "2026-08-13",
+   "url": "https://www.lmsys.org/blog/2026-08-12-qwen3-8-day0-support",
+   "category": "ai-products",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
   {
    "id": 3848,
    "title": "Qwen-MM-Plugins 让智能体原生支持多模态",
@@ -15995,6 +16157,15 @@
  ],
  "Qwen-": [
   {
+   "id": 3980,
+   "title": "阿里开放 Qwen3.8-2.4T-A95B 模型权重：2.4T MoE、激活 95B、原生 256K 上下文",
+   "summary": "阿里 Qwen 团队正式开放 Qwen3.8-2.4T-A95B 模型权重，这是 Qwen-Max 级别模型首次开源。模型总参数 2.4T，每个 Token 激活 95B，原生支持 262,144 Token 上下文并可扩展至 1,010,000 Token。",
+   "published_at": "2026-08-13",
+   "url": "https://www.ithome.com/0/989/001.htm",
+   "category": "ai-models",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 3848,
    "title": "Qwen-MM-Plugins 让智能体原生支持多模态",
    "summary": "👀 看见只是开始。 借助 Qwen-MM-Plugins，让你的智能体原生支持多模态——读取图片、视频和文档，编辑视频，处理 3D/CAD，以及更多。 从多模态模型 → 多模态智能体。🚀 观看实际效果：https://github.com/QwenLM/Qwen-MM-Plugins",
@@ -16587,6 +16758,24 @@
   }
  ],
  "Qwen3.8": [
+  {
+   "id": 3980,
+   "title": "阿里开放 Qwen3.8-2.4T-A95B 模型权重：2.4T MoE、激活 95B、原生 256K 上下文",
+   "summary": "阿里 Qwen 团队正式开放 Qwen3.8-2.4T-A95B 模型权重，这是 Qwen-Max 级别模型首次开源。模型总参数 2.4T，每个 Token 激活 95B，原生支持 262,144 Token 上下文并可扩展至 1,010,000 Token。",
+   "published_at": "2026-08-13",
+   "url": "https://www.ithome.com/0/989/001.htm",
+   "category": "ai-models",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 3985,
+   "title": "SGLang 与 Miles 为 Qwen3.8-2.4T-A95B 提供 Day-0 支持",
+   "summary": "SGLang 与 Miles 在发布首日即支持 Qwen3.8-2.4T-A95B，这是 Qwen 最大的开源模型，总参数 2.4T，每 token 激活 95B，采用混合注意力架构。",
+   "published_at": "2026-08-13",
+   "url": "https://www.lmsys.org/blog/2026-08-12-qwen3-8-day0-support",
+   "category": "ai-products",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
   {
    "id": 3723,
    "title": "千问功能上新：推出思考研究、定时任务、办公助理、语音通话等多项新功能，并支持 Qwen3.8-MAX",
@@ -17449,6 +17638,24 @@
   }
  ],
  "xAI": [
+  {
+   "id": 3979,
+   "title": "xAI 发布 Grok 4.6，强化长时运行智能体能力",
+   "summary": "xAI 今日发布 Grok 4.6，在 Grok 4.5 基础上重点强化长时运行智能体及更复杂的交互式与视觉工作能力。该模型在多项智能体编码与知识工作基准上达到前沿水平，在 Artificial Analysis Intelligence Index（九项基准综合分）上追平 GPT-5.6 Sol。",
+   "published_at": "2026-08-13",
+   "url": "https://x.ai/news/grok-4-6",
+   "category": "ai-models",
+   "source": "xAI：News（网页）"
+  },
+  {
+   "id": 4006,
+   "title": "Cursor 与 SpaceXAI 联合发布 Grok 4.6",
+   "summary": "Cursor 与 SpaceXAI 今日发布 Grok 4.6，重点强化长时运行智能体与交互式视觉任务，在多项智能体编程与知识工作基准上达到前沿水平，并在 Artificial Analysis Intelligence Index 上追平 GPT-5.6 Sol。",
+   "published_at": "2026-08-12T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 3554,
    "title": "SpaceXAI 单季资本开支 183.7 亿美元，AI 投入接近微软总资本开支四成",
@@ -19125,6 +19332,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 3980,
+   "title": "阿里开放 Qwen3.8-2.4T-A95B 模型权重：2.4T MoE、激活 95B、原生 256K 上下文",
+   "summary": "阿里 Qwen 团队正式开放 Qwen3.8-2.4T-A95B 模型权重，这是 Qwen-Max 级别模型首次开源。模型总参数 2.4T，每个 Token 激活 95B，原生支持 262,144 Token 上下文并可扩展至 1,010,000 Token。",
+   "published_at": "2026-08-13",
+   "url": "https://www.ithome.com/0/989/001.htm",
+   "category": "ai-models",
+   "source": "IT之家（RSS）"
+  },
   {
    "id": 3790,
    "title": "苹果 Mac 简体中文支持文档更新，“Apple 智能”阿里千问扩展现身",
