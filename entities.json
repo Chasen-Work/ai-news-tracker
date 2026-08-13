@@ -10,8 +10,8 @@
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 190,
-  "last_seen": "2026-08-13"
+  "mentions": 191,
+  "last_seen": "2026-08-13T01:20:54.259Z"
  },
  {
   "id": 47,
@@ -56,18 +56,18 @@
   "last_seen": "2026-08-12T12:00:18.000Z"
  },
  {
+  "id": 79,
+  "name": "DeepSeek",
+  "type": "company",
+  "mentions": 53,
+  "last_seen": "2026-08-13T11:16:42.199Z"
+ },
+ {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
   "mentions": 52,
   "last_seen": "2026-08-12"
- },
- {
-  "id": 79,
-  "name": "DeepSeek",
-  "type": "company",
-  "mentions": 52,
-  "last_seen": "2026-08-13"
  },
  {
   "id": 36,
@@ -231,15 +231,15 @@
   "last_seen": "2026-08-08"
  },
  {
-  "id": 304,
-  "name": "Qwen3.5",
-  "type": "model",
-  "mentions": 12,
-  "last_seen": "2026-08-05"
- },
- {
   "id": 701,
   "name": "DeepSeek-V4",
+  "type": "model",
+  "mentions": 13,
+  "last_seen": "2026-08-13T11:16:42.199Z"
+ },
+ {
+  "id": 304,
+  "name": "Qwen3.5",
   "type": "model",
   "mentions": 12,
   "last_seen": "2026-08-05"
@@ -735,6 +735,13 @@
   "last_seen": "2026-08-03"
  },
  {
+  "id": 4297,
+  "name": "deepseek-v4",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-08-13T11:16:42.199Z"
+ },
+ {
   "id": 4465,
   "name": "SenseNova",
   "type": "model",
@@ -936,13 +943,6 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-07-23"
- },
- {
-  "id": 4297,
-  "name": "deepseek-v4",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-07-30T16:00:00.000Z"
  },
  {
   "id": 4666,

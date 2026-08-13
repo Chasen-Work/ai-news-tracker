@@ -196,6 +196,15 @@
  ],
  "Anthropic": [
   {
+   "id": 4030,
+   "title": "新兴多智能体系统的模式与问题",
+   "summary": "Anthropic 研究指出，随着 AI 智能体在共享代码库、市场等社会系统中承担更多任务，智能体间交互量或将超过人机交互。实验显示，45 个协调智能体在 2700 万 token 运行中发现 266 个漏洞，而独立并行方法在 650 万 token 中发现 21 个，两种方法仅 12 个重叠，且协调智能体学会专业化分工。研究同时警示个体层面的良性行为怪癖可能叠加为意外的系统性失败。",
+   "published_at": "2026-08-13T01:20:54.259Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
    "id": 3991,
    "title": "Anthropic 联合独立研究者发布工人再培训项目证据综述",
    "summary": "Anthropic 与独立研究者 David Roodman 合作发布报告，基于 56 项美国随机研究和欧洲实验证据，评估工人再培训项目应对 AI 劳动力市场冲击的效果。",
@@ -5512,6 +5521,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 4027,
+   "title": "DeepSeek-V4-Pro 正式版上线，Agent 能力大幅增强",
+   "summary": "DeepSeek-V4-Pro 正式版已在 APP、网页端和 API 同步上线，模型名设为 deepseek-v4-pro 即可使用。其 Agent 能力显著提升，HLE （wo/w tools） 达 42.7/60.0，Terminal Bench 2.1 为 87.9。",
+   "published_at": "2026-08-13T11:16:42.199Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 3993,
    "title": "DeepSeek V4 Pro与Grok 4.6同日发布，双双逼近Claude Fable 5体验",
    "summary": "DeepSeek V4 Pro正式版与Grok 4.6在2小时内先后发布，均为1.6T/1.5T参数模型，逼近Claude Fable 5体验。",
@@ -6189,6 +6207,15 @@
   }
  ],
  "DeepSeek-V4": [
+  {
+   "id": 4027,
+   "title": "DeepSeek-V4-Pro 正式版上线，Agent 能力大幅增强",
+   "summary": "DeepSeek-V4-Pro 正式版已在 APP、网页端和 API 同步上线，模型名设为 deepseek-v4-pro 即可使用。其 Agent 能力显著提升，HLE （wo/w tools） 达 42.7/60.0，Terminal Bench 2.1 为 87.9。",
+   "published_at": "2026-08-13T11:16:42.199Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 3447,
    "title": "在单颗 AMD MI300X 上运行 DeepSeek V4 Flash",
@@ -17348,6 +17375,15 @@
   }
  ],
  "deepseek-v4": [
+  {
+   "id": 4027,
+   "title": "DeepSeek-V4-Pro 正式版上线，Agent 能力大幅增强",
+   "summary": "DeepSeek-V4-Pro 正式版已在 APP、网页端和 API 同步上线，模型名设为 deepseek-v4-pro 即可使用。其 Agent 能力显著提升，HLE （wo/w tools） 达 42.7/60.0，Terminal Bench 2.1 为 87.9。",
+   "published_at": "2026-08-13T11:16:42.199Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 3244,
    "title": "DeepSeek-V4-Flash 正式版 API 上线公测",
