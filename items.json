@@ -1,5 +1,45 @@
 [
  {
+  "id": 4087,
+  "title": "dots3-note Preview 开源：280B 参数轻量模型，主打长程智能体与多模态推理",
+  "summary": "小红书技术开源 dots3-note Preview，这是 dots3 系列最轻量模型，总参数 280B、激活参数 16B，支持 512K 上下文及文本、视觉、语音多模态理解，并针对复杂推理和长程 Agent 任务优化。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-14T11:25:29.000Z",
+  "fetched_at": "2026-08-14 13:00:04"
+ },
+ {
+  "id": 4088,
+  "title": "GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力",
+  "summary": "智谱发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致的后训练Scaling提升智能上界，编程能力较前代提升50%，在Terminal Bench 3.0等公开基准中取得开源第一，并接近Claude Fable 5。模型在白盒代码审查等安全任务中表现持平Mythos 5，在CyberGym测试中得分84.5%。模型权重将在两周后开源，即日起上线ZCode、AutoClaw等工具。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-14T05:31:04.000Z",
+  "fetched_at": "2026-08-14 13:00:04"
+ },
+ {
+  "id": 4089,
+  "title": "DeepSeek V4 Pro 登陆硅基流动，1M 上下文",
+  "summary": "DeepSeek-V4-Pro-0813 正式上线硅基流动 SiliconFlow，提供 Day-0 支持，具备 1M 上下文窗口及低/高/最大三档推理强度，更侧重编码、工具调用与智能体工作流，仍保持 MIT 开源协议。定价为输入 $1.32/M、输出 $3.96/M、缓存命中 $0.44/M。同系列 DeepSeek-V4-Flash-0731 则面向追求速度与成本效益的日常生产场景。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-14T04:55:56.000Z",
+  "fetched_at": "2026-08-14 13:00:04"
+ },
+ {
+  "id": 4090,
+  "title": "蚂蚁百灵与 ASystem 团队打通单机 Agentic RL 后训练闭环",
+  "summary": "蚂蚁百灵与 ASystem 团队合作，用 Ling-3.0-tiny 和 AReno 在 DGX Spark 上跑通单机 Agentic RL 后训练闭环。以井字棋为最小验证任务，用 GSPO 算法训练 400 步后，rollout/rewards_mean 从约 -0.5 升至 0.4，response_len 降至约 850 tokens，工具调用与动作选择趋于稳定。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-14T04:00:00.000Z",
+  "fetched_at": "2026-08-14 13:00:04"
+ },
+ {
   "id": 4074,
   "title": "GitHub Secure Open Source Fund 第四期 50 个开源项目如何提升 AI 时代安全性",
   "summary": "GitHub Secure Open Source Fund 第四期 50 个开源项目结合 AI 辅助工作流、维护者经验、GitHub 安全工具、专家指导与资金支持，系统性提升项目安全性。该计划展示了开源生态在 AI 时代应对安全挑战的实践路径，为维护者提供了可复用的安全加固模式。",

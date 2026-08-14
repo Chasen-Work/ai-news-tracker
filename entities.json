@@ -59,8 +59,8 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 55,
-  "last_seen": "2026-08-14"
+  "mentions": 56,
+  "last_seen": "2026-08-14T04:55:56.000Z"
  },
  {
   "id": 13,
@@ -203,6 +203,13 @@
   "last_seen": "2026-07-07"
  },
  {
+  "id": 434,
+  "name": "DeepSeek V4",
+  "type": "model",
+  "mentions": 15,
+  "last_seen": "2026-08-14T04:55:56.000Z"
+ },
+ {
   "id": 26,
   "name": "混元",
   "type": "company",
@@ -217,11 +224,11 @@
   "last_seen": "2026-08-12"
  },
  {
-  "id": 434,
-  "name": "DeepSeek V4",
+  "id": 701,
+  "name": "DeepSeek-V4",
   "type": "model",
   "mentions": 14,
-  "last_seen": "2026-08-13"
+  "last_seen": "2026-08-14T04:55:56.000Z"
  },
  {
   "id": 376,
@@ -229,13 +236,6 @@
   "type": "company",
   "mentions": 13,
   "last_seen": "2026-08-08"
- },
- {
-  "id": 701,
-  "name": "DeepSeek-V4",
-  "type": "model",
-  "mentions": 13,
-  "last_seen": "2026-08-13T11:16:42.199Z"
  },
  {
   "id": 304,
@@ -287,6 +287,13 @@
   "last_seen": "2026-07-22"
  },
  {
+  "id": 37,
+  "name": "智谱",
+  "type": "company",
+  "mentions": 9,
+  "last_seen": "2026-08-14T05:31:04.000Z"
+ },
+ {
   "id": 713,
   "name": "Mistral",
   "type": "model",
@@ -313,13 +320,6 @@
   "type": "company",
   "mentions": 8,
   "last_seen": "2026-08-07"
- },
- {
-  "id": 37,
-  "name": "智谱",
-  "type": "company",
-  "mentions": 8,
-  "last_seen": "2026-07-25"
  },
  {
   "id": 651,
