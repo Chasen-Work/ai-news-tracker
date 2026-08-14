@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 251,
-  "last_seen": "2026-08-13"
+  "mentions": 254,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 191,
-  "last_seen": "2026-08-13T01:20:54.259Z"
+  "mentions": 192,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 148,
-  "last_seen": "2026-08-13"
+  "mentions": 152,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 130,
-  "last_seen": "2026-08-13"
+  "mentions": 132,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 21,
@@ -38,8 +38,8 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 80,
-  "last_seen": "2026-08-13"
+  "mentions": 81,
+  "last_seen": "2026-08-13T14:04:55.000Z"
  },
  {
   "id": 10,
@@ -59,15 +59,22 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 53,
-  "last_seen": "2026-08-13T11:16:42.199Z"
+  "mentions": 55,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
+  "mentions": 54,
+  "last_seen": "2026-08-14"
+ },
+ {
+  "id": 149,
+  "name": "Cursor",
+  "type": "company",
   "mentions": 52,
-  "last_seen": "2026-08-12"
+  "last_seen": "2026-08-14"
  },
  {
   "id": 36,
@@ -91,11 +98,11 @@
   "last_seen": "2026-08-13"
  },
  {
-  "id": 149,
-  "name": "Cursor",
-  "type": "company",
+  "id": 1502,
+  "name": "GPT-5.6",
+  "type": "model",
   "mentions": 49,
-  "last_seen": "2026-08-12T00:00:00.000Z"
+  "last_seen": "2026-08-14"
  },
  {
   "id": 4,
@@ -105,25 +112,18 @@
   "last_seen": "2026-08-13"
  },
  {
-  "id": 1502,
-  "name": "GPT-5.6",
-  "type": "model",
-  "mentions": 47,
-  "last_seen": "2026-08-13"
- },
- {
   "id": 2,
   "name": "GPT-5.5",
   "type": "model",
-  "mentions": 33,
-  "last_seen": "2026-07-30"
+  "mentions": 34,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 93,
   "name": "阿里",
   "type": "company",
-  "mentions": 32,
-  "last_seen": "2026-08-13"
+  "mentions": 33,
+  "last_seen": "2026-08-13T14:04:55.000Z"
  },
  {
   "id": 52,
@@ -136,8 +136,8 @@
   "id": 70,
   "name": "Google DeepMind",
   "type": "company",
-  "mentions": 28,
-  "last_seen": "2026-08-12"
+  "mentions": 29,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 24,
@@ -150,8 +150,8 @@
   "id": 3,
   "name": "MiniMax",
   "type": "company",
-  "mentions": 22,
-  "last_seen": "2026-08-12"
+  "mentions": 23,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 20,
@@ -392,11 +392,25 @@
   "last_seen": "2026-07-25"
  },
  {
+  "id": 3364,
+  "name": "Qwen3.8",
+  "type": "model",
+  "mentions": 6,
+  "last_seen": "2026-08-13T14:04:55.000Z"
+ },
+ {
   "id": 9,
   "name": "Cosmos 3",
   "type": "model",
   "mentions": 5,
   "last_seen": "2026-08-07"
+ },
+ {
+  "id": 16,
+  "name": "JetBrains",
+  "type": "company",
+  "mentions": 5,
+  "last_seen": "2026-08-14"
  },
  {
   "id": 38,
@@ -434,13 +448,6 @@
   "last_seen": "2026-07-24"
  },
  {
-  "id": 3364,
-  "name": "Qwen3.8",
-  "type": "model",
-  "mentions": 5,
-  "last_seen": "2026-08-13"
- },
- {
   "id": 3521,
   "name": "Gemini 3.6 Flash",
   "type": "model",
@@ -453,13 +460,6 @@
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-06-17"
- },
- {
-  "id": 16,
-  "name": "JetBrains",
-  "type": "company",
-  "mentions": 4,
-  "last_seen": "2026-07-03"
  },
  {
   "id": 30,
@@ -957,5 +957,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-08-12"
+ },
+ {
+  "id": 5181,
+  "name": "Gemini 3.7 Flash",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-08-14"
  }
 ]
