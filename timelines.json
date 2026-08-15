@@ -196,6 +196,24 @@
  ],
  "Anthropic": [
   {
+   "id": 4108,
+   "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+   "summary": "价格战让模型API的成本弹性成为现实，原先因账单压力转向中国厂商的用户，可能在OpenAI和Anthropic降价后重新比较能力与价格。",
+   "published_at": "2026-08-15",
+   "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground",
+   "category": "industry",
+   "source": "Ars Technica：AI（RSS）"
+  },
+  {
+   "id": 4110,
+   "title": "Claude 文本水印机制如何运作",
+   "summary": "未来 Claude 模型生成的文本将包含水印，用于判断文本由 Claude 撰写的可能性，这是 Anthropic 为遵守欧盟《AI 法案》而实施的变更。该方法基于 Google DeepMind 的 SynthID-Text 技术，对输出质量、创造力和可读性无实际影响，读者无法区分水印文本与普通文本，且不增加额外 token 或成本。",
+   "published_at": "2026-08-15",
+   "url": "https://www.anthropic.com/news/claude-text-watermark",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
    "id": 4066,
    "title": "新兴多智能体系统的模式与问题",
    "summary": "Anthropic 研究指出，随着 AI 智能体在共享代码库、市场等社会系统中承担更多任务，智能体间交互量或将超过人机交互。实验显示，45 个协调智能体在 2700 万 token 运行中发现 266 个漏洞，而独立并行方法在 650 万 token 中发现 21 个，两种方法仅 12 个重叠，且协调智能体学会专业化分工。研究同时警示个体层面的良性行为怪癖可能叠加为意外的系统性失败。",
@@ -2397,6 +2415,24 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 4107,
+   "title": "Claude Code v2.1.233 发布：新增 GitLab MR 支持与内存 cgroup 限制",
+   "summary": "Claude Code v2.1.233 发布，为 --worktree 标志和 agents 视图新增 GitLab 合并请求 URL 支持，并添加可选的 forward_user_identity 网关设置以按用户归因支出。",
+   "published_at": "2026-08-15",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.233",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 4113,
+   "title": "Claude Code 会话如何最大化 token 价值",
+   "summary": "Claude Code 的 token 成本由模型、输入/输出 token 和提示缓存三因素决定，输出 token 价格约为输入的 5 倍。任务间运行 /clear 可减少无关上下文回传，降低 token 用量；会话中途切换模型或 effort 级别会破坏提示缓存，增加成本。",
+   "published_at": "2026-08-15",
+   "url": "https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
   {
    "id": 4062,
    "title": "Claude Code v2.1.232 发布：默认启用 Subagent forking，新增 GitLab 支持与多项安全修复",
@@ -5105,6 +5141,15 @@
  ],
  "Cursor": [
   {
+   "id": 4109,
+   "title": "Cursor 正式被 SpaceX 收购",
+   "summary": "Cursor 已被 SpaceX 正式收购，完成自 4 月启动的收购流程。合并后 Cursor 将获得全球最大 GPU 集群，以构建更强且运行成本更低的模型，从而以更低价格向客户提供更强大的模型。本周三发布的 Grok 4.6 是双方合作成果的早期体现。",
+   "published_at": "2026-08-15",
+   "url": "https://cursor.com/blog/joining-spacex",
+   "category": "industry",
+   "source": "Cursor Blog"
+  },
+  {
    "id": 4056,
    "title": "Cursor 推出 builds：云智能体启动速度提升至 3 倍",
    "summary": "Cursor 推出 builds 功能，在后台持续准备就绪的开发环境副本，让云智能体启动时无需从零搭建，响应速度最高提升 3 倍。内部环境启动快 10 倍，首个 token 生成快 3 倍；智能体始终从最近一次成功的 build 启动，依赖更新或安装脚本出错时不会影响运行。8 月 17 日起所有环境默认启用 builds，无需额外费用。",
@@ -5575,13 +5620,13 @@
  ],
  "DeepSeek": [
   {
-   "id": 4089,
+   "id": 4106,
    "title": "DeepSeek V4 Pro 登陆硅基流动，1M 上下文",
    "summary": "DeepSeek-V4-Pro-0813 正式上线硅基流动 SiliconFlow，提供 Day-0 支持，具备 1M 上下文窗口及低/高/最大三档推理强度，更侧重编码、工具调用与智能体工作流，仍保持 MIT 开源协议。定价为输入 $1.32/M、输出 $3.96/M、缓存命中 $0.44/M。同系列 DeepSeek-V4-Flash-0731 则面向追求速度与成本效益的日常生产场景。",
-   "published_at": "2026-08-14T04:55:56.000Z",
-   "url": "",
+   "published_at": "2026-08-15",
+   "url": "https://x.com/SiliconFlowAI/status/2088127458558271885",
    "category": "ai-models",
-   "source": ""
+   "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
   },
   {
    "id": 4055,
@@ -6130,13 +6175,13 @@
  ],
  "DeepSeek V4": [
   {
-   "id": 4089,
+   "id": 4106,
    "title": "DeepSeek V4 Pro 登陆硅基流动，1M 上下文",
    "summary": "DeepSeek-V4-Pro-0813 正式上线硅基流动 SiliconFlow，提供 Day-0 支持，具备 1M 上下文窗口及低/高/最大三档推理强度，更侧重编码、工具调用与智能体工作流，仍保持 MIT 开源协议。定价为输入 $1.32/M、输出 $3.96/M、缓存命中 $0.44/M。同系列 DeepSeek-V4-Flash-0731 则面向追求速度与成本效益的日常生产场景。",
-   "published_at": "2026-08-14T04:55:56.000Z",
-   "url": "",
+   "published_at": "2026-08-15",
+   "url": "https://x.com/SiliconFlowAI/status/2088127458558271885",
    "category": "ai-models",
-   "source": ""
+   "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
   },
   {
    "id": 3993,
@@ -6298,13 +6343,13 @@
  ],
  "DeepSeek-V4": [
   {
-   "id": 4089,
+   "id": 4106,
    "title": "DeepSeek V4 Pro 登陆硅基流动，1M 上下文",
    "summary": "DeepSeek-V4-Pro-0813 正式上线硅基流动 SiliconFlow，提供 Day-0 支持，具备 1M 上下文窗口及低/高/最大三档推理强度，更侧重编码、工具调用与智能体工作流，仍保持 MIT 开源协议。定价为输入 $1.32/M、输出 $3.96/M、缓存命中 $0.44/M。同系列 DeepSeek-V4-Flash-0731 则面向追求速度与成本效益的日常生产场景。",
-   "published_at": "2026-08-14T04:55:56.000Z",
-   "url": "",
+   "published_at": "2026-08-15",
+   "url": "https://x.com/SiliconFlowAI/status/2088127458558271885",
    "category": "ai-models",
-   "source": ""
+   "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
   },
   {
    "id": 4027,
@@ -7746,6 +7791,15 @@
  ],
  "Gemini 3.7 Flash": [
   {
+   "id": 4105,
+   "title": "Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户",
+   "summary": "Gemini 3.7 Flash 现已向 Gemini 聊天中的 Pro 和 Ultra 用户开放。该模型更新提升了多步骤任务的推理与准确性，如智能整合数十个文件和邮件为一份主文档。同时，Gemini Spark 也已运行于 3.7 Flash，通过改进对 Google Workspace 应用的工具调用，让个人 AI 智能体更精准。",
+   "published_at": "2026-08-15",
+   "url": "https://x.com/GeminiApp/status/2088326407730692538",
+   "category": "ai-models",
+   "source": "X：Gemini (@GeminiApp)"
+  },
+  {
    "id": 4053,
    "title": "Google DeepMind 推出 Gemini 3.7 Flash：面向编程与智能体的最强工作模型",
    "summary": "Google DeepMind 发布 Gemini 3.7 Flash，距 3.6 Flash 仅三周，主打编程与智能体任务，输入/输出价格分别为每百万 token $0.75 和 $3.75，为原 3.6 Flash 的一半。",
@@ -7756,6 +7810,24 @@
   }
  ],
  "Google": [
+  {
+   "id": 4105,
+   "title": "Gemini 3.7 Flash 全面上线 Pro 与 Ultra 用户",
+   "summary": "Gemini 3.7 Flash 现已向 Gemini 聊天中的 Pro 和 Ultra 用户开放。该模型更新提升了多步骤任务的推理与准确性，如智能整合数十个文件和邮件为一份主文档。同时，Gemini Spark 也已运行于 3.7 Flash，通过改进对 Google Workspace 应用的工具调用，让个人 AI 智能体更精准。",
+   "published_at": "2026-08-15",
+   "url": "https://x.com/GeminiApp/status/2088326407730692538",
+   "category": "ai-models",
+   "source": "X：Gemini (@GeminiApp)"
+  },
+  {
+   "id": 4110,
+   "title": "Claude 文本水印机制如何运作",
+   "summary": "未来 Claude 模型生成的文本将包含水印，用于判断文本由 Claude 撰写的可能性，这是 Anthropic 为遵守欧盟《AI 法案》而实施的变更。该方法基于 Google DeepMind 的 SynthID-Text 技术，对输出质量、创造力和可读性无实际影响，读者无法区分水印文本与普通文本，且不增加额外 token 或成本。",
+   "published_at": "2026-08-15",
+   "url": "https://www.anthropic.com/news/claude-text-watermark",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
   {
    "id": 4053,
    "title": "Google DeepMind 推出 Gemini 3.7 Flash：面向编程与智能体的最强工作模型",
@@ -9127,6 +9199,15 @@
  ],
  "Google DeepMind": [
   {
+   "id": 4110,
+   "title": "Claude 文本水印机制如何运作",
+   "summary": "未来 Claude 模型生成的文本将包含水印，用于判断文本由 Claude 撰写的可能性，这是 Anthropic 为遵守欧盟《AI 法案》而实施的变更。该方法基于 Google DeepMind 的 SynthID-Text 技术，对输出质量、创造力和可读性无实际影响，读者无法区分水印文本与普通文本，且不增加额外 token 或成本。",
+   "published_at": "2026-08-15",
+   "url": "https://www.anthropic.com/news/claude-text-watermark",
+   "category": "industry",
+   "source": "Anthropic：Newsroom（网页）"
+  },
+  {
    "id": 4053,
    "title": "Google DeepMind 推出 Gemini 3.7 Flash：面向编程与智能体的最强工作模型",
    "summary": "Google DeepMind 发布 Gemini 3.7 Flash，距 3.6 Flash 仅三周，主打编程与智能体任务，输入/输出价格分别为每百万 token $0.75 和 $3.75，为原 3.6 Flash 的一半。",
@@ -9389,6 +9470,15 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 4112,
+   "title": "2026年夏季开源模型生态观察：中国前沿模型规模领先，AMD与NVIDIA主导发布量",
+   "summary": "2026年1至8月，Hugging Face公开模型仓库从243万增至296万，但85.6%的模型下载量不足200次，1.5%的仓库占据99.2%下载量。中国实验室月度最大开源模型参数规模在754B至2.78万亿之间，美国实验室七个月中五个月低于130B。AMD与NVIDIA各发布超200个新模型仓库，成为发布开源模型最多的机构。",
+   "published_at": "2026-08-15",
+   "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+   "category": "tip",
+   "source": "Hugging Face：Blog（RSS）"
+  },
   {
    "id": 4070,
    "title": "Strands Robots 如何用 Hugging Face Storage Buckets 实现记录、训练与部署一体化",
@@ -11564,6 +11654,24 @@
  ],
  "NVIDIA": [
   {
+   "id": 4111,
+   "title": "印尼首个大学AI中心落成：UGM、Indosat与NVIDIA合作培养本地AI人才",
+   "summary": "印尼通信与数字事务部、Indosat、NVIDIA与加查马达大学（UGM）在日惹共同启动UGM Indosat NVIDIA AI技术中心（NVAITC），这是该国首个大学AI技术中心。",
+   "published_at": "2026-08-15",
+   "url": "https://blogs.nvidia.com/blog/ugm-indosat-nvidia-ai-technology-center",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 4112,
+   "title": "2026年夏季开源模型生态观察：中国前沿模型规模领先，AMD与NVIDIA主导发布量",
+   "summary": "2026年1至8月，Hugging Face公开模型仓库从243万增至296万，但85.6%的模型下载量不足200次，1.5%的仓库占据99.2%下载量。中国实验室月度最大开源模型参数规模在754B至2.78万亿之间，美国实验室七个月中五个月低于130B。AMD与NVIDIA各发布超200个新模型仓库，成为发布开源模型最多的机构。",
+   "published_at": "2026-08-15",
+   "url": "https://huggingface.co/blog/state-of-open-models-summer-2026",
+   "category": "tip",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
    "id": 3900,
    "title": "NVIDIA 推出 Nemotron 3.5 Lightning，加速本地智能体任务",
    "summary": "NVIDIA 发布 Nemotron 3.5 Lightning，一款可定制的开源 30B 混合专家（MoE）模型，专为常驻智能体设计。相比同类开源模型，其 token 生成速度最高提升 4 倍，任务完成时间缩短 30%。该模型采用开放权重，支持用户微调以匹配特定任务，并可在 RTX PC、DGX Spark 及 Jetson 等设备上运行。",
@@ -12563,6 +12671,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 4108,
+   "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
+   "summary": "价格战让模型API的成本弹性成为现实，原先因账单压力转向中国厂商的用户，可能在OpenAI和Anthropic降价后重新比较能力与价格。",
+   "published_at": "2026-08-15",
+   "url": "https://arstechnica.com/ai/2026/08/openai-and-anthropic-in-price-war-as-chinese-ai-rivals-gain-ground",
+   "category": "industry",
+   "source": "Ars Technica：AI（RSS）"
+  },
   {
    "id": 4061,
    "title": "OpenAI 预览 Ultrafast 模式：GPT-5.6 Sol 速度提升最高 14 倍",
@@ -15063,6 +15180,24 @@
  ],
  "OpenRouter": [
   {
+   "id": 4115,
+   "title": "OpenRouter 视觉指南：如何通过 API 向多模态模型发送图像",
+   "summary": "OpenRouter 发布视觉指南，详解通过 Chat Completions API 向多模态模型发送图像的方法。请求体采用 messages 数组，用户消息的 content 包含 text 和 image_url 两部分，支持公开 URL 或 base64 数据 URL 两种格式，兼容 PNG、JPEG、WebP 和 GIF。",
+   "published_at": "2026-08-15",
+   "url": "https://openrouter.ai/blog/tutorials/send-image-to-llm",
+   "category": "tip",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
+  {
+   "id": 4116,
+   "title": "谁真的需要SOTA模型？OpenRouter数据显示84%token来自非前沿模型",
+   "summary": "OpenRouter数据显示，84%的模型token并非来自SOTA模型，用户最常用的六款模型性能约为前沿模型的77%，成本仅为Claude Fable 5的2.5%。8月10日当周，六款模型承载了80%流量，混合价格约$0.50/百万token，而Fable 5为$20。最佳开源模型性能已从一年前的48%提升至前沿模型的80%，企业正转向更小、微调或开源模型以优化性价比。",
+   "published_at": "2026-08-15",
+   "url": "https://www.tomtunguz.com/model-release-exhaustion",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
    "id": 3983,
    "title": "OpenRouter 推出实时网页搜索基准测试：如何为智能体选择引擎、深度与模型",
    "summary": "OpenRouter 发布实时排行榜，系统评测模型、搜索引擎、搜索方法与预算四类配置组合。数据显示，将搜索预算从 1 轮增至 25 轮可使 BrowseComp 得分近乎翻倍，成本仅增 2.5-7 倍；模型选择比引擎更重要，平均分差 15 分 vs 10 分。失败率高的任务应降低搜索深度以控制成本。",
@@ -15617,6 +15752,15 @@
   }
  ],
  "Qwen": [
+  {
+   "id": 4120,
+   "title": "通义千问开源 Qwen3.8 系列模型",
+   "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
+   "published_at": "2026-08-14T15:02:48.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4080,
    "title": "Qwen3.8-2.4T-A95B 开源，硅基流动即日上线",
@@ -17002,6 +17146,15 @@
  ],
  "Qwen3.7": [
   {
+   "id": 4120,
+   "title": "通义千问开源 Qwen3.8 系列模型",
+   "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
+   "published_at": "2026-08-14T15:02:48.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 839,
    "title": "Qwen-RobotNav：面向智能体导航系统的可扩展导航模型",
    "summary": "Qwen 发布 Qwen-RobotNav，基于 Qwen3-VL 在 15.6M 样本上训练，统一了视觉语言导航、目标导航、目标跟踪、自动驾驶和具身问答五个领域，无需修改架构即可在推理时切换任务模式和观察参数。模型在多项基准取得 SOTA：VLN-CE RxR 成功率 76.5%，HM3Dv2 目标导航 75.6%（仅 RGB），EVT-Bench 跟踪率 90.0%，NAVSIM PDMS 91.4，以及三项 EQA 新标杆。模型暴露四个可调轴（视觉 token 预算、时间衰减、相机权重、帧采样模式）。作为智能体系统的一部分，上层规划器 Qwen3.7-Plus 在 EXPRESS-Bench 上提升 15.4%，导航步数减少 …",
@@ -17039,6 +17192,15 @@
   }
  ],
  "Qwen3.8": [
+  {
+   "id": 4120,
+   "title": "通义千问开源 Qwen3.8 系列模型",
+   "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
+   "published_at": "2026-08-14T15:02:48.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4080,
    "title": "Qwen3.8-2.4T-A95B 开源，硅基流动即日上线",
@@ -18710,13 +18872,13 @@
  ],
  "智谱": [
   {
-   "id": 4088,
+   "id": 4104,
    "title": "GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力",
    "summary": "智谱发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致的后训练Scaling提升智能上界，编程能力较前代提升50%，在Terminal Bench 3.0等公开基准中取得开源第一，并接近Claude Fable 5。模型在白盒代码审查等安全任务中表现持平Mythos 5，在CyberGym测试中得分84.5%。模型权重将在两周后开源，即日起上线ZCode、AutoClaw等工具。",
-   "published_at": "2026-08-14T05:31:04.000Z",
-   "url": "",
+   "published_at": "2026-08-15",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494084&idx=1&sn=a2e5cd9a534a4825feb3633ea1b6d492",
    "category": "ai-models",
-   "source": ""
+   "source": "公众号：智谱（GLM）"
   },
   {
    "id": 2883,
@@ -19555,6 +19717,15 @@
   }
  ],
  "通义千问": [
+  {
+   "id": 4120,
+   "title": "通义千问开源 Qwen3.8 系列模型",
+   "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
+   "published_at": "2026-08-14T15:02:48.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 3533,
    "title": "Qwen-Image-3.0-Pro 上线 Qwen Cloud",

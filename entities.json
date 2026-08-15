@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 254,
-  "last_seen": "2026-08-14"
+  "mentions": 255,
+  "last_seen": "2026-08-15"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 192,
-  "last_seen": "2026-08-14"
+  "mentions": 194,
+  "last_seen": "2026-08-15"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 152,
-  "last_seen": "2026-08-14"
+  "mentions": 154,
+  "last_seen": "2026-08-15"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 132,
-  "last_seen": "2026-08-14"
+  "mentions": 134,
+  "last_seen": "2026-08-15"
  },
  {
   "id": 21,
@@ -38,15 +38,15 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 81,
-  "last_seen": "2026-08-13T14:04:55.000Z"
+  "mentions": 82,
+  "last_seen": "2026-08-14T15:02:48.000Z"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 79,
-  "last_seen": "2026-08-12"
+  "mentions": 81,
+  "last_seen": "2026-08-15"
  },
  {
   "id": 43,
@@ -60,21 +60,28 @@
   "name": "DeepSeek",
   "type": "company",
   "mentions": 56,
-  "last_seen": "2026-08-14T04:55:56.000Z"
+  "last_seen": "2026-08-15"
  },
  {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 54,
-  "last_seen": "2026-08-14"
+  "mentions": 55,
+  "last_seen": "2026-08-15"
  },
  {
   "id": 149,
   "name": "Cursor",
   "type": "company",
+  "mentions": 53,
+  "last_seen": "2026-08-15"
+ },
+ {
+  "id": 46,
+  "name": "OpenRouter",
+  "type": "company",
   "mentions": 52,
-  "last_seen": "2026-08-14"
+  "last_seen": "2026-08-15"
  },
  {
   "id": 36,
@@ -89,13 +96,6 @@
   "type": "company",
   "mentions": 51,
   "last_seen": "2026-08-12"
- },
- {
-  "id": 46,
-  "name": "OpenRouter",
-  "type": "company",
-  "mentions": 50,
-  "last_seen": "2026-08-13"
  },
  {
   "id": 1502,
@@ -136,8 +136,8 @@
   "id": 70,
   "name": "Google DeepMind",
   "type": "company",
-  "mentions": 29,
-  "last_seen": "2026-08-14"
+  "mentions": 30,
+  "last_seen": "2026-08-15"
  },
  {
   "id": 24,
@@ -207,7 +207,7 @@
   "name": "DeepSeek V4",
   "type": "model",
   "mentions": 15,
-  "last_seen": "2026-08-14T04:55:56.000Z"
+  "last_seen": "2026-08-15"
  },
  {
   "id": 26,
@@ -228,7 +228,7 @@
   "name": "DeepSeek-V4",
   "type": "model",
   "mentions": 14,
-  "last_seen": "2026-08-14T04:55:56.000Z"
+  "last_seen": "2026-08-15"
  },
  {
   "id": 376,
@@ -291,7 +291,7 @@
   "name": "智谱",
   "type": "company",
   "mentions": 9,
-  "last_seen": "2026-08-14T05:31:04.000Z"
+  "last_seen": "2026-08-15"
  },
  {
   "id": 713,
@@ -299,6 +299,13 @@
   "type": "model",
   "mentions": 9,
   "last_seen": "2026-07-29"
+ },
+ {
+  "id": 977,
+  "name": "通义千问",
+  "type": "company",
+  "mentions": 9,
+  "last_seen": "2026-08-14T15:02:48.000Z"
  },
  {
   "id": 1083,
@@ -327,13 +334,6 @@
   "type": "company",
   "mentions": 8,
   "last_seen": "2026-08-05T10:18:17.000Z"
- },
- {
-  "id": 977,
-  "name": "通义千问",
-  "type": "company",
-  "mentions": 8,
-  "last_seen": "2026-08-06"
  },
  {
   "id": 1,
@@ -371,6 +371,13 @@
   "last_seen": "2026-07-24"
  },
  {
+  "id": 3364,
+  "name": "Qwen3.8",
+  "type": "model",
+  "mentions": 7,
+  "last_seen": "2026-08-14T15:02:48.000Z"
+ },
+ {
   "id": 134,
   "name": "IBM",
   "type": "company",
@@ -392,11 +399,11 @@
   "last_seen": "2026-07-25"
  },
  {
-  "id": 3364,
-  "name": "Qwen3.8",
+  "id": 7,
+  "name": "Qwen3.7",
   "type": "model",
-  "mentions": 6,
-  "last_seen": "2026-08-13T14:04:55.000Z"
+  "mentions": 5,
+  "last_seen": "2026-08-14T15:02:48.000Z"
  },
  {
   "id": 9,
@@ -453,13 +460,6 @@
   "type": "model",
   "mentions": 5,
   "last_seen": "2026-08-05"
- },
- {
-  "id": 7,
-  "name": "Qwen3.7",
-  "type": "model",
-  "mentions": 4,
-  "last_seen": "2026-06-17"
  },
  {
   "id": 30,
@@ -756,6 +756,13 @@
   "last_seen": "2026-08-12"
  },
  {
+  "id": 5181,
+  "name": "Gemini 3.7 Flash",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-08-15"
+ },
+ {
   "id": 11,
   "name": "SenseNova-U1-8B-MoT-Infographic",
   "type": "model",
@@ -957,12 +964,5 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-08-12"
- },
- {
-  "id": 5181,
-  "name": "Gemini 3.7 Flash",
-  "type": "model",
-  "mentions": 1,
-  "last_seen": "2026-08-14"
  }
 ]

@@ -1,12 +1,12 @@
 {
- "total_items": 1806,
+ "total_items": 1818,
  "total_entities": 138,
- "total_dailies": 74,
+ "total_dailies": 75,
  "categories": {
-  "tip": 504,
-  "ai-products": 496,
-  "industry": 400,
-  "ai-models": 207,
+  "tip": 509,
+  "ai-products": 497,
+  "industry": 404,
+  "ai-models": 209,
   "paper": 199
  },
  "entity_types": {
@@ -36,15 +36,15 @@
   },
   {
    "name": "Claude：Blog（网页）",
-   "count": 38
+   "count": 39
+  },
+  {
+   "name": "Hugging Face：Blog（RSS）",
+   "count": 37
   },
   {
    "name": "Apple Machine Learning Research（RSS）",
    "count": 37
-  },
-  {
-   "name": "Hugging Face：Blog（RSS）",
-   "count": 36
   },
   {
    "name": "MarkTechPost（RSS）",
@@ -52,14 +52,10 @@
   },
   {
    "name": "Claude Code：GitHub Releases（RSS）",
-   "count": 27
+   "count": 28
   }
  ],
  "by_date": [
-  {
-   "date": "2026-07-16",
-   "count": 27
-  },
   {
    "date": "2026-07-17",
    "count": 30
@@ -174,8 +170,12 @@
   },
   {
    "date": "2026-08-14",
-   "count": 27
+   "count": 24
+  },
+  {
+   "date": "2026-08-15",
+   "count": 15
   }
  ],
- "updated_at": "2026-08-14T13:00:04Z"
+ "updated_at": "2026-08-15T01:00:40Z"
 }
