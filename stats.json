@@ -1,7 +1,7 @@
 {
  "total_items": 1819,
  "total_entities": 138,
- "total_dailies": 75,
+ "total_dailies": 76,
  "categories": {
   "tip": 509,
   "ai-products": 497,
@@ -27,12 +27,12 @@
    "count": 62
   },
   {
-   "name": "TechCrunch：AI（RSS）",
+   "name": "The Decoder：AI News（RSS）",
    "count": 41
   },
   {
-   "name": "The Decoder：AI News（RSS）",
-   "count": 40
+   "name": "TechCrunch：AI（RSS）",
+   "count": 41
   },
   {
    "name": "Claude：Blog（网页）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-07-17",
-   "count": 30
-  },
   {
    "date": "2026-07-18",
    "count": 19
@@ -174,8 +170,12 @@
   },
   {
    "date": "2026-08-15",
-   "count": 16
+   "count": 15
+  },
+  {
+   "date": "2026-08-16",
+   "count": 1
   }
  ],
- "updated_at": "2026-08-15T13:00:38Z"
+ "updated_at": "2026-08-16T01:00:09Z"
 }
