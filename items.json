@@ -1,5 +1,15 @@
 [
  {
+  "id": 4166,
+  "title": "OpenRouter 推出 Activity 仪表盘与 Analytics API：按智能体、模型、请求追踪 AI 使用成本",
+  "summary": "OpenRouter 发布 Activity 仪表盘和 beta Analytics API，可按智能体、模型、请求维度查看支出、token 量、缓存命中率等指标，并支持下钻至单条请求日志。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-08-17T00:00:00.000Z",
+  "fetched_at": "2026-08-17 13:00:38"
+ },
+ {
   "id": 4161,
   "title": "The hyping of Anthropic’s IPO",
   "summary": "对 Anthropic IPO 静默期流传的 2028 年 1900 亿美元级营收预测，文章提示其多基于匿名信源和未披露算法，可帮助在追踪上市进展时区分已核实数据与传闻。",
