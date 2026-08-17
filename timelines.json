@@ -196,6 +196,15 @@
  ],
  "Anthropic": [
   {
+   "id": 4161,
+   "title": "The hyping of Anthropic’s IPO",
+   "summary": "对 Anthropic IPO 静默期流传的 2028 年 1900 亿美元级营收预测，文章提示其多基于匿名信源和未披露算法，可帮助在追踪上市进展时区分已核实数据与传闻。",
+   "published_at": "2026-08-17",
+   "url": "https://garymarcus.substack.com/p/the-hyping-of-anthropics-ipo",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
    "id": 4108,
    "title": "OpenAI and Anthropic in price war as Chinese AI rivals gain ground",
    "summary": "价格战让模型API的成本弹性成为现实，原先因账单压力转向中国厂商的用户，可能在OpenAI和Anthropic降价后重新比较能力与价格。",
@@ -15753,6 +15762,15 @@
  ],
  "Qwen": [
   {
+   "id": 4160,
+   "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+   "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+   "published_at": "2026-08-17",
+   "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+   "category": "tip",
+   "source": "Simon Willison 博客"
+  },
+  {
    "id": 4120,
    "title": "通义千问开源 Qwen3.8 系列模型",
    "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
@@ -16515,6 +16533,15 @@
  ],
  "Qwen 3.6": [
   {
+   "id": 4160,
+   "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+   "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+   "published_at": "2026-08-17",
+   "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+   "category": "tip",
+   "source": "Simon Willison 博客"
+  },
+  {
    "id": 1353,
    "title": "Qwen 3.6 27B 是本地开发的理想选择",
    "summary": "Qwen 3.6 27B 是一款密集参数本地大语言模型，原生支持 256k 上下文。在 Macbook Max M5 上运行 llama.cpp Q8_0 量化版（含多 token 预测）可达 30 tokens/s；用户反馈在 RTX 5090 上 Q6_K 量化可达 50 tokens/s。它可通过单个提示完成创意诗歌、用 pnpm 生成六边形扫雷游戏等任务，作者称其为首个真正具备通用智能的本地模型。另有一个 MoE 变体 35B A3B，但作者推荐 27B 版本。",
@@ -16551,7 +16578,27 @@
    "source": ""
   }
  ],
+ "Qwen 3.7": [
+  {
+   "id": 4160,
+   "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+   "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+   "published_at": "2026-08-17",
+   "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+   "category": "tip",
+   "source": "Simon Willison 博客"
+  }
+ ],
  "Qwen 3.8": [
+  {
+   "id": 4160,
+   "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+   "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+   "published_at": "2026-08-17",
+   "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+   "category": "tip",
+   "source": "Simon Willison 博客"
+  },
   {
    "id": 3549,
    "title": "开源「活人感写作.skill」：一个帮你写出没有AI味的文字的通用写作技能",
@@ -19811,6 +19858,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 4160,
+   "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+   "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+   "published_at": "2026-08-17",
+   "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+   "category": "tip",
+   "source": "Simon Willison 博客"
+  },
   {
    "id": 4080,
    "title": "Qwen3.8-2.4T-A95B 开源，硅基流动即日上线",

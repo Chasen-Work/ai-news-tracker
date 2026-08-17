@@ -10,8 +10,8 @@
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 194,
-  "last_seen": "2026-08-15"
+  "mentions": 195,
+  "last_seen": "2026-08-17"
  },
  {
   "id": 47,
@@ -38,8 +38,8 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 82,
-  "last_seen": "2026-08-14T15:02:48.000Z"
+  "mentions": 83,
+  "last_seen": "2026-08-17"
  },
  {
   "id": 10,
@@ -122,8 +122,8 @@
   "id": 93,
   "name": "阿里",
   "type": "company",
-  "mentions": 33,
-  "last_seen": "2026-08-13T14:04:55.000Z"
+  "mentions": 34,
+  "last_seen": "2026-08-17"
  },
  {
   "id": 52,
@@ -434,6 +434,13 @@
   "last_seen": "2026-07-09T13:01:09.000Z"
  },
  {
+  "id": 180,
+  "name": "Qwen 3.6",
+  "type": "model",
+  "mentions": 5,
+  "last_seen": "2026-08-17"
+ },
+ {
   "id": 428,
   "name": "Qwen2.5",
   "type": "model",
@@ -490,13 +497,6 @@
   "last_seen": "2026-08-05"
  },
  {
-  "id": 180,
-  "name": "Qwen 3.6",
-  "type": "model",
-  "mentions": 4,
-  "last_seen": "2026-06-30"
- },
- {
   "id": 300,
   "name": "Qwen3-4",
   "type": "model",
@@ -537,6 +537,13 @@
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-08-12"
+ },
+ {
+  "id": 3449,
+  "name": "Qwen 3.8",
+  "type": "model",
+  "mentions": 4,
+  "last_seen": "2026-08-17"
  },
  {
   "id": 4287,
@@ -607,13 +614,6 @@
   "type": "model",
   "mentions": 3,
   "last_seen": "2026-07-21T00:00:00.000Z"
- },
- {
-  "id": 3449,
-  "name": "Qwen 3.8",
-  "type": "model",
-  "mentions": 3,
-  "last_seen": "2026-08-06"
  },
  {
   "id": 29,
@@ -964,5 +964,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-08-12"
+ },
+ {
+  "id": 5327,
+  "name": "Qwen 3.7",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-08-17"
  }
 ]

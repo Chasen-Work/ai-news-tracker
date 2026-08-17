@@ -1,5 +1,25 @@
 [
  {
+  "id": 4161,
+  "title": "The hyping of Anthropic’s IPO",
+  "summary": "对 Anthropic IPO 静默期流传的 2028 年 1900 亿美元级营收预测，文章提示其多基于匿名信源和未披露算法，可帮助在追踪上市进展时区分已核实数据与传闻。",
+  "url": "https://garymarcus.substack.com/p/the-hyping-of-anthropics-ipo",
+  "source": "Gary Marcus：The Road to AI We Can Trust（RSS）",
+  "category": "tip",
+  "published_at": "2026-08-17",
+  "fetched_at": "2026-08-17 01:00:44"
+ },
+ {
+  "id": 4160,
+  "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
+  "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
+  "url": "https://simonwillison.net/2026/Aug/16/qwen-38-27b",
+  "source": "Simon Willison 博客",
+  "category": "tip",
+  "published_at": "2026-08-17",
+  "fetched_at": "2026-08-17 01:00:44"
+ },
+ {
   "id": 4147,
   "title": "AI生成书籍正淹没亚马逊，并拉低人类作者的单书收入",
   "summary": "一项对14,419本自出版电子书的分析显示，AI生成书籍正以数量而非质量挤占人类作者市场，即便未检测到AI文本的书籍，单书收入也在下滑。2023年Q1至2026年Q1，书目总量增长38.3倍，而季度收入仅增长8.9倍；在八个类型中，七个类型的无AI文本书籍单书收入下降。",
