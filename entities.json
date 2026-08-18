@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 255,
-  "last_seen": "2026-08-15"
+  "mentions": 260,
+  "last_seen": "2026-08-18"
  },
  {
   "id": 35,
@@ -17,22 +17,29 @@
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 154,
-  "last_seen": "2026-08-15"
+  "mentions": 157,
+  "last_seen": "2026-08-18"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 134,
-  "last_seen": "2026-08-15"
+  "mentions": 135,
+  "last_seen": "2026-08-18"
  },
  {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 86,
-  "last_seen": "2026-08-13"
+  "mentions": 88,
+  "last_seen": "2026-08-18"
+ },
+ {
+  "id": 10,
+  "name": "NVIDIA",
+  "type": "company",
+  "mentions": 84,
+  "last_seen": "2026-08-18"
  },
  {
   "id": 6,
@@ -42,13 +49,6 @@
   "last_seen": "2026-08-17"
  },
  {
-  "id": 10,
-  "name": "NVIDIA",
-  "type": "company",
-  "mentions": 81,
-  "last_seen": "2026-08-15"
- },
- {
   "id": 43,
   "name": "Meta",
   "type": "company",
@@ -56,32 +56,39 @@
   "last_seen": "2026-08-12T12:00:18.000Z"
  },
  {
-  "id": 79,
-  "name": "DeepSeek",
-  "type": "company",
-  "mentions": 56,
-  "last_seen": "2026-08-15"
- },
- {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 55,
-  "last_seen": "2026-08-15"
+  "mentions": 58,
+  "last_seen": "2026-08-18"
+ },
+ {
+  "id": 79,
+  "name": "DeepSeek",
+  "type": "company",
+  "mentions": 57,
+  "last_seen": "2026-08-18"
  },
  {
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 53,
-  "last_seen": "2026-08-17T00:00:00.000Z"
+  "mentions": 54,
+  "last_seen": "2026-08-18"
  },
  {
   "id": 149,
   "name": "Cursor",
   "type": "company",
-  "mentions": 53,
-  "last_seen": "2026-08-15"
+  "mentions": 54,
+  "last_seen": "2026-08-18"
+ },
+ {
+  "id": 560,
+  "name": "Apple",
+  "type": "company",
+  "mentions": 52,
+  "last_seen": "2026-08-18"
  },
  {
   "id": 36,
@@ -91,18 +98,11 @@
   "last_seen": "2026-08-01"
  },
  {
-  "id": 560,
-  "name": "Apple",
-  "type": "company",
-  "mentions": 51,
-  "last_seen": "2026-08-12"
- },
- {
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 49,
-  "last_seen": "2026-08-14"
+  "mentions": 51,
+  "last_seen": "2026-08-18"
  },
  {
   "id": 4,
@@ -182,6 +182,13 @@
   "last_seen": "2026-08-12"
  },
  {
+  "id": 434,
+  "name": "DeepSeek V4",
+  "type": "model",
+  "mentions": 16,
+  "last_seen": "2026-08-18"
+ },
+ {
   "id": 614,
   "name": "豆包",
   "type": "company",
@@ -201,13 +208,6 @@
   "type": "model",
   "mentions": 15,
   "last_seen": "2026-07-07"
- },
- {
-  "id": 434,
-  "name": "DeepSeek V4",
-  "type": "model",
-  "mentions": 15,
-  "last_seen": "2026-08-15"
  },
  {
   "id": 26,
@@ -455,6 +455,13 @@
   "last_seen": "2026-08-05"
  },
  {
+  "id": 602,
+  "name": "cursor",
+  "type": "model",
+  "mentions": 5,
+  "last_seen": "2026-08-18"
+ },
+ {
   "id": 2120,
   "name": "昆仑万维",
   "type": "company",
@@ -502,13 +509,6 @@
   "type": "model",
   "mentions": 4,
   "last_seen": "2026-07-09"
- },
- {
-  "id": 602,
-  "name": "cursor",
-  "type": "model",
-  "mentions": 4,
-  "last_seen": "2026-07-14"
  },
  {
   "id": 786,
