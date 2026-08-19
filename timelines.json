@@ -196,6 +196,33 @@
  ],
  "Anthropic": [
   {
+   "id": 4214,
+   "title": "Claude Science 产品指南：面向生命科学研究的 AI 工作台",
+   "summary": "Anthropic 发布 Claude Science（测试版），一个覆盖生命科学数字化流程的 AI 工作台，支持数据分析、图表生成与结果产出，并可通过本地守护进程将重任务调度至自有 GPU、SLURM 集群或云账户。",
+   "published_at": "2026-08-19",
+   "url": "https://claude.com/blog/the-claude-science-product-guide",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 4216,
+   "title": "Claude 如何加速蛋白质设计与分析化学研究",
+   "summary": "Anthropic 公布两项实验：Claude（Mythos Preview 和 Opus 4.8）针对 15 个靶点设计蛋白质结合剂，成功 14 个，命中率达 22.6%-35.1%。",
+   "published_at": "2026-08-19",
+   "url": "https://www.anthropic.com/research/Claude-accelerates-protein-design",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
+   "id": 4222,
+   "title": "Claude Tag 如何担任 Anthropic CI/CD 故障的一线响应者",
+   "summary": "Anthropic 的 CI 工程师用 Claude Tag 构建了值班智能体，作为 CI/CD 故障的一线响应者。Claude 在事故发生后中位 14 分钟发布首份基于证据的分析，最快案例中 3 分钟内验证修复并确认错误率恢复基线。该方案通过 Slack 频道、Datadog 或 Grafana 工具访问及 GitHub 技能文件实现，Anthropic 已发布通用设置套件供其他团队部署。",
+   "published_at": "2026-08-19",
+   "url": "https://claude.com/blog/ai-ci-cd-on-call",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
    "id": 4161,
    "title": "The hyping of Anthropic’s IPO",
    "summary": "对 Anthropic IPO 静默期流传的 2028 年 1900 亿美元级营收预测，文章提示其多基于匿名信源和未披露算法，可帮助在追踪上市进展时区分已核实数据与传闻。",
@@ -5674,6 +5701,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 4217,
+   "title": "智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准",
+   "summary": "智能体记忆并非可随意开启的功能，而是需按模型能力校准的剂量。强模型适合注入完整指南集，DeepSeek-V3.2（671B MoE）任务完成率提升+9.5个百分点；较弱模型采用精选检索效果最佳，gpt-oss-120b（117B MoE）提升+16.1pp且仅增加+5% token。该方法无需更新权重或人工标注，通过从智能体过往轨迹中蒸馏指南并在推理时注入实现。",
+   "published_at": "2026-08-19",
+   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+   "category": "paper",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
    "id": 4183,
    "title": "开源模型生态的未来：Nvidia 押注“教所有人炼 token”",
    "summary": "开源模型生态正日益依赖 Nvidia 的资助，其已投入 260 亿美元推动近乎开源的模型开发，以扩大推理芯片需求。若此路径不奏效，开源模型将转向效率、可修改性等长尾场景，与闭源模型分化。同时，基础模型训练门槛升高，开源社区兴趣正从全量训练转向对 DeepSeek V4 Flash、GLM 5.X 等模型的微调。",
@@ -6411,6 +6447,17 @@
    "url": "",
    "category": "ai-products",
    "source": ""
+  }
+ ],
+ "DeepSeek-V3": [
+  {
+   "id": 4217,
+   "title": "智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准",
+   "summary": "智能体记忆并非可随意开启的功能，而是需按模型能力校准的剂量。强模型适合注入完整指南集，DeepSeek-V3.2（671B MoE）任务完成率提升+9.5个百分点；较弱模型采用精选检索效果最佳，gpt-oss-120b（117B MoE）提升+16.1pp且仅增加+5% token。该方法无需更新权重或人工标注，通过从智能体过往轨迹中蒸馏指南并在推理时注入实现。",
+   "published_at": "2026-08-19",
+   "url": "https://huggingface.co/blog/ibm-research/altk-evolve-hmm",
+   "category": "paper",
+   "source": "Hugging Face：Blog（RSS）"
   }
  ],
  "DeepSeek-V4": [
@@ -7901,13 +7948,22 @@
  ],
  "Google": [
   {
-   "id": 4200,
+   "id": 4211,
+   "title": "Claude 现已支持 Gmail 邮件与 Google Drive 文件管理",
+   "summary": "Claude 现在可以在 Gmail 中发送邮件，并管理 Google Drive 中的文件。 让 Claude 回复某个邮件线程，它会起草并发送回复。你可以控制何时需要你的批准。 从连接器菜单中选择连接 Gmail 或 Google Drive 即可试用。所有付费套餐均可用。",
+   "published_at": "2026-08-19",
+   "url": "https://x.com/claudeai/status/2089806039088517356",
+   "category": "ai-products",
+   "source": "X：Claude (@claudeai)"
+  },
+  {
+   "id": 4220,
    "title": "设计 AI 评测：先求清晰，再谈可视化",
    "summary": "本文演示如何用开源评测框架 Inspect AI 和 Harbor 评估 agent 技能，并借助 Google Sheets 和 Data Studio 进行可视化分析。",
-   "published_at": "2026-08-18T07:00:00.000Z",
-   "url": "",
+   "published_at": "2026-08-19",
+   "url": "https://dev.to/googleai/designing-ai-evals-clarity-now-and-visualization-next-4eii",
    "category": "tip",
-   "source": ""
+   "source": "Google AI：DEV 作者专属（RSS）"
   },
   {
    "id": 4179,
@@ -9596,6 +9652,24 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 4221,
+   "title": "OpenAI 在“关键网络能力”时代放缓模型开发节奏",
+   "summary": "OpenAI 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到《预备框架》下的“关键网络安全能力”阈值，暂时放缓了模型扩展速度，包括暂停最新部署模型的强化学习训练两周，并搁置最大规模前沿 RL 运行。公司已加强研究环境安全，要求对 Astra 及网络相关负载实施最严格防护，并扩展思维链监控，采用多阶段激活分类器检测机制。",
+   "published_at": "2026-08-19",
+   "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+   "category": "tip",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4230,
+   "title": "OpenAI 在\"关键网络能力\"时代放缓模型开发节奏",
+   "summary": "OpenAI 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到《预备框架》下的\"关键网络安全能力\"阈值，暂时放缓了模型扩展速度，包括暂停最新部署模型的强化学习训练两周，并搁置最大规模前沿 RL 运行。公司已加强研究环境安全，要求对 Astra 及网络相关负载实施最严格防护，并扩展思维链监控，采用多阶段激活分类器检测机制。",
+   "published_at": "2026-08-18T11:00:00.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 4180,
    "title": "OpenAI 如何用前沿智能加固自身防御：The Defender’s Window",
@@ -12852,12 +12926,39 @@
  ],
  "OpenAI": [
   {
-   "id": 4199,
+   "id": 4212,
    "title": "OpenAI 推出 ChatGPT for Teens：面向青少年的学习体验与更强安全保护",
    "summary": "OpenAI 发布 ChatGPT for Teens，为 13-17 岁用户自动启用，内置更强安全保护与家长控制。新增 Study Mode、负责任作业提醒、测验与学习可视化，以及可设定默认开启时段的 Study Hours，引导青少年分步解题而非直接给答案。OpenAI 同时宣布与 CodeAI 合作，帮助青少年理解、质疑并创造性地使用 AI。",
+   "published_at": "2026-08-19",
+   "url": "https://openai.com/index/chatgpt-for-teens",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4215,
+   "title": "OpenAI 启动新计划，强化国家安全领域 AI 的民主监督",
+   "summary": "OpenAI 启动新计划，帮助民主监督机构发展专业能力与工具，以理解和监督政府将 AI 用于国家安全。未来一年，OpenAI 将提供 500 万美元用于培训、技术支持和 OpenAI 积分，并与监督机构试点工具，帮助授权审查员检查 AI 辅助政府决策的相关记录。OpenAI 强调 AI 应增强而非取代人类判断，且不承担对政府的监督角色。",
+   "published_at": "2026-08-19",
+   "url": "https://openai.com/index/strengthening-democratic-oversight-in-national-security",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4221,
+   "title": "OpenAI 在“关键网络能力”时代放缓模型开发节奏",
+   "summary": "OpenAI 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到《预备框架》下的“关键网络安全能力”阈值，暂时放缓了模型扩展速度，包括暂停最新部署模型的强化学习训练两周，并搁置最大规模前沿 RL 运行。公司已加强研究环境安全，要求对 Astra 及网络相关负载实施最严格防护，并扩展思维链监控，采用多阶段激活分类器检测机制。",
+   "published_at": "2026-08-19",
+   "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+   "category": "tip",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4230,
+   "title": "OpenAI 在\"关键网络能力\"时代放缓模型开发节奏",
+   "summary": "OpenAI 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到《预备框架》下的\"关键网络安全能力\"阈值，暂时放缓了模型扩展速度，包括暂停最新部署模型的强化学习训练两周，并搁置最大规模前沿 RL 运行。公司已加强研究环境安全，要求对 Astra 及网络相关负载实施最严格防护，并扩展思维链监控，采用多阶段激活分类器检测机制。",
    "published_at": "2026-08-18T11:00:00.000Z",
    "url": "",
-   "category": "ai-products",
+   "category": "tip",
    "source": ""
   },
   {
@@ -16014,6 +16115,15 @@
  ],
  "Qwen": [
   {
+   "id": 4223,
+   "title": "笔记本模型也能媲美云端前沿模型：Qwen3.8-27B 登顶智能指数",
+   "summary": "作者将 Qwen3.8-27B 装入智能体后表现优异，该模型在 Artificial Analysis 智能指数中排名 135 款模型之首，得分 52，超过 Z.ai 的 753B 参数开源模型 GLM-5.2（51 分）。",
+   "published_at": "2026-08-19",
+   "url": "https://www.tomtunguz.com/birds-dont-fly-like-planes-neither-does-ai",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
    "id": 4160,
    "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
    "summary": "阿里 Qwen 实验室发布 Apache 2 许可的 27B 参数视觉大模型 Qwen 3.8 27B，官方基准显示其超越前代 Qwen 3.6 27B 及闭源 Qwen 3.7-Plus。",
@@ -17492,6 +17602,15 @@
  ],
  "Qwen3.8": [
   {
+   "id": 4223,
+   "title": "笔记本模型也能媲美云端前沿模型：Qwen3.8-27B 登顶智能指数",
+   "summary": "作者将 Qwen3.8-27B 装入智能体后表现优异，该模型在 Artificial Analysis 智能指数中排名 135 款模型之首，得分 52，超过 Z.ai 的 753B 参数开源模型 GLM-5.2（51 分）。",
+   "published_at": "2026-08-19",
+   "url": "https://www.tomtunguz.com/birds-dont-fly-like-planes-neither-does-ai",
+   "category": "tip",
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
    "id": 4120,
    "title": "通义千问开源 Qwen3.8 系列模型",
    "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
@@ -17693,6 +17812,15 @@
   }
  ],
  "Runway": [
+  {
+   "id": 4224,
+   "title": "Populous 如何用 Runway 呈现全球标志性场馆设计",
+   "summary": "全球设计公司 Populous 高级建筑师 Georgina Myers 介绍团队用 Runway 辅助体育场馆概念设计：过去完整视频需外部渲染团队至少三周，且提交前两周须冻结设计模型；如今 Runway 能生成传达尺度感的完整渲染和航拍图，将视觉制作时间缩短，让设计师把时间还给设计本身。该工具已用于利雅得 MBS 体育场等中东项目，支持 9 种不同活动模式的场景迭代。",
+   "published_at": "2026-08-19",
+   "url": "https://runwayml.com/news/customers/populous",
+   "category": "tip",
+   "source": "Runway：News（网页）"
+  },
   {
    "id": 3903,
    "title": "Runway Seedance 2.5 上线，支持50角色参考",

@@ -3,22 +3,22 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 262,
-  "last_seen": "2026-08-18T11:00:00.000Z"
+  "mentions": 265,
+  "last_seen": "2026-08-19"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 195,
-  "last_seen": "2026-08-17"
+  "mentions": 198,
+  "last_seen": "2026-08-19"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 158,
-  "last_seen": "2026-08-18T07:00:00.000Z"
+  "mentions": 159,
+  "last_seen": "2026-08-19"
  },
  {
   "id": 48,
@@ -35,6 +35,13 @@
   "last_seen": "2026-08-18"
  },
  {
+  "id": 6,
+  "name": "Qwen",
+  "type": "model",
+  "mentions": 84,
+  "last_seen": "2026-08-19"
+ },
+ {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
@@ -42,11 +49,11 @@
   "last_seen": "2026-08-18"
  },
  {
-  "id": 6,
-  "name": "Qwen",
-  "type": "model",
-  "mentions": 83,
-  "last_seen": "2026-08-17"
+  "id": 13,
+  "name": "Hugging Face",
+  "type": "company",
+  "mentions": 60,
+  "last_seen": "2026-08-19"
  },
  {
   "id": 43,
@@ -56,18 +63,11 @@
   "last_seen": "2026-08-12T12:00:18.000Z"
  },
  {
-  "id": 13,
-  "name": "Hugging Face",
-  "type": "company",
-  "mentions": 58,
-  "last_seen": "2026-08-18"
- },
- {
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 57,
-  "last_seen": "2026-08-18"
+  "mentions": 58,
+  "last_seen": "2026-08-19"
  },
  {
   "id": 46,
@@ -164,8 +164,8 @@
   "id": 51,
   "name": "Runway",
   "type": "company",
-  "mentions": 21,
-  "last_seen": "2026-08-12"
+  "mentions": 22,
+  "last_seen": "2026-08-19"
  },
  {
   "id": 976,
@@ -336,6 +336,13 @@
   "last_seen": "2026-08-05T10:18:17.000Z"
  },
  {
+  "id": 3364,
+  "name": "Qwen3.8",
+  "type": "model",
+  "mentions": 8,
+  "last_seen": "2026-08-19"
+ },
+ {
   "id": 1,
   "name": "Gemini 3.1 Pro",
   "type": "model",
@@ -369,13 +376,6 @@
   "type": "model",
   "mentions": 7,
   "last_seen": "2026-07-24"
- },
- {
-  "id": 3364,
-  "name": "Qwen3.8",
-  "type": "model",
-  "mentions": 7,
-  "last_seen": "2026-08-14T15:02:48.000Z"
  },
  {
   "id": 134,
@@ -971,5 +971,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-08-17"
+ },
+ {
+  "id": 5415,
+  "name": "DeepSeek-V3",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-08-19"
  }
 ]
