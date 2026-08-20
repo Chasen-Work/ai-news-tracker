@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 265,
-  "last_seen": "2026-08-19"
+  "mentions": 268,
+  "last_seen": "2026-08-20T00:17:26.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 198,
-  "last_seen": "2026-08-19"
+  "mentions": 200,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 159,
-  "last_seen": "2026-08-19"
+  "mentions": 160,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 135,
-  "last_seen": "2026-08-18"
+  "mentions": 136,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 21,
@@ -52,29 +52,29 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 60,
-  "last_seen": "2026-08-19"
+  "mentions": 61,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 43,
   "name": "Meta",
   "type": "company",
-  "mentions": 59,
-  "last_seen": "2026-08-12T12:00:18.000Z"
+  "mentions": 60,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 58,
-  "last_seen": "2026-08-19"
+  "mentions": 59,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 54,
-  "last_seen": "2026-08-18"
+  "mentions": 55,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 149,
@@ -87,15 +87,15 @@
   "id": 560,
   "name": "Apple",
   "type": "company",
-  "mentions": 52,
-  "last_seen": "2026-08-18"
+  "mentions": 53,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 52,
-  "last_seen": "2026-08-19T01:03:29.000Z"
+  "mentions": 53,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 36,
@@ -157,8 +157,8 @@
   "id": 20,
   "name": "HuggingFace",
   "type": "company",
-  "mentions": 22,
-  "last_seen": "2026-08-07"
+  "mentions": 23,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 51,
@@ -173,6 +173,13 @@
   "type": "model",
   "mentions": 17,
   "last_seen": "2026-08-13"
+ },
+ {
+  "id": 23,
+  "name": "Replit",
+  "type": "company",
+  "mentions": 16,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 28,
@@ -196,18 +203,18 @@
   "last_seen": "2026-08-04T16:00:00.000Z"
  },
  {
-  "id": 23,
-  "name": "Replit",
-  "type": "company",
-  "mentions": 15,
-  "last_seen": "2026-08-05"
- },
- {
   "id": 25,
   "name": "OpenClaw",
   "type": "model",
   "mentions": 15,
   "last_seen": "2026-07-07"
+ },
+ {
+  "id": 701,
+  "name": "DeepSeek-V4",
+  "type": "model",
+  "mentions": 15,
+  "last_seen": "2026-08-20"
  },
  {
   "id": 26,
@@ -222,13 +229,6 @@
   "type": "model",
   "mentions": 14,
   "last_seen": "2026-08-12"
- },
- {
-  "id": 701,
-  "name": "DeepSeek-V4",
-  "type": "model",
-  "mentions": 14,
-  "last_seen": "2026-08-15"
  },
  {
   "id": 376,

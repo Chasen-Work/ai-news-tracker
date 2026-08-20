@@ -196,6 +196,24 @@
  ],
  "Anthropic": [
   {
+   "id": 4256,
+   "title": "Claude Code v2.1.236 发布：新增默认模型环境变量与跨会话闲置通知",
+   "summary": "Claude Code v2.1.236 新增 ANTHROPIC_DEFAULT_MODEL 环境变量，可设置新会话默认模型，且 /model 选择仍可覆盖并跨重启保留。",
+   "published_at": "2026-08-20",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
+  {
+   "id": 4257,
+   "title": "Anthropic 在网络关键能力时代放缓模型开发：暂停 RL 训练并强化安全防护",
+   "summary": "Anthropic 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到“关键网络安全能力阈值”，暂时放缓模型扩展速度，包括暂停最新模型两周的强化学习（RL）训练。公司已加强研究环境安全要求，包括工作负载隔离、网络隔离和持续安全测试，并扩大思维链监控范围。涉及 Astra 或网络模型的工作负载需满足最严格安全标准，部分训练和评估工作仍处于暂停状态。",
+   "published_at": "2026-08-20",
+   "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+   "category": "industry",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
    "id": 4214,
    "title": "Claude Science 产品指南：面向生命科学研究的 AI 工作台",
    "summary": "Anthropic 发布 Claude Science（测试版），一个覆盖生命科学数字化流程的 AI 工作台，支持数据分析、图表生成与结果产出，并可通过本地守护进程将重任务调度至自有 GPU、SLURM 集群或云账户。",
@@ -1980,6 +1998,15 @@
  ],
  "Apple": [
   {
+   "id": 4253,
+   "title": "FastMetal 让 Mac 本地 30 秒生成视频",
+   "summary": "一段 5 秒 480P 视频，完全在 Mac 上生成，耗时 30 秒。无需 CUDA，无需云端，仅占用 3.9 GiB 内存。 FastMetal 将 FastWan-QAD 系列带到 Apple Silicon。DiT、DMD 采样器和解码器均通过 MLX 在 Metal 上运行，默认 INT8。 三个模型：1.3B 支持 480P，5B 支持 720P，14B 追求画质。 📷 博客：http://haoailab.com/blogs/fastmetal 📷 代码：http://github.com/hao-ai-lab/FastVideo 📷 模型：http://huggingface.co/collections/Fas…",
+   "published_at": "2026-08-20",
+   "url": "https://x.com/haoailab/status/2090177721913770407",
+   "category": "ai-products",
+   "source": "X：Sky Computing Lab (@haoailab)"
+  },
+  {
    "id": 4181,
    "title": "如何禁用或避免侵入式 AI：一份覆盖 Windows、Chrome、Edge、Firefox 及主流应用的实用指南",
    "summary": "一份面向希望减少技术环境中侵入式 AI 的用户的操作指南，涵盖 Adobe Acrobat、Android/Gemini、Apple Intelligence、Chrome、Edge、Firefox、DuckDuckGo、Google Workspace、Slack、WhatsApp 及 Windows 11/Copilot 等平台。",
@@ -2460,6 +2487,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 4256,
+   "title": "Claude Code v2.1.236 发布：新增默认模型环境变量与跨会话闲置通知",
+   "summary": "Claude Code v2.1.236 新增 ANTHROPIC_DEFAULT_MODEL 环境变量，可设置新会话默认模型，且 /model 选择仍可覆盖并跨重启保留。",
+   "published_at": "2026-08-20",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.236",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
   {
    "id": 4174,
    "title": "Claude Code v2.1.234 发布：新增项目目录名变量与 GitLab MR 徽章，修复多项安全与稳定性问题",
@@ -5701,6 +5737,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 4259,
+   "title": "突破 DeepSeek-V4-Pro 服务极限：H20 上的多场景优化方法",
+   "summary": "LMSYS 团队针对 1.6 万亿参数的 MoE 模型 DeepSeek-V4-Pro，在 H20 GPU 上通过场景化服务配置逼近 B300 性能。单节点 H20-141GB 参考实现达 271 output tokens/s，与 B300 的 383.7 tokens/s 性能差距缩小至 1.42×。",
+   "published_at": "2026-08-20",
+   "url": "https://www.lmsys.org/blog/2026-08-19-deepseek-v4-pro-engine-optimization-h20",
+   "category": "paper",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
    "id": 4217,
    "title": "智能体记忆并非越多越好：八款模型评测显示剂量需按能力校准",
    "summary": "智能体记忆并非可随意开启的功能，而是需按模型能力校准的剂量。强模型适合注入完整指南集，DeepSeek-V3.2（671B MoE）任务完成率提升+9.5个百分点；较弱模型采用精选检索效果最佳，gpt-oss-120b（117B MoE）提升+16.1pp且仅增加+5% token。该方法无需更新权重或人工标注，通过从智能体过往轨迹中蒸馏指南并在推理时注入实现。",
@@ -6462,6 +6507,15 @@
  ],
  "DeepSeek-V4": [
   {
+   "id": 4259,
+   "title": "突破 DeepSeek-V4-Pro 服务极限：H20 上的多场景优化方法",
+   "summary": "LMSYS 团队针对 1.6 万亿参数的 MoE 模型 DeepSeek-V4-Pro，在 H20 GPU 上通过场景化服务配置逼近 B300 性能。单节点 H20-141GB 参考实现达 271 output tokens/s，与 B300 的 383.7 tokens/s 性能差距缩小至 1.42×。",
+   "published_at": "2026-08-20",
+   "url": "https://www.lmsys.org/blog/2026-08-19-deepseek-v4-pro-engine-optimization-h20",
+   "category": "paper",
+   "source": "LMSYS：Blog（Chatbot Arena 团队）"
+  },
+  {
    "id": 4106,
    "title": "DeepSeek V4 Pro 登陆硅基流动，1M 上下文",
    "summary": "DeepSeek-V4-Pro-0813 正式上线硅基流动 SiliconFlow，提供 Day-0 支持，具备 1M 上下文窗口及低/高/最大三档推理强度，更侧重编码、工具调用与智能体工作流，仍保持 MIT 开源协议。定价为输入 $1.32/M、输出 $3.96/M、缓存命中 $0.44/M。同系列 DeepSeek-V4-Flash-0731 则面向追求速度与成本效益的日常生产场景。",
@@ -7208,13 +7262,22 @@
  ],
  "GPT-5.6": [
   {
-   "id": 4237,
+   "id": 4252,
    "title": "GLM-5.3上线：AA智能指数60分并列开源第一，成本更低",
    "summary": "GLM-5.3 API即日上线，擅长复杂编码、防御性网络安全与长程任务，在AA综合智能指数中取得60分，与Claude Fable 5、GPT-5.6 Sol等闭源旗舰同级，并与Kimi K3并列开源模型第一。该模型以更小参数规模和更低调用成本降低前沿智能门槛，单任务成本为旗舰模型中最低。API定价与GLM-5.2持平，模型权重将于下周五开源。",
-   "published_at": "2026-08-19T01:03:29.000Z",
-   "url": "",
+   "published_at": "2026-08-20",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494105&idx=1&sn=8d7409e0fb846a3c7803c142b5d1a8e7",
    "category": "ai-products",
-   "source": ""
+   "source": "公众号：智谱（GLM）"
+  },
+  {
+   "id": 4255,
+   "title": "Replit 推出由 GPT-5.6 Luna 驱动的 Free Mode，免费构建软件",
+   "summary": "Replit 推出由 GPT-5.6 Luna 驱动的 Free Mode，让用户无需担心 token 成本即可将想法转化为可运行的软件。该模式借助 GPT-5.6 系列的价格性能优势及 OpenAI 近期降价，向数百万用户开放，提供快速解答、建议与项目分析，并可在需要更高级推理时切换至 GPT-5.6 Sol，同时保留项目上下文。",
+   "published_at": "2026-08-20",
+   "url": "https://openai.com/index/replit",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
   },
   {
    "id": 4180,
@@ -7956,6 +8019,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 4254,
+   "title": "Google 搜索推出 5 项 AI 学习工具",
+   "summary": "Google 在搜索中推出 5 项 AI 学习工具。AI Mode 的生成式 UI 已全球上线英文版，支持交互式可视化与自定义模拟；练习测验现已在 AI Overviews 和 AI Mode 中免费提供英文版，覆盖 ACT、SAT 等标准化考试。",
+   "published_at": "2026-08-20",
+   "url": "https://blog.google/products-and-platforms/products/search/back-to-school-study-tools",
+   "category": "ai-products",
+   "source": "Google Blog：AI（RSS）"
+  },
   {
    "id": 4211,
    "title": "Claude 现已支持 Gmail 邮件与 Google Drive 文件管理",
@@ -9662,6 +9734,15 @@
  ],
  "Hugging Face": [
   {
+   "id": 4257,
+   "title": "Anthropic 在网络关键能力时代放缓模型开发：暂停 RL 训练并强化安全防护",
+   "summary": "Anthropic 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到“关键网络安全能力阈值”，暂时放缓模型扩展速度，包括暂停最新模型两周的强化学习（RL）训练。公司已加强研究环境安全要求，包括工作负载隔离、网络隔离和持续安全测试，并扩大思维链监控范围。涉及 Astra 或网络模型的工作负载需满足最严格安全标准，部分训练和评估工作仍处于暂停状态。",
+   "published_at": "2026-08-20",
+   "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+   "category": "industry",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
    "id": 4221,
    "title": "OpenAI 在“关键网络能力”时代放缓模型开发节奏",
    "summary": "OpenAI 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到《预备框架》下的“关键网络安全能力”阈值，暂时放缓了模型扩展速度，包括暂停最新部署模型的强化学习训练两周，并搁置最大规模前沿 RL 运行。公司已加强研究环境安全，要求对 Astra 及网络相关负载实施最严格防护，并扩展思维链监控，采用多阶段激活分类器检测机制。",
@@ -10204,6 +10285,15 @@
  ],
  "HuggingFace": [
   {
+   "id": 4253,
+   "title": "FastMetal 让 Mac 本地 30 秒生成视频",
+   "summary": "一段 5 秒 480P 视频，完全在 Mac 上生成，耗时 30 秒。无需 CUDA，无需云端，仅占用 3.9 GiB 内存。 FastMetal 将 FastWan-QAD 系列带到 Apple Silicon。DiT、DMD 采样器和解码器均通过 MLX 在 Metal 上运行，默认 INT8。 三个模型：1.3B 支持 480P，5B 支持 720P，14B 追求画质。 📷 博客：http://haoailab.com/blogs/fastmetal 📷 代码：http://github.com/hao-ai-lab/FastVideo 📷 模型：http://huggingface.co/collections/Fas…",
+   "published_at": "2026-08-20",
+   "url": "https://x.com/haoailab/status/2090177721913770407",
+   "category": "ai-products",
+   "source": "X：Sky Computing Lab (@haoailab)"
+  },
+  {
    "id": 3650,
    "title": "面壁智能 AMNESIAC：反向图灵测试 AI 审讯游戏",
    "summary": "面壁智能 OpenBMB 在 #BuildSmall 黑客松推出 AMNESIAC，一款反向图灵测试交互游戏：玩家需说服 AI 审讯官 A.M.N. 自己是人类。该游戏由 MiniCPM-o 4.5 驱动实时对话与推理，VoxCPM 生成审讯官语音，并结合摄像头面部表情、脉搏信号与响应计时进行多模态审讯。项目已开源至 HuggingFace。",
@@ -10689,6 +10779,15 @@
   }
  ],
  "Meta": [
+  {
+   "id": 4253,
+   "title": "FastMetal 让 Mac 本地 30 秒生成视频",
+   "summary": "一段 5 秒 480P 视频，完全在 Mac 上生成，耗时 30 秒。无需 CUDA，无需云端，仅占用 3.9 GiB 内存。 FastMetal 将 FastWan-QAD 系列带到 Apple Silicon。DiT、DMD 采样器和解码器均通过 MLX 在 Metal 上运行，默认 INT8。 三个模型：1.3B 支持 480P，5B 支持 720P，14B 追求画质。 📷 博客：http://haoailab.com/blogs/fastmetal 📷 代码：http://github.com/hao-ai-lab/FastVideo 📷 模型：http://huggingface.co/collections/Fas…",
+   "published_at": "2026-08-20",
+   "url": "https://x.com/haoailab/status/2090177721913770407",
+   "category": "ai-products",
+   "source": "X：Sky Computing Lab (@haoailab)"
+  },
   {
    "id": 3951,
    "title": "Meta 开源 Muse Glimmer 登陆 OpenRouter",
@@ -12934,6 +13033,33 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 4265,
+   "title": "消息称 OpenAI 首席财务官告知员工：公司最迟将于 2027 年上市",
+   "summary": "OpenAI 首席财务官萨拉·弗里亚尔在全员大会上告知员工，公司最迟将于 2027 年完成上市，若业务持续向好也可能更早。OpenAI 已于 6 月秘密提交 IPO 招股书，本季度整体年化营收增长 35%，企业级业务年化营收增长 50%，AI 编程与办公产品周活跃用户突破 2000 万。",
+   "published_at": "2026-08-20T00:17:26.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 4255,
+   "title": "Replit 推出由 GPT-5.6 Luna 驱动的 Free Mode，免费构建软件",
+   "summary": "Replit 推出由 GPT-5.6 Luna 驱动的 Free Mode，让用户无需担心 token 成本即可将想法转化为可运行的软件。该模式借助 GPT-5.6 系列的价格性能优势及 OpenAI 近期降价，向数百万用户开放，提供快速解答、建议与项目分析，并可在需要更高级推理时切换至 GPT-5.6 Sol，同时保留项目上下文。",
+   "published_at": "2026-08-20",
+   "url": "https://openai.com/index/replit",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4257,
+   "title": "Anthropic 在网络关键能力时代放缓模型开发：暂停 RL 训练并强化安全防护",
+   "summary": "Anthropic 因 OpenAI-Hugging Face 事件及即将推出的 Astra 模型可能达到“关键网络安全能力阈值”，暂时放缓模型扩展速度，包括暂停最新模型两周的强化学习（RL）训练。公司已加强研究环境安全要求，包括工作负载隔离、网络隔离和持续安全测试，并扩大思维链监控范围。涉及 Astra 或网络模型的工作负载需满足最严格安全标准，部分训练和评估工作仍处于暂停状态。",
+   "published_at": "2026-08-20",
+   "url": "https://openai.com/index/pacing-model-development-cyber-capabilities",
+   "category": "industry",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
   {
    "id": 4212,
    "title": "OpenAI 推出 ChatGPT for Teens：面向青少年的学习体验与更强安全保护",
@@ -15533,6 +15659,15 @@
  ],
  "OpenRouter": [
   {
+   "id": 4258,
+   "title": "OpenRouter 宣布加入 Stripe",
+   "summary": "OpenRouter 宣布与 Stripe 合并，以加速推动全球经济增长。OpenRouter 目前每日处理来自 400 多个 AI 模型的 10+ 万亿 token，服务超 1000 万开发者与公司，自成立以来推理量每年至少增长 10 倍。合并后 OpenRouter 将继续以原名、原使命独立运营，产品与路线图不变，路由决策仍以用户利益为先，交易预计在未来数周内完成。",
+   "published_at": "2026-08-20",
+   "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe",
+   "category": "industry",
+   "source": "OpenRouter：Announcements（RSS）"
+  },
+  {
    "id": 4171,
    "title": "OpenRouter 推出 Activity 仪表盘与 Analytics API：按智能体、模型、请求追踪 AI 使用成本",
    "summary": "OpenRouter 发布 Activity 仪表盘和 beta Analytics API，可按智能体、模型、请求维度查看支出、token 量、缓存命中率等指标，并支持下钻至单条请求日志。",
@@ -17684,6 +17819,15 @@
   }
  ],
  "Replit": [
+  {
+   "id": 4255,
+   "title": "Replit 推出由 GPT-5.6 Luna 驱动的 Free Mode，免费构建软件",
+   "summary": "Replit 推出由 GPT-5.6 Luna 驱动的 Free Mode，让用户无需担心 token 成本即可将想法转化为可运行的软件。该模式借助 GPT-5.6 系列的价格性能优势及 OpenAI 近期降价，向数百万用户开放，提供快速解答、建议与项目分析，并可在需要更高级推理时切换至 GPT-5.6 Sol，同时保留项目上下文。",
+   "published_at": "2026-08-20",
+   "url": "https://openai.com/index/replit",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
   {
    "id": 3438,
    "title": "Replit 环境智能：免提示词自动生成设计",
