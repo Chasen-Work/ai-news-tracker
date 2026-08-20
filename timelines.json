@@ -16259,6 +16259,15 @@
  ],
  "Qwen": [
   {
+   "id": 4276,
+   "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
+   "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
+   "published_at": "2026-08-20T09:45:51.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4223,
    "title": "笔记本模型也能媲美云端前沿模型：Qwen3.8-27B 登顶智能指数",
    "summary": "作者将 Qwen3.8-27B 装入智能体后表现优异，该模型在 Artificial Analysis 智能指数中排名 135 款模型之首，得分 52，超过 Z.ai 的 753B 参数开源模型 GLM-5.2（51 分）。",
@@ -17134,6 +17143,15 @@
   }
  ],
  "Qwen-": [
+  {
+   "id": 4276,
+   "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
+   "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
+   "published_at": "2026-08-20T09:45:51.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 3980,
    "title": "阿里开放 Qwen3.8-2.4T-A95B 模型权重：2.4T MoE、激活 95B、原生 256K 上下文",
@@ -20400,6 +20418,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 4276,
+   "title": "阿里发布 Qwen-UI-Agent，主打让模型真正\"会用\"每一块屏幕",
+   "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
+   "published_at": "2026-08-20T09:45:51.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4160,
    "title": "Qwen 3.8 27B 表现出色，但默认推理强度过高导致过度思考",
