@@ -5800,6 +5800,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 4311,
+   "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+   "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
+   "published_at": "2026-08-21T09:26:04.727Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4259,
    "title": "突破 DeepSeek-V4-Pro 服务极限：H20 上的多场景优化方法",
    "summary": "LMSYS 团队针对 1.6 万亿参数的 MoE 模型 DeepSeek-V4-Pro，在 H20 GPU 上通过场景化服务配置逼近 B300 性能。单节点 H20-141GB 参考实现达 271 output tokens/s，与 B300 的 383.7 tokens/s 性能差距缩小至 1.42×。",
@@ -6569,6 +6578,15 @@
   }
  ],
  "DeepSeek-V4": [
+  {
+   "id": 4311,
+   "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+   "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
+   "published_at": "2026-08-21T09:26:04.727Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4259,
    "title": "突破 DeepSeek-V4-Pro 服务极限：H20 上的多场景优化方法",
@@ -18524,6 +18542,15 @@
   }
  ],
  "deepseek-v4": [
+  {
+   "id": 4311,
+   "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
+   "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
+   "published_at": "2026-08-21T09:26:04.727Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4027,
    "title": "DeepSeek-V4-Pro 正式版上线，Agent 能力大幅增强",

@@ -66,8 +66,8 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 59,
-  "last_seen": "2026-08-20"
+  "mentions": 60,
+  "last_seen": "2026-08-21T09:26:04.727Z"
  },
  {
   "id": 46,
@@ -203,6 +203,13 @@
   "last_seen": "2026-08-04T16:00:00.000Z"
  },
  {
+  "id": 701,
+  "name": "DeepSeek-V4",
+  "type": "model",
+  "mentions": 16,
+  "last_seen": "2026-08-21T09:26:04.727Z"
+ },
+ {
   "id": 25,
   "name": "OpenClaw",
   "type": "model",
@@ -215,13 +222,6 @@
   "type": "model",
   "mentions": 15,
   "last_seen": "2026-08-21"
- },
- {
-  "id": 701,
-  "name": "DeepSeek-V4",
-  "type": "model",
-  "mentions": 15,
-  "last_seen": "2026-08-20"
  },
  {
   "id": 26,
@@ -616,6 +616,13 @@
   "last_seen": "2026-07-21T00:00:00.000Z"
  },
  {
+  "id": 4297,
+  "name": "deepseek-v4",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-08-21T09:26:04.727Z"
+ },
+ {
   "id": 29,
   "name": "研华",
   "type": "company",
@@ -733,13 +740,6 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-08-03"
- },
- {
-  "id": 4297,
-  "name": "deepseek-v4",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-08-13T11:16:42.199Z"
  },
  {
   "id": 4465,
