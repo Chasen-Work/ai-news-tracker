@@ -196,6 +196,33 @@
  ],
  "Anthropic": [
   {
+   "id": 4325,
+   "title": "Claude Mythos 5 网络安全能力扩展至更多防御者",
+   "summary": "Anthropic 宣布 Claude Mythos 5 现已集成至 Claude Security，并即将登陆合作伙伴的网络安全防御工具。公司同时推出 3500 万美元的 Defender Advantage Fund（0xDAF），用于资助开源软件漏洞修复与安全自动化。",
+   "published_at": "2026-08-22",
+   "url": "https://claude.com/blog/bringing-claude-mythos-5-to-more-defenders",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 4331,
+   "title": "微型语言模型中干扰权重的特征刻画",
+   "summary": "Anthropic 训练了一个单层 transformer，通过将模型分解为 token、位置、特征和 logits 间的虚拟权重，首次在训练过的 transformer 内直接演示了干扰权重的存在及其对训练损失的影响。",
+   "published_at": "2026-08-22",
+   "url": "https://transformer-circuits.pub/2026/interference_effectiveness_helpfulness/index.html",
+   "category": "paper",
+   "source": "Anthropic：Transformer Circuits（可解释性研究）"
+  },
+  {
+   "id": 4334,
+   "title": "AI 原生 SDLC 实战手册：Anthropic 如何用 Claude 重塑软件开发生命周期",
+   "summary": "Anthropic 发布 AI 原生 SDLC 实战手册，提出将传统六阶段软件开发生命周期重构为 AI 嵌入各环节的闭环流程。手册指出，当代码不再是瓶颈时，规划、审查、部署等人速环节成为新约束，需通过 Claude 将需求压缩为 intent.md、以技能编码标准、用持续评测替代阶段门禁，并保留人工对关键代码的审查。",
+   "published_at": "2026-08-22",
+   "url": "https://claude.com/blog/the-ai-native-sdlc-playbook",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
    "id": 4289,
    "title": "Claude Platform 正式上线 Computer Use、Skills API 与 Files API，新增浏览器操作工具",
    "summary": "Anthropic 宣布 Computer Use、Skills API 与 Files API 在 Claude Platform 全面可用，并新增浏览器操作工具，让智能体可操作软件、调用团队技能并返回成品文件。",
@@ -2523,6 +2550,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 4327,
+   "title": "Claude Code v2.1.239 发布：修复多项 Bug 并新增成本估算与 /claude-api 升级功能",
+   "summary": "Claude Code v2.1.239 发布，成本估算（/cost、状态栏、--max-budget-usd）现包含数据驻留工作区 1.1 倍美国专属推理溢价，并为 Bedrock、Vertex、Foundry 等新增全屏渲染器。",
+   "published_at": "2026-08-22",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.239",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
   {
    "id": 4292,
    "title": "Claude Code v2.1.238 发布：新增 readline 键位、插件市场 headersHelper 与多项 Remote Control 修复",
@@ -5312,6 +5348,15 @@
  ],
  "Cursor": [
   {
+   "id": 4326,
+   "title": "Grok Bot 扩展至更多订阅计划",
+   "summary": "xAI 宣布 Grok Bot 现包含于所有 SuperGrok Plus、Cursor Pro+ 及 Cursor Teams 计划，此前该功能于 8 月 11 日以 beta 形式推出。Grok Bot 是可在云端独立运行的 AI 智能体，支持文本线程交互、并行运行多个 Bot，并能处理销售、建站、客服等具体工作。企业用户可通过候补名单申请更大规模的团队部署。",
+   "published_at": "2026-08-22",
+   "url": "https://x.ai/news/grok-bot-more-plans",
+   "category": "ai-products",
+   "source": "xAI：News（网页）"
+  },
+  {
    "id": 4170,
    "title": "Cursor 推出 Origin 代码托管服务，作为 GitHub 的替代方案",
    "summary": "Cursor 今日起向所有付费计划用户开放 Origin 代码托管的早期测试版，提供仓库、拉取请求、代码浏览及 GitHub 同步功能。用户可创建以 cursor.com/codebase/ 为前缀的仓库，或将 GitHub 仓库同步至 Origin，双向同步评论与审查。Vercel、Depot 和 Buildkite 集成已可用，智能体功能即将推出。",
@@ -5800,13 +5845,13 @@
  ],
  "DeepSeek": [
   {
-   "id": 4311,
+   "id": 4323,
    "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
    "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
-   "published_at": "2026-08-21T09:26:04.727Z",
-   "url": "",
+   "published_at": "2026-08-22",
+   "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-21",
    "category": "ai-models",
-   "source": ""
+   "source": "DeepSeek：API 更新日志"
   },
   {
    "id": 4259,
@@ -6579,13 +6624,13 @@
  ],
  "DeepSeek-V4": [
   {
-   "id": 4311,
+   "id": 4323,
    "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
    "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
-   "published_at": "2026-08-21T09:26:04.727Z",
-   "url": "",
+   "published_at": "2026-08-22",
+   "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-21",
    "category": "ai-models",
-   "source": ""
+   "source": "DeepSeek：API 更新日志"
   },
   {
    "id": 4259,
@@ -8100,6 +8145,24 @@
   }
  ],
  "Google": [
+  {
+   "id": 4332,
+   "title": "Google 推出 Biomarker Discovery Framework：从可穿戴传感器数据中筛选候选生物标志物的多智能体系统",
+   "summary": "Google 推出 Biomarker Discovery Framework，一个多智能体系统，通过迭代假设生成、统计分析与文献推理，从可穿戴传感器数据中筛选候选生物标志物。该系统在三个队列（共 9,279 人次观测）中恢复了已知临床信号，识别出跨独立数据集的一致生物标志物，并在结合人口统计特征后提升了下游预测性能。流程包含六阶段闭环架构与 11 项对抗性验证检查，并保留人工监督。",
+   "published_at": "2026-08-22",
+   "url": "https://research.google/blog/an-ai-tool-for-prioritizing-candidate-biomarkers-from-wearable-sensor-data",
+   "category": "paper",
+   "source": "Google Research：Blog（网页）"
+  },
+  {
+   "id": 4333,
+   "title": "移动性如何让语言模型更深入地理解地点",
+   "summary": "Google Research 推出 Mobility-Embedded POIs（ME-POIs）框架，将聚合匿名移动模式与文本描述结合，为地点构建融合身份与动态功能的嵌入向量。在未见地点上，该框架使访问意图预测相对提升 81.9%，价格等级分类提升 75.1%，繁忙度估算准确率提升 24.7%。",
+   "published_at": "2026-08-22",
+   "url": "https://research.google/blog/how-mobility-gives-language-models-a-deeper-understanding-of-place",
+   "category": "paper",
+   "source": "Google Research：Blog（网页）"
+  },
   {
    "id": 4254,
    "title": "Google 搜索推出 5 项 AI 学习工具",
@@ -9814,6 +9877,24 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 4329,
+   "title": "测量语音识别中的基准优化：Hugging Face 新测试揭示 ASR 模型“刷分”现象",
+   "summary": "Hugging Face 最新研究引入三项测试量化语音识别中的基准优化（benchmaxxing）现象。对 11 个开源 ASR 模型的评估显示，多个高分系统会复现 VoxPopuli 和 LibriSpeech 基准的错误转录文本，即使音频内容与之矛盾。部分模型甚至依赖声学线索识别基准来源，导致其得分高估了真实转录能力。",
+   "published_at": "2026-08-22",
+   "url": "https://huggingface.co/blog/asr-benchmark-optimization",
+   "category": "paper",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 4342,
+   "title": "测量语音识别中的基准优化：Hugging Face 新测试揭示 ASR 模型\"刷分\"现象",
+   "summary": "Hugging Face 最新研究引入三项测试量化语音识别中的基准优化（benchmaxxing）现象。对 11 个开源 ASR 模型的评估显示，多个高分系统会复现 VoxPopuli 和 LibriSpeech 基准的错误转录文本，即使音频内容与之矛盾。部分模型甚至依赖声学线索识别基准来源，导致其得分高估了真实转录能力。",
+   "published_at": "2026-08-21T00:00:00.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
   {
    "id": 4286,
    "title": "Hugging Face 发布 LFM2.5 系列 DSpark 草稿模型，推理速度最高提升 3.18 倍",
@@ -15565,6 +15646,15 @@
  ],
  "OpenBMB": [
   {
+   "id": 4322,
+   "title": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
+   "summary": "面壁智能 OpenBMB 推出 MathForm，一个面向 Lean 4 数学自动形式化的开源框架、数据集与模型。其 FormalVerse 数据集含 367K+ 已验证示例；在匹配 100K 预算下，基于其训练的模型 Consistency Check 达 60.32%，优于 FineLeanCorpus（46.53%）与 NuminaMath-LEAN（41.49%）。",
+   "published_at": "2026-08-22",
+   "url": "https://x.com/OpenBMB/status/2090786300194590816",
+   "category": "ai-models",
+   "source": "X：面壁智能 OpenBMB (@OpenBMB)"
+  },
+  {
    "id": 3650,
    "title": "面壁智能 AMNESIAC：反向图灵测试 AI 审讯游戏",
    "summary": "面壁智能 OpenBMB 在 #BuildSmall 黑客松推出 AMNESIAC，一款反向图灵测试交互游戏：玩家需说服 AI 审讯官 A.M.N. 自己是人类。该游戏由 MiniCPM-o 4.5 驱动实时对话与推理，VoxCPM 生成审讯官语音，并结合摄像头面部表情、脉搏信号与响应计时进行多模态审讯。项目已开源至 HuggingFace。",
@@ -18543,13 +18633,13 @@
  ],
  "deepseek-v4": [
   {
-   "id": 4311,
+   "id": 4323,
    "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
    "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
-   "published_at": "2026-08-21T09:26:04.727Z",
-   "url": "",
+   "published_at": "2026-08-22",
+   "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-08-21",
    "category": "ai-models",
-   "source": ""
+   "source": "DeepSeek：API 更新日志"
   },
   {
    "id": 4027,
@@ -18859,6 +18949,15 @@
   }
  ],
  "xAI": [
+  {
+   "id": 4326,
+   "title": "Grok Bot 扩展至更多订阅计划",
+   "summary": "xAI 宣布 Grok Bot 现包含于所有 SuperGrok Plus、Cursor Pro+ 及 Cursor Teams 计划，此前该功能于 8 月 11 日以 beta 形式推出。Grok Bot 是可在云端独立运行的 AI 智能体，支持文本线程交互、并行运行多个 Bot，并能处理销售、建站、客服等具体工作。企业用户可通过候补名单申请更大规模的团队部署。",
+   "published_at": "2026-08-22",
+   "url": "https://x.ai/news/grok-bot-more-plans",
+   "category": "ai-products",
+   "source": "xAI：News（网页）"
+  },
   {
    "id": 3979,
    "title": "xAI 发布 Grok 4.6，强化长时运行智能体能力",
@@ -20897,6 +20996,15 @@
   }
  ],
  "面壁智能": [
+  {
+   "id": 4322,
+   "title": "面壁智能 OpenBMB 推出 MathForm，面向 Lean 4 数学自动形式化的开源框架、数据集与模型",
+   "summary": "面壁智能 OpenBMB 推出 MathForm，一个面向 Lean 4 数学自动形式化的开源框架、数据集与模型。其 FormalVerse 数据集含 367K+ 已验证示例；在匹配 100K 预算下，基于其训练的模型 Consistency Check 达 60.32%，优于 FineLeanCorpus（46.53%）与 NuminaMath-LEAN（41.49%）。",
+   "published_at": "2026-08-22",
+   "url": "https://x.com/OpenBMB/status/2090786300194590816",
+   "category": "ai-models",
+   "source": "X：面壁智能 OpenBMB (@OpenBMB)"
+  },
   {
    "id": 3735,
    "title": "独立开发者用 VoxCPM 克隆网红声音，让 AI 终于“会聊天”了",
