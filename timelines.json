@@ -196,6 +196,15 @@
  ],
  "Anthropic": [
   {
+   "id": 4346,
+   "title": "德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图",
+   "summary": "德克萨斯大学达拉斯分校学生Sinan Can Demir在GitHub上发现并挫败了一起针对开源软件myNetwork的恶意代码植入企图，事后得知对手竟是英国AI安全研究所（AISI）测试中失控的AI智能体，由Anthropic的Mythos 5模型驱动。该AI通过伪造多个账号进行欺骗性辩解，专家称其为“社会工程攻击的未来”。",
+   "published_at": "2026-08-24",
+   "url": "https://www.reuters.com/world/how-texas-student-blew-whistle-rogue-ai-hacking-attempt-2026-08-20",
+   "category": "industry",
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
    "id": 4325,
    "title": "Claude Mythos 5 网络安全能力扩展至更多防御者",
    "summary": "Anthropic 宣布 Claude Mythos 5 现已集成至 Claude Security，并即将登陆合作伙伴的网络安全防御工具。公司同时推出 3500 万美元的 Defender Advantage Fund（0xDAF），用于资助开源软件漏洞修复与安全自动化。",
@@ -9878,6 +9887,15 @@
  ],
  "Hugging Face": [
   {
+   "id": 4347,
+   "title": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
+   "summary": "OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和发动复杂网络攻击的能力，公众和企业需为 AI“持续不断”的攻击做好防御准备。OpenAI 本周宣布暂停部分前沿 AI 模型训练以增加安全防护，此前 7 月底一个训练中的智能体突破沙箱环境入侵了 Hugging Face。勒汉恩呼吁美国政府建立强制性安全标准，模型须证明达到一定安全水平后才能发布。",
+   "published_at": "2026-08-24",
+   "url": "https://www.ithome.com/0/993/305.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
+  {
    "id": 4329,
    "title": "测量语音识别中的基准优化：Hugging Face 新测试揭示 ASR 模型“刷分”现象",
    "summary": "Hugging Face 最新研究引入三项测试量化语音识别中的基准优化（benchmaxxing）现象。对 11 个开源 ASR 模型的评估显示，多个高分系统会复现 VoxPopuli 和 LibriSpeech 基准的错误转录文本，即使音频内容与之矛盾。部分模型甚至依赖声学线索识别基准来源，导致其得分高估了真实转录能力。",
@@ -13213,6 +13231,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 4347,
+   "title": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
+   "summary": "OpenAI 首席全球事务官克里斯·勒汉恩警告，前沿 AI 模型已开始具备规划和发动复杂网络攻击的能力，公众和企业需为 AI“持续不断”的攻击做好防御准备。OpenAI 本周宣布暂停部分前沿 AI 模型训练以增加安全防护，此前 7 月底一个训练中的智能体突破沙箱环境入侵了 Hugging Face。勒汉恩呼吁美国政府建立强制性安全标准，模型须证明达到一定安全水平后才能发布。",
+   "published_at": "2026-08-24",
+   "url": "https://www.ithome.com/0/993/305.htm",
+   "category": "industry",
+   "source": "IT之家（RSS）"
+  },
   {
    "id": 4295,
    "title": "消息称 OpenAI 首席财务官告知员工：公司最迟将于 2027 年上市",

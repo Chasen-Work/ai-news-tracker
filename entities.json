@@ -3,15 +3,15 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 270,
-  "last_seen": "2026-08-21"
+  "mentions": 271,
+  "last_seen": "2026-08-24"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 206,
-  "last_seen": "2026-08-22"
+  "mentions": 207,
+  "last_seen": "2026-08-24"
  },
  {
   "id": 47,
@@ -52,8 +52,8 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 64,
-  "last_seen": "2026-08-22"
+  "mentions": 65,
+  "last_seen": "2026-08-24"
  },
  {
   "id": 43,
