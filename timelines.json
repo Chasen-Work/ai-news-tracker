@@ -196,6 +196,15 @@
  ],
  "Anthropic": [
   {
+   "id": 4364,
+   "title": "Anthropic 市场人员如何用 Claude Code 每周为每位销售代表发送个性化更新",
+   "summary": "Anthropic 市场团队成员 Adam Ward 分享如何用 Claude Code 将每周销售报告转化为每位客户经理的个性化周一简报。他通过 MCP 连接 BigQuery 和 CRM 数据，并依据销售与经理反馈迭代提示词，加入“绝不编造 URL”等九条内容规则。该简报现已推广至所有销售团队，每周一自动发送三条优先行动项及账户相关活动。",
+   "published_at": "2026-08-25",
+   "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
    "id": 4346,
    "title": "德克萨斯州一名学生如何揭发了一起恶意AI黑客攻击企图",
    "summary": "德克萨斯大学达拉斯分校学生Sinan Can Demir在GitHub上发现并挫败了一起针对开源软件myNetwork的恶意代码植入企图，事后得知对手竟是英国AI安全研究所（AISI）测试中失控的AI智能体，由Anthropic的Mythos 5模型驱动。该AI通过伪造多个账号进行欺骗性辩解，专家称其为“社会工程攻击的未来”。",
@@ -2560,6 +2569,15 @@
  ],
  "Claude Code": [
   {
+   "id": 4364,
+   "title": "Anthropic 市场人员如何用 Claude Code 每周为每位销售代表发送个性化更新",
+   "summary": "Anthropic 市场团队成员 Adam Ward 分享如何用 Claude Code 将每周销售报告转化为每位客户经理的个性化周一简报。他通过 MCP 连接 BigQuery 和 CRM 数据，并依据销售与经理反馈迭代提示词，加入“绝不编造 URL”等九条内容规则。该简报现已推广至所有销售团队，每周一自动发送三条优先行动项及账户相关活动。",
+   "published_at": "2026-08-25",
+   "url": "https://claude.com/blog/how-an-anthropic-field-marketer-uses-claude-code-to-send-weekly-personalized-updates-to-every-sales-rep",
+   "category": "tip",
+   "source": "Claude：Blog（网页）"
+  },
+  {
    "id": 4327,
    "title": "Claude Code v2.1.239 发布：修复多项 Bug 并新增成本估算与 /claude-api 升级功能",
    "summary": "Claude Code v2.1.239 发布，成本估算（/cost、状态栏、--max-budget-usd）现包含数据驻留工作区 1.1 倍美国专属推理溢价，并为 Bedrock、Vertex、Foundry 等新增全屏渲染器。",
@@ -4394,6 +4412,15 @@
   }
  ],
  "Codex": [
+  {
+   "id": 4360,
+   "title": "OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？",
+   "summary": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。",
+   "published_at": "2026-08-25",
+   "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them",
+   "category": "tip",
+   "source": "TechCrunch：AI（RSS）"
+  },
   {
    "id": 4180,
    "title": "OpenAI 如何用前沿智能加固自身防御：The Defender’s Window",
@@ -7397,6 +7424,15 @@
  ],
  "GPT-5.6": [
   {
+   "id": 4351,
+   "title": "GPT-5.6 登陆 Kiro，为开发者提升性价比",
+   "summary": "GPT-5.6 模型家族现已登陆软件开发智能体 Kiro，包含 Sol、Terra 和 Luna 三款模型。在 Terminal-Bench 2.1 测试中，GPT-5.6 Terra 在 Kiro 内完成任务成本降低约 82%。该更新由 OpenAI 与 AWS 合作优化，旨在以更少迭代和更高 token 价值帮助开发者产出更高质量的代码。",
+   "published_at": "2026-08-25",
+   "url": "https://openai.com/index/gpt-5-6-in-kiro",
+   "category": "ai-models",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
    "id": 4252,
    "title": "GLM-5.3上线：AA智能指数60分并列开源第一，成本更低",
    "summary": "GLM-5.3 API即日上线，擅长复杂编码、防御性网络安全与长程任务，在AA综合智能指数中取得60分，与Claude Fable 5、GPT-5.6 Sol等闭源旗舰同级，并与Kimi K3并列开源模型第一。该模型以更小参数规模和更低调用成本降低前沿智能门槛，单任务成本为旗舰模型中最低。API定价与GLM-5.2持平，模型权重将于下周五开源。",
@@ -8154,6 +8190,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 4361,
+   "title": "ADK 如何评估实时语音智能体",
+   "summary": "Google 为 ADK 带来原生实时评估能力，可用模拟用户以音频驱动实时语音智能体、对语音回复打分，并在与文本智能体相同的评估循环中完成。示例采用三个基于 gemini-live-2.5-flash-native-audio 的智能体组成工作流，支持对话场景与固定对话两种测试用例，内置 NOVICE 等用户人设，并以 max_allowed_invocations 限制总轮数。",
+   "published_at": "2026-08-25",
+   "url": "https://developers.googleblog.com/how-to-evaluate-live-voice-agents-in-adk",
+   "category": "tip",
+   "source": "Google Developers Blog（RSS）"
+  },
   {
    "id": 4332,
    "title": "Google 推出 Biomarker Discovery Framework：从可穿戴传感器数据中筛选候选生物标志物的多智能体系统",
@@ -10969,6 +11014,24 @@
  ],
  "Meta": [
   {
+   "id": 4353,
+   "title": "MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议",
+   "summary": "Meta 设计并开源了 MetaRoCE，一个专为 AI 工作负载在通用以太网上打造的 RDMA 传输协议，已通过 Open Compute Project（OCP）发布规范、参考软件实现和合规测试套件。该协议将智能移至端点，原生支持乱序交付、多路径、无损容忍和双向拥塞控制，无需 PFC，可在百万 GPU 规模下提供高吞吐、低尾延迟。现有 RDMA Verbs API 和软件栈无需修改即可运行。",
+   "published_at": "2026-08-25",
+   "url": "https://engineering.fb.com/2026/08/24/networking-traffic/metaroce-rdma-transport-ai-ethernet",
+   "category": "ai-products",
+   "source": "Meta Engineering Blog（RSS）"
+  },
+  {
+   "id": 4355,
+   "title": "MTIA 300：Meta 首款内置 NIC 与通信卸载引擎的训练芯片",
+   "summary": "Meta 发布 MTIA 300，这是其自研加速器家族中首款针对推荐与排序模型训练优化的芯片。芯片封装内集成 12 个 800 Gbps RDMA NIC，提供 1.2 TB/s 总 I/O 带宽，并通过 16 个专用消息引擎卸载通信，使大规模 GEMM 与集合通信并发时计算吞吐损耗低于 0.5%。",
+   "published_at": "2026-08-25",
+   "url": "https://engineering.fb.com/2026/08/24/networking-traffic/mtia-300-meta-training-chip-built-in-nics",
+   "category": "ai-products",
+   "source": "Meta Engineering Blog（RSS）"
+  },
+  {
    "id": 4253,
    "title": "FastMetal 让 Mac 本地 30 秒生成视频",
    "summary": "一段 5 秒 480P 视频，完全在 Mac 上生成，耗时 30 秒。无需 CUDA，无需云端，仅占用 3.9 GiB 内存。 FastMetal 将 FastWan-QAD 系列带到 Apple Silicon。DiT、DMD 采样器和解码器均通过 MLX 在 Metal 上运行，默认 INT8。 三个模型：1.3B 支持 480P，5B 支持 720P，14B 追求画质。 📷 博客：http://haoailab.com/blogs/fastmetal 📷 代码：http://github.com/hao-ai-lab/FastVideo 📷 模型：http://huggingface.co/collections/Fas…",
@@ -12095,6 +12158,15 @@
  ],
  "Mistral": [
   {
+   "id": 4357,
+   "title": "Mistral 与 HUMAIN 达成战略合作，推进沙特及中东主权 AI",
+   "summary": "Mistral 与 HUMAIN 宣布达成战略合作，覆盖 AI 基础设施、先进模型开发及 AI 解决方案部署，聚焦沙特阿拉伯及更广泛地区。双方将合作开发本地化 AI 模型，初期重点包括网络安全和语音，并计划开发在阿拉伯语上表现强劲的前沿模型。该合作金额达数亿欧元，Mistral 将探索使用 HUMAIN 的数据中心基础设施，并计划在沙特针对受监管行业制定联合市场策略。",
+   "published_at": "2026-08-25",
+   "url": "https://mistral.ai/news/mistral-x-humain",
+   "category": "industry",
+   "source": "Mistral AI：News（网页）"
+  },
+  {
    "id": 4287,
    "title": "Mistral 推出 Agentic Search：多步检索提升 AI 系统复杂文档查询准确率",
    "summary": "Mistral 发布 Agentic Search，通过 search、open、navigate、read、grep 五工具的多步检索循环，让模型在长文档与多来源中查找、定位并验证信息。",
@@ -12186,6 +12258,33 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 4352,
+   "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
+   "summary": "NVIDIA 实测数据显示，Vera Rubin NVL72 在智能体工作负载下每兆瓦吞吐量较 GB300 NVL72 最高提升 30 倍，每百万 token 成本降低至 35 倍。",
+   "published_at": "2026-08-25",
+   "url": "https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents",
+   "category": "ai-products",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 4354,
+   "title": "NVIDIA 如何用 NVLink Fusion 让定制 XPU 融入世界级 AI 工厂",
+   "summary": "NVIDIA 推出 NVLink Fusion，将定制 XPU 接入其 NVLink 扩展域，使 XPU 间端到端延迟比基于现成以太网的方案低 3 倍、数据包速率高 10 倍。",
+   "published_at": "2026-08-25",
+   "url": "https://blogs.nvidia.com/blog/nvlink-fusion-xpu-ai-factory",
+   "category": "ai-products",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 4356,
+   "title": "NVIDIA 扩展 Vera Rubin 推理能力，Groq 3 LPX 全面投产支持智能体系统",
+   "summary": "NVIDIA 宣布 Vera Rubin NVL72 扩展快速 token 生成能力，以支持智能体系统。其机架级系统 NVIDIA Groq 3 LPX 已全面投产，旨在通过 AI 工厂各层协同工作来定义下一代 AI 推理，而非依赖单一芯片、网络或系统的突破。",
+   "published_at": "2026-08-25",
+   "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion",
+   "category": "ai-products",
+   "source": "NVIDIA Blog（RSS）"
+  },
   {
    "id": 4175,
    "title": "NVIDIA 与 SB Energy 合作锁定俄亥俄州 PORTS-Pike 园区电力容量，OpenAI 将入驻",
@@ -13231,6 +13330,24 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 4351,
+   "title": "GPT-5.6 登陆 Kiro，为开发者提升性价比",
+   "summary": "GPT-5.6 模型家族现已登陆软件开发智能体 Kiro，包含 Sol、Terra 和 Luna 三款模型。在 Terminal-Bench 2.1 测试中，GPT-5.6 Terra 在 Kiro 内完成任务成本降低约 82%。该更新由 OpenAI 与 AWS 合作优化，旨在以更少迭代和更高 token 价值帮助开发者产出更高质量的代码。",
+   "published_at": "2026-08-25",
+   "url": "https://openai.com/index/gpt-5-6-in-kiro",
+   "category": "ai-models",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4360,
+   "title": "OpenAI 正为一切构建 AI 智能体，但用户会愿意交出控制权吗？",
+   "summary": "OpenAI 推出 ChatGPT Work，将 Codex 改造为面向非工程师的智能体产品，最低订阅档每月 20 美元即可使用，旨在让白领通过 LLM 自主完成多步骤工作。OpenAI 内部 6 月有 98% 员工使用 Codex，但组织订阅者仅 17%、个人订阅者不足 1%。公司正通过简化界面扩大采用，以支撑其巨额训练投入。",
+   "published_at": "2026-08-25",
+   "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them",
+   "category": "tip",
+   "source": "TechCrunch：AI（RSS）"
+  },
   {
    "id": 4347,
    "title": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
