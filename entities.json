@@ -35,18 +35,18 @@
   "last_seen": "2026-08-26"
  },
  {
+  "id": 6,
+  "name": "Qwen",
+  "type": "model",
+  "mentions": 88,
+  "last_seen": "2026-08-26T12:34:01.000Z"
+ },
+ {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
   "mentions": 87,
   "last_seen": "2026-08-25"
- },
- {
-  "id": 6,
-  "name": "Qwen",
-  "type": "model",
-  "mentions": 86,
-  "last_seen": "2026-08-21"
  },
  {
   "id": 13,
@@ -259,6 +259,13 @@
   "last_seen": "2026-07-30T16:00:00.000Z"
  },
  {
+  "id": 977,
+  "name": "通义千问",
+  "type": "company",
+  "mentions": 11,
+  "last_seen": "2026-08-26T12:34:01.000Z"
+ },
+ {
   "id": 1137,
   "name": "月之暗面",
   "type": "company",
@@ -294,6 +301,13 @@
   "last_seen": "2026-07-22"
  },
  {
+  "id": 3364,
+  "name": "Qwen3.8",
+  "type": "model",
+  "mentions": 10,
+  "last_seen": "2026-08-26T12:34:01.000Z"
+ },
+ {
   "id": 19,
   "name": "OpenBMB",
   "type": "company",
@@ -306,13 +320,6 @@
   "type": "company",
   "mentions": 9,
   "last_seen": "2026-08-15"
- },
- {
-  "id": 977,
-  "name": "通义千问",
-  "type": "company",
-  "mentions": 9,
-  "last_seen": "2026-08-14T15:02:48.000Z"
  },
  {
   "id": 1083,
@@ -336,18 +343,18 @@
   "last_seen": "2026-08-05T10:18:17.000Z"
  },
  {
-  "id": 3364,
-  "name": "Qwen3.8",
-  "type": "model",
-  "mentions": 8,
-  "last_seen": "2026-08-19"
- },
- {
   "id": 1,
   "name": "Gemini 3.1 Pro",
   "type": "model",
   "mentions": 7,
   "last_seen": "2026-06-29"
+ },
+ {
+  "id": 7,
+  "name": "Qwen3.7",
+  "type": "model",
+  "mentions": 7,
+  "last_seen": "2026-08-26T12:34:01.000Z"
  },
  {
   "id": 94,
@@ -397,13 +404,6 @@
   "type": "company",
   "mentions": 6,
   "last_seen": "2026-07-25"
- },
- {
-  "id": 7,
-  "name": "Qwen3.7",
-  "type": "model",
-  "mentions": 5,
-  "last_seen": "2026-08-14T15:02:48.000Z"
  },
  {
   "id": 9,
@@ -761,6 +761,13 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-08-15"
+ },
+ {
+  "id": 5634,
+  "name": "Qwen4",
+  "type": "model",
+  "mentions": 2,
+  "last_seen": "2026-08-26T12:34:01.000Z"
  },
  {
   "id": 11,

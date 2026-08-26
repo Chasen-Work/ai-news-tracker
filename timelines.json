@@ -16772,6 +16772,24 @@
  ],
  "Qwen": [
   {
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4409,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-26T12:30:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4285,
    "title": "阿里发布 Qwen-UI-Agent，主打让模型真正“会用”每一块屏幕",
    "summary": "阿里巴巴正式推出 Qwen-UI-Agent，一个以真实世界为中心的 GUI 智能体基座模型，覆盖移动端、电脑端、网页端及深度搜索（DeepSearch）环境。",
@@ -18248,6 +18266,24 @@
  ],
  "Qwen3.7": [
   {
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4409,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-26T12:30:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4120,
    "title": "通义千问开源 Qwen3.8 系列模型",
    "summary": "通义千问兑现承诺，开源 Qwen3.8 系列模型。其中 Qwen3.8-27B 为原生多模态稠密模型，仅 27B 参数即全面超越 Qwen3.7-Plus，原生支持 262K 上下文，可通过 YaRN 扩展至 1M tokens，采用 Apache 2.0 许可。Max 级 Qwen3.8-2.4T-A95B 的开放权重也已同步发布。",
@@ -18294,6 +18330,24 @@
   }
  ],
  "Qwen3.8": [
+  {
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4409,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-26T12:30:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4223,
    "title": "笔记本模型也能媲美云端前沿模型：Qwen3.8-27B 登顶智能指数",
@@ -18365,6 +18419,26 @@
    "url": "https://x.com/Alibaba_Qwen/status/2078754377473601787",
    "category": "ai-models",
    "source": "X：通义千问 / Qwen (@Alibaba_Qwen)"
+  }
+ ],
+ "Qwen4": [
+  {
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4409,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-26T12:30:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
   }
  ],
  "Replit": [
@@ -20882,6 +20956,24 @@
   }
  ],
  "通义千问": [
+  {
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4409,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-26T12:30:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4120,
    "title": "通义千问开源 Qwen3.8 系列模型",
