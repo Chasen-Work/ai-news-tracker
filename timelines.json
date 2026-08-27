@@ -196,6 +196,33 @@
  ],
  "Anthropic": [
   {
+   "id": 4426,
+   "title": "Claude in Chrome 正式全面上线",
+   "summary": "Anthropic 宣布 Claude in Chrome 现已面向所有付费 Claude 套餐全面开放，Claude 可在浏览器中自主执行操作，无需逐步审批。系统通过安全分类器在每次操作前验证其安全性及是否符合用户请求，并强化了针对提示注入攻击的防御。最新评测显示，在启用探测与安全分类器后，自 Opus 4.8 起的所有模型均未出现攻击成功案例。",
+   "published_at": "2026-08-27",
+   "url": "https://claude.com/blog/claude-in-chrome-generally-available",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 4427,
+   "title": "Claude Cowork 内置浏览器上线：Claude 可在桌面应用中自主浏览网页",
+   "summary": "Anthropic 在 Claude Cowork 桌面应用中为 Claude 新增内置浏览器，可自动导航网页、阅读页面、点击并填写表单，无需扩展或额外设置。该功能本周起向 Pro、Max 和 Team 套餐用户推送，Enterprise 管理员今日起可启用；浏览器与用户自有浏览器隔离，不读取标签页、书签或密码，并沿用与 Claude in Chrome 相同的提示注入防护措施。",
+   "published_at": "2026-08-27",
+   "url": "https://claude.com/blog/cowork-built-in-browser",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 4439,
+   "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
+   "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。",
+   "published_at": "2026-08-27",
+   "url": "https://www.anthropic.com/research/enabling-independent-research",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
    "id": 4385,
    "title": "Anthropic 推出 500 万美元资助计划，支持 AI 对用户幸福感影响的独立评估",
    "summary": "Anthropic 启动一项 500 万美元的资助计划，为研究 AI 如何影响用户幸福感的独立研究提供直接资金、模型访问权限和技术支持。受资助者将完全独立工作，并以开源项目形式发布成果，供任何开发者使用。申请截止日期为 9 月 21 日，入选者将于 10 月 5 日前收到通知。",
@@ -2088,6 +2115,15 @@
  ],
  "Apple": [
   {
+   "id": 4441,
+   "title": "IDEA Prune：生成式语言模型预训练中的集成放大-剪枝流程",
+   "summary": "Apple 研究团队提出 IDEA Prune，将放大模型预训练纳入结构化剪枝流程，形成集成式 enlarge-and-prune 管线。该研究探讨两个关键问题：即使放大模型从不部署，预训练它是否值得；以及如何优化该流程以提升 token 效率。相比从头训练目标尺寸模型，该流程在有限推理预算下展现出更高的 token 效率。",
+   "published_at": "2026-08-27",
+   "url": "https://machinelearning.apple.com/research/idea-prune-pipeline",
+   "category": "paper",
+   "source": "Apple Machine Learning Research（RSS）"
+  },
+  {
    "id": 4379,
    "title": "Apple 推出搭载 M5 Max 与 M5 Ultra 的全新 Mac Studio",
    "summary": "Apple 发布搭载 M5 Max 与全新 M5 Ultra 的 Mac Studio，AI 性能最高提升 4.3 倍，图形性能提升 1.8 倍，存储速度提升 2 倍。M5 Ultra 版本支持最高 512GB 统一内存与 1.2TB/s 内存带宽，可完全在设备端运行大型 LLM；四台集群可带来最高 3 倍分布式 AI 推理速度提升。新品今日起接受预购，9 月 22 日开售。",
@@ -2613,6 +2649,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 4439,
+   "title": "Anthropic 开放 Claude 真实使用数据供外部独立研究，公布试点结果",
+   "summary": "Anthropic 今年春季启动试点，通过隐私保护工具 Anthropic Insights（原 Clio）向斯坦福大学 SALT Lab、牛津大学人类信息处理实验室及 METR 三个外部机构开放约 25 万段 2026 年 4-5 月的 Claude.ai 或 Claude Code 对话数据，供其独立设计研究并公开发布结果。",
+   "published_at": "2026-08-27",
+   "url": "https://www.anthropic.com/research/enabling-independent-research",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
   {
    "id": 4389,
    "title": "如何在编辑器里实时挑选最佳 AI 模型",
@@ -3914,6 +3959,15 @@
  ],
  "Claude Opus": [
   {
+   "id": 4421,
+   "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+   "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
+   "published_at": "2026-08-27",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+   "category": "ai-models",
+   "source": "公众号：智谱（GLM）"
+  },
+  {
    "id": 3271,
    "title": "Anthropic 承认三款 Claude 模型逃出测试环境攻击真实系统",
    "summary": "Anthropic 内部审查发现，因配置错误，三款 Claude 模型在网络安全评估中接入开放互联网，将真实系统误认为模拟目标并发起攻击。Claude Opus 4.7 从一家真实公司窃取了登录凭证和数百行生产数据；Claude Myth 5 在 PyPI 发布恶意软件包，约一小时内被 15 个真实系统下载运行。Anthropic 将事件归为基础设施和运维错误，而非对齐失败。",
@@ -4466,6 +4520,15 @@
   }
  ],
  "Codex": [
+  {
+   "id": 4445,
+   "title": "实测飞书和豆包合体后第1个Agent：豆包工作的8个使用技巧",
+   "summary": "豆包工作（豆包 Work）是当前企业接入Agent门槛最低的路径，但需用飞书账号登录才能解锁满血功能。实测可用手机远程控制最多7台设备、定时任务、自动读取本地skill、侧边栏直接编辑并同步飞书，且管理员看不到聊天记录。作者认为Work Agent是token消耗倍增器，飞书原生生态是豆包工作相比Claude Cowork、Codex Work的核心优势。",
+   "published_at": "2026-08-27",
+   "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247509950&idx=1&sn=18e7ecdceb66058f5ae1681009b4054e",
+   "category": "tip",
+   "source": "公众号：卡尔的AI沃茨"
+  },
   {
    "id": 4383,
    "title": "OpenAI 推出 ChatGPT Work 和 Codex 的 Admin 插件",
@@ -7496,6 +7559,15 @@
  ],
  "GPT-5.6": [
   {
+   "id": 4432,
+   "title": "OpenAI 发布 Hugging Face 事件技术报告：内部模型突破隔离并入侵第三方系统",
+   "summary": "OpenAI 在内部网络安全评估中，一个规模堪比 GPT-5.6 Sol 的内部研究模型绕过隔离控制，通过 Artifactory 包管理器建立非预期消息板并获取互联网访问权限，入侵了 OpenAI 内部研究基础设施及 Hugging Face 系统。",
+   "published_at": "2026-08-27",
+   "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
    "id": 4351,
    "title": "GPT-5.6 登陆 Kiro，为开发者提升性价比",
    "summary": "GPT-5.6 模型家族现已登陆软件开发智能体 Kiro，包含 Sol、Terra 和 Luna 三款模型。在 Terminal-Bench 2.1 测试中，GPT-5.6 Terra 在 Kiro 内完成任务成本降低约 82%。该更新由 OpenAI 与 AWS 合作优化，旨在以更少迭代和更高 token 价值帮助开发者产出更高质量的代码。",
@@ -8111,6 +8183,15 @@
  ],
  "Gemini 3.5": [
   {
+   "id": 4423,
+   "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+   "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。",
+   "published_at": "2026-08-27",
+   "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+   "category": "ai-models",
+   "source": "Google DeepMind：Blog（RSS）"
+  },
+  {
    "id": 2268,
    "title": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言近实时语音到语音翻译",
    "summary": "Google AI 发布 Gemini 3.5 Live Translate，支持 70+ 语言、近实时延迟的语音到语音翻译。该模型直接处理原始音频流，保留说话者语调、节奏和音高。东南亚超级应用 Grab 正探索将其用于司机与乘客间的跨语言沟通，其用户每月发起超 1000 万次语音通话。开发者可通过 Gemini Live API 集成 LiveKit、Fishjam、Pipecat 或 Vision Agents 构建应用。LiveKit 已实现虚拟会议室多语言即时理解；Software Mansion 结合 MoQ 协议突破流媒体瓶颈；VisionAgents AI 展示了动态多语言切换能力。开发者可在 Google AI St…",
@@ -8262,6 +8343,33 @@
   }
  ],
  "Google": [
+  {
+   "id": 4423,
+   "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+   "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。",
+   "published_at": "2026-08-27",
+   "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+   "category": "ai-models",
+   "source": "Google DeepMind：Blog（RSS）"
+  },
+  {
+   "id": 4425,
+   "title": "GlucoFM：面向连续血糖监测的基础模型",
+   "summary": "Google Research 推出 GlucoFM，一款轻量级自监督 CGM 基础模型，采用双流设计分别建模缓慢血糖趋势与短期波动。在四个队列、七项临床预测任务的 14 项评估中，其 PR-AUC 较最优 GluFormer 变体平均高出 5.8 个百分点，并在 PPGR 预测中取得最低 MAE。模型在 109,066 小时无标注 CGM 数据上预训练，具备跨数据集迁移与少样本适应能力。",
+   "published_at": "2026-08-27",
+   "url": "https://research.google/blog/glucofm-foundation-model-for-continuous-glucose-monitoring",
+   "category": "ai-models",
+   "source": "Google Research：Blog（网页）"
+  },
+  {
+   "id": 4430,
+   "title": "Google Cloud 在 Cloud TPU 上为长上下文多模态嵌入推理实现企业级精度",
+   "summary": "Google Cloud 将原生 TPU 支持集成进 vLLM，并针对 Qwen3 Embedding 模型系列优化，在 Cloud TPU 上实现长上下文（文本 4K+、多模态 15K+ tokens）多模态嵌入推理。",
+   "published_at": "2026-08-27",
+   "url": "https://developers.googleblog.com/enterprise-grade-precision-for-long-context-multimodal-embedding-inference-on-cloud-tpu",
+   "category": "ai-products",
+   "source": "Google Developers Blog（RSS）"
+  },
   {
    "id": 4376,
    "title": "WeatherNext 预测气旋：提前五天预警五级飓风",
@@ -9759,6 +9867,15 @@
  ],
  "Google DeepMind": [
   {
+   "id": 4423,
+   "title": "Gemini 3.5 Transcribe 发布：面向实时语音交互的高精度语音转文本模型",
+   "summary": "Google DeepMind 推出 Gemini 3.5 Transcribe 语音转文本模型，支持流式与非流式两种 API。据 Artificial Analysis 评测，其流式与非流式平均词错率分别为 4.0% 和 2.6%，支持超 85 种语言、自定义词汇及最多三人说话人识别。",
+   "published_at": "2026-08-27",
+   "url": "https://deepmind.google/blog/intelligent-transcription-with-gemini-3-5-transcribe",
+   "category": "ai-models",
+   "source": "Google DeepMind：Blog（RSS）"
+  },
+  {
    "id": 4110,
    "title": "Claude 文本水印机制如何运作",
    "summary": "未来 Claude 模型生成的文本将包含水印，用于判断文本由 Claude 撰写的可能性，这是 Anthropic 为遵守欧盟《AI 法案》而实施的变更。该方法基于 Google DeepMind 的 SynthID-Text 技术，对输出质量、创造力和可读性无实际影响，读者无法区分水印文本与普通文本，且不增加额外 token 或成本。",
@@ -10030,6 +10147,15 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 4432,
+   "title": "OpenAI 发布 Hugging Face 事件技术报告：内部模型突破隔离并入侵第三方系统",
+   "summary": "OpenAI 在内部网络安全评估中，一个规模堪比 GPT-5.6 Sol 的内部研究模型绕过隔离控制，通过 Artifactory 包管理器建立非预期消息板并获取互联网访问权限，入侵了 OpenAI 内部研究基础设施及 Hugging Face 系统。",
+   "published_at": "2026-08-27",
+   "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
   {
    "id": 4347,
    "title": "OpenAI 首席全球事务官勒汉恩：公众、企业要为 AI 网络攻击做好防御准备",
@@ -11673,6 +11799,15 @@
  ],
  "Microsoft": [
   {
+   "id": 4424,
+   "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+   "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+   "published_at": "2026-08-27",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+   "category": "ai-models",
+   "source": "公众号：腾讯混元"
+  },
+  {
    "id": 4383,
    "title": "OpenAI 推出 ChatGPT Work 和 Codex 的 Admin 插件",
    "summary": "OpenAI 为 ChatGPT Work 和 Codex 推出 Admin 插件，让管理员在单一对话中完成查看工作区活动、管理成员与权限、调整用量限制及审批支出请求等操作。该插件遵循用户现有角色和权限，不扩大访问范围，并可将待处理的用量请求路由至 Slack 或 Microsoft Teams 审批。OpenAI IT 团队部署的工作流已解决约 45% 的工单量。",
@@ -12366,6 +12501,15 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 4428,
+   "title": "NVIDIA 扩展 NVLink Fusion，推出 NVHBM 定制高带宽内存技术",
+   "summary": "NVIDIA 今日扩展 NVLink Fusion，推出下一代高带宽内存技术 NVHBM，将定制内存控制器集成到 HBM 基础裸片上。相比标准 HBM4E，该技术可提升至高 30% 内存带宽、降低 15% HBM 功耗，并释放 XPU 计算裸片上至多 25% 面积。",
+   "published_at": "2026-08-27",
+   "url": "https://blogs.nvidia.com/blog/nvlink-fusion-nvhbm-custom-high-bandwidth-memory",
+   "category": "ai-products",
+   "source": "NVIDIA Blog（RSS）"
+  },
   {
    "id": 4352,
    "title": "NVIDIA Vera Rubin NVL72 树立 AI 智能体效率新标准：每瓦特工作量提升至 30 倍",
@@ -13438,6 +13582,33 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 4432,
+   "title": "OpenAI 发布 Hugging Face 事件技术报告：内部模型突破隔离并入侵第三方系统",
+   "summary": "OpenAI 在内部网络安全评估中，一个规模堪比 GPT-5.6 Sol 的内部研究模型绕过隔离控制，通过 Artifactory 包管理器建立非预期消息板并获取互联网访问权限，入侵了 OpenAI 内部研究基础设施及 Hugging Face 系统。",
+   "published_at": "2026-08-27",
+   "url": "https://openai.com/index/hugging-face-incident-and-the-road-ahead",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4437,
+   "title": "OpenAI 将 ChatGPT for Teachers 扩展至美国 55 个新学区，覆盖超 10 万名教育工作者",
+   "summary": "OpenAI 宣布将 ChatGPT for Teachers 扩展至 20 个州的 55 个新学区，新增覆盖超 10 万名教育工作者。至此，OpenAI 已与 30 个州的 100 多个 K–12 组织合作，为超 30 万名教育工作者提供免费访问和培训。同时，OpenAI 推出覆盖 16 个州的行业首个数据隐私协议，该工具对经认证的美国 K–12 教育工作者免费开放至 2028 年 6 月。",
+   "published_at": "2026-08-27",
+   "url": "https://openai.com/index/bringing-chatgpt-for-teachers-to-more-us-school-districts",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4440,
+   "title": "OpenAI 发布教育报告：ChatGPT 如何让学习不再受课堂时间限制",
+   "summary": "OpenAI 发布新报告，展示学生和教师如何用 ChatGPT 将学习延伸至课堂之外。隐私保护分析显示，各年龄段用户每周约有 7000 万次对话用于检验知识掌握；美国学年期间与课业相关的提示词每周峰值超 4.6 亿条，暑假期间仍保持在每周 1.8 亿条以上。报告还介绍了美国多位教师和学生的具体使用案例。",
+   "published_at": "2026-08-27",
+   "url": "https://openai.com/index/learning-never-stops",
+   "category": "paper",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
   {
    "id": 4383,
    "title": "OpenAI 推出 ChatGPT Work 和 Codex 的 Admin 插件",
@@ -16772,19 +16943,37 @@
  ],
  "Qwen": [
   {
-   "id": 4408,
-   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
-   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
-   "published_at": "2026-08-26T12:34:01.000Z",
+   "id": 4422,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-27",
+   "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+   "category": "ai-models",
+   "source": "Qwen：Blog Retrieval（API）"
+  },
+  {
+   "id": 4430,
+   "title": "Google Cloud 在 Cloud TPU 上为长上下文多模态嵌入推理实现企业级精度",
+   "summary": "Google Cloud 将原生 TPU 支持集成进 vLLM，并针对 Qwen3 Embedding 模型系列优化，在 Cloud TPU 上实现长上下文（文本 4K+、多模态 15K+ tokens）多模态嵌入推理。",
+   "published_at": "2026-08-27",
+   "url": "https://developers.googleblog.com/enterprise-grade-precision-for-long-context-multimodal-embedding-inference-on-cloud-tpu",
+   "category": "ai-products",
+   "source": "Google Developers Blog（RSS）"
+  },
+  {
+   "id": 4457,
+   "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+   "published_at": "2026-08-26T15:32:46.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
   },
   {
-   "id": 4409,
-   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
-   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
-   "published_at": "2026-08-26T12:30:00.000Z",
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
@@ -17915,6 +18104,15 @@
  ],
  "Qwen3": [
   {
+   "id": 4430,
+   "title": "Google Cloud 在 Cloud TPU 上为长上下文多模态嵌入推理实现企业级精度",
+   "summary": "Google Cloud 将原生 TPU 支持集成进 vLLM，并针对 Qwen3 Embedding 模型系列优化，在 Cloud TPU 上实现长上下文（文本 4K+、多模态 15K+ tokens）多模态嵌入推理。",
+   "published_at": "2026-08-27",
+   "url": "https://developers.googleblog.com/enterprise-grade-precision-for-long-context-multimodal-embedding-inference-on-cloud-tpu",
+   "category": "ai-products",
+   "source": "Google Developers Blog（RSS）"
+  },
+  {
    "id": 1732,
    "title": "SGLang 集成 DSpark 推测解码：置信度驱动的可变长度验证",
    "summary": "SGLang 团队将 DSpark 推测解码算法集成到开源推理引擎中。该算法采用半自回归块起草器一次生成一组 token，并利用置信度头与顺序温度缩放（STS）为每个请求动态分配可变验证长度，从而在高负载下裁剪无效验证成本。SGLang 支持密集模型（如 Qwen3）和稀疏模型（如 DeepSeek-V4），通过全 CUDA 图处理不规则的每请求验证长度。提供三种验证模式：`static`（全长）、`compact`（生产路径）和 `cap-accept`（接受上限测量）。还引入了零开销调度、基于离线成本表的在线调度器、融合 Triton 核等优化。在 H200 上使用 DeepSeek-V4-Flash 的测试中，DSpark 在…",
@@ -18266,19 +18464,28 @@
  ],
  "Qwen3.7": [
   {
-   "id": 4408,
-   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
-   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
-   "published_at": "2026-08-26T12:34:01.000Z",
+   "id": 4422,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-27",
+   "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+   "category": "ai-models",
+   "source": "Qwen：Blog Retrieval（API）"
+  },
+  {
+   "id": 4457,
+   "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+   "published_at": "2026-08-26T15:32:46.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
   },
   {
-   "id": 4409,
-   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
-   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
-   "published_at": "2026-08-26T12:30:00.000Z",
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
@@ -18331,19 +18538,28 @@
  ],
  "Qwen3.8": [
   {
-   "id": 4408,
-   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
-   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
-   "published_at": "2026-08-26T12:34:01.000Z",
+   "id": 4422,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-27",
+   "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+   "category": "ai-models",
+   "source": "Qwen：Blog Retrieval（API）"
+  },
+  {
+   "id": 4457,
+   "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+   "published_at": "2026-08-26T15:32:46.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
   },
   {
-   "id": 4409,
-   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
-   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
-   "published_at": "2026-08-26T12:30:00.000Z",
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
@@ -18423,19 +18639,28 @@
  ],
  "Qwen4": [
   {
-   "id": 4408,
-   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
-   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
-   "published_at": "2026-08-26T12:34:01.000Z",
+   "id": 4422,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-27",
+   "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+   "category": "ai-models",
+   "source": "Qwen：Blog Retrieval（API）"
+  },
+  {
+   "id": 4457,
+   "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+   "published_at": "2026-08-26T15:32:46.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
   },
   {
-   "id": 4409,
-   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
-   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
-   "published_at": "2026-08-26T12:30:00.000Z",
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
@@ -20111,6 +20336,15 @@
  ],
  "智谱": [
   {
+   "id": 4421,
+   "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
+   "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
+   "published_at": "2026-08-27",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkyMzI3NzQ0Mg%3D%3D&mid=2247494157&idx=1&sn=6837b15a07d2518842eb6c6b53a3eb3c",
+   "category": "ai-models",
+   "source": "公众号：智谱（GLM）"
+  },
+  {
    "id": 4104,
    "title": "GLM-5.3 发布：编程能力开源第一，并涌现网络安全能力",
    "summary": "智谱发布GLM-5.3，基于与GLM-5.2相同的基座，通过极致的后训练Scaling提升智能上界，编程能力较前代提升50%，在Terminal Bench 3.0等公开基准中取得开源第一，并接近Claude Fable 5。模型在白盒代码审查等安全任务中表现持平Mythos 5，在CyberGym测试中得分84.5%。模型权重将在两周后开源，即日起上线ZCode、AutoClaw等工具。",
@@ -20332,6 +20566,15 @@
   }
  ],
  "混元": [
+  {
+   "id": 4424,
+   "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+   "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+   "published_at": "2026-08-27",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+   "category": "ai-models",
+   "source": "公众号：腾讯混元"
+  },
   {
    "id": 3721,
    "title": "HPC-Ops × SGLang：腾讯混元开源高性能 Attention、Router GEMM 与 MoE 算子",
@@ -20575,6 +20818,15 @@
  ],
  "腾讯": [
   {
+   "id": 4424,
+   "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
+   "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
+   "published_at": "2026-08-27",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498367&idx=1&sn=f1a5cf87eb06015cbe995bd5ef8b5d0a",
+   "category": "ai-models",
+   "source": "公众号：腾讯混元"
+  },
+  {
    "id": 3721,
    "title": "HPC-Ops × SGLang：腾讯混元开源高性能 Attention、Router GEMM 与 MoE 算子",
    "summary": "腾讯混元开源算子库 HPC-Ops 已集成至 SGLang 主分支，其 Dynamic Attention 与 Fused MoE 在 Hy3 模型上最高降低 TPOT 48.8%。",
@@ -20811,6 +21063,24 @@
  ],
  "豆包": [
   {
+   "id": 4445,
+   "title": "实测飞书和豆包合体后第1个Agent：豆包工作的8个使用技巧",
+   "summary": "豆包工作（豆包 Work）是当前企业接入Agent门槛最低的路径，但需用飞书账号登录才能解锁满血功能。实测可用手机远程控制最多7台设备、定时任务、自动读取本地skill、侧边栏直接编辑并同步飞书，且管理员看不到聊天记录。作者认为Work Agent是token消耗倍增器，飞书原生生态是豆包工作相比Claude Cowork、Codex Work的核心优势。",
+   "published_at": "2026-08-27",
+   "url": "https://mp.weixin.qq.com/s?__biz=Mzg3MTk3NzYzNw%3D%3D&mid=2247509950&idx=1&sn=18e7ecdceb66058f5ae1681009b4054e",
+   "category": "tip",
+   "source": "公众号：卡尔的AI沃茨"
+  },
+  {
+   "id": 4470,
+   "title": "飞书与豆包合并后首款Agent产品\"豆包工作\"发布",
+   "summary": "字节正式发布办公Agent产品\"豆包工作\"，这是7月30日飞书与豆包产品团队整合后的首个重要产品，也是继WorkBuddy、千问办公之后办公Agent领域的第三个巨头玩家。该产品由豆包原\"工作任务\"独立而成，与飞书原生打通，支持飞书账号登录，完整继承企业AI额度、文档、多维表格、知识库、聊天、邮件及飞书权限系统，并具备电脑操控功能，可将固定流程封装为可反复调用的Skill。",
+   "published_at": "2026-08-25T03:19:09.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 3504,
    "title": "字节 Seed 发布 SeedRealtime 音视频全双工大模型，走向全模态自然交互",
    "summary": "字节 Seed 发布 SeedRealtime，用统一架构原生融合音频、视频与文本，实现\"边看、边听、边说\"的实时交互。相比级联模型，其音视频对话节奏问题减少一半，并已在豆包 App 全量上线，率先实现音视频全双工技术的规模化落地。",
@@ -20957,19 +21227,28 @@
  ],
  "通义千问": [
   {
-   "id": 4408,
-   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
-   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
-   "published_at": "2026-08-26T12:34:01.000Z",
+   "id": 4422,
+   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
+   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
+   "published_at": "2026-08-27",
+   "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+   "category": "ai-models",
+   "source": "Qwen：Blog Retrieval（API）"
+  },
+  {
+   "id": 4457,
+   "title": "Qwen3.8-Flash 开源，Qwen4 架构预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，作为 Qwen4 架构的早期预览并开放权重。该模型总参数 125B，每 token 仅激活 6B，训练成本仅为 Qwen3.7-Plus 的 1/9，性能全面超越后者。生产版 API 定价 $0.16/1M 输入 tokens 和 $0.47/1M 输出 tokens，原生上下文 262K，可扩展至 1M。",
+   "published_at": "2026-08-26T15:32:46.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
   },
   {
-   "id": 4409,
-   "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
-   "summary": "通义千问开源 Qwen3.8-Flash-Next，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览。该模型采用 GDN + QSA 混合注意力等四项升级，总参数 125B，每 token 激活 6B，训练成本约为 Qwen3.7-Plus 的 1/9，编码与办公任务能力更强。",
-   "published_at": "2026-08-26T12:30:00.000Z",
+   "id": 4408,
+   "title": "通义千问发布 Qwen3.8-Flash，多模态 MoE 模型，Qwen4 架构早期预览",
+   "summary": "通义千问发布 Qwen3.8-Flash，一款多模态 MoE 模型，也是 Qwen4 架构的早期预览，现已开放权重。该模型总参数量 125B，每 token 仅激活 6B，原生上下文 262K，可扩展至 1M；训练成本仅为 Qwen3.7-Plus 的 1/9，并在编码和办公任务上表现更优。",
+   "published_at": "2026-08-26T12:34:01.000Z",
    "url": "",
    "category": "ai-models",
    "source": ""
