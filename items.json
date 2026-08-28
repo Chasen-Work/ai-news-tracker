@@ -1,5 +1,35 @@
 [
  {
+  "id": 4525,
+  "title": "Terminal-Bench-Science 0.1：评估科研工作流中的 AI 智能体",
+  "summary": "斯坦福大学研究人员领衔发布 Terminal-Bench-Science 0.1，用来自生命、物理、地球、数学和工程科学的 70 个专家精选任务评估 AI 智能体的科研能力。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-08-28T12:04:47.737Z",
+  "fetched_at": "2026-08-28 13:00:08"
+ },
+ {
+  "id": 4526,
+  "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
+  "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-08-28T08:36:31.021Z",
+  "fetched_at": "2026-08-28 13:00:08"
+ },
+ {
+  "id": 4527,
+  "title": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
+  "summary": "腾讯混元发布新一代旗舰模型 Hy4 preview，总参数 770B、激活参数 49B、上下文长度 1M，现已开源并在腾讯云 TokenHub 和 OpenRouter 上线。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-28T06:03:48.000Z",
+  "fetched_at": "2026-08-28 13:00:09"
+ },
+ {
   "id": 4508,
   "title": "OpenClaw 走红后，维护者如何构建并保障其安全",
   "summary": "OpenClaw 是 Peter Steinberger 于 2025 年 11 月发起的个人 AI 助手项目，截至 2026 年 8 月已获约 388,000 星标、81,000 fork 和超 80,000 次提交。维护者在访谈中分享了应对海量拉取请求、重构贡献者信任与代码审查、应对供应链风险及平衡智能体能力与安全的经验，并总结了 GitHub 安全开源基金带来的教训。",
