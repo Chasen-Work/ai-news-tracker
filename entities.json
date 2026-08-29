@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 287,
-  "last_seen": "2026-08-29"
+  "mentions": 289,
+  "last_seen": "2026-08-29T01:47:44.000Z"
  },
  {
   "id": 35,
@@ -45,8 +45,8 @@
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 90,
-  "last_seen": "2026-08-27"
+  "mentions": 91,
+  "last_seen": "2026-08-29T07:00:22.003Z"
  },
  {
   "id": 13,
@@ -77,6 +77,13 @@
   "last_seen": "2026-08-29"
  },
  {
+  "id": 149,
+  "name": "Cursor",
+  "type": "company",
+  "mentions": 58,
+  "last_seen": "2026-08-29T01:47:44.000Z"
+ },
+ {
   "id": 560,
   "name": "Apple",
   "type": "company",
@@ -84,18 +91,11 @@
   "last_seen": "2026-08-27"
  },
  {
-  "id": 149,
-  "name": "Cursor",
-  "type": "company",
-  "mentions": 56,
-  "last_seen": "2026-08-26"
- },
- {
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 55,
-  "last_seen": "2026-08-27"
+  "mentions": 56,
+  "last_seen": "2026-08-29T04:31:21.000Z"
  },
  {
   "id": 36,
@@ -108,8 +108,8 @@
   "id": 4,
   "name": "xAI",
   "type": "company",
-  "mentions": 50,
-  "last_seen": "2026-08-28"
+  "mentions": 51,
+  "last_seen": "2026-08-28T06:00:00.000Z"
  },
  {
   "id": 93,
@@ -210,6 +210,13 @@
   "last_seen": "2026-08-12"
  },
  {
+  "id": 183,
+  "name": "llama",
+  "type": "model",
+  "mentions": 16,
+  "last_seen": "2026-08-29T07:00:22.003Z"
+ },
+ {
   "id": 434,
   "name": "DeepSeek V4",
   "type": "model",
@@ -224,18 +231,18 @@
   "last_seen": "2026-08-22"
  },
  {
-  "id": 183,
-  "name": "llama",
-  "type": "model",
-  "mentions": 15,
-  "last_seen": "2026-08-21"
- },
- {
   "id": 376,
   "name": "面壁智能",
   "type": "company",
   "mentions": 14,
   "last_seen": "2026-08-22"
+ },
+ {
+  "id": 37,
+  "name": "智谱",
+  "type": "company",
+  "mentions": 12,
+  "last_seen": "2026-08-29T04:31:21.000Z"
  },
  {
   "id": 304,
@@ -252,11 +259,11 @@
   "last_seen": "2026-08-27"
  },
  {
-  "id": 37,
-  "name": "智谱",
-  "type": "company",
-  "mentions": 11,
-  "last_seen": "2026-08-27"
+  "id": 3364,
+  "name": "Qwen3.8",
+  "type": "model",
+  "mentions": 12,
+  "last_seen": "2026-08-29T07:00:22.003Z"
  },
  {
   "id": 713,
@@ -278,13 +285,6 @@
   "type": "company",
   "mentions": 11,
   "last_seen": "2026-08-01"
- },
- {
-  "id": 3364,
-  "name": "Qwen3.8",
-  "type": "model",
-  "mentions": 11,
-  "last_seen": "2026-08-27"
  },
  {
   "id": 18,
