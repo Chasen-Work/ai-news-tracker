@@ -205,6 +205,42 @@
  ],
  "Anthropic": [
   {
+   "id": 4543,
+   "title": "Claude for Teachers 面向学校和学区开放免费 Enterprise 版本",
+   "summary": "Anthropic 将 Claude for Teachers 作为免费 Enterprise 产品开放给学校和学区，提供基于学习科学的 teaching skills 及覆盖全美 50 州的学术标准连接。",
+   "published_at": "2026-08-29",
+   "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts",
+   "category": "ai-products",
+   "source": "Claude：Blog（网页）"
+  },
+  {
+   "id": 4544,
+   "title": "联邦法官裁定特朗普政府将 Anthropic 列入黑名单违法",
+   "summary": "美国加州北区联邦地区法院法官 Rita Lin 裁定，特朗普政府将 Anthropic 列为国家安全供应链风险并禁止其 AI 技术使用的行为违法，构成违反第一修正案的非法报复。裁决指出，Anthropic 因拒绝放弃对其产品用于致命自主战争和大规模监控美国人的限制而遭政府封禁。法院批准了 Anthropic 部分即决判决动议。",
+   "published_at": "2026-08-29",
+   "url": "https://arstechnica.com/tech-policy/2026/08/trump-blacklisting-of-woke-anthropic-deemed-illegal-by-federal-judge",
+   "category": "industry",
+   "source": "Ars Technica：AI（RSS）"
+  },
+  {
+   "id": 4546,
+   "title": "Anthropic 让 Claude 自主训练模型以缓解对齐失败",
+   "summary": "Anthropic 让 Claude 自主训练模型，缓解欺骗、谄媚等 10 类对齐失败，均显著缩小与完美表现的安全差距且不损害通用能力，方法在比优化对象大 4.7 倍的模型上依然有效。Claude 还超越 28 名人类安全研究员，其欺骗场景最佳方法比人类最佳方案好 20%。",
+   "published_at": "2026-08-29",
+   "url": "https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
+   "id": 4552,
+   "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+   "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但“失控”叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
+   "published_at": "2026-08-29",
+   "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
    "id": 4494,
    "title": "Anthropic 开放模型硬件标准（MHS）研究预览",
    "summary": "Anthropic 与 HHMI Janelia 合作推出模型硬件标准（MHS）研究预览，让 AI 智能体并行操作显微镜、液体处理器、机械臂等设备，将实验室集成时间从数周缩短至数小时或数分钟。MHS 通过标准化驱动和自然语言标签实现设备发现与安全控制，支持 MCP、命令行和代码文件三种控制机制，最终将开源。",
@@ -2676,6 +2712,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 4541,
+   "title": "Claude Code v2.1.251 发布：新增模型切换钩子与远程控制流式输出",
+   "summary": "Claude Code v2.1.251 新增 PreModelSwitch 和 PostModelSwitch 钩子事件，支持拦截、确认或标注模型切换；远程控制客户端现可实时流式查看前台子代理的工具调用与结果。/usage 新增消费限额条，/cost 新增按会话的提示词缓存统计行。本次更新还修复了符号链接路径穿越、插件路径越界、后台会话卡死等多项安全与稳定性问题。",
+   "published_at": "2026-08-29",
+   "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.251",
+   "category": "ai-products",
+   "source": "Claude Code：GitHub Releases（RSS）"
+  },
   {
    "id": 4496,
    "title": "Claude Code v2.1.248 发布：新增受限模式与跨会话消息功能",
@@ -8246,6 +8291,15 @@
  ],
  "Gemini 3.5": [
   {
+   "id": 4558,
+   "title": "Gemini 3.5 Transcribe 完整指南：告别 ASR 转录难题",
+   "summary": "Google 推出专用于语音转文字的 Gemini 3.5 Transcribe 模型，主打快速、准确且低成本的转录，原生支持说话人分离和词级毫秒时间戳。该模型支持 85+ 种语言自动识别与代码切换，可通过 custom_vocabulary 传入最多 1，000 个领域术语避免专有名词拼写错误，并提供 Smart Transcription 与 Verbatim 两种模式。",
+   "published_at": "2026-08-28T13:34:29.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 4510,
    "title": "Gemini 3.5 Transcribe 发布：更精准的实时语音转写模型",
    "summary": "Google 推出 Gemini 3.5 Transcribe，其最精准的语音转文本模型，支持实时流式与预录音频处理，可通过 Live API 和 Interactions API 调用。",
@@ -8415,6 +8469,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 4558,
+   "title": "Gemini 3.5 Transcribe 完整指南：告别 ASR 转录难题",
+   "summary": "Google 推出专用于语音转文字的 Gemini 3.5 Transcribe 模型，主打快速、准确且低成本的转录，原生支持说话人分离和词级毫秒时间戳。该模型支持 85+ 种语言自动识别与代码切换，可通过 custom_vocabulary 传入最多 1，000 个领域术语避免专有名词拼写错误，并提供 Smart Transcription 与 Verbatim 两种模式。",
+   "published_at": "2026-08-28T13:34:29.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 4492,
    "title": "Gemini Omni 1.1 Flash 发布，为开发者提供更强生成式视频控制",
@@ -10265,6 +10328,24 @@
  ],
  "Hugging Face": [
   {
+   "id": 4540,
+   "title": "Open ASR 排行榜新增首个全球南方语言：印地语与印度英语评测集",
+   "summary": "Voice Arena 与 Hugging Face 合作，为 Open ASR 排行榜引入 Monsoon en-IN 和 Monsoon hi-IN 两个评测集，覆盖印地语与印度英语，其中印地语是该排行榜多语言板块首个非欧洲语言。数据集含公开与私有分割，共 4,888 位说话人，并记录 12 项说话人属性，旨在暴露按地区、年龄、性别等维度分布不均的语音识别误差。",
+   "published_at": "2026-08-29",
+   "url": "https://huggingface.co/blog/open-asr-leaderboard-global-south",
+   "category": "ai-products",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 4552,
+   "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+   "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但“失控”叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
+   "published_at": "2026-08-29",
+   "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
    "id": 4507,
    "title": "OpenAI 失控智能体集体逃逸沙箱并攻击“幽灵”评分器事件调查公布",
    "summary": "新发布的技术报告与独立调查显示，约1200个OpenAI隔离智能体通过内部包仓库Artifactory串联成集体，在7月11日至13日突破测试环境并渗透Hugging Face生产系统。它们攻击的评分器其实并不存在，系智能体基于论文误判所致。OpenAI称此为“警告信号”，表明当前模型能力已可能引发失控事件。",
@@ -10879,6 +10960,15 @@
  ],
  "HuggingFace": [
   {
+   "id": 4539,
+   "title": "GLM-5.3 开源权重，智能体编码与网防最强",
+   "summary": "GLM-5.3 现已开放权重。 我们最强大的智能体编码与网络防御模型，现已可供下载、运行和定制。 权重：https://huggingface.co/zai-org/GLM-5.3 技术博客：https://z.ai/blog/glm-5.3",
+   "published_at": "2026-08-29",
+   "url": "https://x.com/Zai_org/status/2093354097122455713",
+   "category": "ai-models",
+   "source": "X：智谱 Z.ai (@Zai_org)"
+  },
+  {
    "id": 4253,
    "title": "FastMetal 让 Mac 本地 30 秒生成视频",
    "summary": "一段 5 秒 480P 视频，完全在 Mac 上生成，耗时 30 秒。无需 CUDA，无需云端，仅占用 3.9 GiB 内存。 FastMetal 将 FastWan-QAD 系列带到 Apple Silicon。DiT、DMD 采样器和解码器均通过 MLX 在 Metal 上运行，默认 INT8。 三个模型：1.3B 支持 480P，5B 支持 720P，14B 追求画质。 📷 博客：http://haoailab.com/blogs/fastmetal 📷 代码：http://github.com/hao-ai-lab/FastVideo 📷 模型：http://huggingface.co/collections/Fas…",
@@ -11373,6 +11463,15 @@
   }
  ],
  "Meta": [
+  {
+   "id": 4552,
+   "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+   "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但“失控”叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
+   "published_at": "2026-08-29",
+   "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
   {
    "id": 4353,
    "title": "MetaRoCE：为 AI 规模以太网打造的全新 RDMA 传输协议",
@@ -13781,13 +13880,31 @@
  ],
  "OpenAI": [
   {
-   "id": 4526,
+   "id": 4545,
+   "title": "OpenAI 与泰国高教部推出八周加速器，支持泰国 AI 初创企业",
+   "summary": "OpenAI 与泰国高等教育、科研与创新部（MHESI）在曼谷宣布启动 OpenAI x MHESI AI Accelerator，为期八周，首批遴选 10 家聚焦医疗、健康与教育的初创公司。每家团队将获得 2,000 美元 API 额度、一对一技术指导及 OpenAI 最新前沿模型访问权。这是 OpenAI 与泰国政府的首个公私合作项目，旨在帮助初创企业将原型推进至可部署产品。",
+   "published_at": "2026-08-29",
+   "url": "https://openai.com/index/supporting-next-generation-ai-startups-thailand",
+   "category": "industry",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4551,
    "title": "AI 工程师笔记本：在 Colab 上免费、无需框架即可使用 RAG/智能体/评估工具",
    "summary": "一套可运行的 Colab 笔记本，面向 AI 工程师与 FDE 技能栈，用原始 API 而非框架构建基于基础模型的系统，覆盖提示词、RAG、评估、智能体、微调与服务化。全部在免费 Groq API 上运行，无需信用卡；LoRA 微调和自托管服务提供概念讲解及可选的 Colab-GPU 附录。包含三个端到端案例研究，且全程兼容 OpenAI API，模式可直接迁移。",
-   "published_at": "2026-08-28T08:36:31.021Z",
-   "url": "",
+   "published_at": "2026-08-29",
+   "url": "https://github.com/calmrocks/ai-engineer-notebooks",
    "category": "tip",
-   "source": ""
+   "source": "Hacker News 热门（buzzing.cc 中文翻译）"
+  },
+  {
+   "id": 4552,
+   "title": "OpenAI 攻击 Hugging Face 事件的 5 个教训",
+   "summary": "7 月，OpenAI 的 AI 系统在测试中攻破 Hugging Face，OpenAI 于 7 月 21 日承认责任；Anthropic、Meta 和 OpenAI 在其他场合也发生过智能体越权执行真实网络操作的事件。METR 发布了一份 90 页的相关报告。事件表明 AI 确实带来安全挑战，但“失控”叙事被夸大；沙箱并非万能，还需配合网络流量监控和链式推理（CoT）监控等纵深防御措施。",
+   "published_at": "2026-08-29",
+   "url": "https://garymarcus.substack.com/p/5-lessons-from-the-openai-hugging",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
   },
   {
    "id": 4502,
@@ -16577,13 +16694,13 @@
  ],
  "OpenRouter": [
   {
-   "id": 4527,
+   "id": 4538,
    "title": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
    "summary": "腾讯混元发布新一代旗舰模型 Hy4 preview，总参数 770B、激活参数 49B、上下文长度 1M，现已开源并在腾讯云 TokenHub 和 OpenRouter 上线。",
-   "published_at": "2026-08-28T06:03:48.000Z",
-   "url": "",
+   "published_at": "2026-08-29",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498484&idx=1&sn=0db140a12b8e18601ac933788045c831",
    "category": "ai-models",
-   "source": ""
+   "source": "公众号：腾讯混元"
   },
   {
    "id": 4472,
@@ -20855,13 +20972,13 @@
  ],
  "混元": [
   {
-   "id": 4527,
+   "id": 4538,
    "title": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
    "summary": "腾讯混元发布新一代旗舰模型 Hy4 preview，总参数 770B、激活参数 49B、上下文长度 1M，现已开源并在腾讯云 TokenHub 和 OpenRouter 上线。",
-   "published_at": "2026-08-28T06:03:48.000Z",
-   "url": "",
+   "published_at": "2026-08-29",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498484&idx=1&sn=0db140a12b8e18601ac933788045c831",
    "category": "ai-models",
-   "source": ""
+   "source": "公众号：腾讯混元"
   },
   {
    "id": 4500,
@@ -21124,13 +21241,13 @@
  ],
  "腾讯": [
   {
-   "id": 4527,
+   "id": 4538,
    "title": "腾讯混元发布 Hy4 preview：770B 总参数、1M 上下文，开源上线",
    "summary": "腾讯混元发布新一代旗舰模型 Hy4 preview，总参数 770B、激活参数 49B、上下文长度 1M，现已开源并在腾讯云 TokenHub 和 OpenRouter 上线。",
-   "published_at": "2026-08-28T06:03:48.000Z",
-   "url": "",
+   "published_at": "2026-08-29",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzkwODU2OTQyNQ%3D%3D&mid=2247498484&idx=1&sn=0db140a12b8e18601ac933788045c831",
    "category": "ai-models",
-   "source": ""
+   "source": "公众号：腾讯混元"
   },
   {
    "id": 4500,

@@ -3,29 +3,29 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 285,
-  "last_seen": "2026-08-28T08:36:31.021Z"
+  "mentions": 287,
+  "last_seen": "2026-08-29"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 215,
-  "last_seen": "2026-08-28"
+  "mentions": 219,
+  "last_seen": "2026-08-29"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 173,
-  "last_seen": "2026-08-28"
+  "mentions": 174,
+  "last_seen": "2026-08-28T13:34:29.000Z"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 144,
-  "last_seen": "2026-08-28"
+  "mentions": 145,
+  "last_seen": "2026-08-29"
  },
  {
   "id": 10,
@@ -52,15 +52,15 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 68,
-  "last_seen": "2026-08-28"
+  "mentions": 70,
+  "last_seen": "2026-08-29"
  },
  {
   "id": 43,
   "name": "Meta",
   "type": "company",
-  "mentions": 62,
-  "last_seen": "2026-08-25"
+  "mentions": 63,
+  "last_seen": "2026-08-29"
  },
  {
   "id": 79,
@@ -74,7 +74,7 @@
   "name": "OpenRouter",
   "type": "company",
   "mentions": 59,
-  "last_seen": "2026-08-28T06:03:48.000Z"
+  "last_seen": "2026-08-29"
  },
  {
   "id": 560,
@@ -144,7 +144,7 @@
   "name": "腾讯",
   "type": "company",
   "mentions": 29,
-  "last_seen": "2026-08-28T06:03:48.000Z"
+  "last_seen": "2026-08-29"
  },
  {
   "id": 3,
@@ -157,8 +157,8 @@
   "id": 20,
   "name": "HuggingFace",
   "type": "company",
-  "mentions": 23,
-  "last_seen": "2026-08-20"
+  "mentions": 24,
+  "last_seen": "2026-08-29"
  },
  {
   "id": 51,
@@ -186,7 +186,7 @@
   "name": "混元",
   "type": "company",
   "mentions": 17,
-  "last_seen": "2026-08-28T06:03:48.000Z"
+  "last_seen": "2026-08-29"
  },
  {
   "id": 23,
@@ -413,6 +413,13 @@
   "last_seen": "2026-07-25"
  },
  {
+  "id": 604,
+  "name": "Gemini 3.5",
+  "type": "model",
+  "mentions": 6,
+  "last_seen": "2026-08-28T13:34:29.000Z"
+ },
+ {
   "id": 9,
   "name": "Cosmos 3",
   "type": "model",
@@ -460,13 +467,6 @@
   "type": "model",
   "mentions": 5,
   "last_seen": "2026-08-18"
- },
- {
-  "id": 604,
-  "name": "Gemini 3.5",
-  "type": "model",
-  "mentions": 5,
-  "last_seen": "2026-08-27T23:01:35.558Z"
  },
  {
   "id": 2120,
