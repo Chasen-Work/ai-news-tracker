@@ -1,5 +1,15 @@
 [
  {
+  "id": 4618,
+  "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+  "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Flash-Vision-Exp，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-08-31T11:35:24.000Z",
+  "fetched_at": "2026-08-31 13:00:04"
+ },
+ {
   "id": 4609,
   "title": "基于 MiniMax H3 Max 的 24 小时 AI 直播网站上线了",
   "summary": "MiniMax 将 H3 Max 768P、480P 接入开放平台和 MiniMax Design，海外开发者已借此搭建出 Twitch 直播和 24 小时\"AI 电视台\"。",

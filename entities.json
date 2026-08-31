@@ -52,8 +52,8 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 72,
-  "last_seen": "2026-08-31T00:24:35.000Z"
+  "mentions": 73,
+  "last_seen": "2026-08-31T11:35:24.000Z"
  },
  {
   "id": 43,
@@ -66,8 +66,8 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 60,
-  "last_seen": "2026-08-22"
+  "mentions": 61,
+  "last_seen": "2026-08-31T11:35:24.000Z"
  },
  {
   "id": 46,
@@ -189,6 +189,13 @@
   "last_seen": "2026-08-29"
  },
  {
+  "id": 701,
+  "name": "DeepSeek-V4",
+  "type": "model",
+  "mentions": 17,
+  "last_seen": "2026-08-31T11:35:24.000Z"
+ },
+ {
   "id": 23,
   "name": "Replit",
   "type": "company",
@@ -222,13 +229,6 @@
   "type": "model",
   "mentions": 16,
   "last_seen": "2026-08-18"
- },
- {
-  "id": 701,
-  "name": "DeepSeek-V4",
-  "type": "model",
-  "mentions": 16,
-  "last_seen": "2026-08-22"
  },
  {
   "id": 376,

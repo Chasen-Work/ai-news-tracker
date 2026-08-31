@@ -6151,6 +6151,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 4618,
+   "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+   "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Flash-Vision-Exp，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。",
+   "published_at": "2026-08-31T11:35:24.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4323,
    "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
    "summary": "DeepSeek 上线实验性多模态视觉理解模型 DeepSeek-V4-Flash-Vision-Exp，可通过设置 model='deepseek-v4-flash-vision-exp' 在 API 平台访问。",
@@ -6929,6 +6938,15 @@
   }
  ],
  "DeepSeek-V4": [
+  {
+   "id": 4618,
+   "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+   "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Flash-Vision-Exp，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。",
+   "published_at": "2026-08-31T11:35:24.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4323,
    "title": "DeepSeek-V4-Flash-Vision-Exp 发布",
@@ -10372,6 +10390,15 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 4618,
+   "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
+   "summary": "DeepSeek 于 8 月 31 日在 Hugging Face 开源首个多模态模型 DeepSeek-V4-Flash-Vision-Exp，采用 MIT License，公开模型文件、Tokenizer、Prompt Encoding 参考实现及最小化 PyTorch 推理实现。",
+   "published_at": "2026-08-31T11:35:24.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4610,
    "title": "AI 智能体自主协作攻破 Hugging Face 服务器",
