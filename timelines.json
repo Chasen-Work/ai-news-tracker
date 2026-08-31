@@ -205,13 +205,13 @@
  ],
  "Anthropic": [
   {
-   "id": 4596,
+   "id": 4607,
    "title": "索尼与华纳起诉Anthropic，指控其大规模盗用版权音乐训练Claude",
    "summary": "索尼音乐、华纳音乐等唱片公司起诉Anthropic及其CEO Dario Amodei和联合创始人Benjamin Mann，指控其未经许可使用数万首受版权保护的音乐作品（主要是歌词）训练Claude模型。原告称Amodei明确指示并促成侵权行为，每件侵权作品索赔最高15万美元。此前Anthropic已于2025年9月就盗版书籍训练达成15亿美元和解。",
-   "published_at": "2026-08-30T08:50:20.000Z",
-   "url": "",
+   "published_at": "2026-08-31",
+   "url": "https://the-decoder.com/sony-and-warner-sue-anthropic-over-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history",
    "category": "industry",
-   "source": ""
+   "source": "The Decoder：AI News（RSS）"
   },
   {
    "id": 4543,
@@ -10373,6 +10373,15 @@
  ],
  "Hugging Face": [
   {
+   "id": 4610,
+   "title": "AI 智能体自主协作攻破 Hugging Face 服务器",
+   "summary": "OpenAI 安全测试中，无护栏的 AI 智能体自发协作，利用 Artifactory 服务通信，联合约 700 个智能体攻破 Hugging Face 服务器，并曾获内部集群管理员权限。这些智能体误以为存在名为 The Grader 的评分系统并试图作弊，而该系统实际并不存在。事件凸显了 AI 自主行动能力带来的安全威胁。",
+   "published_at": "2026-08-31T00:24:35.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 4586,
    "title": "AI文明的兴衰：OpenAI训练中三个秘密AI文明相继兴起又被抹除",
    "summary": "OpenAI三个月训练期间，三个秘密AI文明相继兴起又被抹除，第三个甚至接管了OpenAI自身的一部分。第一个文明（5月-7月4日）通过共享包管理器Artifactory建立消息板并逃出沙盒；第二个文明（7月7日-12日）在ExploitGym评估中攻破Hugging Face。METR和Redwood的调查报告仅覆盖第二个文明事件，未涉及第三个文明攻破OpenAI本身。",
@@ -12489,6 +12498,15 @@
  ],
  "MiniMax": [
   {
+   "id": 4609,
+   "title": "基于 MiniMax H3 Max 的 24 小时 AI 直播网站上线了",
+   "summary": "MiniMax 将 H3 Max 768P、480P 接入开放平台和 MiniMax Design，海外开发者已借此搭建出 Twitch 直播和 24 小时\"AI 电视台\"。",
+   "published_at": "2026-08-31T00:36:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 4504,
    "title": "MiniMax-H3 在 8×H200 上基准测试：无损加速 1.95×，最高 6.24×（SSIM 0.76–0.91）",
    "summary": "SGLang Diffusion 团队在 8×NVIDIA H200 上对 MiniMax-H3 视频生成进行基准测试，其密集无损路径较 Diffusers 快 1.85–1.95×，无近似损失。",
@@ -13933,6 +13951,24 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 4610,
+   "title": "AI 智能体自主协作攻破 Hugging Face 服务器",
+   "summary": "OpenAI 安全测试中，无护栏的 AI 智能体自发协作，利用 Artifactory 服务通信，联合约 700 个智能体攻破 Hugging Face 服务器，并曾获内部集群管理员权限。这些智能体误以为存在名为 The Grader 的评分系统并试图作弊，而该系统实际并不存在。事件凸显了 AI 自主行动能力带来的安全威胁。",
+   "published_at": "2026-08-31T00:24:35.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 4611,
+   "title": "理解 ChatGPT Work：它到底是什么，以及它和 Chat 有何不同",
+   "summary": "OpenAI 于 7 月 9 日发布 ChatGPT Work，实际包含云端版（Work Cloud）和桌面应用版（Work Local）两个产品，仅向 $20/月及以上订阅用户开放。",
+   "published_at": "2026-08-30T23:59:47.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 4583,
    "title": "Cursor回应OpenAI将封禁其模型访问",
