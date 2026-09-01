@@ -3,15 +3,15 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 293,
-  "last_seen": "2026-08-31T00:24:35.000Z"
+  "mentions": 294,
+  "last_seen": "2026-09-01"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 220,
-  "last_seen": "2026-08-31"
+  "mentions": 222,
+  "last_seen": "2026-09-01T00:07:51.000Z"
  },
  {
   "id": 47,
@@ -52,8 +52,8 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 73,
-  "last_seen": "2026-08-31T11:35:24.000Z"
+  "mentions": 74,
+  "last_seen": "2026-09-01"
  },
  {
   "id": 43,
@@ -67,7 +67,7 @@
   "name": "DeepSeek",
   "type": "company",
   "mentions": 61,
-  "last_seen": "2026-08-31T11:35:24.000Z"
+  "last_seen": "2026-09-01"
  },
  {
   "id": 46,
@@ -151,7 +151,7 @@
   "name": "MiniMax",
   "type": "company",
   "mentions": 26,
-  "last_seen": "2026-08-31T00:36:00.000Z"
+  "last_seen": "2026-09-01"
  },
  {
   "id": 20,
@@ -164,8 +164,8 @@
   "id": 51,
   "name": "Runway",
   "type": "company",
-  "mentions": 22,
-  "last_seen": "2026-08-19"
+  "mentions": 23,
+  "last_seen": "2026-09-01"
  },
  {
   "id": 976,
@@ -193,7 +193,7 @@
   "name": "DeepSeek-V4",
   "type": "model",
   "mentions": 17,
-  "last_seen": "2026-08-31T11:35:24.000Z"
+  "last_seen": "2026-09-01"
  },
  {
   "id": 23,
