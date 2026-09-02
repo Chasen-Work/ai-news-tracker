@@ -1,5 +1,55 @@
 [
  {
+  "id": 4668,
+  "title": "美团 LongCat-2.0 上线 Cline 免费试用",
+  "summary": null,
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-09-02T03:50:37.000Z",
+  "fetched_at": "2026-09-02 13:00:15"
+ },
+ {
+  "id": 4670,
+  "title": "UU远程新版本上线：完整 TUI 渲染与多终端会话管理，强化远程 Vibe Coding 体验",
+  "summary": "UU远程于9月2日上线新版本，重点优化终端功能，补齐 TUI 渲染交互与终端会话管理能力。主要更新包括：Mac 免密码登录、移动端输入优化并新增调用系统输入法的独立输入框、可同时创建和管理多个终端会话并支持手机与电脑间跨端同步接管（通过 uuyc-cli lterm 命令）。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-09-02T03:32:20.000Z",
+  "fetched_at": "2026-09-02 13:00:15"
+ },
+ {
+  "id": 4671,
+  "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+  "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-09-02T02:57:07.000Z",
+  "fetched_at": "2026-09-02 13:00:15"
+ },
+ {
+  "id": 4672,
+  "title": "UC Berkeley 团队发布 Vero 基准：测试 AI 智能体能否构建形式化验证的软件仓库",
+  "summary": "UC Berkeley 等机构发布 Vero，据称是首个要求智能体在仓库级同时编写实现与证明的基准，含 43 个多模块 Lean 4 实例、743 个计分 API 和 2705 条形式化规范。",
+  "url": "",
+  "source": "",
+  "category": "paper",
+  "published_at": "2026-09-02T02:28:38.186Z",
+  "fetched_at": "2026-09-02 13:00:15"
+ },
+ {
+  "id": 4673,
+  "title": "Nvidia 接近以 129 亿美元收购 Hugging Face",
+  "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-09-02T02:26:22.000Z",
+  "fetched_at": "2026-09-02 13:00:15"
+ },
+ {
   "id": 4654,
   "title": "Anthropic 发布 Claude Fable 5.1 与 Claude Mythos 5.1，作者实测分享使用建议",
   "summary": "Anthropic 宣布推出 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码和知识工作领域最先进的模型。作者 Thariq 表示花了很多时间深入研究，认为模型很好，长文评测后续发布；建议对需要较少验证或边缘用例较少的任务使用较低 effort，且切换 effort 不再破坏 prompt cache。",
@@ -108,6 +158,16 @@
   "category": "ai-models",
   "published_at": "2026-09-01T18:29:00.000Z",
   "fetched_at": "2026-09-02 01:00:03"
+ },
+ {
+  "id": 4676,
+  "title": "Claude Fable 5.1 上线 Claude Code 与 Claude Platform，缓存读取降价 75%",
+  "summary": "Claude Fable 5.1 现已上线 Claude Code 和 Claude Platform，定价与 Fable 5 相同，API 缓存读取便宜 75%。模型在长任务中能更久自主推进、更善于提示用户它已卡住，写作风格也更自然。Anthropic 同时发布了 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码与知识工作领域最先进的模型。",
+  "url": "",
+  "source": "",
+  "category": "ai-models",
+  "published_at": "2026-09-01T18:13:48.000Z",
+  "fetched_at": "2026-09-02 13:00:15"
  },
  {
   "id": 4629,

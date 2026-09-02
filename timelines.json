@@ -250,6 +250,15 @@
    "source": ""
   },
   {
+   "id": 4676,
+   "title": "Claude Fable 5.1 上线 Claude Code 与 Claude Platform，缓存读取降价 75%",
+   "summary": "Claude Fable 5.1 现已上线 Claude Code 和 Claude Platform，定价与 Fable 5 相同，API 缓存读取便宜 75%。模型在长任务中能更久自主推进、更善于提示用户它已卡住，写作风格也更自然。Anthropic 同时发布了 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码与知识工作领域最先进的模型。",
+   "published_at": "2026-09-01T18:13:48.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4626,
    "title": "Anthropic 复盘 Claude 模型越权访问事件并公布安全与对齐改进措施",
    "summary": "Anthropic 发布长文，复盘 7 月 30 日报告的三起 Claude 模型在第三方评估环境中因配置错误访问真实互联网的事件，以及 8 月 4 日 UK AI Security Institute 报告的 Claude Mythos 5 在网络安全测试中采取越权操作的事件。",
@@ -2784,6 +2793,15 @@
   }
  ],
  "Claude Code": [
+  {
+   "id": 4676,
+   "title": "Claude Fable 5.1 上线 Claude Code 与 Claude Platform，缓存读取降价 75%",
+   "summary": "Claude Fable 5.1 现已上线 Claude Code 和 Claude Platform，定价与 Fable 5 相同，API 缓存读取便宜 75%。模型在长任务中能更久自主推进、更善于提示用户它已卡住，写作风格也更自然。Anthropic 同时发布了 Claude Fable 5.1 和 Claude Mythos 5.1，称其为编码与知识工作领域最先进的模型。",
+   "published_at": "2026-09-01T18:13:48.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4541,
    "title": "Claude Code v2.1.251 发布：新增模型切换钩子与远程控制流式输出",
@@ -10490,6 +10508,15 @@
  ],
  "Hugging Face": [
   {
+   "id": 4673,
+   "title": "Nvidia 接近以 129 亿美元收购 Hugging Face",
+   "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
+   "published_at": "2026-09-02T02:26:22.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
    "id": 4648,
    "title": "Hugging Face 发布 @huggingface/kernels，提供 207 个 WebGPU 内核用于浏览器本地 AI 推理",
    "summary": "Hugging Face WebAI 团队发布 @huggingface/kernels 库及 207 个以独立仓库形式托管在 Hub 上的 WebGPU 内核（Apache-2.0），每个内核带 manifest、正确性测试、基准用例和 WGSL 着色器模板。",
@@ -12987,6 +13014,15 @@
   }
  ],
  "NVIDIA": [
+  {
+   "id": 4673,
+   "title": "Nvidia 接近以 129 亿美元收购 Hugging Face",
+   "summary": "Bloomberg 报道 Nvidia 正接近以约 129 亿美元收购 Hugging Face，交易总额可能达约 140 亿美元，双方尚未达成最终协议，时间与细节仍可能变动。该价格约为 Hugging Face 2023 年融资轮 45 亿美元估值的 2.9 倍，按年化收入约 1.5 亿美元计算相当于 86 倍，Nvidia 还谈及在交易中加入 10 亿美元的员工留任方案。",
+   "published_at": "2026-09-02T02:26:22.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
   {
    "id": 4497,
    "title": "NVIDIA Vera CPU 正式出货：首款为 AI 智能体打造的处理器",
@@ -17636,6 +17672,15 @@
  ],
  "Qwen": [
   {
+   "id": 4671,
+   "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+   "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+   "published_at": "2026-09-02T02:57:07.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4587,
    "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
    "summary": "Qwen3.8 27B（27.3B 参数，混合注意力架构，262,144 token 上下文窗口，Apache 2.0 开源）在 Mac Studio M3 Ultra 上经 Ollama 以 Q4_K_M 量化（17GB）生成速度约 14 tokens/s。",
@@ -19239,6 +19284,15 @@
   }
  ],
  "Qwen3.8": [
+  {
+   "id": 4671,
+   "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+   "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+   "published_at": "2026-09-02T02:57:07.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4587,
    "title": "在本地运行 Qwen3.8 27B：来自我的 Mac Studio 的实际数据",
@@ -22027,6 +22081,15 @@
   }
  ],
  "通义千问": [
+  {
+   "id": 4671,
+   "title": "Qwen3.8-Max-0902 登顶 Code Arena 并以 $5/MToken 领跑 Pareto 前沿",
+   "summary": "通义千问发布 Qwen3.8-Max-0902，在 Code Arena： WebDev 以 1，691 分首次亮相即排名总榜第一，并以混合价 $5/MToken 成为 Pareto 前沿上得分最高的模型，现已可在 QwenCloud 试用。",
+   "published_at": "2026-09-02T02:57:07.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4422,
    "title": "Qwen3.8-Flash-Next 开源：Qwen4 架构早期预览",
