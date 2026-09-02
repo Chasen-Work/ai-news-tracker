@@ -1,13 +1,13 @@
 {
- "total_items": 2039,
+ "total_items": 2050,
  "total_entities": 141,
- "total_dailies": 91,
+ "total_dailies": 92,
  "categories": {
-  "tip": 570,
-  "ai-products": 557,
+  "tip": 573,
+  "ai-products": 560,
   "industry": 440,
-  "paper": 239,
-  "ai-models": 233
+  "paper": 240,
+  "ai-models": 237
  },
  "entity_types": {
   "model": 86,
@@ -20,11 +20,11 @@
   },
   {
    "name": "IT之家（RSS）",
-   "count": 112
+   "count": 113
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 80
+   "count": 81
   },
   {
    "name": "Claude：Blog（网页）",
@@ -36,7 +36,7 @@
   },
   {
    "name": "Hugging Face：Blog（RSS）",
-   "count": 45
+   "count": 46
   },
   {
    "name": "The Decoder：AI News（RSS）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-08-02",
-   "count": 3
-  },
   {
    "date": "2026-08-03",
    "count": 9
@@ -170,12 +166,16 @@
   },
   {
    "date": "2026-08-31",
-   "count": 2
+   "count": 3
   },
   {
    "date": "2026-09-01",
    "count": 9
+  },
+  {
+   "date": "2026-09-02",
+   "count": 10
   }
  ],
- "updated_at": "2026-09-01T13:00:31Z"
+ "updated_at": "2026-09-02T01:00:04Z"
 }

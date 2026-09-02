@@ -3,22 +3,22 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 294,
-  "last_seen": "2026-09-01"
+  "mentions": 295,
+  "last_seen": "2026-09-02"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 222,
-  "last_seen": "2026-09-01T00:07:51.000Z"
+  "mentions": 227,
+  "last_seen": "2026-09-02T00:30:11.000Z"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 174,
-  "last_seen": "2026-08-28T13:34:29.000Z"
+  "mentions": 176,
+  "last_seen": "2026-09-02"
  },
  {
   "id": 48,
@@ -52,8 +52,8 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 74,
-  "last_seen": "2026-09-01"
+  "mentions": 75,
+  "last_seen": "2026-09-02"
  },
  {
   "id": 43,
@@ -73,8 +73,8 @@
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
-  "mentions": 59,
-  "last_seen": "2026-08-29"
+  "mentions": 60,
+  "last_seen": "2026-09-01T18:29:00.000Z"
  },
  {
   "id": 149,
@@ -136,8 +136,8 @@
   "id": 70,
   "name": "Google DeepMind",
   "type": "company",
-  "mentions": 32,
-  "last_seen": "2026-08-28"
+  "mentions": 33,
+  "last_seen": "2026-09-02"
  },
  {
   "id": 24,
@@ -157,8 +157,8 @@
   "id": 20,
   "name": "HuggingFace",
   "type": "company",
-  "mentions": 24,
-  "last_seen": "2026-08-29"
+  "mentions": 25,
+  "last_seen": "2026-09-02"
  },
  {
   "id": 51,
@@ -630,6 +630,13 @@
   "last_seen": "2026-08-22"
  },
  {
+  "id": 5181,
+  "name": "Gemini 3.7 Flash",
+  "type": "model",
+  "mentions": 3,
+  "last_seen": "2026-09-02"
+ },
+ {
   "id": 5634,
   "name": "Qwen4",
   "type": "model",
@@ -761,13 +768,6 @@
   "type": "model",
   "mentions": 2,
   "last_seen": "2026-08-12"
- },
- {
-  "id": 5181,
-  "name": "Gemini 3.7 Flash",
-  "type": "model",
-  "mentions": 2,
-  "last_seen": "2026-08-15"
  },
  {
   "id": 11,
