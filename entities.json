@@ -3,43 +3,43 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 295,
-  "last_seen": "2026-09-02"
+  "mentions": 298,
+  "last_seen": "2026-09-03"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 228,
-  "last_seen": "2026-09-02T00:30:11.000Z"
+  "mentions": 229,
+  "last_seen": "2026-09-03"
  },
  {
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 176,
-  "last_seen": "2026-09-02"
+  "mentions": 180,
+  "last_seen": "2026-09-03"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 146,
-  "last_seen": "2026-09-01T18:13:48.000Z"
+  "mentions": 147,
+  "last_seen": "2026-09-03"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
   "mentions": 93,
-  "last_seen": "2026-09-02T02:26:22.000Z"
+  "last_seen": "2026-09-03"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
   "mentions": 92,
-  "last_seen": "2026-09-02T02:57:07.000Z"
+  "last_seen": "2026-09-03"
  },
  {
   "id": 21,
@@ -53,14 +53,14 @@
   "name": "Hugging Face",
   "type": "company",
   "mentions": 76,
-  "last_seen": "2026-09-02T02:26:22.000Z"
+  "last_seen": "2026-09-03"
  },
  {
   "id": 43,
   "name": "Meta",
   "type": "company",
-  "mentions": 63,
-  "last_seen": "2026-08-29"
+  "mentions": 65,
+  "last_seen": "2026-09-03"
  },
  {
   "id": 79,
@@ -80,8 +80,8 @@
   "id": 149,
   "name": "Cursor",
   "type": "company",
-  "mentions": 59,
-  "last_seen": "2026-08-30"
+  "mentions": 60,
+  "last_seen": "2026-09-03"
  },
  {
   "id": 560,
@@ -94,8 +94,8 @@
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 56,
-  "last_seen": "2026-08-30"
+  "mentions": 57,
+  "last_seen": "2026-09-02T21:39:44.000Z"
  },
  {
   "id": 36,
@@ -126,18 +126,18 @@
   "last_seen": "2026-08-14"
  },
  {
+  "id": 70,
+  "name": "Google DeepMind",
+  "type": "company",
+  "mentions": 34,
+  "last_seen": "2026-09-03"
+ },
+ {
   "id": 52,
   "name": "Microsoft",
   "type": "company",
   "mentions": 33,
   "last_seen": "2026-08-27"
- },
- {
-  "id": 70,
-  "name": "Google DeepMind",
-  "type": "company",
-  "mentions": 33,
-  "last_seen": "2026-09-02"
  },
  {
   "id": 24,
@@ -242,14 +242,14 @@
   "name": "通义千问",
   "type": "company",
   "mentions": 13,
-  "last_seen": "2026-09-02T02:57:07.000Z"
+  "last_seen": "2026-09-03"
  },
  {
   "id": 3364,
   "name": "Qwen3.8",
   "type": "model",
   "mentions": 13,
-  "last_seen": "2026-09-02T02:57:07.000Z"
+  "last_seen": "2026-09-03"
  },
  {
   "id": 37,
@@ -985,5 +985,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-08-19"
+ },
+ {
+  "id": 6012,
+  "name": "Gemini 3.8 Flash",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-09-03"
  }
 ]
