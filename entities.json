@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 298,
-  "last_seen": "2026-09-03"
+  "mentions": 299,
+  "last_seen": "2026-09-03T04:49:35.840Z"
  },
  {
   "id": 35,
@@ -24,43 +24,43 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 147,
-  "last_seen": "2026-09-03"
+  "mentions": 149,
+  "last_seen": "2026-09-03T01:10:22.000Z"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 93,
-  "last_seen": "2026-09-03"
+  "mentions": 95,
+  "last_seen": "2026-09-03T12:13:54.000Z"
  },
  {
   "id": 6,
   "name": "Qwen",
   "type": "model",
-  "mentions": 92,
-  "last_seen": "2026-09-03"
+  "mentions": 93,
+  "last_seen": "2026-09-03T00:00:00.000Z"
  },
  {
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 92,
-  "last_seen": "2026-08-28"
+  "mentions": 93,
+  "last_seen": "2026-09-03T00:00:00.000Z"
  },
  {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 76,
-  "last_seen": "2026-09-03"
+  "mentions": 81,
+  "last_seen": "2026-09-03T12:13:54.000Z"
  },
  {
   "id": 43,
   "name": "Meta",
   "type": "company",
-  "mentions": 65,
-  "last_seen": "2026-09-03"
+  "mentions": 66,
+  "last_seen": "2026-09-03T01:10:22.000Z"
  },
  {
   "id": 79,
@@ -238,6 +238,13 @@
   "last_seen": "2026-08-22"
  },
  {
+  "id": 304,
+  "name": "Qwen3.5",
+  "type": "model",
+  "mentions": 13,
+  "last_seen": "2026-09-03T00:00:00.000Z"
+ },
+ {
   "id": 977,
   "name": "通义千问",
   "type": "company",
@@ -257,13 +264,6 @@
   "type": "company",
   "mentions": 12,
   "last_seen": "2026-08-30"
- },
- {
-  "id": 304,
-  "name": "Qwen3.5",
-  "type": "model",
-  "mentions": 12,
-  "last_seen": "2026-08-05"
  },
  {
   "id": 713,
