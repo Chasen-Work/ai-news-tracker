@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 321,
-  "last_seen": "2026-09-04T00:07:48.532Z"
+  "mentions": 322,
+  "last_seen": "2026-09-04T11:33:56.000Z"
  },
  {
   "id": 35,
@@ -136,8 +136,8 @@
   "id": 52,
   "name": "Microsoft",
   "type": "company",
-  "mentions": 33,
-  "last_seen": "2026-08-27"
+  "mentions": 34,
+  "last_seen": "2026-09-04T04:28:15.000Z"
  },
  {
   "id": 24,
@@ -161,18 +161,18 @@
   "last_seen": "2026-09-02"
  },
  {
+  "id": 6089,
+  "name": "GPT-6",
+  "type": "model",
+  "mentions": 24,
+  "last_seen": "2026-09-04T11:07:36.000Z"
+ },
+ {
   "id": 51,
   "name": "Runway",
   "type": "company",
   "mentions": 23,
   "last_seen": "2026-09-01"
- },
- {
-  "id": 6089,
-  "name": "GPT-6",
-  "type": "model",
-  "mentions": 22,
-  "last_seen": "2026-09-04T00:07:48.532Z"
  },
  {
   "id": 976,

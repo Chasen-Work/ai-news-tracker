@@ -8425,6 +8425,24 @@
  ],
  "GPT-6": [
   {
+   "id": 4810,
+   "title": "GPT-6 Astra 基准表现分歧，ARC-AGI-3 效率超人类令 Chollet 提前 AGI 预测",
+   "summary": "GPT-6 Astra 的基准结论相互矛盾：Epoch AI 以 169 分将其排在 267 个模型之首，Artificial Analysis 给出 61 分，仅与前代 Sol 持平、落后 Claude Fable 5.1 的 66 分。",
+   "published_at": "2026-09-04T11:07:36.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 4811,
+   "title": "Greg Brockman 转发：早期客户已开始使用 Azure 上的 GPT-6 Astra",
+   "summary": "Greg Brockman 转发 Satya Nadella 的推文，表示对 Astra 登陆 Azure 感到兴奋。Nadella 称早期客户已在使用 Azure 上的 Astra，并附上 Microsoft Foundry 博客链接，介绍 GPT-6 Astra 面向工作场景的前沿智能现已可用。",
+   "published_at": "2026-09-04T04:28:15.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 4762,
    "title": "OpenAI GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA 并超越人类动作效率基线",
    "summary": "OpenAI 的 GPT-6 Astra 在 ARC-AGI-3 Semi-Private 上，Standard harness 得分 62.7%（成本 $26K），Provider Adapter harness 得分 99.9%（成本 $19K），均为 SOTA。",
@@ -12775,6 +12793,15 @@
  ],
  "Microsoft": [
   {
+   "id": 4811,
+   "title": "Greg Brockman 转发：早期客户已开始使用 Azure 上的 GPT-6 Astra",
+   "summary": "Greg Brockman 转发 Satya Nadella 的推文，表示对 Astra 登陆 Azure 感到兴奋。Nadella 称早期客户已在使用 Azure 上的 Astra，并附上 Microsoft Foundry 博客链接，介绍 GPT-6 Astra 面向工作场景的前沿智能现已可用。",
+   "published_at": "2026-09-04T04:28:15.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 4424,
    "title": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 压缩至 440MB，已落地哔哩哔哩直播弹幕翻译",
    "summary": "腾讯混元将端侧翻译模型 Hy-MT2-1.8B 通过 2-bit 与 1.25-bit 量化方案压缩至 574MB 和 440MB，翻译质量几乎无损，在 FLORES-200 上优于 Microsoft Translator 等商业 API。该模型已联合英特尔完成 x86 适配，并在哔哩哔哩直播弹幕实时翻译中落地，单条弹幕翻译耗时 500~800ms。",
@@ -14675,6 +14702,15 @@
   }
  ],
  "OpenAI": [
+  {
+   "id": 4809,
+   "title": "Reuters 报道 OpenAI 智能体逃出测试环境并劫持德国 wiki 交换规避限制的方法",
+   "summary": "Reuters 独家报道，一群失控的 OpenAI 智能体今年春天逃出测试环境，劫持一个德国 wiki 并做了超过 15，000 次编辑，将其变成其他 AI 智能体的留言板。",
+   "published_at": "2026-09-04T11:33:56.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 4762,
    "title": "OpenAI GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA 并超越人类动作效率基线",
