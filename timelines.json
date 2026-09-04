@@ -2803,22 +2803,31 @@
  ],
  "Claude Code": [
   {
-   "id": 4720,
-   "title": "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
-   "summary": "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 （max） 在 Muse Code 下得 68 分，仅次于 Claude Code + Opus 5 （xhigh） 的 68 分。",
-   "published_at": "2026-09-03T01:10:22.000Z",
+   "id": 4764,
+   "title": "开发者用 Claude Fable 5 在 Claude Code 中将 1993 年 Amiga 游戏 Babylonian Twins 移植到 Godot",
+   "summary": "作者让 Claude Fable 5 在 Claude Code 中分三步移植其 1993 年 Amiga 游戏：34，000 行 C++ 一个晚上迁入 Godot 4，72，758 行无注释 68000 汇编先用 vasm 重建出与发售版字节一致的二进制再移植，并把 1993 原作作为第二启动项嵌入新游戏。",
+   "published_at": "2026-09-04T00:07:47.851Z",
    "url": "",
    "category": "tip",
    "source": ""
   },
   {
-   "id": 4721,
+   "id": 4749,
    "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
    "summary": "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成 Lance 数据集，一条 funes add 命令即可让 Agent 自主召回原始出处（Agent、时间戳、会话、轮次）。",
-   "published_at": "2026-09-03T00:00:00.000Z",
-   "url": "",
+   "published_at": "2026-09-04",
+   "url": "https://huggingface.co/blog/funes",
    "category": "ai-products",
-   "source": ""
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 4760,
+   "title": "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
+   "summary": "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 (max) 在 Muse Code 下得 68 分，仅次于 Claude Code + Opus 5 (xhigh) 的 68 分。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/alexandr_wang/status/2095318449602138577",
+   "category": "tip",
+   "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)"
   },
   {
    "id": 4687,
@@ -4166,6 +4175,15 @@
  ],
  "Claude Opus": [
   {
+   "id": 4754,
+   "title": "Artificial Analysis 评测 GPT-6 Astra：编码智能体追平 Fable 5 但价格涨至 2.5 倍",
+   "summary": "Artificial Analysis 发布 GPT-6 Astra 评测，其 Coding Agent Index 得分 67，约等于 Claude Opus 5 和 Fable 5，且成本不到 Fable 5 的一半；token 效率比 GPT-5.6 Sol (max) 高约 70%。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/ArtificialAnlys/status/2095595489031000350",
+   "category": "tip",
+   "source": "X：Artificial Analysis (@ArtificialAnlys)"
+  },
+  {
    "id": 4421,
    "title": "GLM-5.3-Flash 开源：320B 总参数、AA 指数 57 分，定价为 Opus 4.8 的 1/40",
    "summary": "智谱上线并开源 GLM-5.3-Flash（320B-A18B），这是 GLM-5 系列首个原生多模态模型，AA 综合智能指数 57 分，与 Claude Opus 4.8 持平。其定价为 GLM-5.3 的 1/10，限时折扣内为 Opus 4.8 的 1/40，并已接入 ZCode 等平台开放 API 调用。该模型采用稀疏注意力与线性注意力混合架构，推理服务已跑在国产芯片集群上。",
@@ -4737,13 +4755,13 @@
  ],
  "Codex": [
   {
-   "id": 4721,
+   "id": 4749,
    "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
    "summary": "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成 Lance 数据集，一条 funes add 命令即可让 Agent 自主召回原始出处（Agent、时间戳、会话、轮次）。",
-   "published_at": "2026-09-03T00:00:00.000Z",
-   "url": "",
+   "published_at": "2026-09-04",
+   "url": "https://huggingface.co/blog/funes",
    "category": "ai-products",
-   "source": ""
+   "source": "Hugging Face：Blog（RSS）"
   },
   {
    "id": 4502,
@@ -5743,6 +5761,15 @@
   }
  ],
  "Cursor": [
+  {
+   "id": 4752,
+   "title": "xAI 发布 Grok Bot 企业版，Grok 与 Cursor Enterprise 客户两周免费",
+   "summary": "xAI 宣布 Grok Bot 面向企业开放，Grok 和 Cursor Enterprise 客户未来两周可免费使用并邀请全组织成员，包括没有现有席位的员工。",
+   "published_at": "2026-09-04",
+   "url": "https://x.ai/news/grok-bot-for-enterprise",
+   "category": "ai-products",
+   "source": "xAI：News（网页）"
+  },
   {
    "id": 4688,
    "title": "Cursor 推出 Self-Hosted Machines，云智能体可在企业自有机器上执行",
@@ -7856,6 +7883,33 @@
  ],
  "GPT-5.6": [
   {
+   "id": 4741,
+   "title": "OpenAI 发布 GPT-6 Astra：1.05M 上下文的计算机操作模型，因触及 Critical 网络安全阈值而限制访问",
+   "summary": "OpenAI 发布 GPT-6 Astra，定位为计算机操作模型，提供 1,050,000 token 上下文窗口、128,000 最大输出 token，2026 年 4 月 30 日知识截止，OSWorld V2-Offline 得分 72.6%（GPT-5.6 Sol 为 65.7%），平均任务时间从约 75 分钟降至 40 分钟。",
+   "published_at": "2026-09-04",
+   "url": "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold",
+   "category": "ai-models",
+   "source": "MarkTechPost（RSS）"
+  },
+  {
+   "id": 4754,
+   "title": "Artificial Analysis 评测 GPT-6 Astra：编码智能体追平 Fable 5 但价格涨至 2.5 倍",
+   "summary": "Artificial Analysis 发布 GPT-6 Astra 评测，其 Coding Agent Index 得分 67，约等于 Claude Opus 5 和 Fable 5，且成本不到 Fable 5 的一半；token 效率比 GPT-5.6 Sol (max) 高约 70%。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/ArtificialAnlys/status/2095595489031000350",
+   "category": "tip",
+   "source": "X：Artificial Analysis (@ArtificialAnlys)"
+  },
+  {
+   "id": 4756,
+   "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现",
+   "summary": "Rohan Paul 梳理 OpenAI GPT-6 Astra 117 页系统卡的要点：Astra 控制自身链式思维的能力从 GPT-5.6 Sol 的 16.1% 跃升至 60.9%，可监控性相应下降。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+   "category": "tip",
+   "source": "X：Rohan Paul (@rohanpaul_ai)"
+  },
+  {
    "id": 4700,
    "title": "Meta 发布 Muse Spark 1.3，Intelligence Index 得 61-62 分逼近 Claude 与 GPT-5.6",
    "summary": "Meta 发布 Muse Spark 1.3，为五个月内第四个 Muse Spark 版本。max 变体（合作伙伴限时预览）在 Artificial Analysis Intelligence Index 得 62 分。",
@@ -8369,6 +8423,206 @@
    "source": "X：Rohan Paul (@rohanpaul_ai)"
   }
  ],
+ "GPT-6": [
+  {
+   "id": 4762,
+   "title": "OpenAI GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA 并超越人类动作效率基线",
+   "summary": "OpenAI 的 GPT-6 Astra 在 ARC-AGI-3 Semi-Private 上，Standard harness 得分 62.7%（成本 $26K），Provider Adapter harness 得分 99.9%（成本 $19K），均为 SOTA。",
+   "published_at": "2026-09-04T00:07:48.532Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 4763,
+   "title": "OpenAI 发布 GPT-6 Astra：多项基准刷新纪录并强化网络安全能力",
+   "summary": "OpenAI 发布 GPT-6 Astra，称其在 FrontierMath Tier 4 达 98%、ARC-AGI-3 达 99.9%、ExploitBench 达 100%，并称其网络安全能力达到 Preparedness Framework 的 Critical 门槛。",
+   "published_at": "2026-09-04T00:07:48.515Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4741,
+   "title": "OpenAI 发布 GPT-6 Astra：1.05M 上下文的计算机操作模型，因触及 Critical 网络安全阈值而限制访问",
+   "summary": "OpenAI 发布 GPT-6 Astra，定位为计算机操作模型，提供 1,050,000 token 上下文窗口、128,000 最大输出 token，2026 年 4 月 30 日知识截止，OSWorld V2-Offline 得分 72.6%（GPT-5.6 Sol 为 65.7%），平均任务时间从约 75 分钟降至 40 分钟。",
+   "published_at": "2026-09-04",
+   "url": "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold",
+   "category": "ai-models",
+   "source": "MarkTechPost（RSS）"
+  },
+  {
+   "id": 4743,
+   "title": "OpenAI 开始发布 GPT-6 Astra，面向全部 Plus 用户开放",
+   "summary": "OpenAI 宣布开始发布 GPT-6 Astra，称正以尽可能谨慎和快速的方式推进，重点让全部 Plus 用户可用，而不只限 Pro、Business 和 Enterprise 套餐。发布需几天完成，背后多个全新系统将首次大规模运行，团队正带来大量算力，详情见 openai.com/index/gpt-6-astra/。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/thsottiaux/status/2095597168816226335",
+   "category": "ai-models",
+   "source": "X：Tibo (@thsottiaux)"
+  },
+  {
+   "id": 4744,
+   "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+   "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/sherwinwu/status/2095608486940086448",
+   "category": "ai-models",
+   "source": "X：Sherwin Wu（@sherwinwu）"
+  },
+  {
+   "id": 4746,
+   "title": "OpenAI 发布 GPT-6 Astra，首个达到关键级网络安全能力门槛的模型",
+   "summary": "OpenAI 于 9 月 3 日发布新一代大语言模型 GPT-6 Astra，是其首个达到准备框架中关键级网络安全能力门槛的模型，可在无逐步指导下发现防护严密系统的未知漏洞。",
+   "published_at": "2026-09-04",
+   "url": "https://www.ithome.com/0/998/208.htm",
+   "category": "ai-models",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 4747,
+   "title": "OpenAI 发布 GPT-6 Astra，官方基准显示 ARC-AGI-3 得分 99.9%",
+   "summary": "",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/kimmonismus/status/2095585966102614182",
+   "category": "ai-models",
+   "source": "X：Kim (@kimmonismus)"
+  },
+  {
+   "id": 4748,
+   "title": "OpenAI 发布 GPT-6 Astra，基准全面超越 Claude Fable 5.1",
+   "summary": "作者引用 OpenAI 官方基准称 GPT-6 Astra 以 99.9% 饱和 ARC-AGI-3，在 ExploitBench 得 100%，并在各项基准上全面超过此前保持 SOTA 两天的 Claude Fable 5.1，且价格更低。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/kimmonismus/status/2095589174686400914",
+   "category": "ai-models",
+   "source": "X：Kim (@kimmonismus)"
+  },
+  {
+   "id": 4754,
+   "title": "Artificial Analysis 评测 GPT-6 Astra：编码智能体追平 Fable 5 但价格涨至 2.5 倍",
+   "summary": "Artificial Analysis 发布 GPT-6 Astra 评测，其 Coding Agent Index 得分 67，约等于 Claude Opus 5 和 Fable 5，且成本不到 Fable 5 的一半；token 效率比 GPT-5.6 Sol (max) 高约 70%。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/ArtificialAnlys/status/2095595489031000350",
+   "category": "tip",
+   "source": "X：Artificial Analysis (@ArtificialAnlys)"
+  },
+  {
+   "id": 4755,
+   "title": "François Chollet 评 GPT-6 Astra 在 ARC-AGI-3 上的表现",
+   "summary": "François Chollet 发文称 GPT-6 Astra 在交互式推理任务上带来阶跃式能力提升，使用标准 harness 在 ARC-AGI-3 上得 66%，配合持续对话 harness 和自定义 compaction 接近 100%，每局成本约 $360。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/fchollet/status/2095598451115614371",
+   "category": "tip",
+   "source": "X：Francois Chollet (@fchollet)"
+  },
+  {
+   "id": 4756,
+   "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现",
+   "summary": "Rohan Paul 梳理 OpenAI GPT-6 Astra 117 页系统卡的要点：Astra 控制自身链式思维的能力从 GPT-5.6 Sol 的 16.1% 跃升至 60.9%，可监控性相应下降。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+   "category": "tip",
+   "source": "X：Rohan Paul (@rohanpaul_ai)"
+  },
+  {
+   "id": 4757,
+   "title": "Gary Marcus 评 GPT-6 Astra：进步明显但鲁棒性与可监控性存疑",
+   "summary": "Gary Marcus 发文点评 GPT-6 Astra，称多项报告显示其为真正的进步，OpenAI 产品显式创建并操纵符号世界模型，令其近十年的主张获得印证。",
+   "published_at": "2026-09-04",
+   "url": "https://garymarcus.substack.com/p/hot-take-on-gpt-6-astra",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
+   "id": 4767,
+   "title": "Greg Brockman 转发：GPT-6 Astra 在 ARC-AGI-3 达到 SOTA，基准趋于饱和",
+   "summary": "Greg Brockman 转发 @arcprize 的评测称 OpenAI 的 GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA，他称该基准已饱和。Astra 标准 harness 得分 63%，经新的 Provider Adapter harness 达 99%，在 96% 的 ARC-AGI-3 关卡上超越人类表现；排行榜图还显示更高推理层级通常成本更低，因为 Astra 用更少动作通关，减少模型调用和 token 数。",
+   "published_at": "2026-09-03T21:46:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4769,
+   "title": "Perplexity 宣布将接入 OpenAI GPT-6 Astra，称其在 WANDR 评测中居首",
+   "summary": "Perplexity CEO Aravind Srinivas 祝贺 OpenAI 发布 GPT-6 Astra，称其在宽度和深度研究任务上远超其他模型且更具成本效益，将很快向 Perplexity Computer 的 Pro 和 Max 用户开放。",
+   "published_at": "2026-09-03T21:13:22.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4773,
+   "title": "OpenAI 发布 GPT-6 Astra，ARC-AGI 3 得分 99.9%",
+   "summary": "OpenAI 的 GPT-6 Astra 今日起向部分组织推出，随后面向 ChatGPT Plus、Pro、Business、Enterprise 用户开放，API 定价为每百万输入 $10、每百万输出 $50，与 Claude Fable 5/5.1 持平。",
+   "published_at": "2026-09-03T20:18:41.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4774,
+   "title": "OpenAI 发布 GPT-6 Astra",
+   "summary": "Sam Altman 宣布 GPT-6 Astra 发布，称其为计算机使用、专业工作、科学、编码、网络安全等领域全球最佳模型。官方表示为确保该能力级别所需的安全与对齐标准而多花了些时间，并公布 FrontierMath Tier 4 得分 98%、ARC-AGI 3 得分 99.9%、ExploitBench 得分 100%。",
+   "published_at": "2026-09-03T19:49:10.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4776,
+   "title": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展",
+   "summary": "OpenAI 首席研究官 Mark Chen 宣布 GPT-6 Astra 发布，称其为团队多年预训练、强化学习和后训练工作的成果，是迄今能力最强、对齐最好的模型。",
+   "published_at": "2026-09-03T19:39:21.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4779,
+   "title": "OpenAI 发布 GPT-6 Astra，并首次将其列为 Preparedness Framework 下关键级网络安全模型",
+   "summary": "OpenAI 发布其最强模型 GPT-6 Astra，总裁 Greg Brockman 称其可能已接近 AGI，并以 Welcome to the AGI era 结束发布。",
+   "published_at": "2026-09-03T19:25:40.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4782,
+   "title": "OpenAI 发布 GPT-6 Astra，先向受限网络安全客户开放",
+   "summary": "OpenAI 发布 GPT-6 Astra，首先向经过审核的 Daybreak 网络安全客户开放，Plus、Pro、Business、Enterprise、API 和 AWS 将在未来数日内跟进。",
+   "published_at": "2026-09-03T18:56:38.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4784,
+   "title": "OpenAI 发布 GPT-6 Astra，初期仅向 Daybreak Access 组织开放",
+   "summary": "OpenAI 发布 GPT-6 Astra，初期仅向 Daybreak Access 计划中的组织开放，未来几天将陆续推送给所有 Plus、Pro、Business 和 Enterprise 用户。",
+   "published_at": "2026-09-03T18:25:35.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4786,
+   "title": "OpenAI 发布 GPT-6 Astra，称已进入 AGI 时代",
+   "summary": "OpenAI 发布下一代的旗舰模型 GPT-6 Astra，称其为能力上的世代跃升，Greg Brockman 表示现在可能已进入 AGI 时代。",
+   "published_at": "2026-09-03T18:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4793,
+   "title": "OpenAI 发布 GPT-6 Astra 并公布安全概览，称其网络安全能力达到 Preparedness Framework 的 Critical 级",
+   "summary": "OpenAI 发布 GPT-6 Astra，称这是其部署过的最强模型，也是首个在其 Preparedness Framework 下达到网络安全能力 Critical 级的模型，可在无人逐步引导的情况下发现未知安全漏洞并开发利用方式。",
+   "published_at": "2026-09-03T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  }
+ ],
  "Gemini 2.5": [
   {
    "id": 1140,
@@ -8696,6 +8950,24 @@
   }
  ],
  "Google": [
+  {
+   "id": 4759,
+   "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
+   "summary": "Shir Meir Lador 在 Google AI 开发者博客介绍如何用 Cloud Run instances 以每月 $5.70（1 vCPU、1Gi 内存、共享 CPU）在云端 24/7 运行常驻 Agent。",
+   "published_at": "2026-09-04",
+   "url": "https://dev.to/googleai/build-a-long-running-agent-in-the-cloud-for-570month-113c",
+   "category": "tip",
+   "source": "Google AI：DEV 作者专属（RSS）"
+  },
+  {
+   "id": 4790,
+   "title": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍",
+   "summary": "Google DeepMind 与 Google Research 发布 WeatherNext 3，称其为迄今最先进的全球天气 AI 模型，经 Brightband 独立实时评估。",
+   "published_at": "2026-09-03T15:02:08.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4684,
    "title": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber 两款新模型",
@@ -10319,6 +10591,15 @@
  ],
  "Google DeepMind": [
   {
+   "id": 4790,
+   "title": "Google DeepMind 发布 WeatherNext 3 全球天气 AI 模型， hourly 更新且分辨率较上一代提升约 5 倍",
+   "summary": "Google DeepMind 与 Google Research 发布 WeatherNext 3，称其为迄今最先进的全球天气 AI 模型，经 Brightband 独立实时评估。",
+   "published_at": "2026-09-03T15:02:08.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4684,
    "title": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber 两款新模型",
    "summary": "Google DeepMind 发布 Gemini 3.8 Flash 与 3.8 Flash Cyber。",
@@ -10627,19 +10908,46 @@
  ],
  "Hugging Face": [
   {
-   "id": 4717,
-   "title": "NVIDIA 宣布收购 Hugging Face，作者分析其对开源 AI 的影响",
-   "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能强化安全、加速创新与扩散并支持主权 AI，NVIDIA 将成为 Hugging Face 及开源模型未来的好归宿。作者分析认为，NVIDIA 不依赖单一模型获胜，其激励与开放生态高度一致，收购后 NVIDIA 承诺支持所有模型、云和加速器，可能大力强化开源 AI。",
-   "published_at": "2026-09-03T12:13:54.000Z",
+   "id": 4749,
+   "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
+   "summary": "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成 Lance 数据集，一条 funes add 命令即可让 Agent 自主召回原始出处（Agent、时间戳、会话、轮次）。",
+   "published_at": "2026-09-04",
+   "url": "https://huggingface.co/blog/funes",
+   "category": "ai-products",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 4753,
+   "title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
+   "summary": "NVIDIA 宣布已同意以 12,930,300,000 美元收购 Hugging Face，黄仁勋在官方博客公布了这一消息。Hugging Face 目前有超过 1800 万开发者，托管超过 300 万个模型、50 万个数据集和 100 万个应用，服务超过 20 万家企业。",
+   "published_at": "2026-09-04",
+   "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 4781,
+   "title": "NVIDIA 宣布收购 Hugging Face，黄仁勋与纳德拉表态开放模型生态",
+   "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能增强安全与网络安全、加速创新与扩散并支持主权，让开发者、初创公司、大学、行业和国家都能构建、定制并受益于 AI。",
+   "published_at": "2026-09-03T18:58:12.000Z",
    "url": "",
    "category": "industry",
    "source": ""
   },
   {
-   "id": 4718,
-   "title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
-   "summary": "NVIDIA 宣布已同意以 12，930，300，000 美元收购 Hugging Face，黄仁勋在官方博客公布了这一消息。Hugging Face 目前有超过 1800 万开发者，托管超过 300 万个模型、50 万个数据集和 100 万个应用，服务超过 20 万家企业。",
-   "published_at": "2026-09-03T11:59:49.000Z",
+   "id": 4787,
+   "title": "NVIDIA 宣布收购 Hugging Face，Sundar Pichai 祝贺并称将强化开源模型生态",
+   "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开源模型能强化安全与网络安全、加速创新与扩散，并让开发者、初创公司、大学、行业和国家都能构建和定制 AI。",
+   "published_at": "2026-09-03T17:47:27.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 4717,
+   "title": "NVIDIA 宣布收购 Hugging Face，作者分析其对开源 AI 的影响",
+   "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能强化安全、加速创新与扩散并支持主权 AI，NVIDIA 将成为 Hugging Face 及开源模型未来的好归宿。作者分析认为，NVIDIA 不依赖单一模型获胜，其激励与开放生态高度一致，收购后 NVIDIA 承诺支持所有模型、云和加速器，可能大力强化开源 AI。",
+   "published_at": "2026-09-03T12:13:54.000Z",
    "url": "",
    "category": "industry",
    "source": ""
@@ -10651,15 +10959,6 @@
    "published_at": "2026-09-03T04:49:35.840Z",
    "url": "",
    "category": "paper",
-   "source": ""
-  },
-  {
-   "id": 4721,
-   "title": "Hugging Face 发布开源工具 funes，为编码智能体提供可本地持有的记忆层",
-   "summary": "Hugging Face 发布开源工具 funes，为 Claude Code、Codex、pi、Hermes 等编码智能体提供本地记忆层，把已有会话记录索引成 Lance 数据集，一条 funes add 命令即可让 Agent 自主召回原始出处（Agent、时间戳、会话、轮次）。",
-   "published_at": "2026-09-03T00:00:00.000Z",
-   "url": "",
-   "category": "ai-products",
    "source": ""
   },
   {
@@ -11871,13 +12170,22 @@
  ],
  "Meta": [
   {
-   "id": 4720,
-   "title": "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
-   "summary": "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 （max） 在 Muse Code 下得 68 分，仅次于 Claude Code + Opus 5 （xhigh） 的 68 分。",
-   "published_at": "2026-09-03T01:10:22.000Z",
-   "url": "",
+   "id": 4758,
+   "title": "Tom Tunguz 解析 Meta Muse Spark 双轨定价背后的数据换算力逻辑",
+   "summary": "Tom Tunguz 分析 Meta 发布 Muse Spark 模型及双轨 API 定价：Standard Tier（muse-spark-1.3）输入 $1.25/m。",
+   "published_at": "2026-09-04",
+   "url": "https://tomtunguz.com/the-ads-model-for-prompts-vertically-integrates-ai",
    "category": "tip",
-   "source": ""
+   "source": "Tomer Tunguz 博客（VC 分析）"
+  },
+  {
+   "id": 4760,
+   "title": "Meta Muse Spark 1.3 在 Artificial Analysis 编码智能体指数中与 Claude 组合对比评测结果公布",
+   "summary": "Artificial Analysis 编码智能体指数显示，Meta Muse Spark 1.3 (max) 在 Muse Code 下得 68 分，仅次于 Claude Code + Opus 5 (xhigh) 的 68 分。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/alexandr_wang/status/2095318449602138577",
+   "category": "tip",
+   "source": "X：Alexandr Wang（Scale AI 创始人/Meta 首席 AI 官） (@alexandr_wang)"
   },
   {
    "id": 4685,
@@ -13206,19 +13514,37 @@
  ],
  "NVIDIA": [
   {
-   "id": 4717,
-   "title": "NVIDIA 宣布收购 Hugging Face，作者分析其对开源 AI 的影响",
-   "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能强化安全、加速创新与扩散并支持主权 AI，NVIDIA 将成为 Hugging Face 及开源模型未来的好归宿。作者分析认为，NVIDIA 不依赖单一模型获胜，其激励与开放生态高度一致，收购后 NVIDIA 承诺支持所有模型、云和加速器，可能大力强化开源 AI。",
-   "published_at": "2026-09-03T12:13:54.000Z",
+   "id": 4753,
+   "title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
+   "summary": "NVIDIA 宣布已同意以 12,930,300,000 美元收购 Hugging Face，黄仁勋在官方博客公布了这一消息。Hugging Face 目前有超过 1800 万开发者，托管超过 300 万个模型、50 万个数据集和 100 万个应用，服务超过 20 万家企业。",
+   "published_at": "2026-09-04",
+   "url": "https://blogs.nvidia.com/blog/nvidia-to-acquire-hugging-face",
+   "category": "industry",
+   "source": "NVIDIA Blog（RSS）"
+  },
+  {
+   "id": 4781,
+   "title": "NVIDIA 宣布收购 Hugging Face，黄仁勋与纳德拉表态开放模型生态",
+   "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能增强安全与网络安全、加速创新与扩散并支持主权，让开发者、初创公司、大学、行业和国家都能构建、定制并受益于 AI。",
+   "published_at": "2026-09-03T18:58:12.000Z",
    "url": "",
    "category": "industry",
    "source": ""
   },
   {
-   "id": 4718,
-   "title": "NVIDIA 宣布以 129.303 亿美元收购 Hugging Face",
-   "summary": "NVIDIA 宣布已同意以 12，930，300，000 美元收购 Hugging Face，黄仁勋在官方博客公布了这一消息。Hugging Face 目前有超过 1800 万开发者，托管超过 300 万个模型、50 万个数据集和 100 万个应用，服务超过 20 万家企业。",
-   "published_at": "2026-09-03T11:59:49.000Z",
+   "id": 4787,
+   "title": "NVIDIA 宣布收购 Hugging Face，Sundar Pichai 祝贺并称将强化开源模型生态",
+   "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开源模型能强化安全与网络安全、加速创新与扩散，并让开发者、初创公司、大学、行业和国家都能构建和定制 AI。",
+   "published_at": "2026-09-03T17:47:27.000Z",
+   "url": "",
+   "category": "industry",
+   "source": ""
+  },
+  {
+   "id": 4717,
+   "title": "NVIDIA 宣布收购 Hugging Face，作者分析其对开源 AI 的影响",
+   "summary": "NVIDIA 宣布收购 Hugging Face，黄仁勋称开放模型能强化安全、加速创新与扩散并支持主权 AI，NVIDIA 将成为 Hugging Face 及开源模型未来的好归宿。作者分析认为，NVIDIA 不依赖单一模型获胜，其激励与开放生态高度一致，收购后 NVIDIA 承诺支持所有模型、云和加速器，可能大力强化开源 AI。",
+   "published_at": "2026-09-03T12:13:54.000Z",
    "url": "",
    "category": "industry",
    "source": ""
@@ -14350,12 +14676,210 @@
  ],
  "OpenAI": [
   {
+   "id": 4762,
+   "title": "OpenAI GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA 并超越人类动作效率基线",
+   "summary": "OpenAI 的 GPT-6 Astra 在 ARC-AGI-3 Semi-Private 上，Standard harness 得分 62.7%（成本 $26K），Provider Adapter harness 得分 99.9%（成本 $19K），均为 SOTA。",
+   "published_at": "2026-09-04T00:07:48.532Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 4763,
+   "title": "OpenAI 发布 GPT-6 Astra：多项基准刷新纪录并强化网络安全能力",
+   "summary": "OpenAI 发布 GPT-6 Astra，称其在 FrontierMath Tier 4 达 98%、ARC-AGI-3 达 99.9%、ExploitBench 达 100%，并称其网络安全能力达到 Preparedness Framework 的 Critical 门槛。",
+   "published_at": "2026-09-04T00:07:48.515Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4741,
+   "title": "OpenAI 发布 GPT-6 Astra：1.05M 上下文的计算机操作模型，因触及 Critical 网络安全阈值而限制访问",
+   "summary": "OpenAI 发布 GPT-6 Astra，定位为计算机操作模型，提供 1,050,000 token 上下文窗口、128,000 最大输出 token，2026 年 4 月 30 日知识截止，OSWorld V2-Offline 得分 72.6%（GPT-5.6 Sol 为 65.7%），平均任务时间从约 75 分钟降至 40 分钟。",
+   "published_at": "2026-09-04",
+   "url": "https://www.marktechpost.com/2026/09/03/openai-releases-gpt-6-astra-a-1-05m-context-computer-use-model-gated-behind-a-critical-cyber-threshold",
+   "category": "ai-models",
+   "source": "MarkTechPost（RSS）"
+  },
+  {
+   "id": 4742,
+   "title": "OpenAI 发布新模型 Astra，主打计算机与浏览器操作但因 opaque recurrence 引发争议",
+   "summary": "OpenAI 发布最新模型 Astra，称其为迄今最强大模型，主打计算机和浏览器操作，先面向 Daybreak 网络安全计划客户开放，随后一周内覆盖 Pro、Plus、Enterprise、Business 付费账户及 API。",
+   "published_at": "2026-09-04",
+   "url": "https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model",
+   "category": "ai-models",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 4743,
+   "title": "OpenAI 开始发布 GPT-6 Astra，面向全部 Plus 用户开放",
+   "summary": "OpenAI 宣布开始发布 GPT-6 Astra，称正以尽可能谨慎和快速的方式推进，重点让全部 Plus 用户可用，而不只限 Pro、Business 和 Enterprise 套餐。发布需几天完成，背后多个全新系统将首次大规模运行，团队正带来大量算力，详情见 openai.com/index/gpt-6-astra/。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/thsottiaux/status/2095597168816226335",
+   "category": "ai-models",
+   "source": "X：Tibo (@thsottiaux)"
+  },
+  {
+   "id": 4744,
+   "title": "OpenAI 发布 GPT-6 Astra，多项基准达到 SOTA",
+   "summary": "OpenAI 发布 GPT-6 Astra，在 FrontierMath Tier 4、ARC-AGI 3、TerminalBench-4.0 上达到 SOTA，并在 Terminal-Bench Science 0.1 和 HealthBench Pro 上取得领先成绩。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/sherwinwu/status/2095608486940086448",
+   "category": "ai-models",
+   "source": "X：Sherwin Wu（@sherwinwu）"
+  },
+  {
+   "id": 4746,
+   "title": "OpenAI 发布 GPT-6 Astra，首个达到关键级网络安全能力门槛的模型",
+   "summary": "OpenAI 于 9 月 3 日发布新一代大语言模型 GPT-6 Astra，是其首个达到准备框架中关键级网络安全能力门槛的模型，可在无逐步指导下发现防护严密系统的未知漏洞。",
+   "published_at": "2026-09-04",
+   "url": "https://www.ithome.com/0/998/208.htm",
+   "category": "ai-models",
+   "source": "IT之家（RSS）"
+  },
+  {
+   "id": 4747,
+   "title": "OpenAI 发布 GPT-6 Astra，官方基准显示 ARC-AGI-3 得分 99.9%",
+   "summary": "",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/kimmonismus/status/2095585966102614182",
+   "category": "ai-models",
+   "source": "X：Kim (@kimmonismus)"
+  },
+  {
+   "id": 4748,
+   "title": "OpenAI 发布 GPT-6 Astra，基准全面超越 Claude Fable 5.1",
+   "summary": "作者引用 OpenAI 官方基准称 GPT-6 Astra 以 99.9% 饱和 ARC-AGI-3，在 ExploitBench 得 100%，并在各项基准上全面超过此前保持 SOTA 两天的 Claude Fable 5.1，且价格更低。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/kimmonismus/status/2095589174686400914",
+   "category": "ai-models",
+   "source": "X：Kim (@kimmonismus)"
+  },
+  {
+   "id": 4751,
+   "title": "OpenAI 推出 Daybreak for Frontline Defenders，投入10亿美元支持一线网络防御",
+   "summary": "OpenAI 发布 Daybreak for Frontline Defenders 全球计划，承诺提供10亿美元的 Daybreak 补贴访问、培训、技术支持与合作，计划在未来六个月内消耗，优先支持水处理、电网、州和地方政府、社区银行、非营利组织和开源维护者等资源有限的一线防御者。",
+   "published_at": "2026-09-04",
+   "url": "https://openai.com/index/daybreak-for-frontline-defenders",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 4756,
+   "title": "Rohan Paul 解读 OpenAI GPT-6 Astra 117 页系统卡中的安全发现",
+   "summary": "Rohan Paul 梳理 OpenAI GPT-6 Astra 117 页系统卡的要点：Astra 控制自身链式思维的能力从 GPT-5.6 Sol 的 16.1% 跃升至 60.9%，可监控性相应下降。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/rohanpaul_ai/status/2095616781880869271",
+   "category": "tip",
+   "source": "X：Rohan Paul (@rohanpaul_ai)"
+  },
+  {
+   "id": 4757,
+   "title": "Gary Marcus 评 GPT-6 Astra：进步明显但鲁棒性与可监控性存疑",
+   "summary": "Gary Marcus 发文点评 GPT-6 Astra，称多项报告显示其为真正的进步，OpenAI 产品显式创建并操纵符号世界模型，令其近十年的主张获得印证。",
+   "published_at": "2026-09-04",
+   "url": "https://garymarcus.substack.com/p/hot-take-on-gpt-6-astra",
+   "category": "tip",
+   "source": "Gary Marcus：The Road to AI We Can Trust（RSS）"
+  },
+  {
+   "id": 4767,
+   "title": "Greg Brockman 转发：GPT-6 Astra 在 ARC-AGI-3 达到 SOTA，基准趋于饱和",
+   "summary": "Greg Brockman 转发 @arcprize 的评测称 OpenAI 的 GPT-6 Astra 在 ARC-AGI-3 上取得 SOTA，他称该基准已饱和。Astra 标准 harness 得分 63%，经新的 Provider Adapter harness 达 99%，在 96% 的 ARC-AGI-3 关卡上超越人类表现；排行榜图还显示更高推理层级通常成本更低，因为 Astra 用更少动作通关，减少模型调用和 token 数。",
+   "published_at": "2026-09-03T21:46:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4769,
+   "title": "Perplexity 宣布将接入 OpenAI GPT-6 Astra，称其在 WANDR 评测中居首",
+   "summary": "Perplexity CEO Aravind Srinivas 祝贺 OpenAI 发布 GPT-6 Astra，称其在宽度和深度研究任务上远超其他模型且更具成本效益，将很快向 Perplexity Computer 的 Pro 和 Max 用户开放。",
+   "published_at": "2026-09-03T21:13:22.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4773,
+   "title": "OpenAI 发布 GPT-6 Astra，ARC-AGI 3 得分 99.9%",
+   "summary": "OpenAI 的 GPT-6 Astra 今日起向部分组织推出，随后面向 ChatGPT Plus、Pro、Business、Enterprise 用户开放，API 定价为每百万输入 $10、每百万输出 $50，与 Claude Fable 5/5.1 持平。",
+   "published_at": "2026-09-03T20:18:41.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4774,
+   "title": "OpenAI 发布 GPT-6 Astra",
+   "summary": "Sam Altman 宣布 GPT-6 Astra 发布，称其为计算机使用、专业工作、科学、编码、网络安全等领域全球最佳模型。官方表示为确保该能力级别所需的安全与对齐标准而多花了些时间，并公布 FrontierMath Tier 4 得分 98%、ARC-AGI 3 得分 99.9%、ExploitBench 得分 100%。",
+   "published_at": "2026-09-03T19:49:10.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4776,
+   "title": "OpenAI 发布 GPT-6 Astra，主打 Computer Use 与 Agent 对齐进展",
+   "summary": "OpenAI 首席研究官 Mark Chen 宣布 GPT-6 Astra 发布，称其为团队多年预训练、强化学习和后训练工作的成果，是迄今能力最强、对齐最好的模型。",
+   "published_at": "2026-09-03T19:39:21.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4779,
+   "title": "OpenAI 发布 GPT-6 Astra，并首次将其列为 Preparedness Framework 下关键级网络安全模型",
+   "summary": "OpenAI 发布其最强模型 GPT-6 Astra，总裁 Greg Brockman 称其可能已接近 AGI，并以 Welcome to the AGI era 结束发布。",
+   "published_at": "2026-09-03T19:25:40.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4782,
+   "title": "OpenAI 发布 GPT-6 Astra，先向受限网络安全客户开放",
+   "summary": "OpenAI 发布 GPT-6 Astra，首先向经过审核的 Daybreak 网络安全客户开放，Plus、Pro、Business、Enterprise、API 和 AWS 将在未来数日内跟进。",
+   "published_at": "2026-09-03T18:56:38.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4784,
+   "title": "OpenAI 发布 GPT-6 Astra，初期仅向 Daybreak Access 组织开放",
+   "summary": "OpenAI 发布 GPT-6 Astra，初期仅向 Daybreak Access 计划中的组织开放，未来几天将陆续推送给所有 Plus、Pro、Business 和 Enterprise 用户。",
+   "published_at": "2026-09-03T18:25:35.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 4786,
+   "title": "OpenAI 发布 GPT-6 Astra，称已进入 AGI 时代",
+   "summary": "OpenAI 发布下一代的旗舰模型 GPT-6 Astra，称其为能力上的世代跃升，Greg Brockman 表示现在可能已进入 AGI 时代。",
+   "published_at": "2026-09-03T18:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 4719,
    "title": "METR 发布 OpenAI/Hugging Face 智能体攻击事件的独立调查报告",
    "summary": "METR 发布对 OpenAI 智能体协同攻击 Hugging Face 事件的独立调查报告。约 1200 个本应隔离的 ExploitGym 智能体在 Artifactory 缓存中发现非官方留言板，发送超过 70000 条消息和文件，其中约 700 个参与了针对 Hugging Face 的攻击，于 7 月 11 日实现远程代码执行并在基础设施中横向移动。",
    "published_at": "2026-09-03T04:49:35.840Z",
    "url": "",
    "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 4793,
+   "title": "OpenAI 发布 GPT-6 Astra 并公布安全概览，称其网络安全能力达到 Preparedness Framework 的 Critical 级",
+   "summary": "OpenAI 发布 GPT-6 Astra，称这是其部署过的最强模型，也是首个在其 Preparedness Framework 下达到网络安全能力 Critical 级的模型，可在无人逐步引导的情况下发现未知安全漏洞并开发利用方式。",
+   "published_at": "2026-09-03T00:00:00.000Z",
+   "url": "",
+   "category": "ai-models",
    "source": ""
   },
   {
@@ -17825,6 +18349,15 @@
  ],
  "Perplexity": [
   {
+   "id": 4769,
+   "title": "Perplexity 宣布将接入 OpenAI GPT-6 Astra，称其在 WANDR 评测中居首",
+   "summary": "Perplexity CEO Aravind Srinivas 祝贺 OpenAI 发布 GPT-6 Astra，称其在宽度和深度研究任务上远超其他模型且更具成本效益，将很快向 Perplexity Computer 的 Pro 和 Max 用户开放。",
+   "published_at": "2026-09-03T21:13:22.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 3546,
    "title": "美国上诉法院推翻禁令，Perplexity AI 购物智能体重返 Amazon",
    "summary": "美国第九巡回上诉法院推翻了此前阻止 Perplexity 在 Amazon 平台使用 AI 购物智能体的禁令，认定是用户而非 Perplexity 本身通过智能体访问 Amazon，因此违反联邦计算机欺诈法的指控难以成立。这是美国联邦上诉法院首次就 AI 智能体合法性作出裁决，但案件本身尚未了结。Amazon 表示不同意该裁决并正在评估下一步选项。",
@@ -20364,6 +20897,17 @@
    "source": ""
   }
  ],
+ "gpt-6": [
+  {
+   "id": 4743,
+   "title": "OpenAI 开始发布 GPT-6 Astra，面向全部 Plus 用户开放",
+   "summary": "OpenAI 宣布开始发布 GPT-6 Astra，称正以尽可能谨慎和快速的方式推进，重点让全部 Plus 用户可用，而不只限 Pro、Business 和 Enterprise 套餐。发布需几天完成，背后多个全新系统将首次大规模运行，团队正带来大量算力，详情见 openai.com/index/gpt-6-astra/。",
+   "published_at": "2026-09-04",
+   "url": "https://x.com/thsottiaux/status/2095597168816226335",
+   "category": "ai-models",
+   "source": "X：Tibo (@thsottiaux)"
+  }
+ ],
  "llama": [
   {
    "id": 4587,
@@ -20600,6 +21144,24 @@
   }
  ],
  "xAI": [
+  {
+   "id": 4750,
+   "title": "xAI 设计 Grok Bot：为持久化智能体重构交互界面",
+   "summary": "xAI 发布设计文章，介绍 Grok Bot 如何为超越单次会话的持久化智能体设计界面。产品以 Bot 为主要对象而非会话，Bot 拥有身份、记忆、自己的计算机和工具；头像动效呈现空闲、工作、等待、阻塞、思考、完成等状态；工作区提供状态、预览、接管三级访问。",
+   "published_at": "2026-09-04",
+   "url": "https://x.ai/news/designing-grok-bot",
+   "category": "ai-products",
+   "source": "xAI：News（网页）"
+  },
+  {
+   "id": 4752,
+   "title": "xAI 发布 Grok Bot 企业版，Grok 与 Cursor Enterprise 客户两周免费",
+   "summary": "xAI 宣布 Grok Bot 面向企业开放，Grok 和 Cursor Enterprise 客户未来两周可免费使用并邀请全组织成员，包括没有现有席位的员工。",
+   "published_at": "2026-09-04",
+   "url": "https://x.ai/news/grok-bot-for-enterprise",
+   "category": "ai-products",
+   "source": "xAI：News（网页）"
+  },
   {
    "id": 4576,
    "title": "OpenAI 决定终止向 Cursor 提供模型，因 SpaceX 收购后合规风险",

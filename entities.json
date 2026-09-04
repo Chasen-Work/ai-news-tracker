@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 299,
-  "last_seen": "2026-09-03T04:49:35.840Z"
+  "mentions": 321,
+  "last_seen": "2026-09-04T00:07:48.532Z"
  },
  {
   "id": 35,
@@ -17,22 +17,22 @@
   "id": 47,
   "name": "Google",
   "type": "company",
-  "mentions": 180,
-  "last_seen": "2026-09-03"
+  "mentions": 182,
+  "last_seen": "2026-09-04"
  },
  {
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 149,
-  "last_seen": "2026-09-03T01:10:22.000Z"
+  "mentions": 150,
+  "last_seen": "2026-09-04T00:07:47.851Z"
  },
  {
   "id": 10,
   "name": "NVIDIA",
   "type": "company",
-  "mentions": 95,
-  "last_seen": "2026-09-03T12:13:54.000Z"
+  "mentions": 97,
+  "last_seen": "2026-09-04"
  },
  {
   "id": 6,
@@ -46,21 +46,21 @@
   "name": "Codex",
   "type": "model",
   "mentions": 93,
-  "last_seen": "2026-09-03T00:00:00.000Z"
+  "last_seen": "2026-09-04"
  },
  {
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 81,
-  "last_seen": "2026-09-03T12:13:54.000Z"
+  "mentions": 83,
+  "last_seen": "2026-09-04"
  },
  {
   "id": 43,
   "name": "Meta",
   "type": "company",
-  "mentions": 66,
-  "last_seen": "2026-09-03T01:10:22.000Z"
+  "mentions": 67,
+  "last_seen": "2026-09-04"
  },
  {
   "id": 79,
@@ -70,6 +70,13 @@
   "last_seen": "2026-09-01"
  },
  {
+  "id": 149,
+  "name": "Cursor",
+  "type": "company",
+  "mentions": 61,
+  "last_seen": "2026-09-04"
+ },
+ {
   "id": 46,
   "name": "OpenRouter",
   "type": "company",
@@ -77,11 +84,11 @@
   "last_seen": "2026-09-01T18:29:00.000Z"
  },
  {
-  "id": 149,
-  "name": "Cursor",
-  "type": "company",
+  "id": 1502,
+  "name": "GPT-5.6",
+  "type": "model",
   "mentions": 60,
-  "last_seen": "2026-09-03"
+  "last_seen": "2026-09-04"
  },
  {
   "id": 560,
@@ -91,25 +98,18 @@
   "last_seen": "2026-08-27"
  },
  {
-  "id": 1502,
-  "name": "GPT-5.6",
-  "type": "model",
-  "mentions": 57,
-  "last_seen": "2026-09-02T21:39:44.000Z"
- },
- {
   "id": 36,
   "name": "Claude Opus",
   "type": "model",
-  "mentions": 53,
-  "last_seen": "2026-08-27"
+  "mentions": 54,
+  "last_seen": "2026-09-04"
  },
  {
   "id": 4,
   "name": "xAI",
   "type": "company",
-  "mentions": 51,
-  "last_seen": "2026-08-28T06:00:00.000Z"
+  "mentions": 53,
+  "last_seen": "2026-09-04"
  },
  {
   "id": 93,
@@ -119,18 +119,18 @@
   "last_seen": "2026-08-21"
  },
  {
+  "id": 70,
+  "name": "Google DeepMind",
+  "type": "company",
+  "mentions": 35,
+  "last_seen": "2026-09-03T15:02:08.000Z"
+ },
+ {
   "id": 2,
   "name": "GPT-5.5",
   "type": "model",
   "mentions": 34,
   "last_seen": "2026-08-14"
- },
- {
-  "id": 70,
-  "name": "Google DeepMind",
-  "type": "company",
-  "mentions": 34,
-  "last_seen": "2026-09-03"
  },
  {
   "id": 52,
@@ -166,6 +166,13 @@
   "type": "company",
   "mentions": 23,
   "last_seen": "2026-09-01"
+ },
+ {
+  "id": 6089,
+  "name": "GPT-6",
+  "type": "model",
+  "mentions": 22,
+  "last_seen": "2026-09-04T00:07:48.532Z"
  },
  {
   "id": 976,
@@ -266,6 +273,13 @@
   "last_seen": "2026-08-30"
  },
  {
+  "id": 34,
+  "name": "Perplexity",
+  "type": "company",
+  "mentions": 11,
+  "last_seen": "2026-09-03T21:13:22.000Z"
+ },
+ {
   "id": 713,
   "name": "Mistral",
   "type": "model",
@@ -292,13 +306,6 @@
   "type": "model",
   "mentions": 10,
   "last_seen": "2026-08-12"
- },
- {
-  "id": 34,
-  "name": "Perplexity",
-  "type": "company",
-  "mentions": 10,
-  "last_seen": "2026-08-06"
  },
  {
   "id": 338,
@@ -992,5 +999,12 @@
   "type": "model",
   "mentions": 1,
   "last_seen": "2026-09-03"
+ },
+ {
+  "id": 6093,
+  "name": "gpt-6",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-09-04"
  }
 ]
