@@ -3,15 +3,15 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 326,
-  "last_seen": "2026-09-05"
+  "mentions": 332,
+  "last_seen": "2026-09-05T11:43:16.000Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 231,
-  "last_seen": "2026-09-05"
+  "mentions": 232,
+  "last_seen": "2026-09-05T07:56:50.597Z"
  },
  {
   "id": 47,
@@ -38,8 +38,8 @@
   "id": 21,
   "name": "Codex",
   "type": "model",
-  "mentions": 95,
-  "last_seen": "2026-09-05"
+  "mentions": 96,
+  "last_seen": "2026-09-05T07:41:03.000Z"
  },
  {
   "id": 6,
@@ -52,8 +52,8 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 83,
-  "last_seen": "2026-09-04"
+  "mentions": 85,
+  "last_seen": "2026-09-05T11:43:16.000Z"
  },
  {
   "id": 43,
@@ -61,6 +61,13 @@
   "type": "company",
   "mentions": 67,
   "last_seen": "2026-09-04"
+ },
+ {
+  "id": 1502,
+  "name": "GPT-5.6",
+  "type": "model",
+  "mentions": 63,
+  "last_seen": "2026-09-05T11:39:52.000Z"
  },
  {
   "id": 79,
@@ -75,13 +82,6 @@
   "type": "company",
   "mentions": 61,
   "last_seen": "2026-09-04"
- },
- {
-  "id": 1502,
-  "name": "GPT-5.6",
-  "type": "model",
-  "mentions": 61,
-  "last_seen": "2026-09-05"
  },
  {
   "id": 46,
@@ -112,18 +112,18 @@
   "last_seen": "2026-09-04"
  },
  {
+  "id": 52,
+  "name": "Microsoft",
+  "type": "company",
+  "mentions": 36,
+  "last_seen": "2026-09-05T07:41:03.000Z"
+ },
+ {
   "id": 93,
   "name": "阿里",
   "type": "company",
   "mentions": 36,
   "last_seen": "2026-08-21"
- },
- {
-  "id": 52,
-  "name": "Microsoft",
-  "type": "company",
-  "mentions": 35,
-  "last_seen": "2026-09-05"
  },
  {
   "id": 70,
@@ -140,18 +140,18 @@
   "last_seen": "2026-08-14"
  },
  {
+  "id": 6089,
+  "name": "GPT-6",
+  "type": "model",
+  "mentions": 31,
+  "last_seen": "2026-09-05T11:39:52.000Z"
+ },
+ {
   "id": 24,
   "name": "腾讯",
   "type": "company",
   "mentions": 29,
   "last_seen": "2026-08-29"
- },
- {
-  "id": 6089,
-  "name": "GPT-6",
-  "type": "model",
-  "mentions": 28,
-  "last_seen": "2026-09-05"
  },
  {
   "id": 3,
