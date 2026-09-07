@@ -1,9 +1,9 @@
 {
- "total_items": 2140,
+ "total_items": 2144,
  "total_entities": 144,
- "total_dailies": 96,
+ "total_dailies": 97,
  "categories": {
-  "tip": 601,
+  "tip": 605,
   "ai-products": 573,
   "industry": 452,
   "ai-models": 268,
@@ -20,11 +20,11 @@
   },
   {
    "name": "IT之家（RSS）",
-   "count": 119
+   "count": 120
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 82
+   "count": 84
   },
   {
    "name": "Claude：Blog（网页）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-08-07",
-   "count": 34
-  },
   {
    "date": "2026-08-08",
    "count": 25
@@ -175,7 +171,11 @@
   {
    "date": "2026-09-06",
    "count": 13
+  },
+  {
+   "date": "2026-09-07",
+   "count": 4
   }
  ],
- "updated_at": "2026-09-06T13:00:41Z"
+ "updated_at": "2026-09-07T01:00:58Z"
 }

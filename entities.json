@@ -3,8 +3,8 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 337,
-  "last_seen": "2026-09-06T06:46:16.000Z"
+  "mentions": 340,
+  "last_seen": "2026-09-07"
  },
  {
   "id": 35,
@@ -66,8 +66,8 @@
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
-  "mentions": 64,
-  "last_seen": "2026-09-06"
+  "mentions": 65,
+  "last_seen": "2026-09-07"
  },
  {
   "id": 79,
@@ -126,6 +126,13 @@
   "last_seen": "2026-08-21"
  },
  {
+  "id": 6089,
+  "name": "GPT-6",
+  "type": "model",
+  "mentions": 36,
+  "last_seen": "2026-09-07T00:08:00.000Z"
+ },
+ {
   "id": 70,
   "name": "Google DeepMind",
   "type": "company",
@@ -138,13 +145,6 @@
   "type": "model",
   "mentions": 34,
   "last_seen": "2026-08-14"
- },
- {
-  "id": 6089,
-  "name": "GPT-6",
-  "type": "model",
-  "mentions": 34,
-  "last_seen": "2026-09-06T06:46:16.000Z"
  },
  {
   "id": 24,
