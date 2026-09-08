@@ -1,11 +1,11 @@
 {
- "total_items": 2144,
+ "total_items": 2146,
  "total_entities": 144,
- "total_dailies": 97,
+ "total_dailies": 98,
  "categories": {
-  "tip": 605,
+  "tip": 606,
   "ai-products": 573,
-  "industry": 452,
+  "industry": 453,
   "ai-models": 268,
   "paper": 246
  },
@@ -36,7 +36,7 @@
   },
   {
    "name": "The Decoder：AI News（RSS）",
-   "count": 47
+   "count": 48
   },
   {
    "name": "Hugging Face：Blog（RSS）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-08-08",
-   "count": 25
-  },
   {
    "date": "2026-08-09",
    "count": 9
@@ -174,8 +170,12 @@
   },
   {
    "date": "2026-09-07",
-   "count": 4
+   "count": 3
+  },
+  {
+   "date": "2026-09-08",
+   "count": 3
   }
  ],
- "updated_at": "2026-09-07T13:00:31Z"
+ "updated_at": "2026-09-08T01:00:07Z"
 }

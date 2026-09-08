@@ -10,8 +10,8 @@
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 235,
-  "last_seen": "2026-09-06"
+  "mentions": 236,
+  "last_seen": "2026-09-08"
  },
  {
   "id": 47,
@@ -112,6 +112,13 @@
   "last_seen": "2026-09-05"
  },
  {
+  "id": 6089,
+  "name": "GPT-6",
+  "type": "model",
+  "mentions": 37,
+  "last_seen": "2026-09-08T00:17:23.000Z"
+ },
+ {
   "id": 52,
   "name": "Microsoft",
   "type": "company",
@@ -124,13 +131,6 @@
   "type": "company",
   "mentions": 36,
   "last_seen": "2026-08-21"
- },
- {
-  "id": 6089,
-  "name": "GPT-6",
-  "type": "model",
-  "mentions": 36,
-  "last_seen": "2026-09-07T00:08:00.000Z"
  },
  {
   "id": 70,
