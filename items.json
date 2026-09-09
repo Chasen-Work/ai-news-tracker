@@ -1,5 +1,95 @@
 [
  {
+  "id": 5010,
+  "title": "OpenAI 纳维-斯托克斯方程证明争议：Buckmaster 指控不当行为，各方回应引出开放科学之问",
+  "summary": "数学家 Tristan Buckmaster 指控 OpenAI 施压、拒绝其合作者 Levent Alpöge（任职于 Anthropic）署名，且可能用两人上传到 Codex 的草稿训练模型，称其为绝对学术不端。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-09-09T10:27:37.000Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
+  "id": 5011,
+  "title": "纽约大学教授质疑OpenAI借助其研究抢先发布纳维-斯托克斯问题证明",
+  "summary": "纽约大学教授Tristan Buckmaster与Anthropic数学家Levent Alpöge使用Codex和Claude在纳维-斯托克斯存在性与光滑性问题上取得初步进展，随后OpenAI公布了该千禧年大奖难题的完整证明，称其由一个尚未发布的新一代模型发现，研究始于9月1日，总计消耗3000亿个输出Token，按Astra价格计算约2250万美元。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-09-09T09:34:47.000Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
+  "id": 5012,
+  "title": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
+  "summary": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面（Moonshot AI）、阿里巴巴、MiniMax、阶跃星辰（StepFun）和 Z.ai 至少自 2024 年起以产业规模从美国模型中提取知识。机构称其通过多渠道路由请求以绕过规则并提升数学与编码能力；蒸馏在获授权时合法，争议核心在于访问与同意。美国开发商被敦促立即行动并共享情报，相关公司暂未回应。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-09-09T09:20:00.000Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
+  "id": 5013,
+  "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
+  "summary": "Hugging Face 联创 Thomas Wolf 回应 OpenAI 用下一代模型（强于 GPT-6 Astra）的 agent 群组证明 Navier-Stokes 千禧年问题猜想为假的结果，称其令人印象深刻。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-09-09T09:17:53.000Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
+  "id": 5014,
+  "title": "美国政府指控 DeepSeek 等 6 家中国 AI 公司工业规模蒸馏美国模型",
+  "summary": "NSA、CISA 和 FBI 发布联合公告 AA26-251A，指控 DeepSeek、月之暗面、阿里、MiniMax、阶跃星辰和 Z .AI 自 2024 年底起对美国前沿模型进行工业规模蒸馏。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-09-09T08:37:36.000Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
+  "id": 5015,
+  "title": "《The Intercept》披露美国国防部曾要求 OpenAI 提供对军事指令最低拒绝率的特别版 AI",
+  "summary": "《The Intercept》通过 FOIA 诉讼获得的文件显示，美国国防部曾在 P00003 合同中要求 OpenAI 提供对军事指令具有最低拒绝率的特别版模型，双方对此均否认，称该文件只是草案。五角大楼律师一度确认其为正式版本后多次改口，OpenAI 已于 2 月 27 日签署允许部署到美军机密网络的最新版协议。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-09-09T08:00:26.000Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
+  "id": 5016,
+  "title": "Simon Willison 评纳维-斯托克斯千禧年问题求解背后的 OpenAI 与 Anthropic 争议",
+  "summary": "Simon Willison 评论 OpenAI 用未发布模型在约 88 小时内求解纳维-斯托克斯存在性与光滑性问题，并经 GPT-6 Astra 完成 17 小时 Lean 形式化验证。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-09-09T07:10:03.765Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
+  "id": 5017,
+  "title": "曝 DeepSeek 聘请中信证券筹备科创板 IPO，目标年内递交申请",
+  "summary": "路透社报道称，DeepSeek 已聘请中信证券筹备科创板上市，目标今年递交 IPO 申请、明年挂牌，募资将用于算力基建、模型研发、芯片自研与人才激励。公司正推进新一轮融资，目标估值约 5000 亿元人民币，此前 6 月完成约 74 亿美元首轮外部融资，投后估值超 500 亿美元；2026 年前 7 个月营收约 4.75 亿元。",
+  "url": "",
+  "source": "",
+  "category": "industry",
+  "published_at": "2026-09-09T06:41:51.000Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
+  "id": 5018,
+  "title": "OpenAI 上线 GPT Image 2.5，作者实测新版与 image2 的生图差异",
+  "summary": "OpenAI 上线 GPT Image 2.5，主打更快生成、更高清、多轮编辑一致性和区域标注精修，并新增涂鸦绘图与 15 个图片模版功能。API 同步发布 GPT-Image-2.5 Flare（速度提升 50%）和 GPT-Image-2.5 Sunburst（更高精度）。",
+  "url": "",
+  "source": "",
+  "category": "ai-products",
+  "published_at": "2026-09-09T00:27:00.000Z",
+  "fetched_at": "2026-09-09 13:00:21"
+ },
+ {
   "id": 4994,
   "title": "GPT-6 Astra推理等级怎么选才最省Token",
   "summary": "卡兹克发文讲解GPT-6 Astra的推理强度等级（Reasoning Effort）含义，指出各档位是同一模型的不同思考预算，Ultra则类似拉起多个智能体协作的专项工作组。",
