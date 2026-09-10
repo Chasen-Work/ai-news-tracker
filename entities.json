@@ -3,7 +3,7 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 362,
+  "mentions": 365,
   "last_seen": "2026-09-10T00:08:00.000Z"
  },
  {
@@ -52,8 +52,8 @@
   "id": 13,
   "name": "Hugging Face",
   "type": "company",
-  "mentions": 86,
-  "last_seen": "2026-09-10"
+  "mentions": 87,
+  "last_seen": "2026-09-10T00:00:00.000Z"
  },
  {
   "id": 43,
@@ -63,6 +63,13 @@
   "last_seen": "2026-09-08T23:48:02.000Z"
  },
  {
+  "id": 79,
+  "name": "DeepSeek",
+  "type": "company",
+  "mentions": 68,
+  "last_seen": "2026-09-10T08:49:36.000Z"
+ },
+ {
   "id": 1502,
   "name": "GPT-5.6",
   "type": "model",
@@ -70,17 +77,10 @@
   "last_seen": "2026-09-10"
  },
  {
-  "id": 79,
-  "name": "DeepSeek",
-  "type": "company",
-  "mentions": 64,
-  "last_seen": "2026-09-10"
- },
- {
   "id": 560,
   "name": "Apple",
   "type": "company",
-  "mentions": 62,
+  "mentions": 63,
   "last_seen": "2026-09-10"
  },
  {
@@ -115,7 +115,7 @@
   "id": 6089,
   "name": "GPT-6",
   "type": "model",
-  "mentions": 45,
+  "mentions": 47,
   "last_seen": "2026-09-10"
  },
  {
@@ -175,6 +175,13 @@
   "last_seen": "2026-09-09"
  },
  {
+  "id": 701,
+  "name": "DeepSeek-V4",
+  "type": "model",
+  "mentions": 19,
+  "last_seen": "2026-09-10T07:31:01.000Z"
+ },
+ {
   "id": 976,
   "name": "Qwen-",
   "type": "model",
@@ -194,13 +201,6 @@
   "type": "company",
   "mentions": 17,
   "last_seen": "2026-08-29"
- },
- {
-  "id": 701,
-  "name": "DeepSeek-V4",
-  "type": "model",
-  "mentions": 17,
-  "last_seen": "2026-09-01"
  },
  {
   "id": 23,
@@ -1013,5 +1013,12 @@
   "type": "company",
   "mentions": 1,
   "last_seen": "2026-09-10"
+ },
+ {
+  "id": 6614,
+  "name": "DeepSeek-V1",
+  "type": "model",
+  "mentions": 1,
+  "last_seen": "2026-09-10T07:31:01.000Z"
  }
 ]

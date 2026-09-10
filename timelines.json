@@ -2457,6 +2457,15 @@
    "source": ""
   },
   {
+   "id": 5082,
+   "title": "Apple 发布 Health Sensing System 与重构版 Health app，Apple Watch Series 12 和 Ultra 4 主打 readiness 与 Health Age",
+   "summary": "Apple 发布全新健康与健身功能，Apple Watch Series 12 和 Apple Watch Ultra 4 引入 Health Sensing System，支持每 5 秒测心率、HRV 测量频率提升至 24 倍、每日 0-10 的 readiness 评分。",
+   "published_at": "2026-09-09T17:52:05.481Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
+  {
    "id": 4441,
    "title": "IDEA Prune：生成式语言模型预训练中的集成放大-剪枝流程",
    "summary": "Apple 研究团队提出 IDEA Prune，将放大模型预训练纳入结构化剪枝流程，形成集成式 enlarge-and-prune 管线。该研究探讨两个关键问题：即使放大模型从不部署，预训练它是否值得；以及如何优化该流程以提升 token 效率。相比从头训练目标尺寸模型，该流程在有限推理预算下展现出更高的 token 效率。",
@@ -6583,6 +6592,42 @@
  ],
  "DeepSeek": [
   {
+   "id": 5074,
+   "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
+   "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
+   "published_at": "2026-09-10T08:49:36.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 5075,
+   "title": "DeepSeek 发布 V4.1-Flash：新 Causal Encoder-Decoder 架构，带原生视觉理解",
+   "summary": "DeepSeek 发布 V4.1-Flash，采用新 Causal Encoder-Decoder 架构并支持原生视觉理解，为其新架构家族中最小模型。该模型为 552B 参数 MoE，输入处理激活 8B、输出生成激活 16B；KV cache 需求较上一代降至 HBM 的 1/4、SSD 存储的 1/8，API 价格更低。",
+   "published_at": "2026-09-10T08:16:13.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 5076,
+   "title": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
+   "summary": "DeepSeek AI 发布多模态 MoE 模型 DeepSeek-V4.1-Flash，552B 主干加 196B Engram 参数，上下文窗口 1M，prefill 激活 8B 参数、decode 激活 16B，全局 KV 缓存降至每 token 890 字节，约为 DeepSeek-V4-Flash 的 1/4、DeepSeek-V1 的 1/437。",
+   "published_at": "2026-09-10T07:31:01.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 5077,
+   "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
+   "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。",
+   "published_at": "2026-09-10T05:58:04.695Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 5038,
    "title": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
    "summary": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面（Moonshot AI）、阿里巴巴、MiniMax、阶跃星辰（StepFun）和 Z.ai 至少自 2024 年起以产业规模从美国模型中提取知识。机构称其通过多渠道路由请求以绕过规则并提升数学与编码能力；蒸馏在获授权时合法，争议核心在于访问与同意。美国开发商被敦促立即行动并共享情报，相关公司暂未回应。",
@@ -7385,6 +7430,17 @@
    "source": ""
   }
  ],
+ "DeepSeek-V1": [
+  {
+   "id": 5076,
+   "title": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
+   "summary": "DeepSeek AI 发布多模态 MoE 模型 DeepSeek-V4.1-Flash，552B 主干加 196B Engram 参数，上下文窗口 1M，prefill 激活 8B 参数、decode 激活 16B，全局 KV 缓存降至每 token 890 字节，约为 DeepSeek-V4-Flash 的 1/4、DeepSeek-V1 的 1/437。",
+   "published_at": "2026-09-10T07:31:01.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  }
+ ],
  "DeepSeek-V3": [
   {
    "id": 4217,
@@ -7397,6 +7453,24 @@
   }
  ],
  "DeepSeek-V4": [
+  {
+   "id": 5076,
+   "title": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
+   "summary": "DeepSeek AI 发布多模态 MoE 模型 DeepSeek-V4.1-Flash，552B 主干加 196B Engram 参数，上下文窗口 1M，prefill 激活 8B 参数、decode 激活 16B，全局 KV 缓存降至每 token 890 字节，约为 DeepSeek-V4-Flash 的 1/4、DeepSeek-V1 的 1/437。",
+   "published_at": "2026-09-10T07:31:01.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 5077,
+   "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
+   "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。",
+   "published_at": "2026-09-10T05:58:04.695Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
   {
    "id": 4622,
    "title": "DeepSeek-V4-Flash-Vision-Exp 模型已开源，多模态 Agent 能力接近 Opus-4.8",
@@ -8836,6 +8910,24 @@
    "published_at": "2026-09-08T23:55:12.000Z",
    "url": "",
    "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 5093,
+   "title": "OpenAI 发布 Navier-Stokes 千禧年大奖难题的智能体求解证明",
+   "summary": "OpenAI 宣布给出 Navier-Stokes 千禧年大奖难题的一个解，证明由一组智能体使用比 GPT-6 Astra 能力强得多的 OpenAI 下一代模型产出。该问题关乎 Navier-Stokes 方程描述的光滑三维流体运动是否会崩溃，约 90 年未解；论文截图显示其构造了对每个正粘性从静止出发、在有限时间内发展出无界速度且动能有界的解，建立了 Fefferman 表述中的备选情形 （C） 与 （D）。",
+   "published_at": "2026-09-08T20:52:03.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 5096,
+   "title": "OpenAI 宣布智能体用新一代模型给出 Navier-Stokes 千禧年大奖难题的解",
+   "summary": "OpenAI 宣布给出数学前沿难题之一的 Navier-Stokes 千禧年大奖难题的解，该证明由一组智能体使用一个能力显著强于 GPT-6 Astra 的 OpenAI 新一代模型产出。该问题关注 Navier-Stokes 方程描述的光滑三维流体运动是否会崩溃，已悬置约 90 年。",
+   "published_at": "2026-09-08T17:43:55.000Z",
+   "url": "",
+   "category": "paper",
    "source": ""
   },
   {
@@ -11465,6 +11557,15 @@
   }
  ],
  "Hugging Face": [
+  {
+   "id": 5078,
+   "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
+   "summary": "Hugging Face 发布 Workflow1111，用 gr.Workflow 以 73 个节点、11 条媒体管线重建 AUTOMATIC1111 的大部分功能，覆盖文本生成图像、高清修复、图生图、prompt matrix、VLM 反推提示词、检测生成 inpaint 蒙版、ControlNet 式预处理器、背景移除、PNG Info 和图生视频。",
+   "published_at": "2026-09-10T00:00:00.000Z",
+   "url": "",
+   "category": "ai-products",
+   "source": ""
+  },
   {
    "id": 5044,
    "title": "Thomas Wolf 认为 AI 数学尚未被解决，Navier-Stokes 结果更像反例搜索而非完整证明",
@@ -15519,6 +15620,33 @@
    "published_at": "2026-09-08T23:55:12.000Z",
    "url": "",
    "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 5093,
+   "title": "OpenAI 发布 Navier-Stokes 千禧年大奖难题的智能体求解证明",
+   "summary": "OpenAI 宣布给出 Navier-Stokes 千禧年大奖难题的一个解，证明由一组智能体使用比 GPT-6 Astra 能力强得多的 OpenAI 下一代模型产出。该问题关乎 Navier-Stokes 方程描述的光滑三维流体运动是否会崩溃，约 90 年未解；论文截图显示其构造了对每个正粘性从静止出发、在有限时间内发展出无界速度且动能有界的解，建立了 Fefferman 表述中的备选情形 （C） 与 （D）。",
+   "published_at": "2026-09-08T20:52:03.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 5094,
+   "title": "OpenAI 在 API 发布 GPT-Image-2.5 Flare 和 Sunburst 图像模型",
+   "summary": "OpenAI 推出 API 新图像模型 GPT-Image-2.5 Flare 和 Sunburst，主要改进包括更锐利的细节、更强的风格遵循，以及更多对图像编辑的控制。",
+   "published_at": "2026-09-08T18:58:45.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
+   "id": 5096,
+   "title": "OpenAI 宣布智能体用新一代模型给出 Navier-Stokes 千禧年大奖难题的解",
+   "summary": "OpenAI 宣布给出数学前沿难题之一的 Navier-Stokes 千禧年大奖难题的解，该证明由一组智能体使用一个能力显著强于 GPT-6 Astra 的 OpenAI 新一代模型产出。该问题关注 Navier-Stokes 方程描述的光滑三维流体运动是否会崩溃，已悬置约 90 年。",
+   "published_at": "2026-09-08T17:43:55.000Z",
+   "url": "",
+   "category": "paper",
    "source": ""
   },
   {
