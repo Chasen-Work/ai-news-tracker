@@ -6664,6 +6664,15 @@
  ],
  "DeepSeek": [
   {
+   "id": 5139,
+   "title": "实测 DeepSeek V4.1 Flash：价格大降、原生带视觉，作者用游戏与城市生成任务验证表现",
+   "summary": "作者实测 DeepSeek V4.1 Flash，缓存命中输入降价 7 倍多、输出砍三分之二，9 月 14 日中午 12 点起所有发往 v4-pro 的请求将被强制路由到 4.1 Flash 并按其低价计费。",
+   "published_at": "2026-09-11T04:24:28.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
    "id": 5100,
    "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
    "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。",
@@ -7362,6 +7371,15 @@
   }
  ],
  "DeepSeek V4": [
+  {
+   "id": 5139,
+   "title": "实测 DeepSeek V4.1 Flash：价格大降、原生带视觉，作者用游戏与城市生成任务验证表现",
+   "summary": "作者实测 DeepSeek V4.1 Flash，缓存命中输入降价 7 倍多、输出砍三分之二，9 月 14 日中午 12 点起所有发往 v4-pro 的请求将被强制路由到 4.1 Flash 并按其低价计费。",
+   "published_at": "2026-09-11T04:24:28.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
   {
    "id": 5101,
    "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",

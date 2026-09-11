@@ -59,8 +59,8 @@
   "id": 79,
   "name": "DeepSeek",
   "type": "company",
-  "mentions": 72,
-  "last_seen": "2026-09-11"
+  "mentions": 73,
+  "last_seen": "2026-09-11T04:24:28.000Z"
  },
  {
   "id": 43,
@@ -189,6 +189,13 @@
   "last_seen": "2026-08-21"
  },
  {
+  "id": 434,
+  "name": "DeepSeek V4",
+  "type": "model",
+  "mentions": 18,
+  "last_seen": "2026-09-11T04:24:28.000Z"
+ },
+ {
   "id": 614,
   "name": "豆包",
   "type": "company",
@@ -201,13 +208,6 @@
   "type": "company",
   "mentions": 17,
   "last_seen": "2026-08-29"
- },
- {
-  "id": 434,
-  "name": "DeepSeek V4",
-  "type": "model",
-  "mentions": 17,
-  "last_seen": "2026-09-11"
  },
  {
   "id": 23,

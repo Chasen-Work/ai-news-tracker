@@ -1,5 +1,25 @@
 [
  {
+  "id": 5139,
+  "title": "实测 DeepSeek V4.1 Flash：价格大降、原生带视觉，作者用游戏与城市生成任务验证表现",
+  "summary": "作者实测 DeepSeek V4.1 Flash，缓存命中输入降价 7 倍多、输出砍三分之二，9 月 14 日中午 12 点起所有发往 v4-pro 的请求将被强制路由到 4.1 Flash 并按其低价计费。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-09-11T04:24:28.000Z",
+  "fetched_at": "2026-09-11 13:00:29"
+ },
+ {
+  "id": 5140,
+  "title": "Grok Bot 摘要 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 的演讲要点",
+  "summary": "Elon Musk 转发 Grok Bot 对 SpaceX CFO Bret Johnsen 在 Goldman Sachs Communacopia 演讲的摘要。",
+  "url": "",
+  "source": "",
+  "category": "tip",
+  "published_at": "2026-09-11T01:09:06.000Z",
+  "fetched_at": "2026-09-11 13:00:29"
+ },
+ {
   "id": 5115,
   "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
   "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
