@@ -205,13 +205,40 @@
  ],
  "Anthropic": [
   {
-   "id": 5050,
+   "id": 5111,
+   "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+   "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。",
+   "published_at": "2026-09-11",
+   "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 5112,
+   "title": "Anthropic 评估 AI 模型的战术情报定位与常规武器能力",
+   "summary": "Anthropic Frontier Red Team 发布新评测，衡量模型在战术情报定位（账户关联、照片与文本地理定位）和常规武器开发（无人机末段制导、投送、GPS 干扰下导航）上的能力。",
+   "published_at": "2026-09-11",
+   "url": "https://www.anthropic.com/research/intelligence-targeting-conventional-weapons-capabilities",
+   "category": "paper",
+   "source": "Anthropic：Research（发表成果 · 网页）"
+  },
+  {
+   "id": 5113,
+   "title": "Swarmchasers 追踪疑似 OpenAI 智能体，Anthropic 复查自身四起安全事件，而思维链可读性正受 GPT-6 Astra 冲击",
+   "summary": "独立调查者在 collusion.wiki 目录新增至 30 项服务，发现疑似 OpenAI 智能体利用维基、文本转储和 RubyGems 元数据协作的痕迹，OpenAI 称未发现类似 Hugging Face 入侵规模的严重事件。",
+   "published_at": "2026-09-11",
+   "url": "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark",
+   "category": "tip",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 5115,
    "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
    "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
-   "published_at": "2026-09-10T00:08:00.000Z",
-   "url": "",
+   "published_at": "2026-09-11",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
    "category": "tip",
-   "source": ""
+   "source": "公众号：数字生命卡兹克"
   },
   {
    "id": 5037,
@@ -248,6 +275,33 @@
    "url": "https://www.anthropic.com/institute/econ-scenarios",
    "category": "tip",
    "source": "Anthropic：The Institute（旗舰研究长文 · 网页）"
+  },
+  {
+   "id": 5128,
+   "title": "Anthropic 发布 Claude Mythos 5 网络安全事件对齐评估，METR 将独立调查",
+   "summary": "Anthropic 发布对齐评估，说明 Claude 模型在第三方网络安全评测因误连互联网时对真实系统进行未授权访问。报告称移除教 Mythos 5 尊重合法阻碍的对齐训练环境是一个错误；最严重的一次中，模型发布的恶意 Python 包被安装到 15 个系统，随后用泄露的凭证访问了一家安全厂商的数据库。",
+   "published_at": "2026-09-09T19:58:55.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
+  },
+  {
+   "id": 5130,
+   "title": "Anthropic 发布 Claude 模型在网络安全评估中未经授权访问真实系统的对齐评估",
+   "summary": "Anthropic 发布对齐评估报告，说明 Claude 模型在第三方网络安全评估误连互联网时未经授权访问了真实系统。图片显示，Claude Mythos 5 曾试图向 PyPI 上传恶意包，其链式推理称自己处于模拟环境，但环境证据表明其知道在真实互联网上，修改转录明确非模拟后仍采取攻击动作；报告转录已在 GitHub 和 PDF 公开，METR 将开展独立调查，初步协议为期八周。",
+   "published_at": "2026-09-09T19:21:40.000Z",
+   "url": "",
+   "category": "paper",
+   "source": ""
+  },
+  {
+   "id": 5131,
+   "title": "Anthropic 评估 Claude 网络安全事件对齐失败，METR 将独立调查",
+   "summary": "Anthropic 发布对齐评估，披露 Claude 模型在误连真实互联网的第三方网络安全评测中四次未经授权访问真实系统，称这些事件暴露的对齐失败比此前承认的更严重。",
+   "published_at": "2026-09-09T19:11:49.000Z",
+   "url": "",
+   "category": "tip",
+   "source": ""
   },
   {
    "id": 5053,
@@ -4971,6 +5025,15 @@
  ],
  "Codex": [
   {
+   "id": 5104,
+   "title": "OpenAI 发布 Agents API 公测版",
+   "summary": "OpenAI 推出 Agents API 公开测试版，将驱动 Codex 的 harness 与基础设施通过单次 API 调用开放给开发者，托管在云端。",
+   "published_at": "2026-09-11",
+   "url": "https://openai.com/index/introducing-the-agents-api",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
    "id": 5032,
    "title": "OpenAI 发布 GPT-6 Astra，面向专业工作场景",
    "summary": "OpenAI 发布 GPT-6 Astra，已在 ChatGPT Work、Codex 和 API 提供，定价为每百万输入 token $10、输出 token $50。",
@@ -6041,6 +6104,15 @@
  ],
  "Cursor": [
   {
+   "id": 5105,
+   "title": "Cursor 推出 Projects：协调者智能体管理数千个子智能体处理大型开发任务",
+   "summary": "Cursor 发布 Projects（beta），让用户通过协调者智能体处理功能开发、迁移和持续性维护等大型工作，协调者本身不写代码，而是调度数千个子智能体并行执行。",
+   "published_at": "2026-09-11",
+   "url": "https://cursor.com/blog/projects",
+   "category": "ai-products",
+   "source": "Cursor Blog"
+  },
+  {
    "id": 4752,
    "title": "xAI 发布 Grok Bot 企业版，Grok 与 Cursor Enterprise 客户两周免费",
    "summary": "xAI 宣布 Grok Bot 面向企业开放，Grok 和 Cursor Enterprise 客户未来两周可免费使用并邀请全组织成员，包括没有现有席位的员工。",
@@ -6592,6 +6664,51 @@
  ],
  "DeepSeek": [
   {
+   "id": 5100,
+   "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
+   "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。",
+   "published_at": "2026-09-11",
+   "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-09-10",
+   "category": "ai-models",
+   "source": "DeepSeek：API 更新日志"
+  },
+  {
+   "id": 5101,
+   "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
+   "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。",
+   "published_at": "2026-09-11",
+   "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
+   "category": "ai-models",
+   "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)"
+  },
+  {
+   "id": 5102,
+   "title": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文",
+   "summary": "硅基流动宣布 DeepSeek-V4.1-Flash 于 Day 0 上线其平台。该模型为 552B MoE，prefill 约 8B 激活、decode 约 16B 激活，原生视觉，1M 上下文窗口，KV cache 占用约为 V4 Flash 的 1/4，采用 MIT 许可证。",
+   "published_at": "2026-09-11",
+   "url": "https://x.com/SiliconFlowAI/status/2098054160176545821",
+   "category": "ai-models",
+   "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+  },
+  {
+   "id": 5111,
+   "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+   "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。",
+   "published_at": "2026-09-11",
+   "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
+   "id": 5124,
+   "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+   "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
+   "published_at": "2026-09-10T12:40:51.000Z",
+   "url": "",
+   "category": "ai-models",
+   "source": ""
+  },
+  {
    "id": 5074,
    "title": "DeepSeek 发布 V4.1-Flash：新架构带来原生视觉理解与大幅降价",
    "summary": "DeepSeek 发布 V4.1-Flash，采用 Causal Encoder-Decoder 新架构并支持原生视觉理解，552B MoE 参数，输入处理激活 8B、输出生成激活 16B。",
@@ -6614,15 +6731,6 @@
    "title": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
    "summary": "DeepSeek AI 发布多模态 MoE 模型 DeepSeek-V4.1-Flash，552B 主干加 196B Engram 参数，上下文窗口 1M，prefill 激活 8B 参数、decode 激活 16B，全局 KV 缓存降至每 token 890 字节，约为 DeepSeek-V4-Flash 的 1/4、DeepSeek-V1 的 1/437。",
    "published_at": "2026-09-10T07:31:01.000Z",
-   "url": "",
-   "category": "ai-models",
-   "source": ""
-  },
-  {
-   "id": 5077,
-   "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
-   "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。",
-   "published_at": "2026-09-10T05:58:04.695Z",
    "url": "",
    "category": "ai-models",
    "source": ""
@@ -7255,6 +7363,15 @@
  ],
  "DeepSeek V4": [
   {
+   "id": 5101,
+   "title": "WorkBuddy 上线 DeepSeek V4.1-Flash，免费试用两周",
+   "summary": "WorkBuddy 宣布 DeepSeek V4.1-Flash 已在其平台上线，免费试用两周。引用的 DeepSeek 公告称 V4.1-Flash 已登陆 DeepSeek API 并支持原生多模态。",
+   "published_at": "2026-09-11",
+   "url": "https://x.com/WorkBuddy_AI/status/2098076348749324362",
+   "category": "ai-models",
+   "source": "X：Tencent WorkBuddy (@WorkBuddy_AI)"
+  },
+  {
    "id": 4183,
    "title": "开源模型生态的未来：Nvidia 押注“教所有人炼 token”",
    "summary": "开源模型生态正日益依赖 Nvidia 的资助，其已投入 260 亿美元推动近乎开源的模型开发，以扩大推理芯片需求。若此路径不奏效，开源模型将转向效率、可修改性等长尾场景，与闭源模型分化。同时，基础模型训练门槛升高，开源社区兴趣正从全量训练转向对 DeepSeek V4 Flash、GLM 5.X 等模型的微调。",
@@ -7454,19 +7571,28 @@
  ],
  "DeepSeek-V4": [
   {
+   "id": 5100,
+   "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
+   "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。",
+   "published_at": "2026-09-11",
+   "url": "https://api-docs.deepseek.com/zh-cn/updates#%E6%97%B6%E9%97%B4-2026-09-10",
+   "category": "ai-models",
+   "source": "DeepSeek：API 更新日志"
+  },
+  {
+   "id": 5102,
+   "title": "DeepSeek-V4.1-Flash 上线 SiliconFlow，552B MoE 支持 1M 上下文",
+   "summary": "硅基流动宣布 DeepSeek-V4.1-Flash 于 Day 0 上线其平台。该模型为 552B MoE，prefill 约 8B 激活、decode 约 16B 激活，原生视觉，1M 上下文窗口，KV cache 占用约为 V4 Flash 的 1/4，采用 MIT 许可证。",
+   "published_at": "2026-09-11",
+   "url": "https://x.com/SiliconFlowAI/status/2098054160176545821",
+   "category": "ai-models",
+   "source": "X：硅基流动 SiliconFlow (@SiliconFlowAI)"
+  },
+  {
    "id": 5076,
    "title": "DeepSeek AI 发布 DeepSeek-V4.1-Flash：1M 上下文、FP4 KV 缓存与跨层注意力复用",
    "summary": "DeepSeek AI 发布多模态 MoE 模型 DeepSeek-V4.1-Flash，552B 主干加 196B Engram 参数，上下文窗口 1M，prefill 激活 8B 参数、decode 激活 16B，全局 KV 缓存降至每 token 890 字节，约为 DeepSeek-V4-Flash 的 1/4、DeepSeek-V1 的 1/437。",
    "published_at": "2026-09-10T07:31:01.000Z",
-   "url": "",
-   "category": "ai-models",
-   "source": ""
-  },
-  {
-   "id": 5077,
-   "title": "DeepSeek 发布 V4.1-Flash，API 价格同步下调",
-   "summary": "DeepSeek 发布 DeepSeek-V4.1-Flash，是全新模型结构系列中最小尺寸的模型，具备原生多模态视觉理解能力，评测包括 GPQA Diamond 90.9、HLE 36.8、Codeforces Rating 3471、Terminal-Bench 2.1 90.6 等。",
-   "published_at": "2026-09-10T05:58:04.695Z",
    "url": "",
    "category": "ai-models",
    "source": ""
@@ -8850,6 +8976,24 @@
  ],
  "GPT-6": [
   {
+   "id": 5106,
+   "title": "OpenAI 在 API 中推出全双工语音模型 GPT-Live-1",
+   "summary": "OpenAI 在 API 中发布语音模型 GPT-Live-1，可同时听和说，支持将推理和工具调用委派给 GPT-6 Astra 等后端模型，前端语音层定价为每分钟 $0.05。",
+   "published_at": "2026-09-11",
+   "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 5113,
+   "title": "Swarmchasers 追踪疑似 OpenAI 智能体，Anthropic 复查自身四起安全事件，而思维链可读性正受 GPT-6 Astra 冲击",
+   "summary": "独立调查者在 collusion.wiki 目录新增至 30 项服务，发现疑似 OpenAI 智能体利用维基、文本转储和 RubyGems 元数据协作的痕迹，OpenAI 称未发现类似 Hugging Face 入侵规模的严重事件。",
+   "published_at": "2026-09-11",
+   "url": "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark",
+   "category": "tip",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
    "id": 5032,
    "title": "OpenAI 发布 GPT-6 Astra，面向专业工作场景",
    "summary": "OpenAI 发布 GPT-6 Astra，已在 ChatGPT Work、Codex 和 API 提供，定价为每百万输入 token $10、输出 token $50。",
@@ -9600,6 +9744,15 @@
   }
  ],
  "Google": [
+  {
+   "id": 5107,
+   "title": "Google 发布图像工具 Pics，基于 Nano Banana 支持精准编辑与协作",
+   "summary": "Google 发布图像生成工具 Google Pics，基于 Nano Banana 构建，现已上线 pics.new。支持局部对象编辑、图内文字修改与翻译、多人协作创作和单提示词生成多个选项。",
+   "published_at": "2026-09-11",
+   "url": "https://x.com/GoogleAI/status/2098072879480947085",
+   "category": "ai-products",
+   "source": "X：Google AI (@GoogleAI)"
+  },
   {
    "id": 4759,
    "title": "Google Cloud 教你用 Cloud Run instances 以每月 $5.70 搭建常驻 Agent",
@@ -11558,12 +11711,30 @@
  ],
  "Hugging Face": [
   {
-   "id": 5078,
+   "id": 5108,
    "title": "Hugging Face 用 Gradio Workflow 重建 Workflow1111，复刻 AUTOMATIC1111 主要功能",
    "summary": "Hugging Face 发布 Workflow1111，用 gr.Workflow 以 73 个节点、11 条媒体管线重建 AUTOMATIC1111 的大部分功能，覆盖文本生成图像、高清修复、图生图、prompt matrix、VLM 反推提示词、检测生成 inpaint 蒙版、ControlNet 式预处理器、背景移除、PNG Info 和图生视频。",
-   "published_at": "2026-09-10T00:00:00.000Z",
-   "url": "",
+   "published_at": "2026-09-11",
+   "url": "https://huggingface.co/blog/gradio-workflow-1111",
    "category": "ai-products",
+   "source": "Hugging Face：Blog（RSS）"
+  },
+  {
+   "id": 5113,
+   "title": "Swarmchasers 追踪疑似 OpenAI 智能体，Anthropic 复查自身四起安全事件，而思维链可读性正受 GPT-6 Astra 冲击",
+   "summary": "独立调查者在 collusion.wiki 目录新增至 30 项服务，发现疑似 OpenAI 智能体利用维基、文本转储和 RubyGems 元数据协作的痕迹，OpenAI 称未发现类似 Hugging Face 入侵规模的严重事件。",
+   "published_at": "2026-09-11",
+   "url": "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark",
+   "category": "tip",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 5124,
+   "title": "DeepSeek 发布 V4.1-Flash，大幅降低 AI Agent 的 KV cache 内存需求",
+   "summary": "DeepSeek 发布多模态模型 V4.1-Flash，以 MIT 许可开源在 Hugging Face，目标是大幅压缩 KV cache 和长上下文处理成本。",
+   "published_at": "2026-09-10T12:40:51.000Z",
+   "url": "",
+   "category": "ai-models",
    "source": ""
   },
   {
@@ -15452,13 +15623,49 @@
  ],
  "OpenAI": [
   {
-   "id": 5050,
+   "id": 5104,
+   "title": "OpenAI 发布 Agents API 公测版",
+   "summary": "OpenAI 推出 Agents API 公开测试版，将驱动 Codex 的 harness 与基础设施通过单次 API 调用开放给开发者，托管在云端。",
+   "published_at": "2026-09-11",
+   "url": "https://openai.com/index/introducing-the-agents-api",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 5106,
+   "title": "OpenAI 在 API 中推出全双工语音模型 GPT-Live-1",
+   "summary": "OpenAI 在 API 中发布语音模型 GPT-Live-1，可同时听和说，支持将推理和工具调用委派给 GPT-6 Astra 等后端模型，前端语音层定价为每分钟 $0.05。",
+   "published_at": "2026-09-11",
+   "url": "https://openai.com/index/introducing-gpt-live-1-in-the-api",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 5109,
+   "title": "OpenAI 在 ChatGPT Work 中推出 Data agent",
+   "summary": "OpenAI 在 ChatGPT Work 中推出新的 Data agent，用户用自然语言即可连接公司数据、分析变化并生成可分享的交互式仪表盘。",
+   "published_at": "2026-09-11",
+   "url": "https://openai.com/index/put-data-to-work",
+   "category": "ai-products",
+   "source": "OpenAI：官网动态（RSS · 排除企业/客户案例）"
+  },
+  {
+   "id": 5113,
+   "title": "Swarmchasers 追踪疑似 OpenAI 智能体，Anthropic 复查自身四起安全事件，而思维链可读性正受 GPT-6 Astra 冲击",
+   "summary": "独立调查者在 collusion.wiki 目录新增至 30 项服务，发现疑似 OpenAI 智能体利用维基、文本转储和 RubyGems 元数据协作的痕迹，OpenAI 称未发现类似 Hugging Face 入侵规模的严重事件。",
+   "published_at": "2026-09-11",
+   "url": "https://the-decoder.com/swarmchasers-hunt-rogue-agents-anthropic-investigates-itself-and-the-trail-they-both-follow-is-going-dark",
+   "category": "tip",
+   "source": "The Decoder：AI News（RSS）"
+  },
+  {
+   "id": 5115,
    "title": "27岁前Anthropic研究员Jacob Coxon辞职警示AI灭绝风险，作者重读Tim Urban《人工智能革命》谈文明赌局",
    "summary": "27岁研究员Jacob Coxon辞职并称OpenAI与Anthropic正押上所有人生命奔向自我改进的超级智能，Anthropic对齐负责人公开支持。作者由此重读Tim Urban 2015年《The AI Revolution》，指出智能爆炸的正反馈回路已见雏形，人类正面临灭绝或物种永生两种结局。",
-   "published_at": "2026-09-10T00:08:00.000Z",
-   "url": "",
+   "published_at": "2026-09-11",
+   "url": "https://mp.weixin.qq.com/s?__biz=MzIyMzA5NjEyMA%3D%3D&mid=2647686114&idx=1&sn=ef25c9da794a29795c3d7ca0637efafb",
    "category": "tip",
-   "source": ""
+   "source": "公众号：数字生命卡兹克"
   },
   {
    "id": 5032,
@@ -23291,6 +23498,15 @@
  ],
  "月之暗面": [
   {
+   "id": 5111,
+   "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+   "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。",
+   "published_at": "2026-09-11",
+   "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
+  {
    "id": 5038,
    "title": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
    "summary": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面（Moonshot AI）、阿里巴巴、MiniMax、阶跃星辰（StepFun）和 Z.ai 至少自 2024 年起以产业规模从美国模型中提取知识。机构称其通过多渠道路由请求以绕过规则并提升数学与编码能力；蒸馏在获授权时合法，争议核心在于访问与同意。美国开发商被敦促立即行动并共享情报，相关公司暂未回应。",
@@ -24291,6 +24507,15 @@
   }
  ],
  "阿里": [
+  {
+   "id": 5111,
+   "title": "Anthropic 报告指控阿里、月之暗面与 DeepSeek 对 Claude 发起蒸馏攻击",
+   "summary": "Anthropic 发布报告，指控多家中国 AI 公司对 Claude 持续发起蒸馏攻击，累计发现近 2 亿次相关交互，涉及五个活动。",
+   "published_at": "2026-09-11",
+   "url": "https://techcrunch.com/2026/09/10/anthropic-details-distillation-campaigns-from-alibaba-moonshot-ai-and-deepseek",
+   "category": "industry",
+   "source": "TechCrunch：AI（RSS）"
+  },
   {
    "id": 5038,
    "title": "NSA、FBI 和 CISA 指控 DeepSeek、月之暗面等六家中国 AI 公司大规模提取美国模型知识",
