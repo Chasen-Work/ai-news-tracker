@@ -1,13 +1,13 @@
 {
- "total_items": 2217,
+ "total_items": 2223,
  "total_entities": 146,
- "total_dailies": 101,
+ "total_dailies": 102,
  "categories": {
-  "tip": 630,
+  "tip": 633,
   "ai-products": 589,
-  "industry": 464,
+  "industry": 465,
   "ai-models": 279,
-  "paper": 255
+  "paper": 257
  },
  "entity_types": {
   "model": 90,
@@ -24,7 +24,7 @@
   },
   {
    "name": "OpenAI：官网动态（RSS · 排除企业/客户案例）",
-   "count": 90
+   "count": 91
   },
   {
    "name": "Claude：Blog（网页）",
@@ -32,7 +32,7 @@
   },
   {
    "name": "The Decoder：AI News（RSS）",
-   "count": 49
+   "count": 50
   },
   {
    "name": "Apple Machine Learning Research（RSS）",
@@ -56,10 +56,6 @@
   }
  ],
  "by_date": [
-  {
-   "date": "2026-08-12",
-   "count": 30
-  },
   {
    "date": "2026-08-13",
    "count": 23
@@ -174,8 +170,12 @@
   },
   {
    "date": "2026-09-11",
-   "count": 18
+   "count": 17
+  },
+  {
+   "date": "2026-09-12",
+   "count": 7
   }
  ],
- "updated_at": "2026-09-11T13:00:29Z"
+ "updated_at": "2026-09-12T01:01:00Z"
 }

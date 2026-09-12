@@ -3,15 +3,15 @@
   "id": 22,
   "name": "OpenAI",
   "type": "company",
-  "mentions": 369,
-  "last_seen": "2026-09-11"
+  "mentions": 371,
+  "last_seen": "2026-09-12T00:24:20.561Z"
  },
  {
   "id": 35,
   "name": "Anthropic",
   "type": "company",
-  "mentions": 252,
-  "last_seen": "2026-09-11"
+  "mentions": 254,
+  "last_seen": "2026-09-12"
  },
  {
   "id": 47,
@@ -24,8 +24,8 @@
   "id": 48,
   "name": "Claude Code",
   "type": "model",
-  "mentions": 150,
-  "last_seen": "2026-09-05"
+  "mentions": 151,
+  "last_seen": "2026-09-12"
  },
  {
   "id": 21,
@@ -60,7 +60,7 @@
   "name": "DeepSeek",
   "type": "company",
   "mentions": 73,
-  "last_seen": "2026-09-11T04:24:28.000Z"
+  "last_seen": "2026-09-12"
  },
  {
   "id": 43,
@@ -193,7 +193,7 @@
   "name": "DeepSeek V4",
   "type": "model",
   "mentions": 18,
-  "last_seen": "2026-09-11T04:24:28.000Z"
+  "last_seen": "2026-09-12"
  },
  {
   "id": 614,
